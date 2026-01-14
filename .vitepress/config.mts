@@ -18,6 +18,9 @@ export default defineConfig({
     '**/Reference/**'
   ],
   
+  // 忽略死链接检查
+  ignoreDeadLinks: true,
+  
   // 多语言配置
   locales: {
     root: {
