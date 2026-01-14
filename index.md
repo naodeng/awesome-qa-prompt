@@ -14,10 +14,10 @@ hero:
       link: /RequirementsAnalysis/RequirementsAnalysisPrompt
     - theme: alt
       text: 查看工作流程 / Workflows
-      link: /Workflows/README
+      link: /Workflows/
     - theme: alt
       text: English Version
-      link: /README_EN
+      link: /en/
 
 features:
   - icon: 📝

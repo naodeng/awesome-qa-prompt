@@ -14,7 +14,7 @@ hero:
       link: /RequirementsAnalysis/RequirementsAnalysisPrompt_EN
     - theme: alt
       text: View Workflows
-      link: /Workflows/README
+      link: /en/Workflows/
     - theme: alt
       text: 中文版本
       link: /
