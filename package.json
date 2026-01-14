@@ -17,6 +17,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^20.0.0",
     "vitepress": "^1.0.0"
   }
 }

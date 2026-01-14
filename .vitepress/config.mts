@@ -1,5 +1,11 @@
 import { defineConfig } from 'vitepress'
 
+// 🌟 动态 base 配置
+// 如果部署在 GitHub Pages，就用 /awesome-qa-prompt/
+// 如果部署在 Cloudflare Pages，就用根路径 /
+const isGithubPages = process.env.GITHUB_PAGES === 'true'
+const base = isGithubPages ? '/awesome-qa-prompt/' : '/'
+
 // 生成英文侧边栏的辅助函数
 function getEnglishSidebar() {
   return [
@@ -152,8 +158,8 @@ export default defineConfig({
   title: 'Awesome QA Prompt',
   description: '专业的 QA（质量保证）AI 提示词集合',
   
-  // GitHub Pages 部署配置
-  base: '/awesome-qa-prompt/',
+  // ✅ 动态 base 配置 - 支持 GitHub Pages 和 Cloudflare Pages
+  base: base,
   
   // Head 配置 - SEO 和图标
   head: [
@@ -165,11 +171,11 @@ export default defineConfig({
     }],
     
     // Favicon
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/awesome-qa-prompt/logo.svg' }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/awesome-qa-prompt/favicon-32x32.png' }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/awesome-qa-prompt/favicon-16x16.png' }],
-    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/awesome-qa-prompt/apple-touch-icon.png' }],
-    ['link', { rel: 'manifest', href: '/awesome-qa-prompt/manifest.json' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}logo.svg` }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: `${base}favicon-32x32.png` }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: `${base}favicon-16x16.png` }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: `${base}apple-touch-icon.png` }],
+    ['link', { rel: 'manifest', href: `${base}manifest.json` }],
     
     // SEO Meta Tags
     ['meta', { name: 'keywords', content: 'QA, Quality Assurance, Testing, AI Prompts, Test Automation, Software Testing, Test Cases, Bug Reporting, Performance Testing, Security Testing, API Testing, Mobile Testing, 测试, 质量保证, AI提示词' }],
@@ -181,7 +187,7 @@ export default defineConfig({
     ['meta', { property: 'og:url', content: 'https://naodeng.github.io/awesome-qa-prompt/' }],
     ['meta', { property: 'og:title', content: 'Awesome QA Prompt - Professional QA AI Prompt Library' }],
     ['meta', { property: 'og:description', content: 'A professional collection of AI prompts for QA professionals, covering the complete testing lifecycle from requirements analysis to test reporting. 专业的质量保证AI提示词库，涵盖从需求分析到测试报告的完整测试生命周期。' }],
-    ['meta', { property: 'og:image', content: 'https://naodeng.github.io/awesome-qa-prompt/logo.svg' }],
+    ['meta', { property: 'og:image', content: `https://naodeng.github.io${base}logo.svg` }],
     ['meta', { property: 'og:locale', content: 'zh_CN' }],
     ['meta', { property: 'og:locale:alternate', content: 'en_US' }],
     
@@ -190,7 +196,7 @@ export default defineConfig({
     ['meta', { name: 'twitter:url', content: 'https://naodeng.github.io/awesome-qa-prompt/' }],
     ['meta', { name: 'twitter:title', content: 'Awesome QA Prompt - Professional QA AI Prompt Library' }],
     ['meta', { name: 'twitter:description', content: 'A professional collection of AI prompts for QA professionals, covering the complete testing lifecycle from requirements analysis to test reporting.' }],
-    ['meta', { name: 'twitter:image', content: 'https://naodeng.github.io/awesome-qa-prompt/logo.svg' }],
+    ['meta', { name: 'twitter:image', content: `https://naodeng.github.io${base}logo.svg` }],
     
     // Additional SEO
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],

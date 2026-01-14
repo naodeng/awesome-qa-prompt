@@ -45,8 +45,10 @@ jobs:
           echo "✅ Dependencies installed successfully"
         
       - name: 🏗️ Build VitePress site
+        env:
+          GITHUB_PAGES: 'true'
         run: |
-          echo "🏗️ Building VitePress site..."
+          echo "🏗️ Building VitePress site for GitHub Pages..."
           npm run docs:build
           echo "✅ Build completed successfully"
         
