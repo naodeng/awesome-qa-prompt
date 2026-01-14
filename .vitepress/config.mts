@@ -157,6 +157,13 @@ export default defineConfig({
   
   // Head 配置 - SEO 和图标
   head: [
+    // Umami Analytics
+    ['script', { 
+      async: '', 
+      src: 'https://analytics.naodeng.com.cn/hugo',
+      'data-website-id': '8f49daf0-3378-44d6-8e65-f80848bc0d07'
+    }],
+    
     // Favicon
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/awesome-qa-prompt/logo.svg' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/awesome-qa-prompt/favicon-32x32.png' }],
@@ -306,7 +313,8 @@ export default defineConfig({
               { text: '测试用例编写', link: '/TestCaseWriting/TestCaseWritingPrompt' },
               { text: '功能测试', link: '/FunctionalTesting/FunctionalTestingPrompt' }
             ]
-          }
+          },
+          { text: '📊 访问统计', link: 'https://analytics.naodeng.com.cn/share/c54EH1zavEoV6hLB/naodeng.github.io', target: '_blank' }
         ],
         
         sidebar: {
@@ -524,7 +532,8 @@ export default defineConfig({
               { text: 'Test Case Writing', link: '/en/TestCaseWriting/TestCaseWritingPrompt' },
               { text: 'Functional Testing', link: '/en/FunctionalTesting/FunctionalTestingPrompt' }
             ]
-          }
+          },
+          { text: '📊 Analytics', link: 'https://analytics.naodeng.com.cn/share/c54EH1zavEoV6hLB/naodeng.github.io', target: '_blank' }
         ],
         
         sidebar: {
@@ -588,7 +597,7 @@ export default defineConfig({
   // 主题配置
   themeConfig: {
     logo: '/logo.svg',
-    siteTitle: 'QA Prompt Collection'
+    siteTitle: 'Awesome QA Prompt'
   },
   
   // Markdown 配置
