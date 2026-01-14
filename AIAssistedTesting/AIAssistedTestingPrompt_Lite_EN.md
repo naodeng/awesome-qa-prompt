@@ -184,3 +184,11 @@ AI Testing Platform
 4. Develop implementation plans and effect evaluation
 
 **Please provide testing challenges and requirements, and I will design AI-assisted testing plan.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

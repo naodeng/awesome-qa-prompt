@@ -257,3 +257,11 @@ Verification Points:
 4. Provide issue fixes and improvement recommendations
 
 **Please provide product information and compliance requirements, and I will design accessibility testing plan.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

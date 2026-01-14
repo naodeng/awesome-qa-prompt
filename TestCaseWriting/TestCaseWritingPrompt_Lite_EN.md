@@ -76,3 +76,11 @@
 4. Output standardized test case documentation
 
 **Please provide test scenarios or functional requirements, and I will generate detailed test cases.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

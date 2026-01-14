@@ -173,3 +173,11 @@
 4. Generate professional test reports and recommendations
 
 **Please provide test execution data, and I will generate professional test report.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

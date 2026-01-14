@@ -200,3 +200,11 @@ Suggestions: [Improvement suggestions]
 4. Record issues and provide improvement suggestions
 
 **Please provide product information and testing requirements, and I will design manual testing plan.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

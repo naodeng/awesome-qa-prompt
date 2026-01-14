@@ -384,3 +384,11 @@ Unexplored Areas:
 6. **Value Demonstration:** Fully demonstrate the unique value of manual testing
 
 **Please start executing the above tasks immediately after receiving testing requirements, product features, or user scenarios.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

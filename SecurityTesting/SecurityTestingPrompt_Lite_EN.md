@@ -255,3 +255,11 @@ sqlmap -u "https://target.com/page?id=1" --dbs
 4. Assess security risks and provide hardening recommendations
 
 **Please provide system information and security requirements, and I will design security testing plan.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

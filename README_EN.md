@@ -509,3 +509,19 @@ For questions or suggestions, please contact us through:
 ---
 
 **Let AI be the best assistant for test engineers!** 🚀
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version
+- Completed 14 testing type modules with bilingual prompts (full + lite versions)
+- Completed 3 testing workflows (bilingual)
+- Added VitePress online documentation website
+- Configured GitHub Pages automatic deployment
+- Support dual platform deployment (GitHub Pages + Cloudflare Pages)
+- Integrated Umami website analytics
+- Added SEO optimization and favicon configuration
+- Added usage instructions and version logs to all prompt files

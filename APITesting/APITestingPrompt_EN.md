@@ -604,3 +604,11 @@ jobs:
 6. **Continuous Optimization:** Continuously optimize API testing efficiency and quality
 
 **Please start executing the above tasks immediately after receiving API documentation, system architecture, or testing requirements.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

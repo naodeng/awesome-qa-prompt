@@ -406,3 +406,11 @@ curl -X GET "http://target.com/user?id=1 UNION SELECT 1,username,password FROM u
 6. **报告编写：** 编写专业的安全测试报告和修复建议
 
 **请在收到系统架构、安全需求或合规要求后，立即开始执行上述任务。**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- 初始化版本

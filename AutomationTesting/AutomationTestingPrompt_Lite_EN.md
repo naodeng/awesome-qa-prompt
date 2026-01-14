@@ -173,3 +173,11 @@ pipeline {
 4. Integrate CI/CD processes and continuously optimize
 
 **Please provide application information and testing requirements, and I will generate automation testing plan.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

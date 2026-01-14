@@ -509,3 +509,19 @@ npm run docs:preview
 ---
 
 **让 AI 成为测试工程师的最佳助手！** 🚀
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- 初始化版本
+- 完成14个测试类型模块的中英文提示词（完整版+精简版）
+- 完成3个测试工作流程（中英文）
+- 添加VitePress在线文档网站
+- 配置GitHub Pages自动部署
+- 支持双平台部署（GitHub Pages + Cloudflare Pages）
+- 集成Umami网站统计
+- 添加SEO优化和favicon配置
+- 所有提示词文件添加使用说明和版本记录

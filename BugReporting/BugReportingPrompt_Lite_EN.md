@@ -150,3 +150,11 @@
 4. Track bug fix progress and quality improvement
 
 **Please provide discovered issue information, and I will generate standardized bug report.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

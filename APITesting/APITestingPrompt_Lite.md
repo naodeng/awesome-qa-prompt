@@ -335,3 +335,11 @@ public void testCreateUser(String name, String email, int expectedStatus) {
 4. 集成CI/CD流程并持续优化
 
 **请提供API文档和测试需求，我将设计API测试方案。**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- 初始化版本

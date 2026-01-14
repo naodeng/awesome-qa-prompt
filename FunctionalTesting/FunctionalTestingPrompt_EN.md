@@ -301,3 +301,11 @@ Please output functional testing plans in the following Markdown format:
 5. **Quality Assurance:** Ensure testing plans meet all quality requirements
 
 **Please begin executing the above tasks immediately upon receiving functional requirements or system specifications.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

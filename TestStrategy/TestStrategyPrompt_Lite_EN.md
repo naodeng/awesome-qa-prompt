@@ -202,3 +202,11 @@
 4. Establish quality control and risk management mechanisms
 
 **Please provide project information and quality requirements, and I will develop test strategy plan.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

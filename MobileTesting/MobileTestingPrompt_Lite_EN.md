@@ -177,3 +177,11 @@ public void testLogin() {
 4. Execute testing and continuously optimize
 
 **Please provide mobile application information, and I will generate mobile testing plan.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

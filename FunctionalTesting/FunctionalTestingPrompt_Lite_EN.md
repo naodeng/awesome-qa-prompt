@@ -83,3 +83,11 @@
 4. Output functional testing plan
 
 **Please provide functional requirements documentation, and I will generate functional testing plan.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

@@ -479,3 +479,11 @@ Scenario 3: Multimedia content control
 6. **Result Analysis:** Analyze test results and provide improvement recommendations
 
 **Please start executing the above tasks immediately after receiving product requirements, user groups, or compliance requirements.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

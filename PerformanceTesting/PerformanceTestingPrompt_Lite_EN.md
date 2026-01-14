@@ -106,3 +106,11 @@
 4. Execute tests and analyze results
 
 **Please provide performance requirements or system information, and I will generate performance testing plan.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

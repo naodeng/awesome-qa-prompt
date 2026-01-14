@@ -214,3 +214,11 @@ Please output test cases in the following Markdown format:
 5. **Review Optimization:** Support test case review and continuous optimization
 
 **Please begin executing the above tasks immediately upon receiving test scenarios or requirements documents.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

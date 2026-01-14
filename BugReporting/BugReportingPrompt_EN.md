@@ -327,3 +327,11 @@ N. [Observe results, record actual problems that occurred]
 5. **Quality Check:** Ensure bug reports meet all quality requirements
 
 **Please begin executing the above tasks immediately upon discovering problems or receiving error information.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

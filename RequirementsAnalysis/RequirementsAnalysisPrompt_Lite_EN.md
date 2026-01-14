@@ -60,3 +60,11 @@
 4. Output structured test scenario design plan
 
 **Please provide requirements documentation, and I will immediately generate test scenario design plan.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

@@ -335,3 +335,11 @@ public void testCreateUser(String name, String email, int expectedStatus) {
 4. Integrate CI/CD processes and continuously optimize
 
 **Please provide API documentation and testing requirements, and I will design API testing plan.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

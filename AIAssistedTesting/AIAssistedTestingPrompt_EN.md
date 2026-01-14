@@ -397,3 +397,11 @@ class DefectPredictionModel:
 6. **Implementation Planning:** Develop detailed implementation roadmaps and milestones
 
 **Please start executing the above tasks immediately after receiving project requirements, testing challenges, or AI application scenarios.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

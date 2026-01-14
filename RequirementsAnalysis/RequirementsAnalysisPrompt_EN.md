@@ -177,3 +177,11 @@ Please output test scenarios in the following Markdown format, **grouped by User
 4. **Quality Check:** Ensure all quality requirements and special considerations are met
 
 **Please begin executing the above tasks immediately upon receiving the requirements document.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

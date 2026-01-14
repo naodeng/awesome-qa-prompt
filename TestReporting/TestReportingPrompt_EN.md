@@ -479,3 +479,11 @@ Defect Trend Chart (recommend using charting tools)
 5. **Publishing and Distribution:** Timely publish reports and distribute to relevant stakeholders
 
 **Please begin executing the above tasks immediately upon receiving test execution data, defect information, or project background.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version

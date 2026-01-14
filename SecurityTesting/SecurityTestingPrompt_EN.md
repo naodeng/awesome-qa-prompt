@@ -406,3 +406,11 @@ curl -X GET "http://target.com/user?id=1 UNION SELECT 1,username,password FROM u
 6. **Report Writing:** Write professional security testing reports and remediation recommendations
 
 **Please start executing the above tasks immediately after receiving system architecture, security requirements, or compliance requirements.**
+
+
+---
+
+## 📋 Change Log
+
+### v0.1 (2025-01-14)
+- Initial version
