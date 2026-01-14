@@ -1,5 +1,7 @@
 # Awesome QA Prompt Collection
 
+[English](./README_EN.md) | 简体中文
+
 [![Deploy to GitHub Pages](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml/badge.svg)](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml)
 [![GitHub Pages](https://img.shields.io/badge/docs-online-blue.svg)](https://naodeng.github.io/awesome-qa-prompt/)
 [![GitHub](https://img.shields.io/github/license/naodeng/awesome-qa-prompt)](https://github.com/naodeng/awesome-qa-prompt/blob/main/LICENSE)
@@ -284,7 +286,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
 9. 测试报告 → TestReporting/TestReportingPrompt.md
 ```
 
-## � 项目完成状态
+## 📊 项目完成状态
 
 ### ✅ 已完成模块
 
@@ -385,56 +387,6 @@ awesome-qa-prompt/
     ├── mobile-testing/                # 移动端测试参考
     ├── specialized-testing/           # 专项测试参考
     └── workflows/                     # 工作流程参考（已迁移到Workflows/）
-```
-│
-├── TestCaseWriting/                   # 测试用例编写
-│   ├── TestCaseWritingPrompt.md           # 中文提示词
-│   ├── TestCaseWritingPrompt_EN.md       # 英文提示词
-│   └── README.md                          # 模块说明文档
-│
-├── FunctionalTesting/                 # 功能测试
-│   ├── FunctionalTestingPrompt.md         # 中文提示词
-│   ├── FunctionalTestingPrompt_EN.md     # 英文提示词
-│   └── README.md                          # 模块说明文档
-│
-├── PerformanceTesting/                # 性能测试
-│   ├── PerformanceTestingPrompt.md        # 中文提示词
-│   ├── PerformanceTestingPrompt_EN.md    # 英文提示词
-│   └── README.md                          # 模块说明文档
-│
-├── AutomationTesting/                 # 自动化测试
-│   ├── AutomationTestingPrompt.md         # 中文提示词
-│   ├── AutomationTestingPrompt_EN.md     # 英文提示词
-│   └── README.md                          # 模块说明文档
-│
-├── MobileTesting/                     # 移动端测试
-│   ├── MobileTestingPrompt.md             # 中文提示词
-│   ├── MobileTestingPrompt_EN.md         # 英文提示词
-│   └── README.md                          # 模块说明文档
-│
-├── BugReporting/                      # 缺陷上报
-│   ├── BugReportingPrompt.md             # 中文提示词
-│   ├── BugReportingPrompt_EN.md         # 英文提示词
-│   └── README.md                          # 模块说明文档
-│
-├── TestReporting/                     # 测试报告
-│   ├── TestReportingPrompt.md            # 中文提示词
-│   ├── TestReportingPrompt_EN.md        # 英文提示词
-│   └── README.md                          # 模块说明文档
-│
-├── TestStrategy/                      # 测试策略
-│   ├── TestStrategyPrompt.md             # 中文提示词
-│   ├── TestStrategyPrompt_EN.md         # 英文提示词
-│   └── README.md                          # 模块说明文档
-│
-└── Reference/                         # 参考资料（现有内容保持不变）
-    ├── manual-qa/                     # 手动测试参考
-    ├── automation-qa/                 # 自动化测试参考
-    ├── ai-assisted-qa/                # AI辅助测试参考
-    ├── cursor-ai/                     # Cursor AI 角色参考
-    ├── mobile-testing/                # 移动端测试参考
-    ├── specialized-testing/           # 专项测试参考
-    └── workflows/                     # 工作流程参考
 ```
 
 ## 📖 使用指南

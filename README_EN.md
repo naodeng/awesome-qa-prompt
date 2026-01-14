@@ -1,5 +1,7 @@
 # Awesome QA Prompt Collection
 
+English | [简体中文](./README.md)
+
 [![Deploy to GitHub Pages](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml/badge.svg)](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml)
 [![GitHub Pages](https://img.shields.io/badge/docs-online-blue.svg)](https://naodeng.github.io/awesome-qa-prompt/)
 [![GitHub](https://img.shields.io/github/license/naodeng/awesome-qa-prompt)](https://github.com/naodeng/awesome-qa-prompt/blob/main/LICENSE)
@@ -54,48 +56,186 @@ This collection includes professional prompts for the following testing domains:
   - UI/UX, input validation, non-functional testing coverage
 
 ### 2. ✍️ Test Case Writing
-- **Status**: Planned
+- **Location**: `TestCaseWriting/TestCaseWritingPrompt_EN.md`
 - **Description**: Automatically generate detailed test cases based on test scenarios
 - **Use Cases**: Test case design, test documentation writing
+- **Core Capabilities**:
+  - Test case design principles and best practices
+  - Standardized test case format and templates
+  - Test data design and management strategies
+  - Maintainability and traceability assurance
 
 ### 3. 🔍 Functional Testing
-- **Status**: Planned
+- **Location**: `FunctionalTesting/FunctionalTestingPrompt_EN.md`
 - **Description**: Design functional testing strategies and execution plans
 - **Use Cases**: Functional test execution, regression testing
+- **Core Capabilities**:
+  - Black-box testing methods and functional decomposition testing
+  - Functional coverage completeness and scientific testing methods
+  - Business logic complexity and user experience focus
+  - System integration complexity handling
 
 ### 4. ⚡ Performance Testing
-- **Status**: Planned
+- **Location**: `PerformanceTesting/PerformanceTestingPrompt_EN.md`
 - **Description**: Design performance test scenarios and performance metrics analysis
 - **Use Cases**: Performance test planning, performance bottleneck analysis
+- **Core Capabilities**:
+  - Load, stress, spike, capacity, and other performance tests
+  - Performance metrics system and bottleneck analysis framework
+  - Test scenario realism and performance optimization recommendations
+  - Performance monitoring and trend analysis
 
 ### 5. 🤖 Automation Testing
-- **Status**: Planned
+- **Location**: `AutomationTesting/AutomationTestingPrompt_EN.md`
 - **Description**: Automation test script design and framework selection
 - **Use Cases**: Automation test implementation, CI/CD integration
+- **Core Capabilities**:
+  - Test automation pyramid and layered strategy
+  - Web, API, mobile, database automation
+  - Technology stack selection and framework design
+  - CI/CD integration and maintenance optimization
 
 ### 6. 📱 Mobile Testing
-- **Status**: Planned
+- **Location**: `MobileTesting/MobileTestingPrompt_EN.md`
 - **Description**: Mobile application testing strategies and scenario design
 - **Use Cases**: Mobile application testing, compatibility testing
+- **Core Capabilities**:
+  - iOS and Android platform-specific testing
+  - Device compatibility and network connectivity testing
+  - Mobile lifecycle and user interaction testing
+  - Performance, security, and user experience specialized testing
 
 ### 7. 🐛 Bug Reporting
-- **Status**: Planned
+- **Location**: `BugReporting/BugReportingPrompt_EN.md`
 - **Description**: Standardized bug report templates and bug analysis
 - **Use Cases**: Bug management, bug analysis
+- **Core Capabilities**:
+  - Bug identification principles and classification system
+  - Standardized bug report format
+  - Root cause analysis and resolution recommendations
+  - Bug lifecycle management
 
 ### 8. 📊 Test Reporting
-- **Status**: Planned
+- **Location**: `TestReporting/TestReportingPrompt_EN.md`
 - **Description**: Test execution reports and quality analysis reports
 - **Use Cases**: Test summary, quality assessment
+- **Core Capabilities**:
+  - Multiple types of test report writing
+  - Quality metrics system and risk assessment
+  - Data visualization and trend analysis
+  - Decision support and improvement recommendations
 
 ### 9. 🎯 Test Strategy
-- **Status**: Planned
+- **Location**: `TestStrategy/TestStrategyPrompt_EN.md`
 - **Description**: Overall test strategy development and test plan design
 - **Use Cases**: Project kickoff, test planning
+- **Core Capabilities**:
+  - Test strategy hierarchy and development principles
+  - Test objectives, scope, methods, resource planning
+  - Risk management and quality control mechanisms
+  - Implementation plan and budget resource planning
+
+### 10. 🤖 AI-Assisted Testing
+- **Location**: `AIAssistedTesting/AIAssistedTestingPrompt_EN.md`
+- **Description**: Leverage AI technology to improve testing efficiency and quality
+- **Use Cases**: Intelligent test generation, test optimization
+- **Core Capabilities**:
+  - AI-driven test case generation
+  - Intelligent bug prediction and analysis
+  - Automated test maintenance and optimization
+  - Intelligent test data generation
+
+### 11. 📋 Manual Testing
+- **Location**: `ManualTesting/ManualTestingPrompt_EN.md`
+- **Description**: Manual testing strategies and exploratory testing
+- **Use Cases**: Exploratory testing, user experience testing
+- **Core Capabilities**:
+  - Exploratory testing methods and techniques
+  - Manual test case design
+  - User experience evaluation
+  - Test session management
+
+### 12. 🔒 Security Testing
+- **Location**: `SecurityTesting/SecurityTestingPrompt_EN.md`
+- **Description**: Security vulnerability detection and security testing strategies
+- **Use Cases**: Security audit, penetration testing
+- **Core Capabilities**:
+  - OWASP Top 10 vulnerability testing
+  - Authentication and authorization testing
+  - Data security and encryption testing
+  - Security compliance checking
+
+### 13. 🔌 API Testing
+- **Location**: `APITesting/APITestingPrompt_EN.md`
+- **Description**: API interface testing and integration testing
+- **Use Cases**: Interface testing, microservices testing
+- **Core Capabilities**:
+  - RESTful API test design
+  - API performance and load testing
+  - Interface contract testing
+  - API security testing
+
+### 14. ♿ Accessibility Testing
+- **Location**: `AccessibilityTesting/AccessibilityTestingPrompt_EN.md`
+- **Description**: Web accessibility testing and WCAG compliance checking
+- **Use Cases**: Accessibility testing, compliance verification
+- **Core Capabilities**:
+  - WCAG 2.1 standard testing
+  - Screen reader compatibility
+  - Keyboard navigation testing
+  - Color contrast and visual testing
+
+## 🔄 Testing Workflows
+
+This project provides three practical testing workflows to help teams efficiently use the prompt library in different scenarios:
+
+### 1. 📅 Daily Testing Workflow
+- **Location**: `Workflows/daily-testing-workflow_EN.md` | [中文版](Workflows/daily-testing-workflow_CN.md)
+- **Use Cases**: Daily testing activities for QA engineers
+- **Coverage**:
+  - Morning routine and test planning
+  - Test case creation and automation
+  - Exploratory testing and bug reporting
+  - Daily summary and knowledge sharing
+
+### 2. 🏃 Sprint Testing Workflow
+- **Location**: `Workflows/sprint-testing-workflow_EN.md` | [中文版](Workflows/sprint-testing-workflow_CN.md)
+- **Use Cases**: 2-week sprint cycle for Agile/Scrum teams
+- **Coverage**:
+  - Sprint planning and test strategy
+  - Daily testing activities and progress tracking
+  - Regression and integration testing
+  - Sprint review and retrospective
+
+### 3. 🚀 Release Testing Workflow
+- **Location**: `Workflows/release-testing-workflow_EN.md` | [中文版](Workflows/release-testing-workflow_CN.md)
+- **Use Cases**: Comprehensive testing before production release
+- **Coverage**:
+  - Release planning and test preparation (T-14 days)
+  - Specialized testing (performance, security, accessibility)
+  - Release candidate testing and Go/No-Go decision
+  - Release day process and post-release monitoring
+
+**Workflow Usage Tips**:
+- Choose the appropriate workflow based on current task
+- Follow links in workflows to access relevant prompts
+- Use checklists to track progress
+- Adjust workflows according to team practices
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### Method 1: Online Use (Recommended)
+
+Visit our online documentation: **[https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)**
+
+1. Select a testing type or workflow from the left sidebar
+2. Click "Full Version" or "Lite Version" to view prompts
+3. Copy the prompt content to your AI assistant (ChatGPT, Claude, Cursor AI, etc.)
+4. Attach your input materials to get structured test documentation
+
+### Method 2: Local Use
+
+#### Prerequisites
 
 - AI assistant that supports Markdown format (e.g., ChatGPT, Claude, Cursor AI)
 - Basic software testing knowledge
@@ -104,7 +244,7 @@ This collection includes professional prompts for the following testing domains:
 
 1. **Select a Prompt**
    - Choose the corresponding prompt file based on your testing task
-   - Example: Use `RequirementsAnalysis/RequirementsAnalysisPrompt_EN.md` for requirements analysis
+   - Use English prompts (_EN.md) for English projects, Chinese prompts for Chinese projects
 
 2. **Prepare Input Materials**
    - Prepare relevant input documents according to the prompt requirements
@@ -131,6 +271,69 @@ This collection includes professional prompts for the following testing domains:
 # AI will generate comprehensive test scenarios based on the prompt
 ```
 
+### Complete Testing Process Example
+
+```markdown
+# Complete testing project workflow
+1. Requirements Analysis → RequirementsAnalysis/RequirementsAnalysisPrompt_EN.md
+2. Test Strategy → TestStrategy/TestStrategyPrompt_EN.md
+3. Test Case Writing → TestCaseWriting/TestCaseWritingPrompt_EN.md
+4. Functional Testing → FunctionalTesting/FunctionalTestingPrompt_EN.md
+5. Automation Testing → AutomationTesting/AutomationTestingPrompt_EN.md
+6. Performance Testing → PerformanceTesting/PerformanceTestingPrompt_EN.md
+7. Mobile Testing → MobileTesting/MobileTestingPrompt_EN.md
+8. Bug Reporting → BugReporting/BugReportingPrompt_EN.md
+9. Test Reporting → TestReporting/TestReportingPrompt_EN.md
+```
+
+## 📊 Project Completion Status
+
+### ✅ Completed Modules
+
+| Module | Chinese Prompt | English Prompt | Lite Chinese | Lite English | README | Status |
+|--------|----------------|----------------|--------------|--------------|--------|--------|
+| Requirements Analysis | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
+| Test Case Writing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
+| Functional Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
+| Performance Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
+| Automation Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
+| Mobile Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
+| Bug Reporting | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
+| Test Reporting | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
+| Test Strategy | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
+| AI-Assisted Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
+| Manual Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
+| Security Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
+| API Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
+| Accessibility Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
+
+### 🔄 Workflows
+
+| Workflow | Chinese Version | English Version | Status |
+|----------|----------------|-----------------|--------|
+| Daily Testing Workflow | ✅ | ✅ | Complete |
+| Sprint Testing Workflow | ✅ | ✅ | Complete |
+| Release Testing Workflow | ✅ | ✅ | Complete |
+
+### 📈 Completion Statistics
+
+- **Total Testing Type Modules:** 14
+- **Completed Modules:** 14 (100%)
+- **Chinese Prompts:** 14 (100%)
+- **English Prompts:** 14 (100%)
+- **Lite Chinese:** 14 (100%)
+- **Lite English:** 14 (100%)
+- **Module Documentation:** 14 (100%)
+- **Workflows:** 3 (100%)
+
+### 🎯 Core Features
+
+- **Full Lifecycle Coverage:** Complete testing lifecycle from requirements analysis to test reporting
+- **Multi-language Support:** Bilingual prompts in Chinese and English for different team needs
+- **High Professionalism:** Each prompt designed by expert roles with 10+ years of experience
+- **High Practicality:** Provides standardized formats and best practice guidance
+- **Good Extensibility:** Modular design, easy to extend and customize
+
 ## 📁 Directory Structure
 
 ```
@@ -139,18 +342,51 @@ awesome-qa-prompt/
 ├── README_EN.md                       # Project documentation (English)
 ├── LICENSE                            # License file
 │
-├── RequirementsAnalysis/               # Requirements Analysis
+├── RequirementsAnalysis/              # Requirements Analysis
 │   ├── RequirementsAnalysisPrompt.md      # Chinese prompt
-│   └── RequirementsAnalysisPrompt_EN.md  # English prompt
+│   ├── RequirementsAnalysisPrompt_EN.md  # English prompt
+│   ├── RequirementsAnalysisPrompt_Lite.md     # Lite Chinese
+│   ├── RequirementsAnalysisPrompt_Lite_EN.md  # Lite English
+│   └── README.md                          # Module documentation
 │
-├── TestCaseWriting/                   # Test Case Writing (Planned)
-├── FunctionalTesting/                 # Functional Testing (Planned)
-├── PerformanceTesting/                # Performance Testing (Planned)
-├── AutomationTesting/                 # Automation Testing (Planned)
-├── MobileTesting/                     # Mobile Testing (Planned)
-├── BugReporting/                      # Bug Reporting (Planned)
-├── TestReporting/                     # Test Reporting (Planned)
-└── TestStrategy/                      # Test Strategy (Planned)
+├── TestCaseWriting/                   # Test Case Writing
+│   ├── TestCaseWritingPrompt.md           # Chinese prompt
+│   ├── TestCaseWritingPrompt_EN.md       # English prompt
+│   ├── TestCaseWritingPrompt_Lite.md     # Lite Chinese
+│   ├── TestCaseWritingPrompt_Lite_EN.md  # Lite English
+│   └── README.md                          # Module documentation
+│
+├── FunctionalTesting/                 # Functional Testing
+├── PerformanceTesting/                # Performance Testing
+├── AutomationTesting/                 # Automation Testing
+├── MobileTesting/                     # Mobile Testing
+├── BugReporting/                      # Bug Reporting
+├── TestReporting/                     # Test Reporting
+├── TestStrategy/                      # Test Strategy
+├── AIAssistedTesting/                 # AI-Assisted Testing
+├── ManualTesting/                     # Manual Testing
+├── SecurityTesting/                   # Security Testing
+├── APITesting/                        # API Testing
+├── AccessibilityTesting/              # Accessibility Testing
+│   # Each testing type folder contains the same file structure
+│
+├── Workflows/                         # Testing Workflows
+│   ├── README.md                          # Workflow documentation (bilingual)
+│   ├── daily-testing-workflow_CN.md       # Daily Testing Workflow (Chinese)
+│   ├── daily-testing-workflow_EN.md       # Daily Testing Workflow (English)
+│   ├── sprint-testing-workflow_CN.md      # Sprint Testing Workflow (Chinese)
+│   ├── sprint-testing-workflow_EN.md      # Sprint Testing Workflow (English)
+│   ├── release-testing-workflow_CN.md     # Release Testing Workflow (Chinese)
+│   └── release-testing-workflow_EN.md     # Release Testing Workflow (English)
+│
+└── Reference/                         # Reference materials (original content preserved)
+    ├── manual-qa/                     # Manual testing reference
+    ├── automation-qa/                 # Automation testing reference
+    ├── ai-assisted-qa/                # AI-assisted testing reference
+    ├── cursor-ai/                     # Cursor AI role reference
+    ├── mobile-testing/                # Mobile testing reference
+    ├── specialized-testing/           # Specialized testing reference
+    └── workflows/                     # Workflow reference (migrated to Workflows/)
 ```
 
 ## 📖 Usage Guide
@@ -187,7 +423,7 @@ We welcome all forms of contributions!
 
 1. **Fork the Project**
    ```bash
-   git clone https://github.com/your-username/awesome-qa-prompt.git
+   git clone https://github.com/naodeng/awesome-qa-prompt.git
    ```
 
 2. **Create a Branch**
@@ -208,6 +444,29 @@ We welcome all forms of contributions!
    ```
 
 5. **Create Pull Request**
+
+### Local Documentation Development
+
+If you want to run the documentation website locally:
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run docs:dev
+
+# Visit http://localhost:5173
+```
+
+Build production version:
+
+```bash
+npm run docs:build
+npm run docs:preview
+```
+
+For detailed instructions, see [QUICK_DEPLOY_EN.md](./QUICK_DEPLOY_EN.md).
 
 ### Types of Contributions
 
@@ -236,9 +495,16 @@ Thanks to all test engineers and QA experts who have contributed to this project
 
 For questions or suggestions, please contact us through:
 
-- Submit an Issue
-- Create a Pull Request
-- Send an email
+- 📝 Submit an [Issue](https://github.com/naodeng/awesome-qa-prompt/issues)
+- 🔀 Create a [Pull Request](https://github.com/naodeng/awesome-qa-prompt/pulls)
+- 🌟 Star the [Project](https://github.com/naodeng/awesome-qa-prompt)
+
+## 🔗 Related Links
+
+- **Online Documentation**: [https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)
+- **GitHub Repository**: [https://github.com/naodeng/awesome-qa-prompt](https://github.com/naodeng/awesome-qa-prompt)
+- **Issue Tracker**: [Issues](https://github.com/naodeng/awesome-qa-prompt/issues)
+- **Contribute**: [Pull Requests](https://github.com/naodeng/awesome-qa-prompt/pulls)
 
 ---
 
