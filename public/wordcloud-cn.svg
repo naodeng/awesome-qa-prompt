@@ -1,0 +1,90 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .word { font-family: 'Microsoft YaHei', 'SimHei', sans-serif; font-weight: bold; }
+      .size-xxl { font-size: 52px; fill: #1e3a8a; }
+      .size-xl { font-size: 42px; fill: #2563eb; }
+      .size-l { font-size: 34px; fill: #3b82f6; }
+      .size-m { font-size: 26px; fill: #60a5fa; }
+      .size-s { font-size: 20px; fill: #93c5fd; }
+      .size-xs { font-size: 16px; fill: #bfdbfe; }
+      .balance { stroke: #1e3a8a; stroke-width: 3; fill: none; }
+      .balance-fill { fill: #1e3a8a; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc"/>
+  
+  <!-- Balance Scale Structure -->
+  <!-- Base -->
+  <rect x="360" y="460" width="80" height="20" class="balance-fill" rx="5"/>
+  <!-- Pole -->
+  <rect x="395" y="200" width="10" height="260" class="balance-fill" rx="3"/>
+  <!-- Top beam -->
+  <line x1="200" y1="200" x2="600" y2="200" class="balance" stroke-width="4"/>
+  <!-- Left chain -->
+  <line x1="250" y1="200" x2="250" y2="250" class="balance"/>
+  <!-- Right chain -->
+  <line x1="550" y1="200" x2="550" y2="250" class="balance"/>
+  <!-- Left plate -->
+  <ellipse cx="250" cy="250" rx="120" ry="15" class="balance" stroke-width="2"/>
+  <!-- Right plate -->
+  <ellipse cx="550" cy="250" rx="120" ry="15" class="balance" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-size="28" font-weight="bold" fill="#1e3a8a">Awesome QA Prompt 词云</text>
+  
+  <!-- Left Plate - Testing Activities -->
+  <text x="250" y="100" text-anchor="middle" class="word size-xxl">测试</text>
+  <text x="250" y="150" text-anchor="middle" class="word size-xl">质量保证</text>
+  
+  <text x="180" y="280" text-anchor="middle" class="word size-l">需求分析</text>
+  <text x="320" y="280" text-anchor="middle" class="word size-l">测试用例</text>
+  
+  <text x="160" y="315" text-anchor="middle" class="word size-m">功能测试</text>
+  <text x="250" y="315" text-anchor="middle" class="word size-m">性能测试</text>
+  <text x="340" y="315" text-anchor="middle" class="word size-m">自动化</text>
+  
+  <text x="150" y="345" text-anchor="middle" class="word size-s">移动测试</text>
+  <text x="220" y="345" text-anchor="middle" class="word size-s">安全测试</text>
+  <text x="290" y="345" text-anchor="middle" class="word size-s">API测试</text>
+  <text x="350" y="345" text-anchor="middle" class="word size-s">缺陷上报</text>
+  
+  <text x="160" y="370" text-anchor="middle" class="word size-xs">测试报告</text>
+  <text x="220" y="370" text-anchor="middle" class="word size-xs">测试策略</text>
+  <text x="280" y="370" text-anchor="middle" class="word size-xs">手动测试</text>
+  <text x="340" y="370" text-anchor="middle" class="word size-xs">可访问性</text>
+  
+  <text x="180" y="395" text-anchor="middle" class="word size-xs">场景测试</text>
+  <text x="250" y="395" text-anchor="middle" class="word size-xs">边界值</text>
+  <text x="320" y="395" text-anchor="middle" class="word size-xs">回归测试</text>
+  
+  <!-- Right Plate - AI & Workflows -->
+  <text x="550" y="100" text-anchor="middle" class="word size-xxl">AI提示词</text>
+  <text x="550" y="150" text-anchor="middle" class="word size-xl">智能测试</text>
+  
+  <text x="480" y="280" text-anchor="middle" class="word size-l">工作流程</text>
+  <text x="620" y="280" text-anchor="middle" class="word size-l">最佳实践</text>
+  
+  <text x="460" y="315" text-anchor="middle" class="word size-m">日常测试</text>
+  <text x="550" y="315" text-anchor="middle" class="word size-m">迭代测试</text>
+  <text x="640" y="315" text-anchor="middle" class="word size-m">发布测试</text>
+  
+  <text x="450" y="345" text-anchor="middle" class="word size-s">敏捷开发</text>
+  <text x="520" y="345" text-anchor="middle" class="word size-s">持续集成</text>
+  <text x="590" y="345" text-anchor="middle" class="word size-s">测试覆盖</text>
+  <text x="650" y="345" text-anchor="middle" class="word size-s">文档化</text>
+  
+  <text x="460" y="370" text-anchor="middle" class="word size-xs">ChatGPT</text>
+  <text x="520" y="370" text-anchor="middle" class="word size-xs">Claude</text>
+  <text x="580" y="370" text-anchor="middle" class="word size-xs">双语支持</text>
+  <text x="640" y="370" text-anchor="middle" class="word size-xs">专业性</text>
+  
+  <text x="480" y="395" text-anchor="middle" class="word size-xs">模板化</text>
+  <text x="550" y="395" text-anchor="middle" class="word size-xs">结构化</text>
+  <text x="620" y="395" text-anchor="middle" class="word size-xs">高效率</text>
+  
+  <!-- Bottom decoration -->
+  <text x="400" y="490" text-anchor="middle" font-size="14" fill="#64748b">完整测试生命周期 · 中英文双语 · 专业AI提示词库</text>
+</svg>

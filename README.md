@@ -9,6 +9,13 @@
 
 一个专业的 QA（质量保证）AI 提示词集合，旨在帮助测试工程师和 QA 团队更高效地进行软件测试工作。本集合涵盖了从需求分析到测试执行的完整测试生命周期。
 
+## 📊 项目词云
+
+<div align="center">
+  <img src="./public/wordcloud-cn.svg" alt="Awesome QA Prompt 词云" width="800"/>
+  <p><em>项目核心关键词可视化 - 天平象征测试的平衡与严谨</em></p>
+</div>
+
 ## 🌐 在线文档
 
 **📖 访问在线文档获得更好的阅读体验：[https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)**

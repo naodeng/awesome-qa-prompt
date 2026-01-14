@@ -9,6 +9,13 @@ English | [简体中文](./README.md)
 
 A professional collection of AI prompts for QA (Quality Assurance) professionals, designed to help test engineers and QA teams work more efficiently throughout the software testing lifecycle.
 
+## 📊 Project Word Cloud
+
+<div align="center">
+  <img src="./public/wordcloud-en.svg" alt="Awesome QA Prompt Word Cloud" width="800"/>
+  <p><em>Visual representation of core keywords - Balance symbolizes precision and rigor in testing</em></p>
+</div>
+
 ## 🌐 Online Documentation
 
 **📖 Visit our online documentation for a better reading experience: [https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)**
