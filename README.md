@@ -1,6 +1,25 @@
 # Awesome QA Prompt Collection
 
+[![Deploy to GitHub Pages](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml/badge.svg)](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml)
+[![GitHub Pages](https://img.shields.io/badge/docs-online-blue.svg)](https://naodeng.github.io/awesome-qa-prompt/)
+[![GitHub](https://img.shields.io/github/license/naodeng/awesome-qa-prompt)](https://github.com/naodeng/awesome-qa-prompt/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/naodeng/awesome-qa-prompt?style=social)](https://github.com/naodeng/awesome-qa-prompt)
+
 一个专业的 QA（质量保证）AI 提示词集合，旨在帮助测试工程师和 QA 团队更高效地进行软件测试工作。本集合涵盖了从需求分析到测试执行的完整测试生命周期。
+
+## 🌐 在线文档
+
+**📖 访问在线文档获得更好的阅读体验：[https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)**
+
+> 💡 **部署说明**：本项目配置了 GitHub Actions 自动部署，每次推送到 `main` 分支会自动更新在线文档。查看 [快速部署指南](./QUICK_DEPLOY.md) 了解详情。
+
+在线文档提供：
+- 🔍 **全文搜索功能** - 快速查找所需内容
+- 🌓 **深色/浅色主题** - 自动适配系统主题
+- 🌏 **中英文双语切换** - 一键切换语言
+- 📱 **响应式设计** - 完美支持移动端访问
+- 📑 **清晰的导航** - 侧边栏和目录结构
+- ⚡ **极速加载** - 静态网站，秒开体验
 
 ## 📋 目录
 
@@ -203,7 +222,18 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
 
 ## 🚀 快速开始
 
-### 前置要求
+### 方式一：在线使用（推荐）
+
+访问在线文档网站：**[https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)**
+
+1. 在左侧导航栏选择测试类型或工作流程
+2. 点击"完整版"或"精简版"查看提示词
+3. 复制提示词内容到 AI 助手（ChatGPT、Claude、Cursor AI 等）
+4. 附加你的输入材料，获取结构化的测试文档
+
+### 方式二：本地使用
+
+#### 前置要求
 
 - 支持 Markdown 格式的 AI 助手（如 ChatGPT、Claude、Cursor AI 等）
 - 基本的软件测试知识
@@ -441,7 +471,7 @@ awesome-qa-prompt/
 
 1. **Fork 项目**
    ```bash
-   git clone https://github.com/your-username/awesome-qa-prompt.git
+   git clone https://github.com/naodeng/awesome-qa-prompt.git
    ```
 
 2. **创建分支**
@@ -462,6 +492,29 @@ awesome-qa-prompt/
    ```
 
 5. **创建 Pull Request**
+
+### 本地开发文档网站
+
+如果你想在本地运行文档网站：
+
+```bash
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run docs:dev
+
+# 访问 http://localhost:5173
+```
+
+构建生产版本：
+
+```bash
+npm run docs:build
+npm run docs:preview
+```
+
+详细说明请查看 [START.md](./START.md) 和 [DEPLOYMENT.md](./DEPLOYMENT.md)。
 
 ### 贡献类型
 
@@ -490,9 +543,16 @@ awesome-qa-prompt/
 
 如有问题或建议，欢迎通过以下方式联系：
 
-- 提交 Issue
-- 创建 Pull Request
-- 发送邮件
+- 📝 提交 [Issue](https://github.com/naodeng/awesome-qa-prompt/issues)
+- 🔀 创建 [Pull Request](https://github.com/naodeng/awesome-qa-prompt/pulls)
+- 🌟 给项目点个 [Star](https://github.com/naodeng/awesome-qa-prompt)
+
+## 🔗 相关链接
+
+- **在线文档**：[https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)
+- **GitHub 仓库**：[https://github.com/naodeng/awesome-qa-prompt](https://github.com/naodeng/awesome-qa-prompt)
+- **问题反馈**：[Issues](https://github.com/naodeng/awesome-qa-prompt/issues)
+- **贡献代码**：[Pull Requests](https://github.com/naodeng/awesome-qa-prompt/pulls)
 
 ---
 

@@ -1,6 +1,25 @@
 # Awesome QA Prompt Collection
 
+[![Deploy to GitHub Pages](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml/badge.svg)](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml)
+[![GitHub Pages](https://img.shields.io/badge/docs-online-blue.svg)](https://naodeng.github.io/awesome-qa-prompt/)
+[![GitHub](https://img.shields.io/github/license/naodeng/awesome-qa-prompt)](https://github.com/naodeng/awesome-qa-prompt/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/naodeng/awesome-qa-prompt?style=social)](https://github.com/naodeng/awesome-qa-prompt)
+
 A professional collection of AI prompts for QA (Quality Assurance) professionals, designed to help test engineers and QA teams work more efficiently throughout the software testing lifecycle.
+
+## 🌐 Online Documentation
+
+**📖 Visit our online documentation for a better reading experience: [https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)**
+
+> 💡 **Deployment**: This project is configured with GitHub Actions for automatic deployment. Every push to the `main` branch automatically updates the online documentation. See [Quick Deploy Guide](./QUICK_DEPLOY.md) for details.
+
+Online documentation features:
+- 🔍 **Full-text Search** - Quickly find what you need
+- 🌓 **Dark/Light Theme** - Auto-adapts to system theme
+- 🌏 **Bilingual Support** - Switch between Chinese and English
+- 📱 **Responsive Design** - Perfect mobile experience
+- 📑 **Clear Navigation** - Sidebar and table of contents
+- ⚡ **Lightning Fast** - Static site, instant loading
 
 ## 📋 Table of Contents
 

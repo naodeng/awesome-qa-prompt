@@ -1,0 +1,22 @@
+{
+  "name": "awesome-qa-prompt",
+  "version": "1.0.0",
+  "description": "专业的 QA（质量保证）AI 提示词集合",
+  "scripts": {
+    "docs:dev": "vitepress dev .",
+    "docs:build": "vitepress build .",
+    "docs:preview": "vitepress preview ."
+  },
+  "keywords": [
+    "qa",
+    "testing",
+    "prompt",
+    "ai",
+    "quality-assurance"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0"
+  }
+}

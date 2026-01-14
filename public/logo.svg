@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- 背景圆 -->
+  <circle cx="100" cy="100" r="90" fill="#3451b2" opacity="0.1"/>
+  
+  <!-- 主图标 - 检查标记 -->
+  <path d="M 60 100 L 85 125 L 140 70" 
+        stroke="#3451b2" 
+        stroke-width="12" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none"/>
+  
+  <!-- 装饰圆点 -->
+  <circle cx="50" cy="50" r="6" fill="#3451b2" opacity="0.6"/>
+  <circle cx="150" cy="50" r="6" fill="#3451b2" opacity="0.6"/>
+  <circle cx="50" cy="150" r="6" fill="#3451b2" opacity="0.6"/>
+  <circle cx="150" cy="150" r="6" fill="#3451b2" opacity="0.6"/>
+  
+  <!-- 文字 QA -->
+  <text x="100" y="180" 
+        font-family="Arial, sans-serif" 
+        font-size="24" 
+        font-weight="bold" 
+        fill="#3451b2" 
+        text-anchor="middle">QA</text>
+</svg>
