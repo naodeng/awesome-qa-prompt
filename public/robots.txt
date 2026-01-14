@@ -1,0 +1,11 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://naodeng.github.io/awesome-qa-prompt/sitemap.xml
+
+# Disallow crawling of specific paths
+Disallow: /node_modules/
+Disallow: /.vitepress/
+Disallow: /.git/

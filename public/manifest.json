@@ -1,0 +1,21 @@
+{
+  "name": "Awesome QA Prompt",
+  "short_name": "QA Prompt",
+  "description": "Professional QA AI Prompt Library for Software Testing",
+  "start_url": "/awesome-qa-prompt/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3eaf7c",
+  "icons": [
+    {
+      "src": "/awesome-qa-prompt/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "education", "development"]
+}

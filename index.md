@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: "QA Prompt Collection"
+  name: "Awesome QA Prompt"
   text: "专业的质量保证 AI 提示词库"
   tagline: 从需求分析到测试报告的完整测试生命周期 | Complete testing lifecycle from requirements to reporting
   image:
     src: /logo.svg
-    alt: QA Prompt Collection
+    alt: Awesome QA Prompt
   actions:
     - theme: brand
       text: 快速开始 / Get Started

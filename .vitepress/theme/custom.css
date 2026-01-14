@@ -58,6 +58,46 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
+/* 优化导航栏 Logo 大小 */
+.VPNavBarTitle .logo {
+  width: 32px;
+  height: 32px;
+}
+
+/* 优化首页 Hero Logo 大小 */
+.VPHero .image-container {
+  max-width: 100%;
+}
+
+.VPHero .image-bg {
+  max-width: 100%;
+}
+
+.VPHero .VPImage.image-src {
+  max-width: 360px !important;
+  max-height: 360px !important;
+  width: 360px;
+  height: 360px;
+}
+
+@media (min-width: 640px) {
+  .VPHero .VPImage.image-src {
+    max-width: 480px !important;
+    max-height: 480px !important;
+    width: 480px;
+    height: 480px;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPHero .VPImage.image-src {
+    max-width: 600px !important;
+    max-height: 600px !important;
+    width: 600px;
+    height: 600px;
+  }
+}
+
 /* 优化标题锚点 */
 .header-anchor {
   opacity: 0;
