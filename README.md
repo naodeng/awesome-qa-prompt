@@ -11,7 +11,7 @@
 
 **📖 访问在线文档获得更好的阅读体验：[https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)**
 
-> 💡 **部署说明**：本项目配置了 GitHub Actions 自动部署，每次推送到 `main` 分支会自动更新在线文档。查看 [快速部署指南](./QUICK_DEPLOY.md) 了解详情。
+> 💡 **部署说明**：本项目配置了 GitHub Actions 自动部署，每次推送到 `main` 分支会自动更新在线文档。查看 [部署指南](./QUICK_DEPLOY.md) 了解详情。
 
 在线文档提供：
 - 🔍 **全文搜索功能** - 快速查找所需内容

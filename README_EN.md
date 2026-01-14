@@ -11,7 +11,7 @@ A professional collection of AI prompts for QA (Quality Assurance) professionals
 
 **📖 Visit our online documentation for a better reading experience: [https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)**
 
-> 💡 **Deployment**: This project is configured with GitHub Actions for automatic deployment. Every push to the `main` branch automatically updates the online documentation. See [Quick Deploy Guide](./QUICK_DEPLOY.md) for details.
+> 💡 **Deployment**: This project is configured with GitHub Actions for automatic deployment. Every push to the `main` branch automatically updates the online documentation. See [Deployment Guide](./QUICK_DEPLOY_EN.md) for details.
 
 Online documentation features:
 - 🔍 **Full-text Search** - Quickly find what you need
