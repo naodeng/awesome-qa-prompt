@@ -4,20 +4,20 @@ layout: home
 hero:
   name: "QA Prompt Collection"
   text: "专业的质量保证 AI 提示词库"
-  tagline: 从需求分析到测试报告的完整测试生命周期
+  tagline: 从需求分析到测试报告的完整测试生命周期 | Complete testing lifecycle from requirements to reporting
   image:
     src: /logo.svg
     alt: QA Prompt Collection
   actions:
     - theme: brand
-      text: 快速开始
+      text: 快速开始 / Get Started
       link: /RequirementsAnalysis/RequirementsAnalysisPrompt
     - theme: alt
-      text: 查看工作流程
+      text: 查看工作流程 / Workflows
       link: /Workflows/README
     - theme: alt
-      text: GitHub
-      link: https://github.com/naodeng/awesome-qa-prompt
+      text: English Version
+      link: /README_EN
 
 features:
   - icon: 📝
@@ -123,6 +123,8 @@ features:
 - **专业性强**：每个提示词都由 10+ 年经验的专家角色设计
 - **实用性高**：提供标准化格式和最佳实践指导
 - **可扩展性好**：模块化设计，便于扩展和定制
+
+> 💡 **语言切换**：所有提示词都提供中英文版本。中文版文件名为 `*Prompt.md`，英文版为 `*Prompt_EN.md`。在导航栏选择"语言 / Language"可快速切换。
 
 ## 📈 项目统计
 

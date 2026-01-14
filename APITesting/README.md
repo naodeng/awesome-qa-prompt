@@ -1,5 +1,7 @@
 # API测试 (API Testing)
 
+[English](./README_EN.md) | 简体中文
+
 ## 模块简介
 
 API测试模块提供了全面的API测试策略和方法指导，涵盖REST、GraphQL、SOAP等各种API协议的测试，帮助测试团队从功能、性能、安全、可靠性等多维度验证API质量，确保微服务架构和API驱动系统的稳定性。
