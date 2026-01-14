@@ -310,8 +310,8 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '首页', link: '/' },
-          { text: '测试类型', link: '/RequirementsAnalysis/README' },
-          { text: '工作流程', link: '/Workflows/README' },
+          { text: '测试类型', link: '/RequirementsAnalysis/' },
+          { text: '工作流程', link: '/Workflows/' },
           { 
             text: '快速开始',
             items: [
@@ -335,7 +335,7 @@ export default defineConfig({
                   items: [
                     { text: '完整版', link: '/RequirementsAnalysis/RequirementsAnalysisPrompt' },
                     { text: '精简版', link: '/RequirementsAnalysis/RequirementsAnalysisPrompt_Lite' },
-                    { text: '说明文档', link: '/RequirementsAnalysis/README' }
+                    { text: '说明文档', link: '/RequirementsAnalysis/' }
                   ]
                 },
                 {
@@ -344,7 +344,7 @@ export default defineConfig({
                   items: [
                     { text: '完整版', link: '/TestCaseWriting/TestCaseWritingPrompt' },
                     { text: '精简版', link: '/TestCaseWriting/TestCaseWritingPrompt_Lite' },
-                    { text: '说明文档', link: '/TestCaseWriting/README' }
+                    { text: '说明文档', link: '/TestCaseWriting/' }
                   ]
                 },
                 {
@@ -353,7 +353,7 @@ export default defineConfig({
                   items: [
                     { text: '完整版', link: '/FunctionalTesting/FunctionalTestingPrompt' },
                     { text: '精简版', link: '/FunctionalTesting/FunctionalTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/FunctionalTesting/README' }
+                    { text: '说明文档', link: '/FunctionalTesting/' }
                   ]
                 },
                 {
@@ -362,7 +362,7 @@ export default defineConfig({
                   items: [
                     { text: '完整版', link: '/PerformanceTesting/PerformanceTestingPrompt' },
                     { text: '精简版', link: '/PerformanceTesting/PerformanceTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/PerformanceTesting/README' }
+                    { text: '说明文档', link: '/PerformanceTesting/' }
                   ]
                 },
                 {
@@ -371,7 +371,7 @@ export default defineConfig({
                   items: [
                     { text: '完整版', link: '/AutomationTesting/AutomationTestingPrompt' },
                     { text: '精简版', link: '/AutomationTesting/AutomationTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/AutomationTesting/README' }
+                    { text: '说明文档', link: '/AutomationTesting/' }
                   ]
                 },
                 {
@@ -380,7 +380,7 @@ export default defineConfig({
                   items: [
                     { text: '完整版', link: '/MobileTesting/MobileTestingPrompt' },
                     { text: '精简版', link: '/MobileTesting/MobileTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/MobileTesting/README' }
+                    { text: '说明文档', link: '/MobileTesting/' }
                   ]
                 },
                 {
@@ -389,7 +389,7 @@ export default defineConfig({
                   items: [
                     { text: '完整版', link: '/BugReporting/BugReportingPrompt' },
                     { text: '精简版', link: '/BugReporting/BugReportingPrompt_Lite' },
-                    { text: '说明文档', link: '/BugReporting/README' }
+                    { text: '说明文档', link: '/BugReporting/' }
                   ]
                 },
                 {
@@ -398,7 +398,7 @@ export default defineConfig({
                   items: [
                     { text: '完整版', link: '/TestReporting/TestReportingPrompt' },
                     { text: '精简版', link: '/TestReporting/TestReportingPrompt_Lite' },
-                    { text: '说明文档', link: '/TestReporting/README' }
+                    { text: '说明文档', link: '/TestReporting/' }
                   ]
                 },
                 {
@@ -407,7 +407,7 @@ export default defineConfig({
                   items: [
                     { text: '完整版', link: '/TestStrategy/TestStrategyPrompt' },
                     { text: '精简版', link: '/TestStrategy/TestStrategyPrompt_Lite' },
-                    { text: '说明文档', link: '/TestStrategy/README' }
+                    { text: '说明文档', link: '/TestStrategy/' }
                   ]
                 },
                 {
@@ -416,7 +416,7 @@ export default defineConfig({
                   items: [
                     { text: '完整版', link: '/AIAssistedTesting/AIAssistedTestingPrompt' },
                     { text: '精简版', link: '/AIAssistedTesting/AIAssistedTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/AIAssistedTesting/README' }
+                    { text: '说明文档', link: '/AIAssistedTesting/' }
                   ]
                 },
                 {
@@ -425,7 +425,7 @@ export default defineConfig({
                   items: [
                     { text: '完整版', link: '/ManualTesting/ManualTestingPrompt' },
                     { text: '精简版', link: '/ManualTesting/ManualTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/ManualTesting/README' }
+                    { text: '说明文档', link: '/ManualTesting/' }
                   ]
                 },
                 {
@@ -434,7 +434,7 @@ export default defineConfig({
                   items: [
                     { text: '完整版', link: '/SecurityTesting/SecurityTestingPrompt' },
                     { text: '精简版', link: '/SecurityTesting/SecurityTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/SecurityTesting/README' }
+                    { text: '说明文档', link: '/SecurityTesting/' }
                   ]
                 },
                 {
@@ -443,7 +443,7 @@ export default defineConfig({
                   items: [
                     { text: '完整版', link: '/APITesting/APITestingPrompt' },
                     { text: '精简版', link: '/APITesting/APITestingPrompt_Lite' },
-                    { text: '说明文档', link: '/APITesting/README' }
+                    { text: '说明文档', link: '/APITesting/' }
                   ]
                 },
                 {
@@ -452,7 +452,7 @@ export default defineConfig({
                   items: [
                     { text: '完整版', link: '/AccessibilityTesting/AccessibilityTestingPrompt' },
                     { text: '精简版', link: '/AccessibilityTesting/AccessibilityTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/AccessibilityTesting/README' }
+                    { text: '说明文档', link: '/AccessibilityTesting/' }
                   ]
                 }
               ]
@@ -461,7 +461,7 @@ export default defineConfig({
               text: '🔄 工作流程',
               collapsed: false,
               items: [
-                { text: '工作流程概览', link: '/Workflows/README' },
+                { text: '工作流程概览', link: '/Workflows/' },
                 { text: '📅 日常测试工作流程', link: '/Workflows/daily-testing-workflow_CN' },
                 { text: '🏃 迭代测试工作流程', link: '/Workflows/sprint-testing-workflow_CN' },
                 { text: '🚀 发布测试工作流程', link: '/Workflows/release-testing-workflow_CN' }
