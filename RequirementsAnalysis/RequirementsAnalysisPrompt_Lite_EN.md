@@ -1,5 +1,9 @@
 # Requirements Analysis Prompt (Lite Version)
 
+> 💡 **Usage Instructions**: Please copy all content below the divider line to your AI assistant (such as ChatGPT, Claude, Cursor AI, etc.), then attach your requirements document to start using.
+
+---
+
 **Role:** Senior Requirements Analysis Expert
 
 **Task:** Based on the provided requirements documentation, quickly generate comprehensive test scenario designs.

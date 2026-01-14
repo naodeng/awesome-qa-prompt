@@ -1,5 +1,9 @@
 # Automation Testing Prompt (Lite Version)
 
+> 💡 **Usage Instructions**: Please copy all content below the divider line to your AI assistant (such as ChatGPT, Claude, Cursor AI, etc.), then attach your automation requirements to start using.
+
+---
+
 **Role:** Senior Automation Testing Expert
 
 **Task:** Based on testing requirements, quickly design automation testing strategies and implementation plans.

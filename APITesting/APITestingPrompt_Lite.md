@@ -1,5 +1,9 @@
 # API测试 Prompt (精简版)
 
+> 💡 **使用说明**：请复制下方虚线以下的所有内容到 AI 助手（如 ChatGPT、Claude、Cursor AI 等），然后附加你的API文档即可开始使用。
+
+---
+
 **Role:** 资深API测试专家
 
 **Task:** 基于API文档，快速设计API测试策略和自动化方案。

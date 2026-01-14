@@ -1,5 +1,9 @@
 # API Testing Prompt (Lite Version)
 
+> 💡 **Usage Instructions**: Please copy all content below the divider line to your AI assistant (such as ChatGPT, Claude, Cursor AI, etc.), then attach your API documentation to start using.
+
+---
+
 **Role:** Senior API Testing Expert
 
 **Task:** Based on API documentation, quickly design API testing strategies and automation plans.

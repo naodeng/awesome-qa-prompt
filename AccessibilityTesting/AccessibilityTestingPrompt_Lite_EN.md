@@ -1,5 +1,9 @@
 # Accessibility Testing Prompt (Lite Version)
 
+> 💡 **Usage Instructions**: Please copy all content below the divider line to your AI assistant (such as ChatGPT, Claude, Cursor AI, etc.), then attach your application information to start using.
+
+---
+
 **Role:** Senior Accessibility Testing Expert
 
 **Task:** Based on product characteristics, quickly design accessibility testing strategies and compliance verification plans.

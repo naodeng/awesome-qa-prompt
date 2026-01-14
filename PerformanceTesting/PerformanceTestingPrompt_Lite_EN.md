@@ -1,5 +1,9 @@
 # Performance Testing Prompt (Lite Version)
 
+> 💡 **Usage Instructions**: Please copy all content below the divider line to your AI assistant (such as ChatGPT, Claude, Cursor AI, etc.), then attach your performance requirements to start using.
+
+---
+
 **Role:** Senior Performance Testing Expert
 
 **Task:** Based on performance requirements, quickly design performance testing strategies and execution plans.

@@ -1,5 +1,9 @@
 # Test Reporting Prompt (Lite Version)
 
+> 💡 **Usage Instructions**: Please copy all content below the divider line to your AI assistant (such as ChatGPT, Claude, Cursor AI, etc.), then attach your test data to start using.
+
+---
+
 **Role:** Senior Test Reporting Expert
 
 **Task:** Based on test execution results, quickly generate professional test reports and quality analysis.
