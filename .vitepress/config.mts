@@ -253,6 +253,9 @@ export default defineConfig({
     'APITesting/README.md': 'APITesting/index.md',
     'AccessibilityTesting/README.md': 'AccessibilityTesting/index.md',
     'Workflows/README.md': 'Workflows/index.md',
+    'Workflows/daily-testing-workflow_CN.md': 'Workflows/daily-testing-workflow_CN.md',
+    'Workflows/sprint-testing-workflow_CN.md': 'Workflows/sprint-testing-workflow_CN.md',
+    'Workflows/release-testing-workflow_CN.md': 'Workflows/release-testing-workflow_CN.md',
     // 英文版本 - 将 _EN 文件映射到 /en/ 路径
     'RequirementsAnalysis/README_EN.md': 'en/RequirementsAnalysis/index.md',
     'RequirementsAnalysis/RequirementsAnalysisPrompt_EN.md': 'en/RequirementsAnalysis/RequirementsAnalysisPrompt.md',
