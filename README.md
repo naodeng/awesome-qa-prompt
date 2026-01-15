@@ -6,6 +6,9 @@
 [![GitHub Pages](https://img.shields.io/badge/docs-online-blue.svg)](https://naodeng.github.io/awesome-qa-prompt/)
 [![GitHub](https://img.shields.io/github/license/naodeng/awesome-qa-prompt)](https://github.com/naodeng/awesome-qa-prompt/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/naodeng/awesome-qa-prompt?style=social)](https://github.com/naodeng/awesome-qa-prompt)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fnaodeng%2Fawesome-qa-prompt&label=Visitors&countColor=%23263759&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/naodeng/awesome-qa-prompt?style=flat)
+![GitHub watchers](https://img.shields.io/github/watchers/naodeng/awesome-qa-prompt?style=flat)
 
 一个专业的 QA（质量保证）AI 提示词集合，旨在帮助测试工程师和 QA 团队更高效地进行软件测试工作。本集合涵盖了从需求分析到测试执行的完整测试生命周期。
 
