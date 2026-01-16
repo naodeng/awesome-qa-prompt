@@ -89,6 +89,11 @@ features:
     title: Accessibility Testing
     details: Web accessibility testing and WCAG compliance checking to ensure barrier-free access to products
     link: /en/AccessibilityTesting/AccessibilityTestingPrompt
+    
+  - icon: 🔍
+    title: Test Case Review
+    details: Professional test case review and quality control, excelling at discovering extreme edge cases and potential risks
+    link: /en/TestCaseReviewer/TestCaseReviewerPrompt
 ---
 
 ## 🔄 Testing Workflows
@@ -128,10 +133,10 @@ This project provides three practical testing workflows to help teams efficientl
 
 ## 📈 Project Statistics
 
-- **Testing Type Modules**: 14 (100% complete)
+- **Testing Type Modules**: 15 (100% complete)
 - **Workflows**: 3 (100% complete)
-- **Chinese Prompts**: 14 full versions + 14 lite versions
-- **English Prompts**: 14 full versions + 14 lite versions
+- **Chinese Prompts**: 15 full versions + 15 lite versions
+- **English Prompts**: 15 full versions + 15 lite versions
 - **Total Documents**: 60+ professional prompt documents
 
 ## 🚀 Quick Start

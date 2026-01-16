@@ -195,6 +195,16 @@ This collection includes professional prompts for the following testing domains:
   - Keyboard navigation testing
   - Color contrast and visual testing
 
+### 15. 🔍 Test Case Review
+- **Location**: `TestCaseReviewer/TestCaseReviewerPrompt_EN.md`
+- **Description**: Professional test case review and quality control
+- **Use Cases**: Test case review, quality assessment, risk identification
+- **Core Capabilities**:
+  - Multi-dimensional review (business, technical, user experience, quality)
+  - Extreme edge case discovery and potential risk identification
+  - Test coverage check and missing scenario identification
+  - Structured review reports and improvement recommendations
+
 ## 🔄 Testing Workflows
 
 This project provides three practical testing workflows to help teams efficiently use the prompt library in different scenarios:
@@ -316,6 +326,7 @@ Visit our online documentation: **[https://naodeng.github.io/awesome-qa-prompt/]
 | Security Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
 | API Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
 | Accessibility Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
+| Test Case Review | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
 
 ### 🔄 Workflows
 
@@ -327,13 +338,13 @@ Visit our online documentation: **[https://naodeng.github.io/awesome-qa-prompt/]
 
 ### 📈 Completion Statistics
 
-- **Total Testing Type Modules:** 14
-- **Completed Modules:** 14 (100%)
-- **Chinese Prompts:** 14 (100%)
-- **English Prompts:** 14 (100%)
-- **Lite Chinese:** 14 (100%)
-- **Lite English:** 14 (100%)
-- **Module Documentation:** 14 (100%)
+- **Total Testing Type Modules:** 15
+- **Completed Modules:** 15 (100%)
+- **Chinese Prompts:** 15 (100%)
+- **English Prompts:** 15 (100%)
+- **Lite Chinese:** 15 (100%)
+- **Lite English:** 15 (100%)
+- **Module Documentation:** 15 (100%)
 - **Workflows:** 3 (100%)
 
 ### 🎯 Core Features
@@ -378,6 +389,7 @@ awesome-qa-prompt/
 ├── SecurityTesting/                   # Security Testing
 ├── APITesting/                        # API Testing
 ├── AccessibilityTesting/              # Accessibility Testing
+├── TestCaseReviewer/                  # Test Case Review
 │   # Each testing type folder contains the same file structure
 │
 ├── Workflows/                         # Testing Workflows

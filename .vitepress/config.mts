@@ -138,6 +138,15 @@ function getEnglishSidebar() {
             { text: 'Lite Version', link: '/en/AccessibilityTesting/AccessibilityTestingPrompt_Lite' },
             { text: 'Documentation', link: '/en/AccessibilityTesting/' }
           ]
+        },
+        {
+          text: '🔍 Test Case Review',
+          collapsed: true,
+          items: [
+            { text: 'Full Version', link: '/en/TestCaseReviewer/TestCaseReviewerPrompt' },
+            { text: 'Lite Version', link: '/en/TestCaseReviewer/TestCaseReviewerPrompt_Lite' },
+            { text: 'Documentation', link: '/en/TestCaseReviewer/' }
+          ]
         }
       ]
     },
@@ -252,6 +261,7 @@ export default defineConfig({
     'SecurityTesting/README.md': 'SecurityTesting/index.md',
     'APITesting/README.md': 'APITesting/index.md',
     'AccessibilityTesting/README.md': 'AccessibilityTesting/index.md',
+    'TestCaseReviewer/README.md': 'TestCaseReviewer/index.md',
     'Workflows/README.md': 'Workflows/index.md',
     'Workflows/daily-testing-workflow_CN.md': 'Workflows/daily-testing-workflow_CN.md',
     'Workflows/sprint-testing-workflow_CN.md': 'Workflows/sprint-testing-workflow_CN.md',
@@ -299,6 +309,9 @@ export default defineConfig({
     'AccessibilityTesting/README_EN.md': 'en/AccessibilityTesting/index.md',
     'AccessibilityTesting/AccessibilityTestingPrompt_EN.md': 'en/AccessibilityTesting/AccessibilityTestingPrompt.md',
     'AccessibilityTesting/AccessibilityTestingPrompt_Lite_EN.md': 'en/AccessibilityTesting/AccessibilityTestingPrompt_Lite.md',
+    'TestCaseReviewer/README_EN.md': 'en/TestCaseReviewer/index.md',
+    'TestCaseReviewer/TestCaseReviewerPrompt_EN.md': 'en/TestCaseReviewer/TestCaseReviewerPrompt.md',
+    'TestCaseReviewer/TestCaseReviewerPrompt_Lite_EN.md': 'en/TestCaseReviewer/TestCaseReviewerPrompt_Lite.md',
     'Workflows/README_EN.md': 'en/Workflows/index.md',
     'Workflows/daily-testing-workflow_EN.md': 'en/Workflows/daily-testing-workflow.md',
     'Workflows/sprint-testing-workflow_EN.md': 'en/Workflows/sprint-testing-workflow.md',
@@ -456,6 +469,15 @@ export default defineConfig({
                     { text: '完整版', link: '/AccessibilityTesting/AccessibilityTestingPrompt' },
                     { text: '精简版', link: '/AccessibilityTesting/AccessibilityTestingPrompt_Lite' },
                     { text: '说明文档', link: '/AccessibilityTesting/' }
+                  ]
+                },
+                {
+                  text: '🔍 测试用例评审',
+                  collapsed: true,
+                  items: [
+                    { text: '完整版', link: '/TestCaseReviewer/TestCaseReviewerPrompt' },
+                    { text: '精简版', link: '/TestCaseReviewer/TestCaseReviewerPrompt_Lite' },
+                    { text: '说明文档', link: '/TestCaseReviewer/' }
                   ]
                 }
               ]
