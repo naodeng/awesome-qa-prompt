@@ -193,19 +193,19 @@ export default defineConfig({
     
     // Open Graph / Facebook
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:url', content: 'https://naodeng.github.io/awesome-qa-prompt/' }],
+    ['meta', { property: 'og:url', content: 'https://qaprompt.inaodeng.com/' }],
     ['meta', { property: 'og:title', content: 'Awesome QA Prompt - Professional QA AI Prompt Library' }],
     ['meta', { property: 'og:description', content: 'A professional collection of AI prompts for QA professionals, covering the complete testing lifecycle from requirements analysis to test reporting. 专业的质量保证AI提示词库，涵盖从需求分析到测试报告的完整测试生命周期。' }],
-    ['meta', { property: 'og:image', content: `https://naodeng.github.io${base}logo.svg` }],
+    ['meta', { property: 'og:image', content: `https://qaprompt.inaodeng.com${base}logo.svg` }],
     ['meta', { property: 'og:locale', content: 'zh_CN' }],
     ['meta', { property: 'og:locale:alternate', content: 'en_US' }],
     
     // Twitter Card
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:url', content: 'https://naodeng.github.io/awesome-qa-prompt/' }],
+    ['meta', { name: 'twitter:url', content: 'https://qaprompt.inaodeng.com/' }],
     ['meta', { name: 'twitter:title', content: 'Awesome QA Prompt - Professional QA AI Prompt Library' }],
     ['meta', { name: 'twitter:description', content: 'A professional collection of AI prompts for QA professionals, covering the complete testing lifecycle from requirements analysis to test reporting.' }],
-    ['meta', { name: 'twitter:image', content: `https://naodeng.github.io${base}logo.svg` }],
+    ['meta', { name: 'twitter:image', content: `https://qaprompt.inaodeng.com${base}logo.svg` }],
     
     // Additional SEO
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -218,7 +218,7 @@ export default defineConfig({
       '@type': 'WebSite',
       name: 'Awesome QA Prompt',
       description: 'Professional QA AI Prompt Library for Software Testing',
-      url: 'https://naodeng.github.io/awesome-qa-prompt/',
+      url: 'https://qaprompt.inaodeng.com/',
       inLanguage: ['zh-CN', 'en-US'],
       author: {
         '@type': 'Organization',
@@ -236,86 +236,143 @@ export default defineConfig({
     '**/node_modules/**',
     '**/.git/**',
     '**/.vitepress/**',
-    '**/Reference/**'
+    '**/future-updates/**'
   ],
   
   // 忽略死链接检查
   ignoreDeadLinks: true,
   
-  // 重写规则 - 将 _EN 文件映射到 /en/ 路径，将 README.md 映射到 index.md
+  // 重写规则 - 适应新的目录结构
   rewrites: {
-    'en.md': 'en/index.md',
+    // 首页文件映射
+    'docs/index.md': 'index.md',
+    'docs/en.md': 'en/index.md',
     'README_EN.md': 'en/README.md',
-    // 中文版本 - 将 README.md 映射到 index.md
-    'RequirementsAnalysis/README.md': 'RequirementsAnalysis/index.md',
-    'TestCaseWriting/README.md': 'TestCaseWriting/index.md',
-    'FunctionalTesting/README.md': 'FunctionalTesting/index.md',
-    'PerformanceTesting/README.md': 'PerformanceTesting/index.md',
-    'AutomationTesting/README.md': 'AutomationTesting/index.md',
-    'MobileTesting/README.md': 'MobileTesting/index.md',
-    'BugReporting/README.md': 'BugReporting/index.md',
-    'TestReporting/README.md': 'TestReporting/index.md',
-    'TestStrategy/README.md': 'TestStrategy/index.md',
-    'AIAssistedTesting/README.md': 'AIAssistedTesting/index.md',
-    'ManualTesting/README.md': 'ManualTesting/index.md',
-    'SecurityTesting/README.md': 'SecurityTesting/index.md',
-    'APITesting/README.md': 'APITesting/index.md',
-    'AccessibilityTesting/README.md': 'AccessibilityTesting/index.md',
-    'TestCaseReviewer/README.md': 'TestCaseReviewer/index.md',
-    'Workflows/README.md': 'Workflows/index.md',
-    'Workflows/daily-testing-workflow_CN.md': 'Workflows/daily-testing-workflow_CN.md',
-    'Workflows/sprint-testing-workflow_CN.md': 'Workflows/sprint-testing-workflow_CN.md',
-    'Workflows/release-testing-workflow_CN.md': 'Workflows/release-testing-workflow_CN.md',
-    // 英文版本 - 将 _EN 文件映射到 /en/ 路径
-    'RequirementsAnalysis/README_EN.md': 'en/RequirementsAnalysis/index.md',
-    'RequirementsAnalysis/RequirementsAnalysisPrompt_EN.md': 'en/RequirementsAnalysis/RequirementsAnalysisPrompt.md',
-    'RequirementsAnalysis/RequirementsAnalysisPrompt_Lite_EN.md': 'en/RequirementsAnalysis/RequirementsAnalysisPrompt_Lite.md',
-    'TestCaseWriting/README_EN.md': 'en/TestCaseWriting/index.md',
-    'TestCaseWriting/TestCaseWritingPrompt_EN.md': 'en/TestCaseWriting/TestCaseWritingPrompt.md',
-    'TestCaseWriting/TestCaseWritingPrompt_Lite_EN.md': 'en/TestCaseWriting/TestCaseWritingPrompt_Lite.md',
-    'FunctionalTesting/README_EN.md': 'en/FunctionalTesting/index.md',
-    'FunctionalTesting/FunctionalTestingPrompt_EN.md': 'en/FunctionalTesting/FunctionalTestingPrompt.md',
-    'FunctionalTesting/FunctionalTestingPrompt_Lite_EN.md': 'en/FunctionalTesting/FunctionalTestingPrompt_Lite.md',
-    'PerformanceTesting/README_EN.md': 'en/PerformanceTesting/index.md',
-    'PerformanceTesting/PerformanceTestingPrompt_EN.md': 'en/PerformanceTesting/PerformanceTestingPrompt.md',
-    'PerformanceTesting/PerformanceTestingPrompt_Lite_EN.md': 'en/PerformanceTesting/PerformanceTestingPrompt_Lite.md',
-    'AutomationTesting/README_EN.md': 'en/AutomationTesting/index.md',
-    'AutomationTesting/AutomationTestingPrompt_EN.md': 'en/AutomationTesting/AutomationTestingPrompt.md',
-    'AutomationTesting/AutomationTestingPrompt_Lite_EN.md': 'en/AutomationTesting/AutomationTestingPrompt_Lite.md',
-    'MobileTesting/README_EN.md': 'en/MobileTesting/index.md',
-    'MobileTesting/MobileTestingPrompt_EN.md': 'en/MobileTesting/MobileTestingPrompt.md',
-    'MobileTesting/MobileTestingPrompt_Lite_EN.md': 'en/MobileTesting/MobileTestingPrompt_Lite.md',
-    'BugReporting/README_EN.md': 'en/BugReporting/index.md',
-    'BugReporting/BugReportingPrompt_EN.md': 'en/BugReporting/BugReportingPrompt.md',
-    'BugReporting/BugReportingPrompt_Lite_EN.md': 'en/BugReporting/BugReportingPrompt_Lite.md',
-    'TestReporting/README_EN.md': 'en/TestReporting/index.md',
-    'TestReporting/TestReportingPrompt_EN.md': 'en/TestReporting/TestReportingPrompt.md',
-    'TestReporting/TestReportingPrompt_Lite_EN.md': 'en/TestReporting/TestReportingPrompt_Lite.md',
-    'TestStrategy/README_EN.md': 'en/TestStrategy/index.md',
-    'TestStrategy/TestStrategyPrompt_EN.md': 'en/TestStrategy/TestStrategyPrompt.md',
-    'TestStrategy/TestStrategyPrompt_Lite_EN.md': 'en/TestStrategy/TestStrategyPrompt_Lite.md',
-    'AIAssistedTesting/README_EN.md': 'en/AIAssistedTesting/index.md',
-    'AIAssistedTesting/AIAssistedTestingPrompt_EN.md': 'en/AIAssistedTesting/AIAssistedTestingPrompt.md',
-    'AIAssistedTesting/AIAssistedTestingPrompt_Lite_EN.md': 'en/AIAssistedTesting/AIAssistedTestingPrompt_Lite.md',
-    'ManualTesting/README_EN.md': 'en/ManualTesting/index.md',
-    'ManualTesting/ManualTestingPrompt_EN.md': 'en/ManualTesting/ManualTestingPrompt.md',
-    'ManualTesting/ManualTestingPrompt_Lite_EN.md': 'en/ManualTesting/ManualTestingPrompt_Lite.md',
-    'SecurityTesting/README_EN.md': 'en/SecurityTesting/index.md',
-    'SecurityTesting/SecurityTestingPrompt_EN.md': 'en/SecurityTesting/SecurityTestingPrompt.md',
-    'SecurityTesting/SecurityTestingPrompt_Lite_EN.md': 'en/SecurityTesting/SecurityTestingPrompt_Lite.md',
-    'APITesting/README_EN.md': 'en/APITesting/index.md',
-    'APITesting/APITestingPrompt_EN.md': 'en/APITesting/APITestingPrompt.md',
-    'APITesting/APITestingPrompt_Lite_EN.md': 'en/APITesting/APITestingPrompt_Lite.md',
-    'AccessibilityTesting/README_EN.md': 'en/AccessibilityTesting/index.md',
-    'AccessibilityTesting/AccessibilityTestingPrompt_EN.md': 'en/AccessibilityTesting/AccessibilityTestingPrompt.md',
-    'AccessibilityTesting/AccessibilityTestingPrompt_Lite_EN.md': 'en/AccessibilityTesting/AccessibilityTestingPrompt_Lite.md',
-    'TestCaseReviewer/README_EN.md': 'en/TestCaseReviewer/index.md',
-    'TestCaseReviewer/TestCaseReviewerPrompt_EN.md': 'en/TestCaseReviewer/TestCaseReviewerPrompt.md',
-    'TestCaseReviewer/TestCaseReviewerPrompt_Lite_EN.md': 'en/TestCaseReviewer/TestCaseReviewerPrompt_Lite.md',
-    'Workflows/README_EN.md': 'en/Workflows/index.md',
-    'Workflows/daily-testing-workflow_EN.md': 'en/Workflows/daily-testing-workflow.md',
-    'Workflows/sprint-testing-workflow_EN.md': 'en/Workflows/sprint-testing-workflow.md',
-    'Workflows/release-testing-workflow_EN.md': 'en/Workflows/release-testing-workflow.md'
+    
+    // 中文版本 - 将 testing-types 下的文件映射到根路径
+    'testing-types/requirements-analysis/README.md': 'RequirementsAnalysis/index.md',
+    'testing-types/test-case-writing/README.md': 'TestCaseWriting/index.md',
+    'testing-types/functional-testing/README.md': 'FunctionalTesting/index.md',
+    'testing-types/performance-testing/README.md': 'PerformanceTesting/index.md',
+    'testing-types/automation-testing/README.md': 'AutomationTesting/index.md',
+    'testing-types/mobile-testing/README.md': 'MobileTesting/index.md',
+    'testing-types/bug-reporting/README.md': 'BugReporting/index.md',
+    'testing-types/test-reporting/README.md': 'TestReporting/index.md',
+    'testing-types/test-strategy/README.md': 'TestStrategy/index.md',
+    'testing-types/ai-assisted-testing/README.md': 'AIAssistedTesting/index.md',
+    'testing-types/manual-testing/README.md': 'ManualTesting/index.md',
+    'testing-types/security-testing/README.md': 'SecurityTesting/index.md',
+    'testing-types/api-testing/README.md': 'APITesting/index.md',
+    'testing-types/accessibility-testing/README.md': 'AccessibilityTesting/index.md',
+    'testing-types/test-case-reviewer/README.md': 'TestCaseReviewer/index.md',
+    
+    // 中文版本 - 提示词文件映射
+    'testing-types/requirements-analysis/RequirementsAnalysisPrompt.md': 'RequirementsAnalysis/RequirementsAnalysisPrompt.md',
+    'testing-types/requirements-analysis/RequirementsAnalysisPrompt_Lite.md': 'RequirementsAnalysis/RequirementsAnalysisPrompt_Lite.md',
+    'testing-types/test-case-writing/TestCaseWritingPrompt.md': 'TestCaseWriting/TestCaseWritingPrompt.md',
+    'testing-types/test-case-writing/TestCaseWritingPrompt_Lite.md': 'TestCaseWriting/TestCaseWritingPrompt_Lite.md',
+    'testing-types/functional-testing/FunctionalTestingPrompt.md': 'FunctionalTesting/FunctionalTestingPrompt.md',
+    'testing-types/functional-testing/FunctionalTestingPrompt_Lite.md': 'FunctionalTesting/FunctionalTestingPrompt_Lite.md',
+    'testing-types/performance-testing/PerformanceTestingPrompt.md': 'PerformanceTesting/PerformanceTestingPrompt.md',
+    'testing-types/performance-testing/PerformanceTestingPrompt_Lite.md': 'PerformanceTesting/PerformanceTestingPrompt_Lite.md',
+    'testing-types/automation-testing/AutomationTestingPrompt.md': 'AutomationTesting/AutomationTestingPrompt.md',
+    'testing-types/automation-testing/AutomationTestingPrompt_Lite.md': 'AutomationTesting/AutomationTestingPrompt_Lite.md',
+    'testing-types/mobile-testing/MobileTestingPrompt.md': 'MobileTesting/MobileTestingPrompt.md',
+    'testing-types/mobile-testing/MobileTestingPrompt_Lite.md': 'MobileTesting/MobileTestingPrompt_Lite.md',
+    'testing-types/bug-reporting/BugReportingPrompt.md': 'BugReporting/BugReportingPrompt.md',
+    'testing-types/bug-reporting/BugReportingPrompt_Lite.md': 'BugReporting/BugReportingPrompt_Lite.md',
+    'testing-types/test-reporting/TestReportingPrompt.md': 'TestReporting/TestReportingPrompt.md',
+    'testing-types/test-reporting/TestReportingPrompt_Lite.md': 'TestReporting/TestReportingPrompt_Lite.md',
+    'testing-types/test-strategy/TestStrategyPrompt.md': 'TestStrategy/TestStrategyPrompt.md',
+    'testing-types/test-strategy/TestStrategyPrompt_Lite.md': 'TestStrategy/TestStrategyPrompt_Lite.md',
+    'testing-types/ai-assisted-testing/AIAssistedTestingPrompt.md': 'AIAssistedTesting/AIAssistedTestingPrompt.md',
+    'testing-types/ai-assisted-testing/AIAssistedTestingPrompt_Lite.md': 'AIAssistedTesting/AIAssistedTestingPrompt_Lite.md',
+    'testing-types/manual-testing/ManualTestingPrompt.md': 'ManualTesting/ManualTestingPrompt.md',
+    'testing-types/manual-testing/ManualTestingPrompt_Lite.md': 'ManualTesting/ManualTestingPrompt_Lite.md',
+    'testing-types/security-testing/SecurityTestingPrompt.md': 'SecurityTesting/SecurityTestingPrompt.md',
+    'testing-types/security-testing/SecurityTestingPrompt_Lite.md': 'SecurityTesting/SecurityTestingPrompt_Lite.md',
+    'testing-types/api-testing/APITestingPrompt.md': 'APITesting/APITestingPrompt.md',
+    'testing-types/api-testing/APITestingPrompt_Lite.md': 'APITesting/APITestingPrompt_Lite.md',
+    'testing-types/accessibility-testing/AccessibilityTestingPrompt.md': 'AccessibilityTesting/AccessibilityTestingPrompt.md',
+    'testing-types/accessibility-testing/AccessibilityTestingPrompt_Lite.md': 'AccessibilityTesting/AccessibilityTestingPrompt_Lite.md',
+    'testing-types/test-case-reviewer/TestCaseReviewerPrompt.md': 'TestCaseReviewer/TestCaseReviewerPrompt.md',
+    'testing-types/test-case-reviewer/TestCaseReviewerPrompt_Lite.md': 'TestCaseReviewer/TestCaseReviewerPrompt_Lite.md',
+    
+    // 工作流程映射
+    'workflows/README.md': 'Workflows/index.md',
+    'workflows/daily-testing-workflow_CN.md': 'Workflows/daily-testing-workflow_CN.md',
+    'workflows/sprint-testing-workflow_CN.md': 'Workflows/sprint-testing-workflow_CN.md',
+    'workflows/release-testing-workflow_CN.md': 'Workflows/release-testing-workflow_CN.md',
+    
+    // 英文版本映射
+    'testing-types/requirements-analysis/README_EN.md': 'en/RequirementsAnalysis/index.md',
+    'testing-types/requirements-analysis/RequirementsAnalysisPrompt_EN.md': 'en/RequirementsAnalysis/RequirementsAnalysisPrompt.md',
+    'testing-types/requirements-analysis/RequirementsAnalysisPrompt_Lite_EN.md': 'en/RequirementsAnalysis/RequirementsAnalysisPrompt_Lite.md',
+    'testing-types/test-case-writing/README_EN.md': 'en/TestCaseWriting/index.md',
+    'testing-types/test-case-writing/TestCaseWritingPrompt_EN.md': 'en/TestCaseWriting/TestCaseWritingPrompt.md',
+    'testing-types/test-case-writing/TestCaseWritingPrompt_Lite_EN.md': 'en/TestCaseWriting/TestCaseWritingPrompt_Lite.md',
+    'testing-types/functional-testing/README_EN.md': 'en/FunctionalTesting/index.md',
+    'testing-types/functional-testing/FunctionalTestingPrompt_EN.md': 'en/FunctionalTesting/FunctionalTestingPrompt.md',
+    'testing-types/functional-testing/FunctionalTestingPrompt_Lite_EN.md': 'en/FunctionalTesting/FunctionalTestingPrompt_Lite.md',
+    'testing-types/performance-testing/README_EN.md': 'en/PerformanceTesting/index.md',
+    'testing-types/performance-testing/PerformanceTestingPrompt_EN.md': 'en/PerformanceTesting/PerformanceTestingPrompt.md',
+    'testing-types/performance-testing/PerformanceTestingPrompt_Lite_EN.md': 'en/PerformanceTesting/PerformanceTestingPrompt_Lite.md',
+    'testing-types/automation-testing/README_EN.md': 'en/AutomationTesting/index.md',
+    'testing-types/automation-testing/AutomationTestingPrompt_EN.md': 'en/AutomationTesting/AutomationTestingPrompt.md',
+    'testing-types/automation-testing/AutomationTestingPrompt_Lite_EN.md': 'en/AutomationTesting/AutomationTestingPrompt_Lite.md',
+    'testing-types/mobile-testing/README_EN.md': 'en/MobileTesting/index.md',
+    'testing-types/mobile-testing/MobileTestingPrompt_EN.md': 'en/MobileTesting/MobileTestingPrompt.md',
+    'testing-types/mobile-testing/MobileTestingPrompt_Lite_EN.md': 'en/MobileTesting/MobileTestingPrompt_Lite.md',
+    'testing-types/bug-reporting/README_EN.md': 'en/BugReporting/index.md',
+    'testing-types/bug-reporting/BugReportingPrompt_EN.md': 'en/BugReporting/BugReportingPrompt.md',
+    'testing-types/bug-reporting/BugReportingPrompt_Lite_EN.md': 'en/BugReporting/BugReportingPrompt_Lite.md',
+    'testing-types/test-reporting/README_EN.md': 'en/TestReporting/index.md',
+    'testing-types/test-reporting/TestReportingPrompt_EN.md': 'en/TestReporting/TestReportingPrompt.md',
+    'testing-types/test-reporting/TestReportingPrompt_Lite_EN.md': 'en/TestReporting/TestReportingPrompt_Lite.md',
+    'testing-types/test-strategy/README_EN.md': 'en/TestStrategy/index.md',
+    'testing-types/test-strategy/TestStrategyPrompt_EN.md': 'en/TestStrategy/TestStrategyPrompt.md',
+    'testing-types/test-strategy/TestStrategyPrompt_Lite_EN.md': 'en/TestStrategy/TestStrategyPrompt_Lite.md',
+    'testing-types/ai-assisted-testing/README_EN.md': 'en/AIAssistedTesting/index.md',
+    'testing-types/ai-assisted-testing/AIAssistedTestingPrompt_EN.md': 'en/AIAssistedTesting/AIAssistedTestingPrompt.md',
+    'testing-types/ai-assisted-testing/AIAssistedTestingPrompt_Lite_EN.md': 'en/AIAssistedTesting/AIAssistedTestingPrompt_Lite.md',
+    'testing-types/manual-testing/README_EN.md': 'en/ManualTesting/index.md',
+    'testing-types/manual-testing/ManualTestingPrompt_EN.md': 'en/ManualTesting/ManualTestingPrompt.md',
+    'testing-types/manual-testing/ManualTestingPrompt_Lite_EN.md': 'en/ManualTesting/ManualTestingPrompt_Lite.md',
+    'testing-types/security-testing/README_EN.md': 'en/SecurityTesting/index.md',
+    'testing-types/security-testing/SecurityTestingPrompt_EN.md': 'en/SecurityTesting/SecurityTestingPrompt.md',
+    'testing-types/security-testing/SecurityTestingPrompt_Lite_EN.md': 'en/SecurityTesting/SecurityTestingPrompt_Lite.md',
+    'testing-types/api-testing/README_EN.md': 'en/APITesting/index.md',
+    'testing-types/api-testing/APITestingPrompt_EN.md': 'en/APITesting/APITestingPrompt.md',
+    'testing-types/api-testing/APITestingPrompt_Lite_EN.md': 'en/APITesting/APITestingPrompt_Lite.md',
+    'testing-types/accessibility-testing/README_EN.md': 'en/AccessibilityTesting/index.md',
+    'testing-types/accessibility-testing/AccessibilityTestingPrompt_EN.md': 'en/AccessibilityTesting/AccessibilityTestingPrompt.md',
+    'testing-types/accessibility-testing/AccessibilityTestingPrompt_Lite_EN.md': 'en/AccessibilityTesting/AccessibilityTestingPrompt_Lite.md',
+    'testing-types/test-case-reviewer/README_EN.md': 'en/TestCaseReviewer/index.md',
+    'testing-types/test-case-reviewer/TestCaseReviewerPrompt_EN.md': 'en/TestCaseReviewer/TestCaseReviewerPrompt.md',
+    'testing-types/test-case-reviewer/TestCaseReviewerPrompt_Lite_EN.md': 'en/TestCaseReviewer/TestCaseReviewerPrompt_Lite.md',
+    'workflows/README_EN.md': 'en/Workflows/index.md',
+    'workflows/daily-testing-workflow_EN.md': 'en/Workflows/daily-testing-workflow.md',
+    'workflows/sprint-testing-workflow_EN.md': 'en/Workflows/sprint-testing-workflow.md',
+    'workflows/release-testing-workflow_EN.md': 'en/Workflows/release-testing-workflow.md',
+    
+    // 旧路径重定向规则 - 向后兼容
+    'AccessibilityTesting/:page': 'testing-types/accessibility-testing/:page',
+    'AIAssistedTesting/:page': 'testing-types/ai-assisted-testing/:page',
+    'APITesting/:page': 'testing-types/api-testing/:page',
+    'AutomationTesting/:page': 'testing-types/automation-testing/:page',
+    'BugReporting/:page': 'testing-types/bug-reporting/:page',
+    'FunctionalTesting/:page': 'testing-types/functional-testing/:page',
+    'ManualTesting/:page': 'testing-types/manual-testing/:page',
+    'MobileTesting/:page': 'testing-types/mobile-testing/:page',
+    'PerformanceTesting/:page': 'testing-types/performance-testing/:page',
+    'RequirementsAnalysis/:page': 'testing-types/requirements-analysis/:page',
+    'SecurityTesting/:page': 'testing-types/security-testing/:page',
+    'TestCaseReviewer/:page': 'testing-types/test-case-reviewer/:page',
+    'TestCaseWriting/:page': 'testing-types/test-case-writing/:page',
+    'TestReporting/:page': 'testing-types/test-reporting/:page',
+    'TestStrategy/:page': 'testing-types/test-strategy/:page',
+    'Workflows/:page': 'workflows/:page',
+    'Base/PromptExample/:page': 'prompt-frameworks/frameworks/:page'
   },
   
   // 多语言配置
@@ -538,12 +595,19 @@ export default defineConfig({
         },
         
         socialLinks: [
-          { icon: 'github', link: 'https://github.com/naodeng/awesome-qa-prompt' }
+          { icon: 'github', link: 'https://github.com/naodeng/awesome-qa-prompt' },
+          { 
+            icon: {
+              svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Website</title><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 7.568l-1.414 1.414c-.707-.707-1.768-1.061-2.829-1.061s-2.122.354-2.829 1.061l-1.414-1.414c1.06-1.06 2.475-1.647 4.243-1.647s3.182.586 4.243 1.647zM12 18c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6zm0-10c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4zm0 6c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2z"/></svg>'
+            }, 
+            link: 'https://inaodeng.com',
+            ariaLabel: '个人网站'
+          }
         ],
         
         footer: {
-          message: '基于 MIT 许可发布',
-          copyright: 'Copyright © 2024-present'
+          message: '🚀 让 AI 成为测试工程师最好的助手！基于 MIT 许可发布',
+          copyright: 'Copyright © 2024-present <a href="https://github.com/naodeng/awesome-qa-prompt/graphs/contributors">Awesome QA Prompt Contributors</a>'
         }
       }
     },
@@ -614,12 +678,19 @@ export default defineConfig({
         },
         
         socialLinks: [
-          { icon: 'github', link: 'https://github.com/naodeng/awesome-qa-prompt' }
+          { icon: 'github', link: 'https://github.com/naodeng/awesome-qa-prompt' },
+          { 
+            icon: {
+              svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Website</title><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 7.568l-1.414 1.414c-.707-.707-1.768-1.061-2.829-1.061s-2.122.354-2.829 1.061l-1.414-1.414c1.06-1.06 2.475-1.647 4.243-1.647s3.182.586 4.243 1.647zM12 18c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6zm0-10c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4zm0 6c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2z"/></svg>'
+            }, 
+            link: 'https://inaodeng.com',
+            ariaLabel: 'Personal Website'
+          }
         ],
         
         footer: {
-          message: 'Released under the MIT License',
-          copyright: 'Copyright © 2024-present'
+          message: '🚀 Let AI be the best assistant for test engineers! Released under the MIT License',
+          copyright: 'Copyright © 2024-present <a href="https://github.com/naodeng/awesome-qa-prompt/graphs/contributors">Awesome QA Prompt Contributors</a>'
         }
       }
     }
@@ -648,6 +719,6 @@ export default defineConfig({
   
   // Sitemap 配置
   sitemap: {
-    hostname: 'https://naodeng.github.io/awesome-qa-prompt/'
+    hostname: 'https://qaprompt.inaodeng.com/'
   }
 })

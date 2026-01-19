@@ -16,7 +16,7 @@
 ### 上午：迭代规划会议
 **准备工作**（会议前）：
 - 审查产品待办列表
-- 使用 [测试策略](../TestStrategy/TestStrategyPrompt.md) 分析即将到来的故事
+- 使用 [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md) 分析即将到来的故事
 
 **会议期间**：
 - 理解验收标准
@@ -26,8 +26,8 @@
 
 ### 下午：测试规划
 **使用的提示词**：
-- [测试策略](../TestStrategy/TestStrategyPrompt.md)
-- [需求分析](../RequirementsAnalysis/RequirementsAnalysisPrompt.md)
+- [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md)
+- [需求分析](../testing-types/requirements-analysis/RequirementsAnalysisPrompt.md)
 
 **交付物**：
 - [ ] 测试策略文档
@@ -56,12 +56,12 @@
 - 准备测试数据
 
 **使用的提示词**：
-- [自动化测试](../AutomationTesting/AutomationTestingPrompt.md)
-- [测试策略](../TestStrategy/TestStrategyPrompt.md) - 测试数据生成
+- [自动化测试](../testing-types/automation-testing/AutomationTestingPrompt.md)
+- [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md) - 测试数据生成
 
 ### 早期故事测试
 **针对就绪的故事**：
-1. 使用 [测试用例编写](../TestCaseWriting/TestCaseWritingPrompt.md) 生成测试用例
+1. 使用 [测试用例编写](../testing-types/test-case-writing/TestCaseWritingPrompt.md) 生成测试用例
 2. 与开发人员审查
 3. 开始对已完成工作进行探索性测试
 
@@ -80,14 +80,14 @@
 #### 测试执行
 **手动测试**：
 - 执行已完成故事的测试用例
-- 使用 [手动测试](../ManualTesting/ManualTestingPrompt.md) 对新功能进行探索性测试
-- 使用 [缺陷上报](../BugReporting/BugReportingPrompt.md) 记录缺陷
+- 使用 [手动测试](../testing-types/manual-testing/ManualTestingPrompt.md) 对新功能进行探索性测试
+- 使用 [缺陷上报](../testing-types/bug-reporting/BugReportingPrompt.md) 记录缺陷
 
 **自动化**：
 - 为已完成的故事编写自动化测试
 - 使用框架特定的提示词：
-  - [自动化测试](../AutomationTesting/AutomationTestingPrompt.md)
-  - [API测试](../APITesting/APITestingPrompt.md)
+  - [自动化测试](../testing-types/automation-testing/AutomationTestingPrompt.md)
+  - [API测试](../testing-types/api-testing/APITestingPrompt.md)
 
 #### 缺陷分类（每日）
 **流程**：
@@ -115,8 +115,8 @@
 
 ### 回归测试
 **使用的提示词**：
-- [功能测试](../FunctionalTesting/FunctionalTestingPrompt.md) - 回归测试场景
-- [AI辅助测试](../AIAssistedTesting/AIAssistedTestingPrompt.md) - 智能测试选择
+- [功能测试](../testing-types/functional-testing/FunctionalTestingPrompt.md) - 回归测试场景
+- [AI辅助测试](../testing-types/ai-assisted-testing/AIAssistedTestingPrompt.md) - 智能测试选择
 
 **执行**：
 - 自动化回归套件
@@ -126,8 +126,8 @@
 
 ### 集成测试
 **使用的提示词**：
-- [功能测试](../FunctionalTesting/FunctionalTestingPrompt.md) - 端到端场景
-- [API测试](../APITesting/APITestingPrompt.md) - API集成
+- [功能测试](../testing-types/functional-testing/FunctionalTestingPrompt.md) - 端到端场景
+- [API测试](../testing-types/api-testing/APITestingPrompt.md) - API集成
 
 **测试**：
 - 端到端用户旅程
@@ -136,7 +136,7 @@
 
 ### 可视化测试
 **使用的提示词**：
-- [可访问性测试](../AccessibilityTesting/AccessibilityTestingPrompt.md) - 视觉测试
+- [可访问性测试](../testing-types/accessibility-testing/AccessibilityTestingPrompt.md) - 视觉测试
 
 **行动**：
 - 运行视觉回归测试
@@ -151,7 +151,7 @@
 **形式**：
 - 2小时集中测试会话
 - 整个团队参与
-- 使用 [手动测试](../ManualTesting/ManualTestingPrompt.md) 探索性测试章程
+- 使用 [手动测试](../testing-types/manual-testing/ManualTestingPrompt.md) 探索性测试章程
 
 ### 最终缺陷修复
 **优先级**：
@@ -173,8 +173,8 @@
 
 ### 迭代评审准备
 **使用的提示词**：
-- [测试报告](../TestReporting/TestReportingPrompt.md)
-- [测试策略](../TestStrategy/TestStrategyPrompt.md) - 质量评估
+- [测试报告](../testing-types/test-reporting/TestReportingPrompt.md)
+- [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md) - 质量评估
 
 **准备**：
 - 测试执行摘要
@@ -288,7 +288,7 @@
 - 回归失败
 
 **行动**：
-1. 使用 [测试策略](../TestStrategy/TestStrategyPrompt.md) 风险分析
+1. 使用 [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md) 风险分析
 2. 专注于关键路径
 3. 考虑延长迭代
 4. 计划技术债务迭代
@@ -334,21 +334,21 @@
 ## 🔧 按迭代阶段推荐的提示词
 
 ### 规划阶段
-- [测试策略](../TestStrategy/TestStrategyPrompt.md)
-- [需求分析](../RequirementsAnalysis/RequirementsAnalysisPrompt.md)
+- [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md)
+- [需求分析](../testing-types/requirements-analysis/RequirementsAnalysisPrompt.md)
 
 ### 执行阶段
-- [测试用例编写](../TestCaseWriting/TestCaseWritingPrompt.md)
-- [手动测试](../ManualTesting/ManualTestingPrompt.md)
-- [API测试](../APITesting/APITestingPrompt.md)
-- [自动化测试](../AutomationTesting/AutomationTestingPrompt.md)
+- [测试用例编写](../testing-types/test-case-writing/TestCaseWritingPrompt.md)
+- [手动测试](../testing-types/manual-testing/ManualTestingPrompt.md)
+- [API测试](../testing-types/api-testing/APITestingPrompt.md)
+- [自动化测试](../testing-types/automation-testing/AutomationTestingPrompt.md)
 
 ### 稳定化阶段
-- [功能测试](../FunctionalTesting/FunctionalTestingPrompt.md)
-- [可访问性测试](../AccessibilityTesting/AccessibilityTestingPrompt.md)
+- [功能测试](../testing-types/functional-testing/FunctionalTestingPrompt.md)
+- [可访问性测试](../testing-types/accessibility-testing/AccessibilityTestingPrompt.md)
 
 ### 评审阶段
-- [测试报告](../TestReporting/TestReportingPrompt.md)
+- [测试报告](../testing-types/test-reporting/TestReportingPrompt.md)
 
 ---
 
