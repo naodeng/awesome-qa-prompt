@@ -33,8 +33,8 @@
 - 计划测试策略
 
 **使用的提示词**：
-- [测试策略](../TestStrategy/TestStrategyPrompt.md)
-- [需求分析](../RequirementsAnalysis/RequirementsAnalysisPrompt.md) - 风险分析
+- [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md)
+- [需求分析](../testing-types/requirements-analysis/RequirementsAnalysisPrompt.md) - 风险分析
 
 **交付物**：
 - [ ] 发布测试计划
@@ -55,8 +55,8 @@
 - 准备测试账号
 
 **使用的提示词**：
-- [自动化测试](../AutomationTesting/AutomationTestingPrompt.md) - CI/CD集成
-- [测试策略](../TestStrategy/TestStrategyPrompt.md) - 测试数据生成
+- [自动化测试](../testing-types/automation-testing/AutomationTestingPrompt.md) - CI/CD集成
+- [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md) - 测试数据生成
 
 ### 测试套件准备
 **更新**：
@@ -85,8 +85,8 @@
 
 #### 1. 功能测试
 **使用的提示词**：
-- [功能测试](../FunctionalTesting/FunctionalTestingPrompt.md)
-- [测试用例编写](../TestCaseWriting/TestCaseWritingPrompt.md)
+- [功能测试](../testing-types/functional-testing/FunctionalTestingPrompt.md)
+- [测试用例编写](../testing-types/test-case-writing/TestCaseWritingPrompt.md)
 
 **执行**：
 - 所有新功能
@@ -102,11 +102,11 @@
 - 移动端测试
 
 **使用的提示词**：
-- [AI辅助测试](../AIAssistedTesting/AIAssistedTestingPrompt.md) - 智能测试选择
+- [AI辅助测试](../testing-types/ai-assisted-testing/AIAssistedTestingPrompt.md) - 智能测试选择
 
 #### 3. 端到端测试
 **使用的提示词**：
-- [功能测试](../FunctionalTesting/FunctionalTestingPrompt.md) - 端到端场景
+- [功能测试](../testing-types/functional-testing/FunctionalTestingPrompt.md) - 端到端场景
 
 **测试**：
 - 完整的用户旅程
@@ -120,7 +120,7 @@
 
 ### 性能测试
 **使用的提示词**：
-- [性能测试](../PerformanceTesting/PerformanceTestingPrompt.md)
+- [性能测试](../testing-types/performance-testing/PerformanceTestingPrompt.md)
 
 **执行**：
 - 负载测试（预期负载）
@@ -136,7 +136,7 @@
 
 ### 安全测试
 **使用的提示词**：
-- [安全测试](../SecurityTesting/SecurityTestingPrompt.md)
+- [安全测试](../testing-types/security-testing/SecurityTestingPrompt.md)
 
 **执行**：
 - 漏洞扫描
@@ -147,7 +147,7 @@
 
 ### 可访问性测试
 **使用的提示词**：
-- [可访问性测试](../AccessibilityTesting/AccessibilityTestingPrompt.md)
+- [可访问性测试](../testing-types/accessibility-testing/AccessibilityTestingPrompt.md)
 
 **执行**：
 - 屏幕阅读器测试
@@ -157,7 +157,7 @@
 
 ### 可视化测试
 **使用的提示词**：
-- [可访问性测试](../AccessibilityTesting/AccessibilityTestingPrompt.md) - 视觉测试
+- [可访问性测试](../testing-types/accessibility-testing/AccessibilityTestingPrompt.md) - 视觉测试
 
 **执行**：
 - 视觉回归测试
@@ -188,7 +188,7 @@
 - 探索性测试会话
 
 **使用的提示词**：
-- [手动测试](../ManualTesting/ManualTestingPrompt.md) - 探索性测试
+- [手动测试](../testing-types/manual-testing/ManualTestingPrompt.md) - 探索性测试
 
 ### 缺陷分类
 **优先级**：
@@ -209,8 +209,8 @@
 
 ### 测试指标审查
 **使用的提示词**：
-- [测试报告](../TestReporting/TestReportingPrompt.md)
-- [测试策略](../TestStrategy/TestStrategyPrompt.md) - 质量评估
+- [测试报告](../testing-types/test-reporting/TestReportingPrompt.md)
+- [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md) - 质量评估
 
 **要审查的指标**：
 - 测试执行率：___%
@@ -338,7 +338,7 @@
 - 流程改进？
 
 **使用的提示词**：
-- [测试报告](../TestReporting/TestReportingPrompt.md)
+- [测试报告](../testing-types/test-reporting/TestReportingPrompt.md)
 
 ---
 
@@ -399,17 +399,17 @@
 ## 🔧 按阶段推荐的提示词
 
 ### 规划
-- [测试策略](../TestStrategy/TestStrategyPrompt.md)
-- [需求分析](../RequirementsAnalysis/RequirementsAnalysisPrompt.md)
+- [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md)
+- [需求分析](../testing-types/requirements-analysis/RequirementsAnalysisPrompt.md)
 
 ### 测试
-- [功能测试](../FunctionalTesting/FunctionalTestingPrompt.md)
-- [性能测试](../PerformanceTesting/PerformanceTestingPrompt.md)
-- [安全测试](../SecurityTesting/SecurityTestingPrompt.md)
-- [可访问性测试](../AccessibilityTesting/AccessibilityTestingPrompt.md)
+- [功能测试](../testing-types/functional-testing/FunctionalTestingPrompt.md)
+- [性能测试](../testing-types/performance-testing/PerformanceTestingPrompt.md)
+- [安全测试](../testing-types/security-testing/SecurityTestingPrompt.md)
+- [可访问性测试](../testing-types/accessibility-testing/AccessibilityTestingPrompt.md)
 
 ### 评估
-- [测试报告](../TestReporting/TestReportingPrompt.md)
+- [测试报告](../testing-types/test-reporting/TestReportingPrompt.md)
 
 ---
 

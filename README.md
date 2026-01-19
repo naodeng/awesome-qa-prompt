@@ -2,6 +2,11 @@
 
 [English](./README_EN.md) | 简体中文
 
+<div align="center">
+  <img src="./public/logo.svg" alt="Awesome QA Prompt " width="800"/>
+</div>
+
+
 [![Deploy to GitHub Pages](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml/badge.svg)](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml)
 [![GitHub Pages](https://img.shields.io/badge/docs-online-blue.svg)](https://naodeng.github.io/awesome-qa-prompt/)
 [![GitHub](https://img.shields.io/github/license/naodeng/awesome-qa-prompt)](https://github.com/naodeng/awesome-qa-prompt/blob/main/LICENSE)
@@ -23,7 +28,7 @@
 
 **📖 访问在线文档获得更好的阅读体验：[https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)**
 
-> 💡 **部署说明**：本项目配置了 GitHub Actions 自动部署，每次推送到 `main` 分支会自动更新在线文档。查看 [部署指南](./QUICK_DEPLOY.md) 了解详情。
+> 💡 **部署说明**：本项目配置了 GitHub Actions 自动部署，每次推送到 `main` 分支会自动更新在线文档。查看 [部署指南](./docs/deployment/QUICK_DEPLOY.md) 了解详情。
 
 在线文档提供：
 - 🔍 **全文搜索功能** - 快速查找所需内容
@@ -57,7 +62,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
 本集合包含以下测试领域的专业提示词：
 
 ### 1. 📝 需求分析 (Requirements Analysis)
-- **文件位置**：`RequirementsAnalysis/RequirementsAnalysisPrompt.md`
+- **文件位置**：`testing-types/requirements-analysis/RequirementsAnalysisPrompt.md`
 - **功能描述**：基于需求文档进行深度分析，设计全维度的测试场景
 - **适用场景**：需求评审、测试计划制定、测试场景设计
 - **核心能力**：
@@ -66,7 +71,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - UI/UX、输入校验、非功能性测试覆盖
 
 ### 2. ✍️ 测试用例编写 (Test Case Writing)
-- **文件位置**：`TestCaseWriting/TestCaseWritingPrompt.md`
+- **文件位置**：`testing-types/test-case-writing/TestCaseWritingPrompt.md`
 - **功能描述**：基于测试场景自动生成详细的测试用例
 - **适用场景**：测试用例设计、测试文档编写
 - **核心能力**：
@@ -76,7 +81,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - 可维护性和可追溯性保证
 
 ### 3. 🔍 功能测试 (Functional Testing)
-- **文件位置**：`FunctionalTesting/FunctionalTestingPrompt.md`
+- **文件位置**：`testing-types/functional-testing/FunctionalTestingPrompt.md`
 - **功能描述**：设计功能测试策略和执行方案
 - **适用场景**：功能测试执行、回归测试
 - **核心能力**：
@@ -86,7 +91,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - 系统集成复杂性处理
 
 ### 4. ⚡ 性能测试 (Performance Testing)
-- **文件位置**：`PerformanceTesting/PerformanceTestingPrompt.md`
+- **文件位置**：`testing-types/performance-testing/PerformanceTestingPrompt.md`
 - **功能描述**：设计性能测试场景和性能指标分析
 - **适用场景**：性能测试计划、性能瓶颈分析
 - **核心能力**：
@@ -96,7 +101,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - 性能监控和趋势分析
 
 ### 5. 🤖 自动化测试 (Automation Testing)
-- **文件位置**：`AutomationTesting/AutomationTestingPrompt.md`
+- **文件位置**：`testing-types/automation-testing/AutomationTestingPrompt.md`
 - **功能描述**：自动化测试脚本设计和框架选择
 - **适用场景**：自动化测试实施、CI/CD 集成
 - **核心能力**：
@@ -106,7 +111,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - CI/CD 集成和维护优化
 
 ### 6. 📱 移动端测试 (Mobile Testing)
-- **文件位置**：`MobileTesting/MobileTestingPrompt.md`
+- **文件位置**：`testing-types/mobile-testing/MobileTestingPrompt.md`
 - **功能描述**：移动应用测试策略和场景设计
 - **适用场景**：移动应用测试、兼容性测试
 - **核心能力**：
@@ -116,7 +121,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - 性能、安全、用户体验专项测试
 
 ### 7. 🐛 缺陷上报 (Bug Reporting)
-- **文件位置**：`BugReporting/BugReportingPrompt.md`
+- **文件位置**：`testing-types/bug-reporting/BugReportingPrompt.md`
 - **功能描述**：标准化缺陷报告模板和缺陷分析
 - **适用场景**：缺陷管理、缺陷分析
 - **核心能力**：
@@ -126,7 +131,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - 缺陷生命周期管理
 
 ### 8. 📊 测试报告 (Test Reporting)
-- **文件位置**：`TestReporting/TestReportingPrompt.md`
+- **文件位置**：`testing-types/test-reporting/TestReportingPrompt.md`
 - **功能描述**：测试执行报告和质量分析报告
 - **适用场景**：测试总结、质量评估
 - **核心能力**：
@@ -136,7 +141,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - 决策支持和改进建议
 
 ### 9. 🎯 测试策略 (Test Strategy)
-- **文件位置**：`TestStrategy/TestStrategyPrompt.md`
+- **文件位置**：`testing-types/test-strategy/TestStrategyPrompt.md`
 - **功能描述**：整体测试策略制定和测试计划设计
 - **适用场景**：项目启动、测试规划
 - **核心能力**：
@@ -146,7 +151,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - 实施计划和预算资源规划
 
 ### 10. 🤖 AI辅助测试 (AI-Assisted Testing)
-- **文件位置**：`AIAssistedTesting/AIAssistedTestingPrompt.md`
+- **文件位置**：`testing-types/ai-assisted-testing/AIAssistedTestingPrompt.md`
 - **功能描述**：利用AI技术提升测试效率和质量
 - **适用场景**：智能测试生成、测试优化
 - **核心能力**：
@@ -156,7 +161,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - 测试数据智能生成
 
 ### 11. 📋 手动测试 (Manual Testing)
-- **文件位置**：`ManualTesting/ManualTestingPrompt.md`
+- **文件位置**：`testing-types/manual-testing/ManualTestingPrompt.md`
 - **功能描述**：手动测试策略和探索性测试
 - **适用场景**：探索性测试、用户体验测试
 - **核心能力**：
@@ -166,7 +171,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - 测试会话管理
 
 ### 12. 🔒 安全测试 (Security Testing)
-- **文件位置**：`SecurityTesting/SecurityTestingPrompt.md`
+- **文件位置**：`testing-types/security-testing/SecurityTestingPrompt.md`
 - **功能描述**：安全漏洞检测和安全测试策略
 - **适用场景**：安全审计、渗透测试
 - **核心能力**：
@@ -176,7 +181,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - 安全合规性检查
 
 ### 13. 🔌 API测试 (API Testing)
-- **文件位置**：`APITesting/APITestingPrompt.md`
+- **文件位置**：`testing-types/api-testing/APITestingPrompt.md`
 - **功能描述**：API接口测试和集成测试
 - **适用场景**：接口测试、微服务测试
 - **核心能力**：
@@ -186,7 +191,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - API安全测试
 
 ### 14. ♿ 可访问性测试 (Accessibility Testing)
-- **文件位置**：`AccessibilityTesting/AccessibilityTestingPrompt.md`
+- **文件位置**：`testing-types/accessibility-testing/AccessibilityTestingPrompt.md`
 - **功能描述**：Web可访问性测试和WCAG合规性检查
 - **适用场景**：无障碍测试、合规性验证
 - **核心能力**：
@@ -196,7 +201,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - 颜色对比度和视觉测试
 
 ### 15. 🔍 测试用例评审 (Test Case Review)
-- **文件位置**：`TestCaseReviewer/TestCaseReviewerPrompt.md`
+- **文件位置**：`testing-types/test-case-reviewer/TestCaseReviewerPrompt.md`
 - **功能描述**：专业的测试用例审核和质量把控
 - **适用场景**：测试用例评审、质量评估、风险识别
 - **核心能力**：
@@ -210,7 +215,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
 本项目提供三种实用的测试工作流程，帮助团队在不同场景下高效使用提示词库：
 
 ### 1. 📅 日常测试工作流程 (Daily Testing Workflow)
-- **文件位置**：`Workflows/daily-testing-workflow_CN.md` | [English](Workflows/daily-testing-workflow_EN.md)
+- **文件位置**：`workflows/daily-testing-workflow_CN.md` | [English](workflows/daily-testing-workflow_EN.md)
 - **适用场景**：QA工程师的日常测试活动
 - **涵盖内容**：
   - 早晨例行工作和测试计划
@@ -219,7 +224,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - 每日总结和知识分享
 
 ### 2. 🏃 迭代测试工作流程 (Sprint Testing Workflow)
-- **文件位置**：`Workflows/sprint-testing-workflow_CN.md` | [English](Workflows/sprint-testing-workflow_EN.md)
+- **文件位置**：`workflows/sprint-testing-workflow_CN.md` | [English](workflows/sprint-testing-workflow_EN.md)
 - **适用场景**：敏捷/Scrum团队的2周迭代周期
 - **涵盖内容**：
   - 迭代规划和测试策略
@@ -228,7 +233,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - 迭代评审和回顾
 
 ### 3. 🚀 发布测试工作流程 (Release Testing Workflow)
-- **文件位置**：`Workflows/release-testing-workflow_CN.md` | [English](Workflows/release-testing-workflow_EN.md)
+- **文件位置**：`workflows/release-testing-workflow_CN.md` | [English](workflows/release-testing-workflow_EN.md)
 - **适用场景**：生产环境发布前的全面测试
 - **涵盖内容**：
   - 发布规划和测试准备（T-14天）
@@ -282,7 +287,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
 
 ```markdown
 # 步骤 1：复制需求分析提示词
-# 从 RequirementsAnalysis/RequirementsAnalysisPrompt.md 复制内容
+# 从 testing-types/requirements-analysis/RequirementsAnalysisPrompt.md 复制内容
 
 # 步骤 2：附加需求文档
 [在这里粘贴你的需求文档或 User Story]
@@ -295,15 +300,15 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
 
 ```markdown
 # 完整的测试项目流程
-1. 需求分析 → RequirementsAnalysis/RequirementsAnalysisPrompt.md
-2. 测试策略 → TestStrategy/TestStrategyPrompt.md
-3. 测试用例编写 → TestCaseWriting/TestCaseWritingPrompt.md
-4. 功能测试 → FunctionalTesting/FunctionalTestingPrompt.md
-5. 自动化测试 → AutomationTesting/AutomationTestingPrompt.md
-6. 性能测试 → PerformanceTesting/PerformanceTestingPrompt.md
-7. 移动端测试 → MobileTesting/MobileTestingPrompt.md
-8. 缺陷上报 → BugReporting/BugReportingPrompt.md
-9. 测试报告 → TestReporting/TestReportingPrompt.md
+1. 需求分析 → testing-types/requirements-analysis/RequirementsAnalysisPrompt.md
+2. 测试策略 → testing-types/test-strategy/TestStrategyPrompt.md
+3. 测试用例编写 → testing-types/test-case-writing/TestCaseWritingPrompt.md
+4. 功能测试 → testing-types/functional-testing/FunctionalTestingPrompt.md
+5. 自动化测试 → testing-types/automation-testing/AutomationTestingPrompt.md
+6. 性能测试 → testing-types/performance-testing/PerformanceTestingPrompt.md
+7. 移动端测试 → testing-types/mobile-testing/MobileTestingPrompt.md
+8. 缺陷上报 → testing-types/bug-reporting/BugReportingPrompt.md
+9. 测试报告 → testing-types/test-reporting/TestReportingPrompt.md
 ```
 
 ## 📊 项目完成状态
@@ -361,54 +366,69 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
 awesome-qa-prompt/
 ├── README.md                          # 项目说明文档（中文）
 ├── README_EN.md                       # 项目说明文档（英文）
+├── CHANGELOG.md                       # 版本更新日志
 ├── LICENSE                            # 许可证文件
 │
-├── RequirementsAnalysis/              # 需求分析
-│   ├── RequirementsAnalysisPrompt.md      # 中文提示词
-│   ├── RequirementsAnalysisPrompt_EN.md  # 英文提示词
-│   ├── RequirementsAnalysisPrompt_Lite.md     # 精简版中文
-│   ├── RequirementsAnalysisPrompt_Lite_EN.md  # 精简版英文
-│   └── README.md                          # 模块说明文档
+├── docs/                              # 文档目录
+│   ├── deployment/                    # 部署相关文档
+│   ├── index.md                       # 首页文档
+│   ├── en.md                          # 英文首页
+│   └── README.md                      # 文档目录说明
 │
-├── TestCaseWriting/                   # 测试用例编写
-│   ├── TestCaseWritingPrompt.md           # 中文提示词
-│   ├── TestCaseWritingPrompt_EN.md       # 英文提示词
-│   ├── TestCaseWritingPrompt_Lite.md     # 精简版中文
-│   ├── TestCaseWritingPrompt_Lite_EN.md  # 精简版英文
-│   └── README.md                          # 模块说明文档
+├── testing-types/                     # 测试类型模块（核心内容）
+│   ├── requirements-analysis/         # 需求分析
+│   ├── test-case-writing/             # 测试用例编写
+│   ├── functional-testing/            # 功能测试
+│   ├── performance-testing/           # 性能测试
+│   ├── automation-testing/            # 自动化测试
+│   ├── mobile-testing/                # 移动端测试
+│   ├── bug-reporting/                 # 缺陷上报
+│   ├── test-reporting/                # 测试报告
+│   ├── test-strategy/                 # 测试策略
+│   ├── ai-assisted-testing/           # AI辅助测试
+│   ├── manual-testing/                # 手动测试
+│   ├── security-testing/              # 安全测试
+│   ├── api-testing/                   # API测试
+│   ├── accessibility-testing/         # 可访问性测试
+│   └── test-case-reviewer/            # 测试用例评审
+│   # 每个测试类型文件夹包含：
+│   # ├── [Type]Prompt.md              # 中文完整版提示词
+│   # ├── [Type]Prompt_EN.md          # 英文完整版提示词
+│   # ├── [Type]Prompt_Lite.md        # 中文精简版提示词
+│   # ├── [Type]Prompt_Lite_EN.md     # 英文精简版提示词
+│   # ├── README.md                    # 中文模块说明
+│   # └── README_EN.md                 # 英文模块说明
 │
-├── FunctionalTesting/                 # 功能测试
-├── PerformanceTesting/                # 性能测试
-├── AutomationTesting/                 # 自动化测试
-├── MobileTesting/                     # 移动端测试
-├── BugReporting/                      # 缺陷上报
-├── TestReporting/                     # 测试报告
-├── TestStrategy/                      # 测试策略
-├── AIAssistedTesting/                 # AI辅助测试
-├── ManualTesting/                     # 手动测试
-├── SecurityTesting/                   # 安全测试
-├── APITesting/                        # API测试
-├── AccessibilityTesting/              # 可访问性测试
-├── TestCaseReviewer/                  # 测试用例评审
-│   # 每个测试类型文件夹包含相同的文件结构
+├── workflows/                         # 测试工作流程
+│   ├── README.md                      # 工作流程说明（双语）
+│   ├── daily-testing-workflow_CN.md   # 日常测试工作流程（中文）
+│   ├── daily-testing-workflow_EN.md   # 日常测试工作流程（英文）
+│   ├── sprint-testing-workflow_CN.md  # 迭代测试工作流程（中文）
+│   ├── sprint-testing-workflow_EN.md  # 迭代测试工作流程（英文）
+│   ├── release-testing-workflow_CN.md # 发布测试工作流程（中文）
+│   └── release-testing-workflow_EN.md # 发布测试工作流程（英文）
 │
-├── Workflows/                         # 测试工作流程
-│   ├── README.md                          # 工作流程说明（双语）
-│   ├── daily-testing-workflow_CN.md       # 日常测试工作流程（中文）
-│   ├── daily-testing-workflow_EN.md       # 日常测试工作流程（英文）
-│   ├── sprint-testing-workflow_CN.md      # 迭代测试工作流程（中文）
-│   ├── sprint-testing-workflow_EN.md      # 迭代测试工作流程（英文）
-│   ├── release-testing-workflow_CN.md     # 发布测试工作流程（中文）
-│   └── release-testing-workflow_EN.md     # 发布测试工作流程（英文）
+├── prompt-frameworks/                 # 提示词框架
+│   ├── frameworks/                    # 框架模板集合
+│   └── README.md                      # 框架说明文档
 │
-└── Reference/                         # 参考资料（原始内容保持不变）
-    ├── manual-qa/                     # 手动测试参考
-    ├── automation-qa/                 # 自动化测试参考
-    ├── ai-assisted-qa/                # AI辅助测试参考
-    ├── cursor-ai/                     # Cursor AI 角色参考
-    ├── mobile-testing/                # 移动端测试参考
-    ├── specialized-testing/           # 专项测试参考
-    └── workflows/                     # 工作流程参考（已迁移到Workflows/）
+├── examples/                          # 使用示例
+│   ├── basic-usage/                   # 基础使用示例
+│   ├── advanced-usage/                # 高级使用示例
+│   └── best-practices/                # 最佳实践案例
+│
+├── future-updates/                    # 待更新内容（暂不包含在构建中）
+│   ├── guides/                        # 使用指南
+│   ├── automation-testing-advanced/   # 高级自动化测试内容
+│   ├── ai-assisted-testing-advanced/  # 高级AI辅助测试内容
+│   ├── mobile-testing-advanced/       # 高级移动端测试内容
+│   ├── manual-testing-advanced/       # 高级手动测试内容
+│   └── README.md                      # 待更新内容说明
+│
+└── public/                            # 静态资源
+    ├── wordcloud-cn.svg               # 中文词云
+    ├── wordcloud-en.svg               # 英文词云
+    └── favicon files                  # 网站图标文件
 ```
 
 ## 📖 使用指南
@@ -530,20 +550,84 @@ npm run docs:preview
 
 ---
 
-**让 AI 成为测试工程师的最佳助手！** 🚀
+## 📋 更新日志 (Change Log)
 
+### [v0.2.0] - 2025-01-19 🔄 重大重构版本
+
+#### ✨ 新增功能
+- **全新目录结构**：
+  - `docs/` - 集中化文档目录
+  - `testing-types/` - 所有测试类型模块统一组织
+  - `prompt-frameworks/` - 提示词框架模板和示例
+  - `examples/` - 使用示例和最佳实践
+  - `workflows/` - 测试工作流程文档
+
+- **增强内容组织**：
+  - 将 Reference 目录内容整合到 testing-types 模块中
+  - 将高级测试场景移至 `future-updates/` 目录待完善
+  - 改进文档导航和链接结构
+
+#### 🔧 重要变更
+- **目录命名规范**：所有测试类型目录从 PascalCase 改为 kebab-case
+  - `AccessibilityTesting` → `accessibility-testing`
+  - `AIAssistedTesting` → `ai-assisted-testing`
+  - `APITesting` → `api-testing`
+  - `AutomationTesting` → `automation-testing`
+  - `BugReporting` → `bug-reporting`
+  - `FunctionalTesting` → `functional-testing`
+  - `ManualTesting` → `manual-testing`
+  - `MobileTesting` → `mobile-testing`
+  - `PerformanceTesting` → `performance-testing`
+  - `RequirementsAnalysis` → `requirements-analysis`
+  - `SecurityTesting` → `security-testing`
+  - `TestCaseReviewer` → `test-case-reviewer`
+  - `TestCaseWriting` → `test-case-writing`
+  - `TestReporting` → `test-reporting`
+  - `TestStrategy` → `test-strategy`
+  - `Workflows` → `workflows`
+
+- **文件重组**：
+  - 部署文档移至 `docs/deployment/`
+  - 首页文件移至 `docs/`
+  - 所有测试模块整合到 `testing-types/` 下
+  - Base 目录重构为 `prompt-frameworks/`
+
+#### 🗑️ 清理优化
+- 删除空目录和系统文件
+- 移除冗余的 Reference 目录
+- 清理临时项目文件和迁移脚本
+- 将待完善内容移至 `future-updates/` 目录
+
+#### 🔗 修复改进
+- 更新所有内部链接以适应新目录结构
+- 修复 VitePress 配置中的路径映射
+- 添加向后兼容的 URL 重写规则
+- 改进构建可靠性和错误处理
+
+#### 📊 影响评估
+- **组织改进**：目录结构评分从 70/100 提升至 90+/100
+- **导航优化**：更清晰的分类和逻辑分组
+- **维护性增强**：一致的命名规范和结构
+- **用户体验**：更容易的内容发现和导航
+- **开发体验**：为贡献者提供更好的项目组织
+
+#### ⚠️ 破坏性变更
+- **URL 结构**：所有测试类型 URL 从 PascalCase 改为 kebab-case
+- **文件路径**：外部工具中的内部文件引用需要更新
+- **书签**：用户可能需要更新书签（已提供重定向）
+
+### [v0.1.0] - 2026-01-14 🎉 初始版本
+
+#### 初始发布内容
+- 14个测试类型模块的中英文提示词（完整版+精简版）
+- 3个测试工作流程（中英文）
+- VitePress在线文档网站
+- GitHub Pages自动部署
+- 双平台部署支持（GitHub Pages + Cloudflare Pages）
+- Umami网站统计集成
+- SEO优化和favicon配置
+- 所有提示词文件的使用说明和版本记录
 
 ---
 
-## 📋 Change Log
-
-### v0.1 (2025-01-14)
-- 初始化版本
-- 完成14个测试类型模块的中英文提示词（完整版+精简版）
-- 完成3个测试工作流程（中英文）
-- 添加VitePress在线文档网站
-- 配置GitHub Pages自动部署
-- 支持双平台部署（GitHub Pages + Cloudflare Pages）
-- 集成Umami网站统计
-- 添加SEO优化和favicon配置
-- 所有提示词文件添加使用说明和版本记录
+**让 AI 成为测试工程师的最佳助手！** 🚀

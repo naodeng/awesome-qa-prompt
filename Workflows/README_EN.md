@@ -71,9 +71,9 @@ This directory contains practical workflow guides for using the QA Prompt Librar
 
 ## 🔗 Related Resources
 
-- [Requirements Analysis](../RequirementsAnalysis/README_EN.md)
-- [Test Strategy](../TestStrategy/README_EN.md)
-- [Test Reporting](../TestReporting/README_EN.md)
+- [Requirements Analysis](../testing-types/requirements-analysis/README_EN.md)
+- [Test Strategy](../testing-types/test-strategy/README_EN.md)
+- [Test Reporting](../testing-types/test-reporting/README_EN.md)
 
 ---
 
