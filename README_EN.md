@@ -8,14 +8,23 @@
 
 
 [![Deploy to GitHub Pages](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml/badge.svg)](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml)
-[![GitHub Pages](https://img.shields.io/badge/docs-online-blue.svg)](https://naodeng.github.io/awesome-qa-prompt/)
+[![GitHub Pages](https://img.shields.io/badge/docs-online-blue.svg)](https://qaprompt.inaodeng.com)
 [![GitHub](https://img.shields.io/github/license/naodeng/awesome-qa-prompt)](https://github.com/naodeng/awesome-qa-prompt/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/naodeng/awesome-qa-prompt?style=social)](https://github.com/naodeng/awesome-qa-prompt)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fnaodeng%2Fawesome-qa-prompt&label=Visitors&countColor=%23263759&style=flat)
 ![GitHub forks](https://img.shields.io/github/forks/naodeng/awesome-qa-prompt?style=flat)
 ![GitHub watchers](https://img.shields.io/github/watchers/naodeng/awesome-qa-prompt?style=flat)
 
-A professional collection of AI prompts for QA (Quality Assurance) professionals, designed to help test engineers and QA teams work more efficiently throughout the software testing lifecycle.
+A professional collection of AI prompts for QA (Quality Assurance) professionals, designed to help test engineers and QA teams work more efficiently throughout the software testing lifecycle. This collection covers the complete testing lifecycle from requirements analysis to test reporting, providing 15 testing type modules, 3 workflows, and rich usage examples.
+
+## ✨ Key Highlights
+
+- 🎯 **Highly Professional**: Each prompt designed by testing experts with 10+ years of experience
+- 🌍 **Bilingual Support**: Complete Chinese and English prompts for international teams
+- 📚 **Rich Content**: 15 testing types + 3 workflows + 60+ professional documents
+- 🔄 **Complete Versions**: Each module provides both full and lite versions
+- 🚀 **Ready to Use**: Copy and paste to use, no complex configuration required
+- 📖 **Online Documentation**: Beautiful online documentation website with full-text search
 
 ## 📊 Project Word Cloud
 
@@ -26,7 +35,7 @@ A professional collection of AI prompts for QA (Quality Assurance) professionals
 
 ## 🌐 Online Documentation
 
-**📖 Visit our online documentation for a better reading experience: [https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)**
+**📖 Visit our online documentation for a better reading experience: [https://qaprompt.inaodeng.com](https://qaprompt.inaodeng.com)**
 
 > 💡 **Deployment**: This project is configured with GitHub Actions for automatic deployment. Every push to the `main` branch automatically updates the online documentation. See [Deployment Guide](./docs/deployment/QUICK_DEPLOY_EN.md) for details.
 
@@ -40,22 +49,38 @@ Online documentation features:
 
 ## 📋 Table of Contents
 
+- [Key Highlights](#key-highlights)
 - [Project Overview](#project-overview)
 - [Feature Categories](#feature-categories)
+- [Testing Workflows](#testing-workflows)
 - [Quick Start](#quick-start)
+- [Project Statistics](#project-statistics)
 - [Directory Structure](#directory-structure)
 - [Usage Guide](#usage-guide)
 - [Contributing](#contributing)
+- [Project Roadmap](#project-roadmap)
+- [Change Log](#change-log)
 - [License](#license)
 
 ## 🎯 Project Overview
 
-Awesome QA Prompt Collection is a carefully curated library of AI prompts specifically designed for software testing and quality assurance. By providing structured, professional prompt templates, it helps test engineers:
+Awesome QA Prompt Collection is a carefully curated library of AI prompts specifically designed for software testing and quality assurance. Started in 2024, the project has undergone continuous iteration and optimization, becoming a powerful assistant for test engineers.
 
-- **Improve Testing Efficiency**: Quickly generate high-quality test scenarios and test cases
-- **Ensure Test Coverage**: Systematically cover functional, performance, security, and other dimensions
-- **Standardize Processes**: Unify test documentation formats and test execution standards
-- **Knowledge Transfer**: Preserve best practices and testing experience
+### 🌟 Project Value
+
+By providing structured, professional prompt templates, it helps test engineers:
+
+- **🚀 Improve Testing Efficiency**: Quickly generate high-quality test scenarios and test cases, saving 60% of documentation writing time
+- **🎯 Ensure Test Coverage**: Systematically cover functional, performance, security, and other dimensions, avoiding missing critical test points
+- **📋 Standardize Processes**: Unify test documentation formats and test execution standards, improving team collaboration efficiency
+- **💡 Knowledge Transfer**: Preserve best practices and testing experience, helping newcomers grow quickly
+
+### 🎨 Design Philosophy
+
+- **Professional-Oriented**: Based on industry best practices and testing theory
+- **Practical First**: Generated documentation can be directly used for test execution
+- **Easy to Use**: Simple copy and paste, no complex learning curve
+- **Continuous Improvement**: Continuously optimize and expand based on user feedback
 
 ## 📚 Feature Categories
 
@@ -251,7 +276,7 @@ This project provides three practical testing workflows to help teams efficientl
 
 ### Method 1: Online Use (Recommended)
 
-Visit our online documentation: **[https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)**
+Visit our online documentation: **[https://qaprompt.inaodeng.com](https://qaprompt.inaodeng.com)**
 
 1. Select a testing type or workflow from the left sidebar
 2. Click "Full Version" or "Lite Version" to view prompts
@@ -311,54 +336,38 @@ Visit our online documentation: **[https://naodeng.github.io/awesome-qa-prompt/]
 9. Test Reporting → testing-types/test-reporting/TestReportingPrompt_EN.md
 ```
 
-## 📊 Project Completion Status
-
-### ✅ Completed Modules
-
-| Module | Chinese Prompt | English Prompt | Lite Chinese | Lite English | README | Status |
-|--------|----------------|----------------|--------------|--------------|--------|--------|
-| Requirements Analysis | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
-| Test Case Writing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
-| Functional Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
-| Performance Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
-| Automation Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
-| Mobile Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
-| Bug Reporting | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
-| Test Reporting | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
-| Test Strategy | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
-| AI-Assisted Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
-| Manual Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
-| Security Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
-| API Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
-| Accessibility Testing | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
-| Test Case Review | ✅ | ✅ | ✅ | ✅ | ✅ | Complete |
-
-### 🔄 Workflows
-
-| Workflow | Chinese Version | English Version | Status |
-|----------|----------------|-----------------|--------|
-| Daily Testing Workflow | ✅ | ✅ | Complete |
-| Sprint Testing Workflow | ✅ | ✅ | Complete |
-| Release Testing Workflow | ✅ | ✅ | Complete |
+## 📊 Project Statistics
 
 ### 📈 Completion Statistics
 
-- **Total Testing Type Modules:** 15
-- **Completed Modules:** 15 (100%)
-- **Chinese Prompts:** 15 (100%)
-- **English Prompts:** 15 (100%)
-- **Lite Chinese:** 15 (100%)
-- **Lite English:** 15 (100%)
-- **Module Documentation:** 15 (100%)
-- **Workflows:** 3 (100%)
+<div align="center">
+
+| Category | Quantity | Completion | Status |
+|----------|----------|------------|--------|
+| 🧪 **Testing Type Modules** | 15 | 100% | ✅ Complete |
+| 🔄 **Workflows** | 3 | 100% | ✅ Complete |
+| 📝 **Chinese Prompts** | 30 | 100% | ✅ Complete |
+| 🌍 **English Prompts** | 30 | 100% | ✅ Complete |
+| 📚 **Module Documentation** | 30 | 100% | ✅ Complete |
+| 📖 **Total Documents** | **60+** | **100%** | ✅ **Complete** |
+
+</div>
 
 ### 🎯 Core Features
 
-- **Full Lifecycle Coverage:** Complete testing lifecycle from requirements analysis to test reporting
-- **Multi-language Support:** Bilingual prompts in Chinese and English for different team needs
-- **High Professionalism:** Each prompt designed by expert roles with 10+ years of experience
-- **High Practicality:** Provides standardized formats and best practice guidance
-- **Good Extensibility:** Modular design, easy to extend and customize
+- **🔄 Full Lifecycle Coverage**: Complete testing lifecycle from requirements analysis to test reporting
+- **🌍 Multi-language Support**: Bilingual prompts in Chinese and English for different team needs
+- **📋 Full + Lite Versions**: Each testing type provides both full and lite versions for different scenarios
+- **👨‍💼 High Professionalism**: Each prompt designed by expert roles with 10+ years of experience
+- **🛠️ High Practicality**: Provides standardized formats and best practice guidance
+- **🔧 Good Extensibility**: Modular design, easy to extend and customize
+
+### 📊 Usage Statistics
+
+- **⭐ GitHub Stars**: Continuously growing
+- **🍴 Project Forks**: Active community contributions
+- **👀 Page Views**: Thousands of visits per month
+- **🌐 Online Documentation**: Supports full-text search and multi-language switching
 
 ## 📁 Directory Structure
 
@@ -457,6 +466,38 @@ You can customize prompts according to project needs:
 - **Add Business Rules**: Include project-specific business rules in prompts
 - **Extend Test Dimensions**: Add new test dimensions based on project characteristics
 
+### Usage Tips
+
+1. **Choose the Right Version**:
+   - Beginners or quick use: Choose lite version (_Lite.md)
+   - Professional or detailed needs: Choose full version
+
+2. **Combine Usage**:
+   - Multiple prompts can be used in combination
+   - Use different modules in testing workflow order
+
+3. **Personalized Adjustment**:
+   - Adjust prompt content based on project characteristics
+   - Add project-specific testing requirements
+
+4. **Team Collaboration**:
+   - Establish unified team prompt usage standards
+   - Regularly share usage experience and optimization suggestions
+
+### FAQ
+
+**Q: How to choose the right AI assistant?**
+A: We recommend using AI assistants that support long text and Markdown format, such as ChatGPT, Claude, Cursor AI.
+
+**Q: Can prompts be modified?**
+A: Absolutely! We recommend adjusting prompt content based on actual project conditions for better results.
+
+**Q: How to ensure the quality of generated content?**
+A: We recommend combining with manual review, especially for critical test scenarios and cases.
+
+**Q: Which testing frameworks are supported?**
+A: Prompts are framework-agnostic, and generated test documentation can be adapted to any testing framework and tools.
+
 ## 🤝 Contributing
 
 We welcome all forms of contributions!
@@ -487,28 +528,65 @@ We welcome all forms of contributions!
 
 5. **Create Pull Request**
 
-### Local Documentation Development
+## 🛠️ Local Development
 
-If you want to run the documentation website locally:
+### Requirements
+
+- **Node.js**: >= 18.0.0
+- **npm**: >= 8.0.0
+- **Git**: Latest version
+
+### Quick Start
 
 ```bash
+# Clone the project
+git clone https://github.com/naodeng/awesome-qa-prompt.git
+cd awesome-qa-prompt
+
 # Install dependencies
 npm install
 
 # Start development server
 npm run docs:dev
-
 # Visit http://localhost:5173
-```
 
-Build production version:
-
-```bash
+# Build production version
 npm run docs:build
+
+# Preview build result
 npm run docs:preview
 ```
 
-For detailed instructions, see [QUICK_DEPLOY_EN.md](./QUICK_DEPLOY_EN.md).
+### Development Guide
+
+1. **Add New Testing Type**:
+   - Create new directory under `testing-types/`
+   - Add files following existing module structure
+   - Update navigation configuration
+
+2. **Modify Existing Content**:
+   - Directly edit corresponding Markdown files
+   - Keep Chinese and English versions synchronized
+   - Test if build works properly
+
+3. **Add Usage Examples**:
+   - Add examples under `examples/` directory
+   - Provide detailed usage instructions
+   - Include actual input/output examples
+
+### Project Structure
+
+```
+awesome-qa-prompt/
+├── .vitepress/          # VitePress configuration
+├── docs/               # Documentation homepage
+├── testing-types/      # Testing type modules (core content)
+├── workflows/          # Workflows
+├── examples/           # Usage examples
+├── prompt-frameworks/  # Prompt frameworks
+├── public/            # Static resources
+└── future-updates/    # Content to be updated
+```
 
 ### Types of Contributions
 
@@ -524,6 +602,40 @@ For detailed instructions, see [QUICK_DEPLOY_EN.md](./QUICK_DEPLOY_EN.md).
 - Maintain format consistency and readability
 - Add necessary comments and explanations
 - Provide usage examples
+- Ensure Chinese and English versions are synchronized
+
+### Community & Support
+
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/naodeng/awesome-qa-prompt/discussions)
+- 🐛 **Issue Reporting**: [GitHub Issues](https://github.com/naodeng/awesome-qa-prompt/issues)
+- 📧 **Email Contact**: Contact maintainers through GitHub
+- 🌟 **Follow Project**: Click Star to follow project updates
+
+## 🗺️ Project Roadmap
+
+### 🎯 Short-term Plans (Q1 2025)
+
+- [ ] **Enhance Existing Modules**: Optimize prompt quality and accuracy
+- [ ] **Add More Examples**: Provide more real-world project use cases
+- [ ] **Performance Testing Extension**: Add cloud-native and microservices performance testing scenarios
+- [ ] **AI Integration Optimization**: Optimize prompt effectiveness for different AI models
+
+### 🚀 Medium-term Goals (Q2-Q3 2025)
+
+- [ ] **New Testing Types**:
+  - 🔐 Blockchain Testing
+  - 🤖 Machine Learning Model Testing
+  - 🌐 IoT Device Testing
+  - 📊 Data Quality Testing
+- [ ] **Tool Integration**: Develop browser plugins and IDE extensions
+- [ ] **Community Building**: Establish user community and contributor programs
+
+### 🌟 Long-term Vision (2025+)
+
+- [ ] **Intelligence Enhancement**: AI-powered prompt recommendations based on user feedback
+- [ ] **Multi-language Support**: Support for more language versions
+- [ ] **Enterprise Features**: Provide enterprise-level customization and support services
+- [ ] **Ecosystem**: Build a complete testing tool ecosystem
 
 ## 📄 License
 
@@ -543,7 +655,7 @@ For questions or suggestions, please contact us through:
 
 ## 🔗 Related Links
 
-- **Online Documentation**: [https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)
+- **Online Documentation**: [https://qaprompt.inaodeng.com](https://qaprompt.inaodeng.com)
 - **GitHub Repository**: [https://github.com/naodeng/awesome-qa-prompt](https://github.com/naodeng/awesome-qa-prompt)
 - **Issue Tracker**: [Issues](https://github.com/naodeng/awesome-qa-prompt/issues)
 - **Contribute**: [Pull Requests](https://github.com/naodeng/awesome-qa-prompt/pulls)

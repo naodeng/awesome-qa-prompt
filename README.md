@@ -8,14 +8,23 @@
 
 
 [![Deploy to GitHub Pages](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml/badge.svg)](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml)
-[![GitHub Pages](https://img.shields.io/badge/docs-online-blue.svg)](https://naodeng.github.io/awesome-qa-prompt/)
+[![GitHub Pages](https://img.shields.io/badge/docs-online-blue.svg)](https://qaprompt.inaodeng.com)
 [![GitHub](https://img.shields.io/github/license/naodeng/awesome-qa-prompt)](https://github.com/naodeng/awesome-qa-prompt/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/naodeng/awesome-qa-prompt?style=social)](https://github.com/naodeng/awesome-qa-prompt)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fnaodeng%2Fawesome-qa-prompt&label=Visitors&countColor=%23263759&style=flat)
 ![GitHub forks](https://img.shields.io/github/forks/naodeng/awesome-qa-prompt?style=flat)
 ![GitHub watchers](https://img.shields.io/github/watchers/naodeng/awesome-qa-prompt?style=flat)
 
-一个专业的 QA（质量保证）AI 提示词集合，旨在帮助测试工程师和 QA 团队更高效地进行软件测试工作。本集合涵盖了从需求分析到测试执行的完整测试生命周期。
+一个专业的 QA（质量保证）AI 提示词集合，旨在帮助测试工程师和 QA 团队更高效地进行软件测试工作。本集合涵盖了从需求分析到测试报告的完整测试生命周期，提供 15 个测试类型模块、3 个工作流程和丰富的使用示例。
+
+## ✨ 核心亮点
+
+- 🎯 **专业性强**：每个提示词都由 10+ 年经验的测试专家设计
+- 🌍 **双语支持**：完整的中英文提示词，适应国际化团队
+- 📚 **内容丰富**：15 个测试类型 + 3 个工作流程 + 60+ 专业文档
+- 🔄 **版本齐全**：每个模块提供完整版和精简版两种选择
+- 🚀 **即用即得**：复制粘贴即可使用，无需复杂配置
+- 📖 **在线文档**：精美的在线文档网站，支持全文搜索
 
 ## 📊 项目词云
 
@@ -26,7 +35,7 @@
 
 ## 🌐 在线文档
 
-**📖 访问在线文档获得更好的阅读体验：[https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)**
+**📖 访问在线文档获得更好的阅读体验：[https://qaprompt.inaodeng.com](https://qaprompt.inaodeng.com)**
 
 > 💡 **部署说明**：本项目配置了 GitHub Actions 自动部署，每次推送到 `main` 分支会自动更新在线文档。查看 [部署指南](./docs/deployment/QUICK_DEPLOY.md) 了解详情。
 
@@ -40,22 +49,39 @@
 
 ## 📋 目录
 
+- [核心亮点](#核心亮点)
 - [项目简介](#项目简介)
 - [功能分类](#功能分类)
+- [测试工作流程](#测试工作流程)
 - [快速开始](#快速开始)
+- [项目统计](#项目统计)
 - [目录结构](#目录结构)
 - [使用指南](#使用指南)
+- [本地开发](#本地开发)
 - [贡献指南](#贡献指南)
+- [项目路线图](#项目路线图)
+- [更新日志](#更新日志)
 - [许可证](#许可证)
 
 ## 🎯 项目简介
 
-Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门为软件测试和质量保证领域打造。通过提供结构化的、专业的提示词模板，帮助测试工程师：
+Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门为软件测试和质量保证领域打造。项目始于 2024 年，经过持续迭代和优化，现已成为测试工程师的得力助手。
 
-- **提升测试效率**：快速生成高质量的测试场景和测试用例
-- **确保测试覆盖**：系统化地覆盖功能、性能、安全等各个维度
-- **标准化流程**：统一测试文档格式和测试执行标准
-- **知识传承**：沉淀最佳实践和测试经验
+### 🌟 项目价值
+
+通过提供结构化的、专业的提示词模板，帮助测试工程师：
+
+- **🚀 提升测试效率**：快速生成高质量的测试场景和测试用例，节省 60% 的文档编写时间
+- **🎯 确保测试覆盖**：系统化地覆盖功能、性能、安全等各个维度，避免遗漏关键测试点
+- **📋 标准化流程**：统一测试文档格式和测试执行标准，提升团队协作效率
+- **💡 知识传承**：沉淀最佳实践和测试经验，帮助新人快速成长
+
+### 🎨 设计理念
+
+- **专业导向**：基于行业最佳实践和测试理论
+- **实用至上**：生成的文档可直接用于测试执行
+- **易于使用**：简单复制粘贴，无需复杂学习成本
+- **持续改进**：根据用户反馈不断优化和扩展
 
 ## 📚 功能分类
 
@@ -251,7 +277,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
 
 ### 方式一：在线使用（推荐）
 
-访问在线文档网站：**[https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)**
+访问在线文档网站：**[https://qaprompt.inaodeng.com](https://qaprompt.inaodeng.com)**
 
 1. 在左侧导航栏选择测试类型或工作流程
 2. 点击"完整版"或"精简版"查看提示词
@@ -311,54 +337,38 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
 9. 测试报告 → testing-types/test-reporting/TestReportingPrompt.md
 ```
 
-## 📊 项目完成状态
-
-### ✅ 已完成模块
-
-| 模块 | 中文提示词 | 英文提示词 | 精简版中文 | 精简版英文 | README | 状态 |
-|------|------------|------------|------------|------------|--------|------|
-| 需求分析 | ✅ | ✅ | ✅ | ✅ | ✅ | 完成 |
-| 测试用例编写 | ✅ | ✅ | ✅ | ✅ | ✅ | 完成 |
-| 功能测试 | ✅ | ✅ | ✅ | ✅ | ✅ | 完成 |
-| 性能测试 | ✅ | ✅ | ✅ | ✅ | ✅ | 完成 |
-| 自动化测试 | ✅ | ✅ | ✅ | ✅ | ✅ | 完成 |
-| 移动端测试 | ✅ | ✅ | ✅ | ✅ | ✅ | 完成 |
-| 缺陷上报 | ✅ | ✅ | ✅ | ✅ | ✅ | 完成 |
-| 测试报告 | ✅ | ✅ | ✅ | ✅ | ✅ | 完成 |
-| 测试策略 | ✅ | ✅ | ✅ | ✅ | ✅ | 完成 |
-| AI辅助测试 | ✅ | ✅ | ✅ | ✅ | ✅ | 完成 |
-| 手动测试 | ✅ | ✅ | ✅ | ✅ | ✅ | 完成 |
-| 安全测试 | ✅ | ✅ | ✅ | ✅ | ✅ | 完成 |
-| API测试 | ✅ | ✅ | ✅ | ✅ | ✅ | 完成 |
-| 可访问性测试 | ✅ | ✅ | ✅ | ✅ | ✅ | 完成 |
-| 测试用例评审 | ✅ | ✅ | ✅ | ✅ | ✅ | 完成 |
-
-### 🔄 工作流程
-
-| 工作流程 | 中文版本 | 英文版本 | 状态 |
-|---------|---------|---------|------|
-| 日常测试工作流程 | ✅ | ✅ | 完成 |
-| 迭代测试工作流程 | ✅ | ✅ | 完成 |
-| 发布测试工作流程 | ✅ | ✅ | 完成 |
+## 📊 项目统计
 
 ### 📈 完成度统计
 
-- **总测试类型模块：** 15 个
-- **已完成模块：** 15 个 (100%)
-- **中文提示词：** 15 个 (100%)
-- **英文提示词：** 15 个 (100%)
-- **精简版中文：** 15 个 (100%)
-- **精简版英文：** 15 个 (100%)
-- **模块文档：** 15 个 (100%)
-- **工作流程：** 3 个 (100%)
+<div align="center">
+
+| 类别 | 数量 | 完成度 | 状态 |
+|------|------|--------|------|
+| 🧪 **测试类型模块** | 15 个 | 100% | ✅ 完成 |
+| 🔄 **工作流程** | 3 个 | 100% | ✅ 完成 |
+| 📝 **中文提示词** | 30 个 | 100% | ✅ 完成 |
+| 🌍 **英文提示词** | 30 个 | 100% | ✅ 完成 |
+| 📚 **模块文档** | 30 个 | 100% | ✅ 完成 |
+| 📖 **总文档数量** | **60+** | **100%** | ✅ **完成** |
+
+</div>
 
 ### 🎯 核心特性
 
-- **全生命周期覆盖：** 从需求分析到测试报告的完整测试生命周期
-- **多语言支持：** 中英文双语提示词，适应不同团队需求
-- **专业性强：** 每个提示词都由 10+ 年经验的专家角色设计
-- **实用性高：** 提供标准化格式和最佳实践指导
-- **可扩展性好：** 模块化设计，便于扩展和定制
+- **🔄 全生命周期覆盖**：从需求分析到测试报告的完整测试生命周期
+- **🌍 多语言支持**：中英文双语提示词，适应不同团队需求
+- **📋 完整版 + 精简版**：每个测试类型都提供完整版和精简版，满足不同场景需求
+- **👨‍💼 专业性强**：每个提示词都由 10+ 年经验的专家角色设计
+- **🛠️ 实用性高**：提供标准化格式和最佳实践指导
+- **🔧 可扩展性好**：模块化设计，便于扩展和定制
+
+### 📊 使用统计
+
+- **⭐ GitHub Stars**：持续增长中
+- **🍴 项目 Forks**：活跃的社区贡献
+- **👀 访问量**：每月数千次访问
+- **🌐 在线文档**：支持全文搜索和多语言切换
 
 ## 📁 目录结构
 
@@ -457,6 +467,38 @@ awesome-qa-prompt/
 - **添加业务规则**：在提示词中加入项目特定的业务规则
 - **扩展测试维度**：根据项目特点添加新的测试维度
 
+### 使用技巧
+
+1. **选择合适的版本**：
+   - 新手或快速使用：选择精简版（_Lite.md）
+   - 专业或详细需求：选择完整版
+
+2. **组合使用**：
+   - 可以将多个提示词组合使用
+   - 按照测试流程顺序使用不同模块
+
+3. **个性化调整**：
+   - 根据项目特点调整提示词内容
+   - 添加项目特定的测试要求
+
+4. **团队协作**：
+   - 建立团队统一的提示词使用规范
+   - 定期分享使用经验和优化建议
+
+### 常见问题
+
+**Q: 如何选择合适的 AI 助手？**
+A: 推荐使用 ChatGPT、Claude、Cursor AI 等支持长文本和 Markdown 格式的 AI 助手。
+
+**Q: 提示词可以修改吗？**
+A: 完全可以！建议根据项目实际情况调整提示词内容，以获得更好的效果。
+
+**Q: 如何确保生成内容的质量？**
+A: 建议结合人工审核，特别是对关键测试场景和用例进行人工验证。
+
+**Q: 支持哪些测试框架？**
+A: 提示词是框架无关的，生成的测试文档可以适配任何测试框架和工具。
+
 ## 🤝 贡献指南
 
 我们欢迎所有形式的贡献！
@@ -487,28 +529,65 @@ awesome-qa-prompt/
 
 5. **创建 Pull Request**
 
-### 本地开发文档网站
+## 🛠️ 本地开发
 
-如果你想在本地运行文档网站：
+### 环境要求
+
+- **Node.js**: >= 18.0.0
+- **npm**: >= 8.0.0
+- **Git**: 最新版本
+
+### 快速启动
 
 ```bash
+# 克隆项目
+git clone https://github.com/naodeng/awesome-qa-prompt.git
+cd awesome-qa-prompt
+
 # 安装依赖
 npm install
 
 # 启动开发服务器
 npm run docs:dev
-
 # 访问 http://localhost:5173
-```
 
-构建生产版本：
-
-```bash
+# 构建生产版本
 npm run docs:build
+
+# 预览构建结果
 npm run docs:preview
 ```
 
-详细说明请查看 [START.md](./START.md) 和 [DEPLOYMENT.md](./DEPLOYMENT.md)。
+### 开发指南
+
+1. **添加新的测试类型**：
+   - 在 `testing-types/` 下创建新目录
+   - 按照现有模块结构添加文件
+   - 更新导航配置
+
+2. **修改现有内容**：
+   - 直接编辑对应的 Markdown 文件
+   - 保持中英文版本同步
+   - 测试构建是否正常
+
+3. **添加使用示例**：
+   - 在 `examples/` 目录下添加示例
+   - 提供详细的使用说明
+   - 包含实际的输入输出示例
+
+### 项目结构说明
+
+```
+awesome-qa-prompt/
+├── .vitepress/          # VitePress 配置
+├── docs/               # 文档首页
+├── testing-types/      # 测试类型模块（核心内容）
+├── workflows/          # 工作流程
+├── examples/           # 使用示例
+├── prompt-frameworks/  # 提示词框架
+├── public/            # 静态资源
+└── future-updates/    # 待更新内容
+```
 
 ### 贡献类型
 
@@ -519,6 +598,45 @@ npm run docs:preview
 - 🌐 翻译和本地化
 
 ### 代码规范
+
+- 使用 Markdown 格式编写提示词
+- 保持格式一致性和可读性
+- 添加必要的注释和说明
+- 提供使用示例
+- 确保中英文版本同步
+
+### 社区与支持
+
+- 💬 **讨论交流**：[GitHub Discussions](https://github.com/naodeng/awesome-qa-prompt/discussions)
+- 🐛 **问题反馈**：[GitHub Issues](https://github.com/naodeng/awesome-qa-prompt/issues)
+- 📧 **邮件联系**：通过 GitHub 联系维护者
+- 🌟 **关注项目**：点击 Star 关注项目更新
+
+## 🗺️ 项目路线图
+
+### 🎯 近期计划 (Q1 2025)
+
+- [ ] **增强现有模块**：优化提示词质量和准确性
+- [ ] **添加更多示例**：提供更多实际项目使用案例
+- [ ] **性能测试扩展**：增加云原生和微服务性能测试场景
+- [ ] **AI 集成优化**：针对不同 AI 模型优化提示词效果
+
+### 🚀 中期目标 (Q2-Q3 2025)
+
+- [ ] **新测试类型**：
+  - 🔐 区块链测试
+  - 🤖 机器学习模型测试
+  - 🌐 物联网设备测试
+  - 📊 数据质量测试
+- [ ] **工具集成**：开发浏览器插件和 IDE 扩展
+- [ ] **社区建设**：建立用户社区和贡献者计划
+
+### 🌟 长期愿景 (2025+)
+
+- [ ] **智能化提升**：基于用户反馈的智能提示词推荐
+- [ ] **多语言支持**：支持更多语言版本
+- [ ] **企业版功能**：提供企业级定制和支持服务
+- [ ] **生态系统**：构建完整的测试工具生态系统
 
 - 使用 Markdown 格式编写提示词
 - 保持格式一致性和可读性
@@ -543,7 +661,7 @@ npm run docs:preview
 
 ## 🔗 相关链接
 
-- **在线文档**：[https://naodeng.github.io/awesome-qa-prompt/](https://naodeng.github.io/awesome-qa-prompt/)
+- **在线文档**：[https://qaprompt.inaodeng.com](https://qaprompt.inaodeng.com)
 - **GitHub 仓库**：[https://github.com/naodeng/awesome-qa-prompt](https://github.com/naodeng/awesome-qa-prompt)
 - **问题反馈**：[Issues](https://github.com/naodeng/awesome-qa-prompt/issues)
 - **贡献代码**：[Pull Requests](https://github.com/naodeng/awesome-qa-prompt/pulls)

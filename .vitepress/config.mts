@@ -193,19 +193,19 @@ export default defineConfig({
     
     // Open Graph / Facebook
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:url', content: 'https://naodeng.github.io/awesome-qa-prompt/' }],
+    ['meta', { property: 'og:url', content: 'https://qaprompt.inaodeng.com/' }],
     ['meta', { property: 'og:title', content: 'Awesome QA Prompt - Professional QA AI Prompt Library' }],
     ['meta', { property: 'og:description', content: 'A professional collection of AI prompts for QA professionals, covering the complete testing lifecycle from requirements analysis to test reporting. 专业的质量保证AI提示词库，涵盖从需求分析到测试报告的完整测试生命周期。' }],
-    ['meta', { property: 'og:image', content: `https://naodeng.github.io${base}logo.svg` }],
+    ['meta', { property: 'og:image', content: `https://qaprompt.inaodeng.com${base}logo.svg` }],
     ['meta', { property: 'og:locale', content: 'zh_CN' }],
     ['meta', { property: 'og:locale:alternate', content: 'en_US' }],
     
     // Twitter Card
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:url', content: 'https://naodeng.github.io/awesome-qa-prompt/' }],
+    ['meta', { name: 'twitter:url', content: 'https://qaprompt.inaodeng.com/' }],
     ['meta', { name: 'twitter:title', content: 'Awesome QA Prompt - Professional QA AI Prompt Library' }],
     ['meta', { name: 'twitter:description', content: 'A professional collection of AI prompts for QA professionals, covering the complete testing lifecycle from requirements analysis to test reporting.' }],
-    ['meta', { name: 'twitter:image', content: `https://naodeng.github.io${base}logo.svg` }],
+    ['meta', { name: 'twitter:image', content: `https://qaprompt.inaodeng.com${base}logo.svg` }],
     
     // Additional SEO
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -218,7 +218,7 @@ export default defineConfig({
       '@type': 'WebSite',
       name: 'Awesome QA Prompt',
       description: 'Professional QA AI Prompt Library for Software Testing',
-      url: 'https://naodeng.github.io/awesome-qa-prompt/',
+      url: 'https://qaprompt.inaodeng.com/',
       inLanguage: ['zh-CN', 'en-US'],
       author: {
         '@type': 'Organization',
@@ -595,12 +595,19 @@ export default defineConfig({
         },
         
         socialLinks: [
-          { icon: 'github', link: 'https://github.com/naodeng/awesome-qa-prompt' }
+          { icon: 'github', link: 'https://github.com/naodeng/awesome-qa-prompt' },
+          { 
+            icon: {
+              svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Website</title><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 7.568l-1.414 1.414c-.707-.707-1.768-1.061-2.829-1.061s-2.122.354-2.829 1.061l-1.414-1.414c1.06-1.06 2.475-1.647 4.243-1.647s3.182.586 4.243 1.647zM12 18c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6zm0-10c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4zm0 6c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2z"/></svg>'
+            }, 
+            link: 'https://inaodeng.com',
+            ariaLabel: '个人网站'
+          }
         ],
         
         footer: {
-          message: '基于 MIT 许可发布',
-          copyright: 'Copyright © 2024-present'
+          message: '🚀 让 AI 成为测试工程师最好的助手！基于 MIT 许可发布',
+          copyright: 'Copyright © 2024-present <a href="https://github.com/naodeng/awesome-qa-prompt/graphs/contributors">Awesome QA Prompt Contributors</a>'
         }
       }
     },
@@ -671,12 +678,19 @@ export default defineConfig({
         },
         
         socialLinks: [
-          { icon: 'github', link: 'https://github.com/naodeng/awesome-qa-prompt' }
+          { icon: 'github', link: 'https://github.com/naodeng/awesome-qa-prompt' },
+          { 
+            icon: {
+              svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Website</title><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 7.568l-1.414 1.414c-.707-.707-1.768-1.061-2.829-1.061s-2.122.354-2.829 1.061l-1.414-1.414c1.06-1.06 2.475-1.647 4.243-1.647s3.182.586 4.243 1.647zM12 18c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6zm0-10c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4zm0 6c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2z"/></svg>'
+            }, 
+            link: 'https://inaodeng.com',
+            ariaLabel: 'Personal Website'
+          }
         ],
         
         footer: {
-          message: 'Released under the MIT License',
-          copyright: 'Copyright © 2024-present'
+          message: '🚀 Let AI be the best assistant for test engineers! Released under the MIT License',
+          copyright: 'Copyright © 2024-present <a href="https://github.com/naodeng/awesome-qa-prompt/graphs/contributors">Awesome QA Prompt Contributors</a>'
         }
       }
     }
@@ -705,6 +719,6 @@ export default defineConfig({
   
   // Sitemap 配置
   sitemap: {
-    hostname: 'https://naodeng.github.io/awesome-qa-prompt/'
+    hostname: 'https://qaprompt.inaodeng.com/'
   }
 })

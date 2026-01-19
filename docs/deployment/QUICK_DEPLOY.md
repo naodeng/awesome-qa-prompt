@@ -53,7 +53,7 @@ git push origin main
 
 部署成功后访问：
 ```
-https://naodeng.github.io/awesome-qa-prompt/
+https://qaprompt.inaodeng.com/
 ```
 
 ---
@@ -109,8 +109,7 @@ git push origin main
                ▼
 ┌─────────────────────────────────────┐
 │  ✅ Site live at:                   │
-│  https://naodeng.github.io/         │
-│  awesome-qa-prompt/                 │
+│  https://qaprompt.inaodeng.com/     │
 └─────────────────────────────────────┘
 ```
 
@@ -228,7 +227,7 @@ Error: HttpError: Not Found
 
 ## 🔗 相关链接
 
-- **在线文档**: https://naodeng.github.io/awesome-qa-prompt/
+- **在线文档**: https://qaprompt.inaodeng.com/
 - **GitHub 仓库**: https://github.com/naodeng/awesome-qa-prompt
 - **Actions 日志**: https://github.com/naodeng/awesome-qa-prompt/actions
 - **Pages 设置**: https://github.com/naodeng/awesome-qa-prompt/settings/pages
