@@ -33,8 +33,8 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 - Plan testing strategy
 
 **Prompts to Use**:
-- [Test Strategy](../TestStrategy/TestStrategyPrompt_EN.md)
-- [Requirements Analysis](../RequirementsAnalysis/RequirementsAnalysisPrompt_EN.md) - Risk analysis
+- [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md)
+- [Requirements Analysis](../testing-types/requirements-analysis/RequirementsAnalysisPrompt_EN.md) - Risk analysis
 
 **Deliverables**:
 - [ ] Release test plan
@@ -55,8 +55,8 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 - Prepare test accounts
 
 **Prompts to Use**:
-- [Automation Testing](../AutomationTesting/AutomationTestingPrompt_EN.md) - CI/CD integration
-- [Test Strategy](../TestStrategy/TestStrategyPrompt_EN.md) - Test data generation
+- [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md) - CI/CD integration
+- [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) - Test data generation
 
 ### Test Suite Preparation
 **Update**:
@@ -85,8 +85,8 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 
 #### 1. Functional Testing
 **Prompts to Use**:
-- [Functional Testing](../FunctionalTesting/FunctionalTestingPrompt_EN.md)
-- [Test Case Writing](../TestCaseWriting/TestCaseWritingPrompt_EN.md)
+- [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md)
+- [Test Case Writing](../testing-types/test-case-writing/TestCaseWritingPrompt_EN.md)
 
 **Execute**:
 - All new features
@@ -102,11 +102,11 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 - Mobile testing
 
 **Prompts to Use**:
-- [AI-Assisted Testing](../AIAssistedTesting/AIAssistedTestingPrompt_EN.md) - Intelligent test selection
+- [AI-Assisted Testing](../testing-types/ai-assisted-testing/AIAssistedTestingPrompt_EN.md) - Intelligent test selection
 
 #### 3. End-to-End Testing
 **Prompts to Use**:
-- [Functional Testing](../FunctionalTesting/FunctionalTestingPrompt_EN.md) - E2E scenarios
+- [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md) - E2E scenarios
 
 **Test**:
 - Complete user journeys
@@ -120,7 +120,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 
 ### Performance Testing
 **Prompts to Use**:
-- [Performance Testing](../PerformanceTesting/PerformanceTestingPrompt_EN.md)
+- [Performance Testing](../testing-types/performance-testing/PerformanceTestingPrompt_EN.md)
 
 **Execute**:
 - Load testing (expected load)
@@ -136,7 +136,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 
 ### Security Testing
 **Prompts to Use**:
-- [Security Testing](../SecurityTesting/SecurityTestingPrompt_EN.md)
+- [Security Testing](../testing-types/security-testing/SecurityTestingPrompt_EN.md)
 
 **Execute**:
 - Vulnerability scanning
@@ -147,7 +147,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 
 ### Accessibility Testing
 **Prompts to Use**:
-- [Accessibility Testing](../AccessibilityTesting/AccessibilityTestingPrompt_EN.md)
+- [Accessibility Testing](../testing-types/accessibility-testing/AccessibilityTestingPrompt_EN.md)
 
 **Execute**:
 - Screen reader testing
@@ -157,7 +157,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 
 ### Visual Testing
 **Prompts to Use**:
-- [Accessibility Testing](../AccessibilityTesting/AccessibilityTestingPrompt_EN.md) - Visual testing
+- [Accessibility Testing](../testing-types/accessibility-testing/AccessibilityTestingPrompt_EN.md) - Visual testing
 
 **Execute**:
 - Visual regression tests
@@ -188,7 +188,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 - Exploratory testing sessions
 
 **Prompts to Use**:
-- [Manual Testing](../ManualTesting/ManualTestingPrompt_EN.md) - Exploratory testing
+- [Manual Testing](../testing-types/manual-testing/ManualTestingPrompt_EN.md) - Exploratory testing
 
 ### Bug Triage
 **Priority**:
@@ -209,8 +209,8 @@ Medium/Low → Defer to next release
 
 ### Test Metrics Review
 **Prompts to Use**:
-- [Test Reporting](../TestReporting/TestReportingPrompt_EN.md)
-- [Test Strategy](../TestStrategy/TestStrategyPrompt_EN.md) - Quality assessment
+- [Test Reporting](../testing-types/test-reporting/TestReportingPrompt_EN.md)
+- [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) - Quality assessment
 
 **Metrics to Review**:
 - Test execution rate: ___%
@@ -338,7 +338,7 @@ Medium/Low → Defer to next release
 - Process improvements?
 
 **Prompts to Use**:
-- [Test Reporting](../TestReporting/TestReportingPrompt_EN.md)
+- [Test Reporting](../testing-types/test-reporting/TestReportingPrompt_EN.md)
 
 ---
 
@@ -399,17 +399,17 @@ Medium/Low → Defer to next release
 ## 🔧 Recommended Prompts by Phase
 
 ### Planning
-- [Test Strategy](../TestStrategy/TestStrategyPrompt_EN.md)
-- [Requirements Analysis](../RequirementsAnalysis/RequirementsAnalysisPrompt_EN.md)
+- [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md)
+- [Requirements Analysis](../testing-types/requirements-analysis/RequirementsAnalysisPrompt_EN.md)
 
 ### Testing
-- [Functional Testing](../FunctionalTesting/FunctionalTestingPrompt_EN.md)
-- [Performance Testing](../PerformanceTesting/PerformanceTestingPrompt_EN.md)
-- [Security Testing](../SecurityTesting/SecurityTestingPrompt_EN.md)
-- [Accessibility Testing](../AccessibilityTesting/AccessibilityTestingPrompt_EN.md)
+- [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md)
+- [Performance Testing](../testing-types/performance-testing/PerformanceTestingPrompt_EN.md)
+- [Security Testing](../testing-types/security-testing/SecurityTestingPrompt_EN.md)
+- [Accessibility Testing](../testing-types/accessibility-testing/AccessibilityTestingPrompt_EN.md)
 
 ### Assessment
-- [Test Reporting](../TestReporting/TestReportingPrompt_EN.md)
+- [Test Reporting](../testing-types/test-reporting/TestReportingPrompt_EN.md)
 
 ---
 
