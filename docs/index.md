@@ -11,10 +11,10 @@ hero:
   actions:
     - theme: brand
       text: 快速开始 / Get Started
-      link: /testing-types/requirements-analysis/RequirementsAnalysisPrompt
+      link: /RequirementsAnalysis/RequirementsAnalysisPrompt
     - theme: alt
       text: 查看工作流程 / Workflows
-      link: /workflows/
+      link: /Workflows/
     - theme: alt
       text: English Version
       link: /en/
@@ -23,77 +23,77 @@ features:
   - icon: 📝
     title: 需求分析
     details: 基于需求文档进行深度分析，设计全维度的测试场景，涵盖正向路径、异常路径和边界值分析
-    link: /testing-types/requirements-analysis/RequirementsAnalysisPrompt
+    link: /RequirementsAnalysis/RequirementsAnalysisPrompt
     
   - icon: ✍️
     title: 测试用例编写
     details: 基于测试场景自动生成详细的测试用例，遵循测试用例设计原则和最佳实践
-    link: /testing-types/test-case-writing/TestCaseWritingPrompt
+    link: /TestCaseWriting/TestCaseWritingPrompt
     
   - icon: 🔍
     title: 功能测试
     details: 设计功能测试策略和执行方案，确保功能覆盖完整性和测试方法科学性
-    link: /testing-types/functional-testing/FunctionalTestingPrompt
+    link: /FunctionalTesting/FunctionalTestingPrompt
     
   - icon: ⚡
     title: 性能测试
     details: 设计性能测试场景和性能指标分析，包括负载、压力、峰值、容量等多种性能测试
-    link: /testing-types/performance-testing/PerformanceTestingPrompt
+    link: /PerformanceTesting/PerformanceTestingPrompt
     
   - icon: 🤖
     title: 自动化测试
     details: 自动化测试脚本设计和框架选择，支持 Web、API、移动端、数据库自动化
-    link: /testing-types/automation-testing/AutomationTestingPrompt
+    link: /AutomationTesting/AutomationTestingPrompt
     
   - icon: 📱
     title: 移动端测试
     details: 移动应用测试策略和场景设计，涵盖 iOS 和 Android 平台特性测试
-    link: /testing-types/mobile-testing/MobileTestingPrompt
+    link: /MobileTesting/MobileTestingPrompt
     
   - icon: 🐛
     title: 缺陷上报
     details: 标准化缺陷报告模板和缺陷分析，包含根因分析和解决建议
-    link: /testing-types/bug-reporting/BugReportingPrompt
+    link: /BugReporting/BugReportingPrompt
     
   - icon: 📊
     title: 测试报告
     details: 测试执行报告和质量分析报告，提供质量指标体系和风险评估
-    link: /testing-types/test-reporting/TestReportingPrompt
+    link: /TestReporting/TestReportingPrompt
     
   - icon: 🎯
     title: 测试策略
     details: 整体测试策略制定和测试计划设计，包含风险管理和质量控制机制
-    link: /testing-types/test-strategy/TestStrategyPrompt
+    link: /TestStrategy/TestStrategyPrompt
     
   - icon: 🤖
     title: AI辅助测试
     details: 利用AI技术提升测试效率和质量，包括智能测试生成和缺陷预测
-    link: /testing-types/ai-assisted-testing/AIAssistedTestingPrompt
+    link: /AIAssistedTesting/AIAssistedTestingPrompt
     
   - icon: 📋
     title: 手动测试
     details: 手动测试策略和探索性测试，涵盖探索性测试方法和用户体验评估
-    link: /testing-types/manual-testing/ManualTestingPrompt
+    link: /ManualTesting/ManualTestingPrompt
     
   - icon: 🔒
     title: 安全测试
     details: 安全漏洞检测和安全测试策略，包括 OWASP Top 10 漏洞测试
-    link: /testing-types/security-testing/SecurityTestingPrompt
+    link: /SecurityTesting/SecurityTestingPrompt
     
   - icon: 🔌
     title: API测试
     details: API接口测试和集成测试，支持 RESTful API 测试设计和性能测试
-    link: /testing-types/api-testing/APITestingPrompt
+    link: /APITesting/APITestingPrompt
     
   - icon: ♿
     title: 可访问性测试
     details: Web可访问性测试和WCAG合规性检查，确保产品的无障碍访问
-    link: /testing-types/accessibility-testing/AccessibilityTestingPrompt
+    link: /AccessibilityTesting/AccessibilityTestingPrompt
     
   - icon: 🔍
     title: 测试用例评审
     details: 专业的测试用例审核和质量把控，擅长挖掘极端边界和潜在风险点
-    link: /testing-types/test-case-reviewer/TestCaseReviewerPrompt
+    link: /TestCaseReviewer/TestCaseReviewerPrompt
 ---
 
 ## 🔄 测试工作流程
@@ -104,19 +104,19 @@ features:
   <div class="workflow-card">
     <h3>📅 日常测试工作流程</h3>
     <p>适用于 QA 工程师的日常测试活动，涵盖早晨例行工作、测试用例创建、自动化测试、探索性测试等</p>
-    <a href="/workflows/daily-testing-workflow_CN">查看详情 →</a>
+    <a href="/Workflows/daily-testing-workflow_CN">查看详情 →</a>
   </div>
   
   <div class="workflow-card">
     <h3>🏃 迭代测试工作流程</h3>
     <p>适用于敏捷/Scrum团队的2周迭代周期，包含迭代规划、日常测试活动、回归测试和迭代评审</p>
-    <a href="/workflows/sprint-testing-workflow_CN">查看详情 →</a>
+    <a href="/Workflows/sprint-testing-workflow_CN">查看详情 →</a>
   </div>
   
   <div class="workflow-card">
     <h3>🚀 发布测试工作流程</h3>
     <p>适用于生产环境发布前的全面测试，涵盖发布规划、专项测试、候选版本测试和发布后监控</p>
-    <a href="/workflows/release-testing-workflow_CN">查看详情 →</a>
+    <a href="/Workflows/release-testing-workflow_CN">查看详情 →</a>
   </div>
 </div>
 

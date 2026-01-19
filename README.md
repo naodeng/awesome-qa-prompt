@@ -1,4 +1,4 @@
-<div align="right"><strong>🇨🇳中文</a></strong> | <strong><a href="./README_EN.md">🇬🇧English</a></strong></div>
+<div align="right"><strong>🇨🇳中文</strong> | <strong><a href="./README_EN.md">🇬🇧English</a></strong></div>
 
 # Awesome QA Prompt 
 
