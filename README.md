@@ -1,6 +1,6 @@
-# Awesome QA Prompt Collection
+<div align="right"><strong>🇨🇳中文</a></strong> | <strong><a href="./README_EN.md">🇬🇧English</a></strong></div>
 
-[English](./README_EN.md) | 简体中文
+# Awesome QA Prompt 
 
 <div align="center">
   <img src="./public/logo.svg" alt="Awesome QA Prompt " width="800"/>
