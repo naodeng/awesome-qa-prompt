@@ -102,8 +102,8 @@
 @media (min-width: 960px) {
   .VPHero .main {
     text-align: left;
-    max-width: 50%;
-    flex: 0 0 50%;
+    max-width: 45%;
+    flex: 0 0 45%;
   }
 }
 
@@ -134,8 +134,8 @@
 
 /* 增大图片尺寸，提升视觉效果 */
 .VPHero .VPImage.image-src {
-  max-width: 320px !important;
-  max-height: 320px !important;
+  max-width: 400px !important;
+  max-height: 400px !important;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -144,15 +144,22 @@
 
 @media (min-width: 640px) {
   .VPHero .VPImage.image-src {
-    max-width: 480px !important;
-    max-height: 480px !important;
+    max-width: 600px !important;
+    max-height: 600px !important;
   }
 }
 
 @media (min-width: 960px) {
   .VPHero .VPImage.image-src {
-    max-width: 600px !important;
-    max-height: 600px !important;
+    max-width: 800px !important;
+    max-height: 800px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .VPHero .VPImage.image-src {
+    max-width: 900px !important;
+    max-height: 900px !important;
   }
 }
 
