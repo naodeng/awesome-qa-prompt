@@ -1143,9 +1143,7 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         { text: '完整版', link: '/RequirementsAnalysis/RequirementsAnalysisPrompt' },
-                        { text: '精简版', link: '/RequirementsAnalysis/RequirementsAnalysisPrompt_Lite' },
-                        { text: '完整版 (EN)', link: '/RequirementsAnalysis/RequirementsAnalysisPrompt_EN' },
-                        { text: '精简版 (EN)', link: '/RequirementsAnalysis/RequirementsAnalysisPrompt_Lite_EN' }
+                        { text: '精简版', link: '/RequirementsAnalysis/RequirementsAnalysisPrompt_Lite' }
                       ]
                     },
                     { 
@@ -1153,9 +1151,7 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         { text: '完整版', link: '/RequirementsAnalysis/ROSES-version/RequirementsAnalysis-ROSES-Full' },
-                        { text: '精简版', link: '/RequirementsAnalysis/ROSES-version/RequirementsAnalysis-ROSES-Lite' },
-                        { text: '完整版 (EN)', link: '/RequirementsAnalysis/ROSES-version/RequirementsAnalysis-ROSES-Full_EN' },
-                        { text: '精简版 (EN)', link: '/RequirementsAnalysis/ROSES-version/RequirementsAnalysis-ROSES-Lite_EN' }
+                        { text: '精简版', link: '/RequirementsAnalysis/ROSES-version/RequirementsAnalysis-ROSES-Lite' }
                       ]
                     },
                     { 
@@ -1163,9 +1159,7 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         { text: '完整版', link: '/RequirementsAnalysis/LangGPT-version/RequirementsAnalysis-LangGPT-Full' },
-                        { text: '精简版', link: '/RequirementsAnalysis/LangGPT-version/RequirementsAnalysis-LangGPT-Lite' },
-                        { text: '完整版 (EN)', link: '/RequirementsAnalysis/LangGPT-version/RequirementsAnalysis-LangGPT-Full_EN' },
-                        { text: '精简版 (EN)', link: '/RequirementsAnalysis/LangGPT-version/RequirementsAnalysis-LangGPT-Lite_EN' }
+                        { text: '精简版', link: '/RequirementsAnalysis/LangGPT-version/RequirementsAnalysis-LangGPT-Lite' }
                       ]
                     },
                     { 
@@ -1173,9 +1167,7 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         { text: '完整版', link: '/RequirementsAnalysis/ICIO-version/RequirementsAnalysis-ICIO-Full' },
-                        { text: '精简版', link: '/RequirementsAnalysis/ICIO-version/RequirementsAnalysis-ICIO-Lite' },
-                        { text: '完整版 (EN)', link: '/RequirementsAnalysis/ICIO-version/RequirementsAnalysis-ICIO-Full_EN' },
-                        { text: '精简版 (EN)', link: '/RequirementsAnalysis/ICIO-version/RequirementsAnalysis-ICIO-Lite_EN' }
+                        { text: '精简版', link: '/RequirementsAnalysis/ICIO-version/RequirementsAnalysis-ICIO-Lite' }
                       ]
                     },
                     { 
@@ -1183,9 +1175,7 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         { text: '完整版', link: '/RequirementsAnalysis/CRISPE-version/RequirementsAnalysis-CRISPE-Full' },
-                        { text: '精简版', link: '/RequirementsAnalysis/CRISPE-version/RequirementsAnalysis-CRISPE-Lite' },
-                        { text: '完整版 (EN)', link: '/RequirementsAnalysis/CRISPE-version/RequirementsAnalysis-CRISPE-Full_EN' },
-                        { text: '精简版 (EN)', link: '/RequirementsAnalysis/CRISPE-version/RequirementsAnalysis-CRISPE-Lite_EN' }
+                        { text: '精简版', link: '/RequirementsAnalysis/CRISPE-version/RequirementsAnalysis-CRISPE-Lite' }
                       ]
                     },
                     { 
@@ -1193,9 +1183,7 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         { text: '完整版', link: '/RequirementsAnalysis/RISE-version/RequirementsAnalysis-RISE-Full' },
-                        { text: '精简版', link: '/RequirementsAnalysis/RISE-version/RequirementsAnalysis-RISE-Lite' },
-                        { text: '完整版 (EN)', link: '/RequirementsAnalysis/RISE-version/RequirementsAnalysis-RISE-Full_EN' },
-                        { text: '精简版 (EN)', link: '/RequirementsAnalysis/RISE-version/RequirementsAnalysis-RISE-Lite_EN' }
+                        { text: '精简版', link: '/RequirementsAnalysis/RISE-version/RequirementsAnalysis-RISE-Lite' }
                       ]
                     }
                   ]
