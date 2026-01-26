@@ -848,364 +848,184 @@ export default defineConfig({
     'testing-types/test-case-reviewer/RISE-version/TestCaseReviewer-RISE-Lite_EN.md': 'TestCaseReviewer/RISE-version/TestCaseReviewer-RISE-Lite_EN.md',
 
     // RequirementsAnalysis (EN) - Standard-version
-    // 'testing-types/requirements-analysis/Standard-version/RequirementsAnalysisPrompt_EN.md': 'en/RequirementsAnalysis/RequirementsAnalysisPrompt.md',
-    // 'testing-types/requirements-analysis/Standard-version/RequirementsAnalysisPrompt_Lite_EN.md': 'en/RequirementsAnalysis/RequirementsAnalysisPrompt_Lite.md',
 
     // RequirementsAnalysis (EN) - ROSES-version
-    // 'testing-types/requirements-analysis/ROSES-version/RequirementsAnalysis-ROSES-Full_EN.md': 'en/RequirementsAnalysis/ROSES-version/RequirementsAnalysis-ROSES-Full.md',
-    // 'testing-types/requirements-analysis/ROSES-version/RequirementsAnalysis-ROSES-Lite_EN.md': 'en/RequirementsAnalysis/ROSES-version/RequirementsAnalysis-ROSES-Lite.md',
 
     // RequirementsAnalysis (EN) - LangGPT-version
-    // 'testing-types/requirements-analysis/LangGPT-version/RequirementsAnalysis-LangGPT-Full_EN.md': 'en/RequirementsAnalysis/LangGPT-version/RequirementsAnalysis-LangGPT-Full.md',
-    // 'testing-types/requirements-analysis/LangGPT-version/RequirementsAnalysis-LangGPT-Lite_EN.md': 'en/RequirementsAnalysis/LangGPT-version/RequirementsAnalysis-LangGPT-Lite.md',
 
     // RequirementsAnalysis (EN) - ICIO-version
-    // 'testing-types/requirements-analysis/ICIO-version/RequirementsAnalysis-ICIO-Full_EN.md': 'en/RequirementsAnalysis/ICIO-version/RequirementsAnalysis-ICIO-Full.md',
-    // 'testing-types/requirements-analysis/ICIO-version/RequirementsAnalysis-ICIO-Lite_EN.md': 'en/RequirementsAnalysis/ICIO-version/RequirementsAnalysis-ICIO-Lite.md',
 
     // RequirementsAnalysis (EN) - CRISPE-version
-    // 'testing-types/requirements-analysis/CRISPE-version/RequirementsAnalysis-CRISPE-Full_EN.md': 'en/RequirementsAnalysis/CRISPE-version/RequirementsAnalysis-CRISPE-Full.md',
-    // 'testing-types/requirements-analysis/CRISPE-version/RequirementsAnalysis-CRISPE-Lite_EN.md': 'en/RequirementsAnalysis/CRISPE-version/RequirementsAnalysis-CRISPE-Lite.md',
 
     // RequirementsAnalysis (EN) - RISE-version
-    // 'testing-types/requirements-analysis/RISE-version/RequirementsAnalysis-RISE-Full_EN.md': 'en/RequirementsAnalysis/RISE-version/RequirementsAnalysis-RISE-Full.md',
-    // 'testing-types/requirements-analysis/RISE-version/RequirementsAnalysis-RISE-Lite_EN.md': 'en/RequirementsAnalysis/RISE-version/RequirementsAnalysis-RISE-Lite.md',
 
     // TestCaseWriting (EN) - Standard-version
-    // 'testing-types/test-case-writing/Standard-version/TestCaseWritingPrompt_EN.md': 'en/TestCaseWriting/TestCaseWritingPrompt.md',
-    // 'testing-types/test-case-writing/Standard-version/TestCaseWritingPrompt_Lite_EN.md': 'en/TestCaseWriting/TestCaseWritingPrompt_Lite.md',
 
     // TestCaseWriting (EN) - ROSES-version
-    // 'testing-types/test-case-writing/ROSES-version/TestCaseWriting-ROSES-Full_EN.md': 'en/TestCaseWriting/ROSES-version/TestCaseWriting-ROSES-Full.md',
-    // 'testing-types/test-case-writing/ROSES-version/TestCaseWriting-ROSES-Lite_EN.md': 'en/TestCaseWriting/ROSES-version/TestCaseWriting-ROSES-Lite.md',
 
     // TestCaseWriting (EN) - LangGPT-version
-    // 'testing-types/test-case-writing/LangGPT-version/TestCaseWriting-LangGPT-Full_EN.md': 'en/TestCaseWriting/LangGPT-version/TestCaseWriting-LangGPT-Full.md',
-    // 'testing-types/test-case-writing/LangGPT-version/TestCaseWriting-LangGPT-Lite_EN.md': 'en/TestCaseWriting/LangGPT-version/TestCaseWriting-LangGPT-Lite.md',
 
     // TestCaseWriting (EN) - ICIO-version
-    // 'testing-types/test-case-writing/ICIO-version/TestCaseWriting-ICIO-Full_EN.md': 'en/TestCaseWriting/ICIO-version/TestCaseWriting-ICIO-Full.md',
-    // 'testing-types/test-case-writing/ICIO-version/TestCaseWriting-ICIO-Lite_EN.md': 'en/TestCaseWriting/ICIO-version/TestCaseWriting-ICIO-Lite.md',
 
     // TestCaseWriting (EN) - CRISPE-version
-    // 'testing-types/test-case-writing/CRISPE-version/TestCaseWriting-CRISPE-Full_EN.md': 'en/TestCaseWriting/CRISPE-version/TestCaseWriting-CRISPE-Full.md',
-    // 'testing-types/test-case-writing/CRISPE-version/TestCaseWriting-CRISPE-Lite_EN.md': 'en/TestCaseWriting/CRISPE-version/TestCaseWriting-CRISPE-Lite.md',
 
     // TestCaseWriting (EN) - RISE-version
-    // 'testing-types/test-case-writing/RISE-version/TestCaseWriting-RISE-Full_EN.md': 'en/TestCaseWriting/RISE-version/TestCaseWriting-RISE-Full.md',
-    // 'testing-types/test-case-writing/RISE-version/TestCaseWriting-RISE-Lite_EN.md': 'en/TestCaseWriting/RISE-version/TestCaseWriting-RISE-Lite.md',
 
     // FunctionalTesting (EN) - Standard-version
-    // 'testing-types/functional-testing/Standard-version/FunctionalTestingPrompt_EN.md': 'en/FunctionalTesting/FunctionalTestingPrompt.md',
-    // 'testing-types/functional-testing/Standard-version/FunctionalTestingPrompt_Lite_EN.md': 'en/FunctionalTesting/FunctionalTestingPrompt_Lite.md',
 
     // FunctionalTesting (EN) - ROSES-version
-    // 'testing-types/functional-testing/ROSES-version/FunctionalTesting-ROSES-Full_EN.md': 'en/FunctionalTesting/ROSES-version/FunctionalTesting-ROSES-Full.md',
-    // 'testing-types/functional-testing/ROSES-version/FunctionalTesting-ROSES-Lite_EN.md': 'en/FunctionalTesting/ROSES-version/FunctionalTesting-ROSES-Lite.md',
 
     // FunctionalTesting (EN) - LangGPT-version
-    // 'testing-types/functional-testing/LangGPT-version/FunctionalTesting-LangGPT-Full_EN.md': 'en/FunctionalTesting/LangGPT-version/FunctionalTesting-LangGPT-Full.md',
-    // 'testing-types/functional-testing/LangGPT-version/FunctionalTesting-LangGPT-Lite_EN.md': 'en/FunctionalTesting/LangGPT-version/FunctionalTesting-LangGPT-Lite.md',
 
     // FunctionalTesting (EN) - ICIO-version
-    // 'testing-types/functional-testing/ICIO-version/FunctionalTesting-ICIO-Full_EN.md': 'en/FunctionalTesting/ICIO-version/FunctionalTesting-ICIO-Full.md',
-    // 'testing-types/functional-testing/ICIO-version/FunctionalTesting-ICIO-Lite_EN.md': 'en/FunctionalTesting/ICIO-version/FunctionalTesting-ICIO-Lite.md',
 
     // FunctionalTesting (EN) - CRISPE-version
-    // 'testing-types/functional-testing/CRISPE-version/FunctionalTesting-CRISPE-Full_EN.md': 'en/FunctionalTesting/CRISPE-version/FunctionalTesting-CRISPE-Full.md',
-    // 'testing-types/functional-testing/CRISPE-version/FunctionalTesting-CRISPE-Lite_EN.md': 'en/FunctionalTesting/CRISPE-version/FunctionalTesting-CRISPE-Lite.md',
 
     // FunctionalTesting (EN) - RISE-version
-    // 'testing-types/functional-testing/RISE-version/FunctionalTesting-RISE-Full_EN.md': 'en/FunctionalTesting/RISE-version/FunctionalTesting-RISE-Full.md',
-    // 'testing-types/functional-testing/RISE-version/FunctionalTesting-RISE-Lite_EN.md': 'en/FunctionalTesting/RISE-version/FunctionalTesting-RISE-Lite.md',
 
     // PerformanceTesting (EN) - Standard-version
-    // 'testing-types/performance-testing/Standard-version/PerformanceTestingPrompt_EN.md': 'en/PerformanceTesting/PerformanceTestingPrompt.md',
-    // 'testing-types/performance-testing/Standard-version/PerformanceTestingPrompt_Lite_EN.md': 'en/PerformanceTesting/PerformanceTestingPrompt_Lite.md',
 
     // PerformanceTesting (EN) - ROSES-version
-    // 'testing-types/performance-testing/ROSES-version/PerformanceTesting-ROSES-Full_EN.md': 'en/PerformanceTesting/ROSES-version/PerformanceTesting-ROSES-Full.md',
-    // 'testing-types/performance-testing/ROSES-version/PerformanceTesting-ROSES-Lite_EN.md': 'en/PerformanceTesting/ROSES-version/PerformanceTesting-ROSES-Lite.md',
 
     // PerformanceTesting (EN) - LangGPT-version
-    // 'testing-types/performance-testing/LangGPT-version/PerformanceTesting-LangGPT-Full_EN.md': 'en/PerformanceTesting/LangGPT-version/PerformanceTesting-LangGPT-Full.md',
-    // 'testing-types/performance-testing/LangGPT-version/PerformanceTesting-LangGPT-Lite_EN.md': 'en/PerformanceTesting/LangGPT-version/PerformanceTesting-LangGPT-Lite.md',
 
     // PerformanceTesting (EN) - ICIO-version
-    // 'testing-types/performance-testing/ICIO-version/PerformanceTesting-ICIO-Full_EN.md': 'en/PerformanceTesting/ICIO-version/PerformanceTesting-ICIO-Full.md',
-    // 'testing-types/performance-testing/ICIO-version/PerformanceTesting-ICIO-Lite_EN.md': 'en/PerformanceTesting/ICIO-version/PerformanceTesting-ICIO-Lite.md',
 
     // PerformanceTesting (EN) - CRISPE-version
-    // 'testing-types/performance-testing/CRISPE-version/PerformanceTesting-CRISPE-Full_EN.md': 'en/PerformanceTesting/CRISPE-version/PerformanceTesting-CRISPE-Full.md',
-    // 'testing-types/performance-testing/CRISPE-version/PerformanceTesting-CRISPE-Lite_EN.md': 'en/PerformanceTesting/CRISPE-version/PerformanceTesting-CRISPE-Lite.md',
 
     // PerformanceTesting (EN) - RISE-version
-    // 'testing-types/performance-testing/RISE-version/PerformanceTesting-RISE-Full_EN.md': 'en/PerformanceTesting/RISE-version/PerformanceTesting-RISE-Full.md',
-    // 'testing-types/performance-testing/RISE-version/PerformanceTesting-RISE-Lite_EN.md': 'en/PerformanceTesting/RISE-version/PerformanceTesting-RISE-Lite.md',
 
     // AutomationTesting (EN) - Standard-version
-    // 'testing-types/automation-testing/Standard-version/AutomationTestingPrompt_EN.md': 'en/AutomationTesting/AutomationTestingPrompt.md',
-    // 'testing-types/automation-testing/Standard-version/AutomationTestingPrompt_Lite_EN.md': 'en/AutomationTesting/AutomationTestingPrompt_Lite.md',
 
     // AutomationTesting (EN) - ROSES-version
-    // 'testing-types/automation-testing/ROSES-version/AutomationTesting-ROSES-Full_EN.md': 'en/AutomationTesting/ROSES-version/AutomationTesting-ROSES-Full.md',
-    // 'testing-types/automation-testing/ROSES-version/AutomationTesting-ROSES-Lite_EN.md': 'en/AutomationTesting/ROSES-version/AutomationTesting-ROSES-Lite.md',
 
     // AutomationTesting (EN) - LangGPT-version
-    // 'testing-types/automation-testing/LangGPT-version/AutomationTesting-LangGPT-Full_EN.md': 'en/AutomationTesting/LangGPT-version/AutomationTesting-LangGPT-Full.md',
-    // 'testing-types/automation-testing/LangGPT-version/AutomationTesting-LangGPT-Lite_EN.md': 'en/AutomationTesting/LangGPT-version/AutomationTesting-LangGPT-Lite.md',
 
     // AutomationTesting (EN) - ICIO-version
-    // 'testing-types/automation-testing/ICIO-version/AutomationTesting-ICIO-Full_EN.md': 'en/AutomationTesting/ICIO-version/AutomationTesting-ICIO-Full.md',
-    // 'testing-types/automation-testing/ICIO-version/AutomationTesting-ICIO-Lite_EN.md': 'en/AutomationTesting/ICIO-version/AutomationTesting-ICIO-Lite.md',
 
     // AutomationTesting (EN) - CRISPE-version
-    // 'testing-types/automation-testing/CRISPE-version/AutomationTesting-CRISPE-Full_EN.md': 'en/AutomationTesting/CRISPE-version/AutomationTesting-CRISPE-Full.md',
-    // 'testing-types/automation-testing/CRISPE-version/AutomationTesting-CRISPE-Lite_EN.md': 'en/AutomationTesting/CRISPE-version/AutomationTesting-CRISPE-Lite.md',
 
     // AutomationTesting (EN) - RISE-version
-    // 'testing-types/automation-testing/RISE-version/AutomationTesting-RISE-Full_EN.md': 'en/AutomationTesting/RISE-version/AutomationTesting-RISE-Full.md',
-    // 'testing-types/automation-testing/RISE-version/AutomationTesting-RISE-Lite_EN.md': 'en/AutomationTesting/RISE-version/AutomationTesting-RISE-Lite.md',
 
     // MobileTesting (EN) - Standard-version
-    // 'testing-types/mobile-testing/Standard-version/MobileTestingPrompt_EN.md': 'en/MobileTesting/MobileTestingPrompt.md',
-    // 'testing-types/mobile-testing/Standard-version/MobileTestingPrompt_Lite_EN.md': 'en/MobileTesting/MobileTestingPrompt_Lite.md',
 
     // MobileTesting (EN) - ROSES-version
-    // 'testing-types/mobile-testing/ROSES-version/MobileTesting-ROSES-Full_EN.md': 'en/MobileTesting/ROSES-version/MobileTesting-ROSES-Full.md',
-    // 'testing-types/mobile-testing/ROSES-version/MobileTesting-ROSES-Lite_EN.md': 'en/MobileTesting/ROSES-version/MobileTesting-ROSES-Lite.md',
 
     // MobileTesting (EN) - LangGPT-version
-    // 'testing-types/mobile-testing/LangGPT-version/MobileTesting-LangGPT-Full_EN.md': 'en/MobileTesting/LangGPT-version/MobileTesting-LangGPT-Full.md',
-    // 'testing-types/mobile-testing/LangGPT-version/MobileTesting-LangGPT-Lite_EN.md': 'en/MobileTesting/LangGPT-version/MobileTesting-LangGPT-Lite.md',
 
     // MobileTesting (EN) - ICIO-version
-    // 'testing-types/mobile-testing/ICIO-version/MobileTesting-ICIO-Full_EN.md': 'en/MobileTesting/ICIO-version/MobileTesting-ICIO-Full.md',
-    // 'testing-types/mobile-testing/ICIO-version/MobileTesting-ICIO-Lite_EN.md': 'en/MobileTesting/ICIO-version/MobileTesting-ICIO-Lite.md',
 
     // MobileTesting (EN) - CRISPE-version
-    // 'testing-types/mobile-testing/CRISPE-version/MobileTesting-CRISPE-Full_EN.md': 'en/MobileTesting/CRISPE-version/MobileTesting-CRISPE-Full.md',
-    // 'testing-types/mobile-testing/CRISPE-version/MobileTesting-CRISPE-Lite_EN.md': 'en/MobileTesting/CRISPE-version/MobileTesting-CRISPE-Lite.md',
 
     // MobileTesting (EN) - RISE-version
-    // 'testing-types/mobile-testing/RISE-version/MobileTesting-RISE-Full_EN.md': 'en/MobileTesting/RISE-version/MobileTesting-RISE-Full.md',
-    // 'testing-types/mobile-testing/RISE-version/MobileTesting-RISE-Lite_EN.md': 'en/MobileTesting/RISE-version/MobileTesting-RISE-Lite.md',
 
     // BugReporting (EN) - Standard-version
-    // 'testing-types/bug-reporting/Standard-version/BugReportingPrompt_EN.md': 'en/BugReporting/BugReportingPrompt.md',
-    // 'testing-types/bug-reporting/Standard-version/BugReportingPrompt_Lite_EN.md': 'en/BugReporting/BugReportingPrompt_Lite.md',
 
     // BugReporting (EN) - ROSES-version
-    // 'testing-types/bug-reporting/ROSES-version/BugReporting-ROSES-Full_EN.md': 'en/BugReporting/ROSES-version/BugReporting-ROSES-Full.md',
-    // 'testing-types/bug-reporting/ROSES-version/BugReporting-ROSES-Lite_EN.md': 'en/BugReporting/ROSES-version/BugReporting-ROSES-Lite.md',
 
     // BugReporting (EN) - LangGPT-version
-    // 'testing-types/bug-reporting/LangGPT-version/BugReporting-LangGPT-Full_EN.md': 'en/BugReporting/LangGPT-version/BugReporting-LangGPT-Full.md',
-    // 'testing-types/bug-reporting/LangGPT-version/BugReporting-LangGPT-Lite_EN.md': 'en/BugReporting/LangGPT-version/BugReporting-LangGPT-Lite.md',
 
     // BugReporting (EN) - ICIO-version
-    // 'testing-types/bug-reporting/ICIO-version/BugReporting-ICIO-Full_EN.md': 'en/BugReporting/ICIO-version/BugReporting-ICIO-Full.md',
-    // 'testing-types/bug-reporting/ICIO-version/BugReporting-ICIO-Lite_EN.md': 'en/BugReporting/ICIO-version/BugReporting-ICIO-Lite.md',
 
     // BugReporting (EN) - CRISPE-version
-    // 'testing-types/bug-reporting/CRISPE-version/BugReporting-CRISPE-Full_EN.md': 'en/BugReporting/CRISPE-version/BugReporting-CRISPE-Full.md',
-    // 'testing-types/bug-reporting/CRISPE-version/BugReporting-CRISPE-Lite_EN.md': 'en/BugReporting/CRISPE-version/BugReporting-CRISPE-Lite.md',
 
     // BugReporting (EN) - RISE-version
-    // 'testing-types/bug-reporting/RISE-version/BugReporting-RISE-Full_EN.md': 'en/BugReporting/RISE-version/BugReporting-RISE-Full.md',
-    // 'testing-types/bug-reporting/RISE-version/BugReporting-RISE-Lite_EN.md': 'en/BugReporting/RISE-version/BugReporting-RISE-Lite.md',
 
     // TestReporting (EN) - Standard-version
-    // 'testing-types/test-reporting/Standard-version/TestReportingPrompt_EN.md': 'en/TestReporting/TestReportingPrompt.md',
-    // 'testing-types/test-reporting/Standard-version/TestReportingPrompt_Lite_EN.md': 'en/TestReporting/TestReportingPrompt_Lite.md',
 
     // TestReporting (EN) - ROSES-version
-    // 'testing-types/test-reporting/ROSES-version/TestReporting-ROSES-Full_EN.md': 'en/TestReporting/ROSES-version/TestReporting-ROSES-Full.md',
-    // 'testing-types/test-reporting/ROSES-version/TestReporting-ROSES-Lite_EN.md': 'en/TestReporting/ROSES-version/TestReporting-ROSES-Lite.md',
 
     // TestReporting (EN) - LangGPT-version
-    // 'testing-types/test-reporting/LangGPT-version/TestReporting-LangGPT-Full_EN.md': 'en/TestReporting/LangGPT-version/TestReporting-LangGPT-Full.md',
-    // 'testing-types/test-reporting/LangGPT-version/TestReporting-LangGPT-Lite_EN.md': 'en/TestReporting/LangGPT-version/TestReporting-LangGPT-Lite.md',
 
     // TestReporting (EN) - ICIO-version
-    // 'testing-types/test-reporting/ICIO-version/TestReporting-ICIO-Full_EN.md': 'en/TestReporting/ICIO-version/TestReporting-ICIO-Full.md',
-    // 'testing-types/test-reporting/ICIO-version/TestReporting-ICIO-Lite_EN.md': 'en/TestReporting/ICIO-version/TestReporting-ICIO-Lite.md',
 
     // TestReporting (EN) - CRISPE-version
-    // 'testing-types/test-reporting/CRISPE-version/TestReporting-CRISPE-Full_EN.md': 'en/TestReporting/CRISPE-version/TestReporting-CRISPE-Full.md',
-    // 'testing-types/test-reporting/CRISPE-version/TestReporting-CRISPE-Lite_EN.md': 'en/TestReporting/CRISPE-version/TestReporting-CRISPE-Lite.md',
 
     // TestReporting (EN) - RISE-version
-    // 'testing-types/test-reporting/RISE-version/TestReporting-RISE-Full_EN.md': 'en/TestReporting/RISE-version/TestReporting-RISE-Full.md',
-    // 'testing-types/test-reporting/RISE-version/TestReporting-RISE-Lite_EN.md': 'en/TestReporting/RISE-version/TestReporting-RISE-Lite.md',
 
     // TestStrategy (EN) - Standard-version
-    // 'testing-types/test-strategy/Standard-version/TestStrategyPrompt_EN.md': 'en/TestStrategy/TestStrategyPrompt.md',
-    // 'testing-types/test-strategy/Standard-version/TestStrategyPrompt_Lite_EN.md': 'en/TestStrategy/TestStrategyPrompt_Lite.md',
 
     // TestStrategy (EN) - ROSES-version
-    // 'testing-types/test-strategy/ROSES-version/TestStrategy-ROSES-Full_EN.md': 'en/TestStrategy/ROSES-version/TestStrategy-ROSES-Full.md',
-    // 'testing-types/test-strategy/ROSES-version/TestStrategy-ROSES-Lite_EN.md': 'en/TestStrategy/ROSES-version/TestStrategy-ROSES-Lite.md',
 
     // TestStrategy (EN) - LangGPT-version
-    // 'testing-types/test-strategy/LangGPT-version/TestStrategy-LangGPT-Full_EN.md': 'en/TestStrategy/LangGPT-version/TestStrategy-LangGPT-Full.md',
-    // 'testing-types/test-strategy/LangGPT-version/TestStrategy-LangGPT-Lite_EN.md': 'en/TestStrategy/LangGPT-version/TestStrategy-LangGPT-Lite.md',
 
     // TestStrategy (EN) - ICIO-version
-    // 'testing-types/test-strategy/ICIO-version/TestStrategy-ICIO-Full_EN.md': 'en/TestStrategy/ICIO-version/TestStrategy-ICIO-Full.md',
-    // 'testing-types/test-strategy/ICIO-version/TestStrategy-ICIO-Lite_EN.md': 'en/TestStrategy/ICIO-version/TestStrategy-ICIO-Lite.md',
 
     // TestStrategy (EN) - CRISPE-version
-    // 'testing-types/test-strategy/CRISPE-version/TestStrategy-CRISPE-Full_EN.md': 'en/TestStrategy/CRISPE-version/TestStrategy-CRISPE-Full.md',
-    // 'testing-types/test-strategy/CRISPE-version/TestStrategy-CRISPE-Lite_EN.md': 'en/TestStrategy/CRISPE-version/TestStrategy-CRISPE-Lite.md',
 
     // TestStrategy (EN) - RISE-version
-    // 'testing-types/test-strategy/RISE-version/TestStrategy-RISE-Full_EN.md': 'en/TestStrategy/RISE-version/TestStrategy-RISE-Full.md',
-    // 'testing-types/test-strategy/RISE-version/TestStrategy-RISE-Lite_EN.md': 'en/TestStrategy/RISE-version/TestStrategy-RISE-Lite.md',
 
     // APITesting (EN) - Standard-version
-    // 'testing-types/api-testing/Standard-version/APITestingPrompt_EN.md': 'en/APITesting/APITestingPrompt.md',
-    // 'testing-types/api-testing/Standard-version/APITestingPrompt_Lite_EN.md': 'en/APITesting/APITestingPrompt_Lite.md',
 
     // APITesting (EN) - ROSES-version
-    // 'testing-types/api-testing/ROSES-version/APITesting-ROSES-Full_EN.md': 'en/APITesting/ROSES-version/APITesting-ROSES-Full.md',
-    // 'testing-types/api-testing/ROSES-version/APITesting-ROSES-Lite_EN.md': 'en/APITesting/ROSES-version/APITesting-ROSES-Lite.md',
 
     // APITesting (EN) - LangGPT-version
-    // 'testing-types/api-testing/LangGPT-version/APITesting-LangGPT-Full_EN.md': 'en/APITesting/LangGPT-version/APITesting-LangGPT-Full.md',
-    // 'testing-types/api-testing/LangGPT-version/APITesting-LangGPT-Lite_EN.md': 'en/APITesting/LangGPT-version/APITesting-LangGPT-Lite.md',
 
     // APITesting (EN) - ICIO-version
-    // 'testing-types/api-testing/ICIO-version/APITesting-ICIO-Full_EN.md': 'en/APITesting/ICIO-version/APITesting-ICIO-Full.md',
-    // 'testing-types/api-testing/ICIO-version/APITesting-ICIO-Lite_EN.md': 'en/APITesting/ICIO-version/APITesting-ICIO-Lite.md',
 
     // APITesting (EN) - CRISPE-version
-    // 'testing-types/api-testing/CRISPE-version/APITesting-CRISPE-Full_EN.md': 'en/APITesting/CRISPE-version/APITesting-CRISPE-Full.md',
-    // 'testing-types/api-testing/CRISPE-version/APITesting-CRISPE-Lite_EN.md': 'en/APITesting/CRISPE-version/APITesting-CRISPE-Lite.md',
 
     // APITesting (EN) - RISE-version
-    // 'testing-types/api-testing/RISE-version/APITesting-RISE-Full_EN.md': 'en/APITesting/RISE-version/APITesting-RISE-Full.md',
-    // 'testing-types/api-testing/RISE-version/APITesting-RISE-Lite_EN.md': 'en/APITesting/RISE-version/APITesting-RISE-Lite.md',
 
     // SecurityTesting (EN) - Standard-version
-    // 'testing-types/security-testing/Standard-version/SecurityTestingPrompt_EN.md': 'en/SecurityTesting/SecurityTestingPrompt.md',
-    // 'testing-types/security-testing/Standard-version/SecurityTestingPrompt_Lite_EN.md': 'en/SecurityTesting/SecurityTestingPrompt_Lite.md',
 
     // SecurityTesting (EN) - ROSES-version
-    // 'testing-types/security-testing/ROSES-version/SecurityTesting-ROSES-Full_EN.md': 'en/SecurityTesting/ROSES-version/SecurityTesting-ROSES-Full.md',
-    // 'testing-types/security-testing/ROSES-version/SecurityTesting-ROSES-Lite_EN.md': 'en/SecurityTesting/ROSES-version/SecurityTesting-ROSES-Lite.md',
 
     // SecurityTesting (EN) - LangGPT-version
-    // 'testing-types/security-testing/LangGPT-version/SecurityTesting-LangGPT-Full_EN.md': 'en/SecurityTesting/LangGPT-version/SecurityTesting-LangGPT-Full.md',
-    // 'testing-types/security-testing/LangGPT-version/SecurityTesting-LangGPT-Lite_EN.md': 'en/SecurityTesting/LangGPT-version/SecurityTesting-LangGPT-Lite.md',
 
     // SecurityTesting (EN) - ICIO-version
-    // 'testing-types/security-testing/ICIO-version/SecurityTesting-ICIO-Full_EN.md': 'en/SecurityTesting/ICIO-version/SecurityTesting-ICIO-Full.md',
-    // 'testing-types/security-testing/ICIO-version/SecurityTesting-ICIO-Lite_EN.md': 'en/SecurityTesting/ICIO-version/SecurityTesting-ICIO-Lite.md',
 
     // SecurityTesting (EN) - CRISPE-version
-    // 'testing-types/security-testing/CRISPE-version/SecurityTesting-CRISPE-Full_EN.md': 'en/SecurityTesting/CRISPE-version/SecurityTesting-CRISPE-Full.md',
-    // 'testing-types/security-testing/CRISPE-version/SecurityTesting-CRISPE-Lite_EN.md': 'en/SecurityTesting/CRISPE-version/SecurityTesting-CRISPE-Lite.md',
 
     // SecurityTesting (EN) - RISE-version
-    // 'testing-types/security-testing/RISE-version/SecurityTesting-RISE-Full_EN.md': 'en/SecurityTesting/RISE-version/SecurityTesting-RISE-Full.md',
-    // 'testing-types/security-testing/RISE-version/SecurityTesting-RISE-Lite_EN.md': 'en/SecurityTesting/RISE-version/SecurityTesting-RISE-Lite.md',
 
     // AccessibilityTesting (EN) - Standard-version
-    // 'testing-types/accessibility-testing/Standard-version/AccessibilityTestingPrompt_EN.md': 'en/AccessibilityTesting/AccessibilityTestingPrompt.md',
-    // 'testing-types/accessibility-testing/Standard-version/AccessibilityTestingPrompt_Lite_EN.md': 'en/AccessibilityTesting/AccessibilityTestingPrompt_Lite.md',
 
     // AccessibilityTesting (EN) - ROSES-version
-    // 'testing-types/accessibility-testing/ROSES-version/AccessibilityTesting-ROSES-Full_EN.md': 'en/AccessibilityTesting/ROSES-version/AccessibilityTesting-ROSES-Full.md',
-    // 'testing-types/accessibility-testing/ROSES-version/AccessibilityTesting-ROSES-Lite_EN.md': 'en/AccessibilityTesting/ROSES-version/AccessibilityTesting-ROSES-Lite.md',
 
     // AccessibilityTesting (EN) - LangGPT-version
-    // 'testing-types/accessibility-testing/LangGPT-version/AccessibilityTesting-LangGPT-Full_EN.md': 'en/AccessibilityTesting/LangGPT-version/AccessibilityTesting-LangGPT-Full.md',
-    // 'testing-types/accessibility-testing/LangGPT-version/AccessibilityTesting-LangGPT-Lite_EN.md': 'en/AccessibilityTesting/LangGPT-version/AccessibilityTesting-LangGPT-Lite.md',
 
     // AccessibilityTesting (EN) - ICIO-version
-    // 'testing-types/accessibility-testing/ICIO-version/AccessibilityTesting-ICIO-Full_EN.md': 'en/AccessibilityTesting/ICIO-version/AccessibilityTesting-ICIO-Full.md',
-    // 'testing-types/accessibility-testing/ICIO-version/AccessibilityTesting-ICIO-Lite_EN.md': 'en/AccessibilityTesting/ICIO-version/AccessibilityTesting-ICIO-Lite.md',
 
     // AccessibilityTesting (EN) - CRISPE-version
-    // 'testing-types/accessibility-testing/CRISPE-version/AccessibilityTesting-CRISPE-Full_EN.md': 'en/AccessibilityTesting/CRISPE-version/AccessibilityTesting-CRISPE-Full.md',
-    // 'testing-types/accessibility-testing/CRISPE-version/AccessibilityTesting-CRISPE-Lite_EN.md': 'en/AccessibilityTesting/CRISPE-version/AccessibilityTesting-CRISPE-Lite.md',
 
     // AccessibilityTesting (EN) - RISE-version
-    // 'testing-types/accessibility-testing/RISE-version/AccessibilityTesting-RISE-Full_EN.md': 'en/AccessibilityTesting/RISE-version/AccessibilityTesting-RISE-Full.md',
-    // 'testing-types/accessibility-testing/RISE-version/AccessibilityTesting-RISE-Lite_EN.md': 'en/AccessibilityTesting/RISE-version/AccessibilityTesting-RISE-Lite.md',
 
     // AIAssistedTesting (EN) - Standard-version
-    // 'testing-types/ai-assisted-testing/Standard-version/AIAssistedTestingPrompt_EN.md': 'en/AIAssistedTesting/AIAssistedTestingPrompt.md',
-    // 'testing-types/ai-assisted-testing/Standard-version/AIAssistedTestingPrompt_Lite_EN.md': 'en/AIAssistedTesting/AIAssistedTestingPrompt_Lite.md',
 
     // AIAssistedTesting (EN) - ROSES-version
-    // 'testing-types/ai-assisted-testing/ROSES-version/AIAssistedTesting-ROSES-Full_EN.md': 'en/AIAssistedTesting/ROSES-version/AIAssistedTesting-ROSES-Full.md',
-    // 'testing-types/ai-assisted-testing/ROSES-version/AIAssistedTesting-ROSES-Lite_EN.md': 'en/AIAssistedTesting/ROSES-version/AIAssistedTesting-ROSES-Lite.md',
 
     // AIAssistedTesting (EN) - LangGPT-version
-    // 'testing-types/ai-assisted-testing/LangGPT-version/AIAssistedTesting-LangGPT-Full_EN.md': 'en/AIAssistedTesting/LangGPT-version/AIAssistedTesting-LangGPT-Full.md',
-    // 'testing-types/ai-assisted-testing/LangGPT-version/AIAssistedTesting-LangGPT-Lite_EN.md': 'en/AIAssistedTesting/LangGPT-version/AIAssistedTesting-LangGPT-Lite.md',
 
     // AIAssistedTesting (EN) - ICIO-version
-    // 'testing-types/ai-assisted-testing/ICIO-version/AIAssistedTesting-ICIO-Full_EN.md': 'en/AIAssistedTesting/ICIO-version/AIAssistedTesting-ICIO-Full.md',
-    // 'testing-types/ai-assisted-testing/ICIO-version/AIAssistedTesting-ICIO-Lite_EN.md': 'en/AIAssistedTesting/ICIO-version/AIAssistedTesting-ICIO-Lite.md',
 
     // AIAssistedTesting (EN) - CRISPE-version
-    // 'testing-types/ai-assisted-testing/CRISPE-version/AIAssistedTesting-CRISPE-Full_EN.md': 'en/AIAssistedTesting/CRISPE-version/AIAssistedTesting-CRISPE-Full.md',
-    // 'testing-types/ai-assisted-testing/CRISPE-version/AIAssistedTesting-CRISPE-Lite_EN.md': 'en/AIAssistedTesting/CRISPE-version/AIAssistedTesting-CRISPE-Lite.md',
 
     // AIAssistedTesting (EN) - RISE-version
-    // 'testing-types/ai-assisted-testing/RISE-version/AIAssistedTesting-RISE-Full_EN.md': 'en/AIAssistedTesting/RISE-version/AIAssistedTesting-RISE-Full.md',
-    // 'testing-types/ai-assisted-testing/RISE-version/AIAssistedTesting-RISE-Lite_EN.md': 'en/AIAssistedTesting/RISE-version/AIAssistedTesting-RISE-Lite.md',
 
     // ManualTesting (EN) - Standard-version
-    // 'testing-types/manual-testing/Standard-version/ManualTestingPrompt_EN.md': 'en/ManualTesting/ManualTestingPrompt.md',
-    // 'testing-types/manual-testing/Standard-version/ManualTestingPrompt_Lite_EN.md': 'en/ManualTesting/ManualTestingPrompt_Lite.md',
 
     // ManualTesting (EN) - ROSES-version
-    // 'testing-types/manual-testing/ROSES-version/ManualTesting-ROSES-Full_EN.md': 'en/ManualTesting/ROSES-version/ManualTesting-ROSES-Full.md',
-    // 'testing-types/manual-testing/ROSES-version/ManualTesting-ROSES-Lite_EN.md': 'en/ManualTesting/ROSES-version/ManualTesting-ROSES-Lite.md',
 
     // ManualTesting (EN) - LangGPT-version
-    // 'testing-types/manual-testing/LangGPT-version/ManualTesting-LangGPT-Full_EN.md': 'en/ManualTesting/LangGPT-version/ManualTesting-LangGPT-Full.md',
-    // 'testing-types/manual-testing/LangGPT-version/ManualTesting-LangGPT-Lite_EN.md': 'en/ManualTesting/LangGPT-version/ManualTesting-LangGPT-Lite.md',
 
     // ManualTesting (EN) - ICIO-version
-    // 'testing-types/manual-testing/ICIO-version/ManualTesting-ICIO-Full_EN.md': 'en/ManualTesting/ICIO-version/ManualTesting-ICIO-Full.md',
-    // 'testing-types/manual-testing/ICIO-version/ManualTesting-ICIO-Lite_EN.md': 'en/ManualTesting/ICIO-version/ManualTesting-ICIO-Lite.md',
 
     // ManualTesting (EN) - CRISPE-version
-    // 'testing-types/manual-testing/CRISPE-version/ManualTesting-CRISPE-Full_EN.md': 'en/ManualTesting/CRISPE-version/ManualTesting-CRISPE-Full.md',
-    // 'testing-types/manual-testing/CRISPE-version/ManualTesting-CRISPE-Lite_EN.md': 'en/ManualTesting/CRISPE-version/ManualTesting-CRISPE-Lite.md',
 
     // ManualTesting (EN) - RISE-version
-    // 'testing-types/manual-testing/RISE-version/ManualTesting-RISE-Full_EN.md': 'en/ManualTesting/RISE-version/ManualTesting-RISE-Full.md',
-    // 'testing-types/manual-testing/RISE-version/ManualTesting-RISE-Lite_EN.md': 'en/ManualTesting/RISE-version/ManualTesting-RISE-Lite.md',
 
     // TestCaseReviewer (EN) - Standard-version
-    // 'testing-types/test-case-reviewer/Standard-version/TestCaseReviewerPrompt_EN.md': 'en/TestCaseReviewer/TestCaseReviewerPrompt.md',
-    // 'testing-types/test-case-reviewer/Standard-version/TestCaseReviewerPrompt_Lite_EN.md': 'en/TestCaseReviewer/TestCaseReviewerPrompt_Lite.md',
 
     // TestCaseReviewer (EN) - ROSES-version
-    // 'testing-types/test-case-reviewer/ROSES-version/TestCaseReviewer-ROSES-Full_EN.md': 'en/TestCaseReviewer/ROSES-version/TestCaseReviewer-ROSES-Full.md',
-    // 'testing-types/test-case-reviewer/ROSES-version/TestCaseReviewer-ROSES-Lite_EN.md': 'en/TestCaseReviewer/ROSES-version/TestCaseReviewer-ROSES-Lite.md',
 
     // TestCaseReviewer (EN) - LangGPT-version
-    // 'testing-types/test-case-reviewer/LangGPT-version/TestCaseReviewer-LangGPT-Full_EN.md': 'en/TestCaseReviewer/LangGPT-version/TestCaseReviewer-LangGPT-Full.md',
-    // 'testing-types/test-case-reviewer/LangGPT-version/TestCaseReviewer-LangGPT-Lite_EN.md': 'en/TestCaseReviewer/LangGPT-version/TestCaseReviewer-LangGPT-Lite.md',
 
     // TestCaseReviewer (EN) - ICIO-version
-    // 'testing-types/test-case-reviewer/ICIO-version/TestCaseReviewer-ICIO-Full_EN.md': 'en/TestCaseReviewer/ICIO-version/TestCaseReviewer-ICIO-Full.md',
-    // 'testing-types/test-case-reviewer/ICIO-version/TestCaseReviewer-ICIO-Lite_EN.md': 'en/TestCaseReviewer/ICIO-version/TestCaseReviewer-ICIO-Lite.md',
 
     // TestCaseReviewer (EN) - CRISPE-version
-    // 'testing-types/test-case-reviewer/CRISPE-version/TestCaseReviewer-CRISPE-Full_EN.md': 'en/TestCaseReviewer/CRISPE-version/TestCaseReviewer-CRISPE-Full.md',
-    // 'testing-types/test-case-reviewer/CRISPE-version/TestCaseReviewer-CRISPE-Lite_EN.md': 'en/TestCaseReviewer/CRISPE-version/TestCaseReviewer-CRISPE-Lite.md',
 
     // TestCaseReviewer (EN) - RISE-version (已在上面的中文版本中映射，这里只保留英文路径)
-    // 'testing-types/test-case-reviewer/RISE-version/TestCaseReviewer-RISE-Full_EN.md': 'en/TestCaseReviewer/RISE-version/TestCaseReviewer-RISE-Full.md',
-    // 'testing-types/test-case-reviewer/RISE-version/TestCaseReviewer-RISE-Lite_EN.md': 'en/TestCaseReviewer/RISE-version/TestCaseReviewer-RISE-Lite.md',
 
     
     
