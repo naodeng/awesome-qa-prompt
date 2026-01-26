@@ -64,37 +64,130 @@
   height: 32px;
 }
 
-/* 优化首页 Hero Logo 大小 */
+/* 优化首页 Hero 布局 - 修复图片覆盖文本问题 */
+.VPHero {
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+/* 确保容器使用 flexbox 布局 */
+.VPHero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1152px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: 960px) {
+  .VPHero .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+
+/* Hero 主内容区域 */
+.VPHero .main {
+  flex: 1;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .VPHero .main {
+    text-align: left;
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
+
+/* Hero 图片容器 */
 .VPHero .image-container {
+  flex-shrink: 0;
   max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  order: -1; /* 在移动端，图片显示在文本上方 */
+}
+
+@media (min-width: 960px) {
+  .VPHero .image-container {
+    max-width: 45%;
+    flex: 0 0 45%;
+    margin: 0;
+    order: 0; /* 在桌面端，图片显示在右侧 */
+  }
 }
 
 .VPHero .image-bg {
   max-width: 100%;
+  background: transparent !important;
+  padding: 0;
 }
 
+/* 限制图片大小，防止覆盖文本 */
 .VPHero .VPImage.image-src {
-  max-width: 360px !important;
-  max-height: 360px !important;
-  width: 360px;
-  height: 360px;
+  max-width: 240px !important;
+  max-height: 240px !important;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 @media (min-width: 640px) {
   .VPHero .VPImage.image-src {
-    max-width: 480px !important;
-    max-height: 480px !important;
-    width: 480px;
-    height: 480px;
+    max-width: 320px !important;
+    max-height: 320px !important;
   }
 }
 
 @media (min-width: 960px) {
   .VPHero .VPImage.image-src {
-    max-width: 600px !important;
-    max-height: 600px !important;
-    width: 600px;
-    height: 600px;
+    max-width: 380px !important;
+    max-height: 380px !important;
+  }
+}
+
+/* 确保 hero 文本不被覆盖 */
+.VPHero .name,
+.VPHero .text,
+.VPHero .tagline {
+  position: relative;
+  z-index: 2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* 移除图片的白色背景 */
+.VPHero .image-container img,
+.VPHero .VPImage,
+.VPHero .image-bg {
+  background: transparent !important;
+}
+
+/* 确保在小屏幕上图片不会覆盖文本 */
+@media (max-width: 959px) {
+  .VPHero .container {
+    flex-direction: column;
+  }
+  
+  .VPHero .main {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .VPHero .image-container {
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 1rem;
   }
 }
 
