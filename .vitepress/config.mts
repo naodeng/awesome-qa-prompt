@@ -17,135 +17,825 @@ function getEnglishSidebar() {
           text: '📝 Requirements Analysis',
           collapsed: true,
           items: [
-            { text: 'Full Version', link: '/en/RequirementsAnalysis/RequirementsAnalysisPrompt' },
-            { text: 'Lite Version', link: '/en/RequirementsAnalysis/RequirementsAnalysisPrompt_Lite' },
-            { text: 'Documentation', link: '/en/RequirementsAnalysis/' }
+            { text: 'Documentation', link: '/en/RequirementsAnalysis/' },
+            {
+              text: 'Standard Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/RequirementsAnalysis/RequirementsAnalysisPrompt' },
+                { text: 'Lite Version', link: '/en/RequirementsAnalysis/RequirementsAnalysisPrompt_Lite' }
+              ]
+            },
+            {
+              text: 'ROSES Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/RequirementsAnalysis/ROSES-version/RequirementsAnalysis-ROSES-Full' },
+                { text: 'Lite Version', link: '/en/RequirementsAnalysis/ROSES-version/RequirementsAnalysis-ROSES-Lite' }
+              ]
+            },
+            {
+              text: 'LangGPT Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/RequirementsAnalysis/LangGPT-version/RequirementsAnalysis-LangGPT-Full' },
+                { text: 'Lite Version', link: '/en/RequirementsAnalysis/LangGPT-version/RequirementsAnalysis-LangGPT-Lite' }
+              ]
+            },
+            {
+              text: 'ICIO Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/RequirementsAnalysis/ICIO-version/RequirementsAnalysis-ICIO-Full' },
+                { text: 'Lite Version', link: '/en/RequirementsAnalysis/ICIO-version/RequirementsAnalysis-ICIO-Lite' }
+              ]
+            },
+            {
+              text: 'CRISPE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/RequirementsAnalysis/CRISPE-version/RequirementsAnalysis-CRISPE-Full' },
+                { text: 'Lite Version', link: '/en/RequirementsAnalysis/CRISPE-version/RequirementsAnalysis-CRISPE-Lite' }
+              ]
+            },
+            {
+              text: 'RISE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/RequirementsAnalysis/RISE-version/RequirementsAnalysis-RISE-Full' },
+                { text: 'Lite Version', link: '/en/RequirementsAnalysis/RISE-version/RequirementsAnalysis-RISE-Lite' }
+              ]
+            }
           ]
         },
         {
           text: '✍️ Test Case Writing',
           collapsed: true,
           items: [
-            { text: 'Full Version', link: '/en/TestCaseWriting/TestCaseWritingPrompt' },
-            { text: 'Lite Version', link: '/en/TestCaseWriting/TestCaseWritingPrompt_Lite' },
-            { text: 'Documentation', link: '/en/TestCaseWriting/' }
+            { text: 'Documentation', link: '/en/TestCaseWriting/' },
+            {
+              text: 'Standard Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestCaseWriting/TestCaseWritingPrompt' },
+                { text: 'Lite Version', link: '/en/TestCaseWriting/TestCaseWritingPrompt_Lite' }
+              ]
+            },
+            {
+              text: 'ROSES Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestCaseWriting/ROSES-version/TestCaseWriting-ROSES-Full' },
+                { text: 'Lite Version', link: '/en/TestCaseWriting/ROSES-version/TestCaseWriting-ROSES-Lite' }
+              ]
+            },
+            {
+              text: 'LangGPT Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestCaseWriting/LangGPT-version/TestCaseWriting-LangGPT-Full' },
+                { text: 'Lite Version', link: '/en/TestCaseWriting/LangGPT-version/TestCaseWriting-LangGPT-Lite' }
+              ]
+            },
+            {
+              text: 'ICIO Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestCaseWriting/ICIO-version/TestCaseWriting-ICIO-Full' },
+                { text: 'Lite Version', link: '/en/TestCaseWriting/ICIO-version/TestCaseWriting-ICIO-Lite' }
+              ]
+            },
+            {
+              text: 'CRISPE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestCaseWriting/CRISPE-version/TestCaseWriting-CRISPE-Full' },
+                { text: 'Lite Version', link: '/en/TestCaseWriting/CRISPE-version/TestCaseWriting-CRISPE-Lite' }
+              ]
+            },
+            {
+              text: 'RISE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestCaseWriting/RISE-version/TestCaseWriting-RISE-Full' },
+                { text: 'Lite Version', link: '/en/TestCaseWriting/RISE-version/TestCaseWriting-RISE-Lite' }
+              ]
+            }
           ]
         },
         {
           text: '🔍 Functional Testing',
           collapsed: true,
           items: [
-            { text: 'Full Version', link: '/en/FunctionalTesting/FunctionalTestingPrompt' },
-            { text: 'Lite Version', link: '/en/FunctionalTesting/FunctionalTestingPrompt_Lite' },
-            { text: 'Documentation', link: '/en/FunctionalTesting/' }
+            { text: 'Documentation', link: '/en/FunctionalTesting/' },
+            {
+              text: 'Standard Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/FunctionalTesting/FunctionalTestingPrompt' },
+                { text: 'Lite Version', link: '/en/FunctionalTesting/FunctionalTestingPrompt_Lite' }
+              ]
+            },
+            {
+              text: 'ROSES Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/FunctionalTesting/ROSES-version/FunctionalTesting-ROSES-Full' },
+                { text: 'Lite Version', link: '/en/FunctionalTesting/ROSES-version/FunctionalTesting-ROSES-Lite' }
+              ]
+            },
+            {
+              text: 'LangGPT Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/FunctionalTesting/LangGPT-version/FunctionalTesting-LangGPT-Full' },
+                { text: 'Lite Version', link: '/en/FunctionalTesting/LangGPT-version/FunctionalTesting-LangGPT-Lite' }
+              ]
+            },
+            {
+              text: 'ICIO Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/FunctionalTesting/ICIO-version/FunctionalTesting-ICIO-Full' },
+                { text: 'Lite Version', link: '/en/FunctionalTesting/ICIO-version/FunctionalTesting-ICIO-Lite' }
+              ]
+            },
+            {
+              text: 'CRISPE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/FunctionalTesting/CRISPE-version/FunctionalTesting-CRISPE-Full' },
+                { text: 'Lite Version', link: '/en/FunctionalTesting/CRISPE-version/FunctionalTesting-CRISPE-Lite' }
+              ]
+            },
+            {
+              text: 'RISE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/FunctionalTesting/RISE-version/FunctionalTesting-RISE-Full' },
+                { text: 'Lite Version', link: '/en/FunctionalTesting/RISE-version/FunctionalTesting-RISE-Lite' }
+              ]
+            }
           ]
         },
         {
           text: '⚡ Performance Testing',
           collapsed: true,
           items: [
-            { text: 'Full Version', link: '/en/PerformanceTesting/PerformanceTestingPrompt' },
-            { text: 'Lite Version', link: '/en/PerformanceTesting/PerformanceTestingPrompt_Lite' },
-            { text: 'Documentation', link: '/en/PerformanceTesting/' }
+            { text: 'Documentation', link: '/en/PerformanceTesting/' },
+            {
+              text: 'Standard Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/PerformanceTesting/PerformanceTestingPrompt' },
+                { text: 'Lite Version', link: '/en/PerformanceTesting/PerformanceTestingPrompt_Lite' }
+              ]
+            },
+            {
+              text: 'ROSES Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/PerformanceTesting/ROSES-version/PerformanceTesting-ROSES-Full' },
+                { text: 'Lite Version', link: '/en/PerformanceTesting/ROSES-version/PerformanceTesting-ROSES-Lite' }
+              ]
+            },
+            {
+              text: 'LangGPT Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/PerformanceTesting/LangGPT-version/PerformanceTesting-LangGPT-Full' },
+                { text: 'Lite Version', link: '/en/PerformanceTesting/LangGPT-version/PerformanceTesting-LangGPT-Lite' }
+              ]
+            },
+            {
+              text: 'ICIO Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/PerformanceTesting/ICIO-version/PerformanceTesting-ICIO-Full' },
+                { text: 'Lite Version', link: '/en/PerformanceTesting/ICIO-version/PerformanceTesting-ICIO-Lite' }
+              ]
+            },
+            {
+              text: 'CRISPE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/PerformanceTesting/CRISPE-version/PerformanceTesting-CRISPE-Full' },
+                { text: 'Lite Version', link: '/en/PerformanceTesting/CRISPE-version/PerformanceTesting-CRISPE-Lite' }
+              ]
+            },
+            {
+              text: 'RISE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/PerformanceTesting/RISE-version/PerformanceTesting-RISE-Full' },
+                { text: 'Lite Version', link: '/en/PerformanceTesting/RISE-version/PerformanceTesting-RISE-Lite' }
+              ]
+            }
           ]
         },
         {
           text: '🤖 Automation Testing',
           collapsed: true,
           items: [
-            { text: 'Full Version', link: '/en/AutomationTesting/AutomationTestingPrompt' },
-            { text: 'Lite Version', link: '/en/AutomationTesting/AutomationTestingPrompt_Lite' },
-            { text: 'Documentation', link: '/en/AutomationTesting/' }
+            { text: 'Documentation', link: '/en/AutomationTesting/' },
+            {
+              text: 'Standard Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AutomationTesting/AutomationTestingPrompt' },
+                { text: 'Lite Version', link: '/en/AutomationTesting/AutomationTestingPrompt_Lite' }
+              ]
+            },
+            {
+              text: 'ROSES Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AutomationTesting/ROSES-version/AutomationTesting-ROSES-Full' },
+                { text: 'Lite Version', link: '/en/AutomationTesting/ROSES-version/AutomationTesting-ROSES-Lite' }
+              ]
+            },
+            {
+              text: 'LangGPT Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AutomationTesting/LangGPT-version/AutomationTesting-LangGPT-Full' },
+                { text: 'Lite Version', link: '/en/AutomationTesting/LangGPT-version/AutomationTesting-LangGPT-Lite' }
+              ]
+            },
+            {
+              text: 'ICIO Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AutomationTesting/ICIO-version/AutomationTesting-ICIO-Full' },
+                { text: 'Lite Version', link: '/en/AutomationTesting/ICIO-version/AutomationTesting-ICIO-Lite' }
+              ]
+            },
+            {
+              text: 'CRISPE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AutomationTesting/CRISPE-version/AutomationTesting-CRISPE-Full' },
+                { text: 'Lite Version', link: '/en/AutomationTesting/CRISPE-version/AutomationTesting-CRISPE-Lite' }
+              ]
+            },
+            {
+              text: 'RISE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AutomationTesting/RISE-version/AutomationTesting-RISE-Full' },
+                { text: 'Lite Version', link: '/en/AutomationTesting/RISE-version/AutomationTesting-RISE-Lite' }
+              ]
+            }
           ]
         },
         {
           text: '📱 Mobile Testing',
           collapsed: true,
           items: [
-            { text: 'Full Version', link: '/en/MobileTesting/MobileTestingPrompt' },
-            { text: 'Lite Version', link: '/en/MobileTesting/MobileTestingPrompt_Lite' },
-            { text: 'Documentation', link: '/en/MobileTesting/' }
+            { text: 'Documentation', link: '/en/MobileTesting/' },
+            {
+              text: 'Standard Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/MobileTesting/MobileTestingPrompt' },
+                { text: 'Lite Version', link: '/en/MobileTesting/MobileTestingPrompt_Lite' }
+              ]
+            },
+            {
+              text: 'ROSES Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/MobileTesting/ROSES-version/MobileTesting-ROSES-Full' },
+                { text: 'Lite Version', link: '/en/MobileTesting/ROSES-version/MobileTesting-ROSES-Lite' }
+              ]
+            },
+            {
+              text: 'LangGPT Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/MobileTesting/LangGPT-version/MobileTesting-LangGPT-Full' },
+                { text: 'Lite Version', link: '/en/MobileTesting/LangGPT-version/MobileTesting-LangGPT-Lite' }
+              ]
+            },
+            {
+              text: 'ICIO Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/MobileTesting/ICIO-version/MobileTesting-ICIO-Full' },
+                { text: 'Lite Version', link: '/en/MobileTesting/ICIO-version/MobileTesting-ICIO-Lite' }
+              ]
+            },
+            {
+              text: 'CRISPE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/MobileTesting/CRISPE-version/MobileTesting-CRISPE-Full' },
+                { text: 'Lite Version', link: '/en/MobileTesting/CRISPE-version/MobileTesting-CRISPE-Lite' }
+              ]
+            },
+            {
+              text: 'RISE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/MobileTesting/RISE-version/MobileTesting-RISE-Full' },
+                { text: 'Lite Version', link: '/en/MobileTesting/RISE-version/MobileTesting-RISE-Lite' }
+              ]
+            }
           ]
         },
         {
           text: '🐛 Bug Reporting',
           collapsed: true,
           items: [
-            { text: 'Full Version', link: '/en/BugReporting/BugReportingPrompt' },
-            { text: 'Lite Version', link: '/en/BugReporting/BugReportingPrompt_Lite' },
-            { text: 'Documentation', link: '/en/BugReporting/' }
+            { text: 'Documentation', link: '/en/BugReporting/' },
+            {
+              text: 'Standard Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/BugReporting/BugReportingPrompt' },
+                { text: 'Lite Version', link: '/en/BugReporting/BugReportingPrompt_Lite' }
+              ]
+            },
+            {
+              text: 'ROSES Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/BugReporting/ROSES-version/BugReporting-ROSES-Full' },
+                { text: 'Lite Version', link: '/en/BugReporting/ROSES-version/BugReporting-ROSES-Lite' }
+              ]
+            },
+            {
+              text: 'LangGPT Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/BugReporting/LangGPT-version/BugReporting-LangGPT-Full' },
+                { text: 'Lite Version', link: '/en/BugReporting/LangGPT-version/BugReporting-LangGPT-Lite' }
+              ]
+            },
+            {
+              text: 'ICIO Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/BugReporting/ICIO-version/BugReporting-ICIO-Full' },
+                { text: 'Lite Version', link: '/en/BugReporting/ICIO-version/BugReporting-ICIO-Lite' }
+              ]
+            },
+            {
+              text: 'CRISPE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/BugReporting/CRISPE-version/BugReporting-CRISPE-Full' },
+                { text: 'Lite Version', link: '/en/BugReporting/CRISPE-version/BugReporting-CRISPE-Lite' }
+              ]
+            },
+            {
+              text: 'RISE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/BugReporting/RISE-version/BugReporting-RISE-Full' },
+                { text: 'Lite Version', link: '/en/BugReporting/RISE-version/BugReporting-RISE-Lite' }
+              ]
+            }
           ]
         },
         {
           text: '📊 Test Reporting',
           collapsed: true,
           items: [
-            { text: 'Full Version', link: '/en/TestReporting/TestReportingPrompt' },
-            { text: 'Lite Version', link: '/en/TestReporting/TestReportingPrompt_Lite' },
-            { text: 'Documentation', link: '/en/TestReporting/' }
+            { text: 'Documentation', link: '/en/TestReporting/' },
+            {
+              text: 'Standard Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestReporting/TestReportingPrompt' },
+                { text: 'Lite Version', link: '/en/TestReporting/TestReportingPrompt_Lite' }
+              ]
+            },
+            {
+              text: 'ROSES Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestReporting/ROSES-version/TestReporting-ROSES-Full' },
+                { text: 'Lite Version', link: '/en/TestReporting/ROSES-version/TestReporting-ROSES-Lite' }
+              ]
+            },
+            {
+              text: 'LangGPT Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestReporting/LangGPT-version/TestReporting-LangGPT-Full' },
+                { text: 'Lite Version', link: '/en/TestReporting/LangGPT-version/TestReporting-LangGPT-Lite' }
+              ]
+            },
+            {
+              text: 'ICIO Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestReporting/ICIO-version/TestReporting-ICIO-Full' },
+                { text: 'Lite Version', link: '/en/TestReporting/ICIO-version/TestReporting-ICIO-Lite' }
+              ]
+            },
+            {
+              text: 'CRISPE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestReporting/CRISPE-version/TestReporting-CRISPE-Full' },
+                { text: 'Lite Version', link: '/en/TestReporting/CRISPE-version/TestReporting-CRISPE-Lite' }
+              ]
+            },
+            {
+              text: 'RISE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestReporting/RISE-version/TestReporting-RISE-Full' },
+                { text: 'Lite Version', link: '/en/TestReporting/RISE-version/TestReporting-RISE-Lite' }
+              ]
+            }
           ]
         },
         {
           text: '🎯 Test Strategy',
           collapsed: true,
           items: [
-            { text: 'Full Version', link: '/en/TestStrategy/TestStrategyPrompt' },
-            { text: 'Lite Version', link: '/en/TestStrategy/TestStrategyPrompt_Lite' },
-            { text: 'Documentation', link: '/en/TestStrategy/' }
+            { text: 'Documentation', link: '/en/TestStrategy/' },
+            {
+              text: 'Standard Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestStrategy/TestStrategyPrompt' },
+                { text: 'Lite Version', link: '/en/TestStrategy/TestStrategyPrompt_Lite' }
+              ]
+            },
+            {
+              text: 'ROSES Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestStrategy/ROSES-version/TestStrategy-ROSES-Full' },
+                { text: 'Lite Version', link: '/en/TestStrategy/ROSES-version/TestStrategy-ROSES-Lite' }
+              ]
+            },
+            {
+              text: 'LangGPT Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestStrategy/LangGPT-version/TestStrategy-LangGPT-Full' },
+                { text: 'Lite Version', link: '/en/TestStrategy/LangGPT-version/TestStrategy-LangGPT-Lite' }
+              ]
+            },
+            {
+              text: 'ICIO Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestStrategy/ICIO-version/TestStrategy-ICIO-Full' },
+                { text: 'Lite Version', link: '/en/TestStrategy/ICIO-version/TestStrategy-ICIO-Lite' }
+              ]
+            },
+            {
+              text: 'CRISPE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestStrategy/CRISPE-version/TestStrategy-CRISPE-Full' },
+                { text: 'Lite Version', link: '/en/TestStrategy/CRISPE-version/TestStrategy-CRISPE-Lite' }
+              ]
+            },
+            {
+              text: 'RISE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestStrategy/RISE-version/TestStrategy-RISE-Full' },
+                { text: 'Lite Version', link: '/en/TestStrategy/RISE-version/TestStrategy-RISE-Lite' }
+              ]
+            }
           ]
         },
         {
           text: '🤖 AI-Assisted Testing',
           collapsed: true,
           items: [
-            { text: 'Full Version', link: '/en/AIAssistedTesting/AIAssistedTestingPrompt' },
-            { text: 'Lite Version', link: '/en/AIAssistedTesting/AIAssistedTestingPrompt_Lite' },
-            { text: 'Documentation', link: '/en/AIAssistedTesting/' }
+            { text: 'Documentation', link: '/en/AIAssistedTesting/' },
+            {
+              text: 'Standard Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AIAssistedTesting/AIAssistedTestingPrompt' },
+                { text: 'Lite Version', link: '/en/AIAssistedTesting/AIAssistedTestingPrompt_Lite' }
+              ]
+            },
+            {
+              text: 'ROSES Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AIAssistedTesting/ROSES-version/AIAssistedTesting-ROSES-Full' },
+                { text: 'Lite Version', link: '/en/AIAssistedTesting/ROSES-version/AIAssistedTesting-ROSES-Lite' }
+              ]
+            },
+            {
+              text: 'LangGPT Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AIAssistedTesting/LangGPT-version/AIAssistedTesting-LangGPT-Full' },
+                { text: 'Lite Version', link: '/en/AIAssistedTesting/LangGPT-version/AIAssistedTesting-LangGPT-Lite' }
+              ]
+            },
+            {
+              text: 'ICIO Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AIAssistedTesting/ICIO-version/AIAssistedTesting-ICIO-Full' },
+                { text: 'Lite Version', link: '/en/AIAssistedTesting/ICIO-version/AIAssistedTesting-ICIO-Lite' }
+              ]
+            },
+            {
+              text: 'CRISPE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AIAssistedTesting/CRISPE-version/AIAssistedTesting-CRISPE-Full' },
+                { text: 'Lite Version', link: '/en/AIAssistedTesting/CRISPE-version/AIAssistedTesting-CRISPE-Lite' }
+              ]
+            },
+            {
+              text: 'RISE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AIAssistedTesting/RISE-version/AIAssistedTesting-RISE-Full' },
+                { text: 'Lite Version', link: '/en/AIAssistedTesting/RISE-version/AIAssistedTesting-RISE-Lite' }
+              ]
+            }
           ]
         },
         {
           text: '📋 Manual Testing',
           collapsed: true,
           items: [
-            { text: 'Full Version', link: '/en/ManualTesting/ManualTestingPrompt' },
-            { text: 'Lite Version', link: '/en/ManualTesting/ManualTestingPrompt_Lite' },
-            { text: 'Documentation', link: '/en/ManualTesting/' }
+            { text: 'Documentation', link: '/en/ManualTesting/' },
+            {
+              text: 'Standard Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/ManualTesting/ManualTestingPrompt' },
+                { text: 'Lite Version', link: '/en/ManualTesting/ManualTestingPrompt_Lite' }
+              ]
+            },
+            {
+              text: 'ROSES Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/ManualTesting/ROSES-version/ManualTesting-ROSES-Full' },
+                { text: 'Lite Version', link: '/en/ManualTesting/ROSES-version/ManualTesting-ROSES-Lite' }
+              ]
+            },
+            {
+              text: 'LangGPT Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/ManualTesting/LangGPT-version/ManualTesting-LangGPT-Full' },
+                { text: 'Lite Version', link: '/en/ManualTesting/LangGPT-version/ManualTesting-LangGPT-Lite' }
+              ]
+            },
+            {
+              text: 'ICIO Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/ManualTesting/ICIO-version/ManualTesting-ICIO-Full' },
+                { text: 'Lite Version', link: '/en/ManualTesting/ICIO-version/ManualTesting-ICIO-Lite' }
+              ]
+            },
+            {
+              text: 'CRISPE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/ManualTesting/CRISPE-version/ManualTesting-CRISPE-Full' },
+                { text: 'Lite Version', link: '/en/ManualTesting/CRISPE-version/ManualTesting-CRISPE-Lite' }
+              ]
+            },
+            {
+              text: 'RISE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/ManualTesting/RISE-version/ManualTesting-RISE-Full' },
+                { text: 'Lite Version', link: '/en/ManualTesting/RISE-version/ManualTesting-RISE-Lite' }
+              ]
+            }
           ]
         },
         {
           text: '🔒 Security Testing',
           collapsed: true,
           items: [
-            { text: 'Full Version', link: '/en/SecurityTesting/SecurityTestingPrompt' },
-            { text: 'Lite Version', link: '/en/SecurityTesting/SecurityTestingPrompt_Lite' },
-            { text: 'Documentation', link: '/en/SecurityTesting/' }
+            { text: 'Documentation', link: '/en/SecurityTesting/' },
+            {
+              text: 'Standard Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/SecurityTesting/SecurityTestingPrompt' },
+                { text: 'Lite Version', link: '/en/SecurityTesting/SecurityTestingPrompt_Lite' }
+              ]
+            },
+            {
+              text: 'ROSES Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/SecurityTesting/ROSES-version/SecurityTesting-ROSES-Full' },
+                { text: 'Lite Version', link: '/en/SecurityTesting/ROSES-version/SecurityTesting-ROSES-Lite' }
+              ]
+            },
+            {
+              text: 'LangGPT Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/SecurityTesting/LangGPT-version/SecurityTesting-LangGPT-Full' },
+                { text: 'Lite Version', link: '/en/SecurityTesting/LangGPT-version/SecurityTesting-LangGPT-Lite' }
+              ]
+            },
+            {
+              text: 'ICIO Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/SecurityTesting/ICIO-version/SecurityTesting-ICIO-Full' },
+                { text: 'Lite Version', link: '/en/SecurityTesting/ICIO-version/SecurityTesting-ICIO-Lite' }
+              ]
+            },
+            {
+              text: 'CRISPE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/SecurityTesting/CRISPE-version/SecurityTesting-CRISPE-Full' },
+                { text: 'Lite Version', link: '/en/SecurityTesting/CRISPE-version/SecurityTesting-CRISPE-Lite' }
+              ]
+            },
+            {
+              text: 'RISE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/SecurityTesting/RISE-version/SecurityTesting-RISE-Full' },
+                { text: 'Lite Version', link: '/en/SecurityTesting/RISE-version/SecurityTesting-RISE-Lite' }
+              ]
+            }
           ]
         },
         {
           text: '🔌 API Testing',
           collapsed: true,
           items: [
-            { text: 'Full Version', link: '/en/APITesting/APITestingPrompt' },
-            { text: 'Lite Version', link: '/en/APITesting/APITestingPrompt_Lite' },
-            { text: 'Documentation', link: '/en/APITesting/' }
+            { text: 'Documentation', link: '/en/APITesting/' },
+            {
+              text: 'Standard Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/APITesting/APITestingPrompt' },
+                { text: 'Lite Version', link: '/en/APITesting/APITestingPrompt_Lite' }
+              ]
+            },
+            {
+              text: 'ROSES Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/APITesting/ROSES-version/APITesting-ROSES-Full' },
+                { text: 'Lite Version', link: '/en/APITesting/ROSES-version/APITesting-ROSES-Lite' }
+              ]
+            },
+            {
+              text: 'LangGPT Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/APITesting/LangGPT-version/APITesting-LangGPT-Full' },
+                { text: 'Lite Version', link: '/en/APITesting/LangGPT-version/APITesting-LangGPT-Lite' }
+              ]
+            },
+            {
+              text: 'ICIO Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/APITesting/ICIO-version/APITesting-ICIO-Full' },
+                { text: 'Lite Version', link: '/en/APITesting/ICIO-version/APITesting-ICIO-Lite' }
+              ]
+            },
+            {
+              text: 'CRISPE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/APITesting/CRISPE-version/APITesting-CRISPE-Full' },
+                { text: 'Lite Version', link: '/en/APITesting/CRISPE-version/APITesting-CRISPE-Lite' }
+              ]
+            },
+            {
+              text: 'RISE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/APITesting/RISE-version/APITesting-RISE-Full' },
+                { text: 'Lite Version', link: '/en/APITesting/RISE-version/APITesting-RISE-Lite' }
+              ]
+            }
           ]
         },
         {
           text: '♿ Accessibility Testing',
           collapsed: true,
           items: [
-            { text: 'Full Version', link: '/en/AccessibilityTesting/AccessibilityTestingPrompt' },
-            { text: 'Lite Version', link: '/en/AccessibilityTesting/AccessibilityTestingPrompt_Lite' },
-            { text: 'Documentation', link: '/en/AccessibilityTesting/' }
+            { text: 'Documentation', link: '/en/AccessibilityTesting/' },
+            {
+              text: 'Standard Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AccessibilityTesting/AccessibilityTestingPrompt' },
+                { text: 'Lite Version', link: '/en/AccessibilityTesting/AccessibilityTestingPrompt_Lite' }
+              ]
+            },
+            {
+              text: 'ROSES Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AccessibilityTesting/ROSES-version/AccessibilityTesting-ROSES-Full' },
+                { text: 'Lite Version', link: '/en/AccessibilityTesting/ROSES-version/AccessibilityTesting-ROSES-Lite' }
+              ]
+            },
+            {
+              text: 'LangGPT Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AccessibilityTesting/LangGPT-version/AccessibilityTesting-LangGPT-Full' },
+                { text: 'Lite Version', link: '/en/AccessibilityTesting/LangGPT-version/AccessibilityTesting-LangGPT-Lite' }
+              ]
+            },
+            {
+              text: 'ICIO Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AccessibilityTesting/ICIO-version/AccessibilityTesting-ICIO-Full' },
+                { text: 'Lite Version', link: '/en/AccessibilityTesting/ICIO-version/AccessibilityTesting-ICIO-Lite' }
+              ]
+            },
+            {
+              text: 'CRISPE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AccessibilityTesting/CRISPE-version/AccessibilityTesting-CRISPE-Full' },
+                { text: 'Lite Version', link: '/en/AccessibilityTesting/CRISPE-version/AccessibilityTesting-CRISPE-Lite' }
+              ]
+            },
+            {
+              text: 'RISE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/AccessibilityTesting/RISE-version/AccessibilityTesting-RISE-Full' },
+                { text: 'Lite Version', link: '/en/AccessibilityTesting/RISE-version/AccessibilityTesting-RISE-Lite' }
+              ]
+            }
           ]
         },
         {
           text: '🔍 Test Case Review',
           collapsed: true,
           items: [
-            { text: 'Full Version', link: '/en/TestCaseReviewer/TestCaseReviewerPrompt' },
-            { text: 'Lite Version', link: '/en/TestCaseReviewer/TestCaseReviewerPrompt_Lite' },
-            { text: 'Documentation', link: '/en/TestCaseReviewer/' }
+            { text: 'Documentation', link: '/en/TestCaseReviewer/' },
+            {
+              text: 'Standard Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestCaseReviewer/TestCaseReviewerPrompt' },
+                { text: 'Lite Version', link: '/en/TestCaseReviewer/TestCaseReviewerPrompt_Lite' }
+              ]
+            },
+            {
+              text: 'ROSES Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestCaseReviewer/ROSES-version/TestCaseReviewer-ROSES-Full' },
+                { text: 'Lite Version', link: '/en/TestCaseReviewer/ROSES-version/TestCaseReviewer-ROSES-Lite' }
+              ]
+            },
+            {
+              text: 'LangGPT Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestCaseReviewer/LangGPT-version/TestCaseReviewer-LangGPT-Full' },
+                { text: 'Lite Version', link: '/en/TestCaseReviewer/LangGPT-version/TestCaseReviewer-LangGPT-Lite' }
+              ]
+            },
+            {
+              text: 'ICIO Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestCaseReviewer/ICIO-version/TestCaseReviewer-ICIO-Full' },
+                { text: 'Lite Version', link: '/en/TestCaseReviewer/ICIO-version/TestCaseReviewer-ICIO-Lite' }
+              ]
+            },
+            {
+              text: 'CRISPE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestCaseReviewer/CRISPE-version/TestCaseReviewer-CRISPE-Full' },
+                { text: 'Lite Version', link: '/en/TestCaseReviewer/CRISPE-version/TestCaseReviewer-CRISPE-Lite' }
+              ]
+            },
+            {
+              text: 'RISE Framework Version',
+              collapsed: true,
+              items: [
+                { text: 'Full Version', link: '/en/TestCaseReviewer/RISE-version/TestCaseReviewer-RISE-Full' },
+                { text: 'Lite Version', link: '/en/TestCaseReviewer/RISE-version/TestCaseReviewer-RISE-Lite' }
+              ]
+            }
           ]
         }
       ]
@@ -1202,126 +1892,770 @@ export default defineConfig({
                   text: '✍️ 测试用例编写',
                   collapsed: true,
                   items: [
-                    { text: '完整版', link: '/TestCaseWriting/TestCaseWritingPrompt' },
-                    { text: '精简版', link: '/TestCaseWriting/TestCaseWritingPrompt_Lite' },
-                    { text: '说明文档', link: '/TestCaseWriting/' }
+                    { text: '说明文档', link: '/TestCaseWriting/' },
+                    { 
+                      text: '标准版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestCaseWriting/TestCaseWritingPrompt' },
+                        { text: '精简版', link: '/TestCaseWriting/TestCaseWritingPrompt_Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ROSES 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestCaseWriting/ROSES-version/TestCaseWriting-ROSES-Full' },
+                        { text: '精简版', link: '/TestCaseWriting/ROSES-version/TestCaseWriting-ROSES-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'LangGPT 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestCaseWriting/LangGPT-version/TestCaseWriting-LangGPT-Full' },
+                        { text: '精简版', link: '/TestCaseWriting/LangGPT-version/TestCaseWriting-LangGPT-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ICIO 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestCaseWriting/ICIO-version/TestCaseWriting-ICIO-Full' },
+                        { text: '精简版', link: '/TestCaseWriting/ICIO-version/TestCaseWriting-ICIO-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'CRISPE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestCaseWriting/CRISPE-version/TestCaseWriting-CRISPE-Full' },
+                        { text: '精简版', link: '/TestCaseWriting/CRISPE-version/TestCaseWriting-CRISPE-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'RISE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestCaseWriting/RISE-version/TestCaseWriting-RISE-Full' },
+                        { text: '精简版', link: '/TestCaseWriting/RISE-version/TestCaseWriting-RISE-Lite' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '🔍 功能测试',
                   collapsed: true,
                   items: [
-                    { text: '完整版', link: '/FunctionalTesting/FunctionalTestingPrompt' },
-                    { text: '精简版', link: '/FunctionalTesting/FunctionalTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/FunctionalTesting/' }
+                    { text: '说明文档', link: '/FunctionalTesting/' },
+                    { 
+                      text: '标准版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/FunctionalTesting/FunctionalTestingPrompt' },
+                        { text: '精简版', link: '/FunctionalTesting/FunctionalTestingPrompt_Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ROSES 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/FunctionalTesting/ROSES-version/FunctionalTesting-ROSES-Full' },
+                        { text: '精简版', link: '/FunctionalTesting/ROSES-version/FunctionalTesting-ROSES-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'LangGPT 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/FunctionalTesting/LangGPT-version/FunctionalTesting-LangGPT-Full' },
+                        { text: '精简版', link: '/FunctionalTesting/LangGPT-version/FunctionalTesting-LangGPT-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ICIO 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/FunctionalTesting/ICIO-version/FunctionalTesting-ICIO-Full' },
+                        { text: '精简版', link: '/FunctionalTesting/ICIO-version/FunctionalTesting-ICIO-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'CRISPE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/FunctionalTesting/CRISPE-version/FunctionalTesting-CRISPE-Full' },
+                        { text: '精简版', link: '/FunctionalTesting/CRISPE-version/FunctionalTesting-CRISPE-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'RISE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/FunctionalTesting/RISE-version/FunctionalTesting-RISE-Full' },
+                        { text: '精简版', link: '/FunctionalTesting/RISE-version/FunctionalTesting-RISE-Lite' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '⚡ 性能测试',
                   collapsed: true,
                   items: [
-                    { text: '完整版', link: '/PerformanceTesting/PerformanceTestingPrompt' },
-                    { text: '精简版', link: '/PerformanceTesting/PerformanceTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/PerformanceTesting/' }
+                    { text: '说明文档', link: '/PerformanceTesting/' },
+                    { 
+                      text: '标准版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/PerformanceTesting/PerformanceTestingPrompt' },
+                        { text: '精简版', link: '/PerformanceTesting/PerformanceTestingPrompt_Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ROSES 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/PerformanceTesting/ROSES-version/PerformanceTesting-ROSES-Full' },
+                        { text: '精简版', link: '/PerformanceTesting/ROSES-version/PerformanceTesting-ROSES-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'LangGPT 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/PerformanceTesting/LangGPT-version/PerformanceTesting-LangGPT-Full' },
+                        { text: '精简版', link: '/PerformanceTesting/LangGPT-version/PerformanceTesting-LangGPT-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ICIO 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/PerformanceTesting/ICIO-version/PerformanceTesting-ICIO-Full' },
+                        { text: '精简版', link: '/PerformanceTesting/ICIO-version/PerformanceTesting-ICIO-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'CRISPE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/PerformanceTesting/CRISPE-version/PerformanceTesting-CRISPE-Full' },
+                        { text: '精简版', link: '/PerformanceTesting/CRISPE-version/PerformanceTesting-CRISPE-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'RISE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/PerformanceTesting/RISE-version/PerformanceTesting-RISE-Full' },
+                        { text: '精简版', link: '/PerformanceTesting/RISE-version/PerformanceTesting-RISE-Lite' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '🤖 自动化测试',
                   collapsed: true,
                   items: [
-                    { text: '完整版', link: '/AutomationTesting/AutomationTestingPrompt' },
-                    { text: '精简版', link: '/AutomationTesting/AutomationTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/AutomationTesting/' }
+                    { text: '说明文档', link: '/AutomationTesting/' },
+                    { 
+                      text: '标准版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AutomationTesting/AutomationTestingPrompt' },
+                        { text: '精简版', link: '/AutomationTesting/AutomationTestingPrompt_Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ROSES 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AutomationTesting/ROSES-version/AutomationTesting-ROSES-Full' },
+                        { text: '精简版', link: '/AutomationTesting/ROSES-version/AutomationTesting-ROSES-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'LangGPT 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AutomationTesting/LangGPT-version/AutomationTesting-LangGPT-Full' },
+                        { text: '精简版', link: '/AutomationTesting/LangGPT-version/AutomationTesting-LangGPT-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ICIO 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AutomationTesting/ICIO-version/AutomationTesting-ICIO-Full' },
+                        { text: '精简版', link: '/AutomationTesting/ICIO-version/AutomationTesting-ICIO-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'CRISPE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AutomationTesting/CRISPE-version/AutomationTesting-CRISPE-Full' },
+                        { text: '精简版', link: '/AutomationTesting/CRISPE-version/AutomationTesting-CRISPE-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'RISE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AutomationTesting/RISE-version/AutomationTesting-RISE-Full' },
+                        { text: '精简版', link: '/AutomationTesting/RISE-version/AutomationTesting-RISE-Lite' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '📱 移动端测试',
                   collapsed: true,
                   items: [
-                    { text: '完整版', link: '/MobileTesting/MobileTestingPrompt' },
-                    { text: '精简版', link: '/MobileTesting/MobileTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/MobileTesting/' }
+                    { text: '说明文档', link: '/MobileTesting/' },
+                    { 
+                      text: '标准版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/MobileTesting/MobileTestingPrompt' },
+                        { text: '精简版', link: '/MobileTesting/MobileTestingPrompt_Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ROSES 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/MobileTesting/ROSES-version/MobileTesting-ROSES-Full' },
+                        { text: '精简版', link: '/MobileTesting/ROSES-version/MobileTesting-ROSES-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'LangGPT 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/MobileTesting/LangGPT-version/MobileTesting-LangGPT-Full' },
+                        { text: '精简版', link: '/MobileTesting/LangGPT-version/MobileTesting-LangGPT-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ICIO 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/MobileTesting/ICIO-version/MobileTesting-ICIO-Full' },
+                        { text: '精简版', link: '/MobileTesting/ICIO-version/MobileTesting-ICIO-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'CRISPE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/MobileTesting/CRISPE-version/MobileTesting-CRISPE-Full' },
+                        { text: '精简版', link: '/MobileTesting/CRISPE-version/MobileTesting-CRISPE-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'RISE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/MobileTesting/RISE-version/MobileTesting-RISE-Full' },
+                        { text: '精简版', link: '/MobileTesting/RISE-version/MobileTesting-RISE-Lite' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '🐛 缺陷上报',
                   collapsed: true,
                   items: [
-                    { text: '完整版', link: '/BugReporting/BugReportingPrompt' },
-                    { text: '精简版', link: '/BugReporting/BugReportingPrompt_Lite' },
-                    { text: '说明文档', link: '/BugReporting/' }
+                    { text: '说明文档', link: '/BugReporting/' },
+                    { 
+                      text: '标准版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/BugReporting/BugReportingPrompt' },
+                        { text: '精简版', link: '/BugReporting/BugReportingPrompt_Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ROSES 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/BugReporting/ROSES-version/BugReporting-ROSES-Full' },
+                        { text: '精简版', link: '/BugReporting/ROSES-version/BugReporting-ROSES-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'LangGPT 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/BugReporting/LangGPT-version/BugReporting-LangGPT-Full' },
+                        { text: '精简版', link: '/BugReporting/LangGPT-version/BugReporting-LangGPT-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ICIO 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/BugReporting/ICIO-version/BugReporting-ICIO-Full' },
+                        { text: '精简版', link: '/BugReporting/ICIO-version/BugReporting-ICIO-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'CRISPE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/BugReporting/CRISPE-version/BugReporting-CRISPE-Full' },
+                        { text: '精简版', link: '/BugReporting/CRISPE-version/BugReporting-CRISPE-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'RISE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/BugReporting/RISE-version/BugReporting-RISE-Full' },
+                        { text: '精简版', link: '/BugReporting/RISE-version/BugReporting-RISE-Lite' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '📊 测试报告',
                   collapsed: true,
                   items: [
-                    { text: '完整版', link: '/TestReporting/TestReportingPrompt' },
-                    { text: '精简版', link: '/TestReporting/TestReportingPrompt_Lite' },
-                    { text: '说明文档', link: '/TestReporting/' }
+                    { text: '说明文档', link: '/TestReporting/' },
+                    { 
+                      text: '标准版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestReporting/TestReportingPrompt' },
+                        { text: '精简版', link: '/TestReporting/TestReportingPrompt_Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ROSES 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestReporting/ROSES-version/TestReporting-ROSES-Full' },
+                        { text: '精简版', link: '/TestReporting/ROSES-version/TestReporting-ROSES-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'LangGPT 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestReporting/LangGPT-version/TestReporting-LangGPT-Full' },
+                        { text: '精简版', link: '/TestReporting/LangGPT-version/TestReporting-LangGPT-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ICIO 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestReporting/ICIO-version/TestReporting-ICIO-Full' },
+                        { text: '精简版', link: '/TestReporting/ICIO-version/TestReporting-ICIO-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'CRISPE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestReporting/CRISPE-version/TestReporting-CRISPE-Full' },
+                        { text: '精简版', link: '/TestReporting/CRISPE-version/TestReporting-CRISPE-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'RISE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestReporting/RISE-version/TestReporting-RISE-Full' },
+                        { text: '精简版', link: '/TestReporting/RISE-version/TestReporting-RISE-Lite' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '🎯 测试策略',
                   collapsed: true,
                   items: [
-                    { text: '完整版', link: '/TestStrategy/TestStrategyPrompt' },
-                    { text: '精简版', link: '/TestStrategy/TestStrategyPrompt_Lite' },
-                    { text: '说明文档', link: '/TestStrategy/' }
+                    { text: '说明文档', link: '/TestStrategy/' },
+                    { 
+                      text: '标准版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestStrategy/TestStrategyPrompt' },
+                        { text: '精简版', link: '/TestStrategy/TestStrategyPrompt_Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ROSES 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestStrategy/ROSES-version/TestStrategy-ROSES-Full' },
+                        { text: '精简版', link: '/TestStrategy/ROSES-version/TestStrategy-ROSES-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'LangGPT 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestStrategy/LangGPT-version/TestStrategy-LangGPT-Full' },
+                        { text: '精简版', link: '/TestStrategy/LangGPT-version/TestStrategy-LangGPT-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ICIO 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestStrategy/ICIO-version/TestStrategy-ICIO-Full' },
+                        { text: '精简版', link: '/TestStrategy/ICIO-version/TestStrategy-ICIO-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'CRISPE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestStrategy/CRISPE-version/TestStrategy-CRISPE-Full' },
+                        { text: '精简版', link: '/TestStrategy/CRISPE-version/TestStrategy-CRISPE-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'RISE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestStrategy/RISE-version/TestStrategy-RISE-Full' },
+                        { text: '精简版', link: '/TestStrategy/RISE-version/TestStrategy-RISE-Lite' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '🤖 AI辅助测试',
                   collapsed: true,
                   items: [
-                    { text: '完整版', link: '/AIAssistedTesting/AIAssistedTestingPrompt' },
-                    { text: '精简版', link: '/AIAssistedTesting/AIAssistedTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/AIAssistedTesting/' }
+                    { text: '说明文档', link: '/AIAssistedTesting/' },
+                    { 
+                      text: '标准版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AIAssistedTesting/AIAssistedTestingPrompt' },
+                        { text: '精简版', link: '/AIAssistedTesting/AIAssistedTestingPrompt_Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ROSES 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AIAssistedTesting/ROSES-version/AIAssistedTesting-ROSES-Full' },
+                        { text: '精简版', link: '/AIAssistedTesting/ROSES-version/AIAssistedTesting-ROSES-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'LangGPT 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AIAssistedTesting/LangGPT-version/AIAssistedTesting-LangGPT-Full' },
+                        { text: '精简版', link: '/AIAssistedTesting/LangGPT-version/AIAssistedTesting-LangGPT-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ICIO 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AIAssistedTesting/ICIO-version/AIAssistedTesting-ICIO-Full' },
+                        { text: '精简版', link: '/AIAssistedTesting/ICIO-version/AIAssistedTesting-ICIO-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'CRISPE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AIAssistedTesting/CRISPE-version/AIAssistedTesting-CRISPE-Full' },
+                        { text: '精简版', link: '/AIAssistedTesting/CRISPE-version/AIAssistedTesting-CRISPE-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'RISE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AIAssistedTesting/RISE-version/AIAssistedTesting-RISE-Full' },
+                        { text: '精简版', link: '/AIAssistedTesting/RISE-version/AIAssistedTesting-RISE-Lite' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '📋 手动测试',
                   collapsed: true,
                   items: [
-                    { text: '完整版', link: '/ManualTesting/ManualTestingPrompt' },
-                    { text: '精简版', link: '/ManualTesting/ManualTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/ManualTesting/' }
+                    { text: '说明文档', link: '/ManualTesting/' },
+                    { 
+                      text: '标准版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/ManualTesting/ManualTestingPrompt' },
+                        { text: '精简版', link: '/ManualTesting/ManualTestingPrompt_Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ROSES 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/ManualTesting/ROSES-version/ManualTesting-ROSES-Full' },
+                        { text: '精简版', link: '/ManualTesting/ROSES-version/ManualTesting-ROSES-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'LangGPT 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/ManualTesting/LangGPT-version/ManualTesting-LangGPT-Full' },
+                        { text: '精简版', link: '/ManualTesting/LangGPT-version/ManualTesting-LangGPT-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ICIO 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/ManualTesting/ICIO-version/ManualTesting-ICIO-Full' },
+                        { text: '精简版', link: '/ManualTesting/ICIO-version/ManualTesting-ICIO-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'CRISPE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/ManualTesting/CRISPE-version/ManualTesting-CRISPE-Full' },
+                        { text: '精简版', link: '/ManualTesting/CRISPE-version/ManualTesting-CRISPE-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'RISE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/ManualTesting/RISE-version/ManualTesting-RISE-Full' },
+                        { text: '精简版', link: '/ManualTesting/RISE-version/ManualTesting-RISE-Lite' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '🔒 安全测试',
                   collapsed: true,
                   items: [
-                    { text: '完整版', link: '/SecurityTesting/SecurityTestingPrompt' },
-                    { text: '精简版', link: '/SecurityTesting/SecurityTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/SecurityTesting/' }
+                    { text: '说明文档', link: '/SecurityTesting/' },
+                    { 
+                      text: '标准版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/SecurityTesting/SecurityTestingPrompt' },
+                        { text: '精简版', link: '/SecurityTesting/SecurityTestingPrompt_Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ROSES 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/SecurityTesting/ROSES-version/SecurityTesting-ROSES-Full' },
+                        { text: '精简版', link: '/SecurityTesting/ROSES-version/SecurityTesting-ROSES-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'LangGPT 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/SecurityTesting/LangGPT-version/SecurityTesting-LangGPT-Full' },
+                        { text: '精简版', link: '/SecurityTesting/LangGPT-version/SecurityTesting-LangGPT-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ICIO 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/SecurityTesting/ICIO-version/SecurityTesting-ICIO-Full' },
+                        { text: '精简版', link: '/SecurityTesting/ICIO-version/SecurityTesting-ICIO-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'CRISPE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/SecurityTesting/CRISPE-version/SecurityTesting-CRISPE-Full' },
+                        { text: '精简版', link: '/SecurityTesting/CRISPE-version/SecurityTesting-CRISPE-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'RISE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/SecurityTesting/RISE-version/SecurityTesting-RISE-Full' },
+                        { text: '精简版', link: '/SecurityTesting/RISE-version/SecurityTesting-RISE-Lite' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '🔌 API测试',
                   collapsed: true,
                   items: [
-                    { text: '完整版', link: '/APITesting/APITestingPrompt' },
-                    { text: '精简版', link: '/APITesting/APITestingPrompt_Lite' },
-                    { text: '说明文档', link: '/APITesting/' }
+                    { text: '说明文档', link: '/APITesting/' },
+                    { 
+                      text: '标准版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/APITesting/APITestingPrompt' },
+                        { text: '精简版', link: '/APITesting/APITestingPrompt_Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ROSES 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/APITesting/ROSES-version/APITesting-ROSES-Full' },
+                        { text: '精简版', link: '/APITesting/ROSES-version/APITesting-ROSES-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'LangGPT 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/APITesting/LangGPT-version/APITesting-LangGPT-Full' },
+                        { text: '精简版', link: '/APITesting/LangGPT-version/APITesting-LangGPT-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ICIO 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/APITesting/ICIO-version/APITesting-ICIO-Full' },
+                        { text: '精简版', link: '/APITesting/ICIO-version/APITesting-ICIO-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'CRISPE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/APITesting/CRISPE-version/APITesting-CRISPE-Full' },
+                        { text: '精简版', link: '/APITesting/CRISPE-version/APITesting-CRISPE-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'RISE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/APITesting/RISE-version/APITesting-RISE-Full' },
+                        { text: '精简版', link: '/APITesting/RISE-version/APITesting-RISE-Lite' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '♿ 可访问性测试',
                   collapsed: true,
                   items: [
-                    { text: '完整版', link: '/AccessibilityTesting/AccessibilityTestingPrompt' },
-                    { text: '精简版', link: '/AccessibilityTesting/AccessibilityTestingPrompt_Lite' },
-                    { text: '说明文档', link: '/AccessibilityTesting/' }
+                    { text: '说明文档', link: '/AccessibilityTesting/' },
+                    { 
+                      text: '标准版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AccessibilityTesting/AccessibilityTestingPrompt' },
+                        { text: '精简版', link: '/AccessibilityTesting/AccessibilityTestingPrompt_Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ROSES 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AccessibilityTesting/ROSES-version/AccessibilityTesting-ROSES-Full' },
+                        { text: '精简版', link: '/AccessibilityTesting/ROSES-version/AccessibilityTesting-ROSES-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'LangGPT 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AccessibilityTesting/LangGPT-version/AccessibilityTesting-LangGPT-Full' },
+                        { text: '精简版', link: '/AccessibilityTesting/LangGPT-version/AccessibilityTesting-LangGPT-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ICIO 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AccessibilityTesting/ICIO-version/AccessibilityTesting-ICIO-Full' },
+                        { text: '精简版', link: '/AccessibilityTesting/ICIO-version/AccessibilityTesting-ICIO-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'CRISPE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AccessibilityTesting/CRISPE-version/AccessibilityTesting-CRISPE-Full' },
+                        { text: '精简版', link: '/AccessibilityTesting/CRISPE-version/AccessibilityTesting-CRISPE-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'RISE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/AccessibilityTesting/RISE-version/AccessibilityTesting-RISE-Full' },
+                        { text: '精简版', link: '/AccessibilityTesting/RISE-version/AccessibilityTesting-RISE-Lite' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '🔍 测试用例评审',
                   collapsed: true,
                   items: [
-                    { text: '完整版', link: '/TestCaseReviewer/TestCaseReviewerPrompt' },
-                    { text: '精简版', link: '/TestCaseReviewer/TestCaseReviewerPrompt_Lite' },
-                    { text: '说明文档', link: '/TestCaseReviewer/' }
+                    { text: '说明文档', link: '/TestCaseReviewer/' },
+                    { 
+                      text: '标准版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestCaseReviewer/TestCaseReviewerPrompt' },
+                        { text: '精简版', link: '/TestCaseReviewer/TestCaseReviewerPrompt_Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ROSES 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestCaseReviewer/ROSES-version/TestCaseReviewer-ROSES-Full' },
+                        { text: '精简版', link: '/TestCaseReviewer/ROSES-version/TestCaseReviewer-ROSES-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'LangGPT 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestCaseReviewer/LangGPT-version/TestCaseReviewer-LangGPT-Full' },
+                        { text: '精简版', link: '/TestCaseReviewer/LangGPT-version/TestCaseReviewer-LangGPT-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'ICIO 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestCaseReviewer/ICIO-version/TestCaseReviewer-ICIO-Full' },
+                        { text: '精简版', link: '/TestCaseReviewer/ICIO-version/TestCaseReviewer-ICIO-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'CRISPE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestCaseReviewer/CRISPE-version/TestCaseReviewer-CRISPE-Full' },
+                        { text: '精简版', link: '/TestCaseReviewer/CRISPE-version/TestCaseReviewer-CRISPE-Lite' }
+                      ]
+                    },
+                    { 
+                      text: 'RISE 框架版本',
+                      collapsed: true,
+                      items: [
+                        { text: '完整版', link: '/TestCaseReviewer/RISE-version/TestCaseReviewer-RISE-Full' },
+                        { text: '精简版', link: '/TestCaseReviewer/RISE-version/TestCaseReviewer-RISE-Lite' }
+                      ]
+                    }
                   ]
                 }
               ]
