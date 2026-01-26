@@ -269,8 +269,8 @@ export default defineConfig({
     // 中文版本 - 提示词文件映射（Standard-version）
     'testing-types/requirements-analysis/Standard-version/RequirementsAnalysisPrompt.md': 'RequirementsAnalysis/RequirementsAnalysisPrompt.md',
     'testing-types/requirements-analysis/Standard-version/RequirementsAnalysisPrompt_Lite.md': 'RequirementsAnalysis/RequirementsAnalysisPrompt_Lite.md',
-    'testing-types/requirements-analysis/Standard-version/RequirementsAnalysisPrompt_EN.md': 'RequirementsAnalysis/RequirementsAnalysisPrompt_EN.md',
-    'testing-types/requirements-analysis/Standard-version/RequirementsAnalysisPrompt_Lite_EN.md': 'RequirementsAnalysis/RequirementsAnalysisPrompt_Lite_EN.md',
+    'testing-types/requirements-analysis/Standard-version/RequirementsAnalysisPrompt_EN.md': 'en/RequirementsAnalysis/RequirementsAnalysisPrompt.md',
+    'testing-types/requirements-analysis/Standard-version/RequirementsAnalysisPrompt_Lite_EN.md': 'en/RequirementsAnalysis/RequirementsAnalysisPrompt_Lite.md',
     
     // 中文版本 - ROSES 框架版本
     'testing-types/requirements-analysis/ROSES-version/RequirementsAnalysis-ROSES-Full.md': 'RequirementsAnalysis/ROSES-version/RequirementsAnalysis-ROSES-Full.md',
@@ -336,86 +336,86 @@ export default defineConfig({
     // TestCaseWriting - Standard-version
     'testing-types/test-case-writing/Standard-version/TestCaseWritingPrompt.md': 'TestCaseWriting/TestCaseWritingPrompt.md',
     'testing-types/test-case-writing/Standard-version/TestCaseWritingPrompt_Lite.md': 'TestCaseWriting/TestCaseWritingPrompt_Lite.md',
-    'testing-types/test-case-writing/Standard-version/TestCaseWritingPrompt_EN.md': 'TestCaseWriting/TestCaseWritingPrompt_EN.md',
-    'testing-types/test-case-writing/Standard-version/TestCaseWritingPrompt_Lite_EN.md': 'TestCaseWriting/TestCaseWritingPrompt_Lite_EN.md',
+    'testing-types/test-case-writing/Standard-version/TestCaseWritingPrompt_EN.md': 'en/TestCaseWriting/TestCaseWritingPrompt.md',
+    'testing-types/test-case-writing/Standard-version/TestCaseWritingPrompt_Lite_EN.md': 'en/TestCaseWriting/TestCaseWritingPrompt_Lite.md',
 
     // FunctionalTesting - Standard-version
     'testing-types/functional-testing/Standard-version/FunctionalTestingPrompt.md': 'FunctionalTesting/FunctionalTestingPrompt.md',
     'testing-types/functional-testing/Standard-version/FunctionalTestingPrompt_Lite.md': 'FunctionalTesting/FunctionalTestingPrompt_Lite.md',
-    'testing-types/functional-testing/Standard-version/FunctionalTestingPrompt_EN.md': 'FunctionalTesting/FunctionalTestingPrompt_EN.md',
-    'testing-types/functional-testing/Standard-version/FunctionalTestingPrompt_Lite_EN.md': 'FunctionalTesting/FunctionalTestingPrompt_Lite_EN.md',
+    'testing-types/functional-testing/Standard-version/FunctionalTestingPrompt_EN.md': 'en/FunctionalTesting/FunctionalTestingPrompt.md',
+    'testing-types/functional-testing/Standard-version/FunctionalTestingPrompt_Lite_EN.md': 'en/FunctionalTesting/FunctionalTestingPrompt_Lite.md',
 
     // PerformanceTesting - Standard-version
     'testing-types/performance-testing/Standard-version/PerformanceTestingPrompt.md': 'PerformanceTesting/PerformanceTestingPrompt.md',
     'testing-types/performance-testing/Standard-version/PerformanceTestingPrompt_Lite.md': 'PerformanceTesting/PerformanceTestingPrompt_Lite.md',
-    'testing-types/performance-testing/Standard-version/PerformanceTestingPrompt_EN.md': 'PerformanceTesting/PerformanceTestingPrompt_EN.md',
-    'testing-types/performance-testing/Standard-version/PerformanceTestingPrompt_Lite_EN.md': 'PerformanceTesting/PerformanceTestingPrompt_Lite_EN.md',
+    'testing-types/performance-testing/Standard-version/PerformanceTestingPrompt_EN.md': 'en/PerformanceTesting/PerformanceTestingPrompt.md',
+    'testing-types/performance-testing/Standard-version/PerformanceTestingPrompt_Lite_EN.md': 'en/PerformanceTesting/PerformanceTestingPrompt_Lite.md',
 
     // AutomationTesting - Standard-version
     'testing-types/automation-testing/Standard-version/AutomationTestingPrompt.md': 'AutomationTesting/AutomationTestingPrompt.md',
     'testing-types/automation-testing/Standard-version/AutomationTestingPrompt_Lite.md': 'AutomationTesting/AutomationTestingPrompt_Lite.md',
-    'testing-types/automation-testing/Standard-version/AutomationTestingPrompt_EN.md': 'AutomationTesting/AutomationTestingPrompt_EN.md',
-    'testing-types/automation-testing/Standard-version/AutomationTestingPrompt_Lite_EN.md': 'AutomationTesting/AutomationTestingPrompt_Lite_EN.md',
+    'testing-types/automation-testing/Standard-version/AutomationTestingPrompt_EN.md': 'en/AutomationTesting/AutomationTestingPrompt.md',
+    'testing-types/automation-testing/Standard-version/AutomationTestingPrompt_Lite_EN.md': 'en/AutomationTesting/AutomationTestingPrompt_Lite.md',
 
     // MobileTesting - Standard-version
     'testing-types/mobile-testing/Standard-version/MobileTestingPrompt.md': 'MobileTesting/MobileTestingPrompt.md',
     'testing-types/mobile-testing/Standard-version/MobileTestingPrompt_Lite.md': 'MobileTesting/MobileTestingPrompt_Lite.md',
-    'testing-types/mobile-testing/Standard-version/MobileTestingPrompt_EN.md': 'MobileTesting/MobileTestingPrompt_EN.md',
-    'testing-types/mobile-testing/Standard-version/MobileTestingPrompt_Lite_EN.md': 'MobileTesting/MobileTestingPrompt_Lite_EN.md',
+    'testing-types/mobile-testing/Standard-version/MobileTestingPrompt_EN.md': 'en/MobileTesting/MobileTestingPrompt.md',
+    'testing-types/mobile-testing/Standard-version/MobileTestingPrompt_Lite_EN.md': 'en/MobileTesting/MobileTestingPrompt_Lite.md',
 
     // BugReporting - Standard-version
     'testing-types/bug-reporting/Standard-version/BugReportingPrompt.md': 'BugReporting/BugReportingPrompt.md',
     'testing-types/bug-reporting/Standard-version/BugReportingPrompt_Lite.md': 'BugReporting/BugReportingPrompt_Lite.md',
-    'testing-types/bug-reporting/Standard-version/BugReportingPrompt_EN.md': 'BugReporting/BugReportingPrompt_EN.md',
-    'testing-types/bug-reporting/Standard-version/BugReportingPrompt_Lite_EN.md': 'BugReporting/BugReportingPrompt_Lite_EN.md',
+    'testing-types/bug-reporting/Standard-version/BugReportingPrompt_EN.md': 'en/BugReporting/BugReportingPrompt.md',
+    'testing-types/bug-reporting/Standard-version/BugReportingPrompt_Lite_EN.md': 'en/BugReporting/BugReportingPrompt_Lite.md',
 
     // TestReporting - Standard-version
     'testing-types/test-reporting/Standard-version/TestReportingPrompt.md': 'TestReporting/TestReportingPrompt.md',
     'testing-types/test-reporting/Standard-version/TestReportingPrompt_Lite.md': 'TestReporting/TestReportingPrompt_Lite.md',
-    'testing-types/test-reporting/Standard-version/TestReportingPrompt_EN.md': 'TestReporting/TestReportingPrompt_EN.md',
-    'testing-types/test-reporting/Standard-version/TestReportingPrompt_Lite_EN.md': 'TestReporting/TestReportingPrompt_Lite_EN.md',
+    'testing-types/test-reporting/Standard-version/TestReportingPrompt_EN.md': 'en/TestReporting/TestReportingPrompt.md',
+    'testing-types/test-reporting/Standard-version/TestReportingPrompt_Lite_EN.md': 'en/TestReporting/TestReportingPrompt_Lite.md',
 
     // TestStrategy - Standard-version
     'testing-types/test-strategy/Standard-version/TestStrategyPrompt.md': 'TestStrategy/TestStrategyPrompt.md',
     'testing-types/test-strategy/Standard-version/TestStrategyPrompt_Lite.md': 'TestStrategy/TestStrategyPrompt_Lite.md',
-    'testing-types/test-strategy/Standard-version/TestStrategyPrompt_EN.md': 'TestStrategy/TestStrategyPrompt_EN.md',
-    'testing-types/test-strategy/Standard-version/TestStrategyPrompt_Lite_EN.md': 'TestStrategy/TestStrategyPrompt_Lite_EN.md',
+    'testing-types/test-strategy/Standard-version/TestStrategyPrompt_EN.md': 'en/TestStrategy/TestStrategyPrompt.md',
+    'testing-types/test-strategy/Standard-version/TestStrategyPrompt_Lite_EN.md': 'en/TestStrategy/TestStrategyPrompt_Lite.md',
 
     // APITesting - Standard-version
     'testing-types/api-testing/Standard-version/APITestingPrompt.md': 'APITesting/APITestingPrompt.md',
     'testing-types/api-testing/Standard-version/APITestingPrompt_Lite.md': 'APITesting/APITestingPrompt_Lite.md',
-    'testing-types/api-testing/Standard-version/APITestingPrompt_EN.md': 'APITesting/APITestingPrompt_EN.md',
-    'testing-types/api-testing/Standard-version/APITestingPrompt_Lite_EN.md': 'APITesting/APITestingPrompt_Lite_EN.md',
+    'testing-types/api-testing/Standard-version/APITestingPrompt_EN.md': 'en/APITesting/APITestingPrompt.md',
+    'testing-types/api-testing/Standard-version/APITestingPrompt_Lite_EN.md': 'en/APITesting/APITestingPrompt_Lite.md',
 
     // SecurityTesting - Standard-version
     'testing-types/security-testing/Standard-version/SecurityTestingPrompt.md': 'SecurityTesting/SecurityTestingPrompt.md',
     'testing-types/security-testing/Standard-version/SecurityTestingPrompt_Lite.md': 'SecurityTesting/SecurityTestingPrompt_Lite.md',
-    'testing-types/security-testing/Standard-version/SecurityTestingPrompt_EN.md': 'SecurityTesting/SecurityTestingPrompt_EN.md',
-    'testing-types/security-testing/Standard-version/SecurityTestingPrompt_Lite_EN.md': 'SecurityTesting/SecurityTestingPrompt_Lite_EN.md',
+    'testing-types/security-testing/Standard-version/SecurityTestingPrompt_EN.md': 'en/SecurityTesting/SecurityTestingPrompt.md',
+    'testing-types/security-testing/Standard-version/SecurityTestingPrompt_Lite_EN.md': 'en/SecurityTesting/SecurityTestingPrompt_Lite.md',
 
     // AccessibilityTesting - Standard-version
     'testing-types/accessibility-testing/Standard-version/AccessibilityTestingPrompt.md': 'AccessibilityTesting/AccessibilityTestingPrompt.md',
     'testing-types/accessibility-testing/Standard-version/AccessibilityTestingPrompt_Lite.md': 'AccessibilityTesting/AccessibilityTestingPrompt_Lite.md',
-    'testing-types/accessibility-testing/Standard-version/AccessibilityTestingPrompt_EN.md': 'AccessibilityTesting/AccessibilityTestingPrompt_EN.md',
-    'testing-types/accessibility-testing/Standard-version/AccessibilityTestingPrompt_Lite_EN.md': 'AccessibilityTesting/AccessibilityTestingPrompt_Lite_EN.md',
+    'testing-types/accessibility-testing/Standard-version/AccessibilityTestingPrompt_EN.md': 'en/AccessibilityTesting/AccessibilityTestingPrompt.md',
+    'testing-types/accessibility-testing/Standard-version/AccessibilityTestingPrompt_Lite_EN.md': 'en/AccessibilityTesting/AccessibilityTestingPrompt_Lite.md',
 
     // AIAssistedTesting - Standard-version
     'testing-types/ai-assisted-testing/Standard-version/AIAssistedTestingPrompt.md': 'AIAssistedTesting/AIAssistedTestingPrompt.md',
     'testing-types/ai-assisted-testing/Standard-version/AIAssistedTestingPrompt_Lite.md': 'AIAssistedTesting/AIAssistedTestingPrompt_Lite.md',
-    'testing-types/ai-assisted-testing/Standard-version/AIAssistedTestingPrompt_EN.md': 'AIAssistedTesting/AIAssistedTestingPrompt_EN.md',
-    'testing-types/ai-assisted-testing/Standard-version/AIAssistedTestingPrompt_Lite_EN.md': 'AIAssistedTesting/AIAssistedTestingPrompt_Lite_EN.md',
+    'testing-types/ai-assisted-testing/Standard-version/AIAssistedTestingPrompt_EN.md': 'en/AIAssistedTesting/AIAssistedTestingPrompt.md',
+    'testing-types/ai-assisted-testing/Standard-version/AIAssistedTestingPrompt_Lite_EN.md': 'en/AIAssistedTesting/AIAssistedTestingPrompt_Lite.md',
 
     // ManualTesting - Standard-version
     'testing-types/manual-testing/Standard-version/ManualTestingPrompt.md': 'ManualTesting/ManualTestingPrompt.md',
     'testing-types/manual-testing/Standard-version/ManualTestingPrompt_Lite.md': 'ManualTesting/ManualTestingPrompt_Lite.md',
-    'testing-types/manual-testing/Standard-version/ManualTestingPrompt_EN.md': 'ManualTesting/ManualTestingPrompt_EN.md',
-    'testing-types/manual-testing/Standard-version/ManualTestingPrompt_Lite_EN.md': 'ManualTesting/ManualTestingPrompt_Lite_EN.md',
+    'testing-types/manual-testing/Standard-version/ManualTestingPrompt_EN.md': 'en/ManualTesting/ManualTestingPrompt.md',
+    'testing-types/manual-testing/Standard-version/ManualTestingPrompt_Lite_EN.md': 'en/ManualTesting/ManualTestingPrompt_Lite.md',
 
     // TestCaseReviewer - Standard-version
     'testing-types/test-case-reviewer/Standard-version/TestCaseReviewerPrompt.md': 'TestCaseReviewer/TestCaseReviewerPrompt.md',
     'testing-types/test-case-reviewer/Standard-version/TestCaseReviewerPrompt_Lite.md': 'TestCaseReviewer/TestCaseReviewerPrompt_Lite.md',
-    'testing-types/test-case-reviewer/Standard-version/TestCaseReviewerPrompt_EN.md': 'TestCaseReviewer/TestCaseReviewerPrompt_EN.md',
-    'testing-types/test-case-reviewer/Standard-version/TestCaseReviewerPrompt_Lite_EN.md': 'TestCaseReviewer/TestCaseReviewerPrompt_Lite_EN.md',
+    'testing-types/test-case-reviewer/Standard-version/TestCaseReviewerPrompt_EN.md': 'en/TestCaseReviewer/TestCaseReviewerPrompt.md',
+    'testing-types/test-case-reviewer/Standard-version/TestCaseReviewerPrompt_Lite_EN.md': 'en/TestCaseReviewer/TestCaseReviewerPrompt_Lite.md',
 
     // RequirementsAnalysis - ROSES-version
 
