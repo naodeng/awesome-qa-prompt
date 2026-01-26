@@ -132,10 +132,10 @@
   padding: 0;
 }
 
-/* 限制图片大小，防止覆盖文本 */
+/* 增大图片尺寸，提升视觉效果 */
 .VPHero .VPImage.image-src {
-  max-width: 240px !important;
-  max-height: 240px !important;
+  max-width: 320px !important;
+  max-height: 320px !important;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -144,15 +144,15 @@
 
 @media (min-width: 640px) {
   .VPHero .VPImage.image-src {
-    max-width: 320px !important;
-    max-height: 320px !important;
+    max-width: 480px !important;
+    max-height: 480px !important;
   }
 }
 
 @media (min-width: 960px) {
   .VPHero .VPImage.image-src {
-    max-width: 380px !important;
-    max-height: 380px !important;
+    max-width: 600px !important;
+    max-height: 600px !important;
   }
 }
 
