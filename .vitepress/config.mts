@@ -2694,6 +2694,13 @@ export default defineConfig({
         search: {
           provider: 'local',
           options: {
+            // 搜索配置
+            _render(src, env, md) {
+              const html = md.render(src, env)
+              if (env.frontmatter?.search === false) return ''
+              return html
+            },
+            // 中文搜索配置
             locales: {
               root: {
                 translations: {
@@ -2706,8 +2713,22 @@ export default defineConfig({
                     resetButtonTitle: '清除查询条件',
                     footer: {
                       selectText: '选择',
-                      navigateText: '切换'
+                      navigateText: '切换',
+                      closeText: '关闭'
+                    },
+                    searchBox: {
+                      resetButtonTitle: '清除查询',
+                      resetButtonAriaLabel: '清除查询',
+                      cancelButtonText: '取消',
+                      cancelButtonAriaLabel: '取消搜索'
                     }
+                  }
+                },
+                // 搜索索引配置
+                miniSearch: {
+                  options: {
+                    fields: ['title', 'content', 'headings'],
+                    storeFields: ['title', 'content', 'headings']
                   }
                 }
               }
@@ -2777,6 +2798,13 @@ export default defineConfig({
         search: {
           provider: 'local',
           options: {
+            // 搜索配置
+            _render(src, env, md) {
+              const html = md.render(src, env)
+              if (env.frontmatter?.search === false) return ''
+              return html
+            },
+            // 英文搜索配置
             locales: {
               en: {
                 translations: {
@@ -2789,8 +2817,22 @@ export default defineConfig({
                     resetButtonTitle: 'Clear query',
                     footer: {
                       selectText: 'Select',
-                      navigateText: 'Navigate'
+                      navigateText: 'Navigate',
+                      closeText: 'Close'
+                    },
+                    searchBox: {
+                      resetButtonTitle: 'Clear query',
+                      resetButtonAriaLabel: 'Clear query',
+                      cancelButtonText: 'Cancel',
+                      cancelButtonAriaLabel: 'Cancel search'
                     }
+                  }
+                },
+                // 搜索索引配置
+                miniSearch: {
+                  options: {
+                    fields: ['title', 'content', 'headings'],
+                    storeFields: ['title', 'content', 'headings']
                   }
                 }
               }
@@ -2833,13 +2875,25 @@ export default defineConfig({
   },
   
   // 最后更新时间
-  lastUpdated: true,
+  lastUpdated: {
+    text: '最后更新',
+    formatOptions: {
+      dateStyle: 'short',
+      timeStyle: 'medium'
+    }
+  },
   
   // 清理 URL
   cleanUrls: true,
   
   // Sitemap 配置
   sitemap: {
-    hostname: 'https://qaprompt.inaodeng.com/'
+    hostname: 'https://qaprompt.inaodeng.com',
+    // 确保 sitemap 包含 lastmod（需要 lastUpdated 启用）
+    // lastmod 会自动从 Git 提交时间获取
+    transformItems: (items) => {
+      // 可以在这里自定义 sitemap 条目
+      return items
+    }
   }
 })
