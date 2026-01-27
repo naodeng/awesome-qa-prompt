@@ -64,9 +64,9 @@
   height: 32px;
 }
 
-/* 优化首页 Hero 布局 - 修复图片覆盖文本问题 */
+/* 优化首页 Hero 布局 - 更紧凑美观的设计 */
 .VPHero {
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   position: relative;
 }
 
@@ -76,7 +76,7 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  max-width: 1152px;
+  max-width: 1280px;
   margin: 0 auto;
   position: relative;
 }
@@ -85,14 +85,15 @@
   .VPHero .container {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
+    justify-content: center;
+    gap: 4rem;
+    padding: 0 2rem;
   }
 }
 
 /* Hero 主内容区域 */
 .VPHero .main {
-  flex: 1;
+  flex: 0 0 auto;
   text-align: center;
   z-index: 2;
   position: relative;
@@ -102,8 +103,8 @@
 @media (min-width: 960px) {
   .VPHero .main {
     text-align: left;
-    max-width: 45%;
-    flex: 0 0 45%;
+    flex: 0 0 42%;
+    min-width: 400px;
   }
 }
 
@@ -115,12 +116,15 @@
   position: relative;
   z-index: 1;
   order: -1; /* 在移动端，图片显示在文本上方 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 960px) {
   .VPHero .image-container {
-    max-width: 45%;
-    flex: 0 0 45%;
+    flex: 0 0 50%;
+    max-width: 50%;
     margin: 0;
     order: 0; /* 在桌面端，图片显示在右侧 */
   }
@@ -130,12 +134,15 @@
   max-width: 100%;
   background: transparent !important;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* 增大图片尺寸，提升视觉效果 */
 .VPHero .VPImage.image-src {
-  max-width: 400px !important;
-  max-height: 400px !important;
+  max-width: 450px !important;
+  max-height: 450px !important;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -144,22 +151,23 @@
 
 @media (min-width: 640px) {
   .VPHero .VPImage.image-src {
-    max-width: 600px !important;
-    max-height: 600px !important;
+    max-width: 550px !important;
+    max-height: 550px !important;
   }
 }
 
 @media (min-width: 960px) {
   .VPHero .VPImage.image-src {
-    max-width: 800px !important;
-    max-height: 800px !important;
+    max-width: 100% !important;
+    max-height: 600px !important;
+    width: auto;
   }
 }
 
 @media (min-width: 1280px) {
   .VPHero .VPImage.image-src {
-    max-width: 900px !important;
-    max-height: 900px !important;
+    max-width: 100% !important;
+    max-height: 650px !important;
   }
 }
 
@@ -184,6 +192,7 @@
 @media (max-width: 959px) {
   .VPHero .container {
     flex-direction: column;
+    gap: 1.5rem;
   }
   
   .VPHero .main {
@@ -193,8 +202,47 @@
   
   .VPHero .image-container {
     width: 100%;
-    max-width: 280px;
-    margin-bottom: 1rem;
+    max-width: 350px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* 优化 Hero 标题和文本样式 */
+.VPHero .name {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 960px) {
+  .VPHero .name {
+    font-size: 4rem;
+  }
+}
+
+.VPHero .text {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 960px) {
+  .VPHero .text {
+    font-size: 1.75rem;
+  }
+}
+
+.VPHero .tagline {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+}
+
+@media (min-width: 960px) {
+  .VPHero .tagline {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
   }
 }
 
