@@ -10,10 +10,10 @@ hero:
     alt: Awesome QA Prompt
   actions:
     - theme: brand
-      text: 快速开始 / Get Started
+      text: 快速开始
       link: /RequirementsAnalysis/RequirementsAnalysisPrompt
     - theme: alt
-      text: 查看工作流程 / Workflows
+      text: 查看工作流程
       link: /Workflows/
     - theme: alt
       text: English Version
@@ -66,8 +66,8 @@ features:
     link: /TestStrategy/TestStrategyPrompt
     
   - icon: 🤖
-    title: AI辅助测试
-    details: 利用AI技术提升测试效率和质量，包括智能测试生成和缺陷预测
+    title: AI 辅助测试
+    details: 利用 AI 技术提升测试效率和质量，包括智能测试生成和缺陷预测
     link: /AIAssistedTesting/AIAssistedTestingPrompt
     
   - icon: 📋
@@ -81,13 +81,13 @@ features:
     link: /SecurityTesting/SecurityTestingPrompt
     
   - icon: 🔌
-    title: API测试
-    details: API接口测试和集成测试，支持 RESTful API 测试设计和性能测试
+    title: API 测试
+    details: API 接口测试和集成测试，支持 RESTful API 测试设计和性能测试
     link: /APITesting/APITestingPrompt
     
   - icon: ♿
     title: 可访问性测试
-    details: Web可访问性测试和WCAG合规性检查，确保产品的无障碍访问
+    details: Web 可访问性测试和 WCAG 合规性检查，确保产品的无障碍访问
     link: /AccessibilityTesting/AccessibilityTestingPrompt
     
   - icon: 🔍
@@ -109,7 +109,7 @@ features:
   
   <div class="workflow-card">
     <h3>🏃 迭代测试工作流程</h3>
-    <p>适用于敏捷/Scrum团队的2周迭代周期，包含迭代规划、日常测试活动、回归测试和迭代评审</p>
+    <p>适用于敏捷/Scrum 团队的 2 周迭代周期，包含迭代规划、日常测试活动、回归测试和迭代评审</p>
     <a href="/Workflows/sprint-testing-workflow_CN">查看详情 →</a>
   </div>
   

@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: "QA Prompt Collection"
+  name: "Awesome QA Prompt Collection"
   text: "Professional Quality Assurance AI Prompt Library"
   tagline: Complete testing lifecycle from requirements analysis to test reporting
   image:
     src: /logo.svg
-    alt: QA Prompt Collection
+    alt: AwesomeQA Prompt Collection
   actions:
     - theme: brand
       text: Get Started
