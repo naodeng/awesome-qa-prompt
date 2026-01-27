@@ -44,11 +44,11 @@ jobs:
           npm ci
           echo "✅ Dependencies installed successfully"
         
-      - name: 🏗️ Build VitePress site for GitHub Pages
+      - name: 🏗️ Build VitePress site for Deployment
         env:
-          GITHUB_PAGES: 'true'  # GitHub Pages 使用子路径
+          GITHUB_PAGES: 'false'  # Ensure base path is '/' for custom domain
         run: |
-          echo "🏗️ Building VitePress site for GitHub Pages (base: /awesome-qa-prompt/)..."
+          echo "🏗️ Building VitePress site (base: /)..."
           npm run docs:build
           echo "✅ Build completed successfully"
         
@@ -57,42 +57,6 @@ jobs:
         with:
           path: .vitepress/dist
 
-  # 构建任务 - 自定义域名（使用根路径）
-  build-custom-domain:
-    name: Build for Custom Domain
-    runs-on: ubuntu-latest
-    steps:
-      - name: 📥 Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # 获取所有历史记录以支持 lastUpdated
-          
-      - name: 🟢 Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-          
-      - name: 📦 Install dependencies
-        run: |
-          echo "📦 Installing dependencies..."
-          npm ci
-          echo "✅ Dependencies installed successfully"
-        
-      - name: 🏗️ Build VitePress site for Custom Domain
-        env:
-          GITHUB_PAGES: 'false'  # 自定义域名使用根路径
-        run: |
-          echo "🏗️ Building VitePress site for Custom Domain (base: /)..."
-          npm run docs:build
-          echo "✅ Build completed successfully"
-        
-      - name: 📤 Upload artifact for Custom Domain
-        uses: actions/upload-artifact@v4
-        with:
-          name: custom-domain-artifact
-          path: .vitepress/dist
-          retention-days: 7
 
   # 部署任务 - GitHub Pages
   deploy-github-pages:
@@ -112,30 +76,3 @@ jobs:
           echo "🎉 GitHub Pages deployment completed successfully!"
           echo "🌐 GitHub Pages URL: ${{ steps.deployment.outputs.page_url }}"
 
-  # 部署任务 - 自定义域名（可选：如果需要自动部署到 Cloudflare Pages）
-  # 注意：如果使用 Cloudflare Pages，需要配置相应的 secrets 和 API token
-  # 当前配置仅构建，不自动部署，需要手动部署或配置 Cloudflare Pages 的自动部署
-  deploy-custom-domain:
-    name: Prepare for Custom Domain Deployment
-    needs: build-custom-domain
-    runs-on: ubuntu-latest
-    steps:
-      - name: 📥 Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: custom-domain-artifact
-          path: .vitepress/dist
-      
-      - name: 📋 Build Summary
-        run: |
-          echo "✅ Custom domain build completed!"
-          echo "📦 Build artifacts are available in .vitepress/dist"
-          echo "🌐 Ready for deployment to: https://qaprompt.inaodeng.com"
-          echo ""
-          echo "💡 To deploy to Cloudflare Pages:"
-          echo "   1. Configure Cloudflare Pages to connect to this repository"
-          echo "   2. Set build command: npm run docs:build"
-          echo "   3. Set build output directory: .vitepress/dist"
-          echo "   4. Set environment variable: GITHUB_PAGES=false"
-          echo ""
-          echo "💡 Or manually deploy the .vitepress/dist directory to your hosting service"
