@@ -131,6 +131,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 400px;
   }
 }
 
@@ -162,19 +163,23 @@
 
 @media (min-width: 960px) {
   .VPHero .VPImage.image-src {
-    max-width: 100% !important;
-    max-height: 100% !important;
-    height: auto;
-    width: auto;
-    min-height: 350px;
+    width: 100% !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+    min-height: 400px;
+    object-fit: contain;
   }
 }
 
 @media (min-width: 1280px) {
   .VPHero .VPImage.image-src {
-    max-width: 100% !important;
-    max-height: 100% !important;
-    min-height: 400px;
+    width: 100% !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+    min-height: 450px;
+    object-fit: contain;
   }
 }
 
@@ -253,45 +258,45 @@
   }
 }
 
-/* 确保导航按钮不换行 */
+/* 确保导航按钮不换行 - 所有按钮在同一行 */
 .VPHero .actions,
-.VPHero .main .actions {
+.VPHero .main .actions,
+.VPHero .actions-wrapper {
   display: flex !important;
   flex-wrap: nowrap !important;
-  gap: 0.75rem;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
+  gap: 0.75rem !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  flex-direction: row !important;
   width: 100%;
 }
 
 .VPHero .actions > *,
-.VPHero .main .actions > * {
-  flex-shrink: 0 !important;
+.VPHero .main .actions > *,
+.VPHero .actions a,
+.VPHero .actions button {
+  flex-shrink: 1 !important;
   white-space: nowrap !important;
-  min-width: auto;
+  min-width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
 }
 
-/* 确保前两个按钮在同一行，第三个按钮换行 */
+/* 确保所有按钮都在同一行 */
 .VPHero .actions > *:nth-child(1),
-.VPHero .actions > *:nth-child(2) {
-  flex: 0 0 auto;
-}
-
+.VPHero .actions > *:nth-child(2),
 .VPHero .actions > *:nth-child(3) {
-  flex: 0 0 100%;
-  margin-top: 0.75rem;
+  flex: 0 0 auto !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
-@media (min-width: 640px) {
-  .VPHero .actions,
-  .VPHero .main .actions {
-    flex-wrap: wrap !important;
-  }
-  
-  .VPHero .actions > *:nth-child(3) {
-    flex: 0 0 auto;
-    margin-top: 0;
+/* 移动端也保持不换行，但可以缩小按钮 */
+@media (max-width: 639px) {
+  .VPHero .actions > *,
+  .VPHero .main .actions > * {
+    font-size: 0.875rem !important;
+    padding: 0.5rem 1rem !important;
   }
 }
 
