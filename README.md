@@ -14,6 +14,7 @@
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fnaodeng%2Fawesome-qa-prompt&label=Visitors&countColor=%23263759&style=flat)
 ![GitHub forks](https://img.shields.io/github/forks/naodeng/awesome-qa-prompt?style=flat)
 ![GitHub watchers](https://img.shields.io/github/watchers/naodeng/awesome-qa-prompt?style=flat)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-支持项目-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://qaprompt.inaodeng.com/sponsor)
 
 一个专业的 QA（质量保证）AI 提示词集合，旨在帮助测试工程师和 QA 团队更高效地进行软件测试工作。本集合涵盖了从需求分析到测试报告的完整测试生命周期，提供 15 个测试类型模块、3 个工作流程和丰富的使用示例。
 
@@ -62,6 +63,7 @@
 - [贡献指南](#贡献指南)
 - [更新日志](#更新日志)
 - [许可证](#许可证)
+- [赞助支持](#赞助支持)
 
 ## 🎯 项目简介
 
@@ -682,6 +684,20 @@ awesome-qa-prompt/
 ## 📄 许可证
 
 本项目采用 [MIT License](LICENSE) 许可证。
+
+## 💝 赞助支持
+
+如果这个项目对您有帮助，欢迎通过以下方式支持我们：
+
+<div align="center">
+
+[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/naodeng) [![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/naodeng)
+
+**更多赞助方式请访问**：[在线文档 - 赞助支持](https://qaprompt.inaodeng.com/sponsor)
+
+</div>
+
+您的支持将帮助我们持续改进和扩展项目，为测试工程师提供更好的工具！
 
 ## 🙏 致谢
 
