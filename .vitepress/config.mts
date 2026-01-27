@@ -939,6 +939,10 @@ export default defineConfig({
     'docs/en.md': 'en/index.md',
     'README_EN.md': 'en/README.md',
     
+    // 赞助页面映射
+    'docs/sponsor.md': 'sponsor.md',
+    'docs/sponsor_EN.md': 'en/sponsor.md',
+    
     // 中文版本 - 将 testing-types 下的文件映射到根路径
     'testing-types/requirements-analysis/README.md': 'RequirementsAnalysis/index.md',
     'testing-types/test-case-writing/README.md': 'TestCaseWriting/index.md',
@@ -1824,6 +1828,7 @@ export default defineConfig({
               { text: '功能测试', link: '/FunctionalTesting/FunctionalTestingPrompt' }
             ]
           },
+          { text: '💝 赞助支持', link: '/sponsor' },
           { text: '📊 访问统计', link: 'https://analytics.naodeng.com.cn/share/c54EH1zavEoV6hLB/naodeng.github.io', target: '_blank' }
         ],
         
@@ -2770,6 +2775,7 @@ export default defineConfig({
               { text: 'Functional Testing', link: '/en/FunctionalTesting/FunctionalTestingPrompt' }
             ]
           },
+          { text: '💝 Sponsor', link: '/en/sponsor' },
           { text: '📊 Analytics', link: 'https://analytics.naodeng.com.cn/share/c54EH1zavEoV6hLB/naodeng.github.io', target: '_blank' }
         ],
         
