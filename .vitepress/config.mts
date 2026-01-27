@@ -1429,7 +1429,7 @@ export default defineConfig({
       "script",
       {
         async: true,
-        src: "https://www.googletagmanager.com/gtag/js?id=GTM-MXKHMCHH",
+        src: "https://www.googletagmanager.com/gtag/js?id=G-F93X0KC431",
       },
     ],
     [
@@ -1439,7 +1439,7 @@ export default defineConfig({
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'GTM-MXKHMCHH', {
+        gtag('config', 'G-F93X0KC431', {
           page_path: window.location.pathname + window.location.search,
         });
       `,
