@@ -145,42 +145,26 @@
   justify-content: center;
 }
 
-/* 增大图片尺寸，与左侧标题区域一样大 */
+/* Logo 尺寸设置为 600x500 */
 .VPHero .VPImage.image-src {
-  max-width: 500px !important;
+  width: 600px !important;
+  height: 500px !important;
+  max-width: 600px !important;
   max-height: 500px !important;
-  width: 100%;
-  height: auto;
+  min-width: 600px !important;
+  min-height: 500px !important;
   object-fit: contain;
   display: block;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 959px) {
   .VPHero .VPImage.image-src {
-    max-width: 600px !important;
-    max-height: 600px !important;
-  }
-}
-
-@media (min-width: 960px) {
-  .VPHero .VPImage.image-src {
-    width: auto !important;
-    height: 450px !important;
-    max-width: 100% !important;
-    max-height: 500px !important;
-    min-height: 450px !important;
-    object-fit: contain;
-  }
-}
-
-@media (min-width: 1280px) {
-  .VPHero .VPImage.image-src {
-    width: auto !important;
-    height: 500px !important;
-    max-width: 100% !important;
-    max-height: 550px !important;
-    min-height: 500px !important;
-    object-fit: contain;
+    width: 100% !important;
+    max-width: 500px !important;
+    height: auto !important;
+    min-width: auto !important;
+    min-height: auto !important;
+    aspect-ratio: 6 / 5;
   }
 }
 
