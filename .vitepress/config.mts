@@ -1422,6 +1422,29 @@ export default defineConfig({
       },
     ],
 
+    // Google Analytics (GA4)
+    // 注意：请将 G-XXXXXXXXXX 替换为你的 Google Analytics 4 测量 ID
+    // Note: Replace G-XXXXXXXXXX with your Google Analytics 4 Measurement ID
+    [
+      "script",
+      {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=GTM-MXKHMCHH",
+      },
+    ],
+    [
+      "script",
+      {},
+      `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX', {
+          page_path: window.location.pathname + window.location.search,
+        });
+      `,
+    ],
+
     // Favicon
     ["link", { rel: "icon", type: "image/svg+xml", href: `${base}logo.svg` }],
     [
