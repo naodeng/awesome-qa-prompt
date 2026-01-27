@@ -46,9 +46,13 @@ jobs:
         
       - name: 🏗️ Build VitePress site
         env:
-          GITHUB_PAGES: 'true'
+          # 注意：如果网站部署在自定义域名（如 qaprompt.inaodeng.com），
+          # 应该使用根路径 '/'，而不是 '/awesome-qa-prompt/'
+          # 如果同时部署在 GitHub Pages 和自定义域名，需要分别构建
+          # 当前配置：自定义域名使用根路径，GitHub Pages 使用子路径
+          GITHUB_PAGES: 'false'  # 改为 false，因为自定义域名应该使用根路径
         run: |
-          echo "🏗️ Building VitePress site for GitHub Pages..."
+          echo "🏗️ Building VitePress site for custom domain (root path)..."
           npm run docs:build
           echo "✅ Build completed successfully"
         

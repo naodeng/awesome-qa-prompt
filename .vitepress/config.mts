@@ -2,9 +2,15 @@ import { defineConfig } from 'vitepress'
 
 // 🌟 动态 base 配置
 // 如果部署在 GitHub Pages，就用 /awesome-qa-prompt/
-// 如果部署在 Cloudflare Pages，就用根路径 /
+// 如果部署在 Cloudflare Pages 或自定义域名（如 qaprompt.inaodeng.com），就用根路径 /
+// 注意：自定义域名部署应该使用根路径 '/'，而不是 '/awesome-qa-prompt/'
 const isGithubPages = process.env.GITHUB_PAGES === 'true'
 const base = isGithubPages ? '/awesome-qa-prompt/' : '/'
+
+// 输出 base 路径用于调试（仅在开发环境）
+if (process.env.NODE_ENV === 'development') {
+  console.log(`📦 VitePress base path: ${base}`)
+}
 
 // 生成英文侧边栏的辅助函数
 function getEnglishSidebar() {
@@ -2901,5 +2907,11 @@ export default defineConfig({
       // 可以在这里自定义 sitemap 条目
       return items
     }
+  },
+  
+  // 构建配置 - 确保资源路径正确
+  buildEnd: async ({ outDir }) => {
+    // 构建完成后的钩子，可以在这里进行额外的处理
+    // 例如：检查资源文件、验证路径等
   }
 })
