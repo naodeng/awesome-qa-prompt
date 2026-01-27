@@ -56,7 +56,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
-          name: github-pages-artifact
 
   # 构建任务 - 自定义域名（使用根路径）
   build-custom-domain:
