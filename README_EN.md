@@ -697,6 +697,24 @@ For questions or suggestions, please contact us through:
 
 ## 📋 Change Log
 
+### [v0.4.0] - 2026-01-27 🔍 Search Functionality & Deployment Upgrade
+
+#### ✨ New Features
+- **Full-text Search Support**:
+  - Integrated Algolia Search for fast and accurate full-text search capabilities
+  - Bilingual support (Chinese/English) with automatic language detection
+  - Search history, favorites, and keyboard shortcuts support
+
+- **Deployment Architecture Upgrade**:
+  - Fully migrated to Cloudflare Pages for improved speed and global availability
+  - Optimized build process to resolve resource loading and caching issues
+  - Removed GitHub Pages configuration to simplify maintenance
+
+#### 🔧 Documentation & Config
+- Updated deployment guide with Cloudflare Pages instructions
+- Optimized `config.mts` by removing redundant code
+- Fixed resource loading (503/404) issues
+
 ### [v0.3.0] - 2025-01-24 🎨 TOP 5 Framework Versions Release
 
 #### ✨ New Features

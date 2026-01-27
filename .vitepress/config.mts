@@ -4316,37 +4316,7 @@ export default defineConfig({
           },
         },
 
-        search: {
-          provider: "algolia",
-          options: {
-            appId: "NV9AJ0CYJ5",
-            apiKey: "6c4de688cfc2c543b47aef5101794175",
-            indexName: "Awesome QA Prompt",
-            locales: {
-              root: {
-                placeholder: "搜索文档",
-                translations: {
-                  button: {
-                    buttonText: "搜索文档",
-                    buttonAriaLabel: "搜索文档",
-                  },
-                  modal: {
-                    searchBox: {
-                      clearButtonTitle: "清除查询条件",
-                      clearButtonAriaLabel: "清除查询条件",
-                      closeButtonText: "关闭",
-                      closeButtonAriaLabel: "关闭",
-                      placeholderText: "搜索文档",
-                      placeholderTextAskAi: "向 AI 提问:",
-                      placeholderTextAskAiStreaming: "回答中...",
-                      searchInputLabel: "搜索",
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
+
 
         socialLinks: [
           {
@@ -4425,37 +4395,7 @@ export default defineConfig({
           },
         },
 
-        search: {
-          provider: "algolia",
-          options: {
-            appId: "NV9AJ0CYJ5",
-            apiKey: "6c4de688cfc2c543b47aef5101794175",
-            indexName: "Awesome QA Prompt",
-            locales: {
-              en: {
-                placeholder: "Search",
-                translations: {
-                  button: {
-                    buttonText: "Search",
-                    buttonAriaLabel: "Search",
-                  },
-                  modal: {
-                    searchBox: {
-                      clearButtonTitle: "Clear query",
-                      clearButtonAriaLabel: "Clear query",
-                      closeButtonText: "Close",
-                      closeButtonAriaLabel: "Close",
-                      placeholderText: "Search",
-                      placeholderTextAskAi: "Ask AI:",
-                      placeholderTextAskAiStreaming: "Answering...",
-                      searchInputLabel: "Search",
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
+
 
         socialLinks: [
           {
@@ -4485,6 +4425,100 @@ export default defineConfig({
   themeConfig: {
     logo: "/logo.svg",
     siteTitle: "Awesome QA Prompt",
+
+    // Algolia Search Configuration
+    search: {
+      provider: "algolia",
+      options: {
+        appId: "NV9AJ0CYJ5",
+        apiKey: "6c4de688cfc2c543b47aef5101794175",
+        indexName: "Awesome QA Prompt",
+        locales: {
+          root: {
+            placeholder: "搜索文档",
+            translations: {
+              button: {
+                buttonText: "搜索文档",
+                buttonAriaLabel: "搜索文档",
+              },
+              modal: {
+                searchBox: {
+                  clearButtonTitle: "清除查询条件",
+                  clearButtonAriaLabel: "清除查询条件",
+                  closeButtonText: "关闭",
+                  closeButtonAriaLabel: "关闭",
+                  placeholderText: "搜索文档",
+                },
+                startScreen: {
+                  recentSearchesTitle: "搜索历史",
+                  noRecentSearchesText: "没有搜索历史",
+                  saveRecentSearchButtonTitle: "保存至搜索历史",
+                  removeRecentSearchButtonTitle: "从搜索历史中移除",
+                  favoriteSearchesTitle: "收藏",
+                  removeFavoriteSearchButtonTitle: "从收藏中移除",
+                },
+                errorScreen: {
+                  titleText: "无法获取结果",
+                  helpText: "你可能需要检查你的网络连接",
+                },
+                footer: {
+                  selectText: "选择",
+                  navigateText: "切换",
+                  closeText: "关闭",
+                },
+                noResultsScreen: {
+                  noResultsText: "无法找到相关结果",
+                  suggestedQueryText: "你可以尝试查询",
+                  reportMissingResultsText: "你认为该查询应该有结果？",
+                  reportMissingResultsLinkText: "点击反馈",
+                },
+              },
+            },
+          },
+          en: {
+            placeholder: "Search Documents",
+            translations: {
+              button: {
+                buttonText: "Search",
+                buttonAriaLabel: "Search Documents",
+              },
+              modal: {
+                searchBox: {
+                  clearButtonTitle: "Clear",
+                  clearButtonAriaLabel: "Clear",
+                  closeButtonText: "Close",
+                  closeButtonAriaLabel: "Close",
+                  placeholderText: "Search",
+                },
+                startScreen: {
+                  recentSearchesTitle: "Recent",
+                  noRecentSearchesText: "No recent searches",
+                  saveRecentSearchButtonTitle: "Save this search",
+                  removeRecentSearchButtonTitle: "Remove from history",
+                  favoriteSearchesTitle: "Favorites",
+                  removeFavoriteSearchButtonTitle: "Remove from favorites",
+                },
+                errorScreen: {
+                  titleText: "Unable to fetch results",
+                  helpText: "Check your network connection",
+                },
+                footer: {
+                  selectText: "to select",
+                  navigateText: "to navigate",
+                  closeText: "to close",
+                },
+                noResultsScreen: {
+                  noResultsText: "No results for",
+                  suggestedQueryText: "Try searching for",
+                  reportMissingResultsText: "Believe this query should return results?",
+                  reportMissingResultsLinkText: "Let us know.",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
   },
 
   // Markdown 配置
