@@ -127,6 +127,10 @@
     max-width: 50%;
     margin: 0;
     order: 0; /* 在桌面端，图片显示在右侧 */
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -139,10 +143,10 @@
   justify-content: center;
 }
 
-/* 增大图片尺寸，提升视觉效果 */
+/* 增大图片尺寸，与左侧标题区域一样大 */
 .VPHero .VPImage.image-src {
-  max-width: 450px !important;
-  max-height: 450px !important;
+  max-width: 500px !important;
+  max-height: 500px !important;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -151,23 +155,26 @@
 
 @media (min-width: 640px) {
   .VPHero .VPImage.image-src {
-    max-width: 550px !important;
-    max-height: 550px !important;
+    max-width: 600px !important;
+    max-height: 600px !important;
   }
 }
 
 @media (min-width: 960px) {
   .VPHero .VPImage.image-src {
     max-width: 100% !important;
-    max-height: 600px !important;
+    max-height: 100% !important;
+    height: auto;
     width: auto;
+    min-height: 350px;
   }
 }
 
 @media (min-width: 1280px) {
   .VPHero .VPImage.image-src {
     max-width: 100% !important;
-    max-height: 650px !important;
+    max-height: 100% !important;
+    min-height: 400px;
   }
 }
 
@@ -243,6 +250,48 @@
   .VPHero .tagline {
     font-size: 1.1rem;
     margin-bottom: 2rem;
+  }
+}
+
+/* 确保导航按钮不换行 */
+.VPHero .actions,
+.VPHero .main .actions {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+}
+
+.VPHero .actions > *,
+.VPHero .main .actions > * {
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
+  min-width: auto;
+}
+
+/* 确保前两个按钮在同一行，第三个按钮换行 */
+.VPHero .actions > *:nth-child(1),
+.VPHero .actions > *:nth-child(2) {
+  flex: 0 0 auto;
+}
+
+.VPHero .actions > *:nth-child(3) {
+  flex: 0 0 100%;
+  margin-top: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .VPHero .actions,
+  .VPHero .main .actions {
+    flex-wrap: wrap !important;
+  }
+  
+  .VPHero .actions > *:nth-child(3) {
+    flex: 0 0 auto;
+    margin-top: 0;
   }
 }
 
