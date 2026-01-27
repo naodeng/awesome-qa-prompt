@@ -85,8 +85,8 @@
   .VPHero .container {
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 4rem;
+    justify-content: space-between;
+    gap: 2rem;
     padding: 0 2rem;
   }
 }
@@ -126,12 +126,13 @@
     flex: 0 0 50%;
     max-width: 50%;
     margin: 0;
+    margin-left: auto;
     order: 0; /* 在桌面端，图片显示在右侧 */
     align-self: stretch;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 4rem;
+    padding-right: 0;
     height: 100%;
     min-height: 450px;
   }
@@ -143,7 +144,14 @@
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+}
+
+@media (min-width: 960px) {
+  .VPHero .image-bg {
+    justify-content: flex-end;
+    width: 100%;
+  }
 }
 
 /* Logo 尺寸设置为 600x500 */
