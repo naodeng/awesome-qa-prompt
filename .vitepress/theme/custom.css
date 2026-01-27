@@ -131,7 +131,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 400px;
+    height: 100%;
+    min-height: 450px;
   }
 }
 
@@ -163,22 +164,22 @@
 
 @media (min-width: 960px) {
   .VPHero .VPImage.image-src {
-    width: 100% !important;
-    height: auto !important;
-    max-width: none !important;
-    max-height: none !important;
-    min-height: 400px;
+    width: auto !important;
+    height: 450px !important;
+    max-width: 100% !important;
+    max-height: 500px !important;
+    min-height: 450px !important;
     object-fit: contain;
   }
 }
 
 @media (min-width: 1280px) {
   .VPHero .VPImage.image-src {
-    width: 100% !important;
-    height: auto !important;
-    max-width: none !important;
-    max-height: none !important;
-    min-height: 450px;
+    width: auto !important;
+    height: 500px !important;
+    max-width: 100% !important;
+    max-height: 550px !important;
+    min-height: 500px !important;
     object-fit: contain;
   }
 }
@@ -269,34 +270,48 @@
   justify-content: flex-start !important;
   flex-direction: row !important;
   width: 100%;
+  overflow: visible !important;
 }
 
 .VPHero .actions > *,
 .VPHero .main .actions > *,
 .VPHero .actions a,
-.VPHero .actions button {
-  flex-shrink: 1 !important;
+.VPHero .actions button,
+.VPHero .actions .VPButton {
+  flex: 0 0 auto !important;
+  flex-shrink: 0 !important;
   white-space: nowrap !important;
   min-width: auto !important;
   max-width: none !important;
   margin: 0 !important;
+  display: inline-block !important;
 }
 
-/* 确保所有按钮都在同一行 */
+/* 确保所有按钮都在同一行，不换行 */
 .VPHero .actions > *:nth-child(1),
 .VPHero .actions > *:nth-child(2),
-.VPHero .actions > *:nth-child(3) {
+.VPHero .actions > *:nth-child(3),
+.VPHero .actions > *:nth-child(n) {
   flex: 0 0 auto !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+  margin-right: 0.75rem !important;
+}
+
+.VPHero .actions > *:last-child {
+  margin-right: 0 !important;
 }
 
 /* 移动端也保持不换行，但可以缩小按钮 */
 @media (max-width: 639px) {
+  .VPHero .actions {
+    gap: 0.5rem !important;
+  }
+  
   .VPHero .actions > *,
   .VPHero .main .actions > * {
     font-size: 0.875rem !important;
-    padding: 0.5rem 1rem !important;
+    padding: 0.5rem 0.875rem !important;
   }
 }
 
