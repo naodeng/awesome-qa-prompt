@@ -4327,11 +4327,27 @@ export default defineConfig({
             appId: "NV9AJ0CYJ5",
             apiKey: "6c4de688cfc2c543b47aef5101794175",
             indexName: "Awesome QA Prompt",
-            placeholder: "搜索文档",
-            translations: {
-              button: {
-                buttonText: "搜索文档",
-                buttonAriaLabel: "搜索文档",
+            locales: {
+              root: {
+                placeholder: "搜索文档",
+                translations: {
+                  button: {
+                    buttonText: "搜索文档",
+                    buttonAriaLabel: "搜索文档",
+                  },
+                  modal: {
+                    searchBox: {
+                      clearButtonTitle: "清除查询条件",
+                      clearButtonAriaLabel: "清除查询条件",
+                      closeButtonText: "关闭",
+                      closeButtonAriaLabel: "关闭",
+                      placeholderText: "搜索文档",
+                      placeholderTextAskAi: "向 AI 提问:",
+                      placeholderTextAskAiStreaming: "回答中...",
+                      searchInputLabel: "搜索",
+                    },
+                  },
+                },
               },
             },
           },
@@ -4420,11 +4436,27 @@ export default defineConfig({
             appId: "NV9AJ0CYJ5",
             apiKey: "6c4de688cfc2c543b47aef5101794175",
             indexName: "Awesome QA Prompt",
-            placeholder: "Search",
-            translations: {
-              button: {
-                buttonText: "Search",
-                buttonAriaLabel: "Search",
+            locales: {
+              en: {
+                placeholder: "Search",
+                translations: {
+                  button: {
+                    buttonText: "Search",
+                    buttonAriaLabel: "Search",
+                  },
+                  modal: {
+                    searchBox: {
+                      clearButtonTitle: "Clear query",
+                      clearButtonAriaLabel: "Clear query",
+                      closeButtonText: "Close",
+                      closeButtonAriaLabel: "Close",
+                      placeholderText: "Search",
+                      placeholderTextAskAi: "Ask AI:",
+                      placeholderTextAskAiStreaming: "Answering...",
+                      searchInputLabel: "Search",
+                    },
+                  },
+                },
               },
             },
           },
