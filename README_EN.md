@@ -7,8 +7,7 @@
 </div>
 
 
-[![Deploy to GitHub Pages](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml/badge.svg)](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/deploy.yml)
-[![GitHub Pages](https://img.shields.io/badge/docs-online-blue.svg)](https://qaprompt.inaodeng.com)
+[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare%20Pages-deployed-orange.svg)](https://qaprompt.inaodeng.com)
 [![GitHub](https://img.shields.io/github/license/naodeng/awesome-qa-prompt)](https://github.com/naodeng/awesome-qa-prompt/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/naodeng/awesome-qa-prompt?style=social)](https://github.com/naodeng/awesome-qa-prompt)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fnaodeng%2Fawesome-qa-prompt&label=Visitors&countColor=%23263759&style=flat)
@@ -38,7 +37,8 @@ A professional collection of AI prompts for QA (Quality Assurance) professionals
 
 **📖 Visit our online documentation for a better reading experience: [https://qaprompt.inaodeng.com](https://qaprompt.inaodeng.com)**
 
-> 💡 **Deployment**: This project is configured with GitHub Actions for automatic deployment. Every push to the `main` branch automatically updates the online documentation. See [Deployment Guide](./docs/deployment/QUICK_DEPLOY_EN.md) for details.
+> 💡 **Deployment**: This project uses Cloudflare Pages for automatic deployment. Every push to the `main` branch automatically updates the online documentation.
+
 
 Online documentation features:
 - 🔍 **Full-text Search** - Quickly find what you need

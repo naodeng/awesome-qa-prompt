@@ -1,16 +1,11 @@
 import { defineConfig } from "vitepress";
 
-// 🌟 动态 base 配置
-// 如果部署在 GitHub Pages，就用 /awesome-qa-prompt/
-// 如果部署在 Cloudflare Pages 或自定义域名（如 qaprompt.inaodeng.com），就用根路径 /
-// 注意：自定义域名部署应该使用根路径 '/'，而不是 '/awesome-qa-prompt/'
-const isGithubPages = process.env.GITHUB_PAGES === "true";
-const base = isGithubPages ? "/awesome-qa-prompt/" : "/";
+// 🌟 Base Configuration for Cloudflare Pages
+// Using root path '/' as this is deployed to a custom domain
+const base = "/";
 
-// 输出 base 路径用于调试（仅在开发环境）
-if (process.env.NODE_ENV === "development") {
-  console.log(`📦 VitePress base path: ${base}`);
-}
+// Output base path for debugging
+console.log(`📦 VitePress base path: ${base}`);
 
 // 生成英文侧边栏的辅助函数
 function getEnglishSidebar() {
@@ -4515,10 +4510,8 @@ export default defineConfig({
 
   // Sitemap 配置
   sitemap: {
-    // 根据部署环境动态设置 hostname
-    hostname: isGithubPages
-      ? "https://naodeng.github.io/awesome-qa-prompt"
-      : "https://qaprompt.inaodeng.com",
+    // Sitemap hostname for Cloudflare Pages custom domain
+    hostname: "https://qaprompt.inaodeng.com",
     // 确保 sitemap 包含 lastmod（需要 lastUpdated 启用）
     // lastmod 会自动从 Git 提交时间获取
     transformItems: (items) => {
