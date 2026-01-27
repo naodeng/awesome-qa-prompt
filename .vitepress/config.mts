@@ -4327,6 +4327,13 @@ export default defineConfig({
             appId: "NV9AJ0CYJ5",
             apiKey: "6c4de688cfc2c543b47aef5101794175",
             indexName: "Awesome QA Prompt",
+            placeholder: "搜索文档",
+            translations: {
+              button: {
+                buttonText: "搜索文档",
+                buttonAriaLabel: "搜索文档",
+              },
+            },
           },
         },
 
@@ -4413,6 +4420,13 @@ export default defineConfig({
             appId: "NV9AJ0CYJ5",
             apiKey: "6c4de688cfc2c543b47aef5101794175",
             indexName: "Awesome QA Prompt",
+            placeholder: "搜索文档",
+            translations: {
+              button: {
+                buttonText: "搜索文档",
+                buttonAriaLabel: "搜索文档",
+              },
+            },
           },
         },
 
