@@ -21,8 +21,9 @@ A professional collection of AI prompts for QA (Quality Assurance) professionals
 
 - 🎯 **Highly Professional**: Each prompt designed by testing experts with 10+ years of experience
 - 🌍 **Bilingual Support**: Complete Chinese and English prompts for international teams
-- 📚 **Rich Content**: 15 testing types + 3 workflows + 60+ professional documents
+- 📚 **Rich Content**: 15 testing types + 3 workflows + 225+ professional documents
 - 🔄 **Complete Versions**: Each module provides both full and lite versions
+- 🎨 **Multi-Framework Support**: Supports TOP 5 prompt frameworks (ROSES, LangGPT, ICIO, CRISPE, RISE)
 - 🚀 **Ready to Use**: Copy and paste to use, no complex configuration required
 - 📖 **Online Documentation**: Beautiful online documentation website with full-text search
 
@@ -58,7 +59,6 @@ Online documentation features:
 - [Directory Structure](#directory-structure)
 - [Usage Guide](#usage-guide)
 - [Contributing](#contributing)
-- [Project Roadmap](#project-roadmap)
 - [Change Log](#change-log)
 - [License](#license)
 
@@ -235,6 +235,44 @@ This collection includes professional prompts for the following testing domains:
   - Test coverage check and missing scenario identification
   - Structured review reports and improvement recommendations
 
+## 🎨 Prompt Framework Support
+
+This project supports **TOP 5 prompt frameworks**, providing multiple framework version options for each testing type:
+
+### Supported Frameworks
+
+1. **ROSES** (Role Objective Scenario Expected Solution Steps)
+   - Suitable for testing scenarios requiring clear role positioning and step guidance
+   - High structure, clear logic
+
+2. **LangGPT** (Structured Prompt Framework)
+   - Comprehensive structured framework including role, background, objectives, constraints, etc.
+   - Suitable for complex test scenario design
+
+3. **ICIO** (Instruction Context Input Data Output Indicator)
+   - Emphasizes instruction, context, input data, output, and indicators
+   - Suitable for testing scenarios requiring clear input/output and evaluation metrics
+
+4. **CRISPE** (Capacity Role Insight Statement Personality Experiment)
+   - Includes six elements: capacity, role, insight, statement, personality, and experiment
+   - Suitable for scenarios requiring in-depth analysis and experimental testing
+
+5. **RISE** (Role Input Steps Expectation)
+   - Concise framework including role, input, steps, and expectation
+   - Suitable for quickly building test prompts
+
+### Framework Version Usage
+
+Each testing type provides:
+- **Standard Version**: General prompt format, suitable for most scenarios
+- **Framework Versions**: Structured prompts based on TOP 5 frameworks, suitable for specific framework needs
+
+All versions provide:
+- **Full Version**: Detailed prompts with complete test design guidance
+- **Lite Version**: Simplified prompts for quick use
+
+📖 Learn more: [Prompt Framework Introduction](./prompt-frameworks/README_EN.md)
+
 ## 🔄 Testing Workflows
 
 This project provides three practical testing workflows to help teams efficiently use the prompt library in different scenarios:
@@ -295,6 +333,8 @@ Visit our online documentation: **[https://qaprompt.inaodeng.com](https://qaprom
 1. **Select a Prompt**
    - Choose the corresponding prompt file based on your testing task
    - Use English prompts (_EN.md) for English projects, Chinese prompts for Chinese projects
+   - Choose between Standard version or TOP 5 framework versions (ROSES, LangGPT, ICIO, CRISPE, RISE)
+   - Each version provides both full and lite options
 
 2. **Prepare Input Materials**
    - Prepare relevant input documents according to the prompt requirements
@@ -311,29 +351,39 @@ Visit our online documentation: **[https://qaprompt.inaodeng.com](https://qaprom
 ### Example: Requirements Analysis
 
 ```markdown
-# Step 1: Copy the requirements analysis prompt
-# Copy content from requirements-analysis/RequirementsAnalysisPrompt_EN.md
+# Step 1: Select prompt version
+# Standard version: testing-types/requirements-analysis/Standard-version/RequirementsAnalysisPrompt_EN.md
+# ROSES framework version: testing-types/requirements-analysis/ROSES-version/RequirementsAnalysis-ROSES-Full_EN.md
+# LangGPT framework version: testing-types/requirements-analysis/LangGPT-version/RequirementsAnalysis-LangGPT-Full_EN.md
+# Other framework versions similar...
 
-# Step 2: Attach requirements document
+# Step 2: Copy the selected prompt content
+
+# Step 3: Attach requirements document
 [Paste your requirements document or User Story here]
 
-# Step 3: Send to AI assistant
+# Step 4: Send to AI assistant
 # AI will generate comprehensive test scenarios based on the prompt
 ```
 
 ### Complete Testing Process Example
 
 ```markdown
-# Complete testing project workflow
-1. Requirements Analysis → testing-types/requirements-analysis/RequirementsAnalysisPrompt_EN.md
-2. Test Strategy → testing-types/test-strategy/TestStrategyPrompt_EN.md
-3. Test Case Writing → testing-types/test-case-writing/TestCaseWritingPrompt_EN.md
-4. Functional Testing → testing-types/functional-testing/FunctionalTestingPrompt_EN.md
-5. Automation Testing → testing-types/automation-testing/AutomationTestingPrompt_EN.md
-6. Performance Testing → testing-types/performance-testing/PerformanceTestingPrompt_EN.md
-7. Mobile Testing → testing-types/mobile-testing/MobileTestingPrompt_EN.md
-8. Bug Reporting → testing-types/bug-reporting/BugReportingPrompt_EN.md
-9. Test Reporting → testing-types/test-reporting/TestReportingPrompt_EN.md
+# Complete testing project workflow (Standard version example)
+1. Requirements Analysis → testing-types/requirements-analysis/Standard-version/RequirementsAnalysisPrompt_EN.md
+2. Test Strategy → testing-types/test-strategy/Standard-version/TestStrategyPrompt_EN.md
+3. Test Case Writing → testing-types/test-case-writing/Standard-version/TestCaseWritingPrompt_EN.md
+4. Functional Testing → testing-types/functional-testing/Standard-version/FunctionalTestingPrompt_EN.md
+5. Automation Testing → testing-types/automation-testing/Standard-version/AutomationTestingPrompt_EN.md
+6. Performance Testing → testing-types/performance-testing/Standard-version/PerformanceTestingPrompt_EN.md
+7. Mobile Testing → testing-types/mobile-testing/Standard-version/MobileTestingPrompt_EN.md
+8. Bug Reporting → testing-types/bug-reporting/Standard-version/BugReportingPrompt_EN.md
+9. Test Reporting → testing-types/test-reporting/Standard-version/TestReportingPrompt_EN.md
+
+# Or use framework versions, for example ROSES framework:
+1. Requirements Analysis → testing-types/requirements-analysis/ROSES-version/RequirementsAnalysis-ROSES-Full_EN.md
+2. Test Strategy → testing-types/test-strategy/ROSES-version/TestStrategy-ROSES-Full_EN.md
+# ... other steps similar
 ```
 
 ## 📊 Project Statistics
@@ -346,10 +396,10 @@ Visit our online documentation: **[https://qaprompt.inaodeng.com](https://qaprom
 |----------|----------|------------|--------|
 | 🧪 **Testing Type Modules** | 15 | 100% | ✅ Complete |
 | 🔄 **Workflows** | 3 | 100% | ✅ Complete |
-| 📝 **Chinese Prompts** | 30 | 100% | ✅ Complete |
-| 🌍 **English Prompts** | 30 | 100% | ✅ Complete |
+| 📝 **Standard Version Prompts** | 30 (15 Chinese + 15 English) | 100% | ✅ Complete |
+| 🎨 **Framework Version Prompts** | 150 (5 frameworks × 15 types × 2 versions) | 100% | ✅ Complete |
 | 📚 **Module Documentation** | 30 | 100% | ✅ Complete |
-| 📖 **Total Documents** | **60+** | **100%** | ✅ **Complete** |
+| 📖 **Total Documents** | **225+** | **100%** | ✅ **Complete** |
 
 </div>
 
@@ -358,6 +408,7 @@ Visit our online documentation: **[https://qaprompt.inaodeng.com](https://qaprom
 - **🔄 Full Lifecycle Coverage**: Complete testing lifecycle from requirements analysis to test reporting
 - **🌍 Multi-language Support**: Bilingual prompts in Chinese and English for different team needs
 - **📋 Full + Lite Versions**: Each testing type provides both full and lite versions for different scenarios
+- **🎨 TOP 5 Framework Support**: Each testing type supports ROSES, LangGPT, ICIO, CRISPE, RISE prompt frameworks
 - **👨‍💼 High Professionalism**: Each prompt designed by expert roles with 10+ years of experience
 - **🛠️ High Practicality**: Provides standardized formats and best practice guidance
 - **🔧 Good Extensibility**: Modular design, easy to extend and customize
@@ -401,10 +452,16 @@ awesome-qa-prompt/
 │   ├── accessibility-testing/         # Accessibility Testing
 │   └── test-case-reviewer/            # Test Case Review
 │   # Each testing type folder contains:
-│   # ├── [Type]Prompt.md              # Chinese full version prompt
-│   # ├── [Type]Prompt_EN.md          # English full version prompt
-│   # ├── [Type]Prompt_Lite.md        # Chinese lite version prompt
-│   # ├── [Type]Prompt_Lite_EN.md     # English lite version prompt
+│   # ├── Standard-version/            # Standard version
+│   # │   ├── [Type]Prompt.md         # Chinese full version
+│   # │   ├── [Type]Prompt_EN.md      # English full version
+│   # │   ├── [Type]Prompt_Lite.md    # Chinese lite version
+│   # │   └── [Type]Prompt_Lite_EN.md # English lite version
+│   # ├── ROSES-version/               # ROSES framework version
+│   # ├── LangGPT-version/             # LangGPT framework version
+│   # ├── ICIO-version/                # ICIO framework version
+│   # ├── CRISPE-version/              # CRISPE framework version
+│   # ├── RISE-version/                # RISE framework version
 │   # ├── README.md                    # Chinese module description
 │   # └── README_EN.md                 # English module description
 │
@@ -469,8 +526,9 @@ You can customize prompts according to project needs:
 ### Usage Tips
 
 1. **Choose the Right Version**:
-   - Beginners or quick use: Choose lite version (_Lite.md)
-   - Professional or detailed needs: Choose full version
+   - **Framework Selection**: Standard version for general use, framework versions (ROSES, LangGPT, ICIO, CRISPE, RISE) for specific framework needs
+   - **Detail Level**: Beginners or quick use choose lite version (_Lite.md), professional or detailed needs choose full version (Full)
+   - **Language Selection**: Use English prompts (_EN.md) for English projects, Chinese prompts for Chinese projects
 
 2. **Combine Usage**:
    - Multiple prompts can be used in combination
@@ -611,31 +669,6 @@ awesome-qa-prompt/
 - 📧 **Email Contact**: Contact maintainers through GitHub
 - 🌟 **Follow Project**: Click Star to follow project updates
 
-## 🗺️ Project Roadmap
-
-### 🎯 Short-term Plans (Q1 2025)
-
-- [ ] **Enhance Existing Modules**: Optimize prompt quality and accuracy
-- [ ] **Add More Examples**: Provide more real-world project use cases
-- [ ] **Performance Testing Extension**: Add cloud-native and microservices performance testing scenarios
-- [ ] **AI Integration Optimization**: Optimize prompt effectiveness for different AI models
-
-### 🚀 Medium-term Goals (Q2-Q3 2025)
-
-- [ ] **New Testing Types**:
-  - 🔐 Blockchain Testing
-  - 🤖 Machine Learning Model Testing
-  - 🌐 IoT Device Testing
-  - 📊 Data Quality Testing
-- [ ] **Tool Integration**: Develop browser plugins and IDE extensions
-- [ ] **Community Building**: Establish user community and contributor programs
-
-### 🌟 Long-term Vision (2025+)
-
-- [ ] **Intelligence Enhancement**: AI-powered prompt recommendations based on user feedback
-- [ ] **Multi-language Support**: Support for more language versions
-- [ ] **Enterprise Features**: Provide enterprise-level customization and support services
-- [ ] **Ecosystem**: Build a complete testing tool ecosystem
 
 ## 📄 License
 
@@ -663,6 +696,34 @@ For questions or suggestions, please contact us through:
 ---
 
 ## 📋 Change Log
+
+### [v0.3.0] - 2025-01-24 🎨 TOP 5 Framework Versions Release
+
+#### ✨ New Features
+- **TOP 5 Framework Support**:
+  - Added ROSES, LangGPT, ICIO, CRISPE, RISE framework versions for all 15 testing types
+  - Each framework version provides both full and lite versions with bilingual support
+  - Added 150 framework version prompt documents (5 frameworks × 15 types × 2 versions)
+
+- **Directory Structure Optimization**:
+  - Added `Standard-version/` and 5 framework version directories under each testing type
+  - Unified naming convention: `{Type}-{Framework}-Full.md` and `{Type}-{Framework}-Lite.md`
+  - Clear version classification for easy discovery and use
+
+- **Online Documentation Enhancement**:
+  - Sidebar supports framework version navigation, all testing types uniformly display framework version directories
+  - Chinese and English sidebar fully synchronized, supporting quick access to framework versions
+  - Optimized navigation structure for better user experience
+
+#### 📊 Content Statistics
+- **Standard Version Prompts**: 30 (15 types × 2 versions)
+- **Framework Version Prompts**: 150 (5 frameworks × 15 types × 2 versions)
+- **Total Documents**: Increased from 60+ to **225+**
+
+#### 🔧 Technical Improvements
+- Optimized VitePress configuration to support framework version routing
+- Enhanced sidebar configuration to uniformly display framework version structure
+- Fixed English version 404 issues, ensuring all links work properly
 
 ### [v0.2.0] - 2025-01-19 🔄 Major Restructuring Release
 

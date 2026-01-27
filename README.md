@@ -21,8 +21,9 @@
 
 - 🎯 **专业性强**：每个提示词都由 10+ 年经验的测试专家设计
 - 🌍 **双语支持**：完整的中英文提示词，适应国际化团队
-- 📚 **内容丰富**：15 个测试类型 + 3 个工作流程 + 60+ 专业文档
+- 📚 **内容丰富**：15 个测试类型 + 3 个工作流程 + 225+ 专业文档
 - 🔄 **版本齐全**：每个模块提供完整版和精简版两种选择
+- 🎨 **多框架支持**：支持 TOP 5 提示词框架（ROSES、LangGPT、ICIO、CRISPE、RISE）
 - 🚀 **即用即得**：复制粘贴即可使用，无需复杂配置
 - 📖 **在线文档**：精美的在线文档网站，支持全文搜索
 
@@ -59,7 +60,6 @@
 - [使用指南](#使用指南)
 - [本地开发](#本地开发)
 - [贡献指南](#贡献指南)
-- [项目路线图](#项目路线图)
 - [更新日志](#更新日志)
 - [许可证](#许可证)
 
@@ -88,18 +88,26 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
 本集合包含以下测试领域的专业提示词：
 
 ### 1. 📝 需求分析 (Requirements Analysis)
-- **文件位置**：`testing-types/requirements-analysis/RequirementsAnalysisPrompt.md`
+- **文件位置**：`testing-types/requirements-analysis/`
 - **功能描述**：基于需求文档进行深度分析，设计全维度的测试场景
 - **适用场景**：需求评审、测试计划制定、测试场景设计
+- **版本支持**：
+  - 标准版本：`Standard-version/RequirementsAnalysisPrompt.md`
+  - ROSES 框架版本：`ROSES-version/RequirementsAnalysis-ROSES-Full.md`
+  - LangGPT 框架版本：`LangGPT-version/RequirementsAnalysis-LangGPT-Full.md`
+  - ICIO 框架版本：`ICIO-version/RequirementsAnalysis-ICIO-Full.md`
+  - CRISPE 框架版本：`CRISPE-version/RequirementsAnalysis-CRISPE-Full.md`
+  - RISE 框架版本：`RISE-version/RequirementsAnalysis-RISE-Full.md`
 - **核心能力**：
   - 场景法、状态迁移图、判定表等测试设计方法
   - 正向路径、异常路径、边界值分析
   - UI/UX、输入校验、非功能性测试覆盖
 
 ### 2. ✍️ 测试用例编写 (Test Case Writing)
-- **文件位置**：`testing-types/test-case-writing/TestCaseWritingPrompt.md`
+- **文件位置**：`testing-types/test-case-writing/`
 - **功能描述**：基于测试场景自动生成详细的测试用例
 - **适用场景**：测试用例设计、测试文档编写
+- **版本支持**：标准版本 + TOP 5 框架版本（ROSES、LangGPT、ICIO、CRISPE、RISE）
 - **核心能力**：
   - 测试用例设计原则和最佳实践
   - 标准化的测试用例格式和模板
@@ -236,6 +244,44 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
   - 测试覆盖度检查和缺失场景识别
   - 结构化评审报告和改进建议
 
+## 🎨 提示词框架支持
+
+本项目支持 **TOP 5 提示词框架**，为每个测试类型提供多种框架版本选择：
+
+### 支持的框架
+
+1. **ROSES** (Role Objective Scenario Expected Solution Steps)
+   - 适合需要明确角色定位和步骤指导的测试场景
+   - 结构化程度高，逻辑清晰
+
+2. **LangGPT** (结构化提示词框架)
+   - 全面的结构化框架，包含角色、背景、目标、约束等要素
+   - 适合复杂的测试场景设计
+
+3. **ICIO** (Instruction Context Input Data Output Indicator)
+   - 强调指令、上下文、输入数据、输出和指标
+   - 适合需要明确输入输出和评估指标的测试场景
+
+4. **CRISPE** (Capacity Role Insight Statement Personality Experiment)
+   - 包含能力、角色、洞察、陈述、个性和实验六个要素
+   - 适合需要深度分析和实验性测试的场景
+
+5. **RISE** (Role Input Steps Expectation)
+   - 简洁明了的框架，包含角色、输入、步骤和期望
+   - 适合快速构建测试提示词的场景
+
+### 框架版本使用
+
+每个测试类型都提供：
+- **标准版本**：通用提示词格式，适合大多数场景
+- **框架版本**：基于 TOP 5 框架的结构化提示词，适合特定框架需求
+
+所有版本都提供：
+- **完整版**：详细的提示词，包含完整的测试设计指导
+- **精简版**：简化的提示词，适合快速使用
+
+📖 了解更多：[提示词框架介绍](./prompt-frameworks/README.md)
+
 ## 🔄 测试工作流程 (Testing Workflows)
 
 本项目提供三种实用的测试工作流程，帮助团队在不同场景下高效使用提示词库：
@@ -296,6 +342,8 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
 1. **选择提示词**
    - 根据你的测试任务，选择对应的提示词文件
    - 中文项目使用中文提示词，英文项目使用英文提示词（_EN.md 结尾）
+   - 可选择标准版本或 TOP 5 框架版本（ROSES、LangGPT、ICIO、CRISPE、RISE）
+   - 每个版本都提供完整版和精简版两种选择
 
 2. **准备输入材料**
    - 根据提示词要求，准备相应的输入文档
@@ -312,29 +360,39 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
 ### 示例：需求分析
 
 ```markdown
-# 步骤 1：复制需求分析提示词
-# 从 testing-types/requirements-analysis/RequirementsAnalysisPrompt.md 复制内容
+# 步骤 1：选择提示词版本
+# 标准版本：testing-types/requirements-analysis/Standard-version/RequirementsAnalysisPrompt.md
+# ROSES 框架版本：testing-types/requirements-analysis/ROSES-version/RequirementsAnalysis-ROSES-Full.md
+# LangGPT 框架版本：testing-types/requirements-analysis/LangGPT-version/RequirementsAnalysis-LangGPT-Full.md
+# 其他框架版本类似...
 
-# 步骤 2：附加需求文档
+# 步骤 2：复制选定的提示词内容
+
+# 步骤 3：附加需求文档
 [在这里粘贴你的需求文档或 User Story]
 
-# 步骤 3：发送给 AI 助手
+# 步骤 4：发送给 AI 助手
 # AI 将根据提示词生成完整的测试场景
 ```
 
 ### 完整测试流程示例
 
 ```markdown
-# 完整的测试项目流程
-1. 需求分析 → testing-types/requirements-analysis/RequirementsAnalysisPrompt.md
-2. 测试策略 → testing-types/test-strategy/TestStrategyPrompt.md
-3. 测试用例编写 → testing-types/test-case-writing/TestCaseWritingPrompt.md
-4. 功能测试 → testing-types/functional-testing/FunctionalTestingPrompt.md
-5. 自动化测试 → testing-types/automation-testing/AutomationTestingPrompt.md
-6. 性能测试 → testing-types/performance-testing/PerformanceTestingPrompt.md
-7. 移动端测试 → testing-types/mobile-testing/MobileTestingPrompt.md
-8. 缺陷上报 → testing-types/bug-reporting/BugReportingPrompt.md
-9. 测试报告 → testing-types/test-reporting/TestReportingPrompt.md
+# 完整的测试项目流程（标准版本示例）
+1. 需求分析 → testing-types/requirements-analysis/Standard-version/RequirementsAnalysisPrompt.md
+2. 测试策略 → testing-types/test-strategy/Standard-version/TestStrategyPrompt.md
+3. 测试用例编写 → testing-types/test-case-writing/Standard-version/TestCaseWritingPrompt.md
+4. 功能测试 → testing-types/functional-testing/Standard-version/FunctionalTestingPrompt.md
+5. 自动化测试 → testing-types/automation-testing/Standard-version/AutomationTestingPrompt.md
+6. 性能测试 → testing-types/performance-testing/Standard-version/PerformanceTestingPrompt.md
+7. 移动端测试 → testing-types/mobile-testing/Standard-version/MobileTestingPrompt.md
+8. 缺陷上报 → testing-types/bug-reporting/Standard-version/BugReportingPrompt.md
+9. 测试报告 → testing-types/test-reporting/Standard-version/TestReportingPrompt.md
+
+# 也可以使用框架版本，例如 ROSES 框架：
+1. 需求分析 → testing-types/requirements-analysis/ROSES-version/RequirementsAnalysis-ROSES-Full.md
+2. 测试策略 → testing-types/test-strategy/ROSES-version/TestStrategy-ROSES-Full.md
+# ... 其他步骤类似
 ```
 
 ## 📊 项目统计
@@ -347,10 +405,10 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
 |------|------|--------|------|
 | 🧪 **测试类型模块** | 15 个 | 100% | ✅ 完成 |
 | 🔄 **工作流程** | 3 个 | 100% | ✅ 完成 |
-| 📝 **中文提示词** | 30 个 | 100% | ✅ 完成 |
-| 🌍 **英文提示词** | 30 个 | 100% | ✅ 完成 |
+| 📝 **标准版本提示词** | 30 个（中英文各15个） | 100% | ✅ 完成 |
+| 🎨 **框架版本提示词** | 150 个（5个框架 × 15个类型 × 2种版本） | 100% | ✅ 完成 |
 | 📚 **模块文档** | 30 个 | 100% | ✅ 完成 |
-| 📖 **总文档数量** | **60+** | **100%** | ✅ **完成** |
+| 📖 **总文档数量** | **225+** | **100%** | ✅ **完成** |
 
 </div>
 
@@ -359,6 +417,7 @@ Awesome QA Prompt Collection 是一个精心设计的 AI 提示词库，专门�
 - **🔄 全生命周期覆盖**：从需求分析到测试报告的完整测试生命周期
 - **🌍 多语言支持**：中英文双语提示词，适应不同团队需求
 - **📋 完整版 + 精简版**：每个测试类型都提供完整版和精简版，满足不同场景需求
+- **🎨 TOP 5 框架支持**：每个测试类型支持 ROSES、LangGPT、ICIO、CRISPE、RISE 五大提示词框架
 - **👨‍💼 专业性强**：每个提示词都由 10+ 年经验的专家角色设计
 - **🛠️ 实用性高**：提供标准化格式和最佳实践指导
 - **🔧 可扩展性好**：模块化设计，便于扩展和定制
@@ -402,10 +461,16 @@ awesome-qa-prompt/
 │   ├── accessibility-testing/         # 可访问性测试
 │   └── test-case-reviewer/            # 测试用例评审
 │   # 每个测试类型文件夹包含：
-│   # ├── [Type]Prompt.md              # 中文完整版提示词
-│   # ├── [Type]Prompt_EN.md          # 英文完整版提示词
-│   # ├── [Type]Prompt_Lite.md        # 中文精简版提示词
-│   # ├── [Type]Prompt_Lite_EN.md     # 英文精简版提示词
+│   # ├── Standard-version/            # 标准版本
+│   # │   ├── [Type]Prompt.md         # 中文完整版
+│   # │   ├── [Type]Prompt_EN.md      # 英文完整版
+│   # │   ├── [Type]Prompt_Lite.md    # 中文精简版
+│   # │   └── [Type]Prompt_Lite_EN.md # 英文精简版
+│   # ├── ROSES-version/               # ROSES 框架版本
+│   # ├── LangGPT-version/             # LangGPT 框架版本
+│   # ├── ICIO-version/                # ICIO 框架版本
+│   # ├── CRISPE-version/              # CRISPE 框架版本
+│   # ├── RISE-version/                # RISE 框架版本
 │   # ├── README.md                    # 中文模块说明
 │   # └── README_EN.md                 # 英文模块说明
 │
@@ -470,8 +535,9 @@ awesome-qa-prompt/
 ### 使用技巧
 
 1. **选择合适的版本**：
-   - 新手或快速使用：选择精简版（_Lite.md）
-   - 专业或详细需求：选择完整版
+   - **框架选择**：标准版本适合通用场景，框架版本（ROSES、LangGPT、ICIO、CRISPE、RISE）适合特定框架需求
+   - **详细程度**：新手或快速使用选择精简版（_Lite.md），专业或详细需求选择完整版（Full）
+   - **语言选择**：中文项目使用中文提示词，英文项目使用英文提示词（_EN.md 结尾）
 
 2. **组合使用**：
    - 可以将多个提示词组合使用
@@ -612,36 +678,6 @@ awesome-qa-prompt/
 - 📧 **邮件联系**：通过 GitHub 联系维护者
 - 🌟 **关注项目**：点击 Star 关注项目更新
 
-## 🗺️ 项目路线图
-
-### 🎯 近期计划 (Q1 2025)
-
-- [ ] **增强现有模块**：优化提示词质量和准确性
-- [ ] **添加更多示例**：提供更多实际项目使用案例
-- [ ] **性能测试扩展**：增加云原生和微服务性能测试场景
-- [ ] **AI 集成优化**：针对不同 AI 模型优化提示词效果
-
-### 🚀 中期目标 (Q2-Q3 2025)
-
-- [ ] **新测试类型**：
-  - 🔐 区块链测试
-  - 🤖 机器学习模型测试
-  - 🌐 物联网设备测试
-  - 📊 数据质量测试
-- [ ] **工具集成**：开发浏览器插件和 IDE 扩展
-- [ ] **社区建设**：建立用户社区和贡献者计划
-
-### 🌟 长期愿景 (2025+)
-
-- [ ] **智能化提升**：基于用户反馈的智能提示词推荐
-- [ ] **多语言支持**：支持更多语言版本
-- [ ] **企业版功能**：提供企业级定制和支持服务
-- [ ] **生态系统**：构建完整的测试工具生态系统
-
-- 使用 Markdown 格式编写提示词
-- 保持格式一致性和可读性
-- 添加必要的注释和说明
-- 提供使用示例
 
 ## 📄 许可证
 
@@ -669,6 +705,34 @@ awesome-qa-prompt/
 ---
 
 ## 📋 更新日志 (Change Log)
+
+### [v0.3.0] - 2025-01-24 🎨 TOP 5 框架版本发布
+
+#### ✨ 新增功能
+- **TOP 5 框架支持**：
+  - 为所有 15 个测试类型添加 ROSES、LangGPT、ICIO、CRISPE、RISE 框架版本
+  - 每个框架版本提供完整版和精简版，中英文双语支持
+  - 新增 150 个框架版本提示词文档（5个框架 × 15个类型 × 2种版本）
+
+- **目录结构优化**：
+  - 每个测试类型目录下新增 `Standard-version/` 和 5 个框架版本目录
+  - 统一命名规范：`{Type}-{Framework}-Full.md` 和 `{Type}-{Framework}-Lite.md`
+  - 清晰的版本分类，便于查找和使用
+
+- **在线文档优化**：
+  - 侧边栏支持框架版本导航，所有测试类型统一展示框架版本目录
+  - 中英文版本侧边栏完整同步，支持框架版本快速访问
+  - 优化导航结构，提升用户体验
+
+#### 📊 内容统计
+- **标准版本提示词**：30 个（15个类型 × 2种版本）
+- **框架版本提示词**：150 个（5个框架 × 15个类型 × 2种版本）
+- **总文档数量**：从 60+ 增加到 **225+**
+
+#### 🔧 技术改进
+- 优化 VitePress 配置，支持框架版本路由
+- 完善侧边栏配置，统一展示框架版本结构
+- 修复英文版本 404 问题，确保所有链接正常访问
 
 ### [v0.2.0] - 2025-01-19 🔄 重大重构版本
 
