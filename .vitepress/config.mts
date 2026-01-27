@@ -2705,13 +2705,6 @@ export default defineConfig({
         search: {
           provider: 'local',
           options: {
-            // 搜索配置
-            _render(src, env, md) {
-              const html = md.render(src, env)
-              if (env.frontmatter?.search === false) return ''
-              return html
-            },
-            // 中文搜索配置
             locales: {
               root: {
                 translations: {
@@ -2733,13 +2726,6 @@ export default defineConfig({
                       cancelButtonText: '取消',
                       cancelButtonAriaLabel: '取消搜索'
                     }
-                  }
-                },
-                // 搜索索引配置
-                miniSearch: {
-                  options: {
-                    fields: ['title', 'content', 'headings'],
-                    storeFields: ['title', 'content', 'headings']
                   }
                 }
               }
@@ -2810,13 +2796,6 @@ export default defineConfig({
         search: {
           provider: 'local',
           options: {
-            // 搜索配置
-            _render(src, env, md) {
-              const html = md.render(src, env)
-              if (env.frontmatter?.search === false) return ''
-              return html
-            },
-            // 英文搜索配置
             locales: {
               en: {
                 translations: {
@@ -2838,13 +2817,6 @@ export default defineConfig({
                       cancelButtonText: 'Cancel',
                       cancelButtonAriaLabel: 'Cancel search'
                     }
-                  }
-                },
-                // 搜索索引配置
-                miniSearch: {
-                  options: {
-                    fields: ['title', 'content', 'headings'],
-                    storeFields: ['title', 'content', 'headings']
                   }
                 }
               }

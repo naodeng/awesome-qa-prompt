@@ -322,7 +322,30 @@ h4:hover .header-anchor {
   opacity: 1;
 }
 
-/* 优化搜索框 */
+/* 优化搜索框 - 确保搜索按钮可见 */
+.VPNavBarSearch {
+  display: flex !important;
+  align-items: center;
+}
+
+.VPNavBarSearch button {
+  display: flex !important;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.VPNavBarSearch button:hover {
+  border-color: var(--vp-c-brand);
+  background: var(--vp-c-bg-soft);
+}
+
+/* 兼容 DocSearch（如果使用） */
 .DocSearch-Button {
   border-radius: 8px;
 }
