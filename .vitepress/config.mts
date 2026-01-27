@@ -2900,7 +2900,10 @@ export default defineConfig({
   
   // Sitemap 配置
   sitemap: {
-    hostname: 'https://qaprompt.inaodeng.com',
+    // 根据部署环境动态设置 hostname
+    hostname: isGithubPages 
+      ? 'https://naodeng.github.io/awesome-qa-prompt' 
+      : 'https://qaprompt.inaodeng.com',
     // 确保 sitemap 包含 lastmod（需要 lastUpdated 启用）
     // lastmod 会自动从 Git 提交时间获取
     transformItems: (items) => {
@@ -2913,5 +2916,9 @@ export default defineConfig({
   buildEnd: async ({ outDir }) => {
     // 构建完成后的钩子，可以在这里进行额外的处理
     // 例如：检查资源文件、验证路径等
+    if (process.env.NODE_ENV !== 'production') {
+      console.log(`✅ Build completed with base path: ${base}`)
+      console.log(`📦 Output directory: ${outDir}`)
+    }
   }
 })
