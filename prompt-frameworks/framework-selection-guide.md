@@ -421,8 +421,8 @@ Expectation: 期望
 ## 📖 相关资源
 
 - [TOP 5 框架介绍](./top5-frameworks-intro.md)
-- [框架详细文档](./frameworks/)
-- [测试类型应用示例](../testing-types/)
+- [框架详细文档](/Base/PromptExample/README)
+- [测试类型应用示例](/RequirementsAnalysis/)
 
 ---
 

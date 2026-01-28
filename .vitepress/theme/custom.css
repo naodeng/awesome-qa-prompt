@@ -333,6 +333,13 @@
 
 .VPHero .text {
   font-weight: 500;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 960px) {
+  .VPHero .text {
+    font-size: 1.5rem;
+  }
 }
 
 .VPHero .tagline {

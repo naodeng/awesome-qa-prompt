@@ -1598,6 +1598,15 @@ export default defineConfig({
     "docs/sponsor.md": "sponsor.md",
     "docs/sponsor_EN.md": "en/sponsor.md",
 
+    // 框架相关页面映射
+    "prompt-frameworks/framework-selection-guide.md": "framework-selection-guide.md",
+    "prompt-frameworks/framework-selection-guide_EN.md": "en/framework-selection-guide.md",
+    "prompt-frameworks/top5-frameworks-intro.md": "top5-frameworks-intro.md",
+    "prompt-frameworks/top5-frameworks-intro_EN.md": "en/top5-frameworks-intro.md",
+    
+    
+    
+
     // 中文版本 - 将 testing-types 下的文件映射到根路径
     "testing-types/requirements-analysis/README.md":
       "RequirementsAnalysis/index.md",
@@ -2889,6 +2898,7 @@ export default defineConfig({
     "TestStrategy/:page": "testing-types/test-strategy/:page",
     "Workflows/:page": "workflows/:page",
     "Base/PromptExample/:page": "prompt-frameworks/frameworks/:page",
+    
   },
 
   // 多语言配置
@@ -4389,11 +4399,11 @@ export default defineConfig({
             items: [
               {
                 text: "Framework Selection Guide",
-                link: "/framework-selection-guide_EN",
+                link: "/en/framework-selection-guide",
               },
               {
                 text: "TOP 5 Frameworks Intro",
-                link: "/top5-frameworks-intro_EN",
+                link: "/en/top5-frameworks-intro",
               },
             ],
           },

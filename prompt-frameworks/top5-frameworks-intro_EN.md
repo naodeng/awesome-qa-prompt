@@ -481,8 +481,8 @@ RISE < Standard < ICIO < ROSES < CRISPE < LangGPT
 ## 🔗 Related Resources
 
 - [Framework Selection Guide](./framework-selection-guide_EN.md)
-- [Detailed Framework Documentation](../prompt-frameworks/frameworks/)
-- [Testing Type Application Examples](../testing-types/)
+- [Detailed Framework Documentation](/Base/PromptExample/README)
+- [Testing Type Application Examples](/RequirementsAnalysis/)
 
 ---
 

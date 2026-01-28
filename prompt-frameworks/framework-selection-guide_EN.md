@@ -421,8 +421,8 @@ Each framework has Full and Lite versions:
 ## 📖 Related Resources
 
 - [TOP 5 Frameworks Introduction](./top5-frameworks-intro_EN.md)
-- [Detailed Framework Documentation](./frameworks/)
-- [Testing Type Application Examples](../testing-types/)
+- [Detailed Framework Documentation](/Base/PromptExample/README)
+- [Testing Type Application Examples](/RequirementsAnalysis/)
 
 ---
 
