@@ -4,10 +4,10 @@
 
 /* 优化中文字体显示 */
 :root {
-  --vp-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
-    "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", 
+  --vp-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB",
     "Microsoft YaHei", sans-serif;
-  --vp-font-family-mono: "SF Mono", Monaco, Consolas, "Liberation Mono", 
+  --vp-font-family-mono: "SF Mono", Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
 }
 
@@ -64,127 +64,15 @@
   height: 32px;
 }
 
-/* 优化首页 Hero 布局 - 更紧凑美观的设计 */
+/* 简化 Hero 区域样式 - 保持简洁统一 */
 .VPHero {
-  padding: 3rem 1rem;
-  position: relative;
-}
-
-/* 确保容器使用 flexbox 布局 */
-.VPHero .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  max-width: 1280px;
-  margin: 0 auto;
-  position: relative;
+  padding: 4rem 1rem;
 }
 
 @media (min-width: 960px) {
-  .VPHero .container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 0 2rem;
+  .VPHero {
+    padding: 6rem 2rem;
   }
-}
-
-/* Hero 主内容区域 */
-.VPHero .main {
-  flex: 0 0 auto;
-  text-align: center;
-  z-index: 2;
-  position: relative;
-  width: 100%;
-}
-
-@media (min-width: 960px) {
-  .VPHero .main {
-    text-align: left;
-    flex: 0 0 42%;
-    min-width: 400px;
-  }
-}
-
-/* Hero 图片容器 */
-.VPHero .image-container {
-  flex-shrink: 0;
-  max-width: 100%;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-  order: -1; /* 在移动端，图片显示在文本上方 */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (min-width: 960px) {
-  .VPHero .image-container {
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin: 0;
-    margin-left: auto;
-    order: 0; /* 在桌面端，图片显示在右侧 */
-    align-self: stretch;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 0;
-    height: 100%;
-    min-height: 450px;
-  }
-}
-
-.VPHero .image-bg {
-  max-width: 100%;
-  background: transparent !important;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-@media (min-width: 960px) {
-  .VPHero .image-bg {
-    justify-content: flex-end;
-    width: 100%;
-  }
-}
-
-/* Logo 尺寸设置为 600x500 */
-.VPHero .VPImage.image-src {
-  width: 600px !important;
-  height: 500px !important;
-  max-width: 600px !important;
-  max-height: 500px !important;
-  min-width: 600px !important;
-  min-height: 500px !important;
-  object-fit: contain;
-  display: block;
-}
-
-@media (max-width: 959px) {
-  .VPHero .VPImage.image-src {
-    width: 100% !important;
-    max-width: 500px !important;
-    height: auto !important;
-    min-width: auto !important;
-    min-height: auto !important;
-    aspect-ratio: 6 / 5;
-  }
-}
-
-/* 确保 hero 文本不被覆盖 */
-.VPHero .name,
-.VPHero .text,
-.VPHero .tagline {
-  position: relative;
-  z-index: 2;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
 /* 移除图片的白色背景 */
@@ -194,118 +82,276 @@
   background: transparent !important;
 }
 
-/* 确保在小屏幕上图片不会覆盖文本 */
-@media (max-width: 959px) {
-  .VPHero .container {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .VPHero .main {
-    width: 100%;
-    padding: 0 1rem;
-  }
-  
-  .VPHero .image-container {
-    width: 100%;
-    max-width: 350px;
-    margin-bottom: 0.5rem;
-  }
-}
-
-/* 优化 Hero 标题和文本样式 */
-.VPHero .name {
-  font-size: 3.5rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
+/* 优化 Logo 尺寸 */
+.VPHero .VPImage.image-src {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 @media (min-width: 960px) {
-  .VPHero .name {
-    font-size: 4rem;
+  .VPHero .VPImage.image-src {
+    max-width: 500px;
   }
 }
 
-.VPHero .text {
-  font-size: 1.5rem;
-  line-height: 1.4;
+/* Statistics Cards */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0;
+  padding: 0 1rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, var(--vp-c-bg-soft) 0%, var(--vp-c-bg) 100%);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--vp-c-brand), var(--vp-c-brand-light));
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  border-color: var(--vp-c-brand);
+}
+
+.stat-card:hover::before {
+  transform: scaleX(1);
+}
+
+.stat-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--vp-c-brand), var(--vp-c-brand-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 0.5rem;
 }
 
-@media (min-width: 960px) {
-  .VPHero .text {
-    font-size: 1.75rem;
-  }
+.stat-label {
+  font-size: 0.95rem;
+  color: var(--vp-c-text-2);
+  font-weight: 500;
+}
+
+/* Workflow Section */
+.workflow-section {
+  margin: 3rem 0;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--vp-c-text-2);
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.workflow-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.workflow-card {
+  background: var(--vp-c-bg-soft);
+  border: 2px solid var(--vp-c-divider);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.workflow-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, transparent 0%, var(--vp-c-brand-soft) 100%);
+  opacity: 0;
+  transition: opacity 0.4s;
+  z-index: 0;
+}
+
+.workflow-card:hover::after {
+  opacity: 0.1;
+}
+
+.workflow-card:hover {
+  border-color: var(--vp-c-brand);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+.workflow-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.workflow-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--vp-c-brand);
+  font-size: 1.3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.workflow-card p {
+  color: var(--vp-c-text-2);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.workflow-link {
+  color: var(--vp-c-brand);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.workflow-link:hover {
+  gap: 0.75rem;
+  color: var(--vp-c-brand-dark);
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-item {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.feature-item:hover {
+  border-color: var(--vp-c-brand);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.feature-item h4 {
+  margin: 0 0 0.75rem 0;
+  color: var(--vp-c-text-1);
+  font-size: 1.1rem;
+}
+
+.feature-item p {
+  margin: 0;
+  color: var(--vp-c-text-2);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Tip Box */
+.tip-box {
+  background: linear-gradient(135deg, var(--vp-c-brand-soft) 0%, var(--vp-c-bg-soft) 100%);
+  border-left: 4px solid var(--vp-c-brand);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  line-height: 1.7;
+}
+
+.tip-box code {
+  background: var(--vp-c-bg);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* 简化 Hero 文本样式 */
+.VPHero .name {
+  font-weight: 700;
+}
+
+.VPHero .text {
+  font-weight: 500;
 }
 
 .VPHero .tagline {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  opacity: 0.8;
+  color: var(--vp-c-text-2);
 }
 
-@media (min-width: 960px) {
-  .VPHero .tagline {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-  }
+/* 简化按钮样式 - 使用 VitePress 默认样式 */
+.VPHero .actions {
+  gap: 0.75rem;
 }
 
-/* 确保导航按钮不换行 - 所有按钮在同一行 */
-.VPHero .actions,
-.VPHero .main .actions,
-.VPHero .actions-wrapper {
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  gap: 0.5rem !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  flex-direction: row !important;
-  width: 100%;
-  overflow: visible !important;
-}
-
-.VPHero .actions > *,
-.VPHero .main .actions > *,
-.VPHero .actions a,
-.VPHero .actions button,
-.VPHero .actions .VPButton {
-  flex: 0 0 auto !important;
-  flex-shrink: 0 !important;
-  white-space: nowrap !important;
-  min-width: auto !important;
-  max-width: none !important;
-  margin: 0 !important;
-  display: inline-block !important;
-}
-
-/* 确保所有按钮都在同一行，不换行 */
-.VPHero .actions > *:nth-child(1),
-.VPHero .actions > *:nth-child(2),
-.VPHero .actions > *:nth-child(3),
-.VPHero .actions > *:nth-child(n) {
-  flex: 0 0 auto !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  margin-right: 0.5rem !important;
-}
-
-.VPHero .actions > *:last-child {
-  margin-right: 0 !important;
-}
-
-/* 移动端也保持不换行，但可以缩小按钮 */
 @media (max-width: 639px) {
   .VPHero .actions {
-    gap: 0.375rem !important;
+    flex-direction: column;
+    width: 100%;
   }
-  
-  .VPHero .actions > *,
-  .VPHero .main .actions > * {
-    font-size: 0.875rem !important;
-    padding: 0.5rem 0.875rem !important;
-    margin-right: 0.375rem !important;
+
+  .VPHero .actions > * {
+    width: 100%;
   }
 }
 
@@ -332,20 +378,47 @@ h4:hover .header-anchor {
   .vp-doc {
     padding: 1rem;
   }
-  
+
   .vp-doc table {
     font-size: 0.9rem;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .stat-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .stat-icon {
+    font-size: 2.5rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .workflow-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
   }
 }
 
 /* 优化打印样式 */
 @media print {
+
   .VPNav,
   .VPSidebar,
   .VPDocFooter {
     display: none;
   }
-  
+
   .vp-doc {
     max-width: 100%;
   }
