@@ -2902,6 +2902,19 @@ export default defineConfig({
           { text: "测试类型", link: "/RequirementsAnalysis/" },
           { text: "工作流程", link: "/Workflows/" },
           {
+            text: "提示词框架",
+            items: [
+              {
+                text: "框架选择指南",
+                link: "/framework-selection-guide",
+              },
+              {
+                text: "TOP 5 框架介绍",
+                link: "/top5-frameworks-intro",
+              },
+            ],
+          },
+          {
             text: "快速开始",
             items: [
               {
@@ -4371,6 +4384,19 @@ export default defineConfig({
           { text: "Home", link: "/en/" },
           { text: "Testing Types", link: "/en/RequirementsAnalysis/" },
           { text: "Workflows", link: "/en/Workflows/" },
+          {
+            text: "Prompt Frameworks",
+            items: [
+              {
+                text: "Framework Selection Guide",
+                link: "/framework-selection-guide_EN",
+              },
+              {
+                text: "TOP 5 Frameworks Intro",
+                link: "/top5-frameworks-intro_EN",
+              },
+            ],
+          },
           {
             text: "Quick Start",
             items: [
