@@ -679,15 +679,15 @@ features:
 
 /* 团队成员介绍 */
 .team-section {
-  margin: 1rem 0 0.3rem 0;
-  padding: 0.5rem 0 0.3rem 0;
+  margin: 0.5rem 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.25rem;
-  margin: 0.5rem 0 0.3rem 0;
+  margin: 0.5rem 0 -1.5rem 0;
   padding: 0 1rem;
 }
 
@@ -811,6 +811,20 @@ features:
   opacity: 0.9;
 }
 
+.team-member-placeholder .member-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--vp-c-bg);
+  border: 3px solid var(--vp-c-divider);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  transition: all 0.3s ease;
+}
+
 .team-member-placeholder::before {
   opacity: 0.5;
 }
@@ -821,6 +835,11 @@ features:
 
 .team-member-placeholder:hover::before {
   opacity: 1;
+}
+
+.team-member-placeholder:hover .member-avatar {
+  border-color: var(--vp-c-brand);
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
