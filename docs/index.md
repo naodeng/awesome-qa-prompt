@@ -150,21 +150,25 @@ features:
 
 <div class="stats-grid">
   <div class="stat-card">
+    <div class="stat-icon">📦</div>
     <div class="stat-number">15</div>
     <div class="stat-label">测试类型模块</div>
     <div class="stat-badge">100% 完成</div>
   </div>
   <div class="stat-card">
+    <div class="stat-icon">🔄</div>
     <div class="stat-number">3</div>
     <div class="stat-label">工作流程</div>
     <div class="stat-badge">100% 完成</div>
   </div>
   <div class="stat-card">
+    <div class="stat-icon">📝</div>
     <div class="stat-number">60+</div>
     <div class="stat-label">专业提示词文档</div>
     <div class="stat-badge">持续更新</div>
   </div>
   <div class="stat-card">
+    <div class="stat-icon">🌍</div>
     <div class="stat-number">2</div>
     <div class="stat-label">语言支持</div>
     <div class="stat-badge">中英文双语</div>
@@ -307,6 +311,32 @@ features:
   </div>
 </div>
 
+## 👥 核心团队
+
+<div class="team-section">
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="member-avatar">
+        <img src="https://github.com/naodeng.png" alt="inaodeng" />
+      </div>
+      <div class="member-name">inaodeng</div>
+      <div class="member-role">QA</div>
+      <div class="member-bio">10+ 年测试经验，专注于 AI 辅助测试创新</div>
+      <div class="member-links">
+        <a href="https://inaodeng.com/" target="_blank" rel="noopener noreferrer" title="个人网站">🌐</a>
+        <a href="https://github.com/naodeng" target="_blank" rel="noopener noreferrer" title="GitHub">💻</a>
+        <a href="https://x.com/inaodeng" target="_blank" rel="noopener noreferrer" title="X (Twitter)">🐦</a>
+      </div>
+    </div>
+    <div class="team-member team-member-placeholder">
+      <div class="member-avatar">👤</div>
+      <div class="member-name">虚位以待</div>
+      <div class="member-role">Join Us</div>
+      <div class="member-bio">期待更多优秀的测试专家加入</div>
+    </div>
+  </div>
+</div>
+
 <style>
 /* 工作流程卡片优化 */
 .workflow-cards {
@@ -413,6 +443,24 @@ features:
   text-align: center;
   background: var(--vp-c-bg-soft);
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--vp-c-brand), var(--vp-c-brand-light));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover::before {
+  transform: scaleX(1);
 }
 
 .stat-card:hover {
@@ -421,12 +469,39 @@ features:
   border-color: var(--vp-c-brand);
 }
 
+.stat-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  filter: grayscale(0.2);
+  transition: all 0.3s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+.stat-card:hover .stat-icon {
+  filter: grayscale(0);
+  transform: scale(1.1) rotate(5deg);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
 .stat-number {
   font-size: 3rem;
   font-weight: 700;
   color: var(--vp-c-brand);
   line-height: 1;
   margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--vp-c-brand), var(--vp-c-brand-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .stat-label {
@@ -600,5 +675,171 @@ features:
   color: var(--vp-c-brand);
   display: block;
   margin-bottom: 0.5rem;
+}
+
+/* 团队成员介绍 */
+.team-section {
+  margin: 1rem 0 0.3rem 0;
+  padding: 0.5rem 0 0.3rem 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin: 0.5rem 0 0.3rem 0;
+  padding: 0 1rem;
+}
+
+.team-member {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: var(--vp-c-bg-soft);
+  border: 2px solid var(--vp-c-divider);
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.team-member::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--vp-c-brand), var(--vp-c-brand-light));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover::before {
+  transform: scaleX(1);
+}
+
+.team-member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  border-color: var(--vp-c-brand);
+}
+
+.member-avatar {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+  filter: grayscale(0.1);
+}
+
+.member-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--vp-c-divider);
+  transition: all 0.3s ease;
+}
+
+.team-member:hover .member-avatar {
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+
+.team-member:hover .member-avatar img {
+  border-color: var(--vp-c-brand);
+  transform: scale(1.05);
+}
+
+.member-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+  margin-bottom: 0.5rem;
+}
+
+.member-role {
+  font-size: 0.95rem;
+  color: var(--vp-c-brand);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.75rem;
+  background: var(--vp-c-brand-soft);
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.member-bio {
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.member-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.member-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.member-links a:hover {
+  background: var(--vp-c-brand);
+  border-color: var(--vp-c-brand);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.team-member-placeholder {
+  border-style: dashed !important;
+  opacity: 0.9;
+}
+
+.team-member-placeholder::before {
+  opacity: 0.5;
+}
+
+.team-member-placeholder:hover {
+  opacity: 1;
+}
+
+.team-member-placeholder:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+  
+  .team-member {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .member-avatar {
+    font-size: 3rem;
+  }
+  
+  .member-avatar img {
+    width: 60px;
+    height: 60px;
+  }
 }
 </style>
