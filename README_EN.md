@@ -35,7 +35,7 @@ A professional collection of AI prompts for QA (Quality Assurance) professionals
 
 ## 🌐 Online Documentation
 
-**📖 Visit our online documentation for a better reading experience: [https://qaprompt.inaodeng.com](https://qaprompt.inaodeng.com)**
+**📖 Visit our online documentation for a better reading experience: [https://inaodeng.com/prompts/](https://inaodeng.com/prompts/)**
 
 > 💡 **Deployment**: This project uses Cloudflare Pages for automatic deployment. Every push to the `main` branch automatically updates the online documentation.
 
