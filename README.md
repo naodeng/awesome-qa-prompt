@@ -36,7 +36,7 @@
 
 ## 🌐 在线文档
 
-**📖 访问在线文档获得更好的阅读体验：[https://qaprompt.inaodeng.com](https://qaprompt.inaodeng.com)**
+**📖 访问在线文档获得更好的阅读体验：[https://inaodeng.com/prompts/](https://inaodeng.com/prompts/)**
 
 > 💡 **部署说明**：本项目使用 Cloudflare Pages 自动部署，每次推送到 `main` 分支会自动更新在线文档。
 
