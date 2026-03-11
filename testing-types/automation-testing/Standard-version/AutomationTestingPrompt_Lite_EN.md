@@ -167,13 +167,13 @@ pipeline {
 
 ## Execution Instructions
 
-1. Analyze application characteristics, select appropriate automation strategy
-2. Design automation framework and technical solution
-3. Develop core automation scripts
-4. Integrate CI/CD processes and continuously optimize
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Please provide application information and testing requirements, and I will generate automation testing plan.**
-
+**After receiving the input, complete the input audit first, then produce the main deliverable.**
 
 ---
 

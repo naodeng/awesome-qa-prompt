@@ -35,18 +35,25 @@
 
 ## 文件说明
 
+## 版本选择建议
+
+- `Standard-version/`：默认推荐，适合大多数实际场景
+- `*_Lite.md`：信息较少、希望快速产出时使用
+- `*_Lean.md`：仅在该模块提供 Lean 版本时使用，适合更克制的输出
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`：适合你明确需要特定提示框架时再选用
+
 ### 中文提示词
-- **文件：** `AccessibilityTestingPrompt.md`
+- **文件：** `Standard-version/AccessibilityTestingPrompt.md`
 - **角色：** 资深可访问性测试专家 (10年+经验)
 - **适用场景：** 中文项目团队，无障碍合规要求
 
 ### 英文提示词
-- **文件：** `AccessibilityTestingPrompt_EN.md`
+- **文件：** `Standard-version/AccessibilityTestingPrompt_EN.md`
 - **角色：** Senior Accessibility Testing Expert
 - **适用场景：** 国际化团队，英文项目环境
 
 ### 精简版提示词
-- **文件：** `AccessibilityTestingPrompt_Lite.md`
+- **文件：** `Standard-version/AccessibilityTestingPrompt_Lite.md`
 - **特点：** 快速上手，核心要点集中
 - **适用场景：** 快速评估和基础可访问性测试
 

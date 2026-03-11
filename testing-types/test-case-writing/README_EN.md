@@ -36,18 +36,26 @@ The Test Case Writing module provides professional test case design and writing 
 
 ## File Description
 
+## Version Selection Guide
+
+- `Standard-version/`: the default recommendation for most real-world use cases
+- `*_Lite.md`: use when the input is limited or you want a faster output
+- `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
+
+
 ### Chinese Prompts
-- **File:** `TestCaseWritingPrompt.md`
+- **File:** `Standard-version/TestCaseWritingPrompt.md`
 - **Role:** Senior Test Case Designer (10+ years experience)
 - **Use Case:** Chinese project teams, test case writing requirements
 
 ### English Prompts
-- **File:** `TestCaseWritingPrompt_EN.md`
+- **File:** `Standard-version/TestCaseWritingPrompt_EN.md`
 - **Role:** Senior Test Case Designer
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
-- **File:** `TestCaseWritingPrompt_Lite.md` / `TestCaseWritingPrompt_Lite_EN.md`
+- **File:** `Standard-version/TestCaseWritingPrompt_Lite.md` / `Standard-version/TestCaseWritingPrompt_Lite_EN.md`
 - **Features:** Quick start, focused on core test case elements
 - **Use Case:** Quick test case creation and basic documentation
 
@@ -75,9 +83,9 @@ The Test Case Writing module provides professional test case design and writing 
 
 ## Related Modules
 
-- **[Requirements Analysis](../testing-types/requirements-analysis/README_EN.md)** - Analyze requirements for test case design
-- **[Functional Testing](../testing-types/functional-testing/README_EN.md)** - Execute functional test cases
-- **[Automation Testing](../testing-types/automation-testing/README_EN.md)** - Automate test cases
+- **[Requirements Analysis](../requirements-analysis/README_EN.md)** - Analyze requirements for test case design
+- **[Functional Testing](../functional-testing/README_EN.md)** - Execute functional test cases
+- **[Automation Testing](../automation-testing/README_EN.md)** - Automate test cases
 
 ## Learning Resources
 

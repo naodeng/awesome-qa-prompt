@@ -28,13 +28,20 @@ AI辅助测试模块提供了将人工智能技术应用于软件测试的专业
 
 ## 文件说明
 
+## 版本选择建议
+
+- `Standard-version/`：默认推荐，适合大多数实际场景
+- `*_Lite.md`：信息较少、希望快速产出时使用
+- `*_Lean.md`：仅在该模块提供 Lean 版本时使用，适合更克制的输出
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`：适合你明确需要特定提示框架时再选用
+
 ### 中文提示词
-- **文件：** `AIAssistedTestingPrompt.md`
+- **文件：** `Standard-version/AIAssistedTestingPrompt.md`
 - **角色：** 资深AI辅助测试专家 (12年+测试经验，5年+AI应用经验)
 - **适用场景：** 中文项目团队，AI技术在测试中的应用
 
 ### 英文提示词
-- **文件：** `AIAssistedTestingPrompt_EN.md`
+- **文件：** `Standard-version/AIAssistedTestingPrompt_EN.md`
 - **角色：** Senior AI-Assisted Testing Expert
 - **适用场景：** 国际化团队，英文项目环境
 
@@ -43,8 +50,8 @@ AI辅助测试模块提供了将人工智能技术应用于软件测试的专业
 ### 快速开始
 
 1. **选择提示词文件**
-   - 中文项目使用 `AIAssistedTestingPrompt.md`
-   - 英文项目使用 `AIAssistedTestingPrompt_EN.md`
+   - 中文项目使用 `Standard-version/AIAssistedTestingPrompt.md`
+   - 英文项目使用 `Standard-version/AIAssistedTestingPrompt_EN.md`
 
 2. **准备输入材料**
    ```

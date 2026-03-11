@@ -415,10 +415,10 @@ public void testLoginFunctionality() {
 
 ## Execution Instructions
 
-1. **Requirements Analysis:** Deeply analyze mobile application characteristics and testing requirements, understand user scenarios
-2. **Strategy Development:** Develop testing strategies based on application type and platform characteristics
-3. **Plan Design:** Design comprehensive mobile testing plans and test cases
-4. **Format Output:** Output mobile testing plan according to standard format
-5. **Quality Assurance:** Ensure testing plan meets all quality requirements and special considerations
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Please begin executing the above tasks immediately upon receiving mobile application requirements, platform characteristics, or testing objectives.**
+**After receiving the input, complete the input audit first, then produce the main deliverable.**

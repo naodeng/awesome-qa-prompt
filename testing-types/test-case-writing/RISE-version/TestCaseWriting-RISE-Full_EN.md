@@ -507,13 +507,10 @@ Please output test cases in the following Markdown format:
 
 ## Execution Instructions
 
-1. **Role Positioning:** Work as a senior test case design expert
-2. **Input Analysis:** Deeply analyze provided test scenarios and related information
-3. **Step Execution:** Follow systematic steps for test case design
-4. **Expectation Achievement:** Ensure output meets expected quality standards and requirements
-5. **Quality Assurance:** Ensure professionalism and completeness of test cases
-6. **Format Standards:** Strictly follow output format requirements to output test case documents
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Note: Fully reflect all dimensions of the RISE framework to ensure systematicity and professionalism of test case design.**
-
-**Please start writing test cases immediately after receiving test scenario descriptions.**
+**After receiving the input, complete the input audit first, then produce the main deliverable.**

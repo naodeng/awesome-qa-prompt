@@ -16,7 +16,15 @@
 
 ## 📚 提示词文件
 
-### [MobileTestingPrompt.md](MobileTestingPrompt.md)
+## 版本选择建议
+
+- `Standard-version/`：默认推荐，适合大多数实际场景
+- `*_Lite.md`：输入较少或需要快速产出时使用
+- `*_Lean.md`：仅在模块提供 Lean 版本时使用，适合更克制的输出
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`：仅在你明确需要特定提示框架时再选用
+
+
+### [MobileTestingPrompt.md](Standard-version/MobileTestingPrompt.md)
 **语言**：中文  
 **角色**：资深移动端测试专家  
 **功能**：设计全面的移动端测试策略和测试方案
@@ -27,7 +35,7 @@
 - 移动端生命周期和用户交互测试
 - 性能、安全、用户体验专项测试
 
-### [MobileTestingPrompt_EN.md](MobileTestingPrompt_EN.md)
+### [MobileTestingPrompt_EN.md](Standard-version/MobileTestingPrompt_EN.md)
 **语言**：English  
 **角色**：Senior Mobile Testing Expert  
 **功能**：Design comprehensive mobile testing strategies and test plans
@@ -115,9 +123,9 @@
 ## 🔗 相关资源
 
 ### 内部资源
-- [自动化测试](../testing-types/automation-testing/) - 移动端自动化实施
-- [性能测试](../testing-types/performance-testing/) - 移动端性能测试
-- [用户体验测试](../testing-types/test-strategy/) - 移动端 UX 测试策略
+- [自动化测试](../automation-testing/) - 移动端自动化实施
+- [性能测试](../performance-testing/) - 移动端性能测试
+- [用户体验测试](../test-strategy/) - 移动端 UX 测试策略
 
 ### 外部资源
 - [Appium 官方文档](http://appium.io/)

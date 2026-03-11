@@ -34,18 +34,26 @@ The Test Strategy module provides comprehensive test strategy planning guidance,
 
 ## File Description
 
+## Version Selection Guide
+
+- `Standard-version/`: the default recommendation for most real-world use cases
+- `*_Lite.md`: use when the input is limited or you want a faster output
+- `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
+
+
 ### Chinese Prompts
-- **File:** `TestStrategyPrompt.md`
+- **File:** `Standard-version/TestStrategyPrompt.md`
 - **Role:** Senior Test Architect (10+ years experience)
 - **Use Case:** Chinese project teams, test strategy planning
 
 ### English Prompts
-- **File:** `TestStrategyPrompt_EN.md`
+- **File:** `Standard-version/TestStrategyPrompt_EN.md`
 - **Role:** Senior Test Architect
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
-- **File:** `TestStrategyPrompt_Lite.md` / `TestStrategyPrompt_Lite_EN.md`
+- **File:** `Standard-version/TestStrategyPrompt_Lite.md` / `Standard-version/TestStrategyPrompt_Lite_EN.md`
 - **Features:** Quick start, focused on core strategy elements
 - **Use Case:** Quick test strategy planning and basic approach
 
@@ -73,9 +81,9 @@ The Test Strategy module provides comprehensive test strategy planning guidance,
 
 ## Related Modules
 
-- **[Requirements Analysis](../testing-types/requirements-analysis/README_EN.md)** - Requirements-based strategy
-- **[Test Reporting](../testing-types/test-reporting/README_EN.md)** - Strategy execution reporting
-- **[Automation Testing](../testing-types/automation-testing/README_EN.md)** - Automation strategy
+- **[Requirements Analysis](../requirements-analysis/README_EN.md)** - Requirements-based strategy
+- **[Test Reporting](../test-reporting/README_EN.md)** - Strategy execution reporting
+- **[Automation Testing](../automation-testing/README_EN.md)** - Automation strategy
 
 ## Learning Resources
 

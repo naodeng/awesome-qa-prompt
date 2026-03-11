@@ -34,18 +34,26 @@ The Security Testing module provides comprehensive security testing guidance, he
 
 ## File Description
 
+## Version Selection Guide
+
+- `Standard-version/`: the default recommendation for most real-world use cases
+- `*_Lite.md`: use when the input is limited or you want a faster output
+- `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
+
+
 ### Chinese Prompts
-- **File:** `SecurityTestingPrompt.md`
+- **File:** `Standard-version/SecurityTestingPrompt.md`
 - **Role:** Senior Security Testing Expert (10+ years experience)
 - **Use Case:** Chinese project teams, security testing requirements
 
 ### English Prompts
-- **File:** `SecurityTestingPrompt_EN.md`
+- **File:** `Standard-version/SecurityTestingPrompt_EN.md`
 - **Role:** Senior Security Testing Expert
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
-- **File:** `SecurityTestingPrompt_Lite.md` / `SecurityTestingPrompt_Lite_EN.md`
+- **File:** `Standard-version/SecurityTestingPrompt_Lite.md` / `Standard-version/SecurityTestingPrompt_Lite_EN.md`
 - **Features:** Quick start, focused on core security testing concepts
 - **Use Case:** Quick security assessment and basic testing
 
@@ -73,9 +81,9 @@ The Security Testing module provides comprehensive security testing guidance, he
 
 ## Related Modules
 
-- **[API Testing](../testing-types/api-testing/README_EN.md)** - API security testing
-- **[Automation Testing](../testing-types/automation-testing/README_EN.md)** - Security test automation
-- **[Test Strategy](../testing-types/test-strategy/README_EN.md)** - Security testing strategy
+- **[API Testing](../api-testing/README_EN.md)** - API security testing
+- **[Automation Testing](../automation-testing/README_EN.md)** - Security test automation
+- **[Test Strategy](../test-strategy/README_EN.md)** - Security testing strategy
 
 ## Learning Resources
 

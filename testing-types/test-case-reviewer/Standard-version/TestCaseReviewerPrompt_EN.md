@@ -343,17 +343,13 @@ Please output the review report in the following Markdown format:
 
 ## Execution Instructions
 
-1. **Comprehensive Reading:** Carefully read all provided test cases, understand test scope and objectives
-2. **Multi-dimensional Review:** Review from four dimensions: business, technology, user experience, and quality
-3. **Deep Mining:** Focus on mining extreme boundaries, potential risks, and missing scenarios
-4. **Detailed Recording:** Record all discovered issues, suggestions, and missing scenarios in detail
-5. **Priority Sorting:** Sort issues by impact scope and risk level
-6. **Constructive Suggestions:** Provide specific, actionable improvement suggestions and solutions
-7. **Format Output:** Strictly follow output format requirements, output structured review report
-8. **Follow-up Closure:** Provide follow-up action plan to ensure issues are resolved
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Please begin executing the above review tasks immediately upon receiving the test cases.**
-
+**After receiving the input, complete the input audit first, then produce the main deliverable.**
 
 ---
 

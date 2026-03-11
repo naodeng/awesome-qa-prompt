@@ -125,12 +125,10 @@
 
 ## Execution Instructions
 
-1. **Instruction Execution:** Strictly follow instruction requirements for requirements analysis
-2. **Context Analysis:** Quickly analyze business, technical, and user contexts
-3. **Input Data Evaluation:** Evaluate key information in requirements documents
-4. **Output Indicator Definition:** Clearly define output indicators and standards
-5. **Format Output:** Output requirements analysis reports according to output format requirements
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Note: Fully reflect all dimensions of the ICIO framework to ensure systematicity and professionalism of requirements analysis.**
-
-**Please provide requirements document, and I will immediately generate test analysis report following ICIO framework.**
+**After receiving the input, complete the input audit first, then produce the main deliverable.**

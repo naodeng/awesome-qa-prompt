@@ -41,9 +41,17 @@ The Requirements Analysis module provides professional test analysis guidance, h
 
 ## File Description
 
+## Version Selection Guide
+
+- `Standard-version/`: the default recommendation for most real-world use cases
+- `*_Lite.md`: use when the input is limited or you want a faster output
+- `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
+
+
 ### Full Version Prompts
-- **Chinese Version:** `RequirementsAnalysisPrompt.md` (v0.3)
-- **English Version:** `RequirementsAnalysisPrompt_EN.md` (v0.3)
+- **Chinese Version:** `Standard-version/RequirementsAnalysisPrompt.md` (v0.3)
+- **English Version:** `Standard-version/RequirementsAnalysisPrompt_EN.md` (v0.3)
 - **Role:** Senior Web Full-Stack Testing Expert (10+ years experience)
 - **Output Content:**
   - Business background analysis
@@ -54,9 +62,21 @@ The Requirements Analysis module provides professional test analysis guidance, h
   - Test coverage analysis
 - **Use Case:** Comprehensive requirements analysis and test planning for complex projects
 
+### Plus Version Prompts (Multi-Format Requirements Parsing)
+- **Chinese Version:** `Standard-version/RequirementsAnalysisPrompt_Plus.md` (v0.4)
+- **English Version:** `Standard-version/RequirementsAnalysisPrompt_Plus_EN.md` (v0.4)
+- **Features:** Supports Word/HTML/JSON/Markdown/Excel inputs, runs input auditing and cross-document consistency checks before producing requirements analysis conclusions
+- **Output Content:**
+  - Input inventory and parsability assessment
+  - Cross-document conflict/gap detection
+  - Requirement decomposition and testability assessment
+  - Test scope, key scenarios, and risk recommendations
+  - Confirmation backlog and minimum executable conclusion
+- **Use Case:** Projects with distributed requirement sources and mixed formats that need one unified analysis conclusion
+
 ### Lite Version Prompts
-- **Chinese Version:** `RequirementsAnalysisPrompt_Lite.md` (v0.2)
-- **English Version:** `RequirementsAnalysisPrompt_Lite_EN.md` (v0.2)
+- **Chinese Version:** `Standard-version/RequirementsAnalysisPrompt_Lite.md` (v0.2)
+- **English Version:** `Standard-version/RequirementsAnalysisPrompt_Lite_EN.md` (v0.2)
 - **Features:** Quick start, focused on core points, concise output
 - **Output Content:**
   - Business background (simplified)
@@ -68,6 +88,7 @@ The Requirements Analysis module provides professional test analysis guidance, h
 - **Use Case:** Rapid requirements analysis and test scenario planning
 
 ### Version Update Notes
+- **v0.4 (2026-03-11):** Added Plus version with multi-format requirements parsing support (Word/HTML/JSON/Markdown/Excel)
 - **v0.3 (2025-01-16):** Added test methods section, optimized output format
 - **v0.2 (2025-01-16):** Focused on business background, test scope, test scenarios, removed specific test case steps
 - **v0.1 (2025-01-14):** Initial version
@@ -78,6 +99,7 @@ The Requirements Analysis module provides professional test analysis guidance, h
 
 1. **Select Prompt File**
    - **Full Version:** In-depth requirements analysis, comprehensive test planning, detailed method guidance
+   - **Plus Version:** Unified parsing across multi-format requirement docs with conflict detection and testability conclusions
    - **Lite Version:** Quick scenario design, core test coverage, concise output
 
 2. **Prepare Input Materials**
@@ -237,9 +259,9 @@ Expected: Analysis report suitable for team review and discussion
 
 ## Related Modules
 
-- **[Test Case Writing](../testing-types/test-case-writing/README_EN.md)** - Write detailed test cases based on test scenarios
-- **[Functional Testing](../testing-types/functional-testing/README_EN.md)** - Execute functional testing
-- **[Test Strategy](../testing-types/test-strategy/README_EN.md)** - Develop overall test strategy
+- **[Test Case Writing](../test-case-writing/README_EN.md)** - Write detailed test cases based on test scenarios
+- **[Functional Testing](../functional-testing/README_EN.md)** - Execute functional testing
+- **[Test Strategy](../test-strategy/README_EN.md)** - Develop overall test strategy
 
 ## Learning Resources
 

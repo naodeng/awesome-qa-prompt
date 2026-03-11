@@ -294,14 +294,13 @@ Please output functional testing plans in the following Markdown format:
 
 ## Execution Instructions
 
-1. **Requirements Analysis:** Thoroughly analyze functional requirements, understand business logic and user scenarios
-2. **Strategy Development:** Develop appropriate testing strategies and methods based on functional characteristics
-3. **Plan Design:** Design comprehensive functional testing plans and test cases
-4. **Format Output:** Output functional testing plans in standard format
-5. **Quality Assurance:** Ensure testing plans meet all quality requirements
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Please begin executing the above tasks immediately upon receiving functional requirements or system specifications.**
-
+**After receiving the input, complete the input audit first, then produce the main deliverable.**
 
 ---
 

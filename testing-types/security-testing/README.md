@@ -34,13 +34,20 @@
 
 ## 文件说明
 
+## 版本选择建议
+
+- `Standard-version/`：默认推荐，适合大多数实际场景
+- `*_Lite.md`：信息较少、希望快速产出时使用
+- `*_Lean.md`：仅在该模块提供 Lean 版本时使用，适合更克制的输出
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`：适合你明确需要特定提示框架时再选用
+
 ### 中文提示词
-- **文件：** `SecurityTestingPrompt.md`
+- **文件：** `Standard-version/SecurityTestingPrompt.md`
 - **角色：** 资深安全测试专家 (10年+安全测试经验)
 - **适用场景：** 中文项目团队，系统安全评估和加固
 
 ### 英文提示词
-- **文件：** `SecurityTestingPrompt_EN.md`
+- **文件：** `Standard-version/SecurityTestingPrompt_EN.md`
 - **角色：** Senior Security Testing Expert
 - **适用场景：** 国际化团队，英文项目环境
 
@@ -49,8 +56,8 @@
 ### 快速开始
 
 1. **选择提示词文件**
-   - 中文项目使用 `SecurityTestingPrompt.md`
-   - 英文项目使用 `SecurityTestingPrompt_EN.md`
+   - 中文项目使用 `Standard-version/SecurityTestingPrompt.md`
+   - 英文项目使用 `Standard-version/SecurityTestingPrompt_EN.md`
 
 2. **准备输入材料**
    ```

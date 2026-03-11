@@ -16,7 +16,15 @@
 
 ## 📚 提示词文件
 
-### [PerformanceTestingPrompt.md](PerformanceTestingPrompt.md)
+## 版本选择建议
+
+- `Standard-version/`：默认推荐，适合大多数实际场景
+- `*_Lite.md`：输入较少或需要快速产出时使用
+- `*_Lean.md`：仅在模块提供 Lean 版本时使用，适合更克制的输出
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`：仅在你明确需要特定提示框架时再选用
+
+
+### [PerformanceTestingPrompt.md](Standard-version/PerformanceTestingPrompt.md)
 **语言**：中文  
 **角色**：资深性能测试专家  
 **功能**：设计全面的性能测试策略和测试方案
@@ -27,7 +35,7 @@
 - 测试场景真实性和性能优化建议
 - 性能监控和趋势分析
 
-### [PerformanceTestingPrompt_EN.md](PerformanceTestingPrompt_EN.md)
+### [PerformanceTestingPrompt_EN.md](Standard-version/PerformanceTestingPrompt_EN.md)
 **语言**：English  
 **角色**：Senior Performance Testing Expert  
 **功能**：Design comprehensive performance testing strategies and test plans
@@ -89,9 +97,9 @@
 ## 🔗 相关资源
 
 ### 内部资源
-- [自动化测试](../testing-types/automation-testing/) - 性能测试自动化
-- [测试报告](../testing-types/test-reporting/) - 性能测试报告
-- [测试策略](../testing-types/test-strategy/) - 性能测试策略
+- [自动化测试](../automation-testing/) - 性能测试自动化
+- [测试报告](../test-reporting/) - 性能测试报告
+- [测试策略](../test-strategy/) - 性能测试策略
 
 ### 外部资源
 - [性能测试最佳实践](https://www.guru99.com/performance-testing.html)

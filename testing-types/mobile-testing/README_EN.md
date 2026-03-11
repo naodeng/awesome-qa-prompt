@@ -34,18 +34,26 @@ The Mobile Testing module provides comprehensive mobile application testing guid
 
 ## File Description
 
+## Version Selection Guide
+
+- `Standard-version/`: the default recommendation for most real-world use cases
+- `*_Lite.md`: use when the input is limited or you want a faster output
+- `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
+
+
 ### Chinese Prompts
-- **File:** `MobileTestingPrompt.md`
+- **File:** `Standard-version/MobileTestingPrompt.md`
 - **Role:** Senior Mobile Testing Expert (10+ years experience)
 - **Use Case:** Chinese project teams, mobile testing requirements
 
 ### English Prompts
-- **File:** `MobileTestingPrompt_EN.md`
+- **File:** `Standard-version/MobileTestingPrompt_EN.md`
 - **Role:** Senior Mobile Testing Expert
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
-- **File:** `MobileTestingPrompt_Lite.md` / `MobileTestingPrompt_Lite_EN.md`
+- **File:** `Standard-version/MobileTestingPrompt_Lite.md` / `Standard-version/MobileTestingPrompt_Lite_EN.md`
 - **Features:** Quick start, focused on core mobile testing concepts
 - **Use Case:** Quick mobile testing and basic validation
 
@@ -73,9 +81,9 @@ The Mobile Testing module provides comprehensive mobile application testing guid
 
 ## Related Modules
 
-- **[Automation Testing](../testing-types/automation-testing/README_EN.md)** - Mobile test automation
-- **[Performance Testing](../testing-types/performance-testing/README_EN.md)** - Mobile performance testing
-- **[Accessibility Testing](../testing-types/accessibility-testing/README_EN.md)** - Mobile accessibility testing
+- **[Automation Testing](../automation-testing/README_EN.md)** - Mobile test automation
+- **[Performance Testing](../performance-testing/README_EN.md)** - Mobile performance testing
+- **[Accessibility Testing](../accessibility-testing/README_EN.md)** - Mobile accessibility testing
 
 ## Learning Resources
 

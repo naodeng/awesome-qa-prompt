@@ -37,9 +37,16 @@
 
 ## 文件说明
 
+## 版本选择建议
+
+- `Standard-version/`：默认推荐，适合大多数实际场景
+- `*_Lite.md`：信息较少、希望快速产出时使用
+- `*_Lean.md`：仅在该模块提供 Lean 版本时使用，适合更克制的输出
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`：适合你明确需要特定提示框架时再选用
+
 ### 完整版提示词
-- **中文版：** `TestCaseReviewerPrompt.md` (v0.1)
-- **英文版：** `TestCaseReviewerPrompt_EN.md` (v0.1)
+- **中文版：** `Standard-version/TestCaseReviewerPrompt.md` (v0.1)
+- **英文版：** `Standard-version/TestCaseReviewerPrompt_EN.md` (v0.1)
 - **角色：** 资深业务测试专家 (10年+业务一线经验)
 - **输出内容：**
   - 评审概览（基本信息、评审结论）
@@ -53,8 +60,8 @@
 - **适用场景：** 复杂项目的全面测试用例评审和质量把控
 
 ### 精简版提示词
-- **中文版：** `TestCaseReviewerPrompt_Lite.md` (v0.1)
-- **英文版：** `TestCaseReviewerPrompt_Lite_EN.md` (v0.1)
+- **中文版：** `Standard-version/TestCaseReviewerPrompt_Lite.md` (v0.1)
+- **英文版：** `Standard-version/TestCaseReviewerPrompt_Lite_EN.md` (v0.1)
 - **特点：** 快速评审，核心要点集中，输出简洁
 - **输出内容：**
   - 评审概览（简化版）
@@ -296,9 +303,9 @@
 
 ## 相关模块
 
-- **[需求分析](../testing-types/requirements-analysis/README.md)** - 需求分析和测试场景设计
-- **[测试用例编写](../testing-types/test-case-writing/README.md)** - 测试用例编写指导
-- **[测试策略](../testing-types/test-strategy/README.md)** - 整体测试策略制定
+- **[需求分析](../requirements-analysis/README.md)** - 需求分析和测试场景设计
+- **[测试用例编写](../test-case-writing/README.md)** - 测试用例编写指导
+- **[测试策略](../test-strategy/README.md)** - 整体测试策略制定
 
 ## 学习资源
 

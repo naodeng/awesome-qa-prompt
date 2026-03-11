@@ -330,11 +330,10 @@ N. [Observe results, record actual problems that occurred]
 
 ## Execution Instructions
 
-1. **Problem Analysis:** Carefully analyze problem phenomena, determine bug type and impact scope
-2. **Information Collection:** Collect complete environment information, error logs, and related materials
-3. **Reproduction Verification:** Verify problem reproducibility, improve reproduction steps
-4. **Report Writing:** Write detailed bug reports according to standard format
-5. **Quality Check:** Ensure bug reports meet all quality requirements
-6. **Format Output:** Output bug report according to standard format
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Please begin executing the above tasks immediately upon discovering problems or receiving error information.**
+**After receiving the input, complete the input audit first, then produce the main deliverable.**

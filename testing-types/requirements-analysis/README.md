@@ -41,9 +41,16 @@
 
 ## 文件说明
 
+## 版本选择建议
+
+- `Standard-version/`：默认推荐，适合大多数实际场景
+- `*_Lite.md`：信息较少、希望快速产出时使用
+- `*_Lean.md`：仅在该模块提供 Lean 版本时使用，适合更克制的输出
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`：适合你明确需要特定提示框架时再选用
+
 ### 完整版提示词
-- **中文版：** `RequirementsAnalysisPrompt.md` (v0.3)
-- **英文版：** `RequirementsAnalysisPrompt_EN.md` (v0.3)
+- **中文版：** `Standard-version/RequirementsAnalysisPrompt.md` (v0.3)
+- **英文版：** `Standard-version/RequirementsAnalysisPrompt_EN.md` (v0.3)
 - **角色：** 资深 Web 全栈测试专家 (10年+经验)
 - **输出内容：**
   - 业务背景分析
@@ -54,9 +61,21 @@
   - 测试覆盖度分析
 - **适用场景：** 复杂项目的全面需求分析和测试规划
 
+### Plus 版提示词（多格式需求解析）
+- **中文版：** `Standard-version/RequirementsAnalysisPrompt_Plus.md` (v0.4)
+- **英文版：** `Standard-version/RequirementsAnalysisPrompt_Plus_EN.md` (v0.4)
+- **特点：** 支持 Word/HTML/JSON/Markdown/Excel 多格式输入，先做输入审计与跨文档一致性检查，再输出需求分析结论
+- **输出内容：**
+  - 输入清单与可解析性评估
+  - 跨文档冲突/缺失识别
+  - 需求拆解与可测性评估
+  - 测试范围、关键场景与风险建议
+  - 待确认清单与最小可执行结论
+- **适用场景：** 需求来源分散、格式混杂、需要统一形成测试分析结论的项目
+
 ### 精简版提示词
-- **中文版：** `RequirementsAnalysisPrompt_Lite.md` (v0.2)
-- **英文版：** `RequirementsAnalysisPrompt_Lite_EN.md` (v0.2)
+- **中文版：** `Standard-version/RequirementsAnalysisPrompt_Lite.md` (v0.2)
+- **英文版：** `Standard-version/RequirementsAnalysisPrompt_Lite_EN.md` (v0.2)
 - **特点：** 快速上手，核心要点集中，输出简洁
 - **输出内容：**
   - 业务背景（简化版）
@@ -68,6 +87,7 @@
 - **适用场景：** 快速需求分析和测试场景规划
 
 ### 版本更新说明
+- **v0.4 (2026-03-11)：** 新增 Plus 版本，支持多格式需求文档解析（Word/HTML/JSON/Markdown/Excel）
 - **v0.3 (2025-01-16)：** 增加测试方法章节，优化输出格式
 - **v0.2 (2025-01-16)：** 聚焦业务背景、测试范围、测试场景，移除具体测试用例步骤
 - **v0.1 (2025-01-14)：** 初始版本
@@ -78,6 +98,7 @@
 
 1. **选择提示词文件**
    - **完整版：** 深度需求分析、全面测试规划、详细方法指导
+   - **Plus 版：** 多格式需求文档统一解析、冲突识别、可测性结论输出
    - **精简版：** 快速场景设计、核心测试覆盖、简洁输出
 
 2. **准备输入材料**
@@ -237,9 +258,9 @@
 
 ## 相关模块
 
-- **[测试用例编写](../testing-types/test-case-writing/README.md)** - 基于测试场景编写详细用例
-- **[功能测试](../testing-types/functional-testing/README.md)** - 执行功能测试
-- **[测试策略](../testing-types/test-strategy/README.md)** - 整体测试策略制定
+- **[测试用例编写](../test-case-writing/README.md)** - 基于测试场景编写详细用例
+- **[功能测试](../functional-testing/README.md)** - 执行功能测试
+- **[测试策略](../test-strategy/README.md)** - 整体测试策略制定
 
 ## 学习资源
 

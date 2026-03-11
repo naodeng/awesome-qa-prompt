@@ -36,13 +36,20 @@ API测试模块提供了全面的API测试策略和方法指导，涵盖REST、G
 
 ## 文件说明
 
+## 版本选择建议
+
+- `Standard-version/`：默认推荐，适合大多数实际场景
+- `*_Lite.md`：信息较少、希望快速产出时使用
+- `*_Lean.md`：仅在该模块提供 Lean 版本时使用，适合更克制的输出
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`：适合你明确需要特定提示框架时再选用
+
 ### 中文提示词
-- **文件：** `APITestingPrompt.md`
+- **文件：** `Standard-version/APITestingPrompt.md`
 - **角色：** 资深API测试专家 (10年+API测试经验)
 - **适用场景：** 中文项目团队，微服务架构API测试
 
 ### 英文提示词
-- **文件：** `APITestingPrompt_EN.md`
+- **文件：** `Standard-version/APITestingPrompt_EN.md`
 - **角色：** Senior API Testing Expert
 - **适用场景：** 国际化团队，英文项目环境
 
@@ -51,8 +58,8 @@ API测试模块提供了全面的API测试策略和方法指导，涵盖REST、G
 ### 快速开始
 
 1. **选择提示词文件**
-   - 中文项目使用 `APITestingPrompt.md`
-   - 英文项目使用 `APITestingPrompt_EN.md`
+   - 中文项目使用 `Standard-version/APITestingPrompt.md`
+   - 英文项目使用 `Standard-version/APITestingPrompt_EN.md`
 
 2. **准备输入材料**
    ```

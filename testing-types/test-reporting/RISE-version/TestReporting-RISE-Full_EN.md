@@ -443,10 +443,10 @@ Please output test reports in the following Markdown format:
 
 ## Execution Instructions
 
-1. **Data Collection:** Collect complete and accurate test execution data and defect information
-2. **Data Analysis:** In-depth analysis of test data, identify trends and issues
-3. **Report Writing:** Write comprehensive and professional test reports according to standard format
-4. **Quality Check:** Ensure report data is accurate, analysis is in-depth, conclusions are objective
-5. **Formatted Output:** Output test reports according to standard format
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Please begin executing the above tasks immediately upon receiving test execution data, defect information, or project background.**
+**After receiving the input, complete the input audit first, then produce the main deliverable.**

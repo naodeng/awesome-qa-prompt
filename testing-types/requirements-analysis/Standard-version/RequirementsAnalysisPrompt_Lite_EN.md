@@ -121,18 +121,13 @@
 
 ## Execution Instructions
 
-1. **Requirements Understanding:** Quickly understand business objectives, functional scope, and business rules
-2. **Business Background Analysis:** Extract business objectives, user roles, and business value
-3. **Test Scope Definition:** Clearly define functional scope and test types
-4. **Scenario Design:** Design positive, negative, and boundary test scenarios
-5. **Test Method Planning:** Clearly define test design methods and execution methods
-6. **Strategy Recommendations:** Propose test focus, risk assessment, and resource requirements
-7. **Format Output:** Output a structured requirements analysis report according to the output format requirements
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Note: The output focus is on test strategy and scenario planning, without the need to output specific test case steps.**
-
-**Please provide the requirements document, and I will immediately generate the test analysis report.**
-
+**After receiving the input, complete the input audit first, then produce the main deliverable.**
 
 ---
 

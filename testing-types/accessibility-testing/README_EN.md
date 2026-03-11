@@ -35,18 +35,26 @@ The Accessibility Testing module provides comprehensive accessibility testing gu
 
 ## File Description
 
+## Version Selection Guide
+
+- `Standard-version/`: the default recommendation for most real-world use cases
+- `*_Lite.md`: use when the input is limited or you want a faster output
+- `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
+
+
 ### Chinese Prompts
-- **File:** `AccessibilityTestingPrompt.md`
+- **File:** `Standard-version/AccessibilityTestingPrompt.md`
 - **Role:** Senior Accessibility Testing Expert (10+ years experience)
 - **Use Case:** Chinese project teams, accessibility compliance requirements
 
 ### English Prompts
-- **File:** `AccessibilityTestingPrompt_EN.md`
+- **File:** `Standard-version/AccessibilityTestingPrompt_EN.md`
 - **Role:** Senior Accessibility Testing Expert
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
-- **File:** `AccessibilityTestingPrompt_Lite.md` / `AccessibilityTestingPrompt_Lite_EN.md`
+- **File:** `Standard-version/AccessibilityTestingPrompt_Lite.md` / `Standard-version/AccessibilityTestingPrompt_Lite_EN.md`
 - **Features:** Quick start, focused on core points
 - **Use Case:** Quick assessment and basic accessibility testing
 

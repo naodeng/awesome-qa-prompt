@@ -34,18 +34,26 @@ The Test Reporting module provides comprehensive test reporting guidance, helpin
 
 ## File Description
 
+## Version Selection Guide
+
+- `Standard-version/`: the default recommendation for most real-world use cases
+- `*_Lite.md`: use when the input is limited or you want a faster output
+- `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
+
+
 ### Chinese Prompts
-- **File:** `TestReportingPrompt.md`
+- **File:** `Standard-version/TestReportingPrompt.md`
 - **Role:** Senior Test Manager (10+ years experience)
 - **Use Case:** Chinese project teams, test reporting requirements
 
 ### English Prompts
-- **File:** `TestReportingPrompt_EN.md`
+- **File:** `Standard-version/TestReportingPrompt_EN.md`
 - **Role:** Senior Test Manager
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
-- **File:** `TestReportingPrompt_Lite.md` / `TestReportingPrompt_Lite_EN.md`
+- **File:** `Standard-version/TestReportingPrompt_Lite.md` / `Standard-version/TestReportingPrompt_Lite_EN.md`
 - **Features:** Quick start, focused on core reporting elements
 - **Use Case:** Quick test reporting and status updates
 
@@ -73,9 +81,9 @@ The Test Reporting module provides comprehensive test reporting guidance, helpin
 
 ## Related Modules
 
-- **[Bug Reporting](../testing-types/bug-reporting/README_EN.md)** - Defect data for reporting
-- **[Test Strategy](../testing-types/test-strategy/README_EN.md)** - Strategic quality reporting
-- **[Automation Testing](../testing-types/automation-testing/README_EN.md)** - Automation test results
+- **[Bug Reporting](../bug-reporting/README_EN.md)** - Defect data for reporting
+- **[Test Strategy](../test-strategy/README_EN.md)** - Strategic quality reporting
+- **[Automation Testing](../automation-testing/README_EN.md)** - Automation test results
 
 ## Learning Resources
 

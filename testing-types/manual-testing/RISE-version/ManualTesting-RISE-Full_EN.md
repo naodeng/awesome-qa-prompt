@@ -386,11 +386,10 @@ Unexplored Areas:
 
 ## Execution Instructions
 
-1. **Requirements Analysis:** Deeply analyze product testing requirements and user groups
-2. **Strategy Formulation:** Formulate comprehensive manual testing strategies and plans
-3. **Plan Design:** Design detailed manual testing plans and execution schedules
-4. **Test Execution:** Execute exploratory, usability, and compatibility testing
-5. **Result Analysis:** Analyze test results and provide improvement suggestions
-6. **Continuous Improvement:** Continuously improve manual testing methods and efficiency
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Please start executing the above tasks immediately after receiving testing requirements, product features, or user scenarios.**
+**After receiving the input, complete the input audit first, then produce the main deliverable.**

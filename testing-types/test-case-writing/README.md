@@ -16,7 +16,15 @@
 
 ## 📚 提示词文件
 
-### [TestCaseWritingPrompt.md](TestCaseWritingPrompt.md)
+## 版本选择建议
+
+- `Standard-version/`：默认推荐，适合大多数实际场景
+- `*_Lite.md`：输入较少或需要快速产出时使用
+- `*_Lean.md`：仅在模块提供 Lean 版本时使用，适合更克制的输出
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`：仅在你明确需要特定提示框架时再选用
+
+
+### [TestCaseWritingPrompt.md](Standard-version/TestCaseWritingPrompt.md)
 **语言**：中文  
 **角色**：资深测试用例设计专家  
 **功能**：将测试场景转化为详细、可执行的测试用例
@@ -28,7 +36,7 @@
 - 测试数据设计和管理策略
 - 可维护性和可追溯性保证
 
-### [TestCaseWritingPrompt_EN.md](TestCaseWritingPrompt_EN.md)
+### [TestCaseWritingPrompt_EN.md](Standard-version/TestCaseWritingPrompt_EN.md)
 **语言**：English  
 **角色**：Senior Test Case Design Expert  
 **功能**：Transform test scenarios into detailed, executable test cases
@@ -46,8 +54,8 @@
    ```
 
 2. **选择合适的提示词**
-   - 中文项目使用 `TestCaseWritingPrompt.md`
-   - 英文项目使用 `TestCaseWritingPrompt_EN.md`
+   - 中文项目使用 `Standard-version/TestCaseWritingPrompt.md`
+   - 英文项目使用 `Standard-version/TestCaseWritingPrompt_EN.md`
 
 3. **提供上下文信息**
    ```
@@ -140,9 +148,9 @@
 ## 🔗 相关资源
 
 ### 内部资源
-- [需求分析](../testing-types/requirements-analysis/) - 需求分析和测试场景设计
-- [功能测试](../testing-types/functional-testing/) - 功能测试策略和方法
-- [自动化测试](../testing-types/automation-testing/) - 自动化测试实施
+- [需求分析](../requirements-analysis/) - 需求分析和测试场景设计
+- [功能测试](../functional-testing/) - 功能测试策略和方法
+- [自动化测试](../automation-testing/) - 自动化测试实施
 
 ### 外部资源
 - [IEEE 829 测试文档标准](https://standards.ieee.org/standard/829-2008.html)

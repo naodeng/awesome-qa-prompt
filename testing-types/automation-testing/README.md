@@ -16,7 +16,15 @@
 
 ## 📚 提示词文件
 
-### [AutomationTestingPrompt.md](AutomationTestingPrompt.md)
+## 版本选择建议
+
+- `Standard-version/`：默认推荐，适合大多数实际场景
+- `*_Lite.md`：输入较少或需要快速产出时使用
+- `*_Lean.md`：仅在模块提供 Lean 版本时使用，适合更克制的输出
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`：仅在你明确需要特定提示框架时再选用
+
+
+### [AutomationTestingPrompt.md](Standard-version/AutomationTestingPrompt.md)
 **语言**：中文  
 **角色**：资深自动化测试架构师  
 **功能**：设计全面的自动化测试策略和实施方案
@@ -27,7 +35,7 @@
 - 技术栈选择和框架设计
 - CI/CD 集成和维护优化
 
-### [AutomationTestingPrompt_EN.md](AutomationTestingPrompt_EN.md)
+### [AutomationTestingPrompt_EN.md](Standard-version/AutomationTestingPrompt_EN.md)
 **语言**：English  
 **角色**：Senior Test Automation Architect  
 **功能**：Design comprehensive test automation strategies and implementation plans
@@ -102,9 +110,9 @@
 ## 🔗 相关资源
 
 ### 内部资源
-- [功能测试](../testing-types/functional-testing/) - 功能测试策略
-- [性能测试](../testing-types/performance-testing/) - 性能测试自动化
-- [移动端测试](../testing-types/mobile-testing/) - 移动端自动化
+- [功能测试](../functional-testing/) - 功能测试策略
+- [性能测试](../performance-testing/) - 性能测试自动化
+- [移动端测试](../mobile-testing/) - 移动端自动化
 
 ### 外部资源
 - [Selenium 官方文档](https://selenium.dev/)

@@ -207,14 +207,13 @@ Please output test cases in the following Markdown format:
 
 ## Execution Instructions
 
-1. **Requirements Analysis:** Carefully analyze test scenarios or requirements documents, understand test objectives and scope
-2. **Case Design:** Design complete test cases based on test design principles
-3. **Format Output:** Strictly follow output format requirements, output standardized test cases
-4. **Quality Check:** Ensure test cases meet all quality requirements and special considerations
-5. **Review Optimization:** Support test case review and continuous optimization
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Please begin executing the above tasks immediately upon receiving test scenarios or requirements documents.**
-
+**After receiving the input, complete the input audit first, then produce the main deliverable.**
 
 ---
 

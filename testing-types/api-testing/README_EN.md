@@ -34,18 +34,26 @@ The API Testing module provides comprehensive API testing guidance, helping test
 
 ## File Description
 
+## Version Selection Guide
+
+- `Standard-version/`: the default recommendation for most real-world use cases
+- `*_Lite.md`: use when the input is limited or you want a faster output
+- `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
+
+
 ### Chinese Prompts
-- **File:** `APITestingPrompt.md`
+- **File:** `Standard-version/APITestingPrompt.md`
 - **Role:** Senior API Testing Expert (10+ years experience)
 - **Use Case:** Chinese project teams, API testing requirements
 
 ### English Prompts
-- **File:** `APITestingPrompt_EN.md`
+- **File:** `Standard-version/APITestingPrompt_EN.md`
 - **Role:** Senior API Testing Expert
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
-- **File:** `APITestingPrompt_Lite.md` / `APITestingPrompt_Lite_EN.md`
+- **File:** `Standard-version/APITestingPrompt_Lite.md` / `Standard-version/APITestingPrompt_Lite_EN.md`
 - **Features:** Quick start, focused on core API testing concepts
 - **Use Case:** Quick API testing and basic validation
 
@@ -73,9 +81,9 @@ The API Testing module provides comprehensive API testing guidance, helping test
 
 ## Related Modules
 
-- **[Automation Testing](../testing-types/automation-testing/README_EN.md)** - API test automation
-- **[Performance Testing](../testing-types/performance-testing/README_EN.md)** - API performance testing
-- **[Security Testing](../testing-types/security-testing/README_EN.md)** - API security testing
+- **[Automation Testing](../automation-testing/README_EN.md)** - API test automation
+- **[Performance Testing](../performance-testing/README_EN.md)** - API performance testing
+- **[Security Testing](../security-testing/README_EN.md)** - API security testing
 
 ## Learning Resources
 

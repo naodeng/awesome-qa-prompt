@@ -126,15 +126,15 @@ Please output test strategies in the following Markdown format:
 ### Test Objectives
 #### Primary Quality Objectives
 - **Functional Quality Objectives:** [Functional correctness and completeness objectives]
-  - Functional requirement coverage: 100%
-  - Core function availability: 99.9%
-  - Business process completeness: 100%
+  - Functional requirement coverage: [Target value, mark as TBD if not provided]
+  - Core function availability: [Target value, mark as TBD if not provided]
+  - Business process completeness: [Target value, mark as TBD if not provided]
 
 - **Non-Functional Quality Objectives:** [Performance, security, usability objectives]
-  - System response time: ≤ 2 seconds (95% requests)
-  - System concurrent users: ≥ 1000 users
-  - System availability: ≥ 99.5%
-  - Security vulnerabilities: 0 high-risk vulnerabilities
+  - System response time: [Target value, mark as TBD if not provided]
+  - System concurrent users: [Target value, mark as TBD if not provided]
+  - System availability: [Target value, mark as TBD if not provided]
+  - Security vulnerabilities: [Target value, mark as TBD if not provided]
 
 #### Test Efficiency Objectives
 - **Test Automation Rate:** [Proportion of automated test coverage objectives]
@@ -636,11 +636,10 @@ Test Manager
 
 ## Execution Instructions
 
-1. **Background Analysis:** Thoroughly analyze project background, business requirements, and technical architecture
-2. **Objective Setting:** Set clear and specific test objectives and success criteria
-3. **Strategy Design:** Design comprehensive and scientific test strategies and implementation plans
-4. **Resource Planning:** Reasonably plan personnel, tools, environment and other resources
-5. **Risk Management:** Identify risks and develop effective response measures
-6. **Continuous Improvement:** Establish continuous improvement and optimization mechanisms
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Please begin executing the above tasks immediately upon receiving project background, business requirements, technical architecture, or organizational situation.**
+**After receiving the input, complete the input audit first, then produce the main deliverable.**

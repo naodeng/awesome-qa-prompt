@@ -34,18 +34,26 @@ The AI-Assisted Testing module provides comprehensive AI-powered testing guidanc
 
 ## File Description
 
+## Version Selection Guide
+
+- `Standard-version/`: the default recommendation for most real-world use cases
+- `*_Lite.md`: use when the input is limited or you want a faster output
+- `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
+
+
 ### Chinese Prompts
-- **File:** `AIAssistedTestingPrompt.md`
+- **File:** `Standard-version/AIAssistedTestingPrompt.md`
 - **Role:** Senior AI Testing Expert (10+ years experience)
 - **Use Case:** Chinese project teams, AI testing implementation
 
 ### English Prompts
-- **File:** `AIAssistedTestingPrompt_EN.md`
+- **File:** `Standard-version/AIAssistedTestingPrompt_EN.md`
 - **Role:** Senior AI Testing Expert
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
-- **File:** `AIAssistedTestingPrompt_Lite.md` / `AIAssistedTestingPrompt_Lite_EN.md`
+- **File:** `Standard-version/AIAssistedTestingPrompt_Lite.md` / `Standard-version/AIAssistedTestingPrompt_Lite_EN.md`
 - **Features:** Quick start, focused on core AI testing concepts
 - **Use Case:** Quick AI testing assessment and basic implementation
 
@@ -73,9 +81,9 @@ The AI-Assisted Testing module provides comprehensive AI-powered testing guidanc
 
 ## Related Modules
 
-- **[Automation Testing](../testing-types/automation-testing/README_EN.md)** - Foundation for AI-assisted testing
-- **[Test Strategy](../testing-types/test-strategy/README_EN.md)** - Integrate AI testing into overall strategy
-- **[Performance Testing](../testing-types/performance-testing/README_EN.md)** - AI-powered performance analysis
+- **[Automation Testing](../automation-testing/README_EN.md)** - Foundation for AI-assisted testing
+- **[Test Strategy](../test-strategy/README_EN.md)** - Integrate AI testing into overall strategy
+- **[Performance Testing](../performance-testing/README_EN.md)** - AI-powered performance analysis
 
 ## Learning Resources
 

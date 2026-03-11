@@ -16,7 +16,15 @@
 
 ## 📚 提示词文件
 
-### [TestReportingPrompt.md](TestReportingPrompt.md)
+## 版本选择建议
+
+- `Standard-version/`：默认推荐，适合大多数实际场景
+- `*_Lite.md`：输入较少或需要快速产出时使用
+- `*_Lean.md`：仅在模块提供 Lean 版本时使用，适合更克制的输出
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`：仅在你明确需要特定提示框架时再选用
+
+
+### [TestReportingPrompt.md](Standard-version/TestReportingPrompt.md)
 **语言**：中文  
 **角色**：资深测试报告分析师  
 **功能**：编写全面、专业的测试报告
@@ -27,7 +35,7 @@
 - 数据可视化和趋势分析
 - 决策支持和改进建议
 
-### [TestReportingPrompt_EN.md](TestReportingPrompt_EN.md)
+### [TestReportingPrompt_EN.md](Standard-version/TestReportingPrompt_EN.md)
 **语言**：English  
 **角色**：Senior Test Reporting Analyst  
 **功能**：Write comprehensive and professional test reports
@@ -142,9 +150,9 @@
 ## 🔗 相关资源
 
 ### 内部资源
-- [缺陷上报](../testing-types/bug-reporting/) - 缺陷数据收集
-- [测试策略](../testing-types/test-strategy/) - 质量度量体系
-- [自动化测试](../testing-types/automation-testing/) - 自动化报告
+- [缺陷上报](../bug-reporting/) - 缺陷数据收集
+- [测试策略](../test-strategy/) - 质量度量体系
+- [自动化测试](../automation-testing/) - 自动化报告
 
 ### 外部资源
 - [测试报告最佳实践](https://www.guru99.com/test-report.html)

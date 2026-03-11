@@ -292,15 +292,10 @@ Please output the requirements analysis report in the following Markdown format:
 
 ## Execution Instructions
 
-1. **Requirements Understanding:** Carefully read requirements documents, deeply understand business objectives, functional scope, and business rules
-2. **Business Background Analysis:** Extract business objectives, user roles, business value, and business rules
-3. **Test Scope Definition:** Clarify functional scope, test types, environment requirements, and data needs
-4. **Scenario Design:** Use test design methods to design comprehensive test scenarios (positive, exception, boundary, security, performance, compatibility)
-5. **Test Method Planning:** Clarify application of test design methods, test execution methods, and test tool selection
-6. **Strategy Recommendations:** Propose test focus, risk assessment, resource requirements, test dependencies, and experimental verification methods
-7. **Coverage Analysis:** Analyze functional coverage, scenario coverage, risk coverage, test method coverage, and experimental effect assessment
-8. **Format Output:** Strictly follow output format requirements to output structured requirements analysis reports
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Note: Output focus is on test strategy and scenario planning, without the need to output specific test case steps. Fully reflect all dimensions of the CRISPE framework to ensure systematicity and professionalism of requirements analysis.**
-
-**Please begin executing the above tasks immediately upon receiving the requirements document.**
+**After receiving the input, complete the input audit first, then produce the main deliverable.**

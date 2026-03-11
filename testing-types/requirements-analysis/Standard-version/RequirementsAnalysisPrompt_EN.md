@@ -340,20 +340,13 @@ Please output the requirements analysis report in the following Markdown format:
 
 ## Execution Instructions
 
-1. **Requirements Understanding:** Carefully read the requirements document to deeply understand business objectives, functional scope, and business rules
-2. **Business Background Analysis:** Extract business objectives, user roles, business value, and business rules
-3. **Test Scope Definition:** Clearly define functional scope, test types, environment requirements, and data needs
-4. **Scenario Design:** Use test design methods to design comprehensive test scenarios (positive, negative, boundary, security, performance, compatibility)
-5. **Test Method Planning:** Clearly define application of test design methods, test execution methods, and test tool selection
-6. **Strategy Recommendations:** Propose test focus, risk assessment, resource requirements, and test dependencies
-7. **Coverage Analysis:** Analyze functional coverage, scenario coverage, risk coverage, and test method coverage
-8. **Format Output:** Strictly follow the output format requirements to output a structured requirements analysis report
-9. **Quality Check:** Ensure all quality requirements and special considerations are met
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Note: The output focus is on test strategy and scenario planning, without the need to output specific test case steps.**
-
-**Please begin executing the above tasks immediately upon receiving the requirements document.**
-
+**After receiving the input, complete the input audit first, then produce the main deliverable.**
 
 ---
 

@@ -408,11 +408,10 @@ curl -X GET "http://target.com/user?id=1 UNION SELECT 1,username,password FROM u
 
 ## Execution Instructions
 
-1. **Threat Modeling:** Analyze system architecture, identify security threats and attack surfaces
-2. **Strategy Formulation:** Formulate comprehensive security testing strategies and plans
-3. **Tool Preparation:** Prepare and configure security testing tools and environments
-4. **Test Execution:** Execute various security testing activities according to plan
-5. **Result Analysis:** Deeply analyze security test results and discovered vulnerabilities
-6. **Report Writing:** Write professional security testing reports and fix recommendations
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Please start executing the above tasks immediately after receiving system architecture, security requirements, or compliance requirements.**
+**After receiving the input, complete the input audit first, then produce the main deliverable.**

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "专业的 QA（质量保证）AI 提示词集合",
   "scripts": {
+    "check:prompts": "node scripts/check-prompts.mjs",
     "docs:dev": "vitepress dev .",
     "docs:build": "vitepress build .",
     "docs:preview": "vitepress preview ."

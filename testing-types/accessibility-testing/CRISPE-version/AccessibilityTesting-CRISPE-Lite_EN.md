@@ -165,10 +165,10 @@ Verification Points:
 
 ## Execution Instructions
 
-1. **Requirement Analysis:** Analyze product characteristics and user needs, identify accessibility requirements
-2. **Standard Selection:** Determine applicable accessibility standards
-3. **Strategy Design:** Design accessibility test scenarios and methods
-4. **Tool Preparation:** Prepare accessibility testing tools and environments
-5. **Plan Output:** Output accessibility testing plan
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Please provide product information and compliance requirements, and I will generate accessibility testing plan.**
+**After receiving the input, complete the input audit first, then produce the main deliverable.**

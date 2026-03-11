@@ -34,18 +34,26 @@ The Automation Testing module provides comprehensive test automation guidance, h
 
 ## File Description
 
+## Version Selection Guide
+
+- `Standard-version/`: the default recommendation for most real-world use cases
+- `*_Lite.md`: use when the input is limited or you want a faster output
+- `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
+
+
 ### Chinese Prompts
-- **File:** `AutomationTestingPrompt.md`
+- **File:** `Standard-version/AutomationTestingPrompt.md`
 - **Role:** Senior Test Automation Architect (10+ years experience)
 - **Use Case:** Chinese project teams, automation framework design
 
 ### English Prompts
-- **File:** `AutomationTestingPrompt_EN.md`
+- **File:** `Standard-version/AutomationTestingPrompt_EN.md`
 - **Role:** Senior Test Automation Architect
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
-- **File:** `AutomationTestingPrompt_Lite.md` / `AutomationTestingPrompt_Lite_EN.md`
+- **File:** `Standard-version/AutomationTestingPrompt_Lite.md` / `Standard-version/AutomationTestingPrompt_Lite_EN.md`
 - **Features:** Quick start, focused on core automation concepts
 - **Use Case:** Quick automation assessment and basic framework setup
 
@@ -73,9 +81,9 @@ The Automation Testing module provides comprehensive test automation guidance, h
 
 ## Related Modules
 
-- **[Functional Testing](../testing-types/functional-testing/README_EN.md)** - Functional test automation
-- **[API Testing](../testing-types/api-testing/README_EN.md)** - API test automation
-- **[Performance Testing](../testing-types/performance-testing/README_EN.md)** - Performance test automation
+- **[Functional Testing](../functional-testing/README_EN.md)** - Functional test automation
+- **[API Testing](../api-testing/README_EN.md)** - API test automation
+- **[Performance Testing](../performance-testing/README_EN.md)** - Performance test automation
 
 ## Learning Resources
 

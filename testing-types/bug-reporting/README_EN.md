@@ -34,18 +34,26 @@ The Bug Reporting module provides professional defect reporting guidance, helpin
 
 ## File Description
 
+## Version Selection Guide
+
+- `Standard-version/`: the default recommendation for most real-world use cases
+- `*_Lite.md`: use when the input is limited or you want a faster output
+- `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
+
+
 ### Chinese Prompts
-- **File:** `BugReportingPrompt.md`
+- **File:** `Standard-version/BugReportingPrompt.md`
 - **Role:** Senior QA Engineer (10+ years experience)
 - **Use Case:** Chinese project teams, bug reporting standards
 
 ### English Prompts
-- **File:** `BugReportingPrompt_EN.md`
+- **File:** `Standard-version/BugReportingPrompt_EN.md`
 - **Role:** Senior QA Engineer
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
-- **File:** `BugReportingPrompt_Lite.md` / `BugReportingPrompt_Lite_EN.md`
+- **File:** `Standard-version/BugReportingPrompt_Lite.md` / `Standard-version/BugReportingPrompt_Lite_EN.md`
 - **Features:** Quick start, focused on core bug reporting elements
 - **Use Case:** Quick bug reporting and basic documentation
 
@@ -74,9 +82,9 @@ The Bug Reporting module provides professional defect reporting guidance, helpin
 
 ## Related Modules
 
-- **[Functional Testing](../testing-types/functional-testing/README_EN.md)** - Functional bug identification
-- **[Test Reporting](../testing-types/test-reporting/README_EN.md)** - Bug metrics and reporting
-- **[Test Strategy](../testing-types/test-strategy/README_EN.md)** - Defect management strategy
+- **[Functional Testing](../functional-testing/README_EN.md)** - Functional bug identification
+- **[Test Reporting](../test-reporting/README_EN.md)** - Bug metrics and reporting
+- **[Test Strategy](../test-strategy/README_EN.md)** - Defect management strategy
 
 ## Learning Resources
 

@@ -34,18 +34,26 @@ The Manual Testing module provides comprehensive manual testing guidance, helpin
 
 ## File Description
 
+## Version Selection Guide
+
+- `Standard-version/`: the default recommendation for most real-world use cases
+- `*_Lite.md`: use when the input is limited or you want a faster output
+- `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
+
+
 ### Chinese Prompts
-- **File:** `ManualTestingPrompt.md`
+- **File:** `Standard-version/ManualTestingPrompt.md`
 - **Role:** Senior Manual Testing Expert (10+ years experience)
 - **Use Case:** Chinese project teams, manual testing requirements
 
 ### English Prompts
-- **File:** `ManualTestingPrompt_EN.md`
+- **File:** `Standard-version/ManualTestingPrompt_EN.md`
 - **Role:** Senior Manual Testing Expert
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
-- **File:** `ManualTestingPrompt_Lite.md` / `ManualTestingPrompt_Lite_EN.md`
+- **File:** `Standard-version/ManualTestingPrompt_Lite.md` / `Standard-version/ManualTestingPrompt_Lite_EN.md`
 - **Features:** Quick start, focused on core manual testing techniques
 - **Use Case:** Quick manual testing and exploratory testing
 
@@ -73,9 +81,9 @@ The Manual Testing module provides comprehensive manual testing guidance, helpin
 
 ## Related Modules
 
-- **[Functional Testing](../testing-types/functional-testing/README_EN.md)** - Manual functional testing
-- **[Accessibility Testing](../testing-types/accessibility-testing/README_EN.md)** - Manual accessibility verification
-- **[Bug Reporting](../testing-types/bug-reporting/README_EN.md)** - Report discovered issues
+- **[Functional Testing](../functional-testing/README_EN.md)** - Manual functional testing
+- **[Accessibility Testing](../accessibility-testing/README_EN.md)** - Manual accessibility verification
+- **[Bug Reporting](../bug-reporting/README_EN.md)** - Report discovered issues
 
 ## Learning Resources
 

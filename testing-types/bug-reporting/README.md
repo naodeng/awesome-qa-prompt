@@ -16,7 +16,15 @@
 
 ## 📚 提示词文件
 
-### [BugReportingPrompt.md](BugReportingPrompt.md)
+## 版本选择建议
+
+- `Standard-version/`：默认推荐，适合大多数实际场景
+- `*_Lite.md`：输入较少或需要快速产出时使用
+- `*_Lean.md`：仅在模块提供 Lean 版本时使用，适合更克制的输出
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`：仅在你明确需要特定提示框架时再选用
+
+
+### [BugReportingPrompt.md](Standard-version/BugReportingPrompt.md)
 **语言**：中文  
 **角色**：资深缺陷管理专家  
 **功能**：编写详细、准确的缺陷报告
@@ -27,7 +35,7 @@
 - 根因分析和解决建议
 - 缺陷生命周期管理
 
-### [BugReportingPrompt_EN.md](BugReportingPrompt_EN.md)
+### [BugReportingPrompt_EN.md](Standard-version/BugReportingPrompt_EN.md)
 **语言**：English  
 **角色**：Senior Bug Management Expert  
 **功能**：Write detailed and accurate bug reports
@@ -133,9 +141,9 @@
 ## 🔗 相关资源
 
 ### 内部资源
-- [测试报告](../testing-types/test-reporting/) - 缺陷统计和分析
-- [测试策略](../testing-types/test-strategy/) - 缺陷管理策略
-- [功能测试](../testing-types/functional-testing/) - 功能缺陷发现
+- [测试报告](../test-reporting/) - 缺陷统计和分析
+- [测试策略](../test-strategy/) - 缺陷管理策略
+- [功能测试](../functional-testing/) - 功能缺陷发现
 
 ### 外部资源
 - [IEEE 1044 缺陷分类标准](https://standards.ieee.org/)

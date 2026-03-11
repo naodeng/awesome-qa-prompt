@@ -436,11 +436,10 @@ Keyboard Shortcut Verification:
 
 ## Execution Instructions
 
-1. **Requirement Analysis:** Deeply analyze product accessibility requirements and user groups
-2. **Standard Selection:** Determine applicable accessibility standards and compliance requirements
-3. **Strategy Formulation:** Formulate comprehensive accessibility testing strategies and plans
-4. **Tool Configuration:** Configure and use various accessibility testing tools
-5. **Test Execution:** Execute automated, manual, and user testing
-6. **Result Analysis:** Analyze test results and provide improvement recommendations
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Please start executing the above tasks immediately after receiving product requirements, user groups, or compliance requirements.**
+**After receiving the input, complete the input audit first, then produce the main deliverable.**

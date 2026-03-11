@@ -16,7 +16,15 @@
 
 ## 📚 提示词文件
 
-### [FunctionalTestingPrompt.md](FunctionalTestingPrompt.md)
+## 版本选择建议
+
+- `Standard-version/`：默认推荐，适合大多数实际场景
+- `*_Lite.md`：输入较少或需要快速产出时使用
+- `*_Lean.md`：仅在模块提供 Lean 版本时使用，适合更克制的输出
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`：仅在你明确需要特定提示框架时再选用
+
+
+### [FunctionalTestingPrompt.md](Standard-version/FunctionalTestingPrompt.md)
 **语言**：中文  
 **角色**：资深功能测试专家  
 **功能**：设计全面的功能测试策略和测试方案
@@ -27,7 +35,7 @@
 - 业务逻辑复杂性和用户体验关注
 - 系统集成复杂性处理
 
-### [FunctionalTestingPrompt_EN.md](FunctionalTestingPrompt_EN.md)
+### [FunctionalTestingPrompt_EN.md](Standard-version/FunctionalTestingPrompt_EN.md)
 **语言**：English  
 **角色**：Senior Functional Testing Expert  
 **功能**：Design comprehensive functional testing strategies and test plans
@@ -74,9 +82,9 @@
 ## 🔗 相关资源
 
 ### 内部资源
-- [需求分析](../testing-types/requirements-analysis/) - 需求分析和测试场景设计
-- [测试用例编写](../testing-types/test-case-writing/) - 测试用例设计和编写
-- [自动化测试](../testing-types/automation-testing/) - 功能测试自动化
+- [需求分析](../requirements-analysis/) - 需求分析和测试场景设计
+- [测试用例编写](../test-case-writing/) - 测试用例设计和编写
+- [自动化测试](../automation-testing/) - 功能测试自动化
 
 ### 外部资源
 - [ISTQB 功能测试指南](https://www.istqb.org/)

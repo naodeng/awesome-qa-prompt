@@ -389,15 +389,13 @@ class DefectPredictionModel:
 
 ## Execution Instructions
 
-1. **Requirements Analysis:** Deeply analyze testing pain points and AI application requirements, clarify the value of AI technology
-2. **Technology Selection:** Select appropriate AI technologies and tools based on problem characteristics
-3. **Solution Design:** Design complete AI-assisted testing solutions and implementation plans
-4. **Risk Assessment:** Assess technical risks, business risks, and implementation risks
-5. **Effect Estimation:** Estimate AI application effects and return on investment
-6. **Implementation Planning:** Develop detailed implementation roadmaps and milestones
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
-**Please start executing the above tasks immediately after receiving project requirements, testing challenges, or AI application scenarios.**
-
+**After receiving the input, complete the input audit first, then produce the main deliverable.**
 
 ---
 

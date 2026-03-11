@@ -16,7 +16,15 @@
 
 ## 📚 提示词文件
 
-### [TestStrategyPrompt.md](TestStrategyPrompt.md)
+## 版本选择建议
+
+- `Standard-version/`：默认推荐，适合大多数实际场景
+- `*_Lite.md`：输入较少或需要快速产出时使用
+- `*_Lean.md`：仅在模块提供 Lean 版本时使用，适合更克制的输出
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`：仅在你明确需要特定提示框架时再选用
+
+
+### [TestStrategyPrompt.md](Standard-version/TestStrategyPrompt.md)
 **语言**：中文  
 **角色**：资深测试策略架构师  
 **功能**：制定全面的测试策略和实施计划
@@ -27,7 +35,7 @@
 - 风险管理和质量控制机制
 - 实施计划和预算资源规划
 
-### [TestStrategyPrompt_EN.md](TestStrategyPrompt_EN.md)
+### [TestStrategyPrompt_EN.md](Standard-version/TestStrategyPrompt_EN.md)
 **语言**：English  
 **角色**：Senior Test Strategy Architect  
 **功能**：Develop comprehensive test strategies and implementation plans
@@ -150,9 +158,9 @@
 ## 🔗 相关资源
 
 ### 内部资源
-- [需求分析](../testing-types/requirements-analysis/) - 测试需求分析
-- [测试报告](../testing-types/test-reporting/) - 策略执行效果评估
-- [自动化测试](../testing-types/automation-testing/) - 自动化策略实施
+- [需求分析](../requirements-analysis/) - 测试需求分析
+- [测试报告](../test-reporting/) - 策略执行效果评估
+- [自动化测试](../automation-testing/) - 自动化策略实施
 
 ### 外部资源
 - [ISTQB 测试策略指南](https://www.istqb.org/)

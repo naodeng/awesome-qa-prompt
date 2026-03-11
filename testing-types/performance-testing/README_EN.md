@@ -34,18 +34,26 @@ The Performance Testing module provides comprehensive performance testing guidan
 
 ## File Description
 
+## Version Selection Guide
+
+- `Standard-version/`: the default recommendation for most real-world use cases
+- `*_Lite.md`: use when the input is limited or you want a faster output
+- `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
+
+
 ### Chinese Prompts
-- **File:** `PerformanceTestingPrompt.md`
+- **File:** `Standard-version/PerformanceTestingPrompt.md`
 - **Role:** Senior Performance Testing Expert (10+ years experience)
 - **Use Case:** Chinese project teams, performance testing requirements
 
 ### English Prompts
-- **File:** `PerformanceTestingPrompt_EN.md`
+- **File:** `Standard-version/PerformanceTestingPrompt_EN.md`
 - **Role:** Senior Performance Testing Expert
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
-- **File:** `PerformanceTestingPrompt_Lite.md` / `PerformanceTestingPrompt_Lite_EN.md`
+- **File:** `Standard-version/PerformanceTestingPrompt_Lite.md` / `Standard-version/PerformanceTestingPrompt_Lite_EN.md`
 - **Features:** Quick start, focused on core performance testing concepts
 - **Use Case:** Quick performance assessment and basic testing
 
@@ -73,9 +81,9 @@ The Performance Testing module provides comprehensive performance testing guidan
 
 ## Related Modules
 
-- **[Automation Testing](../testing-types/automation-testing/README_EN.md)** - Performance test automation
-- **[API Testing](../testing-types/api-testing/README_EN.md)** - API performance testing
-- **[Test Reporting](../testing-types/test-reporting/README_EN.md)** - Performance test reporting
+- **[Automation Testing](../automation-testing/README_EN.md)** - Performance test automation
+- **[API Testing](../api-testing/README_EN.md)** - API performance testing
+- **[Test Reporting](../test-reporting/README_EN.md)** - Performance test reporting
 
 ## Learning Resources
 

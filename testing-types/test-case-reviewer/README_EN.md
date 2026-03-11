@@ -37,9 +37,17 @@ The Test Case Review module provides professional test case review guidance from
 
 ## File Description
 
+## Version Selection Guide
+
+- `Standard-version/`: the default recommendation for most real-world use cases
+- `*_Lite.md`: use when the input is limited or you want a faster output
+- `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
+- `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
+
+
 ### Full Version Prompts
-- **Chinese Version:** `TestCaseReviewerPrompt.md` (v0.1)
-- **English Version:** `TestCaseReviewerPrompt_EN.md` (v0.1)
+- **Chinese Version:** `Standard-version/TestCaseReviewerPrompt.md` (v0.1)
+- **English Version:** `Standard-version/TestCaseReviewerPrompt_EN.md` (v0.1)
 - **Role:** Senior Business & Testing Expert (10+ years business frontline experience)
 - **Output Content:**
   - Review overview (basic information, review conclusion)
@@ -53,8 +61,8 @@ The Test Case Review module provides professional test case review guidance from
 - **Use Cases:** Comprehensive test case review and quality control for complex projects
 
 ### Lite Version Prompts
-- **Chinese Version:** `TestCaseReviewerPrompt_Lite.md` (v0.1)
-- **English Version:** `TestCaseReviewerPrompt_Lite_EN.md` (v0.1)
+- **Chinese Version:** `Standard-version/TestCaseReviewerPrompt_Lite.md` (v0.1)
+- **English Version:** `Standard-version/TestCaseReviewerPrompt_Lite_EN.md` (v0.1)
 - **Features:** Quick review, focused on core points, concise output
 - **Output Content:**
   - Review overview (simplified)
@@ -296,9 +304,9 @@ Expected: Improve testing depth and breadth
 
 ## Related Modules
 
-- **[Requirements Analysis](../testing-types/requirements-analysis/README_EN.md)** - Requirements analysis and test scenario design
-- **[Test Case Writing](../testing-types/test-case-writing/README_EN.md)** - Test case writing guidance
-- **[Test Strategy](../testing-types/test-strategy/README_EN.md)** - Overall test strategy formulation
+- **[Requirements Analysis](../requirements-analysis/README_EN.md)** - Requirements analysis and test scenario design
+- **[Test Case Writing](../test-case-writing/README_EN.md)** - Test case writing guidance
+- **[Test Strategy](../test-strategy/README_EN.md)** - Overall test strategy formulation
 
 ## Learning Resources
 

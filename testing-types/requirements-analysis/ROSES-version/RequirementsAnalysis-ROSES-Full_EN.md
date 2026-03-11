@@ -314,4 +314,4 @@ Please output the requirements analysis report in the following Markdown format:
 
 **Note: Output focus is on test strategy and scenario planning, without the need to output specific test case steps.**
 
-**Please begin executing the above tasks immediately upon receiving the requirements document.**
+**After receiving the input, complete the input audit first, then produce the main deliverable by following the steps above.**

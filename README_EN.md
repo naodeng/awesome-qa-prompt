@@ -8,6 +8,7 @@
 
 
 [![Cloudflare Pages](https://img.shields.io/badge/Cloudflare%20Pages-deployed-orange.svg)](https://qaprompt.inaodeng.com)
+[![Prompt Check](https://img.shields.io/github/actions/workflow/status/naodeng/awesome-qa-prompt/prompt-check.yml?branch=main&label=prompt%20check)](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/prompt-check.yml)
 [![GitHub](https://img.shields.io/github/license/naodeng/awesome-qa-prompt)](https://github.com/naodeng/awesome-qa-prompt/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/naodeng/awesome-qa-prompt?style=social)](https://github.com/naodeng/awesome-qa-prompt)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fnaodeng%2Fawesome-qa-prompt&label=Visitors&countColor=%23263759&style=flat)
@@ -58,6 +59,7 @@ Online documentation features:
 - [Project Statistics](#project-statistics)
 - [Directory Structure](#directory-structure)
 - [Usage Guide](#usage-guide)
+- [Prompt Authoring Standard](#prompt-authoring-standard)
 - [Contributing](#contributing)
 - [Change Log](#change-log)
 - [License](#license)
@@ -87,7 +89,7 @@ By providing structured, professional prompt templates, it helps test engineers:
 This collection includes professional prompts for the following testing domains:
 
 ### 1. 📝 Requirements Analysis
-- **Location**: `testing-types/requirements-analysis/RequirementsAnalysisPrompt_EN.md`
+- **Location**: `testing-types/requirements-analysis/Standard-version/RequirementsAnalysisPrompt_EN.md`
 - **Description**: Conduct in-depth analysis based on requirements documents and design comprehensive test scenarios
 - **Use Cases**: Requirements review, test planning, test scenario design
 - **Core Capabilities**:
@@ -96,7 +98,7 @@ This collection includes professional prompts for the following testing domains:
   - UI/UX, input validation, non-functional testing coverage
 
 ### 2. ✍️ Test Case Writing
-- **Location**: `testing-types/test-case-writing/TestCaseWritingPrompt_EN.md`
+- **Location**: `testing-types/test-case-writing/Standard-version/TestCaseWritingPrompt_EN.md`
 - **Description**: Automatically generate detailed test cases based on test scenarios
 - **Use Cases**: Test case design, test documentation writing
 - **Core Capabilities**:
@@ -106,7 +108,7 @@ This collection includes professional prompts for the following testing domains:
   - Maintainability and traceability assurance
 
 ### 3. 🔍 Functional Testing
-- **Location**: `testing-types/functional-testing/FunctionalTestingPrompt_EN.md`
+- **Location**: `testing-types/functional-testing/Standard-version/FunctionalTestingPrompt_EN.md`
 - **Description**: Design functional testing strategies and execution plans
 - **Use Cases**: Functional test execution, regression testing
 - **Core Capabilities**:
@@ -116,7 +118,7 @@ This collection includes professional prompts for the following testing domains:
   - System integration complexity handling
 
 ### 4. ⚡ Performance Testing
-- **Location**: `testing-types/performance-testing/PerformanceTestingPrompt_EN.md`
+- **Location**: `testing-types/performance-testing/Standard-version/PerformanceTestingPrompt_EN.md`
 - **Description**: Design performance test scenarios and performance metrics analysis
 - **Use Cases**: Performance test planning, performance bottleneck analysis
 - **Core Capabilities**:
@@ -126,7 +128,7 @@ This collection includes professional prompts for the following testing domains:
   - Performance monitoring and trend analysis
 
 ### 5. 🤖 Automation Testing
-- **Location**: `testing-types/automation-testing/AutomationTestingPrompt_EN.md`
+- **Location**: `testing-types/automation-testing/Standard-version/AutomationTestingPrompt_EN.md`
 - **Description**: Automation test script design and framework selection
 - **Use Cases**: Automation test implementation, CI/CD integration
 - **Core Capabilities**:
@@ -136,7 +138,7 @@ This collection includes professional prompts for the following testing domains:
   - CI/CD integration and maintenance optimization
 
 ### 6. 📱 Mobile Testing
-- **Location**: `testing-types/mobile-testing/MobileTestingPrompt_EN.md`
+- **Location**: `testing-types/mobile-testing/Standard-version/MobileTestingPrompt_EN.md`
 - **Description**: Mobile application testing strategies and scenario design
 - **Use Cases**: Mobile application testing, compatibility testing
 - **Core Capabilities**:
@@ -146,7 +148,7 @@ This collection includes professional prompts for the following testing domains:
   - Performance, security, and user experience specialized testing
 
 ### 7. 🐛 Bug Reporting
-- **Location**: `testing-types/bug-reporting/BugReportingPrompt_EN.md`
+- **Location**: `testing-types/bug-reporting/Standard-version/BugReportingPrompt_EN.md`
 - **Description**: Standardized bug report templates and bug analysis
 - **Use Cases**: Bug management, bug analysis
 - **Core Capabilities**:
@@ -156,7 +158,7 @@ This collection includes professional prompts for the following testing domains:
   - Bug lifecycle management
 
 ### 8. 📊 Test Reporting
-- **Location**: `testing-types/test-reporting/TestReportingPrompt_EN.md`
+- **Location**: `testing-types/test-reporting/Standard-version/TestReportingPrompt_EN.md`
 - **Description**: Test execution reports and quality analysis reports
 - **Use Cases**: Test summary, quality assessment
 - **Core Capabilities**:
@@ -166,7 +168,7 @@ This collection includes professional prompts for the following testing domains:
   - Decision support and improvement recommendations
 
 ### 9. 🎯 Test Strategy
-- **Location**: `testing-types/test-strategy/TestStrategyPrompt_EN.md`
+- **Location**: `testing-types/test-strategy/Standard-version/TestStrategyPrompt_EN.md`
 - **Description**: Overall test strategy development and test plan design
 - **Use Cases**: Project kickoff, test planning
 - **Core Capabilities**:
@@ -176,7 +178,7 @@ This collection includes professional prompts for the following testing domains:
   - Implementation plan and budget resource planning
 
 ### 10. 🤖 AI-Assisted Testing
-- **Location**: `testing-types/ai-assisted-testing/AIAssistedTestingPrompt_EN.md`
+- **Location**: `testing-types/ai-assisted-testing/Standard-version/AIAssistedTestingPrompt_EN.md`
 - **Description**: Leverage AI technology to improve testing efficiency and quality
 - **Use Cases**: Intelligent test generation, test optimization
 - **Core Capabilities**:
@@ -186,7 +188,7 @@ This collection includes professional prompts for the following testing domains:
   - Intelligent test data generation
 
 ### 11. 📋 Manual Testing
-- **Location**: `testing-types/manual-testing/ManualTestingPrompt_EN.md`
+- **Location**: `testing-types/manual-testing/Standard-version/ManualTestingPrompt_EN.md`
 - **Description**: Manual testing strategies and exploratory testing
 - **Use Cases**: Exploratory testing, user experience testing
 - **Core Capabilities**:
@@ -196,7 +198,7 @@ This collection includes professional prompts for the following testing domains:
   - Test session management
 
 ### 12. 🔒 Security Testing
-- **Location**: `testing-types/security-testing/SecurityTestingPrompt_EN.md`
+- **Location**: `testing-types/security-testing/Standard-version/SecurityTestingPrompt_EN.md`
 - **Description**: Security vulnerability detection and security testing strategies
 - **Use Cases**: Security audit, penetration testing
 - **Core Capabilities**:
@@ -206,7 +208,7 @@ This collection includes professional prompts for the following testing domains:
   - Security compliance checking
 
 ### 13. 🔌 API Testing
-- **Location**: `testing-types/api-testing/APITestingPrompt_EN.md`
+- **Location**: `testing-types/api-testing/Standard-version/APITestingPrompt_EN.md`
 - **Description**: API interface testing and integration testing
 - **Use Cases**: Interface testing, microservices testing
 - **Core Capabilities**:
@@ -216,7 +218,7 @@ This collection includes professional prompts for the following testing domains:
   - API security testing
 
 ### 14. ♿ Accessibility Testing
-- **Location**: `testing-types/accessibility-testing/AccessibilityTestingPrompt_EN.md`
+- **Location**: `testing-types/accessibility-testing/Standard-version/AccessibilityTestingPrompt_EN.md`
 - **Description**: Web accessibility testing and WCAG compliance checking
 - **Use Cases**: Accessibility testing, compliance verification
 - **Core Capabilities**:
@@ -226,7 +228,7 @@ This collection includes professional prompts for the following testing domains:
   - Color contrast and visual testing
 
 ### 15. 🔍 Test Case Review
-- **Location**: `testing-types/test-case-reviewer/TestCaseReviewerPrompt_EN.md`
+- **Location**: `testing-types/test-case-reviewer/Standard-version/TestCaseReviewerPrompt_EN.md`
 - **Description**: Professional test case review and quality control
 - **Use Cases**: Test case review, quality assessment, risk identification
 - **Core Capabilities**:
@@ -556,6 +558,19 @@ A: We recommend combining with manual review, especially for critical test scena
 **Q: Which testing frameworks are supported?**
 A: Prompts are framework-agnostic, and generated test documentation can be adapted to any testing framework and tools.
 
+## Prompt Authoring Standard
+
+The repository-wide authoring standard is documented in [PROMPT_AUTHORING_STANDARD_EN.md](./PROMPT_AUTHORING_STANDARD_EN.md).
+
+For the contribution workflow, see [CONTRIBUTING_EN.md](./CONTRIBUTING_EN.md).
+
+Use it when you:
+
+- add a new testing prompt
+- update module READMEs or default entry paths
+- add CRISPE / RISE / ICIO / ROSES / LangGPT variants
+- run batch reviews or consistency checks
+
 ## 🤝 Contributing
 
 We welcome all forms of contributions!
@@ -577,14 +592,19 @@ We welcome all forms of contributions!
    - Improve existing prompts
    - Add usage examples
 
-4. **Commit Changes**
+4. **Run Local Checks**
+   ```bash
+   npm run check:prompts
+   ```
+
+5. **Commit Changes**
    ```bash
    git add .
    git commit -m "Add: Describe your changes"
    git push origin feature/your-feature-name
    ```
 
-5. **Create Pull Request**
+6. **Create Pull Request**
 
 ## 🛠️ Local Development
 
