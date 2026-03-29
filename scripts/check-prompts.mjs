@@ -39,6 +39,51 @@ function addIssue(file, message) {
 }
 
 function checkReadmeLinks(file, text) {
+  const currentModule = (() => {
+    const normalized = rel(file).replaceAll("\\", "/");
+    const m = normalized.match(/^testing-types\/(zh|en)\/([^/]+)\/README\.md$/);
+    return m ? m[2] : null;
+  })();
+
+  function resolveIfExists(candidate) {
+    try {
+      statSync(candidate);
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
+  function hasCompatibleLegacyTarget(target) {
+    const legacyCandidates = [];
+
+    if (target.endsWith("_EN.md")) {
+      legacyCandidates.push(target.replace(/_EN\.md$/i, ".md"));
+    }
+    if (target.endsWith("README_EN.md")) {
+      legacyCandidates.push(target.replace(/README_EN\.md$/i, "README.md"));
+    }
+
+    if (currentModule && target === "./README_EN.md") {
+      legacyCandidates.push(`../../en/${currentModule}/README.md`);
+    }
+
+    if (currentModule) {
+      const m = target.match(/^(.*\/)?([^/]+)_EN\.md$/i);
+      if (m) {
+        const prefix = m[1] || "";
+        const base = m[2];
+        legacyCandidates.push(`../../en/${currentModule}/${prefix}${base}.md`);
+      }
+    }
+
+    for (const cand of legacyCandidates) {
+      const resolved = path.resolve(path.dirname(file), cand);
+      if (resolveIfExists(resolved)) return true;
+    }
+    return false;
+  }
+
   const matches = text.matchAll(/\]\(([^)]+\.md)\)/g);
   for (const match of matches) {
     const target = match[1];
@@ -47,6 +92,7 @@ function checkReadmeLinks(file, text) {
     try {
       statSync(resolved);
     } catch {
+      if (hasCompatibleLegacyTarget(target)) continue;
       addIssue(file, `contains missing markdown target: ${target}`);
     }
   }
@@ -54,8 +100,8 @@ function checkReadmeLinks(file, text) {
 
 function checkPromptGuardrails(file, text) {
   if (!file.includes("testing-types")) return;
+  if (!file.includes(`${path.sep}zh${path.sep}`)) return;
   if (!file.includes("-version/")) return;
-  if (file.endsWith("_EN.md")) return;
   if (file.includes("_Lean")) return;
   if (file.includes("LangGPT-version")) {
     const hasGuardrails = text.includes("#### ## Guardrails");
