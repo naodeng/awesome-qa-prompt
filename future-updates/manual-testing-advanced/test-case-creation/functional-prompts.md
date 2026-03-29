@@ -3,7 +3,7 @@
 ## 1. Feature-Based Test Case Generation
 
 ```
-I need to create comprehensive functional test cases for [FEATURE_NAME]. 
+I need to create comprehensive functional test cases for [FEATURE_NAME].
 
 Feature Description: [DESCRIBE_FEATURE]
 User Story: [USER_STORY]

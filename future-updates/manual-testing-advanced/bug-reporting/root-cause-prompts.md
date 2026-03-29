@@ -253,7 +253,7 @@ Potential Causes:
 1. [CAUSE_1] - Likelihood: [HIGH/MEDIUM/LOW]
    - Evidence: [SUPPORTING_EVIDENCE]
    - Investigation: [WHAT_TO_CHECK]
-   
+
 2. [CAUSE_2] - Likelihood: [HIGH/MEDIUM/LOW]
    - Evidence: [SUPPORTING_EVIDENCE]
    - Investigation: [WHAT_TO_CHECK]

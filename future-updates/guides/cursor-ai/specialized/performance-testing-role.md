@@ -50,12 +50,12 @@ export let options = {
 
 export default function () {
   let res = http.get('https://api.example.com/products');
-  
+
   check(res, {
     'status is 200': (r) => r.status === 200,
     'latency is low': (r) => r.timings.duration < 200,
   });
-  
+
   sleep(1);
 }
 ```

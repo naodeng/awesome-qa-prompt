@@ -89,4 +89,3 @@ public class AdvancedTestNGExample extends BaseTest {
 - Create custom listeners and reporters
 - Handle test dependencies appropriately
 - Optimize test execution time
-```

@@ -100,7 +100,7 @@ describe('Login Flow', () => {
     cy.getByDataCy('username-input').type('testuser');
     cy.getByDataCy('password-input').type('password123');
     cy.getByDataCy('login-button').click();
-    
+
     cy.url().should('include', '/dashboard');
     cy.getByDataCy('welcome-message').should('contain', 'Welcome, testuser');
   });
@@ -109,7 +109,7 @@ describe('Login Flow', () => {
     cy.getByDataCy('username-input').type('invalid');
     cy.getByDataCy('password-input').type('wrong');
     cy.getByDataCy('login-button').click();
-    
+
     cy.getByDataCy('error-message')
       .should('be.visible')
       .and('contain', 'Invalid credentials');
@@ -131,10 +131,10 @@ describe('API Integration Tests', () => {
 
   it('should load and display users', () => {
     cy.visit('/users');
-    
+
     // Wait for API call
     cy.wait('@getUsers').its('response.statusCode').should('eq', 200);
-    
+
     // Verify UI updates
     cy.getByDataCy('user-list').children().should('have.length', 5);
   });
@@ -144,13 +144,13 @@ describe('API Integration Tests', () => {
     cy.getByDataCy('add-user-button').click();
     cy.getByDataCy('name-input').type('New User');
     cy.getByDataCy('submit-button').click();
-    
+
     // Wait for POST request and verify
     cy.wait('@createUser').then((interception) => {
       expect(interception.request.body).to.have.property('name', 'New User');
       expect(interception.response.statusCode).to.eq(201);
     });
-    
+
     cy.getByDataCy('success-message').should('be.visible');
   });
 
@@ -159,10 +159,10 @@ describe('API Integration Tests', () => {
       statusCode: 500,
       body: { error: 'Server Error' }
     }).as('getUsersError');
-    
+
     cy.visit('/users');
     cy.wait('@getUsersError');
-    
+
     cy.getByDataCy('error-banner')
       .should('be.visible')
       .and('contain', 'Failed to load users');
@@ -198,16 +198,16 @@ export class UserActions {
 describe('User Management', () => {
   it('should create and delete user', () => {
     cy.visit('/users');
-    
+
     UserActions.createUser({
       name: 'John Doe',
       email: 'john@example.com'
     });
-    
+
     cy.getByDataCy('user-list').should('contain', 'John Doe');
-    
+
     UserActions.deleteUser('John Doe');
-    
+
     cy.getByDataCy('user-list').should('not.contain', 'John Doe');
   });
 });
@@ -227,7 +227,7 @@ describe('Button Component', () => {
   it('should call onClick handler when clicked', () => {
     const onClickSpy = cy.spy().as('onClickSpy');
     cy.mount(<Button onClick={onClickSpy}>Click Me</Button>);
-    
+
     cy.get('button').click();
     cy.get('@onClickSpy').should('have.been.calledOnce');
   });

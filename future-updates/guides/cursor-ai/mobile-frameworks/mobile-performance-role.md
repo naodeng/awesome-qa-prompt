@@ -101,7 +101,7 @@ from appium.options.android import UiAutomator2Options
 class AppLaunchPerformanceTest:
     def __init__(self):
         self.launch_times = []
-        
+
     def setup_driver(self):
         options = UiAutomator2Options()
         options.platform_name = 'Android'
@@ -110,65 +110,65 @@ class AppLaunchPerformanceTest:
         options.app_package = 'com.example.app'
         options.app_activity = '.MainActivity'
         options.no_reset = False
-        
+
         return webdriver.Remote('http://127.0.0.1:4723', options=options)
-    
+
     def measure_cold_start(self, iterations=5):
         """Measure cold start time (app not in memory)"""
         for i in range(iterations):
             driver = self.setup_driver()
-            
+
             # Start timing
             start_time = time.time()
-            
+
             # Wait for app to be fully loaded
             driver.implicitly_wait(10)
             driver.find_element(by='id', value='com.example.app:id/main_screen')
-            
+
             # End timing
             end_time = time.time()
             launch_time = end_time - start_time
-            
+
             self.launch_times.append(launch_time)
             print(f"Cold start {i+1}: {launch_time:.2f}s")
-            
+
             driver.quit()
             time.sleep(2)  # Allow system to clean up
-        
+
         return self.calculate_metrics()
-    
+
     def measure_warm_start(self, iterations=5):
         """Measure warm start time (app in background)"""
         driver = self.setup_driver()
-        
+
         for i in range(iterations):
             # Background the app
             driver.background_app(5)
-            
+
             # Start timing
             start_time = time.time()
-            
+
             # Activate the app
             driver.activate_app('com.example.app')
-            
+
             # Wait for app to be visible
             driver.find_element(by='id', value='com.example.app:id/main_screen')
-            
+
             # End timing
             end_time = time.time()
             launch_time = end_time - start_time
-            
+
             self.launch_times.append(launch_time)
             print(f"Warm start {i+1}: {launch_time:.2f}s")
-        
+
         driver.quit()
         return self.calculate_metrics()
-    
+
     def calculate_metrics(self):
         avg = sum(self.launch_times) / len(self.launch_times)
         min_time = min(self.launch_times)
         max_time = max(self.launch_times)
-        
+
         return {
             'average': avg,
             'min': min_time,
@@ -188,20 +188,20 @@ print(f"\nCold Start Metrics: {cold_start_metrics}")
 import XCTest
 
 class MemoryLeakTests: XCTestCase {
-    
+
     var app: XCUIApplication!
-    
+
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
         app = XCUIApplication()
         app.launch()
     }
-    
+
     func testMemoryLeakOnScreenNavigation() {
         // Measure memory before navigation
         let initialMemory = measureMemory()
-        
+
         // Navigate through screens multiple times
         for _ in 1...20 {
             app.buttons["Profile"].tap()
@@ -209,21 +209,21 @@ class MemoryLeakTests: XCTestCase {
             app.navigationBars.buttons.element(boundBy: 0).tap()
             sleep(1)
         }
-        
+
         // Force garbage collection (if possible)
         sleep(5)
-        
+
         // Measure memory after navigation
         let finalMemory = measureMemory()
-        
+
         // Memory should not increase significantly
         let memoryIncrease = finalMemory - initialMemory
         let threshold: Double = 50 // MB
-        
-        XCTAssertLessThan(memoryIncrease, threshold, 
+
+        XCTAssertLessThan(memoryIncrease, threshold,
             "Memory leak detected: \(memoryIncrease)MB increase")
     }
-    
+
     func measureMemory() -> Double {
         let metrics = XCTMetric.applicationLaunch
         let measurement = measure(metrics: [metrics]) {
@@ -232,7 +232,7 @@ class MemoryLeakTests: XCTestCase {
         // Return memory in MB
         return measurement.memoryPhysical / 1024 / 1024
     }
-    
+
     func testScrollPerformance() {
         measure(metrics: [XCTOSSignpostMetric.scrollDecelerationMetric]) {
             let table = app.tables.firstMatch
@@ -251,7 +251,7 @@ class NetworkPerformanceMonitor {
         this.driver = driver;
         this.networkLogs = [];
     }
-    
+
     async startMonitoring() {
         // Enable network logging
         await this.driver.execute('mobile: startPerfRecord', {
@@ -259,14 +259,14 @@ class NetworkPerformanceMonitor {
             profileName: 'network'
         });
     }
-    
+
     async stopMonitoring() {
         const perfData = await this.driver.execute('mobile: stopPerfRecord', {
             profileName: 'network'
         });
         return this.parseNetworkData(perfData);
     }
-    
+
     parseNetworkData(data) {
         const metrics = {
             totalRequests: 0,
@@ -275,27 +275,27 @@ class NetworkPerformanceMonitor {
             slowRequests: [],
             failedRequests: []
         };
-        
+
         // Parse and analyze network data
         // Implementation depends on the data format
-        
+
         return metrics;
     }
-    
+
     async measureAPIPerformance(endpoint, iterations = 10) {
         const responseTimes = [];
-        
+
         for (let i = 0; i < iterations; i++) {
             const startTime = Date.now();
-            
+
             // Trigger API call in the app
             await this.triggerAPICall(endpoint);
-            
+
             const endTime = Date.now();
             const responseTime = endTime - startTime;
             responseTimes.push(responseTime);
         }
-        
+
         return {
             average: responseTimes.reduce((a, b) => a + b) / responseTimes.length,
             min: Math.min(...responseTimes),
@@ -304,7 +304,7 @@ class NetworkPerformanceMonitor {
             p99: this.calculatePercentile(responseTimes, 99)
         };
     }
-    
+
     calculatePercentile(values, percentile) {
         const sorted = values.sort((a, b) => a - b);
         const index = Math.ceil((percentile / 100) * sorted.length) - 1;

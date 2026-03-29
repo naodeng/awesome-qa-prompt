@@ -22,19 +22,19 @@ Include methods for:
 
 ```java
 public class WebUtils {
-    
+
     public static void clickElement(WebDriver driver, By locator) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
         element.click();
     }
-    
+
     public static void enterText(WebDriver driver, By locator, String text) {
         WebElement element = driver.findElement(locator);
         element.clear();
         element.sendKeys(text);
     }
-    
+
     public static String captureScreenshot(WebDriver driver, String testName) {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);

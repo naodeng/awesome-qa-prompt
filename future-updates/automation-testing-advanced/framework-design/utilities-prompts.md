@@ -26,7 +26,7 @@ Include:
 ```java
 public class ConfigManager {
     private static Properties properties;
-    
+
     static {
         try {
             properties = new Properties();
@@ -36,15 +36,15 @@ public class ConfigManager {
             e.printStackTrace();
         }
     }
-    
+
     public static String getProperty(String key) {
         return properties.getProperty(key);
     }
-    
+
     public static String getBaseUrl() {
         return getProperty("base.url");
     }
-    
+
     public static String getBrowser() {
         return getProperty("browser");
     }

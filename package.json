@@ -4,9 +4,8 @@
   "description": "专业的 QA（质量保证）AI 提示词集合",
   "scripts": {
     "check:prompts": "node scripts/check-prompts.mjs",
-    "docs:dev": "vitepress dev .",
-    "docs:build": "vitepress build .",
-    "docs:preview": "vitepress preview ."
+    "check:markdown-format": "node scripts/check-markdown-format.mjs",
+    "check:all": "npm run check:prompts && npm run check:markdown-format"
   },
   "keywords": [
     "qa",
@@ -18,7 +17,6 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.0.0",
-    "vitepress": "^2.0.0-alpha.15"
+    "@types/node": "^20.0.0"
   }
 }

@@ -168,13 +168,13 @@ def test_get_user(start_pact):
         'email': 'john@example.com',
         'status': 'active'
     }
-    
+
     (pact
      .given('user exists with id 123')
      .upon_receiving('a request for user 123')
      .with_request('GET', '/users/123')
      .will_respond_with(200, body=expected))
-    
+
     with pact:
         response = requests.get(f'{pact.uri}/users/123')
         assert response.json() == expected

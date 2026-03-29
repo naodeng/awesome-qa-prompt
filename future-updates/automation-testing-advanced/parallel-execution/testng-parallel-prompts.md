@@ -44,20 +44,20 @@ Ensure:
 ```java
 public class DriverManager {
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    
+
     public static WebDriver getDriver() {
         if (driver.get() == null) {
             driver.set(createDriver());
         }
         return driver.get();
     }
-    
+
     private static WebDriver createDriver() {
         WebDriver webDriver = new ChromeDriver();
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         return webDriver;
     }
-    
+
     public static void quitDriver() {
         if (driver.get() != null) {
             driver.get().quit();
@@ -73,4 +73,3 @@ public class DriverManager {
 2. **Independence**: Tests should not depend on each other
 3. **Data Isolation**: Separate test data per thread
 4. **Resource Management**: Proper cleanup in @AfterMethod
-```

@@ -136,7 +136,7 @@ class SelfHealingDriver:
         self.driver = driver
         self.locator_history = {}
         self.ai_model = LocalizationModel()
-    
+
     def find_element(self, by, value, heal=True):
         try:
             element = self.driver.find_element(by, value)
@@ -147,11 +147,11 @@ class SelfHealingDriver:
                 return self._heal_and_find(by, value)
             else:
                 raise
-    
+
     def _heal_and_find(self, original_by, original_value):
         # Try alternative locators
         alternatives = self._generate_alternatives(original_by, original_value)
-        
+
         for alt_by, alt_value in alternatives:
             try:
                 element = self.driver.find_element(alt_by, alt_value)
@@ -159,30 +159,30 @@ class SelfHealingDriver:
                 return element
             except NoSuchElementException:
                 continue
-        
+
         raise NoSuchElementException(f"Could not heal locator: {original_value}")
-    
+
     def _generate_alternatives(self, by, value):
         # AI-powered alternative generation
         alternatives = []
-        
+
         # Try partial match
         if by == By.ID:
             alternatives.append((By.CSS_SELECTOR, f"[id*='{value}']"))
-        
+
         # Try similar attributes
         if by == By.CLASS_NAME:
             similar = self.ai_model.find_similar_class(value)
             alternatives.extend([(By.CLASS_NAME, s) for s in similar])
-        
+
         # Try visual identification
         if self.ai_model.visual_recognition_enabled:
             visual_locator = self.ai_model.find_by_visual_match(value)
             if visual_locator:
                 alternatives.append(visual_locator)
-        
+
         return alternatives
-    
+
     def _record_heal(self, old_by, old_value, new_by, new_value):
         print(f"🔧 Healed locator: {old_value} -> {new_value}")
         self.locator_history[f"{old_by}:{old_value}"] = {
@@ -190,7 +190,7 @@ class SelfHealingDriver:
             'new_value': new_value,
             'timestamp': datetime.now()
         }
-        
+
         # Optionally create JIRA ticket or PR for permanent fix
         self._notify_team(old_by, old_value, new_by, new_value)
 ```
@@ -202,4 +202,3 @@ class SelfHealingDriver:
 3. **Version Control**: Track all automated changes
 4. **Fallback**: Always have manual override option
 5. **Monitoring**: Track healing success rate
-```

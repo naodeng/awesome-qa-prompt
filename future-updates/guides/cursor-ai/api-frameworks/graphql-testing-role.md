@@ -39,7 +39,7 @@ describe('GraphQL API Tests', () => {
         `;
 
         const variables = { id: '123' };
-        
+
         const response = await request(endpoint, query, variables, {
             Authorization: token
         });
@@ -104,7 +104,7 @@ from gql.transport.requests import RequestsHTTPTransport
 import pytest
 
 class TestGraphQLAPI:
-    
+
     @classmethod
     def setup_class(cls):
         transport = RequestsHTTPTransport(
@@ -112,7 +112,7 @@ class TestGraphQLAPI:
             headers={'Authorization': 'Bearer token'}
         )
         cls.client = Client(transport=transport, fetch_schema_from_transport=True)
-    
+
     def test_query_users(self):
         query = gql('''
             query {
@@ -123,11 +123,11 @@ class TestGraphQLAPI:
                 }
             }
         ''')
-        
+
         result = self.client.execute(query)
         assert len(result['users']) > 0
         assert 'name' in result['users'][0]
-    
+
     def test_mutation_create_user(self):
         mutation = gql('''
             mutation CreateUser($name: String!, $email: String!) {
@@ -137,12 +137,12 @@ class TestGraphQLAPI:
                 }
             }
         ''')
-        
+
         variables = {
             'name': 'Alice',
             'email': 'alice@example.com'
         }
-        
+
         result = self.client.execute(mutation, variable_values=variables)
         assert result['createUser']['id'] is not None
         assert result['createUser']['name'] == 'Alice'
@@ -154,4 +154,3 @@ class TestGraphQLAPI:
 - Test field-level permissions
 - Check query performance and complexity
 - Test subscription lifecycle
-```

@@ -49,18 +49,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ExcelDataProvider {
-    
+
     public static Object[][] getTestData(String filePath, String sheetName) {
         Object[][] data = null;
         try (FileInputStream fis = new FileInputStream(filePath);
              Workbook workbook = new XSSFWorkbook(fis)) {
-            
+
             Sheet sheet = workbook.getSheet(sheetName);
             int rowCount = sheet.getLastRowNum();
             int colCount = sheet.getRow(0).getLastCellNum();
-            
+
             data = new Object[rowCount][colCount];
-            
+
             for (int i = 1; i <= rowCount; i++) {
                 Row row = sheet.getRow(i);
                 for (int j = 0; j < colCount; j++) {
@@ -73,7 +73,7 @@ public class ExcelDataProvider {
         }
         return data;
     }
-    
+
     private static Object getCellValue(Cell cell) {
         switch (cell.getCellType()) {
             case STRING:
@@ -103,30 +103,30 @@ import utils.ExcelDataProvider;
 import pages.LoginPage;
 
 public class LoginTest extends BaseTest {
-    
+
     @DataProvider(name = "loginData")
     public Object[][] getLoginData() {
         return ExcelDataProvider.getTestData(
-            "src/test/resources/testdata/LoginData.xlsx", 
+            "src/test/resources/testdata/LoginData.xlsx",
             "LoginTests"
         );
     }
-    
+
     @Test(dataProvider = "loginData")
-    public void testLogin(String username, String password, 
+    public void testLogin(String username, String password,
                          String expectedResult, String description) {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login(username, password);
-        
+
         if (expectedResult.equals("Success")) {
-            Assert.assertTrue(dashboardPage.isDashboardLoaded(), 
+            Assert.assertTrue(dashboardPage.isDashboardLoaded(),
                             description);
         } else {
-            Assert.assertTrue(loginPage.isErrorMessageDisplayed(), 
+            Assert.assertTrue(loginPage.isErrorMessageDisplayed(),
                             description);
         }
     }
-    
+
     @DataProvider(name = "csvData")
     public Object[][] getCsvData() throws IOException {
         List<Object[]> data = new ArrayList<>();
@@ -182,12 +182,12 @@ def test_valid_login(driver, test_case):
     """Test login with valid credentials from JSON"""
     login_page = LoginPage(driver)
     login_page.navigate_to_login()
-    
+
     dashboard = login_page.login(
-        test_case["username"], 
+        test_case["username"],
         test_case["password"]
     )
-    
+
     assert dashboard.is_loaded()
     assert test_case["expected_name"] in dashboard.get_welcome_message()
 
@@ -196,9 +196,9 @@ def test_invalid_login(driver, test_case):
     """Test login with invalid credentials from JSON"""
     login_page = LoginPage(driver)
     login_page.navigate_to_login()
-    
+
     login_page.login(test_case["username"], test_case["password"])
-    
+
     assert login_page.is_error_displayed()
     assert test_case["expected_error"] in login_page.get_error_message()
 
@@ -211,14 +211,14 @@ def test_user_creation(driver, user):
     """Test user creation with data from CSV"""
     registration_page = RegistrationPage(driver)
     registration_page.navigate_to_registration()
-    
+
     registration_page.create_user(
         first_name=user["first_name"],
         last_name=user["last_name"],
         email=user["email"],
         role=user["role"]
     )
-    
+
     assert registration_page.is_success_message_displayed()
 
 # testdata/login_data.json
@@ -268,10 +268,10 @@ import pymysql
 from typing import List, Dict
 
 class DatabaseDataProvider:
-    
+
     def __init__(self, db_config):
         self.db_config = db_config
-    
+
     def get_test_data(self, query: str) -> List[Dict]:
         """Execute query and return results as list of dictionaries"""
         connection = pymysql.connect(**self.db_config)
@@ -281,14 +281,14 @@ class DatabaseDataProvider:
                 return cursor.fetchall()
         finally:
             connection.close()
-    
+
     def get_user_test_data(self, user_type: str = None) -> List[Dict]:
         """Get user test data from database"""
         query = "SELECT * FROM test_users"
         if user_type:
             query += f" WHERE user_type = '{user_type}'"
         return self.get_test_data(query)
-    
+
     def get_product_test_data(self, category: str = None) -> List[Dict]:
         """Get product test data from database"""
         query = "SELECT * FROM test_products WHERE is_active = 1"
@@ -318,12 +318,12 @@ def test_login_with_db_users(driver, user_data):
     """Test login with users from database"""
     login_page = LoginPage(driver)
     login_page.navigate_to_login()
-    
+
     dashboard = login_page.login(
         user_data['username'],
         user_data['password']
     )
-    
+
     assert dashboard.is_loaded()
     assert user_data['full_name'] in dashboard.get_welcome_message()
 ```
@@ -340,7 +340,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.stream.Stream;
 
 public class LoginParameterizedTest {
-    
+
     // Simple value source
     @ParameterizedTest
     @ValueSource(strings = {"admin", "user", "guest"})
@@ -350,7 +350,7 @@ public class LoginParameterizedTest {
         loginPage.login(username, "password123");
         assertTrue(dashboardPage.isDashboardLoaded());
     }
-    
+
     // CSV source
     @ParameterizedTest
     @CsvSource({
@@ -359,11 +359,11 @@ public class LoginParameterizedTest {
         "invalid, wrong, false, Error Message"
     })
     @DisplayName("Test login with CSV data")
-    void testLoginWithCsvData(String username, String password, 
+    void testLoginWithCsvData(String username, String password,
                               boolean shouldSucceed, String expectedText) {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login(username, password);
-        
+
         if (shouldSucceed) {
             assertTrue(dashboardPage.isDashboardLoaded());
             assertTrue(dashboardPage.getPageTitle().contains(expectedText));
@@ -371,23 +371,23 @@ public class LoginParameterizedTest {
             assertTrue(loginPage.isErrorMessageDisplayed());
         }
     }
-    
+
     // CSV file source
     @ParameterizedTest
     @CsvFileSource(resources = "/testdata/login_data.csv", numLinesToSkip = 1)
     @DisplayName("Test login with CSV file")
-    void testLoginWithCsvFile(String username, String password, 
+    void testLoginWithCsvFile(String username, String password,
                               String expectedResult) {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login(username, password);
-        
+
         if (expectedResult.equals("Success")) {
             assertTrue(dashboardPage.isDashboardLoaded());
         } else {
             assertTrue(loginPage.isErrorMessageDisplayed());
         }
     }
-    
+
     // Method source
     @ParameterizedTest
     @MethodSource("provideLoginData")
@@ -395,11 +395,11 @@ public class LoginParameterizedTest {
     void testLoginWithMethodSource(LoginData data) {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login(data.getUsername(), data.getPassword());
-        
-        assertEquals(data.getExpectedResult(), 
+
+        assertEquals(data.getExpectedResult(),
                     dashboardPage.isDashboardLoaded());
     }
-    
+
     static Stream<LoginData> provideLoginData() {
         return Stream.of(
             new LoginData("admin", "admin123", true),
@@ -407,7 +407,7 @@ public class LoginParameterizedTest {
             new LoginData("invalid", "wrong", false)
         );
     }
-    
+
     // Arguments source (custom provider)
     @ParameterizedTest
     @ArgumentsSource(JsonDataProvider.class)
@@ -415,7 +415,7 @@ public class LoginParameterizedTest {
     void testWithJsonData(String username, String password, String role) {
         LoginPage loginPage = new LoginPage(driver);
         DashboardPage dashboard = loginPage.login(username, password);
-        
+
         assertEquals(role, dashboard.getUserRole());
     }
 }
@@ -447,7 +447,7 @@ loginData.validUsers.forEach((userData) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
     await loginPage.login(userData.username, userData.password);
-    
+
     await expect(page).toHaveURL(/.*dashboard/);
     await expect(page.locator('.welcome-message'))
       .toContainText(userData.expectedName);
@@ -463,7 +463,7 @@ users.forEach((user) => {
     const registrationPage = new RegistrationPage(page);
     await registrationPage.goto();
     await registrationPage.fillForm(user);
-    
+
     await expect(page.locator('.success-message')).toBeVisible();
   });
 });
@@ -480,7 +480,7 @@ for (const testCase of testCases) {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
     await loginPage.login(testCase.username, testCase.password);
-    
+
     const role = await page.locator('.user-role').textContent();
     expect(role).toBe(testCase.role);
   });
@@ -526,31 +526,31 @@ public class UserBuilder {
     private String password;
     private String email;
     private String role;
-    
+
     public UserBuilder withUsername(String username) {
         this.username = username;
         return this;
     }
-    
+
     public UserBuilder withPassword(String password) {
         this.password = password;
         return this;
     }
-    
+
     public UserBuilder withEmail(String email) {
         this.email = email;
         return this;
     }
-    
+
     public UserBuilder withRole(String role) {
         this.role = role;
         return this;
     }
-    
+
     public User build() {
         return new User(username, password, email, role);
     }
-    
+
     // Preset configurations
     public static UserBuilder adminUser() {
         return new UserBuilder()

@@ -119,7 +119,7 @@ describe('User API Contract', () => {
     };
 
     await provider.addInteraction(interaction);
-    
+
     // Test consumer code against mock
     const user = await userService.getUser(123);
     expect(user).toEqual(expectedUser);
@@ -133,13 +133,13 @@ describe('User API Contract', () => {
 @Provider("UserAPI")
 @PactBroker(host = "pact-broker", port = "443")
 public class UserAPIContractTest {
-    
+
     @TestTemplate
     @ExtendWith(PactVerificationInvocationContextProvider.class)
     void verifyContract(PactVerificationContext context) {
         context.verifyInteraction();
     }
-    
+
     @State("user 123 exists")
     public void userExists() {
         // Provider sets up test data
@@ -308,10 +308,10 @@ stages:
   - test:
       - run consumer contract tests
       - publish contracts to broker
-  
+
   - verify:
       - can-i-deploy check
-  
+
   - deploy:
       - if can-i-deploy passes
       - tag version in broker
@@ -322,10 +322,10 @@ stages:
       - fetch contracts from broker
       - run provider verification tests
       - publish verification results
-  
+
   - check:
       - can-i-deploy check
-  
+
   - deploy:
       - if can-i-deploy passes
       - tag version in broker

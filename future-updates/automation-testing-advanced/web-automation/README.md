@@ -93,7 +93,7 @@ For code generation, use the expert roles:
 
 ## 🤝 Contributing
 
-Have prompts for other web frameworks (Puppeteer, TestCafe, etc.)? 
+Have prompts for other web frameworks (Puppeteer, TestCafe, etc.)?
 
 See [Contribution Guidelines](../../docs/contribution-guidelines.md) for how to contribute.
 

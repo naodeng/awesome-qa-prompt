@@ -99,14 +99,14 @@ import requests
 def check_security_headers(url):
     response = requests.get(url)
     headers = response.headers
-    
+
     required = {
         'Strict-Transport-Security': 'HSTS',
         'X-Content-Type-Options': 'nosniff',
         'X-Frame-Options': 'DENY/SAMEORIGIN',
         'Content-Security-Policy': 'CSP'
     }
-    
+
     print(f"Checking headers for {url}...")
     for header, name in required.items():
         if header in headers:

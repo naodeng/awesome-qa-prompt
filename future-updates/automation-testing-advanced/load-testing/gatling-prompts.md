@@ -85,7 +85,7 @@ class UserAPILoadTest extends Simulation {
 
   // Feeders for test data
   val userFeeder = csv("users.csv").random
-  
+
   // Scenario Definition
   val scn = scenario("User API Load Test")
     .feed(userFeeder)
@@ -393,10 +393,10 @@ setUp(scn.inject(...))
    ```bash
    # Maven
    mvn gatling:test
-   
+
    # Gradle
    gradle gatlingRun
-   
+
    # Direct execution
    gatling.sh -s simulations.UserAPILoadTest
    ```

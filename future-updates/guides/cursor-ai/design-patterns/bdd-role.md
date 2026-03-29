@@ -100,56 +100,56 @@ public class LoginSteps {
     private LoginPage loginPage;
     private DashboardPage dashboardPage;
     private String errorMessage;
-    
+
     public LoginSteps() {
         this.driver = Hooks.getDriver();
         this.loginPage = new LoginPage(driver);
     }
-    
+
     @Given("the user is on the login page")
     public void userIsOnLoginPage() {
         driver.get("https://example.com/login");
     }
-    
+
     @Given("the user enters username {string}")
     public void userEntersUsername(String username) {
         loginPage.enterUsername(username);
     }
-    
+
     @Given("the user enters password {string}")
     public void userEntersPassword(String password) {
         loginPage.enterPassword(password);
     }
-    
+
     @When("the user clicks the login button")
     public void userClicksLoginButton() {
         dashboardPage = loginPage.clickLoginButton();
     }
-    
+
     @Then("the user should be redirected to the dashboard")
     public void userShouldBeRedirectedToDashboard() {
         assertTrue("Dashboard not loaded", dashboardPage.isDashboardLoaded());
     }
-    
+
     @Then("the welcome message should display {string}")
     public void welcomeMessageShouldDisplay(String expectedMessage) {
         String actualMessage = dashboardPage.getWelcomeMessage();
-        assertTrue("Welcome message incorrect", 
+        assertTrue("Welcome message incorrect",
                    actualMessage.contains(expectedMessage));
     }
-    
+
     @Then("an error message should be displayed")
     public void errorMessageShouldBeDisplayed() {
-        assertTrue("Error message not displayed", 
+        assertTrue("Error message not displayed",
                    loginPage.isErrorMessageDisplayed());
     }
-    
+
     @Then("the error message should say {string}")
     public void errorMessageShouldSay(String expectedError) {
         String actualError = loginPage.getErrorMessage();
         assertEquals("Error message incorrect", expectedError, actualError);
     }
-    
+
     @When("the user fills in the registration form with:")
     public void userFillsRegistrationForm(DataTable dataTable) {
         Map<String, String> data = dataTable.asMap(String.class, String.class);
@@ -167,14 +167,14 @@ import java.time.Duration;
 
 public class Hooks {
     private static WebDriver driver;
-    
+
     @Before
     public void setUp() {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
     }
-    
+
     @After
     public void tearDown(Scenario scenario) {
         if (scenario.isFailed()) {
@@ -187,17 +187,17 @@ public class Hooks {
             driver.quit();
         }
     }
-    
+
     @BeforeStep
     public void beforeStep() {
         // Log step execution
     }
-    
+
     @AfterStep
     public void afterStep() {
         // Additional logging or validation
     }
-    
+
     public static WebDriver getDriver() {
         return driver;
     }
@@ -306,7 +306,7 @@ def after_scenario(context, scenario):
         # Take screenshot on failure
         screenshot_name = f"{scenario.name}.png"
         context.driver.save_screenshot(f"screenshots/{screenshot_name}")
-    
+
     context.driver.quit()
 
 def after_step(context, step):
@@ -319,7 +319,7 @@ def after_step(context, step):
 ```typescript
 // features/login.feature
 Feature: User Authentication
-  
+
   @smoke
   Scenario: Successful login
     Given I navigate to the login page
@@ -363,7 +363,7 @@ Given('I navigate to the login page', async function() {
   await page.goto('https://example.com/login');
 });
 
-When('I login with username {string} and password {string}', 
+When('I login with username {string} and password {string}',
   async function(username: string, password: string) {
     await loginPage.login(username, password);
 });

@@ -228,10 +228,10 @@ test.describe('Visual Regression Tests', () => {
         test(`${page.name} - ${viewport.name}`, async ({ page: playwright }) => {
           // Navigate to page
           await playwright.goto(page.url);
-          
+
           // Wait for page to be fully loaded
           await playwright.waitForLoadState('networkidle');
-          
+
           // Take Percy snapshot
           await percySnapshot(playwright, `${page.name} - ${viewport.name}`, {
             widths: [viewport.width],

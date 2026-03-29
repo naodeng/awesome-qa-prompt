@@ -223,7 +223,7 @@ Include:
 @ExtendWith(PactConsumerTestExt.class)
 @PactTestFor(providerName = "payment-api")
 public class PaymentApiContractTest {
-    
+
     @Pact(consumer = "order-service")
     public RequestResponsePact processPaymentSuccess(PactDslWithProvider builder) {
         return builder
@@ -275,7 +275,7 @@ public class PaymentApiContractTest {
 @Provider("payment-api")
 @PactBroker(url = "${pact.broker.url}")
 public class PaymentApiProviderTest {
-    
+
     @TestTemplate
     @ExtendWith(PactVerificationInvocationContextProvider.class)
     void pactVerificationTestTemplate(PactVerificationContext context) {

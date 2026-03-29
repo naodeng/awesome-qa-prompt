@@ -175,7 +175,7 @@ export function setup() {
     username: 'test',
     password: 'test123',
   });
-  
+
   return { token: authRes.json().token };
 }
 
@@ -241,13 +241,13 @@ export const options = {
 
 export function constantLoad() {
   const user = testData[__VU % testData.length];
-  
+
   const res = http.get(`https://api.example.com/api/users/${user.id}`);
-  
+
   check(res, {
     'status is 200': (r) => r.status === 200,
   });
-  
+
   sleep(1);
 }
 
@@ -257,13 +257,13 @@ export function rampingLoad() {
     ['GET', 'https://api.example.com/api/products'],
     ['GET', 'https://api.example.com/api/orders'],
   ]);
-  
+
   batch.forEach((res) => {
     check(res, {
       'status is 200': (r) => r.status === 200,
     });
   });
-  
+
   sleep(0.5);
 }
 
@@ -272,7 +272,7 @@ export function arrivalRate() {
     'https://api.example.com/api/events',
     JSON.stringify({ event: 'click', timestamp: Date.now() })
   );
-  
+
   check(res, {
     'status is 201': (r) => r.status === 201,
   });
@@ -403,15 +403,15 @@ export const options = {
 
 export default async function () {
   const page = browser.newPage();
-  
+
   try {
     await page.goto('https://example.com');
-    
+
     const submitButton = page.locator('input[type="submit"]');
     await submitButton.click();
-    
+
     await page.waitForSelector('.success-message');
-    
+
     page.screenshot({ path: 'screenshot.png' });
   } finally {
     page.close();
@@ -480,7 +480,7 @@ export default function () {
    - name: Run K6 Load Test
      run: |
        k6 run --out json=results.json script.js
-       
+
    - name: Check Thresholds
      run: |
        if grep '"status":false' results.json; then

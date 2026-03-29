@@ -88,13 +88,13 @@ import java.util.Properties;
 public class ConfigReader {
     private static Properties properties;
     private static final String CONFIG_PATH = "src/main/resources/config/config.properties";
-    
+
     static {
         try {
             FileInputStream fis = new FileInputStream(CONFIG_PATH);
             properties = new Properties();
             properties.load(fis);
-            
+
             // Load environment-specific properties
             String env = System.getProperty("env", "dev");
             String envConfigPath = "src/main/resources/config/" + env + ".properties";
@@ -105,23 +105,23 @@ public class ConfigReader {
             throw new RuntimeException("Failed to load configuration files");
         }
     }
-    
+
     public static String getProperty(String key) {
         return properties.getProperty(key);
     }
-    
+
     public static String getBaseUrl() {
         return properties.getProperty("base.url");
     }
-    
+
     public static String getBrowser() {
         return System.getProperty("browser", properties.getProperty("browser"));
     }
-    
+
     public static int getTimeout() {
         return Integer.parseInt(properties.getProperty("timeout", "10"));
     }
-    
+
     public static boolean isHeadless() {
         return Boolean.parseBoolean(properties.getProperty("headless", "false"));
     }
@@ -140,18 +140,18 @@ import java.time.Duration;
 
 public class DriverManager {
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    
+
     public static WebDriver getDriver() {
         if (driver.get() == null) {
             driver.set(createDriver());
         }
         return driver.get();
     }
-    
+
     private static WebDriver createDriver() {
         String browser = ConfigReader.getBrowser();
         WebDriver webDriver;
-        
+
         switch (browser.toLowerCase()) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
@@ -163,7 +163,7 @@ public class DriverManager {
                 chromeOptions.addArguments("--disable-notifications");
                 webDriver = new ChromeDriver(chromeOptions);
                 break;
-                
+
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
@@ -172,18 +172,18 @@ public class DriverManager {
                 }
                 webDriver = new FirefoxDriver(firefoxOptions);
                 break;
-                
+
             default:
                 throw new IllegalArgumentException("Browser not supported: " + browser);
         }
-        
+
         webDriver.manage().timeouts()
             .implicitlyWait(Duration.ofSeconds(ConfigReader.getTimeout()));
         webDriver.manage().window().maximize();
-        
+
         return webDriver;
     }
-    
+
     public static void quitDriver() {
         if (driver.get() != null) {
             driver.get().quit();
@@ -207,13 +207,13 @@ import listeners.TestListener;
 @Listeners(TestListener.class)
 public class BaseTest {
     protected WebDriver driver;
-    
+
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
         driver = DriverManager.getDriver();
         driver.get(ConfigReader.getBaseUrl());
     }
-    
+
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
         DriverManager.quitDriver();
@@ -234,7 +234,7 @@ import java.io.IOException;
 public class TestListener implements ITestListener {
     private static ExtentReports extent;
     private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
-    
+
     @Override
     public void onStart(ITestContext context) {
         ExtentSparkReporter sparkReporter = new ExtentSparkReporter("reports/extent-report.html");
@@ -243,27 +243,27 @@ public class TestListener implements ITestListener {
         extent.setSystemInfo("Environment", System.getProperty("env", "dev"));
         extent.setSystemInfo("Browser", System.getProperty("browser", "chrome"));
     }
-    
+
     @Override
     public void onTestStart(ITestResult result) {
         ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName());
         test.set(extentTest);
     }
-    
+
     @Override
     public void onTestSuccess(ITestResult result) {
         test.get().log(Status.PASS, "Test passed");
     }
-    
+
     @Override
     public void onTestFailure(ITestResult result) {
         test.get().log(Status.FAIL, "Test failed: " + result.getThrowable());
-        
+
         // Capture screenshot
         WebDriver driver = DriverManager.getDriver();
         if (driver != null) {
             String screenshotPath = ScreenshotUtil.captureScreenshot(
-                driver, 
+                driver,
                 result.getMethod().getMethodName()
             );
             try {
@@ -273,12 +273,12 @@ public class TestListener implements ITestListener {
             }
         }
     }
-    
+
     @Override
     public void onTestSkipped(ITestResult result) {
         test.get().log(Status.SKIP, "Test skipped: " + result.getThrowable());
     }
-    
+
     @Override
     public void onFinish(ITestContext context) {
         extent.flush();
@@ -294,7 +294,7 @@ import org.testng.ITestResult;
 public class RetryAnalyzer implements IRetryAnalyzer {
     private int retryCount = 0;
     private static final int MAX_RETRY_COUNT = 2;
-    
+
     @Override
     public boolean retry(ITestResult result) {
         if (retryCount < MAX_RETRY_COUNT) {
@@ -320,34 +320,34 @@ import org.apache.commons.io.FileUtils;
 
 public class ScreenshotUtil {
     private static final String SCREENSHOT_DIR = "screenshots/";
-    
+
     public static String captureScreenshot(WebDriver driver, String testName) {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String fileName = testName + "_" + timestamp + ".png";
         String filePath = SCREENSHOT_DIR + fileName;
-        
+
         try {
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshot, new File(filePath));
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         return filePath;
     }
-    
+
     public static String captureElementScreenshot(WebElement element, String elementName) {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String fileName = elementName + "_" + timestamp + ".png";
         String filePath = SCREENSHOT_DIR + fileName;
-        
+
         try {
             File screenshot = element.getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshot, new File(filePath));
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         return filePath;
     }
 }
@@ -363,34 +363,34 @@ import java.util.function.Function;
 public class WaitHelper {
     private WebDriver driver;
     private WebDriverWait wait;
-    
+
     public WaitHelper(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
-    
+
     public WebElement waitForElementVisible(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
-    
+
     public WebElement waitForElementClickable(By locator) {
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
-    
+
     public boolean waitForElementInvisible(By locator) {
         return wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
-    
+
     public boolean waitForTextToBePresentInElement(By locator, String text) {
         return wait.until(ExpectedConditions.textToBePresentInElementLocated(locator, text));
     }
-    
+
     public void waitForPageLoad() {
         wait.until((ExpectedCondition<Boolean>) wd ->
             ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete")
         );
     }
-    
+
     public <T> T waitForCondition(Function<WebDriver, T> condition, int timeoutSeconds) {
         WebDriverWait customWait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
         return customWait.until(condition);
@@ -407,31 +407,31 @@ from typing import Any
 
 class ConfigReader:
     _config = None
-    
+
     @classmethod
     def load_config(cls):
         if cls._config is None:
             env = os.getenv('ENV', 'dev')
             config_path = f'config/{env}.json'
-            
+
             with open(config_path, 'r') as f:
                 cls._config = json.load(f)
-        
+
         return cls._config
-    
+
     @classmethod
     def get(cls, key: str, default: Any = None) -> Any:
         config = cls.load_config()
         return config.get(key, default)
-    
+
     @classmethod
     def get_base_url(cls) -> str:
         return cls.get('base_url')
-    
+
     @classmethod
     def get_browser(cls) -> str:
         return os.getenv('BROWSER', cls.get('browser', 'chrome'))
-    
+
     @classmethod
     def is_headless(cls) -> bool:
         return cls.get('headless', False)
@@ -447,42 +447,42 @@ from config.config_reader import ConfigReader
 
 class DriverManager:
     _driver = None
-    
+
     @classmethod
     def get_driver(cls):
         if cls._driver is None:
             cls._driver = cls._create_driver()
         return cls._driver
-    
+
     @classmethod
     def _create_driver(cls):
         browser = ConfigReader.get_browser()
-        
+
         if browser.lower() == 'chrome':
             options = ChromeOptions()
             if ConfigReader.is_headless():
                 options.add_argument('--headless')
             options.add_argument('--start-maximized')
             options.add_argument('--disable-notifications')
-            
+
             service = Service(ChromeDriverManager().install())
             driver = webdriver.Chrome(service=service, options=options)
-            
+
         elif browser.lower() == 'firefox':
             options = FirefoxOptions()
             if ConfigReader.is_headless():
                 options.add_argument('--headless')
-            
+
             service = Service(GeckoDriverManager().install())
             driver = webdriver.Firefox(service=service, options=options)
         else:
             raise ValueError(f"Unsupported browser: {browser}")
-        
+
         driver.implicitly_wait(ConfigReader.get('timeout', 10))
         driver.maximize_window()
-        
+
         return driver
-    
+
     @classmethod
     def quit_driver(cls):
         if cls._driver:
@@ -509,12 +509,12 @@ def pytest_runtest_makereport(item, call):
     """Hook to capture screenshots on test failure"""
     outcome = yield
     report = outcome.get_result()
-    
+
     if report.when == 'call' and report.failed:
         driver = item.funcargs.get('driver')
         if driver:
             screenshot = ScreenshotUtil.capture_screenshot(
-                driver, 
+                driver,
                 item.name
             )
             allure.attach.file(
@@ -567,23 +567,23 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v2
-    
+
     - name: Set up JDK 11
       uses: actions/setup-java@v2
       with:
         java-version: '11'
         distribution: 'adopt'
-    
+
     - name: Run tests
       run: mvn clean test -Denv=dev -Dbrowser=chrome
-    
+
     - name: Generate Allure Report
       if: always()
       run: mvn allure:report
-    
+
     - name: Upload Test Results
       if: always()
       uses: actions/upload-artifact@v2

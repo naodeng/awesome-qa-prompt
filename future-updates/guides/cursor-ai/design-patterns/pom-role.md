@@ -67,30 +67,30 @@ import java.time.Duration;
 public abstract class BasePage {
     protected WebDriver driver;
     protected WebDriverWait wait;
-    
+
     public BasePage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
-    
+
     protected WebElement waitForElement(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
-    
+
     protected void clickElement(By locator) {
         waitForElement(locator).click();
     }
-    
+
     protected void enterText(By locator, String text) {
         WebElement element = waitForElement(locator);
         element.clear();
         element.sendKeys(text);
     }
-    
+
     protected String getElementText(By locator) {
         return waitForElement(locator).getText();
     }
-    
+
     protected boolean isElementDisplayed(By locator) {
         try {
             return waitForElement(locator).isDisplayed();
@@ -114,44 +114,44 @@ public class LoginPage extends BasePage {
     private final By loginButton = By.cssSelector("button[type='submit']");
     private final By errorMessage = By.className("error-message");
     private final By forgotPasswordLink = By.linkText("Forgot Password?");
-    
+
     public LoginPage(WebDriver driver) {
         super(driver);
     }
-    
+
     // Page actions
     public LoginPage enterUsername(String username) {
         enterText(usernameField, username);
         return this;
     }
-    
+
     public LoginPage enterPassword(String password) {
         enterText(passwordField, password);
         return this;
     }
-    
+
     public DashboardPage clickLoginButton() {
         clickElement(loginButton);
         return new DashboardPage(driver);
     }
-    
+
     public LoginPage clickForgotPassword() {
         clickElement(forgotPasswordLink);
         return this;
     }
-    
+
     // Fluent interface for complete login
     public DashboardPage login(String username, String password) {
         return this.enterUsername(username)
                    .enterPassword(password)
                    .clickLoginButton();
     }
-    
+
     // Verification methods
     public String getErrorMessage() {
         return getElementText(errorMessage);
     }
-    
+
     public boolean isErrorMessageDisplayed() {
         return isElementDisplayed(errorMessage);
     }
@@ -168,26 +168,26 @@ import pages.components.Header;
 public class DashboardPage extends BasePage {
     private final By welcomeMessage = By.className("welcome-message");
     private final By dashboardTitle = By.tagName("h1");
-    
+
     private Header header;
-    
+
     public DashboardPage(WebDriver driver) {
         super(driver);
         this.header = new Header(driver);
     }
-    
+
     public String getWelcomeMessage() {
         return getElementText(welcomeMessage);
     }
-    
+
     public String getDashboardTitle() {
         return getElementText(dashboardTitle);
     }
-    
+
     public Header getHeader() {
         return header;
     }
-    
+
     public boolean isDashboardLoaded() {
         return isElementDisplayed(dashboardTitle);
     }
@@ -202,21 +202,21 @@ import pages.modules.LoginPage;
 import pages.modules.DashboardPage;
 
 public class LoginTests extends BaseTest {
-    
+
     @Test
     public void testSuccessfulLogin() {
         LoginPage loginPage = new LoginPage(driver);
         DashboardPage dashboard = loginPage.login("testuser", "password123");
-        
+
         Assert.assertTrue(dashboard.isDashboardLoaded());
         Assert.assertTrue(dashboard.getWelcomeMessage().contains("testuser"));
     }
-    
+
     @Test
     public void testInvalidLogin() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login("invalid", "wrong");
-        
+
         Assert.assertTrue(loginPage.isErrorMessageDisplayed());
         Assert.assertEquals(loginPage.getErrorMessage(), "Invalid credentials");
     }
@@ -239,30 +239,30 @@ public class Header extends BasePage {
     private final By logoutButton = By.id("logout");
     private final By profileLink = By.linkText("Profile");
     private final By settingsLink = By.linkText("Settings");
-    
+
     public Header(WebDriver driver) {
         super(driver);
     }
-    
+
     public void clickLogo() {
         clickElement(logo);
     }
-    
+
     public void openUserMenu() {
         clickElement(userMenu);
     }
-    
+
     public ProfilePage navigateToProfile() {
         openUserMenu();
         clickElement(profileLink);
         return new ProfilePage(driver);
     }
-    
+
     public void logout() {
         openUserMenu();
         clickElement(logoutButton);
     }
-    
+
     public boolean isUserMenuDisplayed() {
         return isElementDisplayed(userMenu);
     }
@@ -356,9 +356,9 @@ test.describe('Login Tests', () => {
   test('successful login', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.navigateTo('/login');
-    
+
     const dashboard = await loginPage.login('testuser', 'password123');
-    
+
     expect(await dashboard.isLoaded()).toBeTruthy();
   });
 });
@@ -377,21 +377,21 @@ class BasePage:
     def __init__(self, driver: WebDriver):
         self.driver = driver
         self.wait = WebDriverWait(driver, 10)
-    
+
     def wait_for_element(self, locator: Tuple[str, str]) -> WebElement:
         return self.wait.until(EC.visibility_of_element_located(locator))
-    
+
     def click_element(self, locator: Tuple[str, str]) -> None:
         self.wait_for_element(locator).click()
-    
+
     def enter_text(self, locator: Tuple[str, str], text: str) -> None:
         element = self.wait_for_element(locator)
         element.clear()
         element.send_keys(text)
-    
+
     def get_text(self, locator: Tuple[str, str]) -> str:
         return self.wait_for_element(locator).text
-    
+
     def is_displayed(self, locator: Tuple[str, str]) -> bool:
         try:
             return self.wait_for_element(locator).is_displayed()
@@ -409,27 +409,27 @@ class LoginPage(BasePage):
     PASSWORD_FIELD = (By.ID, "password")
     LOGIN_BUTTON = (By.CSS_SELECTOR, "button[type='submit']")
     ERROR_MESSAGE = (By.CLASS_NAME, "error-message")
-    
+
     def enter_username(self, username: str) -> 'LoginPage':
         self.enter_text(self.USERNAME_FIELD, username)
         return self
-    
+
     def enter_password(self, password: str) -> 'LoginPage':
         self.enter_text(self.PASSWORD_FIELD, password)
         return self
-    
+
     def click_login(self) -> DashboardPage:
         self.click_element(self.LOGIN_BUTTON)
         return DashboardPage(self.driver)
-    
+
     def login(self, username: str, password: str) -> DashboardPage:
         self.enter_username(username)
         self.enter_password(password)
         return self.click_login()
-    
+
     def get_error_message(self) -> str:
         return self.get_text(self.ERROR_MESSAGE)
-    
+
     def is_error_displayed(self) -> bool:
         return self.is_displayed(self.ERROR_MESSAGE)
 
@@ -441,9 +441,9 @@ class TestLogin:
     def test_successful_login(self, driver):
         login_page = LoginPage(driver)
         driver.get("https://example.com/login")
-        
+
         dashboard = login_page.login("testuser", "password123")
-        
+
         assert dashboard.is_loaded()
         assert "testuser" in dashboard.get_welcome_message()
 ```

@@ -1,17 +1,25 @@
+<div align="right"><strong>🇨🇳中文</strong> | <strong><a href="./PROMPT_AUTHORING_STANDARD_EN.md">🇬🇧English</a></strong></div>
+
 # Prompt 编写标准
 
 本规范用于约束 `awesome-qa-prompt` 仓库内新增或修改的 Prompt、README 和框架变体，避免再次出现断链、过度模板化、默认编造和固定 KPI 误导等问题。
 
 ## 适用范围
 
-- `testing-types/*/README.md`
-- `testing-types/*/README_EN.md`
-- `testing-types/*/Standard-version/*.md`
-- `testing-types/*/CRISPE-version/*.md`
-- `testing-types/*/RISE-version/*.md`
-- `testing-types/*/ICIO-version/*.md`
-- `testing-types/*/ROSES-version/*.md`
-- `testing-types/*/LangGPT-version/*.md`
+- `testing-types/zh/*/README.md`
+- `testing-types/en/*/README.md`
+- `testing-types/zh/*/Standard-version/*.md`
+- `testing-types/en/*/Standard-version/*.md`
+- `testing-types/zh/*/CRISPE-version/*.md`
+- `testing-types/en/*/CRISPE-version/*.md`
+- `testing-types/zh/*/RISE-version/*.md`
+- `testing-types/en/*/RISE-version/*.md`
+- `testing-types/zh/*/ICIO-version/*.md`
+- `testing-types/en/*/ICIO-version/*.md`
+- `testing-types/zh/*/ROSES-version/*.md`
+- `testing-types/en/*/ROSES-version/*.md`
+- `testing-types/zh/*/LangGPT-version/*.md`
+- `testing-types/en/*/LangGPT-version/*.md`
 
 ## 基本原则
 

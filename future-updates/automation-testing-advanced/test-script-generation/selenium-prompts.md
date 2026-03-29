@@ -208,10 +208,10 @@ import org.testng.annotations.*;
 import java.time.Duration;
 
 public class [TEST_CLASS_NAME] {
-    
+
     private WebDriver driver;
     private WebDriverWait wait;
-    
+
     @BeforeMethod
     public void setUp() {
         // Set up ChromeDriver
@@ -221,26 +221,26 @@ public class [TEST_CLASS_NAME] {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
-    
+
     @Test(priority = 1, description = "[TEST_DESCRIPTION]")
     public void test[TEST_NAME]() {
         // Navigate to URL
         driver.get("[URL]");
-        
+
         // Find and interact with elements
         WebElement element = wait.until(
             ExpectedConditions.elementToBeClickable(By.id("[ELEMENT_ID]"))
         );
         element.click();
-        
+
         // Perform actions
         WebElement inputField = driver.findElement(By.name("[FIELD_NAME]"));
         inputField.sendKeys("[TEST_DATA]");
-        
+
         // Submit or click button
         WebElement submitButton = driver.findElement(By.xpath("[XPATH]"));
         submitButton.click();
-        
+
         // Verify result
         WebElement resultElement = wait.until(
             ExpectedConditions.visibilityOfElementLocated(By.className("[CLASS_NAME]"))
@@ -248,7 +248,7 @@ public class [TEST_CLASS_NAME] {
         String actualText = resultElement.getText();
         Assert.assertEquals(actualText, "[EXPECTED_TEXT]", "Verification failed");
     }
-    
+
     @AfterMethod
     public void tearDown() {
         if (driver != null) {
@@ -273,47 +273,47 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class [PAGE_NAME]Page {
-    
+
     private WebDriver driver;
     private WebDriverWait wait;
-    
+
     // Page Elements using @FindBy
     @FindBy(id = "[ELEMENT_ID]")
     private WebElement [elementName];
-    
+
     @FindBy(name = "[ELEMENT_NAME]")
     private WebElement [elementName];
-    
+
     @FindBy(xpath = "[XPATH]")
     private WebElement [elementName];
-    
+
     @FindBy(css = "[CSS_SELECTOR]")
     private WebElement [elementName];
-    
+
     // Constructor
     public [PAGE_NAME]Page(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         PageFactory.initElements(driver, this);
     }
-    
+
     // Page Methods
     public void [actionMethod]([PARAMETERS]) {
         wait.until(ExpectedConditions.elementToBeClickable([elementName]));
         [elementName].click();
     }
-    
+
     public void enter[FieldName](String text) {
         wait.until(ExpectedConditions.visibilityOf([elementName]));
         [elementName].clear();
         [elementName].sendKeys(text);
     }
-    
+
     public String get[ElementName]Text() {
         wait.until(ExpectedConditions.visibilityOf([elementName]));
         return [elementName].getText();
     }
-    
+
     public boolean is[ElementName]Displayed() {
         try {
             return [elementName].isDisplayed();
@@ -321,7 +321,7 @@ public class [PAGE_NAME]Page {
             return false;
         }
     }
-    
+
     public void waitForPageLoad() {
         wait.until(ExpectedConditions.visibilityOf([keyElement]));
     }
@@ -339,7 +339,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 
 class Test[TestClassName]:
-    
+
     @pytest.fixture(autouse=True)
     def setup_teardown(self):
         # Setup
@@ -348,30 +348,30 @@ class Test[TestClassName]:
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)
         self.wait = WebDriverWait(self.driver, 20)
-        
+
         yield
-        
+
         # Teardown
         self.driver.quit()
-    
+
     def test_[test_name](self):
         # Navigate to URL
         self.driver.get("[URL]")
-        
+
         # Find and interact with elements
         element = self.wait.until(
             EC.element_to_be_clickable((By.ID, "[ELEMENT_ID]"))
         )
         element.click()
-        
+
         # Enter text
         input_field = self.driver.find_element(By.NAME, "[FIELD_NAME]")
         input_field.send_keys("[TEST_DATA]")
-        
+
         # Submit
         submit_button = self.driver.find_element(By.XPATH, "[XPATH]")
         submit_button.click()
-        
+
         # Verify
         result_element = self.wait.until(
             EC.visibility_of_element_located((By.CLASS_NAME, "[CLASS_NAME]"))

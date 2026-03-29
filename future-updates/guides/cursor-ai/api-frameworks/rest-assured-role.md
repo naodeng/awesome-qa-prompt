@@ -48,7 +48,7 @@ public class APITest {
     @Test
     public void testCreateUser() {
         User user = new User("John Doe", "john@example.com");
-        
+
         Response response = given()
             .contentType("application/json")
             .header("Authorization", "Bearer " + TOKEN)
@@ -60,7 +60,7 @@ public class APITest {
             .body("id", notNullValue())
             .extract()
             .response();
-        
+
         int userId = response.jsonPath().getInt("id");
         System.out.println("Created user ID: " + userId);
     }
@@ -119,4 +119,3 @@ public class APITest {
 - Validate status codes, headers, and body
 - Use POJO serialization for complex objects
 - Implement logging for debugging
-```

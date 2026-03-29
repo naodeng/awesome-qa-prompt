@@ -54,7 +54,7 @@ Create:
 
 ```javascript
 describe('[TEST_SUITE_NAME]', () => {
-  
+
   beforeEach(() => {
     cy.visit('[URL]');
   });
@@ -63,11 +63,11 @@ describe('[TEST_SUITE_NAME]', () => {
     // Interact with elements
     cy.get('[SELECTOR]').click();
     cy.get('[INPUT_SELECTOR]').type('[TEST_DATA]');
-    
+
     // Assertions
     cy.get('[SELECTOR]').should('be.visible');
     cy.get('[SELECTOR]').should('have.text', '[EXPECTED_TEXT]');
-    
+
     // Wait for element
     cy.get('[SELECTOR]', { timeout: 10000 }).should('exist');
   });

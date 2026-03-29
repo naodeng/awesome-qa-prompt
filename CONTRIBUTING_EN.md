@@ -1,3 +1,5 @@
+<div align="right"><strong><a href="./CONTRIBUTING.md">🇨🇳中文</a></strong> | <strong>🇬🇧English</strong></div>
+
 # Contributing
 
 Contributions to prompts, READMEs, docs, and workflows are welcome, but changes should meet the repository's current quality bar before submission.

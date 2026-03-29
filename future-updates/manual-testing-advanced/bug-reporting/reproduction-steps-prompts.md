@@ -178,11 +178,11 @@ Steps to Reproduce:
 1. [ACTION_1 - be specific]
    - Input: [EXACT_VALUE]
    - Click: [EXACT_BUTTON/LINK_NAME]
-   
+
 2. [ACTION_2]
    - Navigate to: [EXACT_URL/PAGE]
    - Select: [EXACT_OPTION]
-   
+
 3. [ACTION_3]
    - Enter: [EXACT_DATA]
    - Submit/Save

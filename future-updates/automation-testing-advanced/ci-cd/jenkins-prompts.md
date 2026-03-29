@@ -24,30 +24,30 @@ Include:
 ```groovy
 pipeline {
     agent any
-    
+
     environment {
         TEST_ENV = 'staging'
     }
-    
+
     stages {
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/user/repo.git'
             }
         }
-        
+
         stage('Build') {
             steps {
                 sh 'npm install'
             }
         }
-        
+
         stage('Run Tests') {
             steps {
                 sh 'npm test'
             }
         }
-        
+
         stage('Generate Report') {
             steps {
                 publishHTML([
@@ -58,7 +58,7 @@ pipeline {
             }
         }
     }
-    
+
     post {
         always {
             junit 'test-results/**/*.xml'

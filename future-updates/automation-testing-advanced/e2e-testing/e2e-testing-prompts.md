@@ -266,7 +266,7 @@ test.describe('E2E Checkout Process', () => {
     await page.goto('/products');
     await page.click('[data-testid="product-1-add-to-cart"]');
     await page.click('[data-testid="product-2-add-to-cart"]');
-    
+
     // Verify cart count
     await expect(page.locator('[data-testid="cart-count"]')).toHaveText('2');
 
@@ -289,7 +289,7 @@ test.describe('E2E Checkout Process', () => {
 
     // Step 6: Wait for order confirmation
     await expect(page.locator('[data-testid="order-confirmation"]')).toBeVisible({ timeout: 10000 });
-    
+
     // Extract order ID
     const orderText = await page.locator('[data-testid="order-number"]').textContent();
     orderId = orderText?.match(/\d+/)?.[0] || '';
@@ -298,7 +298,7 @@ test.describe('E2E Checkout Process', () => {
     const orderResponse = await apiContext.get(`/api/orders/${orderId}`);
     expect(orderResponse.ok()).toBeTruthy();
     const orderData = await orderResponse.json();
-    
+
     expect(orderData.status).toBe('confirmed');
     expect(orderData.items).toHaveLength(2);
     expect(orderData.payment_status).toBe('paid');
@@ -306,16 +306,16 @@ test.describe('E2E Checkout Process', () => {
     // Step 8: Verify inventory was updated
     const inventoryResponse = await apiContext.get('/api/inventory/check');
     const inventoryData = await inventoryResponse.json();
-    
+
     // Verify items were decremented
     expect(inventoryData.product_1.available).toBeLessThan(inventoryData.product_1.previous);
 
     // Step 9: Verify email was sent (check email service API)
     await page.waitForTimeout(5000); // Wait for async email processing
-    
+
     const emailResponse = await apiContext.get(`/api/emails/sent?orderId=${orderId}`);
     const emailData = await emailResponse.json();
-    
+
     expect(emailData.emails).toContainEqual(
       expect.objectContaining({
         to: 'test@example.com',
@@ -327,7 +327,7 @@ test.describe('E2E Checkout Process', () => {
     // Step 10: Verify audit trail
     const auditResponse = await apiContext.get(`/api/audit/order/${orderId}`);
     const auditData = await auditResponse.json();
-    
+
     expect(auditData.events).toContainEqual(
       expect.objectContaining({ event: 'order_created' })
     );

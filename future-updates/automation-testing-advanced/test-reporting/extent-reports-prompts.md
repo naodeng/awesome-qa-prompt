@@ -83,16 +83,16 @@ public class ExtentReportListener implements ITestListener {
     @Override
     public void onStart(ITestContext context) {
         ExtentSparkReporter htmlReporter = new ExtentSparkReporter("reports/extent-report.html");
-        
+
         // Configure report
         htmlReporter.config().setDocumentTitle("Automation Test Report");
         htmlReporter.config().setReportName("Functional Test Report");
         htmlReporter.config().setTheme(Theme.STANDARD);
         htmlReporter.config().setEncoding("utf-8");
-        
+
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
-        
+
         // System information
         extent.setSystemInfo("OS", System.getProperty("os.name"));
         extent.setSystemInfo("Java Version", System.getProperty("java.version"));
@@ -116,7 +116,7 @@ public class ExtentReportListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
         test.get().fail(result.getThrowable());
-        
+
         // Attach screenshot
         try {
             String screenshotPath = captureScreenshot(result.getMethod().getMethodName());
@@ -147,25 +147,25 @@ public class ExtentReportListener implements ITestListener {
 
 ```java
 public class LoginTest extends BaseTest {
-    
+
     @Test
     public void testLoginFunctionality() {
         ExtentTest test = ExtentTestManager.getTest();
-        
+
         test.info("Step 1: Navigate to login page");
         driver.get("https://example.com/login");
-        
+
         test.info("Step 2: Enter username");
         driver.findElement(By.id("username")).sendKeys("testuser");
-        
+
         test.info("Step 3: Enter password");
         driver.findElement(By.id("password")).sendKeys("password123");
-        
+
         test.info("Step 4: Click login button");
         driver.findElement(By.id("loginBtn")).click();
-        
+
         test.pass("Login successful");
-        
+
         // Attach screenshot
         test.addScreenCaptureFromPath(captureScreenshot("login-success"));
     }
@@ -184,20 +184,20 @@ def configure_html_report():
     pass
 
 class TestUserAPI:
-    
+
     def test_get_user(self, setup_extent):
         test = setup_extent
-        
+
         test.log("INFO", "Sending GET request to /api/users/123")
         response = requests.get("https://api.example.com/api/users/123")
-        
+
         test.log("INFO", f"Response status: {response.status_code}")
         assert response.status_code == 200, "Expected status 200"
-        
+
         test.log("INFO", "Validating response body")
         data = response.json()
         assert data['id'] == 123
-        
+
         test.log("PASS", "Test completed successfully")
 ```
 
@@ -218,7 +218,7 @@ exports.config = {
             theme: 'standard'
         }]
     ],
-    
+
     afterTest: function(test, context, { error, result, duration, passed, retries }) {
         if (!passed) {
             browser.takeScreenshot();
@@ -299,7 +299,7 @@ test.info(MarkupHelper.createTable(data));
         <encoding>UTF-8</encoding>
         <documentTitle>Test Report</documentTitle>
         <reportName>Automation Results</reportName>
-        
+
         <scripts>
             <![CDATA[
                 $(document).ready(function() {
@@ -307,7 +307,7 @@ test.info(MarkupHelper.createTable(data));
                 });
             ]]>
         </scripts>
-        
+
         <styles>
             <![CDATA[
                 /* Custom CSS */

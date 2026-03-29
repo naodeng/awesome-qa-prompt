@@ -71,7 +71,7 @@ import org.springframework.cloud.contract.spec.Contract
 
 Contract.make {
     description "Should return user by ID"
-    
+
     request {
         method GET()
         url("/api/users/123") {
@@ -84,7 +84,7 @@ Contract.make {
             header('Authorization': 'Bearer token123')
         }
     }
-    
+
     response {
         status OK()
         headers {
@@ -256,11 +256,11 @@ Contract.make {
 ```groovy
 Contract.make {
     label 'user_created_event'
-    
+
     input {
         triggeredBy('createUser()')
     }
-    
+
     outputMessage {
         sentTo 'user-events'
         headers {

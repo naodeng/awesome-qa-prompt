@@ -68,11 +68,11 @@ import { test as base, Page } from '@playwright/test';
 
 export class BasePage {
   constructor(public page: Page) {}
-  
+
   async navigateTo(url: string) {
     await this.page.goto(url);
   }
-  
+
   async clickElement(selector: string) {
     await this.page.locator(selector).click();
   }
@@ -82,7 +82,7 @@ export class LoginPage extends BasePage {
   readonly usernameInput = this.page.getByLabel('Username');
   readonly passwordInput = this.page.getByLabel('Password');
   readonly loginButton = this.page.getByRole('button', { name: 'Login' });
-  
+
   async login(username: string, password: string) {
     await this.usernameInput.fill(username);
     await this.passwordInput.fill(password);
@@ -118,7 +118,7 @@ test('mock API response', async ({ page }) => {
       ])
     });
   });
-  
+
   await page.goto('/users');
   await expect(page.getByText('John Doe')).toBeVisible();
 });
@@ -127,11 +127,11 @@ test('wait for API response', async ({ page }) => {
   const responsePromise = page.waitForResponse(
     response => response.url().includes('/api/data') && response.status() === 200
   );
-  
+
   await page.getByRole('button', { name: 'Load Data' }).click();
   const response = await responsePromise;
   const data = await response.json();
-  
+
   expect(data).toHaveProperty('items');
 });
 ```
@@ -142,12 +142,12 @@ import { test, expect } from '@playwright/test';
 
 test('visual regression test', async ({ page }) => {
   await page.goto('/dashboard');
-  
+
   // Full page screenshot comparison
   await expect(page).toHaveScreenshot('dashboard.png', {
     maxDiffPixels: 100
   });
-  
+
   // Element screenshot comparison
   const chart = page.locator('.chart-container');
   await expect(chart).toHaveScreenshot('chart.png');
@@ -162,16 +162,16 @@ test('parallel user sessions', async ({ browser }) => {
   // Create isolated contexts for different users
   const userContext1 = await browser.newContext();
   const userContext2 = await browser.newContext();
-  
+
   const page1 = await userContext1.newPage();
   const page2 = await userContext2.newPage();
-  
+
   // Both users can interact simultaneously
   await Promise.all([
     page1.goto('/app'),
     page2.goto('/app')
   ]);
-  
+
   await userContext1.close();
   await userContext2.close();
 });

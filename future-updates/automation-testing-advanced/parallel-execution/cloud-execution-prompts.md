@@ -32,7 +32,7 @@ caps.setCapability("build", "Build_" + BUILD_NUMBER);
 caps.setCapability("name", "Parallel Test");
 
 WebDriver driver = new RemoteWebDriver(
-    new URL("https://hub.browserstack.com/wd/hub"), 
+    new URL("https://hub.browserstack.com/wd/hub"),
     caps
 );
 ```
@@ -76,4 +76,3 @@ Features:
 2. **Session Management**: Clean up sessions properly
 3. **Tunneling**: Use for testing local/staging environments
 4. **Debugging**: Enable video/screenshots for failures
-```

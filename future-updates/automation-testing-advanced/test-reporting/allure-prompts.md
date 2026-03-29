@@ -52,14 +52,14 @@ public class LoginTest extends BaseTest {
     public void testSuccessfulLogin() {
         loginPage.open();
         attachScreenshot("Login Page");
-        
+
         loginPage.enterUsername("testuser");
         loginPage.enterPassword("password123");
-        
+
         attachText("Credentials", "Username: testuser");
-        
+
         loginPage.clickLogin();
-        
+
         Assert.assertTrue(homePage.isDisplayed(), "Home page should be displayed");
         attachScreenshot("Home Page");
     }
@@ -97,21 +97,21 @@ class TestLogin:
     def test_successful_login(self):
         with allure.step("Navigate to login page"):
             driver.get("https://example.com/login")
-            allure.attach(driver.get_screenshot_as_png(), 
-                         name="Login Page", 
+            allure.attach(driver.get_screenshot_as_png(),
+                         name="Login Page",
                          attachment_type=allure.attachment_type.PNG)
-        
+
         with allure.step("Enter credentials"):
             driver.find_element(By.ID, "username").send_keys("testuser")
             driver.find_element(By.ID, "password").send_keys("pass123")
-        
+
         with allure.step("Click login button"):
             driver.find_element(By.ID, "loginBtn").click()
-        
+
         with allure.step("Verify home page"):
             assert "Dashboard" in driver.title
-            allure.attach(driver.get_screenshot_as_png(), 
-                         name="Dashboard", 
+            allure.attach(driver.get_screenshot_as_png(),
+                         name="Dashboard",
                          attachment_type=allure.attachment_type.PNG)
 ```
 

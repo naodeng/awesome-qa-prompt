@@ -35,29 +35,29 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
-    
+
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '18'
-    
+
     - name: Install dependencies
       run: npm ci
-    
+
     - name: Run Playwright tests
       run: npx playwright test
-    
+
     - name: Upload test results
       if: always()
       uses: actions/upload-artifact@v3
       with:
         name: playwright-report
         path: playwright-report/
-    
+
     - name: Upload screenshots on failure
       if: failure()
       uses: actions/upload-artifact@v3

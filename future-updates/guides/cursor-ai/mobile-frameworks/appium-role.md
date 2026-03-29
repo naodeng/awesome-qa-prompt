@@ -89,7 +89,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
 
 public class AppiumSetup {
-    
+
     // Android Setup
     public static AndroidDriver setupAndroid() throws Exception {
         DesiredCapabilities caps = new DesiredCapabilities();
@@ -101,10 +101,10 @@ public class AppiumSetup {
         caps.setCapability("appPackage", "com.example.app");
         caps.setCapability("appActivity", "com.example.app.MainActivity");
         caps.setCapability("noReset", false);
-        
+
         return new AndroidDriver(new URL("http://127.0.0.1:4723"), caps);
     }
-    
+
     // iOS Setup
     public static IOSDriver setupIOS() throws Exception {
         DesiredCapabilities caps = new DesiredCapabilities();
@@ -115,7 +115,7 @@ public class AppiumSetup {
         caps.setCapability("app", "/path/to/app.app");
         caps.setCapability("bundleId", "com.example.app");
         caps.setCapability("noReset", false);
-        
+
         return new IOSDriver(new URL("http://127.0.0.1:4723"), caps);
     }
 }
@@ -132,34 +132,34 @@ class LoginScreen:
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(driver, 10)
-        
+
     # Locators
     USERNAME_FIELD = (AppiumBy.ACCESSIBILITY_ID, "username-input")
     PASSWORD_FIELD = (AppiumBy.ACCESSIBILITY_ID, "password-input")
     LOGIN_BUTTON = (AppiumBy.ACCESSIBILITY_ID, "login-button")
     ERROR_MESSAGE = (AppiumBy.ID, "com.example.app:id/error_text")
-    
+
     def enter_username(self, username):
         element = self.wait.until(EC.presence_of_element_located(self.USERNAME_FIELD))
         element.clear()
         element.send_keys(username)
         return self
-    
+
     def enter_password(self, password):
         element = self.wait.until(EC.presence_of_element_located(self.PASSWORD_FIELD))
         element.clear()
         element.send_keys(password)
         return self
-    
+
     def tap_login(self):
         element = self.wait.until(EC.element_to_be_clickable(self.LOGIN_BUTTON))
         element.click()
         return self
-    
+
     def get_error_message(self):
         element = self.wait.until(EC.presence_of_element_located(self.ERROR_MESSAGE))
         return element.text
-    
+
     def login(self, username, password):
         return self.enter_username(username).enter_password(password).tap_login()
 ```
@@ -171,22 +171,22 @@ import { AppiumDriver } from 'appium';
 
 class MobileGestures {
     constructor(private driver: AppiumDriver) {}
-    
+
     // Swipe gesture
     async swipe(direction: 'up' | 'down' | 'left' | 'right') {
         const { width, height } = await this.driver.getWindowSize();
         const centerX = width / 2;
         const centerY = height / 2;
-        
+
         const gestures = {
             up: { startX: centerX, startY: height * 0.8, endX: centerX, endY: height * 0.2 },
             down: { startX: centerX, startY: height * 0.2, endX: centerX, endY: height * 0.8 },
             left: { startX: width * 0.8, startY: centerY, endX: width * 0.2, endY: centerY },
             right: { startX: width * 0.2, startY: centerY, endX: width * 0.8, endY: centerY }
         };
-        
+
         const { startX, startY, endX, endY } = gestures[direction];
-        
+
         await this.driver.performActions([{
             type: 'pointer',
             id: 'finger1',
@@ -200,7 +200,7 @@ class MobileGestures {
             ]
         }]);
     }
-    
+
     // Scroll to element
     async scrollToElement(accessibilityId: string, direction: 'up' | 'down' = 'down') {
         const maxScrolls = 10;
@@ -217,11 +217,11 @@ class MobileGestures {
         }
         throw new Error(`Element with accessibility ID "${accessibilityId}" not found after ${maxScrolls} scrolls`);
     }
-    
+
     // Long press
     async longPress(element: any, duration: number = 2000) {
         const { x, y } = await element.getLocation();
-        
+
         await this.driver.performActions([{
             type: 'pointer',
             id: 'finger1',
@@ -234,13 +234,13 @@ class MobileGestures {
             ]
         }]);
     }
-    
+
     // Pinch zoom
     async pinchZoom(scale: 'in' | 'out') {
         const { width, height } = await this.driver.getWindowSize();
         const centerX = width / 2;
         const centerY = height / 2;
-        
+
         if (scale === 'in') {
             // Pinch in (zoom out)
             await this.driver.performActions([
@@ -310,14 +310,14 @@ public abstract class MobileBasePage
     protected AppiumDriver Driver { get; }
     protected bool IsAndroid { get; }
     protected bool IsIOS { get; }
-    
+
     public MobileBasePage(AppiumDriver driver)
     {
         Driver = driver;
         IsAndroid = driver is AndroidDriver;
         IsIOS = driver is IOSDriver;
     }
-    
+
     // Platform-specific element finding
     protected AppiumElement FindElement(string androidId, string iosId)
     {
@@ -326,7 +326,7 @@ public abstract class MobileBasePage
         else
             return Driver.FindElement(MobileBy.AccessibilityId(iosId));
     }
-    
+
     // Platform-specific actions
     protected void HideKeyboard()
     {
@@ -335,7 +335,7 @@ public abstract class MobileBasePage
         else
             Driver.FindElement(MobileBy.IosClassChain("**/XCUIElementTypeButton[`label == 'Done'`]")).Click();
     }
-    
+
     // Common wait method
     protected void WaitForElement(By locator, int timeoutInSeconds = 10)
     {

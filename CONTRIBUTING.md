@@ -1,3 +1,5 @@
+<div align="right"><strong>🇨🇳中文</strong> | <strong><a href="./CONTRIBUTING_EN.md">🇬🇧English</a></strong></div>
+
 # 贡献指南
 
 本项目欢迎对 Prompt、README、文档和工作流的改进，但提交前请先满足当前仓库已经落地的质量门槛。

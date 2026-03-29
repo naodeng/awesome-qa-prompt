@@ -70,24 +70,24 @@ class DefectPredictor:
             'days_since_last_defect',
             'static_analysis_violations'
         ]
-    
+
     def train(self, historical_data):
         X = historical_data[self.feature_columns]
         y = historical_data['has_defect']  # 0 or 1
-        
+
         self.model.fit(X, y)
-    
+
     def predict_defect_probability(self, file_path):
         features = self._extract_features(file_path)
         probability = self.model.predict_proba([features])[0][1]
-        
+
         return {
             'file': file_path,
             'defect_probability': probability,
             'risk_level': self._categorize_risk(probability),
             'recommended_actions': self._get_recommendations(probability, features)
         }
-    
+
     def _categorize_risk(self, probability):
         if probability >= 0.7:
             return 'HIGH'
@@ -95,21 +95,21 @@ class DefectPredictor:
             return 'MEDIUM'
         else:
             return 'LOW'
-    
+
     def _get_recommendations(self, probability, features):
         recommendations = []
-        
+
         if probability >= 0.7:
             recommendations.append('Mandatory code review by senior developer')
             recommendations.append('Add comprehensive unit tests')
             recommendations.append('Increase integration test coverage')
-        
+
         if features[1] > 10:  # High complexity
             recommendations.append('Refactor to reduce complexity')
-        
+
         if features[4] < 70:  # Low coverage
             recommendations.append('Increase test coverage to >80%')
-        
+
         return recommendations
 
 # Usage
@@ -131,4 +131,3 @@ for rec in prediction['recommended_actions']:
 3. **Continuous Learning**: Retrain with new data
 4. **Actionable Insights**: Provide concrete recommendations
 5. **Validation**: Track prediction accuracy
-```

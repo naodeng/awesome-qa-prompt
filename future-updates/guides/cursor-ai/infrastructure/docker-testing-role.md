@@ -39,7 +39,7 @@ public class DatabaseIntegrationTest {
         String jdbcUrl = postgres.getJdbcUrl();
         String username = postgres.getUsername();
         String password = postgres.getPassword();
-        
+
         // Test database connectivity
         try (Connection conn = DriverManager.getConnection(jdbcUrl, username, password)) {
             assertTrue(conn.isValid(5));
@@ -53,7 +53,7 @@ public class DatabaseIntegrationTest {
             postgres.getUsername(),
             postgres.getPassword()
         );
-        
+
         User user = app.createUser("test@example.com");
         assertNotNull(user.getId());
     }
@@ -104,4 +104,3 @@ services:
 - Clean up containers after tests
 - Use Docker Compose for complex environments
 - Version control Dockerfiles and compose files
-```

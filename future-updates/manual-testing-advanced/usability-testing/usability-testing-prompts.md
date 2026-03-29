@@ -146,10 +146,10 @@ Create test including:
 
 - **[PRODUCT_NAME]**: Your application or website
   - Example: `E-commerce checkout flow`
-  
+
 - **[USER_PERSONAS]**: Target user groups
   - Example: `First-time buyers, returning customers, mobile users`
-  
+
 - **[TESTING_GOALS]**: What you want to learn
   - Example: `Identify navigation issues, measure task completion time`
 
@@ -200,19 +200,19 @@ USABILITY TEST PLAN: Mobile Banking App
    - No prior experience with this specific app
 
 3. TASK SCENARIOS
-   
+
    Task 1: Check Account Balance
    "You want to see how much money is in your checking account."
    Success: User finds balance within 30 seconds
-   
+
    Task 2: Transfer Money
    "Transfer $50 from your checking to savings account."
    Success: User completes transfer without errors
-   
+
    Task 3: Pay Bill
    "Pay your electricity bill of $120 using the app."
    Success: User successfully schedules payment
-   
+
    [Additional tasks...]
 
 4. SUCCESS METRICS

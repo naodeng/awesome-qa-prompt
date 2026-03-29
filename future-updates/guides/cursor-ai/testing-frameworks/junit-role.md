@@ -41,7 +41,7 @@ class UserServiceTest {
     @Tag("integration")
     void testCreateUser() {
         User user = userService.createUser("John", "john@example.com");
-        
+
         assertAll("user",
             () -> assertNotNull(user.getId()),
             () -> assertEquals("John", user.getName()),
@@ -93,4 +93,3 @@ class UserServiceTest {
 - Leverage parameterized tests for data-driven scenarios
 - Use @Nested for better test organization
 - Implement custom extensions for reusable logic
-```

@@ -126,7 +126,7 @@ Feature: App Lifecycle Management
     And the user returns to the app
     Then the user should still be on the checkout page
     And the shopping cart should still contain 3 items
-    
+
   Scenario: App handles termination gracefully
     Given the user is filling out a registration form
     And the user has entered their name and email
@@ -147,7 +147,7 @@ Feature: Camera Permission Handling
     Then the app should request camera permission
     When the user grants permission
     Then the camera should open successfully
-    
+
   Scenario: User denies camera permission
     Given the user has not previously granted camera permission
     When the user taps the "Take Photo" button

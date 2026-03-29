@@ -5,7 +5,7 @@
 ## 目录结构
 
 - `basic-usage/` - 基础使用示例
-- `advanced-usage/` - 高级使用示例  
+- `advanced-usage/` - 高级使用示例
 - `best-practices/` - 最佳实践案例
 
 ## 示例分类

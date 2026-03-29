@@ -29,13 +29,13 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 public class UserAPITest {
-    
+
     @BeforeClass
     public void setup() {
         RestAssured.baseURI = "https://api.example.com";
         RestAssured.basePath = "/v1";
     }
-    
+
     @Test
     public void testGetUser() {
         given()

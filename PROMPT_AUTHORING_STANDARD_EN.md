@@ -1,17 +1,25 @@
+<div align="right"><strong><a href="./PROMPT_AUTHORING_STANDARD.md">🇨🇳中文</a></strong> | <strong>🇬🇧English</strong></div>
+
 # Prompt Authoring Standard
 
 This standard defines the minimum quality bar for prompts, READMEs, and framework variants in `awesome-qa-prompt`, so the repository does not regress into broken links, over-specified templates, fabricated details, or misleading hard-coded KPIs.
 
 ## Scope
 
-- `testing-types/*/README.md`
-- `testing-types/*/README_EN.md`
-- `testing-types/*/Standard-version/*.md`
-- `testing-types/*/CRISPE-version/*.md`
-- `testing-types/*/RISE-version/*.md`
-- `testing-types/*/ICIO-version/*.md`
-- `testing-types/*/ROSES-version/*.md`
-- `testing-types/*/LangGPT-version/*.md`
+- `testing-types/zh/*/README.md`
+- `testing-types/en/*/README.md`
+- `testing-types/zh/*/Standard-version/*.md`
+- `testing-types/en/*/Standard-version/*.md`
+- `testing-types/zh/*/CRISPE-version/*.md`
+- `testing-types/en/*/CRISPE-version/*.md`
+- `testing-types/zh/*/RISE-version/*.md`
+- `testing-types/en/*/RISE-version/*.md`
+- `testing-types/zh/*/ICIO-version/*.md`
+- `testing-types/en/*/ICIO-version/*.md`
+- `testing-types/zh/*/ROSES-version/*.md`
+- `testing-types/en/*/ROSES-version/*.md`
+- `testing-types/zh/*/LangGPT-version/*.md`
+- `testing-types/en/*/LangGPT-version/*.md`
 
 ## Core Principles
 

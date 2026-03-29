@@ -13,7 +13,7 @@ steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '18.x'
-  
+
 - script: npm ci
   displayName: 'Install dependencies'
 

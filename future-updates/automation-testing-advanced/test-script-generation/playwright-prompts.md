@@ -91,7 +91,7 @@ Include:
 import { test, expect, Page } from '@playwright/test';
 
 test.describe('[TEST_SUITE_NAME]', () => {
-  
+
   test.beforeEach(async ({ page }) => {
     // Navigate to the application
     await page.goto('[URL]');
@@ -101,14 +101,14 @@ test.describe('[TEST_SUITE_NAME]', () => {
     // Interact with elements
     await page.click('[SELECTOR]');
     await page.fill('[INPUT_SELECTOR]', '[TEST_DATA]');
-    
+
     // Wait for navigation or element
     await page.waitForSelector('[SELECTOR]');
-    
+
     // Assertions
     await expect(page.locator('[SELECTOR]')).toBeVisible();
     await expect(page.locator('[SELECTOR]')).toHaveText('[EXPECTED_TEXT]');
-    
+
     // Screenshot
     await page.screenshot({ path: 'screenshot.png' });
   });

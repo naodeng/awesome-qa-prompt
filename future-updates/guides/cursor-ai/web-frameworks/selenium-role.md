@@ -64,16 +64,16 @@ You are an expert Selenium WebDriver automation engineer with deep knowledge of 
 public class BasePage {
     protected WebDriver driver;
     protected WebDriverWait wait;
-    
+
     public BasePage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
-    
+
     protected void clickElement(By locator) {
         wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
-    
+
     protected void enterText(By locator, String text) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         element.clear();
@@ -92,12 +92,12 @@ class LoginPage:
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(driver, 10)
-        
+
         # Locators
         self.username_field = (By.ID, "username")
         self.password_field = (By.ID, "password")
         self.login_button = (By.CSS_SELECTOR, "button[type='submit']")
-        
+
     def login(self, username, password):
         self.wait.until(EC.visibility_of_element_located(self.username_field)).send_keys(username)
         self.wait.until(EC.visibility_of_element_located(self.password_field)).send_keys(password)

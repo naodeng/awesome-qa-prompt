@@ -69,14 +69,14 @@ Check:
 <div class="modal">...</div>
 
 <!-- Accessible Implementation -->
-<div role="dialog" 
-     aria-labelledby="modal-title" 
-     aria-modal="true" 
+<div role="dialog"
+     aria-labelledby="modal-title"
+     aria-modal="true"
      tabindex="-1">
-     
+
   <h2 id="modal-title">Confirmation</h2>
   <p>Are you sure?</p>
-  
+
   <button onclick="close()">Close</button>
 </div>
 ```

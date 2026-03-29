@@ -20,18 +20,18 @@ from kubernetes import client, config
 import pytest
 
 class TestKubernetesDeployment:
-    
+
     @classmethod
     def setup_class(cls):
         config.load_kube_config()  # or load_incluster_config() for in-cluster
         cls.v1 = client.CoreV1Api()
         cls.apps_v1 = client.AppsV1Api()
-    
+
     def test_deployment_exists(self):
         deployments = self.apps_v1.list_namespaced_deployment(namespace="default")
         deployment_names = [d.metadata.name for d in deployments.items]
         assert "my-app" in deployment_names
-    
+
     def test_deployment_replicas(self):
         deployment = self.apps_v1.read_namespaced_deployment(
             name="my-app",
@@ -39,7 +39,7 @@ class TestKubernetesDeployment:
         )
         assert deployment.spec.replicas == 3
         assert deployment.status.ready_replicas == 3
-    
+
     def test_service_accessible(self):
         service = self.v1.read_namespaced_service(
             name="my-app-service",
@@ -47,16 +47,16 @@ class TestKubernetesDeployment:
         )
         assert service.spec.type == "ClusterIP"
         assert service.spec.ports[0].port == 80
-    
+
     def test_pod_health(self):
         pods = self.v1.list_namespaced_pod(
             namespace="default",
             label_selector="app=my-app"
         )
-        
+
         for pod in pods.items:
             assert pod.status.phase == "Running"
-            
+
             # Check container ready status
             for container_status in pod.status.container_statuses:
                 assert container_status.ready == True
@@ -92,4 +92,3 @@ helm test my-release
 - Validate pod readiness and liveness
 - Test service discovery and networking
 - Implement chaos engineering practices
-```

@@ -33,7 +33,7 @@ services:
     environment:
       - SE_SESSION_REQUEST_TIMEOUT=300
       - SE_NODE_MAX_SESSIONS=5
-  
+
   chrome-node:
     image: selenium/node-chrome:latest
     depends_on:
@@ -45,7 +45,7 @@ services:
       - SE_NODE_MAX_SESSIONS=3
     deploy:
       replicas: 3
-  
+
   firefox-node:
     image: selenium/node-firefox:latest
     depends_on:
@@ -66,7 +66,7 @@ services:
 public void setupDriver() {
     ChromeOptions options = new ChromeOptions();
     options.addArguments("--headless");
-    
+
     try {
         driver.set(new RemoteWebDriver(
             new URL("http://localhost:4444"),
@@ -84,4 +84,3 @@ public void setupDriver() {
 2. **Monitoring**: Use Grid UI for session tracking
 3. **Timeouts**: Configure appropriate session timeouts
 4. **Retry Logic**: Handle node failures gracefully
-```

@@ -86,11 +86,11 @@ class CustomReporter:
             'start_time': datetime.now(),
             'end_time': None
         }
-    
+
     def add_test_result(self, name, status, duration, error=None, screenshot=None):
         self.results['total'] += 1
         self.results[status] += 1
-        
+
         self.results['tests'].append({
             'name': name,
             'status': status,
@@ -99,11 +99,11 @@ class CustomReporter:
             'screenshot': screenshot,
             'timestamp': datetime.now().isoformat()
         })
-    
+
     def generate_report(self, output_path='report.html'):
         self.results['end_time'] = datetime.now()
         duration = (self.results['end_time'] - self.results['start_time']).total_seconds()
-        
+
         template = Template('''
 <!DOCTYPE html>
 <html>
@@ -127,7 +127,7 @@ class CustomReporter:
 <body>
     <h1>Test Execution Report</h1>
     <p>Duration: {{ duration }}s | Executed: {{ start_time }}</p>
-    
+
     <div class="summary">
         <div class="card passed">
             <h2>{{ passed }}</h2>
@@ -142,9 +142,9 @@ class CustomReporter:
             <p>Skipped</p>
         </div>
     </div>
-    
+
     <canvas id="resultsChart" width="400" height="200"></canvas>
-    
+
     <h2>Test Results</h2>
     <table>
         <thead>
@@ -166,7 +166,7 @@ class CustomReporter:
             {% endfor %}
         </tbody>
     </table>
-    
+
     <script>
         const ctx = document.getElementById('resultsChart').getContext('2d');
         new Chart(ctx, {
@@ -183,7 +183,7 @@ class CustomReporter:
 </body>
 </html>
         ''')
-        
+
         html_content = template.render(
             duration=duration,
             start_time=self.results['start_time'].strftime('%Y-%m-%d %H:%M:%S'),
@@ -192,7 +192,7 @@ class CustomReporter:
             skipped=self.results['skipped'],
             tests=self.results['tests']
         )
-        
+
         with open(output_path, 'w') as f:
             f.write(html_content)
 
@@ -236,7 +236,7 @@ def send_slack_notification(webhook_url, results):
             }
         ]
     }
-    
+
     response = requests.post(webhook_url, json=message)
     return response.status_code == 200
 ```

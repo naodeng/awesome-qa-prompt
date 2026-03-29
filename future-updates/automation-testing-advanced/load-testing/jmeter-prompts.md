@@ -87,7 +87,7 @@ Monitor for:
         </collectionProp>
       </elementProp>
     </TestPlan>
-    
+
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="User Thread Group">
         <stringProp name="ThreadGroup.num_threads">${THREADS}</stringProp>
@@ -95,7 +95,7 @@ Monitor for:
         <stringProp name="ThreadGroup.duration">300</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
       </ThreadGroup>
-      
+
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET User">
           <stringProp name="HTTPSampler.domain">${BASE_URL}</stringProp>
@@ -103,7 +103,7 @@ Monitor for:
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
         </HTTPSamplerProxy>
-        
+
         <hashTree>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Status Code Assertion">
             <collectionProp name="Asserion.test_strings">
@@ -111,7 +111,7 @@ Monitor for:
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
           </ResponseAssertion>
-          
+
           <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Response Time Assertion">
             <stringProp name="DurationAssertion.duration">1000</stringProp>
           </DurationAssertion>

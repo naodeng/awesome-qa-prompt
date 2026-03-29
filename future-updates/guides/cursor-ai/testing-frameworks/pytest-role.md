@@ -39,10 +39,10 @@ def login(browser):
 @pytest.mark.smoke
 @pytest.mark.regression
 class TestUserFeatures:
-    
+
     def test_login_successful(self, login):
         assert "Dashboard" in login.title
-    
+
     @pytest.mark.parametrize("username,password,expected", [
         ("user1", "pass1", True),
         ("user2", "pass2", True),
@@ -53,12 +53,12 @@ class TestUserFeatures:
         browser.find_element(By.ID, "username").send_keys(username)
         browser.find_element(By.ID, "password").send_keys(password)
         browser.find_element(By.ID, "loginBtn").click()
-        
+
         if expected:
             assert "Dashboard" in browser.title
         else:
             assert "error" in browser.page_source.lower()
-    
+
     def test_user_profile(self, login):
         login.find_element(By.ID, "profileBtn").click()
         assert login.find_element(By.CLASS_NAME, "profile-name").is_displayed()
@@ -84,4 +84,3 @@ def test_cross_browser(multi_browser):
 - Use markers for test categorization
 - Implement parametrization for data-driven tests
 - Use pytest-xdist for parallel execution
-```

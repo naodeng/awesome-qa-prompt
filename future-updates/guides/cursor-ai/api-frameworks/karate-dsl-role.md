@@ -35,7 +35,7 @@ Scenario: Get user by ID
 Scenario: Create new user
   Given path 'users'
   And request { name: 'John Doe', email: 'john@example.com', age: 30 }
-  When method POST  
+  When method POST
   Then status 201
   And match response contains { id: '#number', name: 'John Doe' }
   * def userId = response.id
@@ -46,7 +46,7 @@ Scenario: Data-driven user creation
     | 'Alice'   | 'alice@example.com' | 25  |
     | 'Bob'     | 'bob@example.com'   | 30  |
     | 'Charlie' | 'charlie@example.com' | 35 |
-  
+
   Given path 'users'
   And request users[__iter__]
   When method POST
@@ -106,14 +106,14 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class ParallelRunner {
-    
+
     @Test
     void testParallel() {
         Results results = Runner.path("classpath:features")
             .tags("~@ignore")
             .parallel(5);  // 5 parallel threads
-        
-        assertEquals(0, results.getFailCount(), 
+
+        assertEquals(0, results.getFailCount(),
             results.getErrorMessages());
     }
 }
@@ -125,4 +125,3 @@ class ParallelRunner {
 - Call reusable features for modularity
 - Use data tables for data-driven tests
 - Configure logging appropriately
-```
