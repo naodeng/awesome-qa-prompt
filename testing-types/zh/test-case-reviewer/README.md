@@ -44,6 +44,13 @@
 - `*_Lean.md`：仅在该模块提供 Lean 版本时使用，适合更克制的输出
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`：适合你明确需要特定提示框架时再选用
 
+## 平台场景版本
+
+- `*-all_round.md`：同时覆盖 Web 端和移动端，适合需要统一规划双端测试工作的场景
+- `*-Web.md`：聚焦浏览器和 Web 应用，重点考虑兼容性、页面交互、缓存会话、上传下载等问题
+- `*-Mobile.md`：聚焦 iOS / Android 应用，重点考虑机型系统差异、安装升级、权限弹窗、前后台切换、弱网与中断等问题
+- 如果当前任务不需要区分平台，继续使用原有通用版文件即可
+
 ### 完整版提示词
 - **中文版：** `Standard-version/TestCaseReviewerPrompt.md` (v0.1)
 - **英文版：** `Standard-version/TestCaseReviewerPrompt_EN.md` (v0.1)

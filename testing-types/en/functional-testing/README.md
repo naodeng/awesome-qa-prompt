@@ -113,3 +113,12 @@ This module follows the MIT License. See the [LICENSE](../LICENSE) file in the p
 ---
 
 **Ensure every feature works as expected!** ✅✨
+
+
+## Platform Scenario Variants
+
+- `*-all_round.md`: covers both Web and mobile, suitable when one prompt needs to plan testing across both platforms
+- `*-Web.md`: focuses on browser and web application scenarios, including compatibility, page interaction, cache/session, and upload/download flows
+- `*-Mobile.md`: focuses on iOS / Android app scenarios, including device and OS differences, install/upgrade flows, permission dialogs, app lifecycle, and weak-network interruptions
+- If your task does not need platform separation, keep using the original general prompt files
+

@@ -1,0 +1,154 @@
+# Requirements Analysis Prompt (Lite Version) - all_round Version
+
+## Platform Scenario Notes
+
+- **Current Variant:** `all_round`
+- **Scope:** Covers both Web and mobile, suitable for work that needs one prompt to plan testing across both platforms
+- **Extra Focus In The Output:**
+  - Separate shared coverage, platform-specific differences, and cross-platform consistency expectations
+  - For Web, pay attention to browser compatibility, layout, routing, cache/session behavior, and upload/download flows
+  - For mobile, pay attention to iOS/Android differences, device and OS coverage, install/upgrade flows, permission dialogs, app lifecycle, and weak-network interruptions
+- **Additional Rule:** If the input does not clearly specify the platform, state the assumption first and then provide both Web and mobile guidance
+
+
+
+---
+
+**Role:** Senior Test Analysis Expert
+
+**Task:** Based on the provided requirements document, quickly generate a test analysis report including business background, test scope, and test scenario design.
+
+---
+
+## Output Format
+
+```markdown
+# Requirements Analysis Report: [Project Name]
+
+## 1. Business Background
+
+### Business Objectives
+[Describe the business problems this requirement aims to solve and the expected goals]
+
+### User Roles
+- **Role 1:** [Role description and usage scenarios]
+- **Role 2:** [Role description and usage scenarios]
+
+### Business Value
+[Explain the value and impact of this requirement on the business]
+
+### Core Business Rules
+- [Business rule 1]
+- [Business rule 2]
+
+---
+
+## 2. Test Scope
+
+### Functional Scope
+**Included:** [List of functional modules]
+**Excluded:** [Excluded functions or scenarios]
+
+### Test Types
+- **Functional Testing:** [Covered functional points]
+- **UI/UX Testing:** [Interface interaction, responsiveness, etc.]
+- **Security Testing:** [Input validation, permission control, etc.]
+- **Performance Testing:** [Response time, concurrent processing, etc.]
+
+---
+
+## 3. Test Scenario Design
+
+### 3.1 Positive Scenarios
+
+| Scenario ID | Scenario Description | Test Focus | Priority |
+|------------|---------------------|------------|----------|
+| TC-P-001 | [Scenario name] | [Key test points] | P0/P1 |
+| TC-P-002 | [Scenario name] | [Key test points] | P0/P1 |
+
+### 3.2 Negative Scenarios
+
+| Scenario ID | Scenario Description | Test Focus | Priority |
+|------------|---------------------|------------|----------|
+| TC-N-001 | [Negative scenario name] | [Key test points] | P1/P2 |
+| TC-N-002 | [Negative scenario name] | [Key test points] | P1/P2 |
+
+**Key Negative Scenarios:**
+- **Input Validation Exceptions:** [Null values, special characters, excessive input, etc.]
+- **Business Rule Exceptions:** [Insufficient balance, insufficient permissions, etc.]
+- **System Exceptions:** [Network interruption, service timeout, etc.]
+
+### 3.3 Boundary Scenarios
+
+| Scenario ID | Scenario Description | Boundary Values | Priority |
+|------------|---------------------|----------------|----------|
+| TC-B-001 | [Boundary scenario name] | [Min/Max values] | P1/P2 |
+
+---
+
+## 4. Test Methods
+
+### Test Design Methods
+- **Scenario Testing:** [Application scenarios]
+- **Equivalence Class Partitioning:** [Application scenarios]
+- **Boundary Value Analysis:** [Application scenarios]
+- **Error Guessing:** [Application scenarios]
+
+### Test Execution Methods
+- **Manual Testing:** [Applicable scenarios]
+- **Automated Testing:** [Recommended scenarios for automation]
+
+---
+
+## 5. Test Strategy
+
+### Test Focus
+[List test areas that require key attention]
+
+### Risk Assessment
+
+| Risk Item | Risk Level | Impact Scope | Mitigation Measures |
+|-----------|-----------|--------------|-------------------|
+| [Risk description] | High/Medium/Low | [Impact scope] | [Response strategy] |
+
+### Resource Requirements
+- **Human Resources:** [Test personnel allocation]
+- **Time Resources:** [Estimated test cycle]
+- **Tool Resources:** [Required testing tools]
+
+---
+
+## 6. Coverage Analysis
+
+- **Functional Coverage:** [Core function coverage status]
+- **Scenario Coverage:** [Number of positive/negative/boundary scenarios]
+- **Risk Coverage:** [Coverage of high/medium/low risk scenarios]
+
+---
+```
+
+---
+
+## Execution Instructions
+
+1. Start with an input completeness check and output the known information, missing information, key assumptions, and main risks.
+2. If critical information is missing, ask a small number of high-value clarifying questions first; if no more detail is available, continue with the minimum necessary assumptions.
+3. Follow the required output structure, but do not invent metrics, data, roles, dates, environments, conclusions, or implementation details.
+4. Provide a brief rationale for priorities and recommendations, and prioritize the minimum executable plan.
+5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
+
+**After receiving the input, complete the input audit first, then produce the main deliverable.**
+
+---
+
+## 📋 Change Log
+
+### v0.2 (2025-01-16)
+- Optimized output format, focusing on business background, test scope, test scenarios, and test methods
+- Used table format to organize test scenarios for improved readability
+- Added test methods and test strategy sections
+- Added coverage analysis
+- Removed specific test case steps, changed to scenario-level design
+
+### v0.1 (2025-01-14)
+- Initial version
