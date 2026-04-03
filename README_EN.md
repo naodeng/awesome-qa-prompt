@@ -21,7 +21,7 @@ A professional collection of AI prompts for QA (Quality Assurance) professionals
 - 🎯 **Highly Professional**: Each prompt designed by testing experts with 10+ years of experience
 - 🌍 **Bilingual Support**: Complete Chinese and English prompts for international teams
 - 📚 **Rich Content**: 15 testing types + 3 workflows + 225+ professional documents
-- 🔄 **Complete Versions**: Each module provides both full and lite versions
+- 🔄 **Complete Versions**: Each module provides full and lite versions, and selected modules now include `all_round`, `Web`, and `Mobile` platform variants
 - 🎨 **Multi-Framework Support**: Supports TOP 5 prompt frameworks (ROSES, LangGPT, ICIO, CRISPE, RISE)
 - 🚀 **Ready to Use**: Copy and paste to use, no complex configuration required
 - 📖 **Online Documentation**: Beautiful online documentation website with full-text search
@@ -263,6 +263,19 @@ All versions provide:
 - **Full Version**: Detailed prompts with complete test design guidance
 - **Lite Version**: Simplified prompts for quick use
 
+Selected testing types also provide platform-specific variants:
+- **`all_round`**: covers both Web and mobile
+- **`Web`**: focuses on browser and web application scenarios
+- **`Mobile`**: focuses on iOS / Android application scenarios
+
+Platform variants are currently available for:
+- **Requirements Analysis**
+- **Test Case Writing**
+- **Functional Testing**
+- **Test Strategy**
+- **Manual Testing**
+- **Test Case Review**
+
 📖 Learn more: [Prompt Framework Introduction](./prompt-frameworks/en/README.md)
 
 ## 🔄 Testing Workflows
@@ -309,7 +322,7 @@ This project provides three practical testing workflows to help teams efficientl
 Visit our online documentation: **[https://inaodeng.com/prompts](https://inaodeng.com/prompts)**
 
 1. Select a testing type or workflow from the left sidebar
-2. Click "Full Version" or "Lite Version" to view prompts
+2. Choose the prompt you need: "Full Version", "Lite Version", or a platform variant (`all_round` / `Web` / `Mobile`)
 3. Copy the prompt content to your AI assistant (ChatGPT, Claude, Cursor AI, etc.)
 4. Attach your input materials to get structured test documentation
 
@@ -410,6 +423,7 @@ Visit our online documentation: **[https://inaodeng.com/prompts](https://inaoden
 - **🔄 Full Lifecycle Coverage**: Complete testing lifecycle from requirements analysis to test reporting
 - **🌍 Multi-language Support**: Bilingual prompts in Chinese and English for different team needs
 - **📋 Full + Lite Versions**: Each testing type provides both full and lite versions for different scenarios
+- **📱 Platform Variants**: Requirements Analysis, Test Case Writing, Functional Testing, Test Strategy, Manual Testing, and Test Case Review now include `all_round`, `Web`, and `Mobile`
 - **🎨 TOP 5 Framework Support**: Each testing type supports ROSES, LangGPT, ICIO, CRISPE, RISE prompt frameworks
 - **👨‍💼 High Professionalism**: Each prompt designed by expert roles with 10+ years of experience
 - **🛠️ High Practicality**: Provides standardized formats and best practice guidance
