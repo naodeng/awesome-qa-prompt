@@ -8,7 +8,7 @@ This directory contains practical workflow guides for using the QA Prompt Librar
 
 ## 📚 Available Workflows
 
-### [AI Quality Analysis MVP](ai-quality-analysis-mvp/README.md)
+### [AI Quality Analysis Workflow](ai-quality-analysis-workflow/README.md)
 **Use for**: Moving from requirements analysis through test report review while preserving role separation, evidence, and Human Task decision boundaries
 
 **Eight stages**:
@@ -84,7 +84,7 @@ This directory contains practical workflow guides for using the QA Prompt Librar
 ## 🎯 How to Use These Workflows
 
 1. **Use the testing prompt router first** if you are not sure where to start
-2. **Use AI Quality Analysis MVP** for an eight-stage, role-based quality-analysis chain
+2. **Use AI Quality Analysis Workflow** for an eight-stage, role-based quality-analysis chain
 3. **Select the appropriate workflow** based on your current testing phase
 4. **Follow the timeline** and activities outlined in each workflow
 5. **Use the referenced prompts** from the main library for each activity
