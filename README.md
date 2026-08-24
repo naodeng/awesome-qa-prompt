@@ -96,7 +96,7 @@
 | 日常测试 | [`Workflows/zh/daily-testing-workflow.md`](./Workflows/zh/daily-testing-workflow.md) | [`Workflows/en/daily-testing-workflow.md`](./Workflows/en/daily-testing-workflow.md) |
 | 迭代测试 | [`Workflows/zh/sprint-testing-workflow.md`](./Workflows/zh/sprint-testing-workflow.md) | [`Workflows/en/sprint-testing-workflow.md`](./Workflows/en/sprint-testing-workflow.md) |
 | 发布测试 | [`Workflows/zh/release-testing-workflow.md`](./Workflows/zh/release-testing-workflow.md) | [`Workflows/en/release-testing-workflow.md`](./Workflows/en/release-testing-workflow.md) |
-| AI 研发质量分析 MVP | [`Workflows/zh/ai-quality-analysis-mvp/README.md`](./Workflows/zh/ai-quality-analysis-mvp/README.md) | [`Workflows/en/ai-quality-analysis-mvp/README.md`](./Workflows/en/ai-quality-analysis-mvp/README.md) |
+| AI 研发质量分析工作流 | [`Workflows/zh/ai-quality-analysis-workflow/README.md`](./Workflows/zh/ai-quality-analysis-workflow/README.md) | [`Workflows/en/ai-quality-analysis-workflow/README.md`](./Workflows/en/ai-quality-analysis-workflow/README.md) |
 
 说明见 [`Workflows/zh/README.md`](./Workflows/zh/README.md)。
 

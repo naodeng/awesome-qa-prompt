@@ -96,7 +96,7 @@ Chinese paths use `zh` instead of `en`, for example [`testing-types/zh/functiona
 | Daily testing | [`Workflows/zh/daily-testing-workflow.md`](./Workflows/zh/daily-testing-workflow.md) | [`Workflows/en/daily-testing-workflow.md`](./Workflows/en/daily-testing-workflow.md) |
 | Sprint testing | [`Workflows/zh/sprint-testing-workflow.md`](./Workflows/zh/sprint-testing-workflow.md) | [`Workflows/en/sprint-testing-workflow.md`](./Workflows/en/sprint-testing-workflow.md) |
 | Release testing | [`Workflows/zh/release-testing-workflow.md`](./Workflows/zh/release-testing-workflow.md) | [`Workflows/en/release-testing-workflow.md`](./Workflows/en/release-testing-workflow.md) |
-| AI Quality Analysis MVP | [`Workflows/zh/ai-quality-analysis-mvp/README.md`](./Workflows/zh/ai-quality-analysis-mvp/README.md) | [`Workflows/en/ai-quality-analysis-mvp/README.md`](./Workflows/en/ai-quality-analysis-mvp/README.md) |
+| AI Quality Analysis Workflow | [`Workflows/zh/ai-quality-analysis-workflow/README.md`](./Workflows/zh/ai-quality-analysis-workflow/README.md) | [`Workflows/en/ai-quality-analysis-workflow/README.md`](./Workflows/en/ai-quality-analysis-workflow/README.md) |
 
 See [`Workflows/en/README.md`](./Workflows/en/README.md) for details.
 
