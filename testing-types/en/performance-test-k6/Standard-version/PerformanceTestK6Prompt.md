@@ -5,6 +5,7 @@ A k6 performance testing prompt covering scenario modeling, threshold placeholde
 ## Guardrails And Degradation Rules
 
 ### Input Completeness Check
+
 Before the main output, run an input audit:
 
 - List known information, missing information, key assumptions, and main risks
@@ -85,7 +86,7 @@ perf/
     <flow-or-api>.js      # main scenario entry
   data/                  # optional: CSV etc. (placeholder notes only)
   README.md              # how to run, env var names
-```
+```text
 
 **options / run defaults**
 
@@ -100,7 +101,7 @@ thresholds: {
   http_req_failed: ['rate<0.01'],           // error rate < 1% (assumption — confirm)
   http_req_duration: ['p(95)<500'],         // p95 < 500ms (assumption — confirm)
 }
-```
+```text
 
 - Prefer thresholds bound to critical transaction tags/groups, not one vague global sentence
 - When the user provides an SLA, use their numbers and cite the source
@@ -142,6 +143,7 @@ Unless the user explicitly narrows scope, the result must cover:
 Return in this order (keep the sections; fill concrete fields):
 
 ### 1. Task Understanding
+
 - System / domain under test
 - Performance goals (latency / error rate / throughput / capacity)
 - Included APIs or journeys (**confirmed only**)
@@ -149,6 +151,7 @@ Return in this order (keep the sections; fill concrete fields):
 - Input sources and conflict handling
 
 ### 2. k6 Scenario Plan
+
 - Selected scenario type(s) (usually 1–2) and rationale
 - Explicitly state **which scenario types are deferred this round and why**
 - Suggested script / directory layout
@@ -156,24 +159,28 @@ Return in this order (keep the sections; fill concrete fields):
 - Alignment with existing k6 assets (if any)
 
 ### 3. Load Model and Thresholds
+
 - Load model: VU/RPS, stages or executor, total duration (label assumptions)
 - Default thresholds: `http_req_failed`, `http_req_duration` p95 (and tag splits if any)
 - How to interpret pass/fail
 - With no SLA: mark every number as Assumption
 
 ### 4. Environment and Data Notes
+
 - `BASE_URL` / env limits / whether load is allowed
 - Auth and secrets: env var names + placeholders — no real secrets
 - Test data / `open()` file needs (if any: emphasize init-only)
 - Monitoring to watch (app, gateway, DB, queue — only from provided architecture; do not invent)
 
 ### 5. Execution Suggestions
+
 - Suggested order (1-VU smoke → chosen scenario → optional push)
 - Local / CI minimal run shape (command-level is enough)
 - Release-blocking checks
 - Report fields to keep (p95, failure rate, critical transaction splits)
 
 ### 6. Open Questions
+
 - Information gaps
 - Assumptions this round (itemized; when no SLA/traffic, list every assumed traffic and threshold number to confirm)
 

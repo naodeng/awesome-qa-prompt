@@ -5,6 +5,7 @@ Extends test case writing with stronger scenario decomposition, data combination
 ## Guardrails And Degradation Rules
 
 ### Input Completeness Check
+
 Before the main output, run an input audit:
 
 - List known information, missing information, key assumptions, and main risks
@@ -106,24 +107,30 @@ Unless the user explicitly narrows scope, cover:
 Return in this order:
 
 ### 1. Task Understanding
+
 - system under test and goals
 - in-scope / out-of-scope
 - input sources used
 
 ### 2. Coverage Strategy
+
 - risk hotspots and priority logic
 - what this round protects vs deliberately shallow areas
 
 ### 3. Prioritized Test Cases
+
 - group by P0 → P3; list cases with structured fields
 
 ### 4. Traceability Matrix
+
 - table: `Requirement or risk ref | Covered Case IDs | Coverage types | Gap notes`
 
 ### 5. Gaps and Assumptions
+
 - missing info, assumptions used, impact on coverage
 
 ### 6. Execution Notes
+
 - order, smoke subset, automation candidates, release-blocking checks
 
 ## Quality Bar

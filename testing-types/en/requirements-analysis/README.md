@@ -9,18 +9,21 @@ The Requirements Analysis module provides professional test analysis guidance, h
 ## Core Features
 
 ### 📋 Business Background Analysis
+
 - **Business Objectives:** Clarify the business problems the requirement aims to solve
 - **User Roles:** Identify all relevant user roles
 - **Business Value:** Assess the business value of the requirement
 - **Business Rules:** Organize key business rules and constraints
 
 ### 🎯 Test Scope Definition
+
 - **Functional Scope:** Clearly define included and excluded functional modules
 - **Test Types:** Cover functional, UI, security, performance, compatibility
 - **Environment Requirements:** Define test environment configuration
 - **Data Requirements:** Specify test data preparation requirements
 
 ### 🔍 Test Scenario Design
+
 - **Positive Scenarios:** Test scenarios for core business processes
 - **Negative Scenarios:** Exception handling, boundary conditions, error handling
 - **Boundary Scenarios:** Boundary value and critical condition testing
@@ -29,11 +32,13 @@ The Requirements Analysis module provides professional test analysis guidance, h
 - **Compatibility Scenarios:** Browser, device, operating system compatibility
 
 ### 🛠️ Test Method Planning
+
 - **Design Methods:** Scenario testing, equivalence partitioning, boundary value analysis, decision tables, etc.
 - **Execution Methods:** Manual testing, automated testing, API testing, performance testing
 - **Tool Recommendations:** Recommend appropriate testing tools based on test types
 
 ### 📊 Test Strategy Recommendations
+
 - **Test Focus:** Identify test areas requiring key attention
 - **Risk Assessment:** Assess potential risks and impacts
 - **Resource Requirements:** Estimate human, time, and tool resources
@@ -48,7 +53,6 @@ The Requirements Analysis module provides professional test analysis guidance, h
 - `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
 
-
 ## Platform Scenario Variants
 
 - `*-all_round.md`: covers both Web and mobile, suitable when one prompt needs to plan testing across both platforms
@@ -57,6 +61,7 @@ The Requirements Analysis module provides professional test analysis guidance, h
 - If your task does not need platform separation, keep using the original general prompt files
 
 ### Full Version Prompts
+
 - **Chinese Version:** `Standard-version/RequirementsAnalysisPrompt.md` (v0.3)
 - **English Version:** `Standard-version/RequirementsAnalysisPrompt.md` (v0.3)
 - **Role:** Senior Web Full-Stack Testing Expert (10+ years experience)
@@ -70,6 +75,7 @@ The Requirements Analysis module provides professional test analysis guidance, h
 - **Use Case:** Comprehensive requirements analysis and test planning for complex projects
 
 ### Plus Version Prompts (Multi-Format Requirements Parsing)
+
 - **Chinese Version:** `Standard-version/RequirementsAnalysisPrompt_Plus.md` (v0.4)
 - **English Version:** `Standard-version/RequirementsAnalysisPrompt_Plus.md` (v0.4)
 - **Features:** Supports Word/HTML/JSON/Markdown/Excel inputs, runs input auditing and cross-document consistency checks before producing requirements analysis conclusions
@@ -82,6 +88,7 @@ The Requirements Analysis module provides professional test analysis guidance, h
 - **Use Case:** Projects with distributed requirement sources and mixed formats that need one unified analysis conclusion
 
 ### Lite Version Prompts
+
 - **Chinese Version:** `Standard-version/RequirementsAnalysisPrompt_Lite.md` (v0.2)
 - **English Version:** `Standard-version/RequirementsAnalysisPrompt_Lite.md` (v0.2)
 - **Features:** Quick start, focused on core points, concise output
@@ -95,6 +102,7 @@ The Requirements Analysis module provides professional test analysis guidance, h
 - **Use Case:** Rapid requirements analysis and test scenario planning
 
 ### Version Update Notes
+
 - **v0.4 (2026-03-11):** Added Plus version with multi-format requirements parsing support (Word/HTML/JSON/Markdown/Excel)
 - **v0.3 (2025-01-16):** Added test methods section, optimized output format
 - **v0.2 (2025-01-16):** Focused on business background, test scope, test scenarios, removed specific test case steps
@@ -136,58 +144,66 @@ The Requirements Analysis module provides professional test analysis guidance, h
 ### Application Scenarios
 
 #### 1. New Feature Requirements Analysis
+
 ```markdown
 Input: New feature requirements document
 Output: Business background + Test scope + Test scenario design
 Method: Scenario testing + Boundary value analysis
 Expected: Comprehensive test planning and scenario coverage
-```
+```text
 
 #### 2. Complex Business Logic Analysis
+
 ```markdown
 Input: Business rules and flowcharts
 Output: Business rules organization + Decision table scenarios + State transition scenarios
 Method: Decision table method + State transition testing
 Expected: All combination scenarios and state transition coverage
-```
+```text
 
 #### 3. Test Strategy Development
+
 ```markdown
 Input: Project requirements and constraints
 Output: Test strategy + Risk assessment + Resource planning
 Method: Risk analysis + Resource assessment
 Expected: Complete test strategy and execution plan
-```
+```text
 
 #### 4. Test Review Preparation
+
 ```markdown
 Input: Requirements document and business rules
 Output: Structured requirements analysis report
 Method: Comprehensive test analysis methods
 Expected: Analysis report suitable for team review and discussion
-```
+```text
 
 ## Test Design Methods
 
 ### Scenario Testing
+
 - **User Scenarios:** Based on real user usage scenarios
 - **Business Scenarios:** Core business process scenarios
 - **Exception Scenarios:** Error and exception handling scenarios
 - **Boundary Scenarios:** Critical values and boundary conditions
 
 ### State Transition
+
 - **State Identification:** Identify all system states
 - **Transition Conditions:** Define state transition conditions
 - **Path Coverage:** Cover all transition paths
 - **Exception States:** Handle illegal state transitions
 
 ### Decision Table
+
 - **Condition Identification:** List all decision conditions
 - **Combination Analysis:** Analyze condition combinations
 - **Rule Definition:** Define business rules
 - **Test Cases:** Generate test cases
 
 ### Boundary Value Analysis
+
 - **Boundary Identification:** Identify input boundaries
 - **Equivalence Partitioning:** Valid and invalid equivalence classes
 - **Boundary Testing:** Boundary value and critical value testing
@@ -196,24 +212,28 @@ Expected: Analysis report suitable for team review and discussion
 ## Best Practices
 
 ### 1. Requirements Understanding
+
 - **Deep Understanding:** Fully understand business and user requirements
 - **Clarify Doubts:** Communicate with product managers promptly
 - **Documentation:** Record requirements understanding and assumptions
 - **Review Confirmation:** Review requirements understanding with team
 
 ### 2. Scenario Design
+
 - **User Perspective:** Design scenarios from user perspective
 - **Completeness:** Ensure complete scenario coverage
 - **Prioritization:** Sort by risk and importance
 - **Traceability:** Scenarios traceable to requirements
 
 ### 3. Test Coverage
+
 - **Functional Coverage:** All functional points covered
 - **Path Coverage:** Main business paths covered
 - **Data Coverage:** Various data types covered
 - **Environment Coverage:** Different environments and configurations
 
 ### 4. Continuous Optimization
+
 - **Feedback Collection:** Collect test execution feedback
 - **Scenario Optimization:** Continuously optimize test scenarios
 - **Knowledge Accumulation:** Accumulate test design experience
@@ -222,6 +242,7 @@ Expected: Analysis report suitable for team review and discussion
 ## Output Example
 
 ### Requirements Analysis Report Structure
+
 ```markdown
 # Requirements Analysis Report
 
@@ -262,7 +283,7 @@ Expected: Analysis report suitable for team review and discussion
 - Functional Coverage: [Core function coverage status]
 - Scenario Coverage: [Number of positive/negative/boundary scenarios]
 - Risk Coverage: [High/medium/low risk scenario coverage]
-```
+```text
 
 ## Related Modules
 
@@ -273,11 +294,13 @@ Expected: Analysis report suitable for team review and discussion
 ## Learning Resources
 
 ### Recommended Books
+
 - "The Art of Software Testing"
 - "How Google Tests Software"
 - "Explore It!: Reduce Risk and Increase Confidence with Exploratory Testing"
 
 ### Online Resources
+
 - [ISTQB Test Design Techniques](https://www.istqb.org/)
 - [Software Testing Help](https://www.softwaretestinghelp.com/)
 - [Ministry of Testing](https://www.ministryoftesting.com/)

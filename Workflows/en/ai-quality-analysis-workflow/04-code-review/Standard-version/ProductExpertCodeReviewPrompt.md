@@ -20,7 +20,7 @@ Code: explicit version/commit/tag | diff, patch, complete file content, or reada
 Interaction prototype (optional): name/version/source | content or readable location
 Original requirements (optional): name/version/source | content or readable location
 Technical solution (optional): name/version/source | content or readable location
-```
+```text
 
 ## Required Inputs And Hard Code Gate
 
@@ -86,7 +86,7 @@ Do not review code style, architecture preference, general security, test struct
 ## Information Gaps
 | Gap | Impact | Needed input |
 ## Human Task Handoff
-```
+```text
 
 ## Execution Instructions
 

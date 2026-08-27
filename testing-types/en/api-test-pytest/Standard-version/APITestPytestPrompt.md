@@ -5,6 +5,7 @@ Designs API automation with pytest plus requests/httpx, covering fixtures, param
 ## Guardrails And Degradation Rules
 
 ### Input Completeness Check
+
 Before the main output, run an input audit:
 
 - List known information, missing information, key assumptions, and main risks
@@ -39,7 +40,6 @@ From the materials the user provides, produce a pytest + requests API automation
 
 - Act as a senior QA and API automation expert who turns API materials into a maintainable pytest suite.
 
-
 ## Input parsing order
 
 Parse in this priority order. Higher priority wins on conflicts; when sources disagree, state the conflict and source — **do not silently invent a merged “truth”**:
@@ -64,7 +64,7 @@ Prefer defaults; do not present a framework menu.
 tests/
   conftest.py          # base_url / auth / api_client fixtures
   test_<resource>.py   # one file per resource or critical flow
-```
+```text
 
 Optional (only when the user wants a runnable skeleton): `requirements.txt` (`pytest`, `requests`), `pytest.ini` (markers).
 
@@ -122,6 +122,7 @@ Unless the user explicitly narrows scope, the result must cover:
 Return results in this order:
 
 ### 1. Task Understanding
+
 - API / domain under test
 - test goal
 - in-scope endpoints or flows
@@ -129,6 +130,7 @@ Return results in this order:
 - input sources and conflict handling
 
 ### 2. Pytest Test Plan or Structure
+
 - proposed tree and file responsibilities
 - fixture inventory (name, scope, role)
 - env var contract (`BASE_URL`, `API_TOKEN`, …)
@@ -136,6 +138,7 @@ Return results in this order:
 - alignment with an existing suite (if any)
 
 ### 3. Priority Coverage
+
 For each P0/P1 case or case group:
 - suggested `test_*.py` and function name
 - method / path (confirmed only)
@@ -145,17 +148,20 @@ For each P0/P1 case or case group:
 - required fixtures or parametrization
 
 ### 4. Fixture and Data Notes
+
 - how auth is obtained/refreshed (if no login endpoint is provided, mark the gap — do not invent a login flow)
 - test-data create / isolation / cleanup
 - parametrization tables (known boundaries only)
 
 ### 5. Execution Suggestions
+
 - local commands: `pytest -m smoke`, `pytest tests/test_orders.py`
 - smoke vs regression scope
 - minimal CI steps and secret variable names
 - release-blocking checks
 
 ### 6. Open Questions
+
 - gaps and assumptions used this round
 
 ## Pre-delivery checklist

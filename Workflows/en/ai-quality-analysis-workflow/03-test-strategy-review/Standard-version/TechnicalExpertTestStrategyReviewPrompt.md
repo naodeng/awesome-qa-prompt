@@ -15,7 +15,7 @@ Using the specified strategy version, produce an independent, traceable Technica
 ```text
 Test strategy: name | source | version | content or readable location
 Additional constraints (optional): constraints only on reading that strategy or formatting this report
-```
+```text
 
 ## Stage and Role Boundaries
 
@@ -82,7 +82,7 @@ If strategy content is missing or unreadable, treat it as blocking and output on
 ## Human Task Handoff
 - Open decisions: ...
 - Final decision: belongs to the Human Task
-```
+```text
 
 ## Execution Instructions
 

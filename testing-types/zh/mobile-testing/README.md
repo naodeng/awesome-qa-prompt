@@ -23,8 +23,8 @@
 - `*_Lean.md`：仅在模块提供 Lean 版本时使用，适合更克制的输出
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`：仅在你明确需要特定提示框架时再选用
 
-
 ### [MobileTestingPrompt.md](Standard-version/MobileTestingPrompt.md)
+
 **语言**：中文
 **角色**：资深移动端测试专家
 **功能**：设计全面的移动端测试策略和测试方案
@@ -36,6 +36,7 @@
 - 性能、安全、用户体验专项测试
 
 ### [MobileTestingPrompt.md](../../en/mobile-testing/Standard-version/MobileTestingPrompt.md)
+
 **语言**：English
 **角色**：Senior Mobile Testing Expert
 **功能**：Design comprehensive mobile testing strategies and test plans
@@ -69,18 +70,21 @@
 ## 💡 核心测试领域
 
 ### 平台特性测试
+
 - **iOS 平台**：Siri 集成、Touch ID/Face ID、3D Touch
 - **Android 平台**：Google 服务、多窗口模式、权限模型
 - **系统集成**：通知、分享、快捷方式
 - **设备特性**：传感器、摄像头、GPS、NFC
 
 ### 兼容性测试
+
 - **设备兼容性**：不同品牌、型号、配置的设备
 - **系统版本**：不同操作系统版本的兼容性
 - **屏幕适配**：不同屏幕尺寸、分辨率、密度
 - **网络环境**：2G/3G/4G/5G/WiFi 网络测试
 
 ### 用户体验测试
+
 - **触摸交互**：点击、滑动、缩放、旋转手势
 - **响应性能**：启动时间、页面切换、操作响应
 - **电池优化**：电池消耗和省电模式适配
@@ -89,18 +93,21 @@
 ## 🔧 测试工具
 
 ### 自动化工具
+
 - **Appium**：跨平台移动应用自动化
 - **XCUITest**：iOS 原生自动化测试
 - **Espresso**：Android 原生自动化测试
 - **Detox**：React Native 应用自动化
 
 ### 云测试平台
+
 - **Firebase Test Lab**：Google 云测试平台
 - **AWS Device Farm**：Amazon 设备测试服务
 - **BrowserStack**：跨设备云测试平台
 - **Sauce Labs**：移动应用云测试
 
 ### 性能分析工具
+
 - **Xcode Instruments**：iOS 性能分析
 - **Android Profiler**：Android 性能分析
 - **GameBench**：移动应用性能监控
@@ -109,12 +116,14 @@
 ## 📱 设备管理策略
 
 ### 设备选择原则
+
 - **市场份额**：基于市场占有率选择主流设备
 - **用户群体**：基于目标用户群体选择设备
 - **技术特性**：覆盖不同技术特性的设备
 - **成本效益**：平衡测试覆盖和成本投入
 
 ### 测试环境
+
 - **真机测试**：在真实设备上进行测试
 - **模拟器测试**：使用模拟器进行快速验证
 - **云端测试**：利用云平台进行大规模测试
@@ -123,11 +132,13 @@
 ## 🔗 相关资源
 
 ### 内部资源
+
 - [自动化测试](../automation-testing/) - 移动端自动化实施
 - [性能测试](../performance-testing/) - 移动端性能测试
 - [用户体验测试](../test-strategy/) - 移动端 UX 测试策略
 
 ### 外部资源
+
 - [Appium 官方文档](http://appium.io/)
 - [移动测试最佳实践](https://www.guru99.com/mobile-testing.html)
 - [iOS 测试指南](https://developer.apple.com/testing/)

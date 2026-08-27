@@ -9,24 +9,28 @@ The AI-Assisted Testing module provides comprehensive AI-powered testing guidanc
 ## Core Features
 
 ### 🤖 AI Testing Technologies
+
 - **Machine Learning:** Intelligent test case generation and optimization
 - **Natural Language Processing:** Automated requirements analysis and test generation
 - **Computer Vision:** Visual testing and UI validation
 - **Predictive Analytics:** Defect prediction and risk assessment
 
 ### 🎯 Intelligent Test Automation
+
 - **Smart Test Generation:** AI-powered test case generation
 - **Self-Healing Tests:** Automatic test script maintenance and repair
 - **Intelligent Test Selection:** Risk-based test prioritization
 - **Adaptive Testing:** Dynamic test adjustment based on application changes
 
 ### 🔍 Advanced Analysis
+
 - **Pattern Recognition:** Identify defect patterns and trends
 - **Root Cause Analysis:** AI-powered defect root cause identification
 - **Test Data Generation:** Intelligent test data creation
 - **Coverage Analysis:** AI-enhanced coverage optimization
 
 ### 🌐 Multi-Domain Support
+
 - **Web Testing:** AI-powered web application testing
 - **Mobile Testing:** Intelligent mobile app testing
 - **API Testing:** Smart API test generation and validation
@@ -41,18 +45,20 @@ The AI-Assisted Testing module provides comprehensive AI-powered testing guidanc
 - `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
 
-
 ### Chinese Prompts
+
 - **File:** `Standard-version/AIAssistedTestingPrompt.md`
 - **Role:** Senior AI Testing Expert (10+ years experience)
 - **Use Case:** Chinese project teams, AI testing implementation
 
 ### English Prompts
+
 - **File:** `Standard-version/AIAssistedTestingPrompt.md`
 - **Role:** Senior AI Testing Expert
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
+
 - **File:** `Standard-version/AIAssistedTestingPrompt_Lite.md` / `Standard-version/AIAssistedTestingPrompt_Lite.md`
 - **Features:** Quick start, focused on core AI testing concepts
 - **Use Case:** Quick AI testing assessment and basic implementation
@@ -88,11 +94,13 @@ The AI-Assisted Testing module provides comprehensive AI-powered testing guidanc
 ## Learning Resources
 
 ### Recommended Books
+
 - "AI-Powered Test Automation"
 - "Machine Learning for Software Testing"
 - "Intelligent Software Testing"
 
 ### Online Resources
+
 - [Test.ai](https://test.ai/)
 - [Applitools](https://applitools.com/)
 - [Mabl](https://www.mabl.com/)

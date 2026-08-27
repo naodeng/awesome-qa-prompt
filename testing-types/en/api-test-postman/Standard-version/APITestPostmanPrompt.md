@@ -5,6 +5,7 @@ An API testing prompt for Postman Collections, environments, assertions, and New
 ## Guardrails And Degradation Rules
 
 ### Input Completeness Check
+
 Before the main output, run an input audit:
 
 - List known information, missing information, key assumptions, and main risks
@@ -74,10 +75,15 @@ Unless the user explicitly narrows the scope, make sure the result addresses the
 Return the result in this order:
 
 ### 1. Task Understanding
+
 ### 2. Postman API Testing Scope
+
 ### 3. Test Structure and Coverage
+
 ### 4. Data, Environment, and Assertions
+
 ### 5. Execution and CI Notes
+
 ### 6. Open Questions
 
 ## Quality Bar

@@ -22,7 +22,7 @@ Product report: report ID/version | complete content
 QA report: report ID/version | complete content
 UI/UX report: report ID/version | complete content
 Technical report: report ID/version | complete content
-```
+```text
 
 Do not reread test cases, requirements, requirements analysis, test strategy, strategy review, technical solution, code review, external sources, or conversation memory to fill role-report gaps.
 
@@ -112,7 +112,7 @@ Evaluate in this order: `Insufficient information -> Recommend revision -> Recom
 - Blockers/additional cases/revisions/gaps requiring action: ...
 - Unresolved disagreements: ...
 - Pending Human Task decisions: list only evidence-backed questions requiring human judgment; must not output or prefill approval, return-for-revision, request-for-information, or another final decision
-```
+```text
 
 ## Execution Instructions
 

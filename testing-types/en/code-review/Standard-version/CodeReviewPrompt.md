@@ -5,6 +5,7 @@ A QA-oriented code review prompt for spotting testability issues, defect risks, 
 ## Guardrails And Degradation Rules
 
 ### Input Completeness Check
+
 Before the main output, run an input audit:
 
 - List known information, missing information, key assumptions, and main risks

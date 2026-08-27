@@ -84,7 +84,7 @@ If all four reports are missing or unreadable, output only the audit, needed inp
 - Information to supply: ...
 - Disagreements to decide: ...
 - Final decision: belongs to the Human Task; this report is not an approval, merge, or release decision
-```
+```text
 
 ## Execution Instructions
 

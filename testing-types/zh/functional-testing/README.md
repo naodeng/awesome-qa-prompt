@@ -23,8 +23,8 @@
 - `*_Lean.md`：仅在模块提供 Lean 版本时使用，适合更克制的输出
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`：仅在你明确需要特定提示框架时再选用
 
-
 ### [FunctionalTestingPrompt.md](Standard-version/FunctionalTestingPrompt.md)
+
 **语言**：中文
 **角色**：资深功能测试专家
 **功能**：设计全面的功能测试策略和测试方案
@@ -36,6 +36,7 @@
 - 系统集成复杂性处理
 
 ### [FunctionalTestingPrompt.md](../../en/functional-testing/Standard-version/FunctionalTestingPrompt.md)
+
 **语言**：English
 **角色**：Senior Functional Testing Expert
 **功能**：Design comprehensive functional testing strategies and test plans
@@ -68,12 +69,14 @@
 ## 💡 核心测试方法
 
 ### 黑盒测试方法
+
 - **等价类划分**：将输入域划分为有效和无效等价类
 - **边界值分析**：重点测试输入域的边界值
 - **决策表测试**：处理复杂的业务规则和条件组合
 - **状态转换测试**：验证系统状态的正确转换
 
 ### 功能测试分类
+
 - **核心业务功能测试**：主要业务流程和业务规则验证
 - **用户界面功能测试**：页面功能和交互操作验证
 - **数据管理功能测试**：CRUD 操作和数据验证
@@ -82,11 +85,13 @@
 ## 🔗 相关资源
 
 ### 内部资源
+
 - [需求分析](../requirements-analysis/) - 需求分析和测试场景设计
 - [测试用例编写](../test-case-writing/) - 测试用例设计和编写
 - [自动化测试](../automation-testing/) - 功能测试自动化
 
 ### 外部资源
+
 - [ISTQB 功能测试指南](https://www.istqb.org/)
 - [IEEE 软件测试标准](https://standards.ieee.org/)
 - [功能测试最佳实践](https://www.guru99.com/functional-testing.html)

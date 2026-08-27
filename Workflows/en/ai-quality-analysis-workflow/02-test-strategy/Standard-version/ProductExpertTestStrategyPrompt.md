@@ -22,7 +22,7 @@ Code changes or repository link (optional): version/commit identifier and conten
 Interactive prototype (optional): name, version, and page/flow description
 Original request (optional): name, version, and original text
 Technical design (optional): name, version, and content
-```
+```text
 
 ## Stage And Role Boundaries
 
@@ -98,7 +98,7 @@ If any required input is missing or unreadable, mark the task blocked and do not
 ## Evidence Index
 | Evidence ID | Artifact name | Version | Locator | Evidence summary |
 ## Role Handoffs And Approval Status
-```
+```text
 
 ## Execution Instructions
 

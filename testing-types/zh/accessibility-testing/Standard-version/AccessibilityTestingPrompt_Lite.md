@@ -1,6 +1,5 @@
 # 可访问性测试 Prompt (精简版)
 
-
 ---
 
 **Role:** 资深可访问性测试专家
@@ -12,18 +11,21 @@
 ## 使用约束与降级规则
 
 ### 输入完整性检查
+
 在开始正式输出前，请先执行输入审计：
 - 列出“已知信息”“缺失信息”“关键假设”“主要风险”
 - 如果缺少关键信息且会显著影响结论，请先提出 3-5 个关键澄清问题
 - 如果用户不补充信息，请基于最少必要假设继续，并明确标注“以下内容基于假设”
 
 ### 禁止编造
+
 - 模板中的数字、覆盖率、通过率、耗时若未由用户提供，一律视为示例或待确认，不得写成既定目标
 - 不要编造不存在的需求、接口、字段、流程、环境、用户量、并发量、团队配置、审批信息、版本号、日期、预算、缺陷数据、覆盖率、SLA/SLO 或合规结论
 - 对于未提供的指标、阈值和比例，使用“待确认/建议值/示例值”标注，而不是当作既定事实
 - 对于无法从输入中确认的工具链、框架或实现方式，不要强行指定唯一方案，应给出条件化建议
 
 ### 输出策略
+
 - 优先输出最小可执行版本，再补充增强版建议
 - 所有优先级、风险和建议必须给出简短依据
 - 如果用户要求的是策略/分析，不要默认展开为大段实现代码；只有在用户明确需要或输入足够时，才提供脚本、配置或示例代码
@@ -77,7 +79,7 @@ describe('Accessibility Tests', () => {
     expect(results.violations).toHaveLength(0);
   });
 });
-```
+```text
 
 #### 扫描重点
 - **HTML语义：** 正确使用HTML标签
@@ -103,7 +105,7 @@ describe('Accessibility Tests', () => {
 - [ ] 焦点指示器清晰可见
 - [ ] 无键盘陷阱问题
 - [ ] 快捷键正常工作
-```
+```text
 
 #### 屏幕阅读器测试
 **测试工具：** NVDA (Windows) / VoiceOver (Mac/iOS)
@@ -121,7 +123,7 @@ describe('Accessibility Tests', () => {
 - [ ] 链接和按钮有描述性文本
 - [ ] 表单控件有关联标签
 - [ ] 错误信息清晰易懂
-```
+```text
 
 #### 色彩对比度测试
 **测试工具：** WebAIM Contrast Checker
@@ -137,7 +139,7 @@ describe('Accessibility Tests', () => {
 - [ ] 按钮文本 vs 按钮背景
 - [ ] 表单控件边框 vs 背景
 - [ ] 焦点指示器 vs 背景
-```
+```text
 
 ### 移动设备测试
 
@@ -155,7 +157,7 @@ describe('Accessibility Tests', () => {
 - [ ] 手势导航流畅自然
 - [ ] 语音反馈清晰准确
 - [ ] 转子功能正常工作
-```
+```text
 
 #### Android TalkBack测试
 ```
@@ -171,7 +173,7 @@ describe('Accessibility Tests', () => {
 - [ ] 线性导航顺序合理
 - [ ] 手势快捷键有效
 - [ ] 语音反馈内容准确
-```
+```text
 
 ### 问题分类和修复
 
@@ -187,12 +189,12 @@ describe('Accessibility Tests', () => {
 **图片缺少alt文本：**
 ```html
 <!-- 错误 -->
-<img src="logo.png">
+<img src="logo.png" alt="可访问性测试提示词 Logo">
 
 <!-- 正确 -->
 <img src="logo.png" alt="公司名称">
 <img src="decorative.png" alt="" role="presentation">
-```
+```text
 
 **表单控件缺少标签：**
 ```html
@@ -202,7 +204,7 @@ describe('Accessibility Tests', () => {
 <!-- 正确 -->
 <label for="username">用户名</label>
 <input type="text" id="username" placeholder="请输入用户名">
-```
+```text
 
 **按钮缺少可访问名称：**
 ```html
@@ -211,7 +213,7 @@ describe('Accessibility Tests', () => {
 
 <!-- 正确 -->
 <button aria-label="删除"><i class="icon-delete"></i></button>
-```
+```text
 
 ### 测试报告
 
@@ -285,4 +287,5 @@ describe('Accessibility Tests', () => {
 ## 📋 Change Log
 
 ### v0.1 (2025-01-14)
+
 - 初始化版本

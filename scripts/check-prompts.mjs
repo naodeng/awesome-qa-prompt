@@ -140,7 +140,8 @@ function checkPromptGuardrails(file, text) {
 
     if (isLegacyZhPrompt) {
       if (normalized.includes("LangGPT-version")) {
-        const hasGuardrails = text.includes("#### ## Guardrails");
+        const hasGuardrails =
+          text.includes("#### Guardrails") || text.includes("#### ## Guardrails");
         const hasAuditInit =
           text.includes("输入审计") ||
           text.includes("input audit") ||

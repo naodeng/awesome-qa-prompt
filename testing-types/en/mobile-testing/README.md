@@ -9,24 +9,28 @@ The Mobile Testing module provides comprehensive mobile application testing guid
 ## Core Features
 
 ### 📱 Platform Coverage
+
 - **iOS Testing:** iPhone and iPad application testing
 - **Android Testing:** Android device and version testing
 - **Cross-Platform:** React Native, Flutter, Xamarin testing
 - **Hybrid Apps:** Cordova, Ionic hybrid app testing
 
 ### 🎯 Testing Types
+
 - **Functional Testing:** Feature and functionality validation
 - **Usability Testing:** User experience and interface testing
 - **Performance Testing:** App performance and responsiveness
 - **Compatibility Testing:** Device and OS version compatibility
 
 ### 🔍 Mobile-Specific Testing
+
 - **Touch Gestures:** Tap, swipe, pinch, rotate testing
 - **Orientation:** Portrait and landscape mode testing
 - **Interruptions:** Calls, messages, notifications handling
 - **Network Conditions:** WiFi, 4G/5G, offline mode testing
 
 ### 🌐 Testing Approaches
+
 - **Real Device Testing:** Testing on physical devices
 - **Emulator/Simulator:** Testing on virtual devices
 - **Cloud Testing:** Cloud-based device farms
@@ -41,18 +45,20 @@ The Mobile Testing module provides comprehensive mobile application testing guid
 - `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
 
-
 ### Chinese Prompts
+
 - **File:** `Standard-version/MobileTestingPrompt.md`
 - **Role:** Senior Mobile Testing Expert (10+ years experience)
 - **Use Case:** Chinese project teams, mobile testing requirements
 
 ### English Prompts
+
 - **File:** `Standard-version/MobileTestingPrompt.md`
 - **Role:** Senior Mobile Testing Expert
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
+
 - **File:** `Standard-version/MobileTestingPrompt_Lite.md` / `Standard-version/MobileTestingPrompt_Lite.md`
 - **Features:** Quick start, focused on core mobile testing concepts
 - **Use Case:** Quick mobile testing and basic validation
@@ -88,11 +94,13 @@ The Mobile Testing module provides comprehensive mobile application testing guid
 ## Learning Resources
 
 ### Recommended Books
+
 - "Hands-On Mobile App Testing"
 - "Mobile Testing: The Definitive Guide"
 - "iOS and Android App Testing"
 
 ### Online Resources
+
 - [Appium Documentation](http://appium.io/)
 - [Mobile Testing Best Practices](https://www.ministryoftesting.com/)
 - [Google Mobile Testing Guide](https://developer.android.com/training/testing)

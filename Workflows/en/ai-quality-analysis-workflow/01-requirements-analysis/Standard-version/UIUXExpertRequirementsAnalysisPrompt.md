@@ -21,7 +21,7 @@ Requirements document: name, version if available, and content or readable locat
 Interactive prototype (optional): name, version if available, and page/flow description
 Original request (optional): name, version if available, and original text
 Additional constraints (optional): only reading or output constraints for the material above
-```
+```text
 
 ## Stage And Role Boundaries
 
@@ -107,7 +107,7 @@ Use this structure:
 ## Role Handoffs And Approval Status
 - Handoffs: ...
 - Approval status: Pending human confirmation / status explicitly provided in input
-```
+```text
 
 ## Execution Instructions
 

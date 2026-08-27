@@ -5,6 +5,7 @@ Extends test strategy with stronger risk layering, scope trade-offs, resource co
 ## Guardrails And Degradation Rules
 
 ### Input Completeness Check
+
 Before the main output, run an input audit:
 
 - List known information, missing information, key assumptions, and main risks
@@ -102,15 +103,19 @@ Unless the user explicitly narrows scope, cover:
 Return in this order:
 
 ### 1. Context and Objectives
+
 - business goals, quality goals, hard constraints
 
 ### 2. Risk-Based Priorities
+
 - P0–P3 areas/threats with rationale
 
 ### 3. Recommended Strategy (by area)
+
 - describe each Area with structured fields
 
 ### 4. Execution Milestones and Gates
+
 For each key gate:
 - time anchor (or relative phase)
 - entry criteria
@@ -118,9 +123,11 @@ For each key gate:
 - failure actions (slip / cut scope / add testing)
 
 ### 5. Ownership and Resource Notes
+
 - who owns what; bottlenecks and dependencies
 
 ### 6. Open Risks and Assumptions
+
 - unresolved risks, acceptance approach, information gaps
 
 ## Quality Bar

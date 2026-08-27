@@ -21,7 +21,7 @@ Test cases: case-set name/version/source | complete content
 Case review: report ID/version/source | complete content
 Test execution report (optional): report ID/version/case-set version/environment/source | complete content
 Defect report (optional): report ID/version/scope/source | complete content
-```
+```text
 
 Do not receive, read, cite, or infer Product, UI/UX, or Technical test reports. Ignore mixed-in role reports and record them as out-of-boundary input.
 
@@ -90,7 +90,7 @@ A partially readable execution report permits analysis only of readable records,
 ## QA Role Conclusion
 - Conclusion: Verifiable execution facts exist / Failures, blockers, or defects exist / Not executed or insufficient evidence
 - Release and risk acceptance: belong to the Human Task; this report does not decide
-```
+```text
 
 ## Execution Instructions
 

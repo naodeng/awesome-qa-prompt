@@ -9,24 +9,28 @@ The Manual Testing module provides comprehensive manual testing guidance, helpin
 ## Core Features
 
 ### 👤 Human-Centered Testing
+
 - **Exploratory Testing:** Simultaneous learning, test design, and execution
 - **Usability Testing:** User experience and interface testing
 - **Ad-hoc Testing:** Informal testing without predefined test cases
 - **Intuitive Testing:** Leverage human intuition and experience
 
 ### 🎯 Testing Techniques
+
 - **Session-Based Testing:** Structured exploratory testing sessions
 - **Charter-Based Testing:** Goal-oriented testing approach
 - **Scenario Testing:** Real-world usage scenario testing
 - **Error Guessing:** Experience-based defect prediction
 
 ### 🔍 Quality Focus
+
 - **User Experience:** Interface, interaction, and workflow testing
 - **Edge Cases:** Unusual scenarios and boundary conditions
 - **Visual Testing:** Layout, design, and visual consistency
 - **Cognitive Testing:** Logic, flow, and understandability
 
 ### 🌐 Multi-Domain Testing
+
 - **Web Testing:** Browser-based application testing
 - **Mobile Testing:** Mobile app usability and functionality
 - **Desktop Testing:** Desktop application testing
@@ -41,18 +45,20 @@ The Manual Testing module provides comprehensive manual testing guidance, helpin
 - `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
 
-
 ### Chinese Prompts
+
 - **File:** `Standard-version/ManualTestingPrompt.md`
 - **Role:** Senior Manual Testing Expert (10+ years experience)
 - **Use Case:** Chinese project teams, manual testing requirements
 
 ### English Prompts
+
 - **File:** `Standard-version/ManualTestingPrompt.md`
 - **Role:** Senior Manual Testing Expert
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
+
 - **File:** `Standard-version/ManualTestingPrompt_Lite.md` / `Standard-version/ManualTestingPrompt_Lite.md`
 - **Features:** Quick start, focused on core manual testing techniques
 - **Use Case:** Quick manual testing and exploratory testing
@@ -88,11 +94,13 @@ The Manual Testing module provides comprehensive manual testing guidance, helpin
 ## Learning Resources
 
 ### Recommended Books
+
 - "Explore It!: Reduce Risk and Increase Confidence with Exploratory Testing"
 - "Lessons Learned in Software Testing"
 - "The Art of Software Testing"
 
 ### Online Resources
+
 - [Ministry of Testing](https://www.ministryoftesting.com/)
 - [Exploratory Testing Academy](https://www.exploratorytestingacademy.com/)
 - [Software Testing Help](https://www.softwaretestinghelp.com/)
@@ -113,7 +121,6 @@ This module follows the PolyForm Noncommercial License 1.0.0. See the [LICENSE](
 ---
 
 **Discover what automation cannot find!** 👤✨
-
 
 ## Platform Scenario Variants
 

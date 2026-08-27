@@ -9,6 +9,7 @@ This directory contains practical workflow guides for using the QA Prompt Librar
 ## 📚 Available Workflows
 
 ### [AI Quality Analysis Workflow](ai-quality-analysis-workflow/README.md)
+
 **Use for**: Moving from requirements analysis through test report review while preserving role separation, evidence, and Human Task decision boundaries
 
 **Eight stages**:
@@ -22,6 +23,7 @@ This directory contains practical workflow guides for using the QA Prompt Librar
 ---
 
 ### [Testing Prompt Router](discover-testing/README.md)
+
 **Use for**: Choosing the right testing-type prompt or workflow prompt when the entry point is unclear
 
 **Covers**:
@@ -35,6 +37,7 @@ This directory contains practical workflow guides for using the QA Prompt Librar
 ---
 
 ### [Daily Testing Workflow](daily-testing-workflow.md)
+
 **Use for**: Day-to-day testing activities
 
 **Covers**:
@@ -51,6 +54,7 @@ This directory contains practical workflow guides for using the QA Prompt Librar
 ---
 
 ### [Sprint Testing Workflow](sprint-testing-workflow.md)
+
 **Use for**: 2-week sprint cycles
 
 **Covers**:
@@ -66,6 +70,7 @@ This directory contains practical workflow guides for using the QA Prompt Librar
 ---
 
 ### [Release Testing Workflow](release-testing-workflow.md)
+
 **Use for**: Production releases
 
 **Covers**:

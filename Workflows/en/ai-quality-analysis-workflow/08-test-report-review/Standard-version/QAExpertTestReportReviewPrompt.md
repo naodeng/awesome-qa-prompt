@@ -27,7 +27,7 @@ Test case review report: ID/version/source | complete content
 Test case execution report (optional): ID/version/case-set version/environment/source | complete content
 Defect report (optional): ID/version/scope/source | complete content
 Test report: ID/version/scope/source | complete content
-```
+```text
 
 Do not receive, read, cite, or infer Product, UI/UX, Technical, or PM test-report-review outputs. Ignore mixed-in content and record it as out-of-boundary input.
 
@@ -94,7 +94,7 @@ Record the test report's stated execution-evidence status, verifiable scope, num
 ## Human Task Handoff
 - Open items or risk-acceptance questions: ...
 - Final decision: belongs to the Human Task
-```
+```text
 
 ## Execution Instructions
 

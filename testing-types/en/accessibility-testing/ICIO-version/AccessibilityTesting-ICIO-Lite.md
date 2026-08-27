@@ -1,6 +1,5 @@
 # Accessibility Testing - ICIO Framework (Lightweight Version)
 
-
 ---
 
 ## ICIO Framework Structure
@@ -15,22 +14,24 @@
 
 ---
 
-
 ## Usage Constraints and Degradation Rules
 
 ### Input Completeness Check
+
 Before producing the main output, run an input audit:
 - List Known / Missing / Key assumptions / Main risks
 - If missing information would significantly change the result, ask 3-5 high-value clarifying questions first
 - If the user does not provide more information, continue with the minimum necessary assumptions and explicitly mark content that depends on them
 
 ### Do Not Fabricate
+
 - Do not invent requirements, APIs, fields, flows, environments, traffic/concurrency numbers, team setup, approvers, version numbers, dates, budgets, defect counts, coverage figures, SLA/SLO targets, or compliance conclusions
 - Numbers, coverage, pass rates, and timings in templates that are not user-provided are examples or TBD — never treat them as committed targets
 - For metrics not provided, mark them as TBD / recommended / example values instead of treating them as facts
 - Do not force a single toolchain or framework when the input does not justify it; give conditional recommendations
 
 ### Output Strategy
+
 - Prefer a minimum executable result first; add optional enhancements only when useful
 - Give a short rationale for priorities, risks, and recommendations
 - If the user asked for strategy/analysis, do not default to long implementation code; provide scripts/config only when requested or when inputs are sufficient
@@ -88,7 +89,7 @@ describe('Accessibility Tests', () => {
     expect(results.violations).toHaveLength(0);
   });
 });
-```
+```text
 
 ### Manual Testing
 
@@ -108,7 +109,7 @@ Verification Points:
 - [ ] Focus indicators clearly visible
 - [ ] No keyboard trap issues
 - [ ] Shortcuts work normally
-```
+```text
 
 #### Screen Reader Testing
 **Test Tools:** NVDA (Windows) / VoiceOver (Mac/iOS)
@@ -126,7 +127,7 @@ Verification Points:
 - [ ] Links and buttons have descriptive text
 - [ ] Form controls have associated labels
 - [ ] Error messages clear and understandable
-```
+```text
 
 ### Mobile Device Testing
 
@@ -144,7 +145,7 @@ Verification Points:
 - [ ] Gesture navigation smooth and natural
 - [ ] Voice feedback clear and accurate
 - [ ] Rotor functionality works normally
-```
+```text
 
 ### Issue Classification and Fixes
 

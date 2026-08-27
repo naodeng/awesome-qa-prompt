@@ -22,7 +22,7 @@ Code review report: report ID/code version | complete content
 Interaction prototype (optional): name/version/source | content or readable location
 Original requirements (optional): name/version/source | content or readable location
 Technical solution (optional): name/version/source | content or readable location
-```
+```text
 
 ## Input Gate And Conditional Participation
 
@@ -77,7 +77,7 @@ Do not decide business rules, interface data, architecture, security, or perform
 ## Source Traceability
 | Case identifier | Requirement/experience locator | Risk/strategy/review ID | Code finding ID, if any | Trace status |
 ## Information Gaps And Role Handoffs
-```
+```text
 
 ## Execution Instructions
 
