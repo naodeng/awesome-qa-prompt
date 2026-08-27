@@ -1,12 +1,14 @@
 # Daily Testing Workflow
 
 ## 📋 Metadata
+
 - **Audience**: QA Engineers, Test Automation Engineers
 - **Estimated Time**: Reference guide for daily use
 - **Last Updated**: 2026-01-01
 - **Version**: 1.0
 
 ## 🎯 Objective
+
 A practical workflow guide for QA engineers to efficiently use the QA Prompt Library in their daily testing activities.
 
 ---
@@ -14,6 +16,7 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 ## 🌅 Morning Routine
 
 ### 1. Review Test Plan (5-10 min)
+
 **Prompts to Use**:
 - [Requirements Analysis](../testing-types/requirements-analysis/RequirementsAnalysisPrompt_EN.md) - Review sprint goals
 - [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) - Identify high-risk areas
@@ -24,6 +27,7 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 - Check for blockers
 
 ### 2. Set Up Test Environment (10-15 min)
+
 **Prompts to Use**:
 - [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md) - Check pipeline status
 - [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) - Prepare test data
@@ -38,6 +42,7 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 ## 📝 Test Case Creation (30-60 min)
 
 ### For New Features
+
 **Workflow**:
 1. Use [Test Case Writing](../testing-types/test-case-writing/TestCaseWritingPrompt_EN.md)
 2. Generate comprehensive test scenarios
@@ -45,7 +50,7 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 4. Review with [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md) checklist
 
 **Example Prompt Flow**:
-```
+```text
 1. Generate functional tests → Review → Refine
 2. Add edge cases → Review → Refine
 3. Create test data → Validate
@@ -53,6 +58,7 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 ```
 
 ### For Bug Fixes
+
 **Workflow**:
 1. Use [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md) regression scenarios
 2. Create tests to verify the fix
@@ -63,6 +69,7 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 ## 🤖 Test Automation (1-2 hours)
 
 ### Writing New Tests
+
 **Choose Your Framework**:
 - **Selenium**: Use [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md)
 - **Playwright**: Use [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md)
@@ -76,6 +83,7 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 5. Commit to repository
 
 ### Maintaining Existing Tests
+
 **Prompts to Use**:
 - [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md) - Test maintenance strategies
 - [AI-Assisted Testing](../testing-types/ai-assisted-testing/AIAssistedTestingPrompt_EN.md) - Intelligent test maintenance
@@ -90,6 +98,7 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 ## 🔍 Exploratory Testing (30-45 min)
 
 ### Session-Based Testing
+
 **Workflow**:
 1. Use [Manual Testing](../testing-types/manual-testing/ManualTestingPrompt_EN.md) exploratory scenarios
 2. Create a test charter
@@ -98,7 +107,7 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 5. Log bugs
 
 **Charter Template**:
-```
+```text
 Mission: [What to explore]
 Duration: [Time limit]
 Areas: [Specific features/flows]
@@ -110,6 +119,7 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 ## 🐛 Bug Reporting (15-30 min)
 
 ### When You Find a Bug
+
 **Workflow**:
 1. Use [Bug Reporting](../testing-types/bug-reporting/BugReportingPrompt_EN.md) templates
 2. Generate detailed bug report
@@ -129,6 +139,7 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 ## 🎨 Visual Testing (30-45 min)
 
 ### For UI Changes
+
 **Workflow**:
 1. Use [Accessibility Testing](../testing-types/accessibility-testing/AccessibilityTestingPrompt_EN.md) visual testing scenarios
 2. Set up visual regression tests
@@ -145,6 +156,7 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 ## 🔄 End-to-End Testing (1-2 hours)
 
 ### For Critical User Journeys
+
 **Workflow**:
 1. Use [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md) E2E scenarios
 2. Map complete user journey
@@ -162,12 +174,14 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 ## 📊 Afternoon Review (30 min)
 
 ### 1. Test Execution Review
+
 **Actions**:
 - Check CI/CD pipeline results
 - Review failed tests
 - Update test reports
 
 ### 2. Metrics and Reporting
+
 **Prompts to Use**:
 - [Test Reporting](../testing-types/test-reporting/TestReportingPrompt_EN.md)
 - [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) - Quality assessment
@@ -178,6 +192,7 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 - Quality dashboards
 
 ### 3. Team Sync
+
 **Share**:
 - Bugs found
 - Tests automated
@@ -189,6 +204,7 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 ## 🌙 End of Day (15 min)
 
 ### Wrap Up
+
 **Actions**:
 - [ ] Commit all code changes
 - [ ] Update test documentation
@@ -197,6 +213,7 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 - [ ] Plan tomorrow's priorities
 
 ### Knowledge Sharing
+
 **Optional**:
 - Document learnings
 - Update team wiki
@@ -207,6 +224,7 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 ## 🔧 Tools Quick Access
 
 ### Most Used Prompts
+
 1. [Test Case Writing](../testing-types/test-case-writing/TestCaseWritingPrompt_EN.md)
 2. [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md)
 3. [API Testing](../testing-types/api-testing/APITestingPrompt_EN.md)
@@ -230,16 +248,19 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 ## 📅 Weekly Activities
 
 ### Monday
+
 - Review sprint goals
 - Plan testing for the week
 - Set up test environments
 
 ### Tuesday-Thursday
+
 - Execute daily workflow
 - Focus on test automation
 - Exploratory testing sessions
 
 ### Friday
+
 - Regression testing
 - Test report generation
 - Knowledge sharing
@@ -250,16 +271,19 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 ## 🚨 When Things Go Wrong
 
 ### Pipeline Failures
+
 1. Check [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md) CI/CD integration
 2. Debug failed tests
 3. Fix and re-run
 
 ### Flaky Tests
+
 1. Use [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md) maintenance strategies
 2. Implement proper waits
 3. Add retry logic
 
 ### Blocked Testing
+
 1. Document blocker
 2. Find alternative test areas
 3. Use [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) to reprioritize

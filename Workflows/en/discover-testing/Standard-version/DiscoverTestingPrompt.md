@@ -5,12 +5,15 @@ Recommends the testing-type prompts or workflow prompts to use based on the user
 ## Guardrails And Degradation Rules
 
 ### Input Completeness Check
+
 Before recommending prompts, list the user goal, known context, missing information, key assumptions, and main risks.
 
 ### Do Not Invent Facts
+
 Do not invent project phases, team roles, toolchains, test scope, quality metrics, approval conclusions, or release dates that the user did not provide.
 
 ### Output Degradation Strategy
+
 When information is incomplete, recommend the minimum useful combination and label prerequisites, gaps, and open questions.
 
 ## Execution Instructions
@@ -110,15 +113,19 @@ Still give the **best current primary** plus assumptions; note what info could c
 ## Output
 
 ### 1. Primary Recommendation
+
 - prompt name + one-line purpose
 
 ### 2. Optional Supporting Prompt
+
 - prompt name + why; or “none”
 
 ### 3. Why This Fits
+
 - 3–6 short bullets tied to decision rules
 
 ### 4. Next Step Plan
+
 - inputs to bring into the primary prompt
 - expected output
 - if support exists: order of use

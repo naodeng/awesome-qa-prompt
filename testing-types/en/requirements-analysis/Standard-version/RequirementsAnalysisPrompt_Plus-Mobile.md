@@ -10,7 +10,6 @@
   - Weak-network behavior, interruptions, battery, performance, package size, and device resource constraints
 - **Additional Rule:** Do not expand into pure browser-only scenarios unless they directly affect in-app H5 or hybrid containers
 
-
 > Usage: Copy this prompt into your AI assistant, then provide your requirements content. It supports Word, HTML, JSON, Markdown, and Excel inputs as raw content or extracted text.
 
 ---
@@ -29,21 +28,23 @@ If multiple files or formats are provided, perform cross-document alignment and 
 
 ---
 
-
 ## Usage Constraints and Degradation Rules
 
 ### Input Completeness Check
+
 Before producing the main output, run an input audit:
 - List Known / Missing / Key assumptions / Main risks
 - If missing information would significantly change the result, ask 3-5 high-value clarifying questions first
 - If the user does not provide more information, continue with the minimum necessary assumptions and explicitly mark content that depends on them
 
 ### Do Not Fabricate
+
 - Do not invent requirements, APIs, fields, flows, environments, traffic/concurrency numbers, team setup, approvers, version numbers, dates, budgets, defect counts, coverage figures, SLA/SLO targets, or compliance conclusions
 - For metrics not provided, mark them as TBD / recommended / example values instead of treating them as facts
 - Do not force a single toolchain or framework when the input does not justify it; give conditional recommendations
 
 ### Output Strategy
+
 - Prefer a minimum executable result first; add optional enhancements only when useful
 - Give a short rationale for priorities, risks, and recommendations
 - If the user asked for strategy/analysis, do not default to long implementation code; provide scripts/config only when requested or when inputs are sufficient
@@ -175,7 +176,7 @@ Produce a requirements analysis conclusion that can directly feed the next test-
 - Test work that can start now:
 - Information that must be completed first:
 - Recommended next deliverable (test strategy/test cases):
-```
+```text
 
 ---
 
@@ -218,4 +219,4 @@ Output requirements:
 - Follow "Requirements Analysis Conclusion Report (Plus)" format
 - Run input audit before conclusions
 - Mark all uncertain items as TBD
-```
+```text

@@ -1,6 +1,5 @@
 # Test Case Review - RISE Framework (Lite Version)
 
-
 ---
 
 ## RISE Framework Structure
@@ -15,22 +14,24 @@
 
 ---
 
-
 ## Usage Constraints and Degradation Rules
 
 ### Input Completeness Check
+
 Before producing the main output, run an input audit:
 - List Known / Missing / Key assumptions / Main risks
 - If missing information would significantly change the result, ask 3-5 high-value clarifying questions first
 - If the user does not provide more information, continue with the minimum necessary assumptions and explicitly mark content that depends on them
 
 ### Do Not Fabricate
+
 - Do not invent requirements, APIs, fields, flows, environments, traffic/concurrency numbers, team setup, approvers, version numbers, dates, budgets, defect counts, coverage figures, SLA/SLO targets, or compliance conclusions
 - Numbers, coverage, pass rates, and timings in templates that are not user-provided are examples or TBD — never treat them as committed targets
 - For metrics not provided, mark them as TBD / recommended / example values instead of treating them as facts
 - Do not force a single toolchain or framework when the input does not justify it; give conditional recommendations
 
 ### Output Strategy
+
 - Prefer a minimum executable result first; add optional enhancements only when useful
 - Give a short rationale for priorities, risks, and recommendations
 - If the user asked for strategy/analysis, do not default to long implementation code; provide scripts/config only when requested or when inputs are sufficient
@@ -39,21 +40,25 @@ Before producing the main output, run an input audit:
 ## Review Dimensions
 
 ### 1. Business Perspective
+
 - **Business Logic Correctness:** Whether test cases comply with business rules and processes
 - **Business Scenario Completeness:** Whether all key business scenarios are covered
 - **Business Exception Handling:** Whether business exceptions and special cases are considered
 
 ### 2. Technical Perspective
+
 - **Technical Implementation Feasibility:** Whether test steps are technically feasible
 - **System Integration Points:** Whether system integration and dependencies are considered
 - **Technical Boundary Conditions:** Whether technical boundaries and limitations are covered
 
 ### 3. User Experience Perspective
+
 - **User Operation Flow:** Whether test flow matches actual user operation habits
 - **Interaction Experience Verification:** Whether user interaction friendliness is verified
 - **Usability Considerations:** Whether usage scenarios for different user groups are considered
 
 ### 4. Quality Perspective
+
 - **Test Case Completeness:** Whether preconditions, test steps, and expected results are complete
 - **Test Step Clarity:** Whether step descriptions are clear and executable
 - **Test Data Reasonableness:** Whether test data is realistic and valid
@@ -63,24 +68,28 @@ Before producing the main output, run an input audit:
 ## Review Focus Areas
 
 ### 1. Test Coverage Check
+
 - **Positive Scenario Coverage:** Whether all normal business processes are covered
 - **Exception Scenario Coverage:** Whether various exceptions and error situations are covered
 - **Boundary Scenario Coverage:** Whether boundary values and critical conditions are covered
 - **Security Scenario Coverage:** Whether security testing scenarios are considered
 
 ### 2. Extreme Edge Case Discovery
+
 - **Data Boundaries:** Maximum value, minimum value, null value, special characters
 - **Time Boundaries:** Timeout, concurrency, time zone, date boundaries
 - **State Boundaries:** All possible paths of state transitions
 - **Resource Boundaries:** Memory, storage, network and other resource limitations
 
 ### 3. Potential Risk Identification
+
 - **Security Risks:** SQL injection, XSS attacks, permission bypass
 - **Performance Risks:** Large data volumes, high concurrency, slow queries
 - **Data Risks:** Data loss, data inconsistency, data leakage
 - **Integration Risks:** Third-party service dependencies, interface changes
 
 ### 4. Test Executability
+
 - **Step Operability:** Whether each step can be actually executed
 - **Environment Dependencies:** Whether test environment requirements are clear
 - **Data Preparation Difficulty:** Whether test data is easy to prepare
@@ -209,31 +218,35 @@ Before producing the main output, run an input audit:
 
 ### Review Conclusion
 [Provide final review conclusion]
-```
+```text
 
 ---
 
 ## Review Focus Checklist
 
 ### Test Coverage Check
+
 - [ ] Are positive scenarios complete
 - [ ] Are exception scenarios sufficient
 - [ ] Are boundary scenarios covered
 - [ ] Are security scenarios considered
 
 ### Extreme Edge Case Discovery
+
 - [ ] Data boundaries (maximum, minimum, null, special characters)
 - [ ] Time boundaries (timeout, concurrency, time zone)
 - [ ] State boundaries (state transition paths)
 - [ ] Resource boundaries (memory, storage, network)
 
 ### Potential Risk Identification
+
 - [ ] Security risks (SQL injection, XSS attacks, permission bypass)
 - [ ] Performance risks (large data volumes, high concurrency)
 - [ ] Data risks (data loss, data inconsistency)
 - [ ] Integration risks (third-party service dependencies)
 
 ### Test Case Quality
+
 - [ ] Are preconditions clear
 - [ ] Are test steps clear
 - [ ] Are expected results accurate

@@ -21,7 +21,7 @@ Test cases: case-set name/version/source | complete content
 Case review: report ID/version/source | complete content
 Test execution report (optional): report ID/version/case-set version/environment/source | complete content
 Defect report (optional): report ID/version/scope/source | complete content
-```
+```text
 
 Do not receive, read, cite, or infer QA, UI/UX, or Technical test reports. Ignore mixed-in role reports and record them as out-of-boundary input.
 
@@ -97,7 +97,7 @@ Do not analyze generic coverage methods, interface/performance/security implemen
 ## Role Conclusion And Handoff
 - Product evidence conclusion: Verifiable facts exist / Risk or blocker exists / Not executed or insufficient evidence / Do not participate / To be confirmed
 - Human Task: release, approval, and risk acceptance remain undecided
-```
+```text
 
 ## Execution Instructions
 

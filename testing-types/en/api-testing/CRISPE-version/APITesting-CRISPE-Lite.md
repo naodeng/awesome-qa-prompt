@@ -1,6 +1,5 @@
 # API Testing - CRISPE Framework (Lightweight Version)
 
-
 ---
 
 ## CRISPE Framework Structure
@@ -19,22 +18,24 @@
 
 ---
 
-
 ## Usage Constraints and Degradation Rules
 
 ### Input Completeness Check
+
 Before producing the main output, run an input audit:
 - List Known / Missing / Key assumptions / Main risks
 - If missing information would significantly change the result, ask 3-5 high-value clarifying questions first
 - If the user does not provide more information, continue with the minimum necessary assumptions and explicitly mark content that depends on them
 
 ### Do Not Fabricate
+
 - Do not invent requirements, APIs, fields, flows, environments, traffic/concurrency numbers, team setup, approvers, version numbers, dates, budgets, defect counts, coverage figures, SLA/SLO targets, or compliance conclusions
 - Numbers, coverage, pass rates, and timings in templates that are not user-provided are examples or TBD — never treat them as committed targets
 - For metrics not provided, mark them as TBD / recommended / example values instead of treating them as facts
 - Do not force a single toolchain or framework when the input does not justify it; give conditional recommendations
 
 ### Output Strategy
+
 - Prefer a minimum executable result first; add optional enhancements only when useful
 - Give a short rationale for priorities, risks, and recommendations
 - If the user asked for strategy/analysis, do not default to long implementation code; provide scripts/config only when requested or when inputs are sufficient
@@ -121,7 +122,7 @@ pm.test("Response has user data", function () {
     pm.expect(responseJson).to.have.property('id');
     pm.expect(responseJson.name).to.eql('Test User');
 });
-```
+```text
 
 #### AT-002: Data Query API Testing
 **API Information:**
@@ -139,7 +140,9 @@ pm.test("Response has user data", function () {
 #### Load Testing Scenarios
 **Scenario 1: Normal Load Testing**
 ```yaml
+
 # JMeter Test Plan
+
 load_test:
   threads: 100
   ramp_up: 60
@@ -164,7 +167,7 @@ load_test:
       assertions:
         - response_code: 201
         - response_time: < 1000ms
-```
+```text
 
 **Performance Requirements:**
 - **Response Time:** P95 ≤ 500ms
@@ -182,36 +185,48 @@ load_test:
 #### API Security Testing Focus
 **Authentication Authorization Testing:**
 ```bash
+
 # No authentication access test
+
 curl -X GET "https://api.example.com/users"
+
 # Expected: 401 Unauthorized
 
 # Token expiration test
+
 curl -X GET "https://api.example.com/users" \
   -H "Authorization: Bearer expired_token"
+
 # Expected: 401 Unauthorized
 
 # Permission boundary test
+
 curl -X DELETE "https://api.example.com/users/123" \
   -H "Authorization: Bearer user_token"
+
 # Expected: 403 Forbidden
-```
+
+```text
 
 **Input Validation Testing:**
 ```bash
+
 # SQL injection test
+
 curl -X GET "https://api.example.com/users?name=admin' OR '1'='1"
 
 # XSS test
+
 curl -X POST "https://api.example.com/users" \
   -H "Content-Type: application/json" \
   -d '{"name": "<script>alert(\"XSS\")</script>"}'
 
 # Large data volume test
+
 curl -X POST "https://api.example.com/users" \
   -H "Content-Type: application/json" \
   -d '{"name": "'$(python -c "print('A' * 10000)")'"}'
-```
+```text
 
 ### Contract Testing
 
@@ -252,7 +267,7 @@ describe('User API Contract', () => {
     expect(user.name).toBe('John Doe');
   });
 });
-```
+```text
 
 ### Automation Framework
 
@@ -263,7 +278,9 @@ describe('User API Contract', () => {
 
 #### CI/CD Integration
 ```yaml
+
 # GitHub Actions API Testing
+
 name: API Tests
 on: [push, pull_request]
 
@@ -290,7 +307,7 @@ jobs:
           name: API Test Results
           path: target/surefire-reports/*.xml
           reporter: java-junit
-```
+```text
 
 ### Data Management
 

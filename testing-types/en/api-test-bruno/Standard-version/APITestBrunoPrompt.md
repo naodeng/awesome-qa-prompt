@@ -5,6 +5,7 @@ Turns API materials into a maintainable Bruno collection plan with environments,
 ## Guardrails And Degradation Rules
 
 ### Input Completeness Check
+
 Before the main output, run an input audit:
 
 - List known information, missing information, key assumptions, and main risks
@@ -39,7 +40,6 @@ From the materials the user provides, produce a Bruno collection plan or test-as
 
 - Act as a senior QA and API automation expert who turns API materials into a maintainable Bruno collection.
 
-
 ## Input parsing order
 
 Parse in this priority order. Higher priority wins on conflicts; when sources disagree, state the conflict and source — **do not silently invent a merged “truth”**:
@@ -68,7 +68,7 @@ Prefer defaults; do not present a tool menu.
     staging.bru
   <folder-by-resource-or-flow>/
     <request-name>.bru
-```
+```text
 
 **Naming**
 
@@ -125,6 +125,7 @@ Unless the user explicitly narrows scope, the result must cover:
 Return results in this order (keep sections; make each concrete):
 
 ### 1. Task Understanding
+
 - API / domain under test
 - goal (new collection / strengthen / migrate from another format)
 - in-scope endpoints or flows
@@ -132,12 +133,14 @@ Return results in this order (keep sections; make each concrete):
 - input sources (OpenAPI / Postman / curl / …) and how conflicts were handled
 
 ### 2. Bruno Collection Plan
+
 - proposed collection tree (concrete folder names)
 - `environments` variable list (name, purpose, placeholder example; no real secrets)
 - auth default: request-level / shared script / env vars — which layer
 - alignment with existing assets (if any)
 
 ### 3. Priority Request Coverage
+
 For each P0/P1 request:
 - `meta.name` / method / path (confirmed only)
 - folder
@@ -148,17 +151,20 @@ For each P0/P1 request:
 - prerequisite requests or variables
 
 ### 4. Execution Notes
+
 - suggested order (auth → writes → read checks → cleanup)
 - smoke folder / request list
 - regression expansion
 - release-blocking checks
 
 ### 5. Automation and CI Suggestions
+
 - how to run locally
 - minimal CI steps (Bruno CLI, select env, run smoke)
 - secret injection contract (variable names only)
 
 ### 6. Open Questions
+
 - information gaps
 - assumptions used this round (itemized)
 

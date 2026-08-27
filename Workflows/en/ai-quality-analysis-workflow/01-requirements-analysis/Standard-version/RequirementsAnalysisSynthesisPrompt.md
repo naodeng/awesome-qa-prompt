@@ -24,7 +24,7 @@ Product Expert report: report identifier/version if available + full content
 QA Expert report: report identifier/version if available + full content
 UI/UX Expert report: report identifier/version if available + full content
 Technical Expert report: report identifier/version if available + full content
-```
+```text
 
 Do not read a requirements document, original request, prototype, external source, or conversation memory to supplement the reports.
 
@@ -108,7 +108,7 @@ Use this structure:
 ## Approval Status
 - Current status: Pending human confirmation / status consistently and explicitly recorded in the four reports
 - Note: this synthesis is not an approval or release decision
-```
+```text
 
 ## Execution Instructions
 

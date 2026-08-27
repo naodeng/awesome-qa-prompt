@@ -20,7 +20,7 @@ Code: explicit version/commit/tag | diff, patch, complete file content, or reada
 Interaction prototype (optional): name/version/source | content or readable location
 Original requirements (optional): name/version/source | content or readable location
 Technical solution (optional): name/version/source | content or readable location
-```
+```text
 
 ## Required Inputs And Hard Code Gate
 
@@ -84,7 +84,7 @@ Test-case counts, coverage, and regression selection belong to QA. You may ident
 | Item | Current evidence | Needed verification/input | Possible impact |
 ## QA/Product/UIUX Handoffs
 ## Human Task Handoff
-```
+```text
 
 ## Execution Instructions
 

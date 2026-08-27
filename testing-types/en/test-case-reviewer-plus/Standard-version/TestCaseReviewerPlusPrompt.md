@@ -5,6 +5,7 @@ Extends test case review with stronger gap detection, risk ranking, executabilit
 ## Guardrails And Degradation Rules
 
 ### Input Completeness Check
+
 Before the main output, run an input audit:
 
 - List known information, missing information, key assumptions, and main risks
@@ -99,23 +100,29 @@ Unless the user explicitly narrows scope, cover:
 Return in this order:
 
 ### 1. Review Conclusion
+
 - one-line verdict (Pass / Conditional Pass / Fail)
 - main blockers as a gate asset (if any)
 
 ### 2. Critical Findings (Blocker / Critical)
+
 For each: `Severity | Finding | Evidence | Business impact | Recommended fix`
 
 ### 3. Major Findings (Major / Minor)
+
 Same structure; group by theme if helpful
 
 ### 4. Missing High-Risk Scenarios
+
 - scenarios that should exist but do not (suggested Priority and Trace targets)
 
 ### 5. Fix Priority and Retest Order
+
 - fix batches (Blockers first…)
 - retest/regression order after fixes
 
 ### 6. Residual Risks
+
 - areas undecidable due to missing info; accepted risks
 
 ## Quality Bar

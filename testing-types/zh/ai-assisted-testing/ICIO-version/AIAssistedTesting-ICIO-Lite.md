@@ -1,6 +1,5 @@
 # AI辅助测试 - ICIO框架 (轻量版)
 
-
 ---
 
 ## ICIO 框架结构
@@ -24,18 +23,21 @@
 ## 使用约束与降级规则
 
 ### 输入完整性检查
+
 在开始正式输出前，请先执行输入审计：
 - 列出“已知信息”“缺失信息”“关键假设”“主要风险”
 - 如果缺少关键信息且会显著影响结论，请先提出 3-5 个关键澄清问题
 - 如果用户不补充信息，请基于最少必要假设继续，并明确标注“以下内容基于假设”
 
 ### 禁止编造
+
 - 模板中的数字、覆盖率、通过率、耗时若未由用户提供，一律视为示例或待确认，不得写成既定目标
 - 不要编造不存在的需求、接口、字段、流程、环境、用户量、并发量、团队配置、审批信息、版本号、日期、预算、缺陷数据、覆盖率、SLA/SLO 或合规结论
 - 对于未提供的指标、阈值和比例，使用“待确认/建议值/示例值”标注，而不是当作既定事实
 - 对于无法从输入中确认的工具链、框架或实现方式，不要强行指定唯一方案，应给出条件化建议
 
 ### 输出策略
+
 - 优先输出最小可执行版本，再补充增强版建议
 - 所有优先级、风险和建议必须给出简短依据
 - 如果用户要求的是策略/分析，不要默认展开为大段实现代码；只有在用户明确需要或输入足够时，才提供脚本、配置或示例代码
@@ -65,7 +67,9 @@
 
 **实现方案：**
 ```python
+
 # 智能测试生成示例
+
 class TestGenerator:
     def generate_from_requirements(self, requirements):
         # 1. NLP解析需求
@@ -78,7 +82,7 @@ class TestGenerator:
             test_cases.extend(cases)
 
         return test_cases
-```
+```text
 
 **预期效果：** 测试用例生成效率提升300%
 
@@ -91,7 +95,9 @@ class TestGenerator:
 
 **模型训练：**
 ```python
+
 # 缺陷预测模型
+
 class DefectPredictor:
     def train(self, code_metrics, defect_history):
         features = self.extract_features(code_metrics)
@@ -101,7 +107,7 @@ class DefectPredictor:
         features = self.extract_features(new_code)
         risk_score = self.model.predict_proba(features)
         return risk_score
-```
+```text
 
 **预期效果：** 缺陷发现率提升25%，测试效率提升40%
 
@@ -114,7 +120,9 @@ class DefectPredictor:
 
 **自愈机制：**
 ```python
+
 # 自愈测试脚本
+
 class SelfHealingScript:
     def find_element_smart(self, locator):
         # 1. 尝试原始定位器
@@ -123,7 +131,7 @@ class SelfHealingScript:
         except:
             # 2. 智能备用策略
             return self.smart_locator.find_alternative(locator)
-```
+```text
 
 **预期效果：** 脚本维护成本降低60%
 

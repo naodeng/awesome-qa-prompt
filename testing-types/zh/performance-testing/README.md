@@ -23,8 +23,8 @@
 - `*_Lean.md`：仅在模块提供 Lean 版本时使用，适合更克制的输出
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`：仅在你明确需要特定提示框架时再选用
 
-
 ### [PerformanceTestingPrompt.md](Standard-version/PerformanceTestingPrompt.md)
+
 **语言**：中文
 **角色**：资深性能测试专家
 **功能**：设计全面的性能测试策略和测试方案
@@ -36,6 +36,7 @@
 - 性能监控和趋势分析
 
 ### [PerformanceTestingPrompt.md](../../en/performance-testing/Standard-version/PerformanceTestingPrompt.md)
+
 **语言**：English
 **角色**：Senior Performance Testing Expert
 **功能**：Design comprehensive performance testing strategies and test plans
@@ -69,6 +70,7 @@
 ## 💡 核心测试类型
 
 ### 性能测试分类
+
 - **负载测试**：验证系统在预期负载下的性能表现
 - **压力测试**：确定系统的最大处理能力和破坏点
 - **峰值测试**：验证系统在突发负载下的性能表现
@@ -76,6 +78,7 @@
 - **稳定性测试**：验证系统长时间运行的稳定性
 
 ### 性能指标体系
+
 - **用户体验指标**：响应时间、页面加载时间
 - **系统吞吐量指标**：TPS、QPS、RPS、并发用户数
 - **系统资源指标**：CPU、内存、磁盘、网络使用率
@@ -84,12 +87,14 @@
 ## 🔧 常用工具
 
 ### 开源工具
+
 - **JMeter**：功能强大的负载测试工具
 - **Gatling**：高性能的负载测试工具
 - **K6**：现代化的负载测试工具
 - **Locust**：Python 编写的负载测试工具
 
 ### 商业工具
+
 - **LoadRunner**：企业级性能测试解决方案
 - **NeoLoad**：Web 应用性能测试工具
 - **BlazeMeter**：云端性能测试平台
@@ -97,11 +102,13 @@
 ## 🔗 相关资源
 
 ### 内部资源
+
 - [自动化测试](../automation-testing/) - 性能测试自动化
 - [测试报告](../test-reporting/) - 性能测试报告
 - [测试策略](../test-strategy/) - 性能测试策略
 
 ### 外部资源
+
 - [性能测试最佳实践](https://www.guru99.com/performance-testing.html)
 - [JMeter 官方文档](https://jmeter.apache.org/)
 - [性能测试指南](https://www.softwaretestinghelp.com/performance-testing-tutorial/)

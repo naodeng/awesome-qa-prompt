@@ -24,7 +24,7 @@ QA report: report identifier/version (if any) + complete content
 UI/UX report: report identifier/version (if any) + complete content
 Technical report: report identifier/version (if any) + complete content
 PM report: report identifier/version (if any) + complete content
-```
+```text
 
 Do not reread the test strategy, requirements, code, prototypes, plans, external sources, or conversation memory to fill gaps.
 
@@ -113,7 +113,7 @@ Evaluate in this order: `Insufficient information -> Recommend revision -> Recom
 - Blockers/revisions/gaps requiring attention: ...
 - Unresolved disagreements: ...
 - Questions for Human Task decision: ... (list questions only; must not prefill a human final decision)
-```
+```text
 
 ## Execution Instructions
 

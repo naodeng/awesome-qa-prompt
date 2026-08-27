@@ -9,24 +9,28 @@ The API Testing module provides comprehensive API testing guidance, helping test
 ## Core Features
 
 ### 🔌 Complete API Testing Coverage
+
 - **Functional Testing:** API endpoint functionality validation
 - **Integration Testing:** API integration and data flow testing
 - **Contract Testing:** API contract verification
 - **End-to-End Testing:** Complete business flow testing
 
 ### 🎯 Multi-Protocol Support
+
 - **REST API:** RESTful API testing
 - **GraphQL:** GraphQL query and mutation testing
 - **SOAP:** SOAP web service testing
 - **gRPC:** gRPC service testing
 
 ### 🔍 Comprehensive Validation
+
 - **Response Validation:** Status codes, headers, body validation
 - **Schema Validation:** JSON/XML schema validation
 - **Performance Testing:** Response time and throughput testing
 - **Security Testing:** Authentication, authorization, and vulnerability testing
 
 ### 🌐 Testing Tools
+
 - **Postman:** Popular API testing tool
 - **REST Assured:** Java API testing framework
 - **Karate:** BDD-style API testing
@@ -41,18 +45,20 @@ The API Testing module provides comprehensive API testing guidance, helping test
 - `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
 
-
 ### Chinese Prompts
+
 - **File:** `Standard-version/APITestingPrompt.md`
 - **Role:** Senior API Testing Expert (10+ years experience)
 - **Use Case:** Chinese project teams, API testing requirements
 
 ### English Prompts
+
 - **File:** `Standard-version/APITestingPrompt.md`
 - **Role:** Senior API Testing Expert
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
+
 - **File:** `Standard-version/APITestingPrompt_Lite.md` / `Standard-version/APITestingPrompt_Lite.md`
 - **Features:** Quick start, focused on core API testing concepts
 - **Use Case:** Quick API testing and basic validation
@@ -88,11 +94,13 @@ The API Testing module provides comprehensive API testing guidance, helping test
 ## Learning Resources
 
 ### Recommended Books
+
 - "REST API Design Rulebook"
 - "API Testing and Development with Postman"
 - "Continuous API Management"
 
 ### Online Resources
+
 - [Postman Learning Center](https://learning.postman.com/)
 - [REST API Tutorial](https://restfulapi.net/)
 - [API Testing Best Practices](https://www.ministryoftesting.com/)

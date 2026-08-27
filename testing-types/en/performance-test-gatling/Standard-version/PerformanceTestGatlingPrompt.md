@@ -5,6 +5,7 @@ A Gatling performance testing prompt covering simulations, injection models, ass
 ## Guardrails And Degradation Rules
 
 ### Input Completeness Check
+
 Before the main output, run an input audit:
 
 - List known information, missing information, key assumptions, and main risks
@@ -87,7 +88,7 @@ perf/
   resources/
     data/                # optional: feeder CSV (placeholder notes only)
   README.md              # how to run, system property / env var names
-```
+```text
 
 **Injection / run defaults**
 
@@ -104,7 +105,7 @@ Mirror k6’s `http_req_duration` p95 / `http_req_failed` with a Gatling global 
 assertions:
   - global responseTime percentile(95) < 500   # assumption — confirm
   - global failedRequests percent < 1          # assumption — confirm
-```
+```text
 
 DSL sketch (pick one language shape for the project; do not mix casually):
 
@@ -113,7 +114,7 @@ DSL sketch (pick one language shape for the project; do not mix casually):
   global.responseTime.percentile(95).lt(500),  // assumption
   global.failedRequests.percent.lt(1)            // assumption
 )
-```
+```text
 
 - Prefer request-scoped assertions for critical names, not one vague global line
 - When the user provides an SLA, use their numbers and cite the source
@@ -155,6 +156,7 @@ Unless the user explicitly narrows scope, the result must cover:
 Return in this order (keep the sections; fill concrete fields):
 
 ### 1. Task Understanding
+
 - System / domain under test
 - Performance goals (latency / error rate / throughput / capacity)
 - Included APIs or journeys (**confirmed only**)
@@ -162,6 +164,7 @@ Return in this order (keep the sections; fill concrete fields):
 - Input sources and conflict handling
 
 ### 2. Gatling Scenario Plan
+
 - Selected scenario type(s) (usually 1–2) and rationale
 - Explicitly state **which scenario types are deferred this round and why**
 - Suggested Simulation / resources layout
@@ -170,24 +173,28 @@ Return in this order (keep the sections; fill concrete fields):
 - Alignment with existing Gatling assets (if any)
 
 ### 3. Load Model and Thresholds
+
 - Injection model: ramp, hold, spike shape, total duration (label assumptions)
 - Default assertions: `responseTime` percentile(95), `failedRequests` percent (and per-request splits if any)
 - How to interpret pass/fail
 - With no SLA: mark every number as Assumption
 
 ### 4. Environment and Data Notes
+
 - `baseUrl` / env limits / whether load is allowed
 - Auth and secrets: property or env var names + placeholders — no real secrets
 - Feeders: file placeholders, required columns, circular/random strategy
 - Monitoring to watch (app, gateway, DB, queue — only from provided architecture; do not invent)
 
 ### 5. Execution Suggestions
+
 - Suggested order (tiny-user smoke → chosen scenario → optional push)
 - Local / CI minimal run shape (Maven/Gradle/Gatling plugin command-level is enough)
 - Release-blocking checks
 - Report fields to keep (p95, failure rate, critical request splits)
 
 ### 6. Open Questions
+
 - Information gaps
 - Assumptions this round (itemized; when no SLA/traffic, list every assumed traffic and assertion number to confirm)
 

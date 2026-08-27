@@ -9,18 +9,21 @@ The Test Case Review module provides professional test case review guidance from
 ## Core Features
 
 ### 🔍 Multi-dimensional Review
+
 - **Business Perspective:** Business logic correctness, business scenario completeness, business value priority
 - **Technical Perspective:** Technical implementation feasibility, system integration points, data flow verification
 - **User Experience Perspective:** User operation flow, interaction experience verification, error message clarity
 - **Quality Perspective:** Test case completeness, test step clarity, test data reasonableness
 
 ### 🎯 Review Focus
+
 - **Test Coverage Check:** Positive scenarios, exception scenarios, boundary scenarios, combination scenarios
 - **Extreme Edge Case Discovery:** Data boundaries, time boundaries, state boundaries, resource boundaries
 - **Potential Risk Identification:** Security risks, performance risks, data risks, integration risks
 - **Test Executability:** Step operability, environment dependencies, data preparation difficulty
 
 ### 📊 Structured Output
+
 - **Review Overview:** Basic information, review conclusion, pass rate, major issue statistics
 - **Detailed Review Comments:** Strengths summary, issue list (critical/major/suggestions)
 - **Missing Scenario Identification:** Missing positive/exception/boundary/security/performance scenarios
@@ -30,6 +33,7 @@ The Test Case Review module provides professional test case review guidance from
 - **Follow-up Action Plan:** Immediate/short-term/long-term action items
 
 ### 🛡️ Professional Capabilities
+
 - **Business Insight:** Over ten years of business frontline experience, deep understanding of business logic and user needs
 - **Risk Awareness:** Keen identification of potential risk points and security vulnerabilities
 - **Boundary Discovery:** Excelling at finding extreme boundaries and critical conditions
@@ -44,7 +48,6 @@ The Test Case Review module provides professional test case review guidance from
 - `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
 
-
 ## Platform Scenario Variants
 
 - `*-all_round.md`: covers both Web and mobile, suitable when one prompt needs to plan testing across both platforms
@@ -53,6 +56,7 @@ The Test Case Review module provides professional test case review guidance from
 - If your task does not need platform separation, keep using the original general prompt files
 
 ### Full Version Prompts
+
 - **Chinese Version:** `Standard-version/TestCaseReviewerPrompt.md` (v0.1)
 - **English Version:** `Standard-version/TestCaseReviewerPrompt.md` (v0.1)
 - **Role:** Senior Business & Testing Expert (10+ years business frontline experience)
@@ -68,6 +72,7 @@ The Test Case Review module provides professional test case review guidance from
 - **Use Cases:** Comprehensive test case review and quality control for complex projects
 
 ### Lite Version Prompts
+
 - **Chinese Version:** `Standard-version/TestCaseReviewerPrompt_Lite.md` (v0.1)
 - **English Version:** `Standard-version/TestCaseReviewerPrompt_Lite.md` (v0.1)
 - **Features:** Quick review, focused on core points, concise output
@@ -109,66 +114,75 @@ The Test Case Review module provides professional test case review guidance from
 ### Application Scenarios
 
 #### 1. Test Case Quality Control
+
 ```markdown
 Input: Completed test cases
 Output: Issue list + Improvement recommendations + Quality assessment
 Goal: Ensure test case quality meets standards
 Expected: Discover and fix issues in test cases
-```
+```text
 
 #### 2. Test Coverage Assessment
+
 ```markdown
 Input: Test case set + Requirements document
 Output: Coverage analysis + Missing scenarios + Scope recommendations
 Goal: Assess completeness of test coverage
 Expected: Identify blind spots and omissions in test coverage
-```
+```text
 
 #### 3. Risk Identification and Assessment
+
 ```markdown
 Input: Test cases + Business rules
 Output: Risk list + Risk levels + Mitigation measures
 Goal: Identify potential testing risks
 Expected: Discover and avoid testing risks in advance
-```
+```text
 
 #### 4. Test Review Meeting Preparation
+
 ```markdown
 Input: Test case document
 Output: Structured review report
 Goal: Provide professional opinions for review meetings
 Expected: Improve efficiency and quality of review meetings
-```
+```text
 
 #### 5. Extreme Edge Case Discovery
+
 ```markdown
 Input: Functional test cases
 Output: Boundary scenario list + Extreme condition test recommendations
 Goal: Discover easily overlooked boundary scenarios
 Expected: Improve testing depth and breadth
-```
+```text
 
 ## Review Dimensions
 
 ### Business Perspective
+
 - **Business Logic Correctness:** Whether test cases comply with business rules and processes
 - **Business Scenario Completeness:** Whether all key business scenarios are covered
 - **Business Value Priority:** Whether test priority matches business value
 - **Business Exception Handling:** Whether business exceptions and special cases are considered
 
 ### Technical Perspective
+
 - **Technical Implementation Feasibility:** Whether test steps are technically feasible
 - **System Integration Points:** Whether system integration and dependencies are considered
 - **Data Flow Verification:** Whether data flow between systems is complete
 - **Technical Boundary Conditions:** Whether technical boundaries and limitations are covered
 
 ### User Experience Perspective
+
 - **User Operation Flow:** Whether test flow matches actual user operation habits
 - **Interaction Experience Verification:** Whether user interaction friendliness is verified
 - **Error Message Clarity:** Whether error messages are clear and understandable
 - **Usability Considerations:** Whether usage scenarios for different user groups are considered
 
 ### Quality Perspective
+
 - **Test Case Completeness:** Whether preconditions, test steps, and expected results are complete
 - **Test Step Clarity:** Whether step descriptions are clear and executable
 - **Test Data Reasonableness:** Whether test data is realistic and valid
@@ -177,24 +191,28 @@ Expected: Improve testing depth and breadth
 ## Review Focus Areas
 
 ### 1. Test Coverage Check
+
 - **Positive Scenario Coverage:** Whether all normal business processes are covered
 - **Exception Scenario Coverage:** Whether various exceptions and error situations are covered
 - **Boundary Scenario Coverage:** Whether boundary values and critical conditions are covered
 - **Combination Scenario Coverage:** Whether multi-condition combination scenarios are considered
 
 ### 2. Extreme Edge Case Discovery
+
 - **Data Boundaries:** Maximum value, minimum value, null value, special characters
 - **Time Boundaries:** Timeout, concurrency, time zone, date boundaries
 - **State Boundaries:** All possible paths of state transitions
 - **Resource Boundaries:** Memory, storage, network and other resource limitations
 
 ### 3. Potential Risk Identification
+
 - **Security Risks:** SQL injection, XSS attacks, permission bypass
 - **Performance Risks:** Large data volumes, high concurrency, slow queries
 - **Data Risks:** Data loss, data inconsistency, data leakage
 - **Integration Risks:** Third-party service dependencies, interface changes
 
 ### 4. Test Executability
+
 - **Step Operability:** Whether each step can be actually executed
 - **Environment Dependencies:** Whether test environment requirements are clear
 - **Data Preparation Difficulty:** Whether test data is easy to prepare
@@ -203,24 +221,28 @@ Expected: Improve testing depth and breadth
 ## Best Practices
 
 ### 1. Review Preparation
+
 - **Fully Understand Requirements:** Fully understand business requirements and technical implementation before review
 - **Prepare Review Checklist:** Use review checklist to ensure comprehensive review
 - **Set Review Goals:** Clarify review focus and objectives
 - **Reserve Sufficient Time:** Ensure enough time for in-depth review
 
 ### 2. Review Execution
+
 - **Systematic Review:** Conduct review systematically according to review dimensions
 - **Record Detailed Issues:** Record discovered issues and suggestions in detail
 - **Priority Sorting:** Sort issues by impact and risk
 - **Constructive Suggestions:** Provide specific, actionable improvement suggestions
 
 ### 3. Review Output
+
 - **Structured Report:** Output review report in structured format
 - **Clear Issue Description:** Issue descriptions are clear, specific, and understandable
 - **Actionable Suggestions:** Improvement suggestions are specific, actionable, and implementable
 - **Clear Action Plan:** Provide clear follow-up action plan
 
 ### 4. Review Follow-up
+
 - **Issue Tracking:** Track issue resolution progress
 - **Verify Fixes:** Verify whether issues are effectively resolved
 - **Experience Summary:** Summarize review experience and lessons learned
@@ -229,12 +251,14 @@ Expected: Improve testing depth and breadth
 ## Review Checklist
 
 ### Business Logic Check
+
 - [ ] Business process correct
 - [ ] Business rules complete
 - [ ] Business exceptions considered
 - [ ] Business value reflected
 
 ### Test Coverage Check
+
 - [ ] Positive scenarios complete
 - [ ] Exception scenarios sufficient
 - [ ] Boundary scenarios covered
@@ -242,6 +266,7 @@ Expected: Improve testing depth and breadth
 - [ ] Performance scenarios included
 
 ### Test Case Quality Check
+
 - [ ] Preconditions clear
 - [ ] Test steps clear
 - [ ] Expected results accurate
@@ -249,12 +274,14 @@ Expected: Improve testing depth and breadth
 - [ ] Priority correct
 
 ### Executability Check
+
 - [ ] Steps operable
 - [ ] Environment requirements clear
 - [ ] Data preparation feasible
 - [ ] Execution time reasonable
 
 ### Traceability Check
+
 - [ ] Requirement association clear
 - [ ] Scenario mapping complete
 - [ ] Case numbering standardized
@@ -263,6 +290,7 @@ Expected: Improve testing depth and breadth
 ## Output Example
 
 ### Review Report Structure
+
 ```markdown
 # Test Case Review Report
 
@@ -307,7 +335,7 @@ Expected: Improve testing depth and breadth
 | No. | Action Item | Owner | Deadline | Priority |
 |-----|------------|-------|----------|----------|
 | 1 | Add permission verification cases | Zhang San | 2025-01-18 | P0 |
-```
+```text
 
 ## Related Modules
 
@@ -318,11 +346,13 @@ Expected: Improve testing depth and breadth
 ## Learning Resources
 
 ### Recommended Books
+
 - "The Art of Software Testing"
 - "How Google Tests Software"
 - "Perfect Testing: Software Testing Best Practices"
 
 ### Online Resources
+
 - [ISTQB Testing Certification](https://www.istqb.org/)
 - [Software Testing Community](https://www.51testing.com/)
 - [Testing Tutorial Network](https://www.testclass.net/)

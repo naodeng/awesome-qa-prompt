@@ -27,7 +27,7 @@ Test case review report: ID/version/source | complete content
 Test case execution report (optional): ID/version/case-set version/environment/source | complete content
 Defect report (optional): ID/version/scope/source | complete content
 Test report: ID/version/scope/source | complete content
-```
+```text
 
 Do not receive, read, cite, or infer Product, QA, UI/UX, or Technical test-report-review outputs. Ignore mixed-in content and record it as out-of-boundary input.
 
@@ -90,7 +90,7 @@ Missing optional input does not stop the management check; list each missing ite
 ## Human Task Handoff
 - Assignment, coordination, or confirmation items: ...
 - Quality facts and final decision: PM does not modify; the Human Task and relevant quality roles handle them
-```
+```text
 
 ## Execution Instructions
 

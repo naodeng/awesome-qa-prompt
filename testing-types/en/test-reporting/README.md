@@ -9,24 +9,28 @@ The Test Reporting module provides comprehensive test reporting guidance, helpin
 ## Core Features
 
 ### 📊 Complete Report Structure
+
 - **Executive Summary:** High-level overview for stakeholders
 - **Test Metrics:** Quantitative test execution data
 - **Quality Assessment:** Overall quality evaluation
 - **Risk Analysis:** Identified risks and mitigation strategies
 
 ### 🎯 Key Metrics
+
 - **Test Coverage:** Requirements and code coverage
 - **Test Execution:** Pass/fail rates, execution progress
 - **Defect Metrics:** Defect density, severity distribution
 - **Trend Analysis:** Quality trends over time
 
 ### 🔍 Visualization
+
 - **Charts and Graphs:** Visual representation of metrics
 - **Dashboards:** Real-time quality dashboards
 - **Trend Lines:** Historical data visualization
 - **Heat Maps:** Risk and coverage visualization
 
 ### 🌐 Report Types
+
 - **Daily Reports:** Daily test execution status
 - **Sprint Reports:** Sprint-level quality summary
 - **Release Reports:** Release readiness assessment
@@ -41,18 +45,20 @@ The Test Reporting module provides comprehensive test reporting guidance, helpin
 - `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
 
-
 ### Chinese Prompts
+
 - **File:** `Standard-version/TestReportingPrompt.md`
 - **Role:** Senior Test Manager (10+ years experience)
 - **Use Case:** Chinese project teams, test reporting requirements
 
 ### English Prompts
+
 - **File:** `Standard-version/TestReportingPrompt.md`
 - **Role:** Senior Test Manager
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
+
 - **File:** `Standard-version/TestReportingPrompt_Lite.md` / `Standard-version/TestReportingPrompt_Lite.md`
 - **Features:** Quick start, focused on core reporting elements
 - **Use Case:** Quick test reporting and status updates
@@ -88,11 +94,13 @@ The Test Reporting module provides comprehensive test reporting guidance, helpin
 ## Learning Resources
 
 ### Recommended Books
+
 - "Software Testing Metrics"
 - "Effective Test Management"
 - "Quality Metrics in Software Testing"
 
 ### Online Resources
+
 - [Test Reporting Best Practices](https://www.ministryoftesting.com/)
 - [Software Testing Help](https://www.softwaretestinghelp.com/)
 - [ISTQB Test Management](https://www.istqb.org/)

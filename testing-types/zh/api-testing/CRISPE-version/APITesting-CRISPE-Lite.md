@@ -1,6 +1,5 @@
 # API测试 - CRISPE框架 (轻量版)
 
-
 ---
 
 ## CRISPE 框架结构
@@ -29,18 +28,21 @@
 ## 使用约束与降级规则
 
 ### 输入完整性检查
+
 在开始正式输出前，请先执行输入审计：
 - 列出“已知信息”“缺失信息”“关键假设”“主要风险”
 - 如果缺少关键信息且会显著影响结论，请先提出 3-5 个关键澄清问题
 - 如果用户不补充信息，请基于最少必要假设继续，并明确标注“以下内容基于假设”
 
 ### 禁止编造
+
 - 模板中的数字、覆盖率、通过率、耗时若未由用户提供，一律视为示例或待确认，不得写成既定目标
 - 不要编造不存在的需求、接口、字段、流程、环境、用户量、并发量、团队配置、审批信息、版本号、日期、预算、缺陷数据、覆盖率、SLA/SLO 或合规结论
 - 对于未提供的指标、阈值和比例，使用“待确认/建议值/示例值”标注，而不是当作既定事实
 - 对于无法从输入中确认的工具链、框架或实现方式，不要强行指定唯一方案，应给出条件化建议
 
 ### 输出策略
+
 - 优先输出最小可执行版本，再补充增强版建议
 - 所有优先级、风险和建议必须给出简短依据
 - 如果用户要求的是策略/分析，不要默认展开为大段实现代码；只有在用户明确需要或输入足够时，才提供脚本、配置或示例代码
@@ -122,7 +124,7 @@ pm.test("Response has user data", function () {
     pm.expect(responseJson).to.have.property('id');
     pm.expect(responseJson.name).to.eql('Test User');
 });
-```
+```text
 
 #### AT-002：数据查询API测试
 **API信息：**
@@ -140,7 +142,9 @@ pm.test("Response has user data", function () {
 #### 负载测试场景
 **场景1：正常负载测试**
 ```yaml
+
 # JMeter 测试计划
+
 load_test:
   threads: 100
   ramp_up: 60
@@ -165,7 +169,7 @@ load_test:
       assertions:
         - response_code: 201
         - response_time: < 1000ms
-```
+```text
 
 **性能指标要求：**
 - **响应时间：** P95 [待确认]
@@ -183,36 +187,48 @@ load_test:
 #### API安全测试重点
 **认证授权测试：**
 ```bash
+
 # 无认证访问测试
+
 curl -X GET "https://api.example.com/users"
+
 # 预期：401 Unauthorized
 
 # Token过期测试
+
 curl -X GET "https://api.example.com/users" \
   -H "Authorization: Bearer expired_token"
+
 # 预期：401 Unauthorized
 
 # 权限越界测试
+
 curl -X DELETE "https://api.example.com/users/123" \
   -H "Authorization: Bearer user_token"
+
 # 预期：403 Forbidden
-```
+
+```text
 
 **输入验证测试：**
 ```bash
+
 # SQL注入测试
+
 curl -X GET "https://api.example.com/users?name=admin' OR '1'='1"
 
 # XSS测试
+
 curl -X POST "https://api.example.com/users" \
   -H "Content-Type: application/json" \
   -d '{"name": "<script>alert(\"XSS\")</script>"}'
 
 # 大数据量测试
+
 curl -X POST "https://api.example.com/users" \
   -H "Content-Type: application/json" \
   -d '{"name": "'$(python -c "print('A' * 10000)")'"}'
-```
+```text
 
 ### 契约测试
 
@@ -253,7 +269,7 @@ describe('User API Contract', () => {
     expect(user.name).toBe('John Doe');
   });
 });
-```
+```text
 
 ### 自动化框架
 
@@ -264,7 +280,9 @@ describe('User API Contract', () => {
 
 #### CI/CD集成
 ```yaml
+
 # GitHub Actions API测试
+
 name: API Tests
 on: [push, pull_request]
 
@@ -291,7 +309,7 @@ jobs:
           name: API Test Results
           path: target/surefire-reports/*.xml
           reporter: java-junit
-```
+```text
 
 ### 数据管理
 

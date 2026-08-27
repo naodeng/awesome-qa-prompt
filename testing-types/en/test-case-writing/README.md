@@ -9,6 +9,7 @@ The Test Case Writing module provides professional test case design and writing 
 ## Core Features
 
 ### 📝 Complete Test Case Structure
+
 - **Test Case ID:** Unique identifier for traceability
 - **Test Objective:** Clear purpose and scope
 - **Preconditions:** Required setup and prerequisites
@@ -17,18 +18,21 @@ The Test Case Writing module provides professional test case design and writing 
 - **Test Data:** Specific test data requirements
 
 ### 🎯 Design Techniques
+
 - **Equivalence Partitioning:** Divide input into valid/invalid classes
 - **Boundary Value Analysis:** Test at boundaries of input domains
 - **Decision Table:** Test complex business logic combinations
 - **State Transition:** Test state changes and transitions
 
 ### 🔍 Quality Standards
+
 - **Clear and Concise:** Easy to understand and execute
 - **Repeatable:** Consistent results on repeated execution
 - **Independent:** Can be executed independently
 - **Traceable:** Linked to requirements and defects
 
 ### 🌐 Test Case Types
+
 - **Positive Test Cases:** Valid input and expected behavior
 - **Negative Test Cases:** Invalid input and error handling
 - **Boundary Test Cases:** Edge cases and limits
@@ -43,18 +47,20 @@ The Test Case Writing module provides professional test case design and writing 
 - `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
 
-
 ### Chinese Prompts
+
 - **File:** `Standard-version/TestCaseWritingPrompt.md`
 - **Role:** Senior Test Case Designer (10+ years experience)
 - **Use Case:** Chinese project teams, test case writing requirements
 
 ### English Prompts
+
 - **File:** `Standard-version/TestCaseWritingPrompt.md`
 - **Role:** Senior Test Case Designer
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
+
 - **File:** `Standard-version/TestCaseWritingPrompt_Lite.md` / `Standard-version/TestCaseWritingPrompt_Lite.md`
 - **Features:** Quick start, focused on core test case elements
 - **Use Case:** Quick test case creation and basic documentation
@@ -90,11 +96,13 @@ The Test Case Writing module provides professional test case design and writing 
 ## Learning Resources
 
 ### Recommended Books
+
 - "Software Testing Techniques"
 - "Effective Software Testing"
 - "Test Case Design Best Practices"
 
 ### Online Resources
+
 - [ISTQB Test Design Techniques](https://www.istqb.org/)
 - [Software Testing Help](https://www.softwaretestinghelp.com/)
 - [Ministry of Testing](https://www.ministryoftesting.com/)
@@ -115,7 +123,6 @@ This module follows the PolyForm Noncommercial License 1.0.0. See the [LICENSE](
 ---
 
 **Write better test cases, achieve better coverage!** 📝✨
-
 
 ## Platform Scenario Variants
 

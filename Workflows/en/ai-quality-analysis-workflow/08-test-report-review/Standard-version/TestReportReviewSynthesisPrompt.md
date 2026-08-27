@@ -58,7 +58,7 @@ QA review: report ID/version | complete content
 UI/UX review: report ID/version | complete content
 Technical review: report ID/version | complete content
 PM review: report ID/version | complete content
-```
+```text
 
 Do not read artifacts outside this list, external sources, or conversation memory to repair role reports, and do not generate specialist findings for a missing role.
 
@@ -141,7 +141,7 @@ Evaluate in this order: `Recommend terminating review -> Recommend additional ev
 - Evidence gaps, disagreements, and risks requiring action: ...
 - PM assignment/coordination items: ...
 - Questions for Human Task decision: ... (list questions only; must not prefill a human final decision)
-```
+```text
 
 ## Execution Instructions
 
