@@ -85,7 +85,7 @@ When a role report declares a missing/unreadable required upstream input or a ve
 - Items requiring input or decision: ...
 - Actual environment, accounts, and data: supplied by the Human Task from confirmed sources
 - Execution status: Not executed; this report does not prove coverage completion or release readiness
-```
+```text
 
 ## Execution Instructions
 

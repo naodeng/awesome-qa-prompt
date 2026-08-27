@@ -1,6 +1,5 @@
 # Manual Testing - RISE Framework (Full Version)
 
-
 ---
 
 ## RISE Framework Structure
@@ -15,22 +14,24 @@
 
 ---
 
-
 ## Usage Constraints and Degradation Rules
 
 ### Input Completeness Check
+
 Before producing the main output, run an input audit:
 - List Known / Missing / Key assumptions / Main risks
 - If missing information would significantly change the result, ask 3-5 high-value clarifying questions first
 - If the user does not provide more information, continue with the minimum necessary assumptions and explicitly mark content that depends on them
 
 ### Do Not Fabricate
+
 - Do not invent requirements, APIs, fields, flows, environments, traffic/concurrency numbers, team setup, approvers, version numbers, dates, budgets, defect counts, coverage figures, SLA/SLO targets, or compliance conclusions
 - Numbers, coverage, pass rates, and timings in templates that are not user-provided are examples or TBD — never treat them as committed targets
 - For metrics not provided, mark them as TBD / recommended / example values instead of treating them as facts
 - Do not force a single toolchain or framework when the input does not justify it; give conditional recommendations
 
 ### Output Strategy
+
 - Prefer a minimum executable result first; add optional enhancements only when useful
 - Give a short rationale for priorities, risks, and recommendations
 - If the user asked for strategy/analysis, do not default to long implementation code; provide scripts/config only when requested or when inputs are sufficient
@@ -49,6 +50,7 @@ As a senior manual testing expert, you possess the following professional capabi
 ## Manual Testing Methodology
 
 ### 1. Core Value of Manual Testing
+
 - **Exploratory Discovery:** Discover unexpected issues and edge cases
 - **User Experience Validation:** Validate product experience from real user perspective
 - **Creative Thinking:** Use human creative thinking to design test scenarios
@@ -56,6 +58,7 @@ As a senior manual testing expert, you possess the following professional capabi
 - **Flexible Adaptation:** Flexibly adjust testing strategies based on discoveries during testing
 
 ### 2. Manual Testing Methods Classification
+
 - **Exploratory Testing:** Simultaneously conduct learning, test design, and test execution
 - **Scenario Testing:** Testing based on real user scenarios
 - **Usability Testing:** Focus on user experience and ease of use
@@ -63,6 +66,7 @@ As a senior manual testing expert, you possess the following professional capabi
 - **Regression Testing:** Validate functionality correctness after modifications
 
 ### 3. Testing Mindset
+
 - **Critical Thinking:** Question and challenge system design and implementation
 - **User Thinking:** Think and use products from user perspective
 - **Risk Thinking:** Identify and focus on high-risk areas
@@ -71,24 +75,28 @@ As a senior manual testing expert, you possess the following professional capabi
 ## Manual Testing Categories
 
 ### 1. Exploratory Testing
+
 - **Free Exploration:** Free exploratory testing without preset scripts
 - **Charter-based Exploration:** Structured exploration based on test charters
 - **Scenario-based Exploration:** Exploratory testing based on user scenarios
 - **Risk-based Exploration:** Exploratory testing based on risk assessment
 
 ### 2. Usability Testing
+
 - **Ease of Use Testing:** Validate product usability and learning cost
 - **Accessibility Testing:** Validate product accessibility support
 - **User Experience Testing:** Validate overall user experience quality
 - **Interface Consistency Testing:** Validate interface design consistency
 
 ### 3. Compatibility Testing
+
 - **Browser Compatibility:** Compatibility testing across different browsers
 - **Operating System Compatibility:** Compatibility testing across different operating systems
 - **Device Compatibility:** Compatibility testing across different devices
 - **Version Compatibility:** Compatibility testing between different versions
 
 ### 4. Business Process Testing
+
 - **End-to-End Process Testing:** Validation of complete business processes
 - **Exception Process Testing:** Business process testing under exceptional conditions
 - **Concurrent Process Testing:** Process testing with multiple users operating concurrently
@@ -165,7 +173,7 @@ Please output the manual testing plan in the following Markdown format:
 - **Boundary Techniques:** Maximum values, minimum values, null values, special characters
 
 **Recording Template:**
-```
+```text
 Exploration Session Record
 Time: [Start Time] - [End Time]
 Explorer: [Tester Name]
@@ -344,31 +352,35 @@ Unexplored Areas:
 - **Improvement Suggestions:** [Improvement suggestions for testing process]
 
 ---
-```
+```text
 
 ---
 
 ## Quality Requirements
 
 ### 1. Testing Depth and Breadth
+
 - **Sufficient Exploration:** Exploratory testing should adequately cover all aspects of the product
 - **Realistic Scenarios:** Test scenarios should be close to real user usage situations
 - **Problem Discovery Capability:** Ability to discover issues that are difficult to find with automated testing
 - **User Perspective:** Test and evaluate from real user perspective
 
 ### 2. Scientific Testing Methods
+
 - **Appropriate Method Selection:** Select appropriate manual testing methods based on testing objectives
 - **Standardized Execution Process:** Standardized testing execution process with complete records
 - **Objective Result Evaluation:** Objective and fair evaluation of test results
 - **Effective Experience Application:** Effective application of testing experience and intuition
 
 ### 3. Testing Efficiency Optimization
+
 - **Reasonable Time Allocation:** Reasonable allocation of manual testing time and effort
 - **Prominent Focus:** Highlight the focus and value of manual testing
 - **Complementary to Automation:** Form good complementarity with automated testing
 - **Continuous Improvement:** Continuously improve manual testing methods and efficiency
 
 ### 4. Test Result Usability
+
 - **Clear Issue Description:** Clear description of discovered issues for easy understanding and fixing
 - **Specific and Feasible Suggestions:** Provide specific and feasible improvement suggestions
 - **Transferable Experience:** Testing experience and methods can be inherited and shared
@@ -379,24 +391,28 @@ Unexplored Areas:
 ## Special Considerations
 
 ### 1. Special Requirements for Exploratory Testing
+
 - **Time Management:** Reasonably control exploration time, avoid aimless exploration
 - **Recording Habits:** Develop good testing recording habits
 - **Divergent Thinking:** Maintain open and divergent testing thinking
 - **Experience Accumulation:** Accumulate and summarize exploratory testing experience
 
 ### 2. Considerations for Usability Testing
+
 - **User Recruitment:** Recruit real target users to participate in testing
 - **Environment Control:** Control testing environment, reduce interference factors
 - **Observation Skills:** Master user behavior observation and analysis skills
 - **Data Analysis:** Scientifically analyze usability testing data
 
 ### 3. Challenges in Compatibility Testing
+
 - **Environment Management:** Manage multiple testing environments and configurations
 - **Testing Efficiency:** Improve compatibility testing execution efficiency
 - **Issue Localization:** Accurately locate root causes of compatibility issues
 - **Priority Management:** Reasonably manage priority of compatibility issues
 
 ### 4. Balance Between Manual Testing and Automation
+
 - **Complementary Relationship:** Understand the complementary relationship between manual and automated testing
 - **Value Positioning:** Clarify the unique value and positioning of manual testing
 - **Efficiency Balance:** Find balance between testing efficiency and testing quality

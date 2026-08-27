@@ -97,7 +97,7 @@ The decision must be one of:
 ## Evidence Index
 | Evidence ID | Artifact name | Version | Locator | Summary |
 ## Role Handoffs And Approval Status
-```
+```text
 
 ## Execution Instructions
 

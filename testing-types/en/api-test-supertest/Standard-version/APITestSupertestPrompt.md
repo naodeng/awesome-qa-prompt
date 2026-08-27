@@ -5,6 +5,7 @@ An API testing prompt for Node.js Supertest, suited to Express, Koa, NestJS, and
 ## Guardrails And Degradation Rules
 
 ### Input Completeness Check
+
 Before the main output, run an input audit:
 
 - List known information, missing information, key assumptions, and main risks
@@ -39,7 +40,6 @@ From the materials the user provides, produce a Supertest + Jest API automation 
 
 - Act as a senior QA and API automation expert who turns API materials into a maintainable Node.js / Supertest suite.
 
-
 ## Input parsing order
 
 Parse in this priority order. Higher priority wins on conflicts; when sources disagree, state the conflict and source — **do not silently invent a merged “truth”**:
@@ -65,7 +65,7 @@ tests/
   <resource>.test.js     # or .test.ts only when the project is already TypeScript
 jest.config.cjs          # reuse if present
 package.json             # script: "test": "jest --runInBand"
-```
+```text
 
 **System under test entry (pick one based on materials; if unclear, state the assumption)**
 
@@ -125,6 +125,7 @@ Unless the user explicitly narrows scope, the result must cover:
 Return results in this order:
 
 ### 1. Task Understanding
+
 - API / domain under test
 - test goal
 - in-scope endpoints or flows
@@ -133,6 +134,7 @@ Return results in this order:
 - chosen entry mode (app instance / baseUrl) and why
 
 ### 2. Supertest Test Plan or Structure
+
 - proposed tree and file responsibilities
 - Jest (or existing runner) config highlights
 - env var contract
@@ -140,6 +142,7 @@ Return results in this order:
 - alignment with an existing Node suite (if any)
 
 ### 3. Priority Coverage
+
 For each P0/P1 case:
 - file name and `test` title
 - method / path (confirmed only)
@@ -149,17 +152,20 @@ For each P0/P1 case:
 - required headers / prerequisite data
 
 ### 4. Setup and Data Notes
+
 - local vs CI environment differences
 - test-data setup and cleanup
 - parallelism limits (why runInBand is suggested)
 
 ### 5. Execution Suggestions
+
 - local: `npm test` / path-filtered runs
 - smoke vs regression scope
 - minimal CI steps and secret variable names
 - release-blocking checks
 
 ### 6. Open Questions
+
 - gaps and assumptions used this round
 
 ## Pre-delivery checklist

@@ -15,7 +15,7 @@ Using the specified strategy version, make a traceable participation decision an
 ```text
 Test strategy: name | source | version | content or readable location
 Additional constraints (optional): constraints only on reading that strategy or formatting this report
-```
+```text
 
 ## Stage and Role Boundaries
 
@@ -92,7 +92,7 @@ Missing or unreadable strategy content is blocking and yields `To be confirmed`.
 ## Human Task Handoff
 - Risk boundary or open decisions: ...
 - Final decision: belongs to the Human Task
-```
+```text
 
 ## Execution Instructions
 

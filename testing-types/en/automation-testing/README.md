@@ -9,24 +9,28 @@ The Automation Testing module provides comprehensive test automation guidance, h
 ## Core Features
 
 ### 🤖 Complete Automation Framework
+
 - **UI Automation:** Web and mobile UI test automation
 - **API Automation:** RESTful API and web service automation
 - **Unit Testing:** Code-level automated testing
 - **Integration Testing:** System integration test automation
 
 ### 🎯 Framework Design
+
 - **Page Object Model:** Maintainable UI test architecture
 - **Data-Driven Testing:** Separate test data from test logic
 - **Keyword-Driven Testing:** Reusable test components
 - **BDD Framework:** Behavior-driven development approach
 
 ### 🔍 CI/CD Integration
+
 - **Continuous Testing:** Automated testing in CI/CD pipeline
 - **Parallel Execution:** Distributed test execution
 - **Test Reporting:** Comprehensive test result reporting
 - **Quality Gates:** Automated quality checks
 
 ### 🌐 Multi-Platform Support
+
 - **Web Automation:** Selenium, Playwright, Cypress
 - **Mobile Automation:** Appium, XCUITest, Espresso
 - **Desktop Automation:** WinAppDriver, Sikuli
@@ -41,18 +45,20 @@ The Automation Testing module provides comprehensive test automation guidance, h
 - `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
 
-
 ### Chinese Prompts
+
 - **File:** `Standard-version/AutomationTestingPrompt.md`
 - **Role:** Senior Test Automation Architect (10+ years experience)
 - **Use Case:** Chinese project teams, automation framework design
 
 ### English Prompts
+
 - **File:** `Standard-version/AutomationTestingPrompt.md`
 - **Role:** Senior Test Automation Architect
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
+
 - **File:** `Standard-version/AutomationTestingPrompt_Lite.md` / `Standard-version/AutomationTestingPrompt_Lite.md`
 - **Features:** Quick start, focused on core automation concepts
 - **Use Case:** Quick automation assessment and basic framework setup
@@ -88,11 +94,13 @@ The Automation Testing module provides comprehensive test automation guidance, h
 ## Learning Resources
 
 ### Recommended Books
+
 - "Test Automation Patterns"
 - "Selenium WebDriver Practical Guide"
 - "Continuous Delivery"
 
 ### Online Resources
+
 - [Selenium Documentation](https://www.selenium.dev/)
 - [Test Automation University](https://testautomationu.applitools.com/)
 - [Automation Testing Best Practices](https://www.ministryoftesting.com/)

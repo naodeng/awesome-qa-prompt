@@ -20,7 +20,7 @@ Code: explicit version/commit/tag | diff, patch, complete file content, or reada
 Interaction prototype (optional): name/version/source | content or readable location
 Original requirements (optional): name/version/source | content or readable location
 Technical solution (optional): name/version/source | content or readable location
-```
+```text
 
 ## Required Inputs And Hard Code Gate
 
@@ -83,7 +83,7 @@ Severity must be supported by trigger, scope, and observable consequence. Missin
 | Finding ID | Severity | File | Location | Risk scenario | In-code testability evidence | Gap impact | Minimum verification direction |
 ## Information Gaps and Role Handoffs
 ## Human Task Handoff
-```
+```text
 
 ## Execution Instructions
 

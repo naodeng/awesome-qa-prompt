@@ -1,12 +1,14 @@
 # Release Testing Workflow
 
 ## 📋 Metadata
+
 - **Audience**: QA Engineers, Release Managers, DevOps
 - **Timeline**: 1-2 weeks before release
 - **Last Updated**: 2026-01-01
 - **Version**: 1.0
 
 ## 🎯 Objective
+
 Comprehensive testing workflow to ensure release quality and readiness for production deployment.
 
 ---
@@ -14,9 +16,13 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 ## 📅 Release Timeline
 
 ### T-14 Days: Release Planning
+
 ### T-7 Days: Feature Freeze & Testing Ramp-Up
+
 ### T-3 Days: Release Candidate & Final Testing
+
 ### T-1 Day: Go/No-Go Decision
+
 ### T-Day: Release Day
 
 ---
@@ -24,6 +30,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 ## 🎬 T-14 Days: Release Planning
 
 ### Release Kickoff Meeting
+
 **Attendees**: Product, Engineering, QA, DevOps
 
 **Agenda**:
@@ -48,6 +55,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 ## 🏗️ T-10 to T-8 Days: Test Preparation
 
 ### Environment Setup
+
 **Actions**:
 - Set up staging environment
 - Configure production-like data
@@ -59,6 +67,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 - [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) - Test data generation
 
 ### Test Suite Preparation
+
 **Update**:
 - Regression test suite
 - Performance test scripts
@@ -76,6 +85,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 ## 🚀 T-7 Days: Feature Freeze & Testing Ramp-Up
 
 ### Feature Freeze
+
 **Actions**:
 - No new features after this point
 - Only bug fixes allowed
@@ -84,6 +94,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 ### Comprehensive Testing Begins
 
 #### 1. Functional Testing
+
 **Prompts to Use**:
 - [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md)
 - [Test Case Writing](../testing-types/test-case-writing/TestCaseWritingPrompt_EN.md)
@@ -95,6 +106,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 - Integration points
 
 #### 2. Regression Testing
+
 **Full Regression Suite**:
 - Automated regression tests
 - Manual regression for critical paths
@@ -105,6 +117,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 - [AI-Assisted Testing](../testing-types/ai-assisted-testing/AIAssistedTestingPrompt_EN.md) - Intelligent test selection
 
 #### 3. End-to-End Testing
+
 **Prompts to Use**:
 - [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md) - E2E scenarios
 
@@ -119,6 +132,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 ## 🔍 T-5 to T-4 Days: Specialized Testing
 
 ### Performance Testing
+
 **Prompts to Use**:
 - [Performance Testing](../testing-types/performance-testing/PerformanceTestingPrompt_EN.md)
 
@@ -135,6 +149,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 - Resource utilization
 
 ### Security Testing
+
 **Prompts to Use**:
 - [Security Testing](../testing-types/security-testing/SecurityTestingPrompt_EN.md)
 
@@ -146,6 +161,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 - Security headers check
 
 ### Accessibility Testing
+
 **Prompts to Use**:
 - [Accessibility Testing](../testing-types/accessibility-testing/AccessibilityTestingPrompt_EN.md)
 
@@ -156,6 +172,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 - ARIA labels verification
 
 ### Visual Testing
+
 **Prompts to Use**:
 - [Accessibility Testing](../testing-types/accessibility-testing/AccessibilityTestingPrompt_EN.md) - Visual testing
 
@@ -170,18 +187,21 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 ## ✅ T-3 Days: Release Candidate Testing
 
 ### Release Candidate (RC) Build
+
 **Actions**:
 - Deploy RC to staging
 - Freeze all code changes
 - Tag release in version control
 
 ### Smoke Testing
+
 **Quick validation** (1-2 hours):
 - Critical functionality works
 - No showstopper bugs
 - Deployment successful
 
 ### Final Regression
+
 **Complete regression suite**:
 - Automated tests (full suite)
 - Manual critical path testing
@@ -191,13 +211,14 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 - [Manual Testing](../testing-types/manual-testing/ManualTestingPrompt_EN.md) - Exploratory testing
 
 ### Bug Triage
+
 **Priority**:
 - **Critical**: Must fix before release
 - **High**: Fix if possible
 - **Medium/Low**: Move to next release
 
 **Decision Matrix**:
-```
+```text
 Critical Bug → Fix immediately → Retest → New RC
 High Bug → Assess risk → Fix or defer
 Medium/Low → Defer to next release
@@ -208,6 +229,7 @@ Medium/Low → Defer to next release
 ## 📊 T-2 Days: Quality Assessment
 
 ### Test Metrics Review
+
 **Prompts to Use**:
 - [Test Reporting](../testing-types/test-reporting/TestReportingPrompt_EN.md)
 - [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) - Quality assessment
@@ -221,6 +243,7 @@ Medium/Low → Defer to next release
 - Performance benchmarks: ___
 
 ### Quality Gates
+
 **Must Pass**:
 - [ ] All critical bugs fixed
 - [ ] Regression suite 100% passed
@@ -230,6 +253,7 @@ Medium/Low → Defer to next release
 - [ ] Accessibility compliance met
 
 ### Risk Assessment
+
 **Evaluate**:
 - Known issues and workarounds
 - Performance under load
@@ -241,6 +265,7 @@ Medium/Low → Defer to next release
 ## 🎯 T-1 Day: Go/No-Go Decision
 
 ### Go/No-Go Meeting
+
 **Attendees**: Product, Engineering, QA, DevOps, Leadership
 
 **Review**:
@@ -268,6 +293,7 @@ Medium/Low → Defer to next release
 - ❌ Team not confident
 
 ### Pre-Release Checklist
+
 - [ ] Release notes prepared
 - [ ] Deployment runbook ready
 - [ ] Monitoring configured
@@ -280,6 +306,7 @@ Medium/Low → Defer to next release
 ## 🚀 T-Day: Release Day
 
 ### Pre-Deployment
+
 **Actions** (2-4 hours before):
 - Final smoke test on RC
 - Verify deployment checklist
@@ -287,6 +314,7 @@ Medium/Low → Defer to next release
 - Communication channels ready
 
 ### Deployment
+
 **Monitor**:
 - Deployment progress
 - Error logs
@@ -294,6 +322,7 @@ Medium/Low → Defer to next release
 - User feedback
 
 ### Post-Deployment Validation
+
 **Smoke Testing in Production** (30-60 min):
 - [ ] Critical user journeys work
 - [ ] Authentication/authorization
@@ -308,6 +337,7 @@ Medium/Low → Defer to next release
 - Support tickets
 
 ### Rollback Decision
+
 **Rollback if**:
 - Critical functionality broken
 - Severe performance degradation
@@ -319,18 +349,21 @@ Medium/Low → Defer to next release
 ## 📈 Post-Release (T+1 to T+7)
 
 ### Day 1: Intensive Monitoring
+
 - Monitor all metrics
 - Respond to incidents quickly
 - Track user feedback
 - Log any issues
 
 ### Week 1: Stabilization
+
 - Fix any post-release bugs
 - Monitor performance trends
 - Gather user feedback
 - Plan hotfixes if needed
 
 ### Release Retrospective
+
 **Discuss**:
 - What went well?
 - What could be improved?
@@ -345,18 +378,21 @@ Medium/Low → Defer to next release
 ## 🚨 Emergency Procedures
 
 ### Critical Bug Found
+
 1. Assess severity and impact
 2. Decide: Hotfix or Rollback
 3. If hotfix: Fast-track testing
 4. If rollback: Execute rollback plan
 
 ### Performance Issues
+
 1. Identify bottleneck
 2. Assess user impact
 3. Implement quick fix or rollback
 4. Plan permanent solution
 
 ### Security Incident
+
 1. Immediate assessment
 2. Contain the issue
 3. Rollback if necessary
@@ -367,6 +403,7 @@ Medium/Low → Defer to next release
 ## 📋 Release Testing Checklist
 
 ### Pre-Release
+
 - [ ] Test plan approved
 - [ ] Environments ready
 - [ ] Test data prepared
@@ -374,6 +411,7 @@ Medium/Low → Defer to next release
 - [ ] Team trained
 
 ### Testing Phase
+
 - [ ] Functional testing complete
 - [ ] Regression passed
 - [ ] Performance validated
@@ -382,6 +420,7 @@ Medium/Low → Defer to next release
 - [ ] Visual testing done
 
 ### Pre-Deployment
+
 - [ ] RC tested
 - [ ] Quality gates passed
 - [ ] Go/No-Go decision made
@@ -389,6 +428,7 @@ Medium/Low → Defer to next release
 - [ ] Rollback plan tested
 
 ### Post-Deployment
+
 - [ ] Smoke tests passed
 - [ ] Monitoring active
 - [ ] Team on standby
@@ -399,16 +439,19 @@ Medium/Low → Defer to next release
 ## 🔧 Recommended Prompts by Phase
 
 ### Planning
+
 - [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md)
 - [Requirements Analysis](../testing-types/requirements-analysis/RequirementsAnalysisPrompt_EN.md)
 
 ### Testing
+
 - [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md)
 - [Performance Testing](../testing-types/performance-testing/PerformanceTestingPrompt_EN.md)
 - [Security Testing](../testing-types/security-testing/SecurityTestingPrompt_EN.md)
 - [Accessibility Testing](../testing-types/accessibility-testing/AccessibilityTestingPrompt_EN.md)
 
 ### Assessment
+
 - [Test Reporting](../testing-types/test-reporting/TestReportingPrompt_EN.md)
 
 ---

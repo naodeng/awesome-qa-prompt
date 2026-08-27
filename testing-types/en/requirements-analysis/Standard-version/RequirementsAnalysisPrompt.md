@@ -1,6 +1,5 @@
 # Requirements Analysis Prompt
 
-
 ---
 
 **Role:** Senior Web Full-Stack Testing Expert (Lead QA Engineer)
@@ -11,21 +10,23 @@
 
 ---
 
-
 ## Usage Constraints and Degradation Rules
 
 ### Input Completeness Check
+
 Before producing the main output, run an input audit:
 - List Known / Missing / Key assumptions / Main risks
 - If missing information would significantly change the result, ask 3-5 high-value clarifying questions first
 - If the user does not provide more information, continue with the minimum necessary assumptions and explicitly mark content that depends on them
 
 ### Do Not Fabricate
+
 - Do not invent requirements, APIs, fields, flows, environments, traffic/concurrency numbers, team setup, approvers, version numbers, dates, budgets, defect counts, coverage figures, SLA/SLO targets, or compliance conclusions
 - For metrics not provided, mark them as TBD / recommended / example values instead of treating them as facts
 - Do not force a single toolchain or framework when the input does not justify it; give conditional recommendations
 
 ### Output Strategy
+
 - Prefer a minimum executable result first; add optional enhancements only when useful
 - Give a short rationale for priorities, risks, and recommendations
 - If the user asked for strategy/analysis, do not default to long implementation code; provide scripts/config only when requested or when inputs are sufficient
@@ -282,7 +283,7 @@ Please output the requirements analysis report in the following Markdown format:
 [Describe the application and coverage of various test design methods]
 
 ---
-```
+```text
 
 ---
 
@@ -372,12 +373,14 @@ Please output the requirements analysis report in the following Markdown format:
 ## 📋 Change Log
 
 ### v0.3 (2025-01-16)
+
 - Added "Test Methods" section, including test design method application, test execution methods, and test tool recommendations
 - Added "Test Method Application Completeness" to quality requirements
 - Added "Test Method Coverage" to coverage analysis
 - Added "Test Method Planning" step to execution instructions
 
 ### v0.2 (2025-01-16)
+
 - Optimized output format, focusing on business background, test scope, and test scenarios
 - Removed specific test case steps, changed to scenario-level design
 - Added test strategy recommendations and coverage analysis
@@ -385,4 +388,5 @@ Please output the requirements analysis report in the following Markdown format:
 - Clearly categorized scenarios: positive, negative, boundary, security, performance, compatibility
 
 ### v0.1 (2025-01-14)
+
 - Initial version

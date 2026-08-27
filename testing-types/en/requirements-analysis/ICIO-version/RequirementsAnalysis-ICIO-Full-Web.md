@@ -10,8 +10,6 @@
   - Accessibility, validation behavior, page-state transitions, and cross-browser differences
 - **Additional Rule:** Do not expand into native mobile topics unless they directly affect H5 or responsive web behavior
 
-
-
 ---
 
 ## ICIO Framework Structure
@@ -26,22 +24,24 @@
 
 ---
 
-
 ## Usage Constraints and Degradation Rules
 
 ### Input Completeness Check
+
 Before producing the main output, run an input audit:
 - List Known / Missing / Key assumptions / Main risks
 - If missing information would significantly change the result, ask 3-5 high-value clarifying questions first
 - If the user does not provide more information, continue with the minimum necessary assumptions and explicitly mark content that depends on them
 
 ### Do Not Fabricate
+
 - Do not invent requirements, APIs, fields, flows, environments, traffic/concurrency numbers, team setup, approvers, version numbers, dates, budgets, defect counts, coverage figures, SLA/SLO targets, or compliance conclusions
 - Numbers, coverage, pass rates, and timings in templates that are not user-provided are examples or TBD — never treat them as committed targets
 - For metrics not provided, mark them as TBD / recommended / example values instead of treating them as facts
 - Do not force a single toolchain or framework when the input does not justify it; give conditional recommendations
 
 ### Output Strategy
+
 - Prefer a minimum executable result first; add optional enhancements only when useful
 - Give a short rationale for priorities, risks, and recommendations
 - If the user asked for strategy/analysis, do not default to long implementation code; provide scripts/config only when requested or when inputs are sufficient
@@ -50,44 +50,52 @@ Before producing the main output, run an input audit:
 ## Test Design Methodology
 
 ### Logic Modeling
+
 - **Scenario Testing:** Design end-to-end test scenarios based on user stories and business processes
 - **State Transition:** Identify system state changes and cover all state transition paths
 - **Decision Table/Cause-Effect Graph:** Handle complex business rules and conditional combinations
 
 ### Data Refinement
+
 - **Equivalence Class Partitioning (ECP):** Partition input domains into valid and invalid equivalence classes
 - **Boundary Value Analysis (BVA):** Focus on testing boundary values, boundary value -1, and boundary value +1
 - **Orthogonal Array Testing (OATS):** Handle multi-factor, multi-level test scenarios to reduce test case count
 
 ### Experience-Driven
+
 - **Error Guessing:** Identify common errors and exceptional scenarios based on experience
 - **Exploratory Testing Strategy:** Design exploratory tests based on test charters
 
 ## Coverage Dimensions
 
 ### 1. Positive Path (Happy Path)
+
 - The most direct flow that meets business expectations
 - Cover the main business value realization path
 - Ensure core functionality availability
 
 ### 2. Negative/Alternative Flows
+
 - **Reverse Operations:** Cancel, rollback, undo operations
 - **Interrupted Operations:** Page refresh, browser close, network interruption
 - **Logic Conflicts:** Concurrent operations, data inconsistency, state conflicts
 - **Business Exceptions:** Insufficient balance, insufficient inventory, insufficient permissions
 
 ### 3. UI/UX Experience
+
 - **Interaction Consistency:** Button states, feedback prompts, error message display
 - **Responsive Adaptation:** Different screen sizes, device type adaptation
 - **Usability:** Operation flow smoothness, information display clarity, accessibility
 
 ### 4. Input Validation
+
 - **Format Validation:** Data types, format rules (email, phone number, date, etc.)
 - **Length Validation:** Minimum length, maximum length, boundary values
 - **Special Characters:** SQL injection, XSS attacks, path traversal and other security characters
 - **Business Rules:** Uniqueness, correlation, dependency validation
 
 ### 5. Non-Functional
+
 - **Performance Risks:** Response time, throughput, resource consumption
 - **Concurrency Competition:** Multi-user simultaneous operations, data races, deadlock risks
 - **Permission Security:** Unauthorized access, permission bypass, sensitive information leakage
@@ -286,23 +294,26 @@ Please output the requirements analysis report in the following Markdown format:
 [Describe application and coverage of various test design methods]
 
 ---
-```
+```text
 
 ## Quality Requirements
 
 ### 1. Business Background Completeness
+
 - **Clear Business Objectives:** Clearly describe the business problems the requirement aims to solve
 - **Clear User Roles:** List all relevant user roles and their concerns
 - **Complete Business Rules:** List all key business rules and constraints
 - **Clear Business Value:** Explain the value and impact of the requirement on the business
 
 ### 2. Test Scope Accuracy
+
 - **Clear Functional Scope:** Clearly define included and excluded functional modules
 - **Comprehensive Test Types:** Cover dimensions including functional, UI, security, performance, and compatibility
 - **Clear Environment Requirements:** Clearly define test environment and data preparation requirements
 - **Clear Boundaries:** Clearly define test boundaries and limitations
 
 ### 3. Test Scenario Coverage
+
 - **Positive Scenarios:** At least cover all core business processes
 - **Exception Scenarios:** Must include input validation, business rules, system exceptions, operation exceptions, etc.
 - **Boundary Scenarios:** Cover key boundary values and critical conditions
@@ -311,12 +322,14 @@ Please output the requirements analysis report in the following Markdown format:
 - **Compatibility Scenarios:** Clearly define compatibility testing scope
 
 ### 4. Test Method Application Completeness
+
 - **Design Method Application:** Clearly define application scenarios and specific application descriptions for each test design method
 - **Execution Method Planning:** Clearly define strategies for manual testing, automated testing, interface testing, and performance testing
 - **Reasonable Tool Selection:** Recommend appropriate test tools based on test types
 - **Method Coverage:** Ensure comprehensive application coverage of test design methods
 
 ### 5. Scenario Design Professionalism
+
 - **Clear Scenario Descriptions:** Each scenario description is concise and clear, with emphasis on key points
 - **Clear Test Focus:** Clearly define key test points for each scenario
 - **Reasonable Priority:** Reasonably assign priorities based on business impact and risk

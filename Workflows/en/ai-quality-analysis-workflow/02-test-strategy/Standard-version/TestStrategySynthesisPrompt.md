@@ -106,7 +106,7 @@ If all five reports are missing or unreadable, mark the task blocked and do not 
 ## Approval Status
 - Current status: To be confirmed / status explicitly provided in the five reports
 - Note: this strategy is not approval, gate passage, or a release conclusion
-```
+```text
 
 ## Execution Instructions
 

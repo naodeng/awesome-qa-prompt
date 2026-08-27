@@ -20,7 +20,7 @@ Code: explicit version/commit/tag | diff, patch, complete file content, or reada
 Interaction prototype (optional): name/version/source | content or readable location
 Original requirements (optional): name/version/source | content or readable location
 Technical solution (optional): name/version/source | content or readable location
-```
+```text
 
 ## Required Inputs And Hard Code Gate
 
@@ -92,7 +92,7 @@ Do not review business rules themselves, test coverage, architecture, general pe
 | Finding ID | Severity | Category | File | Location | Trigger | User impact | Code/experience evidence | Remediation direction |
 ## Runtime Verification and Information Gaps
 ## Human Task Handoff
-```
+```text
 
 ## Execution Instructions
 

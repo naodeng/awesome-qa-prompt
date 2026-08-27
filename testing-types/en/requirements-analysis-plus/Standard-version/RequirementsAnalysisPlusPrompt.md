@@ -5,6 +5,7 @@ Extends requirements analysis with stronger input audit, risk modeling, traceabi
 ## Guardrails And Degradation Rules
 
 ### Input Completeness Check
+
 Before the main output, run an input audit:
 
 - List known information, missing information, key assumptions, and main risks
@@ -104,24 +105,31 @@ Unless the user explicitly narrows scope, cover:
 Return in this order:
 
 ### 1. Requirement Understanding
+
 - goals, in/out of scope, key roles/systems
 
 ### 2. Sources and Cross-Check Summary
+
 - materials used; overall aligned vs conflict summary
 
 ### 3. Cross-Source Gaps and Conflicts
+
 - structured-field items (P0/P1 first)
 
 ### 4. High-Priority Risks
+
 - business and quality threats with Impact / Priority
 
 ### 5. Testability and Delivery Impact
+
 - what testing cannot start; which gates are blocked
 
 ### 6. Questions to Resolve First
+
 - assignable, closable questions
 
 ### 7. Recommended Next Actions
+
 - concrete actions; may suggest `test-strategy` / `test-strategy-plus` / `testcase-writer-plus` by **skill name only** (no relative file links)
 
 ## Quality Bar

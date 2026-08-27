@@ -23,8 +23,8 @@
 - `*_Lean.md`：仅在模块提供 Lean 版本时使用，适合更克制的输出
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`：仅在你明确需要特定提示框架时再选用
 
-
 ### [AutomationTestingPrompt.md](Standard-version/AutomationTestingPrompt.md)
+
 **语言**：中文
 **角色**：资深自动化测试架构师
 **功能**：设计全面的自动化测试策略和实施方案
@@ -36,6 +36,7 @@
 - CI/CD 集成和维护优化
 
 ### [AutomationTestingPrompt.md](../../en/automation-testing/Standard-version/AutomationTestingPrompt.md)
+
 **语言**：English
 **角色**：Senior Test Automation Architect
 **功能**：Design comprehensive test automation strategies and implementation plans
@@ -69,18 +70,21 @@
 ## 💡 核心技术栈
 
 ### Web 自动化框架
+
 - **Selenium WebDriver**：跨浏览器自动化测试
 - **Playwright**：现代 Web 应用自动化
 - **Cypress**：前端开发友好的测试框架
 - **Puppeteer**：Chrome DevTools 协议自动化
 
 ### API 测试工具
+
 - **REST Assured**：Java REST API 测试
 - **Postman/Newman**：API 测试和集合执行
 - **Karate DSL**：BDD 风格 API 测试
 - **pytest + requests**：Python API 测试
 
 ### 移动端框架
+
 - **Appium**：跨平台移动应用自动化
 - **XCUITest**：iOS 原生自动化
 - **Espresso**：Android 原生自动化
@@ -89,7 +93,8 @@
 ## 🏗️ 架构设计
 
 ### 测试金字塔
-```
+
+```text
         /\
        /UI\     10% - UI 自动化测试
       /____\
@@ -102,6 +107,7 @@
 ```
 
 ### 设计模式
+
 - **Page Object Model (POM)**：页面对象模式
 - **Page Factory**：页面工厂模式
 - **Fluent Interface**：流畅接口模式
@@ -110,11 +116,13 @@
 ## 🔗 相关资源
 
 ### 内部资源
+
 - [功能测试](../functional-testing/) - 功能测试策略
 - [性能测试](../performance-testing/) - 性能测试自动化
 - [移动端测试](../mobile-testing/) - 移动端自动化
 
 ### 外部资源
+
 - [Selenium 官方文档](https://selenium.dev/)
 - [Playwright 官方文档](https://playwright.dev/)
 - [测试自动化最佳实践](https://testautomationu.applitools.com/)

@@ -22,7 +22,7 @@ Code review report: report ID/code version | complete content
 Interaction prototype (optional): name/version/source | content or readable location
 Original requirements (optional): name/version/source | content or readable location
 Technical solution (optional): name/version/source | content or readable location
-```
+```text
 
 ## Input Gate And Audit
 
@@ -84,7 +84,7 @@ Hand contract, architecture, or implementation judgments to Technical. Hand Prod
 ## Deferred Scope And Information Gaps
 | Scope/source | Reason | Impact | Needed input |
 ## Role Handoffs
-```
+```text
 
 ## Execution Instructions
 

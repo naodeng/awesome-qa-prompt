@@ -30,7 +30,7 @@ Business/system scope: [Module, endpoint, page, flow, or service]
 Available materials: [Requirements, API docs, code snippets, test cases, logs, or existing assets]
 Constraints: [Tool stack, environment, timeline, risks, compliance, or release needs]
 Expected format: [Test plan / cases / review notes / asset structure / execution plan]
-```
+```text
 
 ## Output Focus
 

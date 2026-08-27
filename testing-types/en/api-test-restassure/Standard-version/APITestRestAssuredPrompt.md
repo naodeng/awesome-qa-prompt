@@ -5,6 +5,7 @@ An API automation prompt for the Java Rest Assured stack, covering request wrapp
 ## Guardrails And Degradation Rules
 
 ### Input Completeness Check
+
 Before the main output, run an input audit:
 
 - List known information, missing information, key assumptions, and main risks
@@ -39,7 +40,6 @@ From the materials the user provides, produce a REST Assured (JUnit 5) API autom
 
 - Act as a senior QA and API automation expert who turns API materials into a maintainable Java / REST Assured suite.
 
-
 ## Input parsing order
 
 Parse in this priority order. Higher priority wins on conflicts; when sources disagree, state the conflict and source — **do not silently invent a merged “truth”**:
@@ -66,7 +66,7 @@ src/test/java/com/example/api/
   <Resource>ApiTest.java    # per resource or critical flow
 src/test/resources/
   test.properties           # non-secret defaults; secrets prefer env vars
-```
+```text
 
 Build: Maven + JUnit 5 + REST Assured by default. If the project already uses Gradle/TestNG, **align to it** — do not force a stack change.
 
@@ -124,6 +124,7 @@ Unless the user explicitly narrows scope, the result must cover:
 Return results in this order:
 
 ### 1. Task Understanding
+
 - API / domain under test
 - test goal
 - in-scope endpoints or flows
@@ -131,6 +132,7 @@ Return results in this order:
 - input sources and conflict handling
 
 ### 2. REST Assured Test Plan or Structure
+
 - proposed packages and class list
 - `BaseApiTest` / config responsibilities
 - env vars and `test.properties` keys (no real secrets)
@@ -138,6 +140,7 @@ Return results in this order:
 - alignment with existing Maven/Gradle suites (if any)
 
 ### 3. Priority Coverage
+
 For each P0/P1 case:
 - class and method names
 - method / path (confirmed only)
@@ -147,17 +150,20 @@ For each P0/P1 case:
 - dependencies on `requestSpec` or data
 
 ### 4. Setup and Data Notes
+
 - how auth is injected (Bearer placeholder, etc.)
 - test-data setup and cleanup
 - multi-environment switching
 
 ### 5. Execution Suggestions
+
 - local: `mvn test` / tag-filter examples
 - smoke vs regression scope
 - minimal CI steps and secret variable names
 - release-blocking checks
 
 ### 6. Open Questions
+
 - gaps and assumptions used this round
 
 ## Pre-delivery checklist

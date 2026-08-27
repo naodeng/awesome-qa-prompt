@@ -9,24 +9,28 @@ The Performance Testing module provides comprehensive performance testing guidan
 ## Core Features
 
 ### ⚡ Performance Testing Types
+
 - **Load Testing:** System behavior under expected load
 - **Stress Testing:** System limits and breaking points
 - **Spike Testing:** Sudden load increase handling
 - **Endurance Testing:** Long-term sustained load performance
 
 ### 🎯 Performance Metrics
+
 - **Response Time:** Request processing time
 - **Throughput:** Transactions per second (TPS)
 - **Resource Utilization:** CPU, memory, disk, network usage
 - **Scalability:** System capacity growth potential
 
 ### 🔍 Testing Approaches
+
 - **Frontend Performance:** Page load time, rendering performance
 - **Backend Performance:** API response time, database queries
 - **Network Performance:** Bandwidth, latency, packet loss
 - **End-to-End Performance:** Complete user journey performance
 
 ### 🌐 Testing Tools
+
 - **JMeter:** Open-source load testing tool
 - **Gatling:** Scala-based performance testing framework
 - **K6:** Modern load testing tool
@@ -41,18 +45,20 @@ The Performance Testing module provides comprehensive performance testing guidan
 - `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
 
-
 ### Chinese Prompts
+
 - **File:** `Standard-version/PerformanceTestingPrompt.md`
 - **Role:** Senior Performance Testing Expert (10+ years experience)
 - **Use Case:** Chinese project teams, performance testing requirements
 
 ### English Prompts
+
 - **File:** `Standard-version/PerformanceTestingPrompt.md`
 - **Role:** Senior Performance Testing Expert
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
+
 - **File:** `Standard-version/PerformanceTestingPrompt_Lite.md` / `Standard-version/PerformanceTestingPrompt_Lite.md`
 - **Features:** Quick start, focused on core performance testing concepts
 - **Use Case:** Quick performance assessment and basic testing
@@ -88,11 +94,13 @@ The Performance Testing module provides comprehensive performance testing guidan
 ## Learning Resources
 
 ### Recommended Books
+
 - "The Art of Application Performance Testing"
 - "Performance Testing Guidance for Web Applications"
 - "Systems Performance"
 
 ### Online Resources
+
 - [JMeter Documentation](https://jmeter.apache.org/)
 - [Performance Testing Best Practices](https://www.ministryoftesting.com/)
 - [Web Performance Working Group](https://www.w3.org/webperf/)

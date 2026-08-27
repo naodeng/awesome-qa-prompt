@@ -9,24 +9,28 @@ The Security Testing module provides comprehensive security testing guidance, he
 ## Core Features
 
 ### 🔒 Security Testing Types
+
 - **Vulnerability Assessment:** Identify security weaknesses
 - **Penetration Testing:** Simulate real-world attacks
 - **Security Scanning:** Automated vulnerability scanning
 - **Code Review:** Security-focused code analysis
 
 ### 🎯 OWASP Top 10 Coverage
+
 - **Injection Attacks:** SQL, NoSQL, OS command injection
 - **Broken Authentication:** Authentication and session management flaws
 - **Sensitive Data Exposure:** Inadequate data protection
 - **XML External Entities (XXE):** XML processing vulnerabilities
 
 ### 🔍 Testing Approaches
+
 - **Static Analysis:** Source code security analysis (SAST)
 - **Dynamic Analysis:** Runtime security testing (DAST)
 - **Interactive Analysis:** Combined SAST and DAST (IAST)
 - **Manual Testing:** Expert-driven security assessment
 
 ### 🌐 Security Domains
+
 - **Web Security:** XSS, CSRF, clickjacking
 - **API Security:** Authentication, authorization, rate limiting
 - **Mobile Security:** App security, data storage, communication
@@ -41,18 +45,20 @@ The Security Testing module provides comprehensive security testing guidance, he
 - `*_Lean.md`: use only when a module provides a Lean variant and you want a more restrained result
 - `CRISPE/RISE/ICIO/ROSES/LangGPT`: use only when you explicitly want that prompting framework
 
-
 ### Chinese Prompts
+
 - **File:** `Standard-version/SecurityTestingPrompt.md`
 - **Role:** Senior Security Testing Expert (10+ years experience)
 - **Use Case:** Chinese project teams, security testing requirements
 
 ### English Prompts
+
 - **File:** `Standard-version/SecurityTestingPrompt.md`
 - **Role:** Senior Security Testing Expert
 - **Use Case:** International teams, English project environments
 
 ### Lite Version Prompts
+
 - **File:** `Standard-version/SecurityTestingPrompt_Lite.md` / `Standard-version/SecurityTestingPrompt_Lite.md`
 - **Features:** Quick start, focused on core security testing concepts
 - **Use Case:** Quick security assessment and basic testing
@@ -88,11 +94,13 @@ The Security Testing module provides comprehensive security testing guidance, he
 ## Learning Resources
 
 ### Recommended Books
+
 - "The Web Application Hacker's Handbook"
 - "OWASP Testing Guide"
 - "Security Testing Handbook"
 
 ### Online Resources
+
 - [OWASP](https://owasp.org/)
 - [PortSwigger Web Security Academy](https://portswigger.net/web-security)
 - [HackerOne Resources](https://www.hackerone.com/resources)

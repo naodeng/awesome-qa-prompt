@@ -83,7 +83,7 @@ If any required input is missing or unreadable, mark the task blocked and do not
 ## Evidence Index
 | Evidence ID | Artifact name | Version | Locator | Summary |
 ## Approval Status
-```
+```text
 
 ## Execution Instructions
 

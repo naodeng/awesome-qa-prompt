@@ -1,6 +1,5 @@
 # AI-Assisted Testing - CRISPE Framework (Lightweight Version)
 
-
 ---
 
 ## CRISPE Framework Structure
@@ -19,22 +18,24 @@
 
 ---
 
-
 ## Usage Constraints and Degradation Rules
 
 ### Input Completeness Check
+
 Before producing the main output, run an input audit:
 - List Known / Missing / Key assumptions / Main risks
 - If missing information would significantly change the result, ask 3-5 high-value clarifying questions first
 - If the user does not provide more information, continue with the minimum necessary assumptions and explicitly mark content that depends on them
 
 ### Do Not Fabricate
+
 - Do not invent requirements, APIs, fields, flows, environments, traffic/concurrency numbers, team setup, approvers, version numbers, dates, budgets, defect counts, coverage figures, SLA/SLO targets, or compliance conclusions
 - Numbers, coverage, pass rates, and timings in templates that are not user-provided are examples or TBD — never treat them as committed targets
 - For metrics not provided, mark them as TBD / recommended / example values instead of treating them as facts
 - Do not force a single toolchain or framework when the input does not justify it; give conditional recommendations
 
 ### Output Strategy
+
 - Prefer a minimum executable result first; add optional enhancements only when useful
 - Give a short rationale for priorities, risks, and recommendations
 - If the user asked for strategy/analysis, do not default to long implementation code; provide scripts/config only when requested or when inputs are sufficient
@@ -68,7 +69,9 @@ Before producing the main output, run an input audit:
 
 **Implementation Plan:**
 ```python
+
 # Intelligent test generation example
+
 class TestGenerator:
     def generate_from_requirements(self, requirements):
         # 1. NLP parsing requirements
@@ -81,7 +84,7 @@ class TestGenerator:
             test_cases.extend(cases)
 
         return test_cases
-```
+```text
 
 **Expected Results:** 300% improvement in test case generation efficiency
 
@@ -94,7 +97,9 @@ class TestGenerator:
 
 **Model Training:**
 ```python
+
 # Defect prediction model
+
 class DefectPredictor:
     def train(self, code_metrics, defect_history):
         features = self.extract_features(code_metrics)
@@ -104,7 +109,7 @@ class DefectPredictor:
         features = self.extract_features(new_code)
         risk_score = self.model.predict_proba(features)
         return risk_score
-```
+```text
 
 **Expected Results:** 25% improvement in defect discovery rate, 40% improvement in test efficiency
 
@@ -117,7 +122,9 @@ class DefectPredictor:
 
 **Self-Healing Mechanism:**
 ```python
+
 # Self-healing test script
+
 class SelfHealingScript:
     def find_element_smart(self, locator):
         # 1. Try original locator
@@ -126,7 +133,7 @@ class SelfHealingScript:
         except:
             # 2. Smart backup strategies
             return self.smart_locator.find_alternative(locator)
-```
+```text
 
 **Expected Results:** 60% reduction in script maintenance costs
 

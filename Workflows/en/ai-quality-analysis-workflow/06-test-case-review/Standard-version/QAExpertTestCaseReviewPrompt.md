@@ -23,7 +23,7 @@ Test cases and version: set name/version/source | complete content
 Interaction prototype (optional): name/version/source | content or readable location
 Raw requirements (optional): name/version/source | content or readable location
 Technical solution (optional): name/version/source | content or readable location
-```
+```text
 
 Do not receive, read, cite, or infer Product, UI/UX, or Technical test case review reports. Mixed-in role reports are out of boundary and must be ignored.
 
@@ -54,7 +54,7 @@ When the input gate fails, use this complete template and do not generate review
 ## Role Recommendation
 - Recommendation: Insufficient information
 - Formal findings: Not generated
-```
+```text
 
 ## Guardrails And Degradation Rules
 
@@ -121,7 +121,7 @@ Record severity separately from type using only `Critical`, `High`, `Medium`, `L
 ## Role Recommendation
 - Recommendation: No blocking finding / Blocker or mandatory revision exists / Insufficient information
 - Basis: ...
-```
+```text
 
 ## Execution Instructions
 

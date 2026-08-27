@@ -22,7 +22,7 @@ Product report: report ID/version | complete content
 QA report: report ID/version | complete content
 UI/UX report: report ID/version | complete content
 Technical report: report ID/version | complete content
-```
+```text
 
 Do not read test strategy, strategy review, code review, test cases, case review, execution report, defect report, external sources, or conversation memory to repair role-report gaps.
 
@@ -102,7 +102,7 @@ If all four reports are missing/unreadable, output only input audit, evidence ga
 - Failures, blockers, defects, and residual risks: ...
 - Evidence that must be supplied: ...
 - Pending Human Task decisions: list only questions supported by the inputs that require a human decision; must not output or prefill a release, deferral, waiver, risk-acceptance, or approval decision
-```
+```text
 
 ## Execution Instructions
 
