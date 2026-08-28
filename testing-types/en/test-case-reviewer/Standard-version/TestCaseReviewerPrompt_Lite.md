@@ -1,4 +1,14 @@
-# Test Case Review Prompt (Lite Version)
+# Test Case Review Prompt (Lite Version) - Default Version
+
+## Platform Scenario Notes
+
+- **Current Variant:** `Default`
+- **Scope:** Covers both Web and mobile, suitable for work that needs one prompt to plan testing across both platforms
+- **Extra Focus In The Output:**
+  - Separate shared coverage, platform-specific differences, and cross-platform consistency expectations
+  - For Web, pay attention to browser compatibility, layout, routing, cache/session behavior, and upload/download flows
+  - For mobile, pay attention to iOS/Android differences, device and OS coverage, install/upgrade flows, permission dialogs, app lifecycle, and weak-network interruptions
+- **Additional Rule:** If the input does not clearly specify the platform, state the assumption first and then provide both Web and mobile guidance
 
 ---
 
@@ -214,15 +224,3 @@ Before producing the main output, run an input audit:
 5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
 **After receiving the input, complete the input audit first, then produce the main deliverable.**
-
----
-
-## 📋 Change Log
-
-### v0.1 (2025-01-16)
-
-- Initial version
-- Streamlined review dimensions and output format
-- Focused on core review points
-- Provided quick review checklist
-

@@ -1,5 +1,7 @@
 # Release Testing Workflow
 
+<div align="right"><a href="../zh/release-testing-workflow.md">简体中文</a> · <strong>English</strong></div>
+
 ## 📋 Metadata
 
 - **Audience**: QA Engineers, Release Managers, DevOps
@@ -40,8 +42,8 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 - Plan testing strategy
 
 **Prompts to Use**:
-- [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md)
-- [Requirements Analysis](../testing-types/requirements-analysis/RequirementsAnalysisPrompt_EN.md) - Risk analysis
+- [Test Strategy](../../testing-types/en/test-strategy/README.md)
+- [Requirements Analysis](../../testing-types/en/requirements-analysis/README.md) - Risk analysis
 
 **Deliverables**:
 - [ ] Release test plan
@@ -63,8 +65,8 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 - Prepare test accounts
 
 **Prompts to Use**:
-- [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md) - CI/CD integration
-- [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) - Test data generation
+- [Automation Testing](../../testing-types/en/automation-testing/README.md) - CI/CD integration
+- [Test Strategy](../../testing-types/en/test-strategy/README.md) - Test data generation
 
 ### Test Suite Preparation
 
@@ -96,8 +98,8 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 #### 1. Functional Testing
 
 **Prompts to Use**:
-- [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md)
-- [Test Case Writing](../testing-types/test-case-writing/TestCaseWritingPrompt_EN.md)
+- [Functional Testing](../../testing-types/en/functional-testing/README.md)
+- [Test Case Writing](../../testing-types/en/test-case-writing/README.md)
 
 **Execute**:
 - All new features
@@ -114,12 +116,12 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 - Mobile testing
 
 **Prompts to Use**:
-- [AI-Assisted Testing](../testing-types/ai-assisted-testing/AIAssistedTestingPrompt_EN.md) - Intelligent test selection
+- [AI-Assisted Testing](../../testing-types/en/ai-assisted-testing/README.md) - Intelligent test selection
 
 #### 3. End-to-End Testing
 
 **Prompts to Use**:
-- [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md) - E2E scenarios
+- [Functional Testing](../../testing-types/en/functional-testing/README.md) - E2E scenarios
 
 **Test**:
 - Complete user journeys
@@ -134,7 +136,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 ### Performance Testing
 
 **Prompts to Use**:
-- [Performance Testing](../testing-types/performance-testing/PerformanceTestingPrompt_EN.md)
+- [Performance Testing](../../testing-types/en/performance-testing/README.md)
 
 **Execute**:
 - Load testing (expected load)
@@ -151,7 +153,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 ### Security Testing
 
 **Prompts to Use**:
-- [Security Testing](../testing-types/security-testing/SecurityTestingPrompt_EN.md)
+- [Security Testing](../../testing-types/en/security-testing/README.md)
 
 **Execute**:
 - Vulnerability scanning
@@ -163,7 +165,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 ### Accessibility Testing
 
 **Prompts to Use**:
-- [Accessibility Testing](../testing-types/accessibility-testing/AccessibilityTestingPrompt_EN.md)
+- [Accessibility Testing](../../testing-types/en/accessibility-testing/README.md)
 
 **Execute**:
 - Screen reader testing
@@ -174,7 +176,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 ### Visual Testing
 
 **Prompts to Use**:
-- [Accessibility Testing](../testing-types/accessibility-testing/AccessibilityTestingPrompt_EN.md) - Visual testing
+- [Accessibility Testing](../../testing-types/en/accessibility-testing/README.md) - Visual testing
 
 **Execute**:
 - Visual regression tests
@@ -208,7 +210,7 @@ Comprehensive testing workflow to ensure release quality and readiness for produ
 - Exploratory testing sessions
 
 **Prompts to Use**:
-- [Manual Testing](../testing-types/manual-testing/ManualTestingPrompt_EN.md) - Exploratory testing
+- [Manual Testing](../../testing-types/en/manual-testing/README.md) - Exploratory testing
 
 ### Bug Triage
 
@@ -231,8 +233,8 @@ Medium/Low → Defer to next release
 ### Test Metrics Review
 
 **Prompts to Use**:
-- [Test Reporting](../testing-types/test-reporting/TestReportingPrompt_EN.md)
-- [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) - Quality assessment
+- [Test Reporting](../../testing-types/en/test-reporting/README.md)
+- [Test Strategy](../../testing-types/en/test-strategy/README.md) - Quality assessment
 
 **Metrics to Review**:
 - Test execution rate: ___%
@@ -371,7 +373,7 @@ Medium/Low → Defer to next release
 - Process improvements?
 
 **Prompts to Use**:
-- [Test Reporting](../testing-types/test-reporting/TestReportingPrompt_EN.md)
+- [Test Reporting](../../testing-types/en/test-reporting/README.md)
 
 ---
 
@@ -440,26 +442,26 @@ Medium/Low → Defer to next release
 
 ### Planning
 
-- [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md)
-- [Requirements Analysis](../testing-types/requirements-analysis/RequirementsAnalysisPrompt_EN.md)
+- [Test Strategy](../../testing-types/en/test-strategy/README.md)
+- [Requirements Analysis](../../testing-types/en/requirements-analysis/README.md)
 
 ### Testing
 
-- [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md)
-- [Performance Testing](../testing-types/performance-testing/PerformanceTestingPrompt_EN.md)
-- [Security Testing](../testing-types/security-testing/SecurityTestingPrompt_EN.md)
-- [Accessibility Testing](../testing-types/accessibility-testing/AccessibilityTestingPrompt_EN.md)
+- [Functional Testing](../../testing-types/en/functional-testing/README.md)
+- [Performance Testing](../../testing-types/en/performance-testing/README.md)
+- [Security Testing](../../testing-types/en/security-testing/README.md)
+- [Accessibility Testing](../../testing-types/en/accessibility-testing/README.md)
 
 ### Assessment
 
-- [Test Reporting](../testing-types/test-reporting/TestReportingPrompt_EN.md)
+- [Test Reporting](../../testing-types/en/test-reporting/README.md)
 
 ---
 
 ## 📚 Related Workflows
 
-- [Daily Testing Workflow](daily-testing-workflow_EN.md) - Day-to-day activities
-- [Sprint Testing Workflow](sprint-testing-workflow_EN.md) - Sprint cycle
+- [Daily Testing Workflow](daily-testing-workflow.md) - Day-to-day activities
+- [Sprint Testing Workflow](sprint-testing-workflow.md) - Sprint cycle
 
 ---
 

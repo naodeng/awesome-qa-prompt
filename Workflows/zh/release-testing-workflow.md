@@ -1,5 +1,7 @@
 # 发布测试工作流程
 
+<div align="right"><strong>简体中文</strong> · <a href="../en/release-testing-workflow.md">English</a></div>
+
 ## 📋 元数据
 
 - **目标受众**：QA 工程师、发布经理、DevOps
@@ -40,8 +42,8 @@
 - 计划测试策略
 
 **使用的提示词**：
-- [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md)
-- [需求分析](../testing-types/requirements-analysis/RequirementsAnalysisPrompt.md) - 风险分析
+- [测试策略](../../testing-types/zh/test-strategy/README.md)
+- [需求分析](../../testing-types/zh/requirements-analysis/README.md) - 风险分析
 
 **交付物**：
 - [ ] 发布测试计划
@@ -63,8 +65,8 @@
 - 准备测试账号
 
 **使用的提示词**：
-- [自动化测试](../testing-types/automation-testing/AutomationTestingPrompt.md) - CI/CD集成
-- [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md) - 测试数据生成
+- [自动化测试](../../testing-types/zh/automation-testing/README.md) - CI/CD集成
+- [测试策略](../../testing-types/zh/test-strategy/README.md) - 测试数据生成
 
 ### 测试套件准备
 
@@ -96,8 +98,8 @@
 #### 1. 功能测试
 
 **使用的提示词**：
-- [功能测试](../testing-types/functional-testing/FunctionalTestingPrompt.md)
-- [测试用例编写](../testing-types/test-case-writing/TestCaseWritingPrompt.md)
+- [功能测试](../../testing-types/zh/functional-testing/README.md)
+- [测试用例编写](../../testing-types/zh/test-case-writing/README.md)
 
 **执行**：
 - 所有新功能
@@ -114,12 +116,12 @@
 - 移动端测试
 
 **使用的提示词**：
-- [AI辅助测试](../testing-types/ai-assisted-testing/AIAssistedTestingPrompt.md) - 智能测试选择
+- [AI辅助测试](../../testing-types/zh/ai-assisted-testing/README.md) - 智能测试选择
 
 #### 3. 端到端测试
 
 **使用的提示词**：
-- [功能测试](../testing-types/functional-testing/FunctionalTestingPrompt.md) - 端到端场景
+- [功能测试](../../testing-types/zh/functional-testing/README.md) - 端到端场景
 
 **测试**：
 - 完整的用户旅程
@@ -134,7 +136,7 @@
 ### 性能测试
 
 **使用的提示词**：
-- [性能测试](../testing-types/performance-testing/PerformanceTestingPrompt.md)
+- [性能测试](../../testing-types/zh/performance-testing/README.md)
 
 **执行**：
 - 负载测试（预期负载）
@@ -151,7 +153,7 @@
 ### 安全测试
 
 **使用的提示词**：
-- [安全测试](../testing-types/security-testing/SecurityTestingPrompt.md)
+- [安全测试](../../testing-types/zh/security-testing/README.md)
 
 **执行**：
 - 漏洞扫描
@@ -163,7 +165,7 @@
 ### 可访问性测试
 
 **使用的提示词**：
-- [可访问性测试](../testing-types/accessibility-testing/AccessibilityTestingPrompt.md)
+- [可访问性测试](../../testing-types/zh/accessibility-testing/README.md)
 
 **执行**：
 - 屏幕阅读器测试
@@ -174,7 +176,7 @@
 ### 可视化测试
 
 **使用的提示词**：
-- [可访问性测试](../testing-types/accessibility-testing/AccessibilityTestingPrompt.md) - 视觉测试
+- [可访问性测试](../../testing-types/zh/accessibility-testing/README.md) - 视觉测试
 
 **执行**：
 - 视觉回归测试
@@ -208,7 +210,7 @@
 - 探索性测试会话
 
 **使用的提示词**：
-- [手动测试](../testing-types/manual-testing/ManualTestingPrompt.md) - 探索性测试
+- [手动测试](../../testing-types/zh/manual-testing/README.md) - 探索性测试
 
 ### 缺陷分类
 
@@ -231,8 +233,8 @@
 ### 测试指标审查
 
 **使用的提示词**：
-- [测试报告](../testing-types/test-reporting/TestReportingPrompt.md)
-- [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md) - 质量评估
+- [测试报告](../../testing-types/zh/test-reporting/README.md)
+- [测试策略](../../testing-types/zh/test-strategy/README.md) - 质量评估
 
 **要审查的指标**：
 - 测试执行率：___%
@@ -371,7 +373,7 @@
 - 流程改进？
 
 **使用的提示词**：
-- [测试报告](../testing-types/test-reporting/TestReportingPrompt.md)
+- [测试报告](../../testing-types/zh/test-reporting/README.md)
 
 ---
 
@@ -440,26 +442,26 @@
 
 ### 规划
 
-- [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md)
-- [需求分析](../testing-types/requirements-analysis/RequirementsAnalysisPrompt.md)
+- [测试策略](../../testing-types/zh/test-strategy/README.md)
+- [需求分析](../../testing-types/zh/requirements-analysis/README.md)
 
 ### 测试
 
-- [功能测试](../testing-types/functional-testing/FunctionalTestingPrompt.md)
-- [性能测试](../testing-types/performance-testing/PerformanceTestingPrompt.md)
-- [安全测试](../testing-types/security-testing/SecurityTestingPrompt.md)
-- [可访问性测试](../testing-types/accessibility-testing/AccessibilityTestingPrompt.md)
+- [功能测试](../../testing-types/zh/functional-testing/README.md)
+- [性能测试](../../testing-types/zh/performance-testing/README.md)
+- [安全测试](../../testing-types/zh/security-testing/README.md)
+- [可访问性测试](../../testing-types/zh/accessibility-testing/README.md)
 
 ### 评估
 
-- [测试报告](../testing-types/test-reporting/TestReportingPrompt.md)
+- [测试报告](../../testing-types/zh/test-reporting/README.md)
 
 ---
 
 ## 📚 相关工作流程
 
-- [日常测试工作流程](daily-testing-workflow_CN.md) - 日常活动
-- [迭代测试工作流程](sprint-testing-workflow_CN.md) - 迭代周期
+- [日常测试工作流程](daily-testing-workflow.md) - 日常活动
+- [迭代测试工作流程](sprint-testing-workflow.md) - 迭代周期
 
 ---
 

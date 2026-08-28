@@ -1,5 +1,7 @@
 # Sprint Testing Workflow
 
+<div align="right"><a href="../zh/sprint-testing-workflow.md">简体中文</a> · <strong>English</strong></div>
+
 ## 📋 Metadata
 
 - **Audience**: QA Engineers, Scrum Teams
@@ -19,7 +21,7 @@ Complete testing workflow for a 2-week sprint cycle, from planning to retrospect
 
 **Preparation** (Before meeting):
 - Review product backlog
-- Use [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) for upcoming stories
+- Use [Test Strategy](../../testing-types/en/test-strategy/README.md) for upcoming stories
 
 **During Meeting**:
 - Understand acceptance criteria
@@ -30,8 +32,8 @@ Complete testing workflow for a 2-week sprint cycle, from planning to retrospect
 ### Afternoon: Test Planning
 
 **Prompts to Use**:
-- [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md)
-- [Requirements Analysis](../testing-types/requirements-analysis/RequirementsAnalysisPrompt_EN.md)
+- [Test Strategy](../../testing-types/en/test-strategy/README.md)
+- [Requirements Analysis](../../testing-types/en/requirements-analysis/README.md)
 
 **Deliverables**:
 - [ ] Test strategy document
@@ -61,13 +63,13 @@ Risks: [Identified risks]
 - Prepare test data
 
 **Prompts to Use**:
-- [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md)
-- [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) - Test data generation
+- [Automation Testing](../../testing-types/en/automation-testing/README.md)
+- [Test Strategy](../../testing-types/en/test-strategy/README.md) - Test data generation
 
 ### Early Story Testing
 
 **For Ready Stories**:
-1. Generate test cases using [Test Case Writing](../testing-types/test-case-writing/TestCaseWritingPrompt_EN.md)
+1. Generate test cases using [Test Case Writing](../../testing-types/en/test-case-writing/README.md)
 2. Review with developers
 3. Start exploratory testing on completed work
 
@@ -88,14 +90,14 @@ Risks: [Identified risks]
 
 **Manual Testing**:
 - Execute test cases for completed stories
-- Use [Manual Testing](../testing-types/manual-testing/ManualTestingPrompt_EN.md) for exploratory testing on new features
-- Log bugs using [Bug Reporting](../testing-types/bug-reporting/BugReportingPrompt_EN.md)
+- Use [Manual Testing](../../testing-types/en/manual-testing/README.md) for exploratory testing on new features
+- Log bugs using [Bug Reporting](../../testing-types/en/bug-reporting/README.md)
 
 **Automation**:
 - Write automated tests for completed stories
 - Use framework-specific prompts:
-  - [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md)
-  - [API Testing](../testing-types/api-testing/APITestingPrompt_EN.md)
+  - [Automation Testing](../../testing-types/en/automation-testing/README.md)
+  - [API Testing](../../testing-types/en/api-testing/README.md)
 
 #### Bug Triage (Daily)
 
@@ -126,8 +128,8 @@ Risks: [Identified risks]
 ### Regression Testing
 
 **Prompts to Use**:
-- [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md) - Regression scenarios
-- [AI-Assisted Testing](../testing-types/ai-assisted-testing/AIAssistedTestingPrompt_EN.md) - Intelligent test selection
+- [Functional Testing](../../testing-types/en/functional-testing/README.md) - Regression scenarios
+- [AI-Assisted Testing](../../testing-types/en/ai-assisted-testing/README.md) - Intelligent test selection
 
 **Execute**:
 - Automated regression suite
@@ -138,8 +140,8 @@ Risks: [Identified risks]
 ### Integration Testing
 
 **Prompts to Use**:
-- [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md) - E2E scenarios
-- [API Testing](../testing-types/api-testing/APITestingPrompt_EN.md) - API integration
+- [Functional Testing](../../testing-types/en/functional-testing/README.md) - E2E scenarios
+- [API Testing](../../testing-types/en/api-testing/README.md) - API integration
 
 **Test**:
 - End-to-end user journeys
@@ -149,7 +151,7 @@ Risks: [Identified risks]
 ### Visual Testing
 
 **Prompts to Use**:
-- [Accessibility Testing](../testing-types/accessibility-testing/AccessibilityTestingPrompt_EN.md) - Visual testing
+- [Accessibility Testing](../../testing-types/en/accessibility-testing/README.md) - Visual testing
 
 **Actions**:
 - Run visual regression tests
@@ -165,7 +167,7 @@ Risks: [Identified risks]
 **Format**:
 - 2-hour focused testing session
 - Entire team participates
-- Use [Manual Testing](../testing-types/manual-testing/ManualTestingPrompt_EN.md) exploratory testing charters
+- Use [Manual Testing](../../testing-types/en/manual-testing/README.md) exploratory testing charters
 
 ### Final Bug Fixes
 
@@ -190,8 +192,8 @@ Risks: [Identified risks]
 ### Sprint Review Preparation
 
 **Prompts to Use**:
-- [Test Reporting](../testing-types/test-reporting/TestReportingPrompt_EN.md)
-- [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) - Quality assessment
+- [Test Reporting](../../testing-types/en/test-reporting/README.md)
+- [Test Strategy](../../testing-types/en/test-strategy/README.md) - Quality assessment
 
 **Prepare**:
 - Test execution summary
@@ -316,7 +318,7 @@ Risks: [Identified risks]
 - Regression failures
 
 **Actions**:
-1. Use [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) risk analysis
+1. Use [Test Strategy](../../testing-types/en/test-strategy/README.md) risk analysis
 2. Focus on critical paths
 3. Consider extending sprint
 4. Plan technical debt sprint
@@ -367,31 +369,31 @@ Risks: [Identified risks]
 
 ### Planning Phase
 
-- [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md)
-- [Requirements Analysis](../testing-types/requirements-analysis/RequirementsAnalysisPrompt_EN.md)
+- [Test Strategy](../../testing-types/en/test-strategy/README.md)
+- [Requirements Analysis](../../testing-types/en/requirements-analysis/README.md)
 
 ### Execution Phase
 
-- [Test Case Writing](../testing-types/test-case-writing/TestCaseWritingPrompt_EN.md)
-- [Manual Testing](../testing-types/manual-testing/ManualTestingPrompt_EN.md)
-- [API Testing](../testing-types/api-testing/APITestingPrompt_EN.md)
-- [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md)
+- [Test Case Writing](../../testing-types/en/test-case-writing/README.md)
+- [Manual Testing](../../testing-types/en/manual-testing/README.md)
+- [API Testing](../../testing-types/en/api-testing/README.md)
+- [Automation Testing](../../testing-types/en/automation-testing/README.md)
 
 ### Stabilization Phase
 
-- [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md)
-- [Accessibility Testing](../testing-types/accessibility-testing/AccessibilityTestingPrompt_EN.md)
+- [Functional Testing](../../testing-types/en/functional-testing/README.md)
+- [Accessibility Testing](../../testing-types/en/accessibility-testing/README.md)
 
 ### Review Phase
 
-- [Test Reporting](../testing-types/test-reporting/TestReportingPrompt_EN.md)
+- [Test Reporting](../../testing-types/en/test-reporting/README.md)
 
 ---
 
 ## 📚 Related Workflows
 
-- [Daily Testing Workflow](daily-testing-workflow_EN.md) - Day-to-day activities
-- [Release Testing Workflow](release-testing-workflow_EN.md) - Pre-release process
+- [Daily Testing Workflow](daily-testing-workflow.md) - Day-to-day activities
+- [Release Testing Workflow](release-testing-workflow.md) - Pre-release process
 
 ---
 

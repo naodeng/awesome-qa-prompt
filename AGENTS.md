@@ -58,6 +58,7 @@ npm install
 
 - 优先改 `Standard-version/`；再按需同步 Lite / 框架 / 平台变体
 - 中英文同名模块尽量保持结构、用途、核心约束一致
+- 新增或修改的 Prompt 质量必须与仓库已有同类 Prompt 版本一致；不能只满足脚本校验，必须具备完整的角色、任务、分析维度、输入审计、禁止编造、降级规则、执行指令和结构化输出
 - Prompt 至少体现：输入完整性检查、禁止编造、信息不足时的降级、可执行输出
 - 未提供的 KPI / SLA / 覆盖率 / 并发等必须标为「待确认 / 建议值 / 示例值」，禁止写成既定目标
 - 不要加入「收到后立即开始执行」类无条件指令
@@ -86,6 +87,7 @@ npm install
 3. **双语与多版本一致**：改一侧时主动判断另一侧 / 其他变体是否要同步，避免行为漂移。
 4. **链接真实**：README 与模块说明里的路径必须存在；默认入口优先 `Standard-version/`。
 5. **不 skill 化**：不把本仓库改成 skills 安装体系。
+6. **质量一致性**：新增或修改的 Prompt 必须达到已有同类 Prompt 的内容完整度和可执行质量；仅通过自动检查不视为质量达标。
 
 ## Testing / verification
 
@@ -117,6 +119,7 @@ CI 工作流：`.github/workflows/prompt-check.yml`（PR / push 到 `main` 会�
 - [ ] 相关中英文 / 变体已按需同步
 - [ ] 新增或修改的 Markdown 链接可打开
 - [ ] 未引入硬编码假 KPI 或无条件「立即执行」
+- [ ] 新 Prompt 与已有同类 Prompt 的内容完整度和可执行质量一致
 - [ ] `npm run check:all` 已通过
 
 ## Commit and PR instructions
