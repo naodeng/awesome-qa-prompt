@@ -1,4 +1,4 @@
-<div align="right"><a href="../../zh/test-strategy-web/README.md">简体中文</a> · <strong>English</strong></div>
+<div align="right"><a href="../../zh/test-strategy-Web/README.md">简体中文</a> · <strong>English</strong></div>
 
 # Test Strategy - Web Version
 

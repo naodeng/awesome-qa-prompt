@@ -1,4 +1,4 @@
-<div align="right"><a href="../../zh/requirements-analysis-mobile/README.md">简体中文</a> · <strong>English</strong></div>
+<div align="right"><a href="../../zh/requirements-analysis-Mobile/README.md">简体中文</a> · <strong>English</strong></div>
 
 # Requirements Analysis - Mobile Version
 

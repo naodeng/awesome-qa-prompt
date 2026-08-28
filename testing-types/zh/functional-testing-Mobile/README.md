@@ -1,4 +1,4 @@
-<div align="right"><a href="../../en/functional-testing-mobile/README.md">English</a> · <strong>简体中文</strong></div>
+<div align="right"><a href="../../en/functional-testing-Mobile/README.md">English</a> · <strong>简体中文</strong></div>
 
 # 功能测试 - 移动端 版本
 

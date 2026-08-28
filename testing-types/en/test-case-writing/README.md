@@ -127,7 +127,7 @@ This module follows the PolyForm Noncommercial License 1.0.0. See the [LICENSE](
 ## Platform Scenario Variants
 
 - `<PromptName>.md`: the default version covering both Web and mobile, suitable when one prompt needs to plan testing across both platforms
-- [Web version](../test-case-writing-web/README.md): focuses on browser and web application scenarios, including compatibility, page interaction, cache/session, and upload/download flows
-- [Mobile version](../test-case-writing-mobile/README.md): focuses on iOS / Android app scenarios, including device and OS differences, install/upgrade flows, permission dialogs, app lifecycle, and weak-network interruptions
+- [Web version](../test-case-writing-Web/README.md): focuses on browser and web application scenarios, including compatibility, page interaction, cache/session, and upload/download flows
+- [Mobile version](../test-case-writing-Mobile/README.md): focuses on iOS / Android app scenarios, including device and OS differences, install/upgrade flows, permission dialogs, app lifecycle, and weak-network interruptions
 - If your task does not need platform separation, use the default prompt without a platform suffix
 

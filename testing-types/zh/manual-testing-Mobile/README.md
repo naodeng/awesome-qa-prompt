@@ -1,4 +1,4 @@
-<div align="right"><a href="../../en/manual-testing-mobile/README.md">English</a> · <strong>简体中文</strong></div>
+<div align="right"><a href="../../en/manual-testing-Mobile/README.md">English</a> · <strong>简体中文</strong></div>
 
 # 手动测试 - 移动端 版本
 

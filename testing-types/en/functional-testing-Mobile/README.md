@@ -1,4 +1,4 @@
-<div align="right"><a href="../../zh/functional-testing-mobile/README.md">简体中文</a> · <strong>English</strong></div>
+<div align="right"><a href="../../zh/functional-testing-Mobile/README.md">简体中文</a> · <strong>English</strong></div>
 
 # Functional Testing - Mobile Version
 

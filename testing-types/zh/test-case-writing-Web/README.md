@@ -1,4 +1,4 @@
-<div align="right"><a href="../../en/test-case-writing-web/README.md">English</a> · <strong>简体中文</strong></div>
+<div align="right"><a href="../../en/test-case-writing-Web/README.md">English</a> · <strong>简体中文</strong></div>
 
 # 测试用例编写 - Web 端 版本
 

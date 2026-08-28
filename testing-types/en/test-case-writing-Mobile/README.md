@@ -1,4 +1,4 @@
-<div align="right"><a href="../../zh/test-case-writing-mobile/README.md">简体中文</a> · <strong>English</strong></div>
+<div align="right"><a href="../../zh/test-case-writing-Mobile/README.md">简体中文</a> · <strong>English</strong></div>
 
 # Test Case Writing - Mobile Version
 

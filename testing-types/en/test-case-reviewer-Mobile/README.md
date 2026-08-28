@@ -1,4 +1,4 @@
-<div align="right"><a href="../../zh/test-case-reviewer-mobile/README.md">简体中文</a> · <strong>English</strong></div>
+<div align="right"><a href="../../zh/test-case-reviewer-Mobile/README.md">简体中文</a> · <strong>English</strong></div>
 
 # Test Case Review - Mobile Version
 

@@ -1,4 +1,4 @@
-<div align="right"><a href="../../en/manual-testing-web/README.md">English</a> · <strong>简体中文</strong></div>
+<div align="right"><a href="../../en/manual-testing-Web/README.md">English</a> · <strong>简体中文</strong></div>
 
 # 手动测试 - Web 端 版本
 

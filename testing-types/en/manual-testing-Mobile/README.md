@@ -1,4 +1,4 @@
-<div align="right"><a href="../../zh/manual-testing-mobile/README.md">简体中文</a> · <strong>English</strong></div>
+<div align="right"><a href="../../zh/manual-testing-Mobile/README.md">简体中文</a> · <strong>English</strong></div>
 
 # Manual Testing - Mobile Version
 
