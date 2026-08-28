@@ -367,6 +367,7 @@ Workflow 将多个 Prompt 组织成可执行的质量活动，不只是单个模
 | 文档 | 用途 |
 | --- | --- |
 | [完整 Prompt 目录](./PROMPT_COVERAGE_200.md) | 200 项能力的分类、模块和入口 |
+| [扩展 Prompt 目录](./PROMPT_COVERAGE_EXTENDED.md) | 200 项基础清单之外的 10 个扩展能力 |
 | [Testing Workflows](./Workflows/zh/README.md) | Router、AI 质量分析、日常、迭代和发布流程 |
 | [贡献指南](./CONTRIBUTING.md) | 贡献、开发、提交和 PR 流程 |
 | [Prompt 编写规范](./PROMPT_AUTHORING_STANDARD.md) | Prompt 与模块 README 的质量要求 |
