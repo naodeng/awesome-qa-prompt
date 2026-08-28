@@ -37,7 +37,7 @@ The catalog covers **200 capabilities in 200 independent modules**. All Prompts 
 | Acceptance Criteria Reviewer / 验收标准审查器 | Requirements Analysis | [acceptance-criteria-reviewer](./testing-types/en/acceptance-criteria-reviewer/README.md) |
 | Requirement Gap Analyzer / 需求缺口分析器 | Requirements Analysis | [requirement-gap-analyzer](./testing-types/en/requirement-gap-analyzer/README.md) |
 | Testability Analyzer / 可测试性分析器 | Requirements Analysis | [testability-analysis](./testing-types/en/testability-analysis/README.md) |
-| Test Strategy Generator / 测试策略生成器 | Test Strategy | [test-strategy](./testing-types/en/test-strategy/README.md) |
+| Test Strategy Generator / 测试策略生成器 | Test Strategy | [test-strategy (default)](./testing-types/en/test-strategy/README.md) · [test-strategy-Web](./testing-types/en/test-strategy-Web/README.md) · [test-strategy-Mobile](./testing-types/en/test-strategy-Mobile/README.md) |
 | Test Plan Generator / 测试计划生成器 | Test Planning | [test-plan-design](./testing-types/en/test-plan-design/README.md) |
 | Test Scope Analyzer / 测试范围分析器 | Test Strategy | [test-scope-analysis](./testing-types/en/test-scope-analysis/README.md) |
 | Refinement QA Assistant / 需求梳理 QA 助手 | Agile Testing | [refinement-qa-assistant](./testing-types/en/refinement-qa-assistant/README.md) |
@@ -358,7 +358,7 @@ Role Prompts run independently and Synthesis Prompts preserve consensus and disa
 | Lite | The task or context is small |
 | CRISPE / RISE / ICIO / ROSES | A specific Prompt framework is required |
 | LangGPT | Explicit role, constraints, and workflow are useful |
-| Web / Mobile / Framework | The scenario is platform- or framework-specific |
+| Web / Mobile / Framework | The scenario is platform- or framework-specific; for example, [test-strategy-Web](./testing-types/en/test-strategy-Web/README.md) and [test-strategy-Mobile](./testing-types/en/test-strategy-Mobile/README.md) |
 
 ## Documentation
 

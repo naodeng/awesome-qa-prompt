@@ -37,7 +37,7 @@
 | 验收标准审查器 / Acceptance Criteria Reviewer | 需求分析 | [acceptance-criteria-reviewer](./testing-types/zh/acceptance-criteria-reviewer/README.md) |
 | 需求缺口分析器 / Requirement Gap Analyzer | 需求分析 | [requirement-gap-analyzer](./testing-types/zh/requirement-gap-analyzer/README.md) |
 | 可测试性分析器 / Testability Analyzer | 需求分析 | [testability-analysis](./testing-types/zh/testability-analysis/README.md) |
-| 测试策略生成器 / Test Strategy Generator | 测试策略 | [test-strategy](./testing-types/zh/test-strategy/README.md) |
+| 测试策略生成器 / Test Strategy Generator | 测试策略 | [test-strategy（默认）](./testing-types/zh/test-strategy/README.md) · [test-strategy-Web](./testing-types/zh/test-strategy-Web/README.md) · [test-strategy-Mobile](./testing-types/zh/test-strategy-Mobile/README.md) |
 | 测试计划生成器 / Test Plan Generator | 测试计划 | [test-plan-design](./testing-types/zh/test-plan-design/README.md) |
 | 测试范围分析器 / Test Scope Analyzer | 测试策略 | [test-scope-analysis](./testing-types/zh/test-scope-analysis/README.md) |
 | 需求梳理 QA 助手 / Refinement QA Assistant | 敏捷测试 | [refinement-qa-assistant](./testing-types/zh/refinement-qa-assistant/README.md) |
@@ -358,7 +358,7 @@ Workflow 将多个 Prompt 组织成可执行的质量活动，不只是单个模
 | Lite | 小任务或上下文较短时使用 |
 | CRISPE / RISE / ICIO / ROSES | 需要特定 Prompt 框架时使用 |
 | LangGPT | 需要明确角色、约束和工作流时使用 |
-| Web / Mobile / Framework | 特定平台或测试框架场景 |
+| Web / Mobile / Framework | 特定平台或测试框架场景；例如 [test-strategy-Web](./testing-types/zh/test-strategy-Web/README.md) 和 [test-strategy-Mobile](./testing-types/zh/test-strategy-Mobile/README.md) |
 
 ## Documentation
 
