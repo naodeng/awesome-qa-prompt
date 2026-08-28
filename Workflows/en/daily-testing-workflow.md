@@ -1,5 +1,7 @@
 # Daily Testing Workflow
 
+<div align="right"><a href="../zh/daily-testing-workflow.md">简体中文</a> · <strong>English</strong></div>
+
 ## 📋 Metadata
 
 - **Audience**: QA Engineers, Test Automation Engineers
@@ -18,8 +20,8 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 ### 1. Review Test Plan (5-10 min)
 
 **Prompts to Use**:
-- [Requirements Analysis](../testing-types/requirements-analysis/RequirementsAnalysisPrompt_EN.md) - Review sprint goals
-- [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) - Identify high-risk areas
+- [Requirements Analysis](../../testing-types/en/requirements-analysis/README.md) - Review sprint goals
+- [Test Strategy](../../testing-types/en/test-strategy/README.md) - Identify high-risk areas
 
 **Actions**:
 - Review user stories for the day
@@ -29,8 +31,8 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 ### 2. Set Up Test Environment (10-15 min)
 
 **Prompts to Use**:
-- [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md) - Check pipeline status
-- [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) - Prepare test data
+- [Automation Testing](../../testing-types/en/automation-testing/README.md) - Check pipeline status
+- [Test Strategy](../../testing-types/en/test-strategy/README.md) - Prepare test data
 
 **Actions**:
 - Verify test environments are up
@@ -44,10 +46,10 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 ### For New Features
 
 **Workflow**:
-1. Use [Test Case Writing](../testing-types/test-case-writing/TestCaseWritingPrompt_EN.md)
+1. Use [Test Case Writing](../../testing-types/en/test-case-writing/README.md)
 2. Generate comprehensive test scenarios
-3. Add [Requirements Analysis](../testing-types/requirements-analysis/RequirementsAnalysisPrompt_EN.md) edge case tests
-4. Review with [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md) checklist
+3. Add [Requirements Analysis](../../testing-types/en/requirements-analysis/README.md) edge case tests
+4. Review with [Functional Testing](../../testing-types/en/functional-testing/README.md) checklist
 
 **Example Prompt Flow**:
 ```text
@@ -60,7 +62,7 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 ### For Bug Fixes
 
 **Workflow**:
-1. Use [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md) regression scenarios
+1. Use [Functional Testing](../../testing-types/en/functional-testing/README.md) regression scenarios
 2. Create tests to verify the fix
 3. Add tests to prevent regression
 
@@ -71,9 +73,9 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 ### Writing New Tests
 
 **Choose Your Framework**:
-- **Selenium**: Use [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md)
-- **Playwright**: Use [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md)
-- **API**: Use [API Testing](../testing-types/api-testing/APITestingPrompt_EN.md)
+- **Selenium**: Use [Automation Testing](../../testing-types/en/automation-testing/README.md)
+- **Playwright**: Use [Automation Testing](../../testing-types/en/automation-testing/README.md)
+- **API**: Use [API Testing](../../testing-types/en/api-testing/README.md)
 
 **Workflow**:
 1. Open relevant automation testing prompts
@@ -85,8 +87,8 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 ### Maintaining Existing Tests
 
 **Prompts to Use**:
-- [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md) - Test maintenance strategies
-- [AI-Assisted Testing](../testing-types/ai-assisted-testing/AIAssistedTestingPrompt_EN.md) - Intelligent test maintenance
+- [Automation Testing](../../testing-types/en/automation-testing/README.md) - Test maintenance strategies
+- [AI-Assisted Testing](../../testing-types/en/ai-assisted-testing/README.md) - Intelligent test maintenance
 
 **Actions**:
 - Fix flaky tests
@@ -100,7 +102,7 @@ A practical workflow guide for QA engineers to efficiently use the QA Prompt Lib
 ### Session-Based Testing
 
 **Workflow**:
-1. Use [Manual Testing](../testing-types/manual-testing/ManualTestingPrompt_EN.md) exploratory scenarios
+1. Use [Manual Testing](../../testing-types/en/manual-testing/README.md) exploratory scenarios
 2. Create a test charter
 3. Time-box session (60-90 min)
 4. Document findings
@@ -121,7 +123,7 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 ### When You Find a Bug
 
 **Workflow**:
-1. Use [Bug Reporting](../testing-types/bug-reporting/BugReportingPrompt_EN.md) templates
+1. Use [Bug Reporting](../../testing-types/en/bug-reporting/README.md) templates
 2. Generate detailed bug report
 3. Include reproduction steps
 4. Add screenshots/videos
@@ -141,7 +143,7 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 ### For UI Changes
 
 **Workflow**:
-1. Use [Accessibility Testing](../testing-types/accessibility-testing/AccessibilityTestingPrompt_EN.md) visual testing scenarios
+1. Use [Accessibility Testing](../../testing-types/en/accessibility-testing/README.md) visual testing scenarios
 2. Set up visual regression tests
 3. Capture baseline screenshots
 4. Run comparison tests
@@ -158,7 +160,7 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 ### For Critical User Journeys
 
 **Workflow**:
-1. Use [Functional Testing](../testing-types/functional-testing/FunctionalTestingPrompt_EN.md) E2E scenarios
+1. Use [Functional Testing](../../testing-types/en/functional-testing/README.md) E2E scenarios
 2. Map complete user journey
 3. Generate E2E test code
 4. Validate across all systems
@@ -183,8 +185,8 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 ### 2. Metrics and Reporting
 
 **Prompts to Use**:
-- [Test Reporting](../testing-types/test-reporting/TestReportingPrompt_EN.md)
-- [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) - Quality assessment
+- [Test Reporting](../../testing-types/en/test-reporting/README.md)
+- [Test Strategy](../../testing-types/en/test-strategy/README.md) - Quality assessment
 
 **Generate**:
 - Test coverage reports
@@ -225,11 +227,11 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 
 ### Most Used Prompts
 
-1. [Test Case Writing](../testing-types/test-case-writing/TestCaseWritingPrompt_EN.md)
-2. [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md)
-3. [API Testing](../testing-types/api-testing/APITestingPrompt_EN.md)
-4. [Bug Reporting](../testing-types/bug-reporting/BugReportingPrompt_EN.md)
-5. [Manual Testing](../testing-types/manual-testing/ManualTestingPrompt_EN.md)
+1. [Test Case Writing](../../testing-types/en/test-case-writing/README.md)
+2. [Automation Testing](../../testing-types/en/automation-testing/README.md)
+3. [API Testing](../../testing-types/en/api-testing/README.md)
+4. [Bug Reporting](../../testing-types/en/bug-reporting/README.md)
+5. [Manual Testing](../../testing-types/en/manual-testing/README.md)
 
 ---
 
@@ -272,13 +274,13 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 
 ### Pipeline Failures
 
-1. Check [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md) CI/CD integration
+1. Check [Automation Testing](../../testing-types/en/automation-testing/README.md) CI/CD integration
 2. Debug failed tests
 3. Fix and re-run
 
 ### Flaky Tests
 
-1. Use [Automation Testing](../testing-types/automation-testing/AutomationTestingPrompt_EN.md) maintenance strategies
+1. Use [Automation Testing](../../testing-types/en/automation-testing/README.md) maintenance strategies
 2. Implement proper waits
 3. Add retry logic
 
@@ -286,7 +288,7 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 
 1. Document blocker
 2. Find alternative test areas
-3. Use [Test Strategy](../testing-types/test-strategy/TestStrategyPrompt_EN.md) to reprioritize
+3. Use [Test Strategy](../../testing-types/en/test-strategy/README.md) to reprioritize
 
 ---
 

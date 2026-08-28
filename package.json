@@ -6,7 +6,8 @@
     "check:prompts": "node scripts/check-prompts.mjs",
     "check:markdown-format": "node scripts/check-markdown-format.mjs",
     "check:semantic-boundary": "node scripts/check-semantic-boundary.mjs",
-    "check:all": "npm run check:prompts && npm run check:markdown-format && npm run check:semantic-boundary",
+    "check:prompt-quality": "node scripts/check-prompt-quality.mjs",
+    "check:all": "npm run check:prompts && npm run check:markdown-format && npm run check:semantic-boundary && npm run check:prompt-quality",
     "prepare": "git config core.hooksPath .githooks"
   },
   "keywords": [

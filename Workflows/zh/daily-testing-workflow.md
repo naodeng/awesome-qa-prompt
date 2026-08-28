@@ -1,5 +1,7 @@
 # 日常测试工作流程
 
+<div align="right"><strong>简体中文</strong> · <a href="../en/daily-testing-workflow.md">English</a></div>
+
 ## 📋 元数据
 
 - **目标受众**：QA 工程师、测试自动化工程师
@@ -18,8 +20,8 @@
 ### 1. 审查测试计划（5-10分钟）
 
 **使用的提示词**：
-- [需求分析](../testing-types/requirements-analysis/RequirementsAnalysisPrompt.md) - 审查迭代目标
-- [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md) - 识别高风险区域
+- [需求分析](../../testing-types/zh/requirements-analysis/README.md) - 审查迭代目标
+- [测试策略](../../testing-types/zh/test-strategy/README.md) - 识别高风险区域
 
 **行动**：
 - 审查当天的用户故事
@@ -29,8 +31,8 @@
 ### 2. 设置测试环境（10-15分钟）
 
 **使用的提示词**：
-- [自动化测试](../testing-types/automation-testing/AutomationTestingPrompt.md) - 检查流水线状态
-- [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md) - 准备测试数据
+- [自动化测试](../../testing-types/zh/automation-testing/README.md) - 检查流水线状态
+- [测试策略](../../testing-types/zh/test-strategy/README.md) - 准备测试数据
 
 **行动**：
 - 验证测试环境已启动
@@ -44,10 +46,10 @@
 ### 针对新功能
 
 **工作流程**：
-1. 使用 [测试用例编写](../testing-types/test-case-writing/TestCaseWritingPrompt.md)
+1. 使用 [测试用例编写](../../testing-types/zh/test-case-writing/README.md)
 2. 生成全面的测试场景
-3. 添加 [需求分析](../testing-types/requirements-analysis/RequirementsAnalysisPrompt.md) 中的边界值测试
-4. 使用 [功能测试](../testing-types/functional-testing/FunctionalTestingPrompt.md) 检查清单审查
+3. 添加 [需求分析](../../testing-types/zh/requirements-analysis/README.md) 中的边界值测试
+4. 使用 [功能测试](../../testing-types/zh/functional-testing/README.md) 检查清单审查
 
 **示例提示词流程**：
 ```text
@@ -60,7 +62,7 @@
 ### 针对缺陷修复
 
 **工作流程**：
-1. 使用 [功能测试](../testing-types/functional-testing/FunctionalTestingPrompt.md) 回归测试场景
+1. 使用 [功能测试](../../testing-types/zh/functional-testing/README.md) 回归测试场景
 2. 创建测试以验证修复
 3. 添加测试以防止回归
 
@@ -71,9 +73,9 @@
 ### 编写新测试
 
 **选择你的框架**：
-- **Selenium**: 使用 [自动化测试](../testing-types/automation-testing/AutomationTestingPrompt.md)
-- **Playwright**: 使用 [自动化测试](../testing-types/automation-testing/AutomationTestingPrompt.md)
-- **API**: 使用 [API测试](../testing-types/api-testing/APITestingPrompt.md)
+- **Selenium**: 使用 [自动化测试](../../testing-types/zh/automation-testing/README.md)
+- **Playwright**: 使用 [自动化测试](../../testing-types/zh/automation-testing/README.md)
+- **API**: 使用 [API测试](../../testing-types/zh/api-testing/README.md)
 
 **工作流程**：
 1. 打开相关的自动化测试提示词
@@ -85,8 +87,8 @@
 ### 维护现有测试
 
 **使用的提示词**：
-- [自动化测试](../testing-types/automation-testing/AutomationTestingPrompt.md) - 测试维护策略
-- [AI辅助测试](../testing-types/ai-assisted-testing/AIAssistedTestingPrompt.md) - 智能测试维护
+- [自动化测试](../../testing-types/zh/automation-testing/README.md) - 测试维护策略
+- [AI辅助测试](../../testing-types/zh/ai-assisted-testing/README.md) - 智能测试维护
 
 **行动**：
 - 修复不稳定的测试
@@ -100,7 +102,7 @@
 ### 基于会话的测试
 
 **工作流程**：
-1. 使用 [手动测试](../testing-types/manual-testing/ManualTestingPrompt.md) 探索性测试场景
+1. 使用 [手动测试](../../testing-types/zh/manual-testing/README.md) 探索性测试场景
 2. 创建测试章程
 3. 限时会话（60-90分钟）
 4. 记录发现
@@ -121,7 +123,7 @@
 ### 当你发现缺陷时
 
 **工作流程**：
-1. 使用 [缺陷上报](../testing-types/bug-reporting/BugReportingPrompt.md) 模板
+1. 使用 [缺陷上报](../../testing-types/zh/bug-reporting/README.md) 模板
 2. 生成详细的缺陷报告
 3. 包含重现步骤
 4. 添加截图/视频
@@ -141,7 +143,7 @@
 ### 针对 UI 变更
 
 **工作流程**：
-1. 使用 [可访问性测试](../testing-types/accessibility-testing/AccessibilityTestingPrompt.md) 视觉测试场景
+1. 使用 [可访问性测试](../../testing-types/zh/accessibility-testing/README.md) 视觉测试场景
 2. 设置视觉回归测试
 3. 捕获基线截图
 4. 运行对比测试
@@ -158,7 +160,7 @@
 ### 针对关键用户旅程
 
 **工作流程**：
-1. 使用 [功能测试](../testing-types/functional-testing/FunctionalTestingPrompt.md) 端到端场景
+1. 使用 [功能测试](../../testing-types/zh/functional-testing/README.md) 端到端场景
 2. 映射完整的用户旅程
 3. 生成端到端测试代码
 4. 跨所有系统验证
@@ -183,8 +185,8 @@
 ### 2. 指标和报告
 
 **使用的提示词**：
-- [测试报告](../testing-types/test-reporting/TestReportingPrompt.md)
-- [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md) - 质量评估
+- [测试报告](../../testing-types/zh/test-reporting/README.md)
+- [测试策略](../../testing-types/zh/test-strategy/README.md) - 质量评估
 
 **生成**：
 - 测试覆盖率报告
@@ -225,11 +227,11 @@
 
 ### 最常用的提示词
 
-1. [测试用例编写](../testing-types/test-case-writing/TestCaseWritingPrompt.md)
-2. [自动化测试](../testing-types/automation-testing/AutomationTestingPrompt.md)
-3. [API测试](../testing-types/api-testing/APITestingPrompt.md)
-4. [缺陷上报](../testing-types/bug-reporting/BugReportingPrompt.md)
-5. [手动测试](../testing-types/manual-testing/ManualTestingPrompt.md)
+1. [测试用例编写](../../testing-types/zh/test-case-writing/README.md)
+2. [自动化测试](../../testing-types/zh/automation-testing/README.md)
+3. [API测试](../../testing-types/zh/api-testing/README.md)
+4. [缺陷上报](../../testing-types/zh/bug-reporting/README.md)
+5. [手动测试](../../testing-types/zh/manual-testing/README.md)
 
 ---
 
@@ -272,13 +274,13 @@
 
 ### 流水线失败
 
-1. 检查 [自动化测试](../testing-types/automation-testing/AutomationTestingPrompt.md) CI/CD 集成
+1. 检查 [自动化测试](../../testing-types/zh/automation-testing/README.md) CI/CD 集成
 2. 调试失败的测试
 3. 修复并重新运行
 
 ### 不稳定的测试
 
-1. 使用 [自动化测试](../testing-types/automation-testing/AutomationTestingPrompt.md) 维护策略
+1. 使用 [自动化测试](../../testing-types/zh/automation-testing/README.md) 维护策略
 2. 实施适当的等待
 3. 添加重试逻辑
 
@@ -286,7 +288,7 @@
 
 1. 记录阻碍
 2. 寻找替代测试区域
-3. 使用 [测试策略](../testing-types/test-strategy/TestStrategyPrompt.md) 重新确定优先级
+3. 使用 [测试策略](../../testing-types/zh/test-strategy/README.md) 重新确定优先级
 
 ---
 

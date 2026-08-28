@@ -5,7 +5,6 @@ const root = process.cwd();
 const issues = [];
 
 const bannedPatterns = [
-  { pattern: /\.\.\/testing-types\//g, message: "contains broken ../testing-types/ relative path" },
   { pattern: /请在收到.*立即开始/g, message: "contains unconditional immediate-start instruction" },
   { pattern: /Please begin executing.*immediately/gi, message: "contains unconditional immediate-start instruction" },
 ];
@@ -22,6 +21,9 @@ function walk(dir, acc = []) {
       const inScope =
         relPath === "README.md" ||
         relPath === "README_EN.md" ||
+        relPath === "PROMPT_COVERAGE_200.md" ||
+        relPath === "PROMPT_COVERAGE_200_EN.md" ||
+        relPath.startsWith("examples/") ||
         relPath.startsWith("testing-types/") ||
         relPath.startsWith("Workflows/");
       if (!inScope) continue;
@@ -165,10 +167,6 @@ for (const file of walk(root)) {
   const text = readFileSync(file, "utf8");
 
   for (const { pattern, message } of bannedPatterns) {
-    const isWorkflowLegacyPath =
-      rel(file).startsWith("Workflows/") &&
-      message === "contains broken ../testing-types/ relative path";
-    if (isWorkflowLegacyPath) continue;
     if (pattern.test(text)) addIssue(file, message);
   }
 

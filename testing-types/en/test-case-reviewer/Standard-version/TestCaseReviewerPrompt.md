@@ -383,14 +383,3 @@ Please output the review report in the following Markdown format:
 5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
 **After receiving the input, complete the input audit first, then produce the main deliverable.**
-
----
-
-## 📋 Change Log
-
-### v0.1 (2025-01-16)
-
-- Initial version
-- Defined review dimensions and focus areas
-- Designed review report output format
-- Provided review checklist

@@ -158,19 +158,3 @@ Before producing the main output, run an input audit:
 5. Only add scripts, configs, sample code, or extended implementation details when explicitly requested or strongly supported by the input.
 
 **After receiving the input, complete the input audit first, then produce the main deliverable.**
-
----
-
-## 📋 Change Log
-
-### v0.2 (2025-01-16)
-
-- Optimized output format, focusing on business background, test scope, test scenarios, and test methods
-- Used table format to organize test scenarios for improved readability
-- Added test methods and test strategy sections
-- Added coverage analysis
-- Removed specific test case steps, changed to scenario-level design
-
-### v0.1 (2025-01-14)
-
-- Initial version

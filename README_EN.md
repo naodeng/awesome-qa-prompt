@@ -1,4 +1,4 @@
-<div align="right"><strong><a href="./README.md">中文</a></strong> | <strong>English</strong></div>
+<div align="right"><a href="./README.md">简体中文</a> · <strong>English</strong></div>
 
 # Awesome QA Prompt
 
@@ -7,222 +7,370 @@
 </div>
 
 [![Prompt Check](https://img.shields.io/github/actions/workflow/status/naodeng/awesome-qa-prompt/prompt-check.yml?branch=main&label=prompt%20check)](https://github.com/naodeng/awesome-qa-prompt/actions/workflows/prompt-check.yml)
-[![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/License-PolyForm%20Noncommercial%201.0.0-blue)](https://github.com/naodeng/awesome-qa-prompt/blob/main/LICENSE)
+[![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/License-PolyForm%20Noncommercial%201.0.0-blue)](./LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/naodeng/awesome-qa-prompt?style=social)](https://github.com/naodeng/awesome-qa-prompt)
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://inaodeng.com/prompts)
 
-A **Prompt Baseline** for QA work: a copy-and-use collection of structured prompts covering common testing scenarios from requirements analysis to test reporting. The default entry for each module is `Standard-version/`.
+A **Prompt Baseline for QA work**: copy-ready bilingual prompts with input auditing and evidence boundaries across requirements, test design, automation, performance, security, release, production quality, and AI testing.
 
-Online docs: [https://inaodeng.com/prompts](https://inaodeng.com/prompts)
+> This repository provides Prompts, not installable Skills. For Agent Skills, visit [Awesome QA Skills](https://github.com/naodeng/awesome-qa-skills).
 
----
+[Online docs](https://inaodeng.com/prompts) · [Complete Prompt catalog](./PROMPT_COVERAGE_200_EN.md) · [Testing Workflows](./Workflows/en/README.md) · [Contributing](./CONTRIBUTING_EN.md)
 
-## Contents
+## Quick Start
 
-- [Positioning](#positioning)
-- [Difference from awesome-qa-skills](#difference-from-awesome-qa-skills)
-- [What's included](#whats-included)
-- [How to choose a version](#how-to-choose-a-version)
-- [Quick start](#quick-start)
-- [Repository layout](#repository-layout)
-- [Quality principles](#quality-principles)
-- [Development and contributing](#development-and-contributing)
-- [License and support](#license-and-support)
+1. Select a Prompt from the categories below, or start with the [Testing Prompt Router](./Workflows/en/discover-testing/README.md).
+2. Open the module's `Standard-version`; choose Lite or a framework variant only when needed.
+3. Put real project materials inside `<qa_context>` without inventing metrics, environments, or conclusions.
+4. Review assumptions, open items, and evidence sources before using the output.
 
----
+## Prompt Catalog
 
-## Positioning
+The catalog covers **200 capabilities in 200 independent modules**. All Prompts are listed directly in the ten categories below; see the [complete Prompt catalog](./PROMPT_COVERAGE_200_EN.md) for original numbering and direct Standard-file links.
 
-This repository maintains **prompt text and variants**, not an AI-tool skill pack. Typical usage:
+### 1. Requirements, Planning, And Test Strategy
 
-1. Find the module by testing type or workflow
-2. Open `Standard-version/` (or Lite / framework / platform variants when needed)
-3. Copy the prompt, add real project context, and use it in a common AI assistant
+16 capabilities.
 
-It is intended for drafting test plans, cases, strategies, and reports. Treat generated output as a first draft and review it before formal delivery.
-
-### Design principles
-
-- **Executable**: Prefer a minimum usable result over oversized templates
-- **Traceable**: Require input audit, explicit assumptions, and gap callouts
-- **Trustworthy**: Do not present invented requirements, APIs, environments, or metrics as facts
-- **Maintainable**: Modular layout with bilingual and multi-version content
-
----
-
-## Difference from awesome-qa-skills
-
-| | Awesome QA Prompt (this repo) | [Awesome QA Skills](https://github.com/naodeng/awesome-qa-skills) |
+| Prompt | Original type | Module entry |
 | --- | --- | --- |
-| Positioning | Prompt Baseline: copy-and-use prompts | Installable skill pack for Cursor / Claude Code and similar tools |
-| Usage | Open a module → choose `Standard-version` → paste into chat | Install a skill and invoke with `@skill` |
-| Form | Multi-framework / platform prompt variants | `SKILL.md` plus installer scripts |
-| Out of scope | No skill installer | Not a multi-framework prompt-variant collection |
+| Requirement Analyzer / 需求分析器 | 需求分析 | [requirements-analysis](./testing-types/en/requirements-analysis/README.md) |
+| Acceptance Criteria Reviewer / 验收标准审查器 | 需求分析 | [acceptance-criteria-reviewer](./testing-types/en/acceptance-criteria-reviewer/README.md) |
+| Requirement Gap Analyzer / 需求缺口分析器 | 需求分析 | [requirement-gap-analyzer](./testing-types/en/requirement-gap-analyzer/README.md) |
+| Testability Analyzer / 可测试性分析器 | 需求分析 | [testability-analysis](./testing-types/en/testability-analysis/README.md) |
+| Test Strategy Generator / 测试策略生成器 | 测试策略 | [test-strategy](./testing-types/en/test-strategy/README.md) |
+| Test Plan Generator / 测试计划生成器 | 测试计划 | [test-plan-design](./testing-types/en/test-plan-design/README.md) |
+| Test Scope Analyzer / 测试范围分析器 | 测试策略 | [test-scope-analysis](./testing-types/en/test-scope-analysis/README.md) |
+| Refinement QA Assistant / 需求梳理 QA 助手 | 敏捷测试 | [refinement-qa-assistant](./testing-types/en/refinement-qa-assistant/README.md) |
+| Sprint Planning QA Assistant / Sprint Planning QA 助手 | 敏捷测试 | [sprint-planning-qa](./testing-types/en/sprint-planning-qa/README.md) |
+| Retrospective Analyzer / Sprint 回顾分析器 | 敏捷测试 | [retrospective-analysis](./testing-types/en/retrospective-analysis/README.md) |
+| Business Rule Analyzer / 业务规则分析器 | 需求分析 | [business-rule-analysis](./testing-types/en/business-rule-analysis/README.md) |
+| Business Flow Analyzer / 业务流程分析器 | 需求分析 | [business-flow-analysis](./testing-types/en/business-flow-analysis/README.md) |
+| Requirement Dependency Analyzer / 需求依赖分析器 | 需求分析 | [requirement-dependency-analysis](./testing-types/en/requirement-dependency-analysis/README.md) |
+| Requirement Conflict Detector / 需求冲突检测器 | 需求分析 | [requirement-conflict-analysis](./testing-types/en/requirement-conflict-analysis/README.md) |
+| NFR Analyzer / 非功能需求分析器 | 非功能测试 | [nfr-analysis](./testing-types/en/nfr-analysis/README.md) |
+| Requirement Traceability Analyzer / 需求测试追踪分析器 | 测试治理 | [requirement-traceability-analysis](./testing-types/en/requirement-traceability-analysis/README.md) |
 
-They are complementary: use this repo for paste-ready prompts; use the skills repo for installable AI-tool skills.
+[View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#1-requirements-planning-and-test-strategy)
 
----
+### 2. Test Analysis And Design
 
-## What's included
+22 capabilities.
 
-### Testing types (15)
-
-Chinese modules live under `testing-types/zh/<module>/`; English under `testing-types/en/<module>/`. Default recommendation: `Standard-version/`.
-
-| Module | Directory | Purpose |
+| Prompt | Original type | Module entry |
 | --- | --- | --- |
-| Requirements analysis | [`requirements-analysis`](./testing-types/en/requirements-analysis/) | Testability review, scenarios, and risks |
-| Test case writing | [`test-case-writing`](./testing-types/en/test-case-writing/) | Turn scenarios into executable cases |
-| Test case review | [`test-case-reviewer`](./testing-types/en/test-case-reviewer/) | Coverage, quality, and risk review |
-| Functional testing | [`functional-testing`](./testing-types/en/functional-testing/) | Functional strategy and scenario design |
-| Manual / exploratory testing | [`manual-testing`](./testing-types/en/manual-testing/) | Exploratory and manual execution support |
-| API testing | [`api-testing`](./testing-types/en/api-testing/) | API test strategy and case design |
-| Automation testing | [`automation-testing`](./testing-types/en/automation-testing/) | Scope, layering, and rollout guidance |
-| Performance testing | [`performance-testing`](./testing-types/en/performance-testing/) | Performance scenarios and metrics (targets must be provided) |
-| Security testing | [`security-testing`](./testing-types/en/security-testing/) | Security scope and investigation angles |
-| Mobile testing | [`mobile-testing`](./testing-types/en/mobile-testing/) | Mobile compatibility, interaction, and special concerns |
-| Accessibility testing | [`accessibility-testing`](./testing-types/en/accessibility-testing/) | Accessibility standards and verification points |
-| Bug reporting | [`bug-reporting`](./testing-types/en/bug-reporting/) | Defect report structure and writing rules |
-| Test reporting | [`test-reporting`](./testing-types/en/test-reporting/) | Result summary and quality conclusion structure |
-| Test strategy | [`test-strategy`](./testing-types/en/test-strategy/) | Overall strategy, scope, and priorities |
-| AI-assisted testing | [`ai-assisted-testing`](./testing-types/en/ai-assisted-testing/) | Where AI help fits and how to use it carefully |
+| Test Scenario Designer / 测试场景设计器 | 测试设计 | [test-scenario-design](./testing-types/en/test-scenario-design/README.md) |
+| Test Case Generator / 测试用例生成器 | 测试设计 | [test-case-writing](./testing-types/en/test-case-writing/README.md) |
+| Boundary Value Analyzer / 边界值分析器 | 测试设计 | [boundary-value-analysis](./testing-types/en/boundary-value-analysis/README.md) |
+| Equivalence Partition Analyzer / 等价类分析器 | 测试设计 | [equivalence-partition-analysis](./testing-types/en/equivalence-partition-analysis/README.md) |
+| Decision Table Generator / 决策表生成器 | 测试设计 | [decision-table-analysis](./testing-types/en/decision-table-analysis/README.md) |
+| State Transition Analyzer / 状态转换分析器 | 测试设计 | [state-transition-analysis](./testing-types/en/state-transition-analysis/README.md) |
+| Pairwise Test Generator / Pairwise 组合测试生成器 | 测试设计 | [pairwise-test-design](./testing-types/en/pairwise-test-design/README.md) |
+| E2E Scenario Designer / 端到端测试场景设计器 | E2E 测试 | [functional-testing](./testing-types/en/functional-testing/README.md) |
+| UI Test Designer / UI 测试设计器 | UI 测试 | [ui-test-design](./testing-types/en/ui-test-design/README.md) |
+| User Journey Analyzer / 用户旅程分析器 | E2E 测试 | [user-journey-analysis](./testing-types/en/user-journey-analysis/README.md) |
+| Exploratory Testing Assistant / 探索式测试助手 | 探索式测试 | [manual-testing](./testing-types/en/manual-testing/README.md) |
+| Test Charter Generator / 探索式测试章程生成器 | 探索式测试 | [test-charter-generation](./testing-types/en/test-charter-generation/README.md) |
+| Testing Heuristics Analyzer / 测试启发式分析器 | 测试设计 | [testing-heuristics-analysis](./testing-types/en/testing-heuristics-analysis/README.md) |
+| Error Guessing Analyzer / 错误猜测分析器 | 测试设计 | [error-guessing-analysis](./testing-types/en/error-guessing-analysis/README.md) |
+| Compatibility Test Designer / 兼容性测试设计器 | 兼容性测试 | [compatibility-test-design](./testing-types/en/compatibility-test-design/README.md) |
+| Browser Compatibility Analyzer / 浏览器兼容性分析器 | 兼容性测试 | [browser-compatibility-analysis](./testing-types/en/browser-compatibility-analysis/README.md) |
+| Mobile Compatibility Analyzer / 移动端兼容性分析器 | 兼容性测试 | [mobile-compatibility-analysis](./testing-types/en/mobile-compatibility-analysis/README.md) |
+| Localization Test Designer / 多语言测试设计器 | 国际化测试 | [localization-test-design](./testing-types/en/localization-test-design/README.md) |
+| Internationalization Analyzer / 国际化问题分析器 | 国际化测试 | [internationalization-analysis](./testing-types/en/internationalization-analysis/README.md) |
+| Timezone Test Designer / 时区测试设计器 | 国际化测试 | [timezone-test-design](./testing-types/en/timezone-test-design/README.md) |
+| Test Case Optimizer / 测试用例优化器 | 测试治理 | [test-case-optimization](./testing-types/en/test-case-optimization/README.md) |
+| Test Case Prioritizer / 测试用例优先级分析器 | 测试治理 | [test-case-prioritization](./testing-types/en/test-case-prioritization/README.md) |
 
-Chinese paths use `zh` instead of `en`, for example [`testing-types/zh/functional-testing/`](./testing-types/zh/functional-testing/).
+[View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#2-test-analysis-and-design)
 
-### Testing workflows (4)
+### 3. API, Contract, Messaging, And Integration
 
-| Workflow | Chinese | English |
+32 capabilities.
+
+| Prompt | Original type | Module entry |
 | --- | --- | --- |
-| Daily testing | [`Workflows/zh/daily-testing-workflow.md`](./Workflows/zh/daily-testing-workflow.md) | [`Workflows/en/daily-testing-workflow.md`](./Workflows/en/daily-testing-workflow.md) |
-| Sprint testing | [`Workflows/zh/sprint-testing-workflow.md`](./Workflows/zh/sprint-testing-workflow.md) | [`Workflows/en/sprint-testing-workflow.md`](./Workflows/en/sprint-testing-workflow.md) |
-| Release testing | [`Workflows/zh/release-testing-workflow.md`](./Workflows/zh/release-testing-workflow.md) | [`Workflows/en/release-testing-workflow.md`](./Workflows/en/release-testing-workflow.md) |
-| AI Quality Analysis Workflow | [`Workflows/zh/ai-quality-analysis-workflow/README.md`](./Workflows/zh/ai-quality-analysis-workflow/README.md) | [`Workflows/en/ai-quality-analysis-workflow/README.md`](./Workflows/en/ai-quality-analysis-workflow/README.md) |
+| API Test Designer / API 测试设计器 | API 测试 | [api-testing](./testing-types/en/api-testing/README.md) |
+| API Negative Test Generator / API 负向测试生成器 | API 测试 | [api-negative-testing](./testing-types/en/api-negative-testing/README.md) |
+| API Schema Validator / API Schema 校验器 | API 测试 | [api-schema-validation](./testing-types/en/api-schema-validation/README.md) |
+| API Contract Analyzer / API 契约分析器 | API 测试 | [api-contract-analysis](./testing-types/en/api-contract-analysis/README.md) |
+| Pytest Test Generator / Pytest 测试生成器 | 自动化测试 | [api-test-pytest](./testing-types/en/api-test-pytest/README.md) |
+| Mock API Generator / Mock API 生成器 | Mock 测试 | [mock-api-generation](./testing-types/en/mock-api-generation/README.md) |
+| API Dependency Analyzer / API 依赖分析器 | API 测试 | [api-dependency-analysis](./testing-types/en/api-dependency-analysis/README.md) |
+| API Call Chain Analyzer / API 调用链分析器 | API 测试 | [api-call-chain-analysis](./testing-types/en/api-call-chain-analysis/README.md) |
+| API Regression Impact Analyzer / API 回归影响分析器 | API 测试 | [api-regression-impact](./testing-types/en/api-regression-impact/README.md) |
+| API Compatibility Analyzer / API 兼容性分析器 | API 测试 | [api-compatibility-analysis](./testing-types/en/api-compatibility-analysis/README.md) |
+| API Version Change Analyzer / API 版本变更分析器 | API 测试 | [api-version-change-analysis](./testing-types/en/api-version-change-analysis/README.md) |
+| OpenAPI Specification Analyzer / OpenAPI 规范分析器 | API 测试 | [openapi-specification-analysis](./testing-types/en/openapi-specification-analysis/README.md) |
+| GraphQL Test Designer / GraphQL 测试设计器 | API 测试 | [graphql-test-design](./testing-types/en/graphql-test-design/README.md) |
+| WebSocket Test Designer / WebSocket 测试设计器 | API 测试 | [websocket-test-design](./testing-types/en/websocket-test-design/README.md) |
+| Idempotency Test Designer / 幂等性测试设计器 | API 测试 | [idempotency-test-design](./testing-types/en/idempotency-test-design/README.md) |
+| Pagination Test Designer / 分页测试设计器 | API 测试 | [pagination-test-design](./testing-types/en/pagination-test-design/README.md) |
+| Rate Limit Test Designer / 限流测试设计器 | API 测试 | [rate-limit-test-design](./testing-types/en/rate-limit-test-design/README.md) |
+| Retry Test Designer / 重试机制测试设计器 | API 测试 | [retry-mechanism-test-design](./testing-types/en/retry-mechanism-test-design/README.md) |
+| Contract Test Generator / 契约测试生成器 | 契约测试 | [contract-test-generation](./testing-types/en/contract-test-generation/README.md) |
+| Consumer Contract Analyzer / Consumer Contract 分析器 | 契约测试 | [consumer-contract-analysis](./testing-types/en/consumer-contract-analysis/README.md) |
+| Provider Contract Analyzer / Provider Contract 分析器 | 契约测试 | [provider-contract-analysis](./testing-types/en/provider-contract-analysis/README.md) |
+| Kafka Test Designer / Kafka 测试设计器 | 消息测试 | [kafka-test-design](./testing-types/en/kafka-test-design/README.md) |
+| Kafka Event Generator / Kafka Event 生成器 | 消息测试 | [kafka-event-generation](./testing-types/en/kafka-event-generation/README.md) |
+| Message Consistency Analyzer / 消息一致性分析器 | 消息测试 | [message-consistency-analysis](./testing-types/en/message-consistency-analysis/README.md) |
+| Duplicate Message Test Designer / 消息重复消费测试器 | 消息测试 | [duplicate-message-testing](./testing-types/en/duplicate-message-testing/README.md) |
+| Message Ordering Test Designer / 消息顺序测试设计器 | 消息测试 | [message-ordering-test-design](./testing-types/en/message-ordering-test-design/README.md) |
+| Message Loss Analyzer / 消息丢失分析器 | 消息测试 | [message-loss-analysis](./testing-types/en/message-loss-analysis/README.md) |
+| Async Flow Test Designer / 异步流程测试设计器 | 集成测试 | [async-flow-test-design](./testing-types/en/async-flow-test-design/README.md) |
+| Microservice Dependency Analyzer / 微服务依赖分析器 | 微服务测试 | [microservice-dependency-analysis](./testing-types/en/microservice-dependency-analysis/README.md) |
+| Service Call Chain Analyzer / 服务调用链分析器 | 微服务测试 | [service-call-chain-analysis](./testing-types/en/service-call-chain-analysis/README.md) |
+| Distributed Transaction Test Designer / 分布式事务测试设计器 | 微服务测试 | [distributed-transaction-test-design](./testing-types/en/distributed-transaction-test-design/README.md) |
+| Eventual Consistency Test Designer / 最终一致性测试设计器 | 微服务测试 | [eventual-consistency-test-design](./testing-types/en/eventual-consistency-test-design/README.md) |
 
-See [`Workflows/en/README.md`](./Workflows/en/README.md) for details.
+[View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#3-api-contract-messaging-and-integration)
 
-### Inventory (overview)
+### 4. Automation And Test Engineering
 
-| Category | Description |
+16 capabilities.
+
+| Prompt | Original type | Module entry |
+| --- | --- | --- |
+| Automation Candidate Analyzer / 自动化候选用例分析器 | 自动化测试 | [automation-candidate-analysis](./testing-types/en/automation-candidate-analysis/README.md) |
+| Automation Test Generator / 自动化测试生成器 | 自动化测试 | [automation-testing](./testing-types/en/automation-testing/README.md) |
+| Playwright Test Generator / Playwright 测试生成器 | 自动化测试 | [ui-test-playwright](./testing-types/en/ui-test-playwright/README.md) |
+| Cypress Test Generator / Cypress 测试生成器 | 自动化测试 | [ui-test-cypress](./testing-types/en/ui-test-cypress/README.md) |
+| Selenium Test Generator / Selenium 测试生成器 | 自动化测试 | [ui-test-selenium](./testing-types/en/ui-test-selenium/README.md) |
+| Automation Code Reviewer / 自动化代码审查器 | 自动化测试 | [code-review](./testing-types/en/code-review/README.md) |
+| Flaky Test Analyzer / 不稳定测试分析器 | 自动化测试 | [flaky-test-analysis](./testing-types/en/flaky-test-analysis/README.md) |
+| CI/CD Failure Analyzer / CI/CD 失败分析器 | DevOps | [cicd-failure-analysis](./testing-types/en/cicd-failure-analysis/README.md) |
+| Test Failure Classifier / 测试失败分类器 | 自动化测试 | [test-failure-classification](./testing-types/en/test-failure-classification/README.md) |
+| Automation Failure RCA Analyzer / 自动化失败根因分析器 | 自动化测试 | [automation-failure-rca](./testing-types/en/automation-failure-rca/README.md) |
+| Locator Repair Assistant / Locator 修复助手 | UI 自动化 | [locator-repair](./testing-types/en/locator-repair/README.md) |
+| Test Refactoring Assistant / 自动化测试重构助手 | 自动化测试 | [test-refactoring](./testing-types/en/test-refactoring/README.md) |
+| Test Code Quality Analyzer / 测试代码质量分析器 | 自动化测试 | [test-code-quality-analysis](./testing-types/en/test-code-quality-analysis/README.md) |
+| Automation Coverage Analyzer / 自动化覆盖率分析器 | 自动化测试 | [automation-coverage-analysis](./testing-types/en/automation-coverage-analysis/README.md) |
+| Duplicate Test Detector / 测试重复检测器 | 测试治理 | [duplicate-test-detection](./testing-types/en/duplicate-test-detection/README.md) |
+| Obsolete Test Detector / 过期测试检测器 | 测试治理 | [obsolete-test-detection](./testing-types/en/obsolete-test-detection/README.md) |
+
+[View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#4-automation-and-test-engineering)
+
+### 5. Performance, Reliability, And Resilience
+
+35 capabilities.
+
+| Prompt | Original type | Module entry |
+| --- | --- | --- |
+| Performance Requirement Analyzer / 性能需求分析器 | 性能测试 | [performance-requirement-analysis](./testing-types/en/performance-requirement-analysis/README.md) |
+| Workload Model Designer / 性能负载模型设计器 | 性能测试 | [workload-model-design](./testing-types/en/workload-model-design/README.md) |
+| VU/TPS Calculator / VU/TPS 计算器 | 性能测试 | [vu-tps-calculation](./testing-types/en/vu-tps-calculation/README.md) |
+| Performance Scenario Designer / 性能场景设计器 | 性能测试 | [performance-scenario-design](./testing-types/en/performance-scenario-design/README.md) |
+| Performance Result Analyzer / 性能结果分析器 | 性能测试 | [performance-result-analysis](./testing-types/en/performance-result-analysis/README.md) |
+| Performance Bottleneck Analyzer / 性能瓶颈分析器 | 性能测试 | [performance-bottleneck-analysis](./testing-types/en/performance-bottleneck-analysis/README.md) |
+| NeoLoad Script Assistant / NeoLoad 脚本助手 | 性能测试 | [neoload-script-assistance](./testing-types/en/neoload-script-assistance/README.md) |
+| JMeter Script Assistant / JMeter 脚本助手 | 性能测试 | [performance-test-jmeter](./testing-types/en/performance-test-jmeter/README.md) |
+| Gatling Script Assistant / Gatling 脚本助手 | 性能测试 | [performance-test-gatling](./testing-types/en/performance-test-gatling/README.md) |
+| Database Performance Analyzer / 数据库性能分析器 | 数据库测试 | [database-performance-analysis](./testing-types/en/database-performance-analysis/README.md) |
+| Availability Requirement Analyzer / 可用性需求分析器 | 非功能测试 | [availability-requirement-analysis](./testing-types/en/availability-requirement-analysis/README.md) |
+| Reliability Requirement Analyzer / 可靠性需求分析器 | 非功能测试 | [reliability-requirement-analysis](./testing-types/en/reliability-requirement-analysis/README.md) |
+| Scalability Analyzer / 可扩展性分析器 | 非功能测试 | [scalability-analysis](./testing-types/en/scalability-analysis/README.md) |
+| Timeout Test Designer / 超时测试设计器 | API 测试 | [timeout-test-design](./testing-types/en/timeout-test-design/README.md) |
+| Service Degradation Test Designer / 服务降级测试设计器 | 韧性测试 | [service-degradation-test-design](./testing-types/en/service-degradation-test-design/README.md) |
+| Circuit Breaker Test Designer / 熔断测试设计器 | 韧性测试 | [circuit-breaker-test-design](./testing-types/en/circuit-breaker-test-design/README.md) |
+| Recovery Test Designer / 故障恢复测试设计器 | 韧性测试 | [recovery-test-design](./testing-types/en/recovery-test-design/README.md) |
+| Chaos Test Designer / Chaos 测试设计器 | 混沌测试 | [chaos-test-design](./testing-types/en/chaos-test-design/README.md) |
+| Disaster Recovery Test Designer / 容灾测试设计器 | 容灾测试 | [disaster-recovery-test-design](./testing-types/en/disaster-recovery-test-design/README.md) |
+| Failover Test Designer / Failover 测试设计器 | 容灾测试 | [failover-test-design](./testing-types/en/failover-test-design/README.md) |
+| Performance Baseline Analyzer / 性能基线分析器 | 性能测试 | [performance-baseline-analysis](./testing-types/en/performance-baseline-analysis/README.md) |
+| Performance Regression Analyzer / 性能回归分析器 | 性能测试 | [performance-regression-analysis](./testing-types/en/performance-regression-analysis/README.md) |
+| Capacity Planning Analyzer / 容量规划分析器 | 性能测试 | [capacity-planning-analysis](./testing-types/en/capacity-planning-analysis/README.md) |
+| Stress Test Designer / 压力测试设计器 | 性能测试 | [stress-test-design](./testing-types/en/stress-test-design/README.md) |
+| Spike Test Designer / 峰值测试设计器 | 性能测试 | [spike-test-design](./testing-types/en/spike-test-design/README.md) |
+| Soak Test Designer / 稳定性测试设计器 | 性能测试 | [soak-test-design](./testing-types/en/soak-test-design/README.md) |
+| Concurrency Test Designer / 并发测试设计器 | 性能测试 | [concurrency-test-design](./testing-types/en/concurrency-test-design/README.md) |
+| Performance Trend Analyzer / 性能趋势分析器 | 性能测试 | [performance-trend-analysis](./testing-types/en/performance-trend-analysis/README.md) |
+| Nginx Performance Analyzer / Nginx 性能分析器 | 性能诊断 | [nginx-performance-analysis](./testing-types/en/nginx-performance-analysis/README.md) |
+| JVM Performance Analyzer / JVM 性能分析器 | 性能诊断 | [jvm-performance-analysis](./testing-types/en/jvm-performance-analysis/README.md) |
+| Kubernetes Performance Analyzer / Kubernetes 性能分析器 | 性能诊断 | [kubernetes-performance-analysis](./testing-types/en/kubernetes-performance-analysis/README.md) |
+| Network Latency Analyzer / 网络延迟分析器 | 性能诊断 | [network-latency-analysis](./testing-types/en/network-latency-analysis/README.md) |
+| Slow Query Analyzer / 数据库慢查询分析器 | 性能诊断 | [slow-query-analysis](./testing-types/en/slow-query-analysis/README.md) |
+| Connection Pool Analyzer / 连接池分析器 | 性能诊断 | [connection-pool-analysis](./testing-types/en/connection-pool-analysis/README.md) |
+| SLI/SLO Analyzer / SLI/SLO 分析器 | 可观测性 | [sli-slo-analysis](./testing-types/en/sli-slo-analysis/README.md) |
+
+[View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#5-performance-reliability-and-resilience)
+
+### 6. Security, Privacy, And Accessibility
+
+11 capabilities.
+
+| Prompt | Original type | Module entry |
+| --- | --- | --- |
+| Accessibility Testing Assistant / 可访问性测试助手 | Accessibility | [accessibility-testing](./testing-types/en/accessibility-testing/README.md) |
+| WCAG Compliance Analyzer / WCAG 合规分析器 | Accessibility | [wcag-compliance-analysis](./testing-types/en/wcag-compliance-analysis/README.md) |
+| Security Test Scenario Generator / 安全测试场景生成器 | 安全测试 | [security-test-scenario](./testing-types/en/security-test-scenario/README.md) |
+| OWASP Risk Analyzer / OWASP 风险分析器 | 安全测试 | [owasp-risk-analysis](./testing-types/en/owasp-risk-analysis/README.md) |
+| Authorization Test Designer / 权限测试设计器 | 安全测试 | [authorization-test-design](./testing-types/en/authorization-test-design/README.md) |
+| Authentication Test Designer / 身份认证测试设计器 | 安全测试 | [authentication-test-design](./testing-types/en/authentication-test-design/README.md) |
+| Input Validation Test Generator / 输入校验测试生成器 | 安全测试 | [input-validation-test](./testing-types/en/input-validation-test/README.md) |
+| API Security Test Designer / API 安全测试设计器 | 安全测试 | [api-security-test-design](./testing-types/en/api-security-test-design/README.md) |
+| Data Privacy Test Analyzer / 数据隐私测试分析器 | 安全测试 | [data-privacy-analysis](./testing-types/en/data-privacy-analysis/README.md) |
+| Sensitive Data Exposure Analyzer / 敏感数据泄露分析器 | 安全测试 | [sensitive-data-exposure-analysis](./testing-types/en/sensitive-data-exposure-analysis/README.md) |
+| Data Masking Analyzer / 数据脱敏分析器 | 测试数据 | [data-masking-analysis](./testing-types/en/data-masking-analysis/README.md) |
+
+[View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#6-security-privacy-and-accessibility)
+
+### 7. Data, Database, And Test Environment
+
+17 capabilities.
+
+| Prompt | Original type | Module entry |
+| --- | --- | --- |
+| Test Data Generator / 测试数据生成器 | 测试数据 | [test-data-generation](./testing-types/en/test-data-generation/README.md) |
+| Boundary Data Generator / 边界测试数据生成器 | 测试数据 | [boundary-data-generation](./testing-types/en/boundary-data-generation/README.md) |
+| SQL Test Data Generator / SQL 测试数据生成器 | 测试数据 | [database-test-data-analysis](./testing-types/en/database-test-data-analysis/README.md) |
+| WireMock Generator / WireMock 配置生成器 | Mock 测试 | [wiremock-generation](./testing-types/en/wiremock-generation/README.md) |
+| Fault Simulation Designer / 故障模拟设计器 | Mock 测试 | [fault-simulation-design](./testing-types/en/fault-simulation-design/README.md) |
+| SQL Generator / SQL 生成器 | 数据库测试 | [sql-generation](./testing-types/en/sql-generation/README.md) |
+| Database Validation Analyzer / 数据库校验分析器 | 数据库测试 | [database-validation-analysis](./testing-types/en/database-validation-analysis/README.md) |
+| Data Consistency Analyzer / 数据一致性分析器 | 数据库测试 | [data-consistency-analysis](./testing-types/en/data-consistency-analysis/README.md) |
+| Docker Build Analyzer / Docker 构建问题分析器 | DevOps | [docker-build-analysis](./testing-types/en/docker-build-analysis/README.md) |
+| Kubernetes Issue Analyzer / Kubernetes 问题分析器 | DevOps | [kubernetes-issue-analysis](./testing-types/en/kubernetes-issue-analysis/README.md) |
+| Environment Issue Analyzer / 环境问题分析器 | 环境分析 | [environment-issue-analysis](./testing-types/en/environment-issue-analysis/README.md) |
+| Test Environment Health Checker / 测试环境健康检查器 | 测试环境 | [test-environment-health](./testing-types/en/test-environment-health/README.md) |
+| Environment Drift Analyzer / 环境差异分析器 | 测试环境 | [test-environment-drift-analysis](./testing-types/en/test-environment-drift-analysis/README.md) |
+| Configuration Diff Analyzer / 配置差异分析器 | 测试环境 | [configuration-diff-analysis](./testing-types/en/configuration-diff-analysis/README.md) |
+| Test Data Cleanup Assistant / 测试数据清理助手 | 测试数据 | [test-data-cleanup](./testing-types/en/test-data-cleanup/README.md) |
+| Test Data Dependency Analyzer / 测试数据依赖分析器 | 测试数据 | [test-data-dependency-analysis](./testing-types/en/test-data-dependency-analysis/README.md) |
+| Test Data Pollution Analyzer / 测试数据污染分析器 | 测试数据 | [test-data-pollution-analysis](./testing-types/en/test-data-pollution-analysis/README.md) |
+
+[View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#7-data-database-and-test-environment)
+
+### 8. Defects, Quality, And Test Governance
+
+24 capabilities.
+
+| Prompt | Original type | Module entry |
+| --- | --- | --- |
+| Quality Risk Analyzer / 质量风险分析器 | 风险分析 | [quality-risk-analysis](./testing-types/en/quality-risk-analysis/README.md) |
+| Bug Report Generator / 缺陷报告生成器 | 缺陷管理 | [bug-reporting](./testing-types/en/bug-reporting/README.md) |
+| Bug Analyzer / 缺陷分析器 | 缺陷分析 | [bug-analysis](./testing-types/en/bug-analysis/README.md) |
+| Bug Triage Assistant / 缺陷分诊助手 | 缺陷管理 | [bug-triage](./testing-types/en/bug-triage/README.md) |
+| Root Cause Analyzer / 根因分析器 | RCA | [root-cause-analysis](./testing-types/en/root-cause-analysis/README.md) |
+| Log Analyzer / 日志分析器 | 故障分析 | [log-analysis](./testing-types/en/log-analysis/README.md) |
+| Stack Trace Analyzer / 堆栈异常分析器 | 故障分析 | [stack-trace-analysis](./testing-types/en/stack-trace-analysis/README.md) |
+| Change Impact Analyzer / 变更影响分析器 | 变更分析 | [change-impact-analysis](./testing-types/en/change-impact-analysis/README.md) |
+| PR Risk Analyzer / PR 风险分析器 | 变更分析 | [pr-risk-analysis](./testing-types/en/pr-risk-analysis/README.md) |
+| Regression Scope Analyzer / 回归范围分析器 | 回归测试 | [regression-scope-analysis](./testing-types/en/regression-scope-analysis/README.md) |
+| Regression Test Selector / 回归测试选择器 | 回归测试 | [regression-test-selection](./testing-types/en/regression-test-selection/README.md) |
+| Sprint Quality Analyzer / Sprint 质量分析器 | 敏捷测试 | [sprint-quality-analysis](./testing-types/en/sprint-quality-analysis/README.md) |
+| Test Report Generator / 测试报告生成器 | 测试报告 | [test-reporting](./testing-types/en/test-reporting/README.md) |
+| Quality Metrics Analyzer / 质量指标分析器 | 质量管理 | [quality-metrics-analysis](./testing-types/en/quality-metrics-analysis/README.md) |
+| Quality Dashboard Analyzer / 质量仪表盘分析器 | 质量管理 | [quality-dashboard-analysis](./testing-types/en/quality-dashboard-analysis/README.md) |
+| Quality Trend Analyzer / 质量趋势分析器 | 质量管理 | [quality-trend-analysis](./testing-types/en/quality-trend-analysis/README.md) |
+| Test Coverage Gap Analyzer / 测试覆盖缺口分析器 | 测试治理 | [test-coverage-gap-analysis](./testing-types/en/test-coverage-gap-analysis/README.md) |
+| Test Asset Health Analyzer / 测试资产健康分析器 | 测试治理 | [test-asset-health-analysis](./testing-types/en/test-asset-health-analysis/README.md) |
+| Defect Leakage Analyzer / 缺陷逃逸分析器 | 质量管理 | [defect-leakage-analysis](./testing-types/en/defect-leakage-analysis/README.md) |
+| Defect Trend Analyzer / 缺陷趋势分析器 | 质量管理 | [defect-trend-analysis](./testing-types/en/defect-trend-analysis/README.md) |
+| Defect Clustering Analyzer / 缺陷聚类分析器 | 质量管理 | [defect-clustering-analysis](./testing-types/en/defect-clustering-analysis/README.md) |
+| Defect Prediction Analyzer / 缺陷预测分析器 | 质量管理 | [defect-prediction-analysis](./testing-types/en/defect-prediction-analysis/README.md) |
+| Test Effectiveness Analyzer / 测试有效性分析器 | 质量管理 | [test-effectiveness-analysis](./testing-types/en/test-effectiveness-analysis/README.md) |
+| Quality Gate Analyzer / 质量门禁分析器 | 质量管理 | [quality-gate-analysis](./testing-types/en/quality-gate-analysis/README.md) |
+
+[View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#8-defects-quality-and-test-governance)
+
+### 9. Release, Production, And Observability
+
+14 capabilities.
+
+| Prompt | Original type | Module entry |
+| --- | --- | --- |
+| Release Readiness Analyzer / 发布就绪分析器 | 发布管理 | [release-readiness-analysis](./testing-types/en/release-readiness-analysis/README.md) |
+| Go/No-Go Risk Analyzer / Go/No-Go 风险分析器 | 发布管理 | [go-no-go-risk-analysis](./testing-types/en/go-no-go-risk-analysis/README.md) |
+| Production Verification Generator / 生产验证生成器 | 发布验证 | [production-verification-generation](./testing-types/en/production-verification-generation/README.md) |
+| Smoke Test Generator / 冒烟测试生成器 | 发布验证 | [smoke-test-generation](./testing-types/en/smoke-test-generation/README.md) |
+| Release Risk Scorer / 发布风险评分器 | 发布管理 | [release-risk-scoring](./testing-types/en/release-risk-scoring/README.md) |
+| Hotfix Risk Analyzer / Hotfix 风险分析器 | 发布管理 | [hotfix-risk-analysis](./testing-types/en/hotfix-risk-analysis/README.md) |
+| Rollback Verification Generator / 回滚验证生成器 | 发布管理 | [rollback-verification](./testing-types/en/rollback-verification/README.md) |
+| Release Change Summary Generator / 发布变更摘要生成器 | 发布管理 | [release-change-summary](./testing-types/en/release-change-summary/README.md) |
+| Production Incident Analyzer / 生产事故分析器 | 生产质量 | [production-incident-analysis](./testing-types/en/production-incident-analysis/README.md) |
+| Production Log Correlator / 生产日志关联分析器 | 可观测性 | [production-log-correlation](./testing-types/en/production-log-correlation/README.md) |
+| Metrics Anomaly Analyzer / 指标异常分析器 | 可观测性 | [metrics-anomaly-analysis](./testing-types/en/metrics-anomaly-analysis/README.md) |
+| Distributed Trace Analyzer / Trace 分析器 | 可观测性 | [distributed-trace-analysis](./testing-types/en/distributed-trace-analysis/README.md) |
+| Alert Analyzer / 告警分析器 | 可观测性 | [alert-analysis](./testing-types/en/alert-analysis/README.md) |
+| Production Issue Reproducer / 线上问题测试复现助手 | 生产质量 | [production-issue-reproduction](./testing-types/en/production-issue-reproduction/README.md) |
+
+[View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#9-release-production-and-observability)
+
+### 10. AI And LLM Testing
+
+13 capabilities.
+
+| Prompt | Original type | Module entry |
+| --- | --- | --- |
+| AI Feature Test Designer / AI 功能测试设计器 | AI 测试 | [ai-feature-test-design](./testing-types/en/ai-feature-test-design/README.md) |
+| LLM Test Case Generator / LLM 测试用例生成器 | AI 测试 | [llm-test-case-generation](./testing-types/en/llm-test-case-generation/README.md) |
+| Prompt Test Analyzer / Prompt 测试分析器 | AI 测试 | [prompt-test-analysis](./testing-types/en/prompt-test-analysis/README.md) |
+| Prompt Regression Tester / Prompt 回归测试器 | AI 测试 | [prompt-regression-testing](./testing-types/en/prompt-regression-testing/README.md) |
+| LLM Output Quality Evaluator / LLM 输出质量评估器 | AI 测试 | [llm-output-quality-evaluation](./testing-types/en/llm-output-quality-evaluation/README.md) |
+| Hallucination Analyzer / 幻觉检测分析器 | AI 测试 | [hallucination-analysis](./testing-types/en/hallucination-analysis/README.md) |
+| AI Safety Test Analyzer / AI 安全测试分析器 | AI 测试 | [ai-safety-test-analysis](./testing-types/en/ai-safety-test-analysis/README.md) |
+| AI Red Team Test Designer / AI Red Team 测试设计器 | AI 测试 | [ai-red-team-test-design](./testing-types/en/ai-red-team-test-design/README.md) |
+| AI Evaluation Designer / AI Eval 设计器 | AI 测试 | [ai-evaluation-design](./testing-types/en/ai-evaluation-design/README.md) |
+| AI Model Regression Analyzer / AI 模型回归分析器 | AI 测试 | [ai-model-regression-analysis](./testing-types/en/ai-model-regression-analysis/README.md) |
+| Prompt Injection Test Designer / Prompt Injection 测试设计器 | AI 安全测试 | [prompt-injection-test-design](./testing-types/en/prompt-injection-test-design/README.md) |
+| AI Agent Test Designer / Agent 测试设计器 | AI 测试 | [ai-agent-test-design](./testing-types/en/ai-agent-test-design/README.md) |
+| Agent Tool-Call Test Designer / Agent 工具调用测试器 | AI 测试 | [agent-tool-call-test-design](./testing-types/en/agent-tool-call-test-design/README.md) |
+
+[View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#10-ai-and-llm-testing)
+
+## Testing Workflows
+
+Workflows organize multiple Prompts into repeatable quality activities. See [Testing Workflows](./Workflows/en/README.md) for full guidance.
+
+### Testing Prompt Router
+
+Use the [Testing Prompt Router](./Workflows/en/discover-testing/README.md) when the starting point is unclear. It selects one main Prompt, at most one supporting Prompt, an invocation order, minimum input, and missing information.
+
+### AI Quality Analysis Workflow
+
+The [AI Quality Analysis Workflow](./Workflows/en/ai-quality-analysis-workflow/README.md) uses 43 role Prompts per language across eight traceable stages:
+
+| Stage | Main objective |
 | --- | --- |
-| Testing-type modules | 15 (Chinese and English sets) |
-| Workflows | 4 (Chinese and English copies) |
-| AI quality-analysis role and synthesis prompts | 86 (43 Chinese + 43 English) |
-| Standard prompts | Full / Lite; selected modules also have `all_round` / `Web` / `Mobile` |
-| Framework variants | ROSES, LangGPT, ICIO, CRISPE, RISE (full + lite, including some platform variants) |
+| Requirements analysis | Identify objectives, rules, risks, and gaps from product, QA, UX, and technical views |
+| Test strategy | Define scope, levels, environment, data, and risk validation |
+| Strategy review | Review completeness, executability, and evidence boundaries |
+| Code review | Analyze product, quality, technical, and experience impact |
+| Test case writing | Convert strategy into preconditions, steps, expectations, and evidence |
+| Test case review | Review coverage, priority, duplication, and unverifiable expectations |
+| Test report | Summarize evidence, limits, defects, and uncovered risk |
+| Test report review | Review credibility, disagreements, and human decision items |
 
-Treat the repository tree as the source of truth. Run `npm run check:all` before submitting changes.
+Role Prompts run independently and Synthesis Prompts preserve consensus and disagreement. Release approval, ownership, and accountability remain Human Tasks.
 
----
+### Daily, Sprint, And Release Workflows
 
-## How to choose a version
+| Workflow | Main phases | Best for |
+| --- | --- | --- |
+| [Daily Testing](./Workflows/en/daily-testing-workflow.md) | Planning → environment/data → cases/automation/exploration → defects → wrap-up | Daily QA work |
+| [Sprint Testing](./Workflows/en/sprint-testing-workflow.md) | Planning → strategy → continuous validation → regression → review/retro | Agile iterations |
+| [Release Testing](./Workflows/en/release-testing-workflow.md) | T-14 planning → T-7 freeze → T-3 candidate → Go/No-Go → post-release validation | Production releases |
 
-| Version | When to use |
+## Prompt Versions
+
+| Version | Use when |
 | --- | --- |
-| **Standard Full** | Default recommendation; fuller method and output structure |
-| **Standard Lite** | Limited input, or you only need a fast first draft |
-| **Framework variants** | You explicitly want ROSES / LangGPT / ICIO / CRISPE / RISE structure |
-| **Platform variants** | You need all-round / Web / Mobile focus (available for selected modules) |
+| Standard | Default, complete, and copy-ready |
+| Lite | The task or context is small |
+| CRISPE / RISE / ICIO / ROSES | A specific Prompt framework is required |
+| LangGPT | Explicit role, constraints, and workflow are useful |
+| Web / Mobile / Framework | The scenario is platform- or framework-specific |
 
-Modules that currently include platform variants: requirements analysis, test case writing, functional testing, test strategy, manual testing, and test case review.
+## Documentation
 
-Framework guide: [prompt-frameworks/en/README.md](./prompt-frameworks/en/README.md)
+| Document | Purpose |
+| --- | --- |
+| [Complete Prompt catalog](./PROMPT_COVERAGE_200_EN.md) | Categories, modules, and entry points for 200 capabilities |
+| [Testing Workflows](./Workflows/en/README.md) | Router, AI quality analysis, daily, sprint, and release flows |
+| [Contributing Guide](./CONTRIBUTING_EN.md) | Contribution, development, commit, and PR workflow |
+| [Prompt Authoring Standard](./PROMPT_AUTHORING_STANDARD_EN.md) | Quality rules for Prompts and module READMEs |
+| [Examples](./examples/README_EN.md) | Basic, advanced, and best-practice entry points |
+| [License](./LICENSE) | Official legal text |
 
----
+## License And Support
 
-## Quick start
-
-### Option 1: Online docs
-
-1. Open [https://inaodeng.com/prompts](https://inaodeng.com/prompts)
-2. Choose a testing type or workflow
-3. Prefer Standard Full; switch to Lite / framework / platform variants only when needed
-4. Copy the prompt and attach real requirements, scope, environment, and constraints
-
-### Option 2: Local clone
-
-```bash
-git clone https://github.com/naodeng/awesome-qa-prompt.git
-cd awesome-qa-prompt
-```
-
-Recommended path example (English · functional testing · Standard):
-
-`testing-types/en/functional-testing/Standard-version/FunctionalTestingPrompt.md`
-
-Usage:
-
-1. Open that file (or your target module)
-2. If the file has a first `---`, copy the content after it; otherwise copy the entire Prompt into your AI assistant
-3. Append real project context; clarify gaps or mark assumptions when information is incomplete
-4. Human-review the output before review, execution, or archival use
-
----
-
-## Repository layout
-
-```text
-awesome-qa-prompt/
-├── README.md / README_EN.md
-├── AGENTS.md
-├── PROMPT_AUTHORING_STANDARD.md / PROMPT_AUTHORING_STANDARD_EN.md
-├── CONTRIBUTING.md / CONTRIBUTING_EN.md
-├── testing-types/
-│   ├── zh/<module>/          # README + Standard / framework / platform variants
-│   └── en/<module>/
-├── Workflows/
-│   ├── zh/
-│   └── en/
-├── prompt-frameworks/
-│   ├── zh/
-│   └── en/
-├── examples/
-├── scripts/                  # npm run check:* validation
-└── future-updates/           # planned content; not the primary entry
-```
-
-Each testing-type directory usually contains:
-
-- `README.md` — module overview and version guidance
-- `Standard-version/` — default recommendation
-- `ROSES-version/` / `LangGPT-version/` / `ICIO-version/` / `CRISPE-version/` / `RISE-version/`
-
----
-
-## Quality principles
-
-When adding or editing prompts, follow [PROMPT_AUTHORING_STANDARD_EN.md](./PROMPT_AUTHORING_STANDARD_EN.md). Collaboration defaults are in [AGENTS.md](./AGENTS.md).
-
-Summary:
-
-- Default entry points must target `Standard-version/`, and links must resolve
-- Run an input completeness check first; degrade gracefully and mark assumptions when input is incomplete
-- Do not invent requirements, APIs, environments, metrics, dates, or approval conclusions
-- Missing KPIs / SLAs / coverage figures must be marked TBD or example values, never as committed targets
-
----
-
-## Development and contributing
-
-```bash
-npm install
-npm run check:all
-```
-
-- Contributing guide: [CONTRIBUTING_EN.md](./CONTRIBUTING_EN.md) / [CONTRIBUTING.md](./CONTRIBUTING.md)
-- Issues: [GitHub Issues](https://github.com/naodeng/awesome-qa-prompt/issues)
-- Discussions: [GitHub Discussions](https://github.com/naodeng/awesome-qa-prompt/discussions)
-
-After changing prompts or module READMEs, run `npm run check:all` and confirm whether the other language needs a matching update.
-
----
-
-## License and support
-
-- License: [PolyForm Noncommercial License 1.0.0](./LICENSE)
-- Support: [Buy Me a Coffee](https://www.buymeacoffee.com/naodeng) · [Ko-fi](https://ko-fi.com/naodeng) · [Docs sponsorship page](https://inaodeng.com/prompts)
-
-### Related links
-
-- Online docs: https://inaodeng.com/prompts
-- This repository: https://github.com/naodeng/awesome-qa-prompt
-- Skills repository: https://github.com/naodeng/awesome-qa-skills
+This project uses the [PolyForm Noncommercial License 1.0.0](./LICENSE). Feedback is welcome through Issues, Pull Requests, or the [online documentation](https://inaodeng.com/prompts).
