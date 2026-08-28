@@ -33,7 +33,7 @@ The catalog covers **200 capabilities in 200 independent modules**. All Prompts 
 
 | Prompt | Original type | Module entry |
 | --- | --- | --- |
-| Requirement Analyzer / 需求分析器 | Requirements Analysis | [requirements-analysis](./testing-types/en/requirements-analysis/README.md) |
+| Requirement Analyzer / 需求分析器 | Requirements Analysis | [requirements-analysis (default)](./testing-types/en/requirements-analysis/README.md) · [requirements-analysis-Web](./testing-types/en/requirements-analysis-Web/README.md) · [requirements-analysis-Mobile](./testing-types/en/requirements-analysis-Mobile/README.md) |
 | Acceptance Criteria Reviewer / 验收标准审查器 | Requirements Analysis | [acceptance-criteria-reviewer](./testing-types/en/acceptance-criteria-reviewer/README.md) |
 | Requirement Gap Analyzer / 需求缺口分析器 | Requirements Analysis | [requirement-gap-analyzer](./testing-types/en/requirement-gap-analyzer/README.md) |
 | Testability Analyzer / 可测试性分析器 | Requirements Analysis | [testability-analysis](./testing-types/en/testability-analysis/README.md) |
@@ -59,16 +59,16 @@ The catalog covers **200 capabilities in 200 independent modules**. All Prompts 
 | Prompt | Original type | Module entry |
 | --- | --- | --- |
 | Test Scenario Designer / 测试场景设计器 | Test Design | [test-scenario-design](./testing-types/en/test-scenario-design/README.md) |
-| Test Case Generator / 测试用例生成器 | Test Design | [test-case-writing](./testing-types/en/test-case-writing/README.md) |
+| Test Case Generator / 测试用例生成器 | Test Design | [test-case-writing (default)](./testing-types/en/test-case-writing/README.md) · [test-case-writing-Web](./testing-types/en/test-case-writing-Web/README.md) · [test-case-writing-Mobile](./testing-types/en/test-case-writing-Mobile/README.md) |
 | Boundary Value Analyzer / 边界值分析器 | Test Design | [boundary-value-analysis](./testing-types/en/boundary-value-analysis/README.md) |
 | Equivalence Partition Analyzer / 等价类分析器 | Test Design | [equivalence-partition-analysis](./testing-types/en/equivalence-partition-analysis/README.md) |
 | Decision Table Generator / 决策表生成器 | Test Design | [decision-table-analysis](./testing-types/en/decision-table-analysis/README.md) |
 | State Transition Analyzer / 状态转换分析器 | Test Design | [state-transition-analysis](./testing-types/en/state-transition-analysis/README.md) |
 | Pairwise Test Generator / Pairwise 组合测试生成器 | Test Design | [pairwise-test-design](./testing-types/en/pairwise-test-design/README.md) |
-| E2E Scenario Designer / 端到端测试场景设计器 | E2E Testing | [functional-testing](./testing-types/en/functional-testing/README.md) |
+| E2E Scenario Designer / 端到端测试场景设计器 | E2E Testing | [functional-testing (default)](./testing-types/en/functional-testing/README.md) · [functional-testing-Web](./testing-types/en/functional-testing-Web/README.md) · [functional-testing-Mobile](./testing-types/en/functional-testing-Mobile/README.md) |
 | UI Test Designer / UI 测试设计器 | UI Testing | [ui-test-design](./testing-types/en/ui-test-design/README.md) |
 | User Journey Analyzer / 用户旅程分析器 | E2E Testing | [user-journey-analysis](./testing-types/en/user-journey-analysis/README.md) |
-| Exploratory Testing Assistant / 探索式测试助手 | Exploratory Testing | [manual-testing](./testing-types/en/manual-testing/README.md) |
+| Exploratory Testing Assistant / 探索式测试助手 | Exploratory Testing | [manual-testing (default)](./testing-types/en/manual-testing/README.md) · [manual-testing-Web](./testing-types/en/manual-testing-Web/README.md) · [manual-testing-Mobile](./testing-types/en/manual-testing-Mobile/README.md) |
 | Test Charter Generator / 探索式测试章程生成器 | Exploratory Testing | [test-charter-generation](./testing-types/en/test-charter-generation/README.md) |
 | Testing Heuristics Analyzer / 测试启发式分析器 | Test Design | [testing-heuristics-analysis](./testing-types/en/testing-heuristics-analysis/README.md) |
 | Error Guessing Analyzer / 错误猜测分析器 | Test Design | [error-guessing-analysis](./testing-types/en/error-guessing-analysis/README.md) |
@@ -359,6 +359,8 @@ Role Prompts run independently and Synthesis Prompts preserve consensus and disa
 | CRISPE / RISE / ICIO / ROSES | A specific Prompt framework is required |
 | LangGPT | Explicit role, constraints, and workflow are useful |
 | Web / Mobile / Framework | The scenario is platform- or framework-specific; for example, [test-strategy-Web](./testing-types/en/test-strategy-Web/README.md) and [test-strategy-Mobile](./testing-types/en/test-strategy-Mobile/README.md) |
+
+Other modules with split platform versions include: [test-case-reviewer (default)](./testing-types/en/test-case-reviewer/README.md) · [test-case-reviewer-Web](./testing-types/en/test-case-reviewer-Web/README.md) · [test-case-reviewer-Mobile](./testing-types/en/test-case-reviewer-Mobile/README.md)
 
 ## Documentation
 

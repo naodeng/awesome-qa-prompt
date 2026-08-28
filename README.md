@@ -33,7 +33,7 @@
 
 | Prompt | 原始类型 | 模块入口 |
 | --- | --- | --- |
-| 需求分析器 / Requirement Analyzer | 需求分析 | [requirements-analysis](./testing-types/zh/requirements-analysis/README.md) |
+| 需求分析器 / Requirement Analyzer | 需求分析 | [requirements-analysis（默认）](./testing-types/zh/requirements-analysis/README.md) · [requirements-analysis-Web](./testing-types/zh/requirements-analysis-Web/README.md) · [requirements-analysis-Mobile](./testing-types/zh/requirements-analysis-Mobile/README.md) |
 | 验收标准审查器 / Acceptance Criteria Reviewer | 需求分析 | [acceptance-criteria-reviewer](./testing-types/zh/acceptance-criteria-reviewer/README.md) |
 | 需求缺口分析器 / Requirement Gap Analyzer | 需求分析 | [requirement-gap-analyzer](./testing-types/zh/requirement-gap-analyzer/README.md) |
 | 可测试性分析器 / Testability Analyzer | 需求分析 | [testability-analysis](./testing-types/zh/testability-analysis/README.md) |
@@ -59,16 +59,16 @@
 | Prompt | 原始类型 | 模块入口 |
 | --- | --- | --- |
 | 测试场景设计器 / Test Scenario Designer | 测试设计 | [test-scenario-design](./testing-types/zh/test-scenario-design/README.md) |
-| 测试用例生成器 / Test Case Generator | 测试设计 | [test-case-writing](./testing-types/zh/test-case-writing/README.md) |
+| 测试用例生成器 / Test Case Generator | 测试设计 | [test-case-writing（默认）](./testing-types/zh/test-case-writing/README.md) · [test-case-writing-Web](./testing-types/zh/test-case-writing-Web/README.md) · [test-case-writing-Mobile](./testing-types/zh/test-case-writing-Mobile/README.md) |
 | 边界值分析器 / Boundary Value Analyzer | 测试设计 | [boundary-value-analysis](./testing-types/zh/boundary-value-analysis/README.md) |
 | 等价类分析器 / Equivalence Partition Analyzer | 测试设计 | [equivalence-partition-analysis](./testing-types/zh/equivalence-partition-analysis/README.md) |
 | 决策表生成器 / Decision Table Generator | 测试设计 | [decision-table-analysis](./testing-types/zh/decision-table-analysis/README.md) |
 | 状态转换分析器 / State Transition Analyzer | 测试设计 | [state-transition-analysis](./testing-types/zh/state-transition-analysis/README.md) |
 | Pairwise 组合测试生成器 / Pairwise Test Generator | 测试设计 | [pairwise-test-design](./testing-types/zh/pairwise-test-design/README.md) |
-| 端到端测试场景设计器 / E2E Scenario Designer | E2E 测试 | [functional-testing](./testing-types/zh/functional-testing/README.md) |
+| 端到端测试场景设计器 / E2E Scenario Designer | E2E 测试 | [functional-testing（默认）](./testing-types/zh/functional-testing/README.md) · [functional-testing-Web](./testing-types/zh/functional-testing-Web/README.md) · [functional-testing-Mobile](./testing-types/zh/functional-testing-Mobile/README.md) |
 | UI 测试设计器 / UI Test Designer | UI 测试 | [ui-test-design](./testing-types/zh/ui-test-design/README.md) |
 | 用户旅程分析器 / User Journey Analyzer | E2E 测试 | [user-journey-analysis](./testing-types/zh/user-journey-analysis/README.md) |
-| 探索式测试助手 / Exploratory Testing Assistant | 探索式测试 | [manual-testing](./testing-types/zh/manual-testing/README.md) |
+| 探索式测试助手 / Exploratory Testing Assistant | 探索式测试 | [manual-testing（默认）](./testing-types/zh/manual-testing/README.md) · [manual-testing-Web](./testing-types/zh/manual-testing-Web/README.md) · [manual-testing-Mobile](./testing-types/zh/manual-testing-Mobile/README.md) |
 | 探索式测试章程生成器 / Test Charter Generator | 探索式测试 | [test-charter-generation](./testing-types/zh/test-charter-generation/README.md) |
 | 测试启发式分析器 / Testing Heuristics Analyzer | 测试设计 | [testing-heuristics-analysis](./testing-types/zh/testing-heuristics-analysis/README.md) |
 | 错误猜测分析器 / Error Guessing Analyzer | 测试设计 | [error-guessing-analysis](./testing-types/zh/error-guessing-analysis/README.md) |
@@ -359,6 +359,8 @@ Workflow 将多个 Prompt 组织成可执行的质量活动，不只是单个模
 | CRISPE / RISE / ICIO / ROSES | 需要特定 Prompt 框架时使用 |
 | LangGPT | 需要明确角色、约束和工作流时使用 |
 | Web / Mobile / Framework | 特定平台或测试框架场景；例如 [test-strategy-Web](./testing-types/zh/test-strategy-Web/README.md) 和 [test-strategy-Mobile](./testing-types/zh/test-strategy-Mobile/README.md) |
+
+已拆分平台版本的模块还包括：[test-case-reviewer（默认）](./testing-types/zh/test-case-reviewer/README.md) · [test-case-reviewer-Web](./testing-types/zh/test-case-reviewer-Web/README.md) · [test-case-reviewer-Mobile](./testing-types/zh/test-case-reviewer-Mobile/README.md)
 
 ## Documentation
 
