@@ -367,6 +367,7 @@ Other modules with split platform versions include: [test-case-reviewer (default
 | Document | Purpose |
 | --- | --- |
 | [Complete Prompt catalog](./PROMPT_COVERAGE_200_EN.md) | Categories, modules, and entry points for 200 capabilities |
+| [Extended Prompt catalog](./PROMPT_COVERAGE_EXTENDED_EN.md) | 10 extended capabilities outside the 200-item baseline |
 | [Testing Workflows](./Workflows/en/README.md) | Router, AI quality analysis, daily, sprint, and release flows |
 | [Contributing Guide](./CONTRIBUTING_EN.md) | Contribution, development, commit, and PR workflow |
 | [Prompt Authoring Standard](./PROMPT_AUTHORING_STANDARD_EN.md) | Quality rules for Prompts and module READMEs |
