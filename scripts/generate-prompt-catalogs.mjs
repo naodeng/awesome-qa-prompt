@@ -26,6 +26,21 @@ const categories = [
   { zh: 'AI 与 LLM 测试', en: 'AI And LLM Testing' },
 ];
 
+const typeNames = new Map([
+  ['需求分析', 'Requirements Analysis'], ['风险分析', 'Risk Analysis'], ['测试策略', 'Test Strategy'], ['测试计划', 'Test Planning'],
+  ['测试设计', 'Test Design'], ['API 测试', 'API Testing'], ['E2E 测试', 'E2E Testing'], ['UI 测试', 'UI Testing'],
+  ['自动化测试', 'Automation Testing'], ['UI 自动化', 'UI Automation'], ['测试数据', 'Test Data'], ['Mock 测试', 'Mock Testing'],
+  ['缺陷管理', 'Defect Management'], ['缺陷分析', 'Defect Analysis'], ['RCA', 'Root Cause Analysis'], ['故障分析', 'Incident Analysis'],
+  ['变更分析', 'Change Analysis'], ['回归测试', 'Regression Testing'], ['性能测试', 'Performance Testing'], ['数据库测试', 'Database Testing'],
+  ['DevOps', 'DevOps'], ['环境分析', 'Environment Analysis'], ['发布管理', 'Release Management'], ['发布验证', 'Release Validation'],
+  ['敏捷测试', 'Agile Testing'], ['测试报告', 'Test Reporting'], ['质量管理', 'Quality Management'], ['AI 测试', 'AI Testing'],
+  ['国际化测试', 'Internationalization Testing'], ['兼容性测试', 'Compatibility Testing'], ['探索式测试', 'Exploratory Testing'],
+  ['非功能测试', 'Non-functional Testing'], ['测试治理', 'Test Governance'], ['消息测试', 'Messaging Testing'], ['契约测试', 'Contract Testing'],
+  ['微服务测试', 'Microservices Testing'], ['集成测试', 'Integration Testing'], ['安全测试', 'Security Testing'], ['可访问性测试', 'Accessibility Testing'],
+  ['AI 安全测试', 'AI Safety Testing'], ['Accessibility', 'Accessibility'], ['可观测性', 'Observability'], ['容灾测试', 'Disaster Recovery Testing'],
+  ['性能诊断', 'Performance Diagnostics'], ['测试环境', 'Test Environment'], ['混沌测试', 'Chaos Testing'], ['生产质量', 'Production Quality'], ['韧性测试', 'Resilience Testing'],
+]);
+
 function categoryOf(row) {
   const text = `${row.type} ${row.module}`.toLowerCase();
   if (/\b(ai-|llm|prompt-|hallucination|agent-tool)|ai 测试|大模型/.test(text)) return 9;
@@ -44,7 +59,8 @@ function standardFile(lang, module) {
   const dir = join(root, 'testing-types', lang, module, 'Standard-version');
   const files = readdirSync(dir).filter((file) => file.endsWith('.md') && !file.includes('_Lite')).sort();
   if (files.length === 0) throw new Error(`No Standard Prompt for ${lang}/${module}.`);
-  return files[0];
+  const base = files.find((file) => !/-(?:Mobile|Web|all_round)\.md$/u.test(file));
+  return base ?? files[0];
 }
 
 function render(lang) {
@@ -78,7 +94,7 @@ function render(lang) {
       const promptLink = `./testing-types/${lang}/${row.module}/Standard-version/${prompt}`;
       lines.push(zh
         ? `| ${row.id} | ${row.zh} | ${row.en} | ${row.type} | [${row.module}](${moduleLink}) | [Standard](${promptLink}) |`
-        : `| ${row.id} | ${row.en} | ${row.zh} | ${row.type} | [${row.module}](${moduleLink}) | [Standard](${promptLink}) |`);
+        : `| ${row.id} | ${row.en} | ${row.zh} | ${typeNames.get(row.type) ?? row.type} | [${row.module}](${moduleLink}) | [Standard](${promptLink}) |`);
     }
   });
 
@@ -103,7 +119,7 @@ function renderReadmeCatalog(lang) {
     for (const row of selected) {
       const name = zh ? `${row.zh} / ${row.en}` : `${row.en} / ${row.zh}`;
       const moduleLink = `./testing-types/${lang}/${row.module}/README.md`;
-      lines.push(`| ${name} | ${row.type} | [${row.module}](${moduleLink}) |`);
+      lines.push(`| ${name} | ${zh ? row.type : (typeNames.get(row.type) ?? row.type)} | [${row.module}](${moduleLink}) |`);
     }
     const anchor = zh
       ? `./PROMPT_COVERAGE_200.md#${index + 1}-${category.zh.replaceAll('、', '').replaceAll(' ', '-').toLowerCase()}`
@@ -120,7 +136,7 @@ function updateReadme(lang) {
   const current = readFileSync(path, 'utf8');
   const replacement = `${renderReadmeCatalog(lang)}\n\n## Testing Workflows`;
   const updated = current.replace(/## (?:Prompt 分类目录|Prompt Catalog)[\s\S]*?\n## Testing Workflows/u, replacement);
-  if (updated === current) throw new Error(`Unable to locate Prompt catalog section in ${path}.`);
+  if (updated === current && !current.match(/## (?:Prompt 分类目录|Prompt Catalog)[\s\S]*?\n## Testing Workflows/u)) throw new Error(`Unable to locate Prompt catalog section in ${path}.`);
   writeFileSync(path, updated);
 }
 

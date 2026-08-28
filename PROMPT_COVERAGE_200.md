@@ -14,11 +14,11 @@
 
 | # | 中文名称 | English name | 原始类型 | 模块 | Standard Prompt |
 | ---: | --- | --- | --- | --- | --- |
-| 1 | 需求分析器 | Requirement Analyzer | 需求分析 | [requirements-analysis](./testing-types/zh/requirements-analysis/README.md) | [Standard](./testing-types/zh/requirements-analysis/Standard-version/RequirementsAnalysisPrompt-Mobile.md) |
+| 1 | 需求分析器 | Requirement Analyzer | 需求分析 | [requirements-analysis](./testing-types/zh/requirements-analysis/README.md) | [Standard](./testing-types/zh/requirements-analysis/Standard-version/RequirementsAnalysisPrompt.md) |
 | 2 | 验收标准审查器 | Acceptance Criteria Reviewer | 需求分析 | [acceptance-criteria-reviewer](./testing-types/zh/acceptance-criteria-reviewer/README.md) | [Standard](./testing-types/zh/acceptance-criteria-reviewer/Standard-version/AcceptanceCriteriaReviewerPrompt.md) |
 | 3 | 需求缺口分析器 | Requirement Gap Analyzer | 需求分析 | [requirement-gap-analyzer](./testing-types/zh/requirement-gap-analyzer/README.md) | [Standard](./testing-types/zh/requirement-gap-analyzer/Standard-version/RequirementGapAnalyzerPrompt.md) |
 | 5 | 可测试性分析器 | Testability Analyzer | 需求分析 | [testability-analysis](./testing-types/zh/testability-analysis/README.md) | [Standard](./testing-types/zh/testability-analysis/Standard-version/TestabilityAnalyzerPrompt.md) |
-| 6 | 测试策略生成器 | Test Strategy Generator | 测试策略 | [test-strategy](./testing-types/zh/test-strategy/README.md) | [Standard](./testing-types/zh/test-strategy/Standard-version/TestStrategyPrompt-Mobile.md) |
+| 6 | 测试策略生成器 | Test Strategy Generator | 测试策略 | [test-strategy](./testing-types/zh/test-strategy/README.md) | [Standard](./testing-types/zh/test-strategy/Standard-version/TestStrategyPrompt.md) |
 | 7 | 测试计划生成器 | Test Plan Generator | 测试计划 | [test-plan-design](./testing-types/zh/test-plan-design/README.md) | [Standard](./testing-types/zh/test-plan-design/Standard-version/TestPlanDesignerPrompt.md) |
 | 8 | 测试范围分析器 | Test Scope Analyzer | 测试策略 | [test-scope-analysis](./testing-types/zh/test-scope-analysis/README.md) | [Standard](./testing-types/zh/test-scope-analysis/Standard-version/TestScopeAnalyzerPrompt.md) |
 | 69 | 需求梳理 QA 助手 | Refinement QA Assistant | 敏捷测试 | [refinement-qa-assistant](./testing-types/zh/refinement-qa-assistant/README.md) | [Standard](./testing-types/zh/refinement-qa-assistant/Standard-version/RefinementQAAssistantPrompt.md) |
@@ -38,16 +38,16 @@
 | # | 中文名称 | English name | 原始类型 | 模块 | Standard Prompt |
 | ---: | --- | --- | --- | --- | --- |
 | 9 | 测试场景设计器 | Test Scenario Designer | 测试设计 | [test-scenario-design](./testing-types/zh/test-scenario-design/README.md) | [Standard](./testing-types/zh/test-scenario-design/Standard-version/TestScenarioDesignerPrompt.md) |
-| 10 | 测试用例生成器 | Test Case Generator | 测试设计 | [test-case-writing](./testing-types/zh/test-case-writing/README.md) | [Standard](./testing-types/zh/test-case-writing/Standard-version/TestCaseWritingPrompt-Mobile.md) |
+| 10 | 测试用例生成器 | Test Case Generator | 测试设计 | [test-case-writing](./testing-types/zh/test-case-writing/README.md) | [Standard](./testing-types/zh/test-case-writing/Standard-version/TestCaseWritingPrompt.md) |
 | 11 | 边界值分析器 | Boundary Value Analyzer | 测试设计 | [boundary-value-analysis](./testing-types/zh/boundary-value-analysis/README.md) | [Standard](./testing-types/zh/boundary-value-analysis/Standard-version/BoundaryValueAnalyzerPrompt.md) |
 | 12 | 等价类分析器 | Equivalence Partition Analyzer | 测试设计 | [equivalence-partition-analysis](./testing-types/zh/equivalence-partition-analysis/README.md) | [Standard](./testing-types/zh/equivalence-partition-analysis/Standard-version/EquivalencePartitionAnalyzerPrompt.md) |
 | 13 | 决策表生成器 | Decision Table Generator | 测试设计 | [decision-table-analysis](./testing-types/zh/decision-table-analysis/README.md) | [Standard](./testing-types/zh/decision-table-analysis/Standard-version/DecisionTableAnalyzerPrompt.md) |
 | 14 | 状态转换分析器 | State Transition Analyzer | 测试设计 | [state-transition-analysis](./testing-types/zh/state-transition-analysis/README.md) | [Standard](./testing-types/zh/state-transition-analysis/Standard-version/StateTransitionAnalyzerPrompt.md) |
 | 15 | Pairwise 组合测试生成器 | Pairwise Test Generator | 测试设计 | [pairwise-test-design](./testing-types/zh/pairwise-test-design/README.md) | [Standard](./testing-types/zh/pairwise-test-design/Standard-version/PairwiseTestGeneratorPrompt.md) |
-| 20 | 端到端测试场景设计器 | E2E Scenario Designer | E2E 测试 | [functional-testing](./testing-types/zh/functional-testing/README.md) | [Standard](./testing-types/zh/functional-testing/Standard-version/FunctionalTestingPrompt-Mobile.md) |
+| 20 | 端到端测试场景设计器 | E2E Scenario Designer | E2E 测试 | [functional-testing](./testing-types/zh/functional-testing/README.md) | [Standard](./testing-types/zh/functional-testing/Standard-version/FunctionalTestingPrompt.md) |
 | 21 | UI 测试设计器 | UI Test Designer | UI 测试 | [ui-test-design](./testing-types/zh/ui-test-design/README.md) | [Standard](./testing-types/zh/ui-test-design/Standard-version/UITestDesignerPrompt.md) |
 | 22 | 用户旅程分析器 | User Journey Analyzer | E2E 测试 | [user-journey-analysis](./testing-types/zh/user-journey-analysis/README.md) | [Standard](./testing-types/zh/user-journey-analysis/Standard-version/UserJourneyAnalyzerPrompt.md) |
-| 76 | 探索式测试助手 | Exploratory Testing Assistant | 探索式测试 | [manual-testing](./testing-types/zh/manual-testing/README.md) | [Standard](./testing-types/zh/manual-testing/Standard-version/ManualTestingPrompt-Mobile.md) |
+| 76 | 探索式测试助手 | Exploratory Testing Assistant | 探索式测试 | [manual-testing](./testing-types/zh/manual-testing/README.md) | [Standard](./testing-types/zh/manual-testing/Standard-version/ManualTestingPrompt.md) |
 | 77 | 探索式测试章程生成器 | Test Charter Generator | 探索式测试 | [test-charter-generation](./testing-types/zh/test-charter-generation/README.md) | [Standard](./testing-types/zh/test-charter-generation/Standard-version/TestCharterGeneratorPrompt.md) |
 | 78 | 测试启发式分析器 | Testing Heuristics Analyzer | 测试设计 | [testing-heuristics-analysis](./testing-types/zh/testing-heuristics-analysis/README.md) | [Standard](./testing-types/zh/testing-heuristics-analysis/Standard-version/TestingHeuristicsAnalyzerPrompt.md) |
 | 79 | 错误猜测分析器 | Error Guessing Analyzer | 测试设计 | [error-guessing-analysis](./testing-types/zh/error-guessing-analysis/README.md) | [Standard](./testing-types/zh/error-guessing-analysis/Standard-version/ErrorGuessingAnalyzerPrompt.md) |

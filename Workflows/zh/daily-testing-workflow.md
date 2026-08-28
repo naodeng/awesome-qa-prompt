@@ -294,8 +294,8 @@
 
 ## 📚 相关工作流程
 
-- [迭代测试工作流程](sprint-testing-workflow_CN.md) - 迭代特定活动
-- [发布测试工作流程](release-testing-workflow_CN.md) - 发布前检查清单
+- [迭代测试工作流程](sprint-testing-workflow.md) - 迭代特定活动
+- [发布测试工作流程](release-testing-workflow.md) - 发布前检查清单
 
 ---
 

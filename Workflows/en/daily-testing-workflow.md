@@ -294,8 +294,8 @@ Heuristics: [SFDPOT, FEW HICCUPS, etc.]
 
 ## 📚 Related Workflows
 
-- [Sprint Testing Workflow](sprint-testing-workflow_EN.md) - Sprint-specific activities
-- [Release Testing Workflow](release-testing-workflow_EN.md) - Pre-release checklist
+- [Sprint Testing Workflow](sprint-testing-workflow.md) - Sprint-specific activities
+- [Release Testing Workflow](release-testing-workflow.md) - Pre-release checklist
 
 ---
 

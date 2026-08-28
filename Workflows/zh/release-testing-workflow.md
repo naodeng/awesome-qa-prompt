@@ -460,8 +460,8 @@
 
 ## 📚 相关工作流程
 
-- [日常测试工作流程](daily-testing-workflow_CN.md) - 日常活动
-- [迭代测试工作流程](sprint-testing-workflow_CN.md) - 迭代周期
+- [日常测试工作流程](daily-testing-workflow.md) - 日常活动
+- [迭代测试工作流程](sprint-testing-workflow.md) - 迭代周期
 
 ---
 

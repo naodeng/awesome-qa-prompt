@@ -392,8 +392,8 @@ Risks: [Identified risks]
 
 ## 📚 Related Workflows
 
-- [Daily Testing Workflow](daily-testing-workflow_EN.md) - Day-to-day activities
-- [Release Testing Workflow](release-testing-workflow_EN.md) - Pre-release process
+- [Daily Testing Workflow](daily-testing-workflow.md) - Day-to-day activities
+- [Release Testing Workflow](release-testing-workflow.md) - Pre-release process
 
 ---
 

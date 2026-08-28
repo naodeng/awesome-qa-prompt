@@ -392,8 +392,8 @@
 
 ## 📚 相关工作流程
 
-- [日常测试工作流程](daily-testing-workflow_CN.md) - 日常活动
-- [发布测试工作流程](release-testing-workflow_CN.md) - 发布前流程
+- [日常测试工作流程](daily-testing-workflow.md) - 日常活动
+- [发布测试工作流程](release-testing-workflow.md) - 发布前流程
 
 ---
 

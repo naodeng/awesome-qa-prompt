@@ -460,8 +460,8 @@ Medium/Low → Defer to next release
 
 ## 📚 Related Workflows
 
-- [Daily Testing Workflow](daily-testing-workflow_EN.md) - Day-to-day activities
-- [Sprint Testing Workflow](sprint-testing-workflow_EN.md) - Sprint cycle
+- [Daily Testing Workflow](daily-testing-workflow.md) - Day-to-day activities
+- [Sprint Testing Workflow](sprint-testing-workflow.md) - Sprint cycle
 
 ---
 
