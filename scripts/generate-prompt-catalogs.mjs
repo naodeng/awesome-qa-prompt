@@ -59,7 +59,7 @@ function standardFile(lang, module) {
   const dir = join(root, 'testing-types', lang, module, 'Standard-version');
   const files = readdirSync(dir).filter((file) => file.endsWith('.md') && !file.includes('_Lite')).sort();
   if (files.length === 0) throw new Error(`No Standard Prompt for ${lang}/${module}.`);
-  const base = files.find((file) => !/-(?:Mobile|Web|all_round)\.md$/u.test(file));
+  const base = files.find((file) => !/-(?:Mobile|Web|Default)\.md$/u.test(file));
   return base ?? files[0];
 }
 

@@ -1,4 +1,14 @@
-# Requirements Analysis Prompt Plus (Multi-Format Requirements)
+# Requirements Analysis Prompt Plus (Multi-Format Requirements) - Default Version
+
+## Platform Scenario Notes
+
+- **Current Variant:** `Default`
+- **Scope:** Covers both Web and mobile, suitable for work that needs one prompt to plan testing across both platforms
+- **Extra Focus In The Output:**
+  - Separate shared coverage, platform-specific differences, and cross-platform consistency expectations
+  - For Web, pay attention to browser compatibility, layout, routing, cache/session behavior, and upload/download flows
+  - For mobile, pay attention to iOS/Android differences, device and OS coverage, install/upgrade flows, permission dialogs, app lifecycle, and weak-network interruptions
+- **Additional Rule:** If the input does not clearly specify the platform, state the assumption first and then provide both Web and mobile guidance
 
 > Usage: Copy this prompt into your AI assistant, then provide your requirements content. It supports Word, HTML, JSON, Markdown, and Excel inputs as raw content or extracted text.
 
