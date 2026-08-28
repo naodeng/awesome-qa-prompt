@@ -25,11 +25,11 @@
 
 ## Prompt 分类目录
 
-当前目录覆盖 **200 项能力、200 个独立模块**。以下十个分类直接展示全部 Prompt；带原始编号和 Standard 文件直链的矩阵见 [完整 Prompt 目录](./PROMPT_COVERAGE_200.md)。
+当前目录覆盖 **210 项能力、210 个独立模块**。以下十个分类直接展示全部 Prompt；其中 [基础 Prompt 目录](./PROMPT_COVERAGE_200.md) 保留原始 200 项编号和 Standard 文件直链。
 
 ### 1. 需求、规划与测试策略
 
-共 16 项。
+共 18 项。
 
 | Prompt | 原始类型 | 模块入口 |
 | --- | --- | --- |
@@ -39,12 +39,14 @@
 | 可测试性分析器 / Testability Analyzer | 需求分析 | [testability-analysis](./testing-types/zh/testability-analysis/README.md) |
 | 测试策略生成器 / Test Strategy Generator | 测试策略 | [test-strategy（默认）](./testing-types/zh/test-strategy/README.md) · [test-strategy-Web](./testing-types/zh/test-strategy-Web/README.md) · [test-strategy-Mobile](./testing-types/zh/test-strategy-Mobile/README.md) |
 | 测试计划生成器 / Test Plan Generator | 测试计划 | [test-plan-design](./testing-types/zh/test-plan-design/README.md) |
+| 测试计划分析器 / Test Plan Analysis | 测试计划 | [test-plan-analysis](./testing-types/zh/test-plan-analysis/README.md) |
 | 测试范围分析器 / Test Scope Analyzer | 测试策略 | [test-scope-analysis](./testing-types/zh/test-scope-analysis/README.md) |
 | 需求梳理 QA 助手 / Refinement QA Assistant | 敏捷测试 | [refinement-qa-assistant](./testing-types/zh/refinement-qa-assistant/README.md) |
 | Sprint Planning QA 助手 / Sprint Planning QA Assistant | 敏捷测试 | [sprint-planning-qa](./testing-types/zh/sprint-planning-qa/README.md) |
 | Sprint 回顾分析器 / Retrospective Analyzer | 敏捷测试 | [retrospective-analysis](./testing-types/zh/retrospective-analysis/README.md) |
 | 业务规则分析器 / Business Rule Analyzer | 需求分析 | [business-rule-analysis](./testing-types/zh/business-rule-analysis/README.md) |
 | 业务流程分析器 / Business Flow Analyzer | 需求分析 | [business-flow-analysis](./testing-types/zh/business-flow-analysis/README.md) |
+| 业务流程测试分析器 / Business Flow Test Analysis | 需求分析 | [business-flow-test-analysis](./testing-types/zh/business-flow-test-analysis/README.md) |
 | 需求依赖分析器 / Requirement Dependency Analyzer | 需求分析 | [requirement-dependency-analysis](./testing-types/zh/requirement-dependency-analysis/README.md) |
 | 需求冲突检测器 / Requirement Conflict Detector | 需求分析 | [requirement-conflict-analysis](./testing-types/zh/requirement-conflict-analysis/README.md) |
 | 非功能需求分析器 / NFR Analyzer | 非功能测试 | [nfr-analysis](./testing-types/zh/nfr-analysis/README.md) |
@@ -85,7 +87,7 @@
 
 ### 3. API、契约、消息与集成
 
-共 32 项。
+共 36 项。
 
 | Prompt | 原始类型 | 模块入口 |
 | --- | --- | --- |
@@ -95,11 +97,15 @@
 | API 契约分析器 / API Contract Analyzer | API 测试 | [api-contract-analysis](./testing-types/zh/api-contract-analysis/README.md) |
 | Pytest 测试生成器 / Pytest Test Generator | 自动化测试 | [api-test-pytest](./testing-types/zh/api-test-pytest/README.md) |
 | Mock API 生成器 / Mock API Generator | Mock 测试 | [mock-api-generation](./testing-types/zh/mock-api-generation/README.md) |
+| Mock API 分析器 / Mock API Analysis | Mock 测试 | [mock-api-analysis](./testing-types/zh/mock-api-analysis/README.md) |
 | API 依赖分析器 / API Dependency Analyzer | API 测试 | [api-dependency-analysis](./testing-types/zh/api-dependency-analysis/README.md) |
+| API 依赖风险分析器 / API Dependency Risk Analysis | API 测试 | [api-dependency-risk-analysis](./testing-types/zh/api-dependency-risk-analysis/README.md) |
 | API 调用链分析器 / API Call Chain Analyzer | API 测试 | [api-call-chain-analysis](./testing-types/zh/api-call-chain-analysis/README.md) |
 | API 回归影响分析器 / API Regression Impact Analyzer | API 测试 | [api-regression-impact](./testing-types/zh/api-regression-impact/README.md) |
+| API 回归测试选择器 / API Regression Test Selection | API 测试 | [api-regression-selector](./testing-types/zh/api-regression-selector/README.md) |
 | API 兼容性分析器 / API Compatibility Analyzer | API 测试 | [api-compatibility-analysis](./testing-types/zh/api-compatibility-analysis/README.md) |
 | API 版本变更分析器 / API Version Change Analyzer | API 测试 | [api-version-change-analysis](./testing-types/zh/api-version-change-analysis/README.md) |
+| API 版本变更风险分析器 / API Version Change Risk Analysis | API 测试 | [api-version-change-risk](./testing-types/zh/api-version-change-risk/README.md) |
 | OpenAPI 规范分析器 / OpenAPI Specification Analyzer | API 测试 | [openapi-specification-analysis](./testing-types/zh/openapi-specification-analysis/README.md) |
 | GraphQL 测试设计器 / GraphQL Test Designer | API 测试 | [graphql-test-design](./testing-types/zh/graphql-test-design/README.md) |
 | WebSocket 测试设计器 / WebSocket Test Designer | API 测试 | [websocket-test-design](./testing-types/zh/websocket-test-design/README.md) |
@@ -215,7 +221,7 @@
 
 ### 7. 数据、数据库与测试环境
 
-共 17 项。
+共 18 项。
 
 | Prompt | 原始类型 | 模块入口 |
 | --- | --- | --- |
@@ -224,6 +230,7 @@
 | SQL 测试数据生成器 / SQL Test Data Generator | 测试数据 | [database-test-data-analysis](./testing-types/zh/database-test-data-analysis/README.md) |
 | WireMock 配置生成器 / WireMock Generator | Mock 测试 | [wiremock-generation](./testing-types/zh/wiremock-generation/README.md) |
 | 故障模拟设计器 / Fault Simulation Designer | Mock 测试 | [fault-simulation-design](./testing-types/zh/fault-simulation-design/README.md) |
+| 故障模拟分析器 / Fault Simulation Analysis | 韧性测试 | [fault-simulation-analysis](./testing-types/zh/fault-simulation-analysis/README.md) |
 | SQL 生成器 / SQL Generator | 数据库测试 | [sql-generation](./testing-types/zh/sql-generation/README.md) |
 | 数据库校验分析器 / Database Validation Analyzer | 数据库测试 | [database-validation-analysis](./testing-types/zh/database-validation-analysis/README.md) |
 | 数据一致性分析器 / Data Consistency Analyzer | 数据库测试 | [data-consistency-analysis](./testing-types/zh/data-consistency-analysis/README.md) |
@@ -241,7 +248,7 @@
 
 ### 8. 缺陷、质量与测试治理
 
-共 24 项。
+共 25 项。
 
 | Prompt | 原始类型 | 模块入口 |
 | --- | --- | --- |
@@ -263,6 +270,7 @@
 | 质量趋势分析器 / Quality Trend Analyzer | 质量管理 | [quality-trend-analysis](./testing-types/zh/quality-trend-analysis/README.md) |
 | 测试覆盖缺口分析器 / Test Coverage Gap Analyzer | 测试治理 | [test-coverage-gap-analysis](./testing-types/zh/test-coverage-gap-analysis/README.md) |
 | 测试资产健康分析器 / Test Asset Health Analyzer | 测试治理 | [test-asset-health-analysis](./testing-types/zh/test-asset-health-analysis/README.md) |
+| 测试资产追踪分析器 / Test Asset Traceability Analysis | 测试治理 | [test-asset-traceability](./testing-types/zh/test-asset-traceability/README.md) |
 | 缺陷逃逸分析器 / Defect Leakage Analyzer | 质量管理 | [defect-leakage-analysis](./testing-types/zh/defect-leakage-analysis/README.md) |
 | 缺陷趋势分析器 / Defect Trend Analyzer | 质量管理 | [defect-trend-analysis](./testing-types/zh/defect-trend-analysis/README.md) |
 | 缺陷聚类分析器 / Defect Clustering Analyzer | 质量管理 | [defect-clustering-analysis](./testing-types/zh/defect-clustering-analysis/README.md) |
@@ -274,13 +282,15 @@
 
 ### 9. 发布、生产与可观测性
 
-共 14 项。
+共 16 项。
 
 | Prompt | 原始类型 | 模块入口 |
 | --- | --- | --- |
 | 发布就绪分析器 / Release Readiness Analyzer | 发布管理 | [release-readiness-analysis](./testing-types/zh/release-readiness-analysis/README.md) |
+| 发布就绪评审器 / Release Readiness Review | 发布管理 | [release-readiness-review](./testing-types/zh/release-readiness-review/README.md) |
 | Go/No-Go 风险分析器 / Go/No-Go Risk Analyzer | 发布管理 | [go-no-go-risk-analysis](./testing-types/zh/go-no-go-risk-analysis/README.md) |
 | 生产验证生成器 / Production Verification Generator | 发布验证 | [production-verification-generation](./testing-types/zh/production-verification-generation/README.md) |
+| 生产验证评审器 / Production Verification Review | 发布验证 | [production-verification-review](./testing-types/zh/production-verification-review/README.md) |
 | 冒烟测试生成器 / Smoke Test Generator | 发布验证 | [smoke-test-generation](./testing-types/zh/smoke-test-generation/README.md) |
 | 发布风险评分器 / Release Risk Scorer | 发布管理 | [release-risk-scoring](./testing-types/zh/release-risk-scoring/README.md) |
 | Hotfix 风险分析器 / Hotfix Risk Analyzer | 发布管理 | [hotfix-risk-analysis](./testing-types/zh/hotfix-risk-analysis/README.md) |
@@ -366,8 +376,7 @@ Workflow 将多个 Prompt 组织成可执行的质量活动，不只是单个模
 
 | 文档 | 用途 |
 | --- | --- |
-| [完整 Prompt 目录](./PROMPT_COVERAGE_200.md) | 200 项能力的分类、模块和入口 |
-| [扩展 Prompt 目录](./PROMPT_COVERAGE_EXTENDED.md) | 200 项基础清单之外的 10 个扩展能力 |
+| [基础 Prompt 目录](./PROMPT_COVERAGE_200.md) | 原始 200 项能力的编号、分类、模块和入口 |
 | [Testing Workflows](./Workflows/zh/README.md) | Router、AI 质量分析、日常、迭代和发布流程 |
 | [贡献指南](./CONTRIBUTING.md) | 贡献、开发、提交和 PR 流程 |
 | [Prompt 编写规范](./PROMPT_AUTHORING_STANDARD.md) | Prompt 与模块 README 的质量要求 |
