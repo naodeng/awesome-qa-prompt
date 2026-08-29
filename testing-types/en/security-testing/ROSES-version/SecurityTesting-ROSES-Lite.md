@@ -1,5 +1,6 @@
 # Security Testing - ROSES Framework (Lightweight Version)
 
+<!-- Prompt purpose: Supports Security Testing - ROSES Framework (Lightweight Version) by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ---
 
 ## ROSES Framework Structure

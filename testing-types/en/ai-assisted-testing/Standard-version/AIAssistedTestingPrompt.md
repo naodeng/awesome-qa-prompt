@@ -1,5 +1,6 @@
 # AI-Assisted Testing Prompt
 
+<!-- Prompt purpose: Supports AI-Assisted Testing by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ---
 
 **Role:** Senior AI-Assisted Testing Expert

@@ -1,5 +1,6 @@
 # UI 自动化测试（Selenium） Prompt
 
+<!-- Prompt purpose: 用于UI 自动化测试（Seleniu的风险识别、证据梳理与可执行测试建议输出。 -->
 面向 Selenium 的 Web UI 自动化测试设计，覆盖页面对象、等待策略、浏览器矩阵和稳定性治理。
 
 ## 使用约束与降级规则

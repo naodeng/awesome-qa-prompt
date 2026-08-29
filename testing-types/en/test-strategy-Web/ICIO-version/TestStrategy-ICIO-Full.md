@@ -1,5 +1,6 @@
 # Test Strategy - ICIO Framework (Full Version) - Web Version
 
+<!-- Prompt purpose: Supports Test Strategy - ICIO Framework (Full Version) - Web Version by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ## Platform Scenario Notes
 
 - **Current Variant:** `Web`

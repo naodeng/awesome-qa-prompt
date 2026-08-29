@@ -1,5 +1,6 @@
 # AI辅助测试 - ROSES框架 (轻量版)
 
+<!-- Prompt purpose: 用于AI辅助测试 - ROSES框架的风险识别、证据梳理与可执行测试建议输出。 -->
 ---
 
 ## ROSES 框架结构

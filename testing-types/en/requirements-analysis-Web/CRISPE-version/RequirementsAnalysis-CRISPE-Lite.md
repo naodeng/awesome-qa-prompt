@@ -1,5 +1,6 @@
 # Requirements Analysis - CRISPE Framework (Lite Version) - Web Version
 
+<!-- Prompt purpose: Supports Requirements Analysis - CRISPE Framework (Lite Version) - Web Version by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ## Platform Scenario Notes
 
 - **Current Variant:** `Web`

@@ -1,5 +1,6 @@
 # Mobile Testing - ICIO Framework (Full Version)
 
+<!-- Prompt purpose: Supports Mobile Testing - ICIO Framework (Full Version) by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ---
 
 ## ICIO Framework Structure

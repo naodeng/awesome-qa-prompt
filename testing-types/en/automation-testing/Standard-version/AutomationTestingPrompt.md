@@ -1,5 +1,6 @@
 # Test Automation Prompt
 
+<!-- Prompt purpose: Supports Test Automation by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ---
 
 **Role:** Senior Test Automation Architect

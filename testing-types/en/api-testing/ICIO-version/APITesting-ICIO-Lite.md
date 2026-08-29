@@ -1,5 +1,6 @@
 # API Testing - ICIO Framework (Lightweight Version)
 
+<!-- Prompt purpose: Supports API Testing - ICIO Framework (Lightweight Version) by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ---
 
 ## ICIO Framework Structure

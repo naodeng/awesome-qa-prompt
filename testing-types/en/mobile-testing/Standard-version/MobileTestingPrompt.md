@@ -1,5 +1,6 @@
 # Mobile Testing Prompt
 
+<!-- Prompt purpose: Supports Mobile Testing by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ---
 
 **Role:** Senior Mobile Testing Expert

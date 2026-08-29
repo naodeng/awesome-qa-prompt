@@ -1,5 +1,6 @@
 # 自动化测试 Prompt
 
+<!-- Prompt purpose: 用于自动化测试的风险识别、证据梳理与可执行测试建议输出。 -->
 ---
 
 **Role:** 资深自动化测试架构师 (Senior Test Automation Architect)

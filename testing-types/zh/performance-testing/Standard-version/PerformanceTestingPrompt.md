@@ -1,5 +1,6 @@
 # 性能测试 Prompt
 
+<!-- Prompt purpose: 用于性能测试的风险识别、证据梳理与可执行测试建议输出。 -->
 ---
 
 **Role:** 资深性能测试专家 (Senior Performance Testing Expert)

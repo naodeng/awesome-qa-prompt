@@ -1,5 +1,6 @@
 # UI Test TestCafe Prompt
 
+<!-- Prompt purpose: Supports UI Test TestCafe by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 A cross-browser UI automation prompt for TestCafe, covering selectors, fixtures, role-based login, and run configuration.
 
 ## Guardrails And Degradation Rules

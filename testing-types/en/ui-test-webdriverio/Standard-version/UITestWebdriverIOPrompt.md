@@ -1,5 +1,6 @@
 # UI Test WebdriverIO Prompt
 
+<!-- Prompt purpose: Supports UI Test WebdriverIO by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 A UI automation prompt for WebdriverIO, covering configuration, services, page objects, parallel runs, and reporting.
 
 ## Guardrails And Degradation Rules

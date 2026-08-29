@@ -1,5 +1,6 @@
 # UI 自动化测试（TestCafe） Prompt
 
+<!-- Prompt purpose: 用于UI 自动化测试（TestCaf的风险识别、证据梳理与可执行测试建议输出。 -->
 面向 TestCafe 的跨浏览器 UI 自动化测试提示词，覆盖 selector、fixture、角色登录和执行配置。
 
 ## 使用约束与降级规则

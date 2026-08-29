@@ -1,5 +1,6 @@
 # Test Strategy Plus Prompt
 
+<!-- Prompt purpose: Supports Test Strategy Plus by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 Extends test strategy with stronger risk layering, scope trade-offs, resource constraints, quality gates, and staged execution.
 
 ## Guardrails And Degradation Rules

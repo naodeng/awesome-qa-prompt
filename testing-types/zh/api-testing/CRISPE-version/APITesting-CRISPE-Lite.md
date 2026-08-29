@@ -1,5 +1,6 @@
 # API测试 - CRISPE框架 (轻量版)
 
+<!-- Prompt purpose: 用于API测试 - CRISPE框架的风险识别、证据梳理与可执行测试建议输出。 -->
 ---
 
 ## CRISPE 框架结构

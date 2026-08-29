@@ -1,5 +1,6 @@
 # Testing Prompt Router Prompt
 
+<!-- Prompt purpose: Supports Testing Prompt Router by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 Recommends the testing-type prompts or workflow prompts to use based on the user goal, context, and constraints, including order of use.
 
 ## Guardrails And Degradation Rules

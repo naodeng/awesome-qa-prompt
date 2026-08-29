@@ -1,5 +1,6 @@
 # 安全测试 Prompt
 
+<!-- Prompt purpose: 用于安全测试的风险识别、证据梳理与可执行测试建议输出。 -->
 ---
 
 **Role:** 资深安全测试专家 (Senior Security Testing Expert)

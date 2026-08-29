@@ -1,5 +1,6 @@
 # 性能测试 - LangGPT框架 (轻量版)
 
+<!-- Prompt purpose: 用于性能测试 - LangGPT框架的风险识别、证据梳理与可执行测试建议输出。 -->
 ---
 
 ## LangGPT 结构化提示词框架

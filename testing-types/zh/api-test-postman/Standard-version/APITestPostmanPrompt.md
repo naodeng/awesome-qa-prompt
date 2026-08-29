@@ -1,5 +1,6 @@
 # API 测试（Postman） Prompt
 
+<!-- Prompt purpose: 用于API 测试（Postman）的风险识别、证据梳理与可执行测试建议输出。 -->
 面向 Postman Collection、环境变量、断言脚本和 Newman/CI 执行的 API 测试提示词。
 
 ## 使用约束与降级规则

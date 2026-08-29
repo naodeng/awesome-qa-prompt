@@ -1,5 +1,6 @@
 # API Test Bruno Prompt
 
+<!-- Prompt purpose: Supports API Test Bruno by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 Turns API materials into a maintainable Bruno collection plan with environments, auth, request grouping, assertions, and CI guidance.
 
 ## Guardrails And Degradation Rules

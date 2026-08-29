@@ -1,5 +1,6 @@
 # Functional Testing - RISE Framework (Lightweight Version) - Web Version
 
+<!-- Prompt purpose: Supports Functional Testing - RISE Framework (Lightweight Version) - Web Version by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ## Platform Scenario Notes
 
 - **Current Variant:** `Web`

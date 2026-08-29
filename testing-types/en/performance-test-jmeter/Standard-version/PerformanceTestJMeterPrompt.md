@@ -1,5 +1,6 @@
 # Performance Test JMeter Prompt
 
+<!-- Prompt purpose: Supports Performance Test JMeter by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 A JMeter performance testing prompt covering thread groups, samplers, parametrization, assertions, listeners, and distributed execution.
 
 ## Guardrails And Degradation Rules

@@ -1,5 +1,6 @@
 # Bug Reporting Prompt (Lite Version)
 
+<!-- Prompt purpose: Supports Bug Reporting Prompt (Lite Version) by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ---
 
 **Role:** Senior Bug Management Expert

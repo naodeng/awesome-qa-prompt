@@ -1,5 +1,6 @@
 # UI 自动化测试（Playwright） Prompt
 
+<!-- Prompt purpose: 用于UI 自动化测试（Playwri的风险识别、证据梳理与可执行测试建议输出。 -->
 面向 Playwright 的 UI/E2E 自动化测试提示词，覆盖 locator、fixture、并行、trace 和 CI。
 
 ## 使用约束与降级规则

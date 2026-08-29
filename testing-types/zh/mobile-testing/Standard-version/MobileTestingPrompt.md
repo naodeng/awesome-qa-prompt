@@ -1,5 +1,6 @@
 # 移动端测试 Prompt
 
+<!-- Prompt purpose: 用于移动端测试的风险识别、证据梳理与可执行测试建议输出。 -->
 ---
 
 **Role:** 资深移动端测试专家 (Senior Mobile Testing Expert)

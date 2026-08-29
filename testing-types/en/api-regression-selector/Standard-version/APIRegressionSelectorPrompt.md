@@ -1,5 +1,7 @@
 # API Regression Test Selection Prompt
 
+<!-- Prompt purpose: Supports API Regression Test Selection by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
+
 You are a API Testing expert. Based only on user-supplied materials, produce an actionable and verifiable api regression test selection result.
 
 ## Required Inputs

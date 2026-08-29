@@ -1,5 +1,6 @@
 # API Test Pytest Prompt
 
+<!-- Prompt purpose: Supports API Test Pytest by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 Designs API automation with pytest plus requests/httpx, covering fixtures, parametrization, assertions, test data, and CI.
 
 ## Guardrails And Degradation Rules

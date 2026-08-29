@@ -1,5 +1,6 @@
 # UI 自动化测试（WebdriverIO） Prompt
 
+<!-- Prompt purpose: 用于UI 自动化测试（Webdriv的风险识别、证据梳理与可执行测试建议输出。 -->
 面向 WebdriverIO 的 UI 自动化测试提示词，覆盖配置、服务、页面对象、并行和报告。
 
 ## 使用约束与降级规则
