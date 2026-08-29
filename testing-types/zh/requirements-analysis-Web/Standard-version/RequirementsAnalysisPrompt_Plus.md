@@ -1,6 +1,6 @@
 # 需求分析 Prompt Plus（多格式需求文档） - Web端版
 
-<!-- Prompt purpose: 用于需求分析 Prompt Plus的风险识别、证据梳理与可执行测试建议输出。 -->
+<!-- Prompt purpose: 用于需求分析 Prompt Plus（多格式需求文档） - Web端版的风险识别、证据梳理与可执行测试建议输出。 -->
 ## 平台场景说明
 
 - **当前版本：** `Web`

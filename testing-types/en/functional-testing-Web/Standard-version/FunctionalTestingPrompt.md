@@ -1,6 +1,6 @@
 # Functional Testing Prompt - Web Version
 
-<!-- Prompt purpose: Supports Functional Testing Version by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
+<!-- Prompt purpose: Supports Functional Testing Prompt - Web Version by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ## Platform Scenario Notes
 
 - **Current Variant:** `Web`

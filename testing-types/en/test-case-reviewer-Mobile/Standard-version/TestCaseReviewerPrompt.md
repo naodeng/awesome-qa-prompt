@@ -1,6 +1,6 @@
 # Test Case Review Prompt - Mobile Version
 
-<!-- Prompt purpose: Supports Test Case Review Version by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
+<!-- Prompt purpose: Supports Test Case Review Prompt - Mobile Version by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ## Platform Scenario Notes
 
 - **Current Variant:** `Mobile`
