@@ -1,6 +1,6 @@
-# Test Case Writing - RISE Framework (Full Version) - Default Version
+# Test Case Writing - RISE Framework (Full Version)
 
-<!-- Prompt purpose: Supports Test Case Writing - RISE Framework (Full Version) - Default Version by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
+<!-- Prompt purpose: Supports Test Case Writing - RISE Framework (Full Version) by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ## Platform Scenario Notes
 
 - **Current Variant:** `Default`

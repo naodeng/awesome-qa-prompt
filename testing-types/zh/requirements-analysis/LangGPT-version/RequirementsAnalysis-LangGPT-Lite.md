@@ -1,4 +1,4 @@
-# 需求分析 - LangGPT框架 (精简版) - Default版
+# 需求分析 - LangGPT框架 (精简版)
 
 <!-- Prompt purpose: 用于需求分析 - LangGPT框架的风险识别、证据梳理与可执行测试建议输出。 -->
 ## 平台场景说明

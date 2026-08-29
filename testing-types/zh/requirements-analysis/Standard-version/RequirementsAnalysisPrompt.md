@@ -1,6 +1,6 @@
-# 需求分析 Prompt - Default版
+# 需求分析 Prompt
 
-<!-- Prompt purpose: 用于需求分析 Prompt - De的风险识别、证据梳理与可执行测试建议输出。 -->
+<!-- Prompt purpose: 用于需求分析 Prompt的风险识别、证据梳理与可执行测试建议输出。 -->
 ## 平台场景说明
 
 - **当前版本：** `Default`
