@@ -1,6 +1,6 @@
-# Test Case Writing - LangGPT Framework (Lite Version) - Default Version
+# Test Case Writing - LangGPT Framework (Lite Version)
 
-<!-- Prompt purpose: Supports Test Case Writing - LangGPT Framework (Lite Version) - Default Version by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
+<!-- Prompt purpose: Supports Test Case Writing - LangGPT Framework (Lite Version) by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ## Platform Scenario Notes
 
 - **Current Variant:** `Default`

@@ -1,4 +1,4 @@
-# 需求分析 Prompt Plus（多格式需求文档） - Default版
+# 需求分析 Prompt Plus（多格式需求文档）
 
 <!-- Prompt purpose: 用于需求分析 Prompt Plus的风险识别、证据梳理与可执行测试建议输出。 -->
 ## 平台场景说明

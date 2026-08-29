@@ -1,6 +1,6 @@
-# 手动测试 Prompt - Default版
+# 手动测试 Prompt
 
-<!-- Prompt purpose: 用于手动测试 Prompt - De的风险识别、证据梳理与可执行测试建议输出。 -->
+<!-- Prompt purpose: 用于手动测试 Prompt的风险识别、证据梳理与可执行测试建议输出。 -->
 ## 平台场景说明
 
 - **当前版本：** `Default`

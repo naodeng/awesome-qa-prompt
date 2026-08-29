@@ -1,6 +1,6 @@
-# Test Strategy - ROSES Framework (Lightweight Version) - Default Version
+# Test Strategy - ROSES Framework (Lightweight Version)
 
-<!-- Prompt purpose: Supports Test Strategy - ROSES Framework (Lightweight Version) - Default Version by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
+<!-- Prompt purpose: Supports Test Strategy - ROSES Framework (Lightweight Version) by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ## Platform Scenario Notes
 
 - **Current Variant:** `Default`

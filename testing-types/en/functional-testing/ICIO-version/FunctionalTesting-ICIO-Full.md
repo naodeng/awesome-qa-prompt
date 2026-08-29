@@ -1,6 +1,6 @@
-# Functional Testing - ICIO Framework (Full Version) - Default Version
+# Functional Testing - ICIO Framework (Full Version)
 
-<!-- Prompt purpose: Supports Functional Testing - ICIO Framework (Full Version) - Default Version by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
+<!-- Prompt purpose: Supports Functional Testing - ICIO Framework (Full Version) by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ## Platform Scenario Notes
 
 - **Current Variant:** `Default`

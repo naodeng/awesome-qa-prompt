@@ -1,6 +1,6 @@
-# 测试用例评审 Prompt - Default版
+# 测试用例评审 Prompt
 
-<!-- Prompt purpose: 用于测试用例评审 Prompt - 的风险识别、证据梳理与可执行测试建议输出。 -->
+<!-- Prompt purpose: 用于测试用例评审 Prompt的风险识别、证据梳理与可执行测试建议输出。 -->
 ## 平台场景说明
 
 - **当前版本：** `Default`
