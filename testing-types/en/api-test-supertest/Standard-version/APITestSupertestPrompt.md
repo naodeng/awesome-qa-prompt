@@ -1,5 +1,6 @@
 # API Test Supertest Prompt
 
+<!-- Prompt purpose: Supports API Test Supertest by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 An API testing prompt for Node.js Supertest, suited to Express, Koa, NestJS, and similar service APIs.
 
 ## Guardrails And Degradation Rules

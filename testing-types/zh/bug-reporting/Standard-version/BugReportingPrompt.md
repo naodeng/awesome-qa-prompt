@@ -1,5 +1,6 @@
 # 缺陷上报 Prompt
 
+<!-- Prompt purpose: 用于缺陷上报的风险识别、证据梳理与可执行测试建议输出。 -->
 ---
 
 **Role:** 资深缺陷管理专家 (Senior Bug Management Expert)

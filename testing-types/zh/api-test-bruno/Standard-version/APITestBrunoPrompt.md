@@ -1,5 +1,6 @@
 # API 测试（Bruno） Prompt
 
+<!-- Prompt purpose: 用于API 测试（Bruno）的风险识别、证据梳理与可执行测试建议输出。 -->
 把接口材料整理成可维护的 Bruno collection 方案，覆盖环境变量、鉴权、请求分组、断言和 CI 执行建议。
 
 ## 使用约束与降级规则

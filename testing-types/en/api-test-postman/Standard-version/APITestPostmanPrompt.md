@@ -1,5 +1,6 @@
 # API Test Postman Prompt
 
+<!-- Prompt purpose: Supports API Test Postman by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 An API testing prompt for Postman Collections, environments, assertions, and Newman/CI execution.
 
 ## Guardrails And Degradation Rules

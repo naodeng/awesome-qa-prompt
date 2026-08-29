@@ -1,5 +1,6 @@
 # UI Test Puppeteer Prompt
 
+<!-- Prompt purpose: Supports UI Test Puppeteer by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 A browser automation testing prompt for Puppeteer, suited to page behavior checks, screenshots, performance observation, and lightweight regression.
 
 ## Guardrails And Degradation Rules

@@ -1,5 +1,6 @@
 # OWASP Risk Analysis Prompt
 
+<!-- Prompt purpose: Supports OWASP Risk Analysis by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 You are a security and QA expert. Based on supplied requirements, architecture, configuration, and evidence, analyze OWASP risk categories, attack surfaces, evidence, and validation directions and produce an executable test design.
 
 ## Required Inputs

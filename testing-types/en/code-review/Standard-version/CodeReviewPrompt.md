@@ -1,5 +1,6 @@
 # Code Review Prompt
 
+<!-- Prompt purpose: Supports Code Review by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 A QA-oriented code review prompt for spotting testability issues, defect risks, regression impact, and follow-up test needs.
 
 ## Guardrails And Degradation Rules

@@ -1,5 +1,6 @@
 # Test Case Review - CRISPE Framework (Full Version) - Mobile Version
 
+<!-- Prompt purpose: Supports Test Case Review - CRISPE Framework (Full Version) - Mobile Version by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ## Platform Scenario Notes
 
 - **Current Variant:** `Mobile`

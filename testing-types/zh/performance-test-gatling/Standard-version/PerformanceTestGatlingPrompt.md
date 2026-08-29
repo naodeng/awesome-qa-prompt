@@ -1,5 +1,6 @@
 # 性能测试（Gatling） Prompt
 
+<!-- Prompt purpose: 用于性能测试（Gatling）的风险识别、证据梳理与可执行测试建议输出。 -->
 面向 Gatling 的性能测试提示词，覆盖 simulation、注入模型、断言、数据 feeder 和报告解读。
 
 ## 使用约束与降级规则

@@ -1,5 +1,6 @@
 # Test Case Writer Plus Prompt
 
+<!-- Prompt purpose: Supports Test Case Writer Plus by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 Extends test case writing with stronger scenario decomposition, data combinations, boundaries, exceptions, traceability, and review readiness.
 
 ## Guardrails And Degradation Rules

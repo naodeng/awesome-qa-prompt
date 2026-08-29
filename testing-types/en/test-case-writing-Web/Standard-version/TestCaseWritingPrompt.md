@@ -1,5 +1,6 @@
 # Test Case Writing Prompt - Web Version
 
+<!-- Prompt purpose: Supports Test Case Writing Prompt - Web Version by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ## Platform Scenario Notes
 
 - **Current Variant:** `Web`

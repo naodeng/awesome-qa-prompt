@@ -1,5 +1,6 @@
 # Test Case Reviewer Plus Prompt
 
+<!-- Prompt purpose: Supports Test Case Reviewer Plus by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 Extends test case review with stronger gap detection, risk ranking, executability checks, requirement traceability, and revision advice.
 
 ## Guardrails And Degradation Rules

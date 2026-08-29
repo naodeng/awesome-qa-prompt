@@ -1,5 +1,6 @@
 # API 测试（Pytest） Prompt
 
+<!-- Prompt purpose: 用于API 测试（Pytest）的风险识别、证据梳理与可执行测试建议输出。 -->
 面向 pytest + requests/httpx 的 API 自动化测试设计，覆盖 fixture、参数化、断言、数据管理和 CI。
 
 ## 使用约束与降级规则

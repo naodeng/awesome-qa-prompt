@@ -1,5 +1,6 @@
 # UI 自动化测试（Cypress） Prompt
 
+<!-- Prompt purpose: 用于UI 自动化测试（Cypress的风险识别、证据梳理与可执行测试建议输出。 -->
 面向 Cypress 的 UI/E2E 测试提示词，覆盖 spec 组织、命令封装、网络桩、断言和 CI 分层。
 
 ## 使用约束与降级规则

@@ -1,5 +1,6 @@
 # 测试报告 Prompt
 
+<!-- Prompt purpose: 用于测试报告的风险识别、证据梳理与可执行测试建议输出。 -->
 ---
 
 **Role:** 资深测试报告分析师 (Senior Test Reporting Analyst)

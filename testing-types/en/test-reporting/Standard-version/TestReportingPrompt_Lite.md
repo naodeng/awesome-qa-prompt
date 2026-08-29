@@ -1,5 +1,6 @@
 # Test Reporting Prompt (Lite Version)
 
+<!-- Prompt purpose: Supports Test Reporting Prompt (Lite Version) by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ---
 
 **Role:** Senior Test Reporting Expert

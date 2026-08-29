@@ -1,5 +1,6 @@
 # UI Test Selenium Prompt
 
+<!-- Prompt purpose: Supports UI Test Selenium by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 Designs Selenium Web UI automation, covering page objects, wait strategy, browser matrix, and stability practices.
 
 ## Guardrails And Degradation Rules

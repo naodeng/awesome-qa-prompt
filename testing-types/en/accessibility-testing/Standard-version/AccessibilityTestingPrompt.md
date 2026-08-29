@@ -1,5 +1,6 @@
 # Accessibility Testing Prompt
 
+<!-- Prompt purpose: Supports Accessibility Testing by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ---
 
 **Role:** Senior Accessibility Testing Expert

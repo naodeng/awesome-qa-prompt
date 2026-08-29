@@ -1,5 +1,6 @@
 # UI Test Cypress Prompt
 
+<!-- Prompt purpose: Supports UI Test Cypress by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 A UI/E2E testing prompt for Cypress, covering spec structure, custom commands, network stubs, assertions, and CI layering.
 
 ## Guardrails And Degradation Rules

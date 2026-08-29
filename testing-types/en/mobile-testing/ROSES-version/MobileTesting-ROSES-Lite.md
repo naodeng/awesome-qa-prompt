@@ -1,5 +1,6 @@
 # Mobile Testing - ROSES Framework (Lite Version)
 
+<!-- Prompt purpose: Supports Mobile Testing - ROSES Framework (Lite Version) by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ---
 
 ## ROSES Framework Structure

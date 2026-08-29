@@ -1,5 +1,6 @@
 # UI Test Playwright Prompt
 
+<!-- Prompt purpose: Supports UI Test Playwright by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 A UI/E2E automation prompt for Playwright, covering locators, fixtures, parallelism, traces, and CI.
 
 ## Guardrails And Degradation Rules

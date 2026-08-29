@@ -1,5 +1,6 @@
 # 测试用例编写 - CRISPE框架 (轻量版) - Default版
 
+<!-- Prompt purpose: 用于测试用例编写 - CRISPE框的风险识别、证据梳理与可执行测试建议输出。 -->
 ## 平台场景说明
 
 - **当前版本：** `Default`

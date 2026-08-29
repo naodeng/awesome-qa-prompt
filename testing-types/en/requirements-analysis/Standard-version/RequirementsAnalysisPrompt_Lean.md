@@ -1,5 +1,6 @@
 # Requirements Analysis Prompt (300-Words Limit) - Default Version
 
+<!-- Prompt purpose: Supports Requirements Analysis Prompt (300-Words Limit) - Default Version by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ## Usage Constraints and Degradation Rules
 
 ### Input Completeness Check

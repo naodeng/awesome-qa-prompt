@@ -1,5 +1,6 @@
 # API 测试（Supertest） Prompt
 
+<!-- Prompt purpose: 用于API 测试（Supertest的风险识别、证据梳理与可执行测试建议输出。 -->
 面向 Node.js Supertest 的 API 测试提示词，适合 Express/Koa/NestJS 等服务端接口测试。
 
 ## 使用约束与降级规则

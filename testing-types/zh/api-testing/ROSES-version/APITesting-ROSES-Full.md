@@ -1,5 +1,6 @@
 # API测试 - ROSES框架 (完整版)
 
+<!-- Prompt purpose: 用于API测试 - ROSES框架 的风险识别、证据梳理与可执行测试建议输出。 -->
 ---
 
 ## ROSES 框架结构

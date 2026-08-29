@@ -1,5 +1,6 @@
 # API Test Rest Assured Prompt
 
+<!-- Prompt purpose: Supports API Test Rest Assured by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 An API automation prompt for the Java Rest Assured stack, covering request wrappers, assertions, contracts, and pipeline integration.
 
 ## Guardrails And Degradation Rules

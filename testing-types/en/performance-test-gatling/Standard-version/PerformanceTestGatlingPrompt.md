@@ -1,5 +1,6 @@
 # Performance Test Gatling Prompt
 
+<!-- Prompt purpose: Supports Performance Test Gatling by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 A Gatling performance testing prompt covering simulations, injection models, assertions, feeders, and report interpretation.
 
 ## Guardrails And Degradation Rules

@@ -1,5 +1,6 @@
 # 可访问性测试 Prompt
 
+<!-- Prompt purpose: 用于可访问性测试的风险识别、证据梳理与可执行测试建议输出。 -->
 ---
 
 **Role:** 资深可访问性测试专家 (Senior Accessibility Testing Expert)

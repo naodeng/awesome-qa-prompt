@@ -1,5 +1,6 @@
 # AI辅助测试 Prompt
 
+<!-- Prompt purpose: 用于AI辅助测试的风险识别、证据梳理与可执行测试建议输出。 -->
 ---
 
 **Role:** 资深AI辅助测试专家 (Senior AI-Assisted Testing Expert)

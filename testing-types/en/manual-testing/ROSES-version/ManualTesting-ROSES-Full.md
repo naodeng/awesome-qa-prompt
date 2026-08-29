@@ -1,5 +1,6 @@
 # Manual Testing - ROSES Framework (Full Version) - Default Version
 
+<!-- Prompt purpose: Supports Manual Testing - ROSES Framework (Full Version) - Default Version by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ## Platform Scenario Notes
 
 - **Current Variant:** `Default`

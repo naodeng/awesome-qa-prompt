@@ -1,5 +1,6 @@
 # Bug Reporting - LangGPT Framework (Lite Version)
 
+<!-- Prompt purpose: Supports Bug Reporting - LangGPT Framework (Lite Version) by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ---
 
 ## LangGPT Structured Prompt Framework

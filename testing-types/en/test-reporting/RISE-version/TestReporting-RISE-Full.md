@@ -1,5 +1,6 @@
 # Test Reporting - RISE Framework (Full Version)
 
+<!-- Prompt purpose: Supports Test Reporting - RISE Framework (Full Version) by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ---
 
 ## RISE Framework Structure

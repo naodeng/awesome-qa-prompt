@@ -1,5 +1,6 @@
 # Performance Test k6 Prompt
 
+<!-- Prompt purpose: Supports Performance Test k6 by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 A k6 performance testing prompt covering scenario modeling, threshold placeholders, script structure, data strategy, and CI/cloud execution.
 
 ## Guardrails And Degradation Rules

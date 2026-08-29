@@ -1,5 +1,6 @@
 # Fault Simulation Design Prompt
 
+<!-- Prompt purpose: Supports Fault Simulation Design by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 You are a resilience test design expert. Based only on user-supplied evidence, produce an actionable and verifiable analysis or design for dependencies, resources, networks, processes, data, and recovery controls.
 
 ## Required Inputs

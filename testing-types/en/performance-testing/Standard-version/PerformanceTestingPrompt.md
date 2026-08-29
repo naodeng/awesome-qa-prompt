@@ -1,5 +1,6 @@
 # Performance Testing Prompt
 
+<!-- Prompt purpose: Supports Performance Testing by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ---
 
 **Role:** Senior Performance Testing Expert

@@ -1,5 +1,6 @@
 # API 测试（Rest Assured） Prompt
 
+<!-- Prompt purpose: 用于API 测试（Rest Assu的风险识别、证据梳理与可执行测试建议输出。 -->
 面向 Java Rest Assured 技术栈的 API 自动化测试提示词，覆盖请求封装、断言、契约和流水线集成。
 
 ## 使用约束与降级规则

@@ -1,5 +1,6 @@
 # API测试 Prompt
 
+<!-- Prompt purpose: 用于API测试的风险识别、证据梳理与可执行测试建议输出。 -->
 ---
 
 **Role:** 资深API测试专家 (Senior API Testing Expert)

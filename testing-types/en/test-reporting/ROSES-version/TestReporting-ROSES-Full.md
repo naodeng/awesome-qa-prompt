@@ -1,5 +1,6 @@
 # Test Reporting - ROSES Framework (Full Version)
 
+<!-- Prompt purpose: Supports Test Reporting - ROSES Framework (Full Version) by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ---
 
 ## ROSES Framework Structure

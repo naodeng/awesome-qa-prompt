@@ -1,5 +1,6 @@
 # Test Reporting - CRISPE Framework (Lite Version)
 
+<!-- Prompt purpose: Supports Test Reporting - CRISPE Framework (Lite Version) by organizing input evidence, constraints, risks, validation priorities, decision criteria, and actionable QA next steps without inventing facts. -->
 ---
 
 ## CRISPE Framework Structure
