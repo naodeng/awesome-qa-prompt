@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "purpose": "Static evaluation contract for AI-generated test-review Prompts. These fixtures define expected classifications; run them against a target model separately and compare its structured output with this contract.",
+  "fixtures": [
+    {
+      "id": "no-assertion",
+      "testType": "unit",
+      "inputSummary": "Calls calculateTotal but contains no assertion.",
+      "expectedClassification": "FAKE",
+      "expectedReason": "Execution without an observable assertion gives no regression protection.",
+      "expectedBusinessAssertion": "An independently calculated total for a representative cart.",
+      "minimalRegression": "Return zero for every cart."
+    },
+    {
+      "id": "tautology",
+      "testType": "unit",
+      "inputSummary": "Uses expect(true).toBe(true) after calling the subject.",
+      "expectedClassification": "FAKE",
+      "expectedReason": "The assertion cannot fail because of production behavior.",
+      "expectedBusinessAssertion": "An observable result produced by the subject.",
+      "minimalRegression": "Invert the calculation result."
+    },
+    {
+      "id": "self-comparison",
+      "testType": "unit",
+      "inputSummary": "Uses expect(result).toEqual(result).",
+      "expectedClassification": "FAKE",
+      "expectedReason": "The expected value is derived from the same value under test.",
+      "expectedBusinessAssertion": "An independently derived expected value.",
+      "minimalRegression": "Return the wrong tax rate."
+    },
+    {
+      "id": "mocked-subject",
+      "testType": "unit",
+      "inputSummary": "Replaces the order service under test and asserts only mock call count.",
+      "expectedClassification": "FAKE",
+      "expectedReason": "The real subject and its business outcome are not exercised.",
+      "expectedBusinessAssertion": "The real service returns the expected order total.",
+      "minimalRegression": "Apply a discount twice."
+    },
+    {
+      "id": "status-only",
+      "testType": "api",
+      "inputSummary": "POST /orders asserts only HTTP 200.",
+      "expectedClassification": "WEAK",
+      "expectedReason": "Transport success does not prove the order business state is correct.",
+      "expectedBusinessAssertion": "Contract-backed order status and persisted amount.",
+      "minimalRegression": "Persist the order as unpaid while returning 200."
+    },
+    {
+      "id": "legal-third-party-mock",
+      "testType": "e2e",
+      "inputSummary": "Uses a documented payment-gateway sandbox stub while exercising the real checkout subject and asserting order status and amount.",
+      "expectedClassification": "STRONG",
+      "expectedReason": "An uncontrollable third-party dependency is isolated, but the claimed business behavior remains observable through the real subject.",
+      "expectedBusinessAssertion": "The order is persisted as paid with the expected amount.",
+      "minimalRegression": "Persist the wrong payment amount."
+    },
+    {
+      "id": "business-assertion",
+      "testType": "functional",
+      "inputSummary": "Saves an address, then queries the real application state and asserts independently specified normalized fields.",
+      "expectedClassification": "STRONG",
+      "expectedReason": "The test asserts a meaningful business postcondition independent of implementation details.",
+      "expectedBusinessAssertion": "Persisted normalized address fields match the acceptance criteria.",
+      "minimalRegression": "Drop the postal code during normalization."
+    },
+    {
+      "id": "insufficient-evidence",
+      "testType": "unknown",
+      "inputSummary": "A test name and a fragment are provided, but neither code nor a business rule is available.",
+      "expectedClassification": "待确认",
+      "expectedReason": "The available evidence cannot establish exercised production behavior or expected outcome.",
+      "expectedBusinessAssertion": "Requires a supplied requirement or source-backed behavior.",
+      "minimalRegression": "Cannot be stated without inventing behavior."
+    }
+  ]
+}

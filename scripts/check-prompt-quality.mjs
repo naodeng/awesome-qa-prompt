@@ -16,8 +16,8 @@ if (!existsSync(coveragePath)) {
     .map((match) => ({ id: Number(match[1]), module: match[2] }));
   const ids = rows.map(({ id }) => id);
 
-  if (rows.length !== 200) errors.push(`Coverage matrix must contain 200 mappings; found ${rows.length}.`);
-  for (let id = 1; id <= 200; id += 1) {
+  if (rows.length !== 205) errors.push(`Coverage matrix must contain 205 mappings; found ${rows.length}.`);
+  for (let id = 1; id <= 205; id += 1) {
     if (ids.filter((value) => value === id).length !== 1) errors.push(`Coverage ID ${id} must appear exactly once.`);
   }
 
@@ -29,7 +29,7 @@ if (!existsSync(coveragePath)) {
       .map((match) => ({ id: Number(match[1]), module: match[2] }));
     const zhMapping = rows.map(({ id, module }) => `${id}:${module}`);
     const enMapping = enRows.map(({ id, module }) => `${id}:${module}`);
-    if (enRows.length !== 200) errors.push(`English coverage catalog must contain 200 mappings; found ${enRows.length}.`);
+    if (enRows.length !== 205) errors.push(`English coverage catalog must contain 205 mappings; found ${enRows.length}.`);
     if (zhMapping.join('\n') !== enMapping.join('\n')) errors.push('Chinese and English coverage catalogs must use identical ID-to-module mappings.');
   }
 

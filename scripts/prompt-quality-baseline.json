@@ -1,9 +1,14 @@
 {
   "version": 1,
-  "description": "Modules added for the 200-item QA Prompt coverage baseline.",
+  "description": "Modules added for the 205-item QA Prompt coverage baseline.",
   "modules": [
     "acceptance-criteria-reviewer",
     "agent-tool-call-test-design",
+    "ai-generated-api-test-review",
+    "ai-generated-e2e-test-review",
+    "ai-generated-functional-test-review",
+    "ai-generated-test-review",
+    "ai-generated-unit-test-review",
     "ai-agent-test-design",
     "ai-evaluation-design",
     "ai-feature-test-design",
