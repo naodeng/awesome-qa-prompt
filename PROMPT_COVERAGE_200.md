@@ -1,8 +1,8 @@
 <div align="right"><strong>简体中文</strong> · <a href="./PROMPT_COVERAGE_200_EN.md">English</a></div>
 
-# 200 项 QA Prompt 分类目录
+# 205 项 QA Prompt 分类目录
 
-本目录以 1–200 项能力清单为基准，按使用场景重新归入十个类别。每一项都链接到中文模块入口和可直接复制的 Standard Prompt；英文目录与本目录保持相同编号和模块映射。
+本目录以 1–205 项能力清单为基准，按使用场景重新归入十个类别。每一项都链接到中文模块入口和可直接复制的 Standard Prompt；英文目录与本目录保持相同编号和模块映射。
 
 > “覆盖”表示仓库中存在对应的中英文 Prompt Baseline，不表示已经对真实系统执行测试或得出验证结论。
 
@@ -260,7 +260,7 @@
 
 ## 10. AI 与 LLM 测试
 
-共 13 项。
+共 18 项。
 
 | # | 中文名称 | English name | 原始类型 | 模块 | Standard Prompt |
 | ---: | --- | --- | --- | --- | --- |
@@ -277,5 +277,10 @@
 | 198 | Prompt Injection 测试设计器 | Prompt Injection Test Designer | AI 安全测试 | [prompt-injection-test-design](./testing-types/zh/prompt-injection-test-design/README.md) | [Standard](./testing-types/zh/prompt-injection-test-design/Standard-version/PromptInjectionTestDesignerPrompt.md) |
 | 199 | Agent 测试设计器 | AI Agent Test Designer | AI 测试 | [ai-agent-test-design](./testing-types/zh/ai-agent-test-design/README.md) | [Standard](./testing-types/zh/ai-agent-test-design/Standard-version/AIAgentTestDesignerPrompt.md) |
 | 200 | Agent 工具调用测试器 | Agent Tool-Call Test Designer | AI 测试 | [agent-tool-call-test-design](./testing-types/zh/agent-tool-call-test-design/README.md) | [Standard](./testing-types/zh/agent-tool-call-test-design/Standard-version/AgentToolCallTestDesignerPrompt.md) |
+| 201 | AI 生成测试用例审核器 | AI-Generated Test Reviewer | AI 测试 | [ai-generated-test-review](./testing-types/zh/ai-generated-test-review/README.md) | [Standard](./testing-types/zh/ai-generated-test-review/Standard-version/AIGeneratedTestReviewPrompt.md) |
+| 202 | AI 生成单元测试用例审核器 | AI-Generated Unit Test Reviewer | AI 测试 | [ai-generated-unit-test-review](./testing-types/zh/ai-generated-unit-test-review/README.md) | [Standard](./testing-types/zh/ai-generated-unit-test-review/Standard-version/AIGeneratedUnitTestReviewPrompt.md) |
+| 203 | AI 生成接口测试用例审核器 | AI-Generated API Test Reviewer | AI 测试 | [ai-generated-api-test-review](./testing-types/zh/ai-generated-api-test-review/README.md) | [Standard](./testing-types/zh/ai-generated-api-test-review/Standard-version/AIGeneratedAPITestReviewPrompt.md) |
+| 204 | AI 生成 E2E 测试用例审核器 | AI-Generated E2E Test Reviewer | AI 测试 | [ai-generated-e2e-test-review](./testing-types/zh/ai-generated-e2e-test-review/README.md) | [Standard](./testing-types/zh/ai-generated-e2e-test-review/Standard-version/AIGeneratedE2ETestReviewPrompt.md) |
+| 205 | AI 生成功能测试用例审核器 | AI-Generated Functional Test Reviewer | AI 测试 | [ai-generated-functional-test-review](./testing-types/zh/ai-generated-functional-test-review/README.md) | [Standard](./testing-types/zh/ai-generated-functional-test-review/Standard-version/AIGeneratedFunctionalTestReviewPrompt.md) |
 
 需要把多个 Prompt 组织成连续活动时，请继续查看 [Testing Workflows](./Workflows/zh/README.md)。

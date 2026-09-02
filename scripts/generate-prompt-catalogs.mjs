@@ -11,7 +11,7 @@ if (rows.length === 0) {
     .map((match) => ({ id: Number(match[1]), zh: match[2].trim(), en: match[3].trim(), type: match[4].trim(), module: match[6] }));
 }
 
-if (rows.length !== 200) throw new Error(`Expected 200 source rows, found ${rows.length}.`);
+if (rows.length !== 205) throw new Error(`Expected 205 source rows, found ${rows.length}.`);
 
 const categories = [
   { zh: '需求、规划与测试策略', en: 'Requirements, Planning, And Test Strategy' },
@@ -67,14 +67,14 @@ function render(lang) {
   const zh = lang === 'zh';
   const lines = zh ? [
     '<div align="right"><strong>简体中文</strong> · <a href="./PROMPT_COVERAGE_200_EN.md">English</a></div>',
-    '', '# 200 项 QA Prompt 分类目录', '',
-    '本目录以 1–200 项能力清单为基准，按使用场景重新归入十个类别。每一项都链接到中文模块入口和可直接复制的 Standard Prompt；英文目录与本目录保持相同编号和模块映射。', '',
+    '', '# 205 项 QA Prompt 分类目录', '',
+    '本目录以 1–205 项能力清单为基准，按使用场景重新归入十个类别。每一项都链接到中文模块入口和可直接复制的 Standard Prompt；英文目录与本目录保持相同编号和模块映射。', '',
     '> “覆盖”表示仓库中存在对应的中英文 Prompt Baseline，不表示已经对真实系统执行测试或得出验证结论。', '',
     '[返回项目首页](./README.md) · [Testing Workflows](./Workflows/zh/README.md)',
   ] : [
     '<div align="right"><a href="./PROMPT_COVERAGE_200.md">简体中文</a> · <strong>English</strong></div>',
-    '', '# 200-Capability QA Prompt Catalog', '',
-    'This catalog reorganizes the numbered 1–200 capability list into ten usage-oriented categories. Every item links to its English module entry and copy-ready Standard Prompt; numbering and module mapping mirror the Chinese catalog.', '',
+    '', '# 205-Capability QA Prompt Catalog', '',
+    'This catalog reorganizes the numbered 1–205 capability list into ten usage-oriented categories. Every item links to its English module entry and copy-ready Standard Prompt; numbering and module mapping mirror the Chinese catalog.', '',
     '> “Covered” means that a bilingual Prompt Baseline exists in this repository. It does not mean that tests were run against a real system or that any result was verified.', '',
     '[Back to project home](./README_EN.md) · [Testing Workflows](./Workflows/en/README.md)',
   ];
@@ -107,8 +107,8 @@ function render(lang) {
 function renderReadmeCatalog(lang) {
   const zh = lang === 'zh';
   const lines = [zh ? '## Prompt 分类目录' : '## Prompt Catalog', '', zh
-    ? '当前目录覆盖 **200 项能力、200 个独立模块**。以下十个分类直接展示全部 Prompt；带原始编号和 Standard 文件直链的矩阵见 [完整 Prompt 目录](./PROMPT_COVERAGE_200.md)。'
-    : 'The catalog covers **200 capabilities in 200 independent modules**. All Prompts are listed directly in the ten categories below; see the [complete Prompt catalog](./PROMPT_COVERAGE_200_EN.md) for original numbering and direct Standard-file links.'];
+    ? '当前目录覆盖 **205 项能力、205 个独立模块**。以下十个分类直接展示全部 Prompt；带原始编号和 Standard 文件直链的矩阵见 [完整 Prompt 目录](./PROMPT_COVERAGE_200.md)。'
+    : 'The catalog covers **205 capabilities in 205 independent modules**. All Prompts are listed directly in the ten categories below; see the [complete Prompt catalog](./PROMPT_COVERAGE_200_EN.md) for original numbering and direct Standard-file links.'];
 
   categories.forEach((category, index) => {
     const selected = rows.filter((row) => categoryOf(row) === index);
