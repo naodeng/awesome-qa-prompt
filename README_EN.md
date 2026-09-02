@@ -25,7 +25,7 @@ A **Prompt Baseline for QA work**: copy-ready bilingual prompts with input audit
 
 ## Prompt Catalog
 
-The catalog covers **200 capabilities in 200 independent modules**. All Prompts are listed directly in the ten categories below; see the [complete Prompt catalog](./PROMPT_COVERAGE_200_EN.md) for original numbering and direct Standard-file links.
+The catalog covers **205 capabilities in 205 independent modules**. All Prompts are listed directly in the ten categories below; see the [complete Prompt catalog](./PROMPT_COVERAGE_200_EN.md) for original numbering and direct Standard-file links.
 
 ### 1. Requirements, Planning, And Test Strategy
 
@@ -33,11 +33,11 @@ The catalog covers **200 capabilities in 200 independent modules**. All Prompts 
 
 | Prompt | Original type | Module entry |
 | --- | --- | --- |
-| Requirement Analyzer / 需求分析器 | Requirements Analysis | [requirements-analysis (default)](./testing-types/en/requirements-analysis/README.md) · [requirements-analysis-Web](./testing-types/en/requirements-analysis-Web/README.md) · [requirements-analysis-Mobile](./testing-types/en/requirements-analysis-Mobile/README.md) |
+| Requirement Analyzer / 需求分析器 | Requirements Analysis | [requirements-analysis](./testing-types/en/requirements-analysis/README.md) |
 | Acceptance Criteria Reviewer / 验收标准审查器 | Requirements Analysis | [acceptance-criteria-reviewer](./testing-types/en/acceptance-criteria-reviewer/README.md) |
 | Requirement Gap Analyzer / 需求缺口分析器 | Requirements Analysis | [requirement-gap-analyzer](./testing-types/en/requirement-gap-analyzer/README.md) |
 | Testability Analyzer / 可测试性分析器 | Requirements Analysis | [testability-analysis](./testing-types/en/testability-analysis/README.md) |
-| Test Strategy Generator / 测试策略生成器 | Test Strategy | [test-strategy (default)](./testing-types/en/test-strategy/README.md) · [test-strategy-Web](./testing-types/en/test-strategy-Web/README.md) · [test-strategy-Mobile](./testing-types/en/test-strategy-Mobile/README.md) |
+| Test Strategy Generator / 测试策略生成器 | Test Strategy | [test-strategy](./testing-types/en/test-strategy/README.md) |
 | Test Plan Generator / 测试计划生成器 | Test Planning | [test-plan-design](./testing-types/en/test-plan-design/README.md) |
 | Test Scope Analyzer / 测试范围分析器 | Test Strategy | [test-scope-analysis](./testing-types/en/test-scope-analysis/README.md) |
 | Refinement QA Assistant / 需求梳理 QA 助手 | Agile Testing | [refinement-qa-assistant](./testing-types/en/refinement-qa-assistant/README.md) |
@@ -59,16 +59,16 @@ The catalog covers **200 capabilities in 200 independent modules**. All Prompts 
 | Prompt | Original type | Module entry |
 | --- | --- | --- |
 | Test Scenario Designer / 测试场景设计器 | Test Design | [test-scenario-design](./testing-types/en/test-scenario-design/README.md) |
-| Test Case Generator / 测试用例生成器 | Test Design | [test-case-writing (default)](./testing-types/en/test-case-writing/README.md) · [test-case-writing-Web](./testing-types/en/test-case-writing-Web/README.md) · [test-case-writing-Mobile](./testing-types/en/test-case-writing-Mobile/README.md) |
+| Test Case Generator / 测试用例生成器 | Test Design | [test-case-writing](./testing-types/en/test-case-writing/README.md) |
 | Boundary Value Analyzer / 边界值分析器 | Test Design | [boundary-value-analysis](./testing-types/en/boundary-value-analysis/README.md) |
 | Equivalence Partition Analyzer / 等价类分析器 | Test Design | [equivalence-partition-analysis](./testing-types/en/equivalence-partition-analysis/README.md) |
 | Decision Table Generator / 决策表生成器 | Test Design | [decision-table-analysis](./testing-types/en/decision-table-analysis/README.md) |
 | State Transition Analyzer / 状态转换分析器 | Test Design | [state-transition-analysis](./testing-types/en/state-transition-analysis/README.md) |
 | Pairwise Test Generator / Pairwise 组合测试生成器 | Test Design | [pairwise-test-design](./testing-types/en/pairwise-test-design/README.md) |
-| E2E Scenario Designer / 端到端测试场景设计器 | E2E Testing | [functional-testing (default)](./testing-types/en/functional-testing/README.md) · [functional-testing-Web](./testing-types/en/functional-testing-Web/README.md) · [functional-testing-Mobile](./testing-types/en/functional-testing-Mobile/README.md) |
+| E2E Scenario Designer / 端到端测试场景设计器 | E2E Testing | [functional-testing](./testing-types/en/functional-testing/README.md) |
 | UI Test Designer / UI 测试设计器 | UI Testing | [ui-test-design](./testing-types/en/ui-test-design/README.md) |
 | User Journey Analyzer / 用户旅程分析器 | E2E Testing | [user-journey-analysis](./testing-types/en/user-journey-analysis/README.md) |
-| Exploratory Testing Assistant / 探索式测试助手 | Exploratory Testing | [manual-testing (default)](./testing-types/en/manual-testing/README.md) · [manual-testing-Web](./testing-types/en/manual-testing-Web/README.md) · [manual-testing-Mobile](./testing-types/en/manual-testing-Mobile/README.md) |
+| Exploratory Testing Assistant / 探索式测试助手 | Exploratory Testing | [manual-testing](./testing-types/en/manual-testing/README.md) |
 | Test Charter Generator / 探索式测试章程生成器 | Exploratory Testing | [test-charter-generation](./testing-types/en/test-charter-generation/README.md) |
 | Testing Heuristics Analyzer / 测试启发式分析器 | Test Design | [testing-heuristics-analysis](./testing-types/en/testing-heuristics-analysis/README.md) |
 | Error Guessing Analyzer / 错误猜测分析器 | Test Design | [error-guessing-analysis](./testing-types/en/error-guessing-analysis/README.md) |
@@ -297,7 +297,7 @@ The catalog covers **200 capabilities in 200 independent modules**. All Prompts 
 
 ### 10. AI And LLM Testing
 
-13 capabilities.
+18 capabilities.
 
 | Prompt | Original type | Module entry |
 | --- | --- | --- |
@@ -314,6 +314,11 @@ The catalog covers **200 capabilities in 200 independent modules**. All Prompts 
 | Prompt Injection Test Designer / Prompt Injection 测试设计器 | AI Safety Testing | [prompt-injection-test-design](./testing-types/en/prompt-injection-test-design/README.md) |
 | AI Agent Test Designer / Agent 测试设计器 | AI Testing | [ai-agent-test-design](./testing-types/en/ai-agent-test-design/README.md) |
 | Agent Tool-Call Test Designer / Agent 工具调用测试器 | AI Testing | [agent-tool-call-test-design](./testing-types/en/agent-tool-call-test-design/README.md) |
+| AI-Generated Test Reviewer / AI 生成测试用例审核器 | AI Testing | [ai-generated-test-review](./testing-types/en/ai-generated-test-review/README.md) |
+| AI-Generated Unit Test Reviewer / AI 生成单元测试用例审核器 | AI Testing | [ai-generated-unit-test-review](./testing-types/en/ai-generated-unit-test-review/README.md) |
+| AI-Generated API Test Reviewer / AI 生成接口测试用例审核器 | AI Testing | [ai-generated-api-test-review](./testing-types/en/ai-generated-api-test-review/README.md) |
+| AI-Generated E2E Test Reviewer / AI 生成 E2E 测试用例审核器 | AI Testing | [ai-generated-e2e-test-review](./testing-types/en/ai-generated-e2e-test-review/README.md) |
+| AI-Generated Functional Test Reviewer / AI 生成功能测试用例审核器 | AI Testing | [ai-generated-functional-test-review](./testing-types/en/ai-generated-functional-test-review/README.md) |
 
 [View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#10-ai-and-llm-testing)
 
