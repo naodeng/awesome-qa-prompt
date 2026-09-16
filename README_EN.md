@@ -25,7 +25,7 @@ A **Prompt Baseline for QA work**: copy-ready bilingual prompts with input audit
 
 ## Prompt Catalog
 
-The catalog covers **215 capabilities in 215 independent modules**. All Prompts are listed directly in the ten categories below; the [baseline Prompt catalog](./PROMPT_COVERAGE_200_EN.md) preserves original numbering and direct Standard-file links for the first 200 capabilities.
+The catalog covers **256 capabilities in 256 independent modules**. All Prompts are listed directly in the ten categories below; the [baseline Prompt catalog](./PROMPT_COVERAGE_200_EN.md) preserves original numbering and direct Standard-file links for the first 200 capabilities.
 
 ### 1. Requirements, Planning, And Test Strategy
 
@@ -132,7 +132,7 @@ The catalog covers **215 capabilities in 215 independent modules**. All Prompts 
 
 ### 4. Automation And Test Engineering
 
-16 capabilities.
+20 capabilities.
 
 | Prompt | Original type | Module entry |
 | --- | --- | --- |
@@ -152,12 +152,16 @@ The catalog covers **215 capabilities in 215 independent modules**. All Prompts 
 | Automation Coverage Analyzer / 自动化覆盖率分析器 | Automation Testing | [automation-coverage-analysis](./testing-types/en/automation-coverage-analysis/README.md) |
 | Duplicate Test Detector / 测试重复检测器 | Test Governance | [duplicate-test-detection](./testing-types/en/duplicate-test-detection/README.md) |
 | Obsolete Test Detector / 过期测试检测器 | Test Governance | [obsolete-test-detection](./testing-types/en/obsolete-test-detection/README.md) |
+| Automation ROI Analysis / 自动化投资回报分析 | Automation Testing | [automation-roi-analysis](./testing-types/en/automation-roi-analysis/README.md) |
+| CI Test Pipeline Optimization / CI 测试流水线优化 | DevOps | [ci-test-optimization](./testing-types/en/ci-test-optimization/README.md) |
+| Regression Optimization / 回归优化 | Regression Testing | [regression-optimization](./testing-types/en/regression-optimization/README.md) |
+| Test Runtime Optimization / 测试运行时间优化 | Automation Testing | [test-runtime-optimization](./testing-types/en/test-runtime-optimization/README.md) |
 
 [View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#4-automation-and-test-engineering)
 
 ### 5. Performance, Reliability, And Resilience
 
-35 capabilities.
+45 capabilities.
 
 | Prompt | Original type | Module entry |
 | --- | --- | --- |
@@ -196,12 +200,22 @@ The catalog covers **215 capabilities in 215 independent modules**. All Prompts 
 | Slow Query Analyzer / 数据库慢查询分析器 | Performance Diagnostics | [slow-query-analysis](./testing-types/en/slow-query-analysis/README.md) |
 | Connection Pool Analyzer / 连接池分析器 | Performance Diagnostics | [connection-pool-analysis](./testing-types/en/connection-pool-analysis/README.md) |
 | SLI/SLO Analyzer / SLI/SLO 分析器 | Observability | [sli-slo-analysis](./testing-types/en/sli-slo-analysis/README.md) |
+| Chaos Testing / 混沌测试 | Chaos Testing | [chaos-testing](./testing-types/en/chaos-testing/README.md) |
+| Circuit-Breaker Testing / 熔断器测试 | Resilience Testing | [circuit-breaker-testing](./testing-types/en/circuit-breaker-testing/README.md) |
+| Dependency-Failure Testing / 依赖故障测试 | Resilience Testing | [dependency-failure-testing](./testing-types/en/dependency-failure-testing/README.md) |
+| Disaster-Recovery Testing / 灾备测试 | Disaster Recovery Testing | [disaster-recovery-testing](./testing-types/en/disaster-recovery-testing/README.md) |
+| Failover Testing / 故障切换测试 | Disaster Recovery Testing | [failover-testing](./testing-types/en/failover-testing/README.md) |
+| Recovery Testing / 恢复测试 | Resilience Testing | [recovery-testing](./testing-types/en/recovery-testing/README.md) |
+| Reliability Testing / 可靠性测试 | Reliability Testing | [reliability-testing](./testing-types/en/reliability-testing/README.md) |
+| Resilience Testing / 韧性测试 | Resilience Testing | [resilience-testing](./testing-types/en/resilience-testing/README.md) |
+| Retry Testing / 重试测试 | Resilience Testing | [retry-testing](./testing-types/en/retry-testing/README.md) |
+| Timeout Testing / 超时测试 | API Testing | [timeout-testing](./testing-types/en/timeout-testing/README.md) |
 
 [View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#5-performance-reliability-and-resilience)
 
 ### 6. Security, Privacy, And Accessibility
 
-11 capabilities.
+18 capabilities.
 
 | Prompt | Original type | Module entry |
 | --- | --- | --- |
@@ -216,6 +230,13 @@ The catalog covers **215 capabilities in 215 independent modules**. All Prompts 
 | Data Privacy Test Analyzer / 数据隐私测试分析器 | Security Testing | [data-privacy-analysis](./testing-types/en/data-privacy-analysis/README.md) |
 | Sensitive Data Exposure Analyzer / 敏感数据泄露分析器 | Security Testing | [sensitive-data-exposure-analysis](./testing-types/en/sensitive-data-exposure-analysis/README.md) |
 | Data Masking Analyzer / 数据脱敏分析器 | Test Data | [data-masking-analysis](./testing-types/en/data-masking-analysis/README.md) |
+| API Security Testing / API 安全测试 | Security Testing | [api-security-testing](./testing-types/en/api-security-testing/README.md) |
+| Authentication Testing / 身份认证测试 | Security Testing | [authentication-testing](./testing-types/en/authentication-testing/README.md) |
+| Authorization Testing / 授权测试 | Security Testing | [authorization-testing](./testing-types/en/authorization-testing/README.md) |
+| Secrets-Exposure Review / 敏感信息暴露审查 | Security Review | [secrets-exposure-review](./testing-types/en/secrets-exposure-review/README.md) |
+| Security-Requirement Review / 安全需求审查 | Security Requirements | [security-requirement-review](./testing-types/en/security-requirement-review/README.md) |
+| Session-Security Testing / 会话安全测试 | Security Testing | [session-security-testing](./testing-types/en/session-security-testing/README.md) |
+| Threat Modeling / 威胁建模 | Security Testing | [threat-modeling](./testing-types/en/threat-modeling/README.md) |
 
 [View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#6-security-privacy-and-accessibility)
 
@@ -248,7 +269,7 @@ The catalog covers **215 capabilities in 215 independent modules**. All Prompts 
 
 ### 8. Defects, Quality, And Test Governance
 
-25 capabilities.
+33 capabilities.
 
 | Prompt | Original type | Module entry |
 | --- | --- | --- |
@@ -275,8 +296,16 @@ The catalog covers **215 capabilities in 215 independent modules**. All Prompts 
 | Defect Trend Analyzer / 缺陷趋势分析器 | Quality Management | [defect-trend-analysis](./testing-types/en/defect-trend-analysis/README.md) |
 | Defect Clustering Analyzer / 缺陷聚类分析器 | Quality Management | [defect-clustering-analysis](./testing-types/en/defect-clustering-analysis/README.md) |
 | Defect Prediction Analyzer / 缺陷预测分析器 | Quality Management | [defect-prediction-analysis](./testing-types/en/defect-prediction-analysis/README.md) |
-| Test Effectiveness Analyzer / 测试有效性分析器 | Quality Management | [test-effectiveness-analysis](./testing-types/en/test-effectiveness-analysis/README.md) |
 | Quality Gate Analyzer / 质量门禁分析器 | Quality Management | [quality-gate-analysis](./testing-types/en/quality-gate-analysis/README.md) |
+| Quality Dashboard Design / 质量仪表盘设计 | Quality Management | [quality-dashboard-design](./testing-types/en/quality-dashboard-design/README.md) |
+| Quality Debt Analysis / 质量债务分析 | Quality Management | [quality-debt-analysis](./testing-types/en/quality-debt-analysis/README.md) |
+| Quality Gate Design / 质量门禁设计 | Quality Management | [quality-gate-design](./testing-types/en/quality-gate-design/README.md) |
+| Quality Maturity Assessment / 质量成熟度评估 | Quality Management | [quality-maturity-assessment](./testing-types/en/quality-maturity-assessment/README.md) |
+| Quality Metrics Design / 质量指标设计 | Quality Management | [quality-metrics-design](./testing-types/en/quality-metrics-design/README.md) |
+| Quality Productivity Metrics / 质量生产力指标 | Quality Management | [quality-productivity-metrics](./testing-types/en/quality-productivity-metrics/README.md) |
+| Test Effectiveness Analyzer / 测试有效性分析器 | Quality Management | [test-effectiveness-analysis](./testing-types/en/test-effectiveness-analysis/README.md) |
+| Test Maintenance Cost Analysis / 测试维护成本分析 | Test Governance | [test-maintenance-cost-analysis](./testing-types/en/test-maintenance-cost-analysis/README.md) |
+| Testing Bottleneck Analysis / 测试瓶颈分析 | Test Governance | [testing-bottleneck-analysis](./testing-types/en/testing-bottleneck-analysis/README.md) |
 
 [View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#8-defects-quality-and-test-governance)
 
@@ -307,7 +336,7 @@ The catalog covers **215 capabilities in 215 independent modules**. All Prompts 
 
 ### 10. AI And LLM Testing
 
-18 capabilities.
+30 capabilities.
 
 | Prompt | Original type | Module entry |
 | --- | --- | --- |
@@ -322,6 +351,7 @@ The catalog covers **215 capabilities in 215 independent modules**. All Prompts 
 | AI Evaluation Designer / AI Eval 设计器 | AI Testing | [ai-evaluation-design](./testing-types/en/ai-evaluation-design/README.md) |
 | AI Model Regression Analyzer / AI 模型回归分析器 | AI Testing | [ai-model-regression-analysis](./testing-types/en/ai-model-regression-analysis/README.md) |
 | Prompt Injection Test Designer / Prompt Injection 测试设计器 | AI Safety Testing | [prompt-injection-test-design](./testing-types/en/prompt-injection-test-design/README.md) |
+| Prompt Testing Prompt / 提示词测试 Prompt | AI Testing | [prompt-testing](./testing-types/en/prompt-testing/README.md) |
 | AI Agent Test Designer / Agent 测试设计器 | AI Testing | [ai-agent-test-design](./testing-types/en/ai-agent-test-design/README.md) |
 | Agent Tool-Call Test Designer / Agent 工具调用测试器 | AI Testing | [agent-tool-call-test-design](./testing-types/en/agent-tool-call-test-design/README.md) |
 | AI-Generated Test Reviewer / AI 生成测试用例审核器 | AI Testing | [ai-generated-test-review](./testing-types/en/ai-generated-test-review/README.md) |
@@ -329,6 +359,17 @@ The catalog covers **215 capabilities in 215 independent modules**. All Prompts 
 | AI-Generated API Test Reviewer / AI 生成接口测试用例审核器 | AI Testing | [ai-generated-api-test-review](./testing-types/en/ai-generated-api-test-review/README.md) |
 | AI-Generated E2E Test Reviewer / AI 生成 E2E 测试用例审核器 | AI Testing | [ai-generated-e2e-test-review](./testing-types/en/ai-generated-e2e-test-review/README.md) |
 | AI-Generated Functional Test Reviewer / AI 生成功能测试用例审核器 | AI Testing | [ai-generated-functional-test-review](./testing-types/en/ai-generated-functional-test-review/README.md) |
+| Agent Failure Recovery Testing / Agent 故障恢复测试 | AI Testing | [agent-failure-recovery-testing](./testing-types/en/agent-failure-recovery-testing/README.md) |
+| Long-Running Agent Testing / 长运行 Agent 测试 | AI Testing | [agent-long-running-testing](./testing-types/en/agent-long-running-testing/README.md) |
+| Agent Loop Testing / Agent 循环测试 | AI Testing | [agent-loop-testing](./testing-types/en/agent-loop-testing/README.md) |
+| Agent Memory Testing / Agent 记忆测试 | AI Testing | [agent-memory-testing](./testing-types/en/agent-memory-testing/README.md) |
+| Agent Permission Testing / Agent 权限测试 | AI Safety Testing | [agent-permission-testing](./testing-types/en/agent-permission-testing/README.md) |
+| AI Safety Testing / AI 安全测试 | AI Safety Testing | [ai-safety-testing](./testing-types/en/ai-safety-testing/README.md) |
+| LLM Consistency Testing / LLM 一致性测试 | AI Testing | [llm-consistency-testing](./testing-types/en/llm-consistency-testing/README.md) |
+| LLM Hallucination Testing / LLM 幻觉测试 | AI Testing | [llm-hallucination-testing](./testing-types/en/llm-hallucination-testing/README.md) |
+| Multi-Agent Testing / 多 Agent 协作测试 | AI Testing | [multi-agent-testing](./testing-types/en/multi-agent-testing/README.md) |
+| RAG Quality Testing / RAG 质量测试 | AI Testing | [rag-quality-testing](./testing-types/en/rag-quality-testing/README.md) |
+| RAG Retrieval Testing / RAG 检索测试 | AI Testing | [rag-retrieval-testing](./testing-types/en/rag-retrieval-testing/README.md) |
 
 [View numbering and Standard Prompts for this category →](./PROMPT_COVERAGE_200_EN.md#10-ai-and-llm-testing)
 

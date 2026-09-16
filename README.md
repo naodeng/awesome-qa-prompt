@@ -25,7 +25,7 @@
 
 ## Prompt 分类目录
 
-当前目录覆盖 **215 项能力、215 个独立模块**。以下十个分类直接展示全部 Prompt；其中 [基础 Prompt 目录](./PROMPT_COVERAGE_200.md) 保留原始 200 项编号和 Standard 文件直链。
+当前目录覆盖 **256 项能力、256 个独立模块**。以下十个分类直接展示全部 Prompt；其中 [基础 Prompt 目录](./PROMPT_COVERAGE_200.md) 保留原始 200 项编号和 Standard 文件直链。
 
 ### 1. 需求、规划与测试策略
 
@@ -132,7 +132,7 @@
 
 ### 4. 自动化与测试工程
 
-共 16 项。
+共 20 项。
 
 | Prompt | 原始类型 | 模块入口 |
 | --- | --- | --- |
@@ -152,12 +152,16 @@
 | 自动化覆盖率分析器 / Automation Coverage Analyzer | 自动化测试 | [automation-coverage-analysis](./testing-types/zh/automation-coverage-analysis/README.md) |
 | 测试重复检测器 / Duplicate Test Detector | 测试治理 | [duplicate-test-detection](./testing-types/zh/duplicate-test-detection/README.md) |
 | 过期测试检测器 / Obsolete Test Detector | 测试治理 | [obsolete-test-detection](./testing-types/zh/obsolete-test-detection/README.md) |
+| 自动化投资回报分析 / Automation ROI Analysis | 自动化测试 | [automation-roi-analysis](./testing-types/zh/automation-roi-analysis/README.md) |
+| CI 测试流水线优化 / CI Test Pipeline Optimization | DevOps | [ci-test-optimization](./testing-types/zh/ci-test-optimization/README.md) |
+| 回归优化 / Regression Optimization | 回归测试 | [regression-optimization](./testing-types/zh/regression-optimization/README.md) |
+| 测试运行时间优化 / Test Runtime Optimization | 自动化测试 | [test-runtime-optimization](./testing-types/zh/test-runtime-optimization/README.md) |
 
 [查看该分类的编号与 Standard Prompt →](./PROMPT_COVERAGE_200.md#4-自动化与测试工程)
 
 ### 5. 性能、可靠性与韧性
 
-共 35 项。
+共 45 项。
 
 | Prompt | 原始类型 | 模块入口 |
 | --- | --- | --- |
@@ -196,12 +200,22 @@
 | 数据库慢查询分析器 / Slow Query Analyzer | 性能诊断 | [slow-query-analysis](./testing-types/zh/slow-query-analysis/README.md) |
 | 连接池分析器 / Connection Pool Analyzer | 性能诊断 | [connection-pool-analysis](./testing-types/zh/connection-pool-analysis/README.md) |
 | SLI/SLO 分析器 / SLI/SLO Analyzer | 可观测性 | [sli-slo-analysis](./testing-types/zh/sli-slo-analysis/README.md) |
+| 混沌测试 / Chaos Testing | 混沌测试 | [chaos-testing](./testing-types/zh/chaos-testing/README.md) |
+| 熔断器测试 / Circuit-Breaker Testing | 韧性测试 | [circuit-breaker-testing](./testing-types/zh/circuit-breaker-testing/README.md) |
+| 依赖故障测试 / Dependency-Failure Testing | 韧性测试 | [dependency-failure-testing](./testing-types/zh/dependency-failure-testing/README.md) |
+| 灾备测试 / Disaster-Recovery Testing | 容灾测试 | [disaster-recovery-testing](./testing-types/zh/disaster-recovery-testing/README.md) |
+| 故障切换测试 / Failover Testing | 容灾测试 | [failover-testing](./testing-types/zh/failover-testing/README.md) |
+| 恢复测试 / Recovery Testing | 韧性测试 | [recovery-testing](./testing-types/zh/recovery-testing/README.md) |
+| 可靠性测试 / Reliability Testing | 可靠性测试 | [reliability-testing](./testing-types/zh/reliability-testing/README.md) |
+| 韧性测试 / Resilience Testing | 韧性测试 | [resilience-testing](./testing-types/zh/resilience-testing/README.md) |
+| 重试测试 / Retry Testing | 韧性测试 | [retry-testing](./testing-types/zh/retry-testing/README.md) |
+| 超时测试 / Timeout Testing | API 测试 | [timeout-testing](./testing-types/zh/timeout-testing/README.md) |
 
 [查看该分类的编号与 Standard Prompt →](./PROMPT_COVERAGE_200.md#5-性能可靠性与韧性)
 
 ### 6. 安全、隐私与无障碍
 
-共 11 项。
+共 18 项。
 
 | Prompt | 原始类型 | 模块入口 |
 | --- | --- | --- |
@@ -216,6 +230,13 @@
 | 数据隐私测试分析器 / Data Privacy Test Analyzer | 安全测试 | [data-privacy-analysis](./testing-types/zh/data-privacy-analysis/README.md) |
 | 敏感数据泄露分析器 / Sensitive Data Exposure Analyzer | 安全测试 | [sensitive-data-exposure-analysis](./testing-types/zh/sensitive-data-exposure-analysis/README.md) |
 | 数据脱敏分析器 / Data Masking Analyzer | 测试数据 | [data-masking-analysis](./testing-types/zh/data-masking-analysis/README.md) |
+| API 安全测试 / API Security Testing | 安全测试 | [api-security-testing](./testing-types/zh/api-security-testing/README.md) |
+| 身份认证测试 / Authentication Testing | 安全测试 | [authentication-testing](./testing-types/zh/authentication-testing/README.md) |
+| 授权测试 / Authorization Testing | 安全测试 | [authorization-testing](./testing-types/zh/authorization-testing/README.md) |
+| 敏感信息暴露审查 / Secrets-Exposure Review | 安全审查 | [secrets-exposure-review](./testing-types/zh/secrets-exposure-review/README.md) |
+| 安全需求审查 / Security-Requirement Review | 安全需求 | [security-requirement-review](./testing-types/zh/security-requirement-review/README.md) |
+| 会话安全测试 / Session-Security Testing | 安全测试 | [session-security-testing](./testing-types/zh/session-security-testing/README.md) |
+| 威胁建模 / Threat Modeling | 安全测试 | [threat-modeling](./testing-types/zh/threat-modeling/README.md) |
 
 [查看该分类的编号与 Standard Prompt →](./PROMPT_COVERAGE_200.md#6-安全隐私与无障碍)
 
@@ -248,7 +269,7 @@
 
 ### 8. 缺陷、质量与测试治理
 
-共 25 项。
+共 33 项。
 
 | Prompt | 原始类型 | 模块入口 |
 | --- | --- | --- |
@@ -277,6 +298,14 @@
 | 缺陷预测分析器 / Defect Prediction Analyzer | 质量管理 | [defect-prediction-analysis](./testing-types/zh/defect-prediction-analysis/README.md) |
 | 测试有效性分析器 / Test Effectiveness Analyzer | 质量管理 | [test-effectiveness-analysis](./testing-types/zh/test-effectiveness-analysis/README.md) |
 | 质量门禁分析器 / Quality Gate Analyzer | 质量管理 | [quality-gate-analysis](./testing-types/zh/quality-gate-analysis/README.md) |
+| 质量仪表盘设计 / Quality Dashboard Design | 质量管理 | [quality-dashboard-design](./testing-types/zh/quality-dashboard-design/README.md) |
+| 质量债务分析 / Quality Debt Analysis | 质量管理 | [quality-debt-analysis](./testing-types/zh/quality-debt-analysis/README.md) |
+| 质量门禁设计 / Quality Gate Design | 质量管理 | [quality-gate-design](./testing-types/zh/quality-gate-design/README.md) |
+| 质量成熟度评估 / Quality Maturity Assessment | 质量管理 | [quality-maturity-assessment](./testing-types/zh/quality-maturity-assessment/README.md) |
+| 质量指标设计 / Quality Metrics Design | 质量管理 | [quality-metrics-design](./testing-types/zh/quality-metrics-design/README.md) |
+| 质量生产力指标 / Quality Productivity Metrics | 质量管理 | [quality-productivity-metrics](./testing-types/zh/quality-productivity-metrics/README.md) |
+| 测试维护成本分析 / Test Maintenance Cost Analysis | 测试治理 | [test-maintenance-cost-analysis](./testing-types/zh/test-maintenance-cost-analysis/README.md) |
+| 测试瓶颈分析 / Testing Bottleneck Analysis | 测试治理 | [testing-bottleneck-analysis](./testing-types/zh/testing-bottleneck-analysis/README.md) |
 
 [查看该分类的编号与 Standard Prompt →](./PROMPT_COVERAGE_200.md#8-缺陷质量与测试治理)
 
@@ -307,7 +336,7 @@
 
 ### 10. AI 与 LLM 测试
 
-共 18 项。
+共 30 项。
 
 | Prompt | 原始类型 | 模块入口 |
 | --- | --- | --- |
@@ -322,6 +351,7 @@
 | AI Eval 设计器 / AI Evaluation Designer | AI 测试 | [ai-evaluation-design](./testing-types/zh/ai-evaluation-design/README.md) |
 | AI 模型回归分析器 / AI Model Regression Analyzer | AI 测试 | [ai-model-regression-analysis](./testing-types/zh/ai-model-regression-analysis/README.md) |
 | Prompt Injection 测试设计器 / Prompt Injection Test Designer | AI 安全测试 | [prompt-injection-test-design](./testing-types/zh/prompt-injection-test-design/README.md) |
+| 提示词测试 Prompt / Prompt Testing Prompt | AI 测试 | [prompt-testing](./testing-types/zh/prompt-testing/README.md) |
 | Agent 测试设计器 / AI Agent Test Designer | AI 测试 | [ai-agent-test-design](./testing-types/zh/ai-agent-test-design/README.md) |
 | Agent 工具调用测试器 / Agent Tool-Call Test Designer | AI 测试 | [agent-tool-call-test-design](./testing-types/zh/agent-tool-call-test-design/README.md) |
 | AI 生成测试用例审核器 / AI-Generated Test Reviewer | AI 测试 | [ai-generated-test-review](./testing-types/zh/ai-generated-test-review/README.md) |
@@ -329,6 +359,17 @@
 | AI 生成接口测试用例审核器 / AI-Generated API Test Reviewer | AI 测试 | [ai-generated-api-test-review](./testing-types/zh/ai-generated-api-test-review/README.md) |
 | AI 生成 E2E 测试用例审核器 / AI-Generated E2E Test Reviewer | AI 测试 | [ai-generated-e2e-test-review](./testing-types/zh/ai-generated-e2e-test-review/README.md) |
 | AI 生成功能测试用例审核器 / AI-Generated Functional Test Reviewer | AI 测试 | [ai-generated-functional-test-review](./testing-types/zh/ai-generated-functional-test-review/README.md) |
+| Agent 故障恢复测试 / Agent Failure Recovery Testing | AI 测试 | [agent-failure-recovery-testing](./testing-types/zh/agent-failure-recovery-testing/README.md) |
+| 长运行 Agent 测试 / Long-Running Agent Testing | AI 测试 | [agent-long-running-testing](./testing-types/zh/agent-long-running-testing/README.md) |
+| Agent 循环测试 / Agent Loop Testing | AI 测试 | [agent-loop-testing](./testing-types/zh/agent-loop-testing/README.md) |
+| Agent 记忆测试 / Agent Memory Testing | AI 测试 | [agent-memory-testing](./testing-types/zh/agent-memory-testing/README.md) |
+| Agent 权限测试 / Agent Permission Testing | AI 安全测试 | [agent-permission-testing](./testing-types/zh/agent-permission-testing/README.md) |
+| AI 安全测试 / AI Safety Testing | AI 安全测试 | [ai-safety-testing](./testing-types/zh/ai-safety-testing/README.md) |
+| LLM 一致性测试 / LLM Consistency Testing | AI 测试 | [llm-consistency-testing](./testing-types/zh/llm-consistency-testing/README.md) |
+| LLM 幻觉测试 / LLM Hallucination Testing | AI 测试 | [llm-hallucination-testing](./testing-types/zh/llm-hallucination-testing/README.md) |
+| 多 Agent 协作测试 / Multi-Agent Testing | AI 测试 | [multi-agent-testing](./testing-types/zh/multi-agent-testing/README.md) |
+| RAG 质量测试 / RAG Quality Testing | AI 测试 | [rag-quality-testing](./testing-types/zh/rag-quality-testing/README.md) |
+| RAG 检索测试 / RAG Retrieval Testing | AI 测试 | [rag-retrieval-testing](./testing-types/zh/rag-retrieval-testing/README.md) |
 
 [查看该分类的编号与 Standard Prompt →](./PROMPT_COVERAGE_200.md#10-ai-与-llm-测试)
 
